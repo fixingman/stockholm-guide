@@ -10,17 +10,17 @@
 @media screen and (max-width:600px){
  .issue-line,.tagline{background-color:#080808!important}.hero-bg{background-color:#555!important;background-blend-mode:multiply!important}.outside{padding:0!important}.shell{border-radius:0!important}.pad{padding-left:18px!important;padding-right:18px!important}.masthead{background-size:180px auto!important}
  .brand{font-size:29px!important;line-height:25px!important}.brand-cell{width:49%!important;padding-left:20px!important}.tagline-cell{width:51%!important}.tagline{font-size:8px!important;line-height:13px!important;letter-spacing:.8px!important;padding-left:15px!important}
- .issue-line{padding-left:20px!important;padding-right:20px!important;font-size:11px!important}.section-title{font-size:28px!important;line-height:32px!important}.hero-copy{padding:18px!important}.hero-text{width:100%!important}.hero-title{font-size:28px!important;line-height:29px!important}.hero-bg{background-position:right center!important}
- .thumb-cell{width:80px!important;padding-right:12px!important}.thumb{width:68px!important;height:50px!important}.row-main{padding-top:9px!important;padding-bottom:4px!important}.row-date{padding-top:2px!important;padding-bottom:4px!important}.row-venue{padding-top:2px!important;padding-bottom:9px!important}
- .reconsider-title{padding-top:9px!important;padding-bottom:3px!important}.reconsider-main{padding-top:0!important;padding-bottom:4px!important}.event-title{font-size:16px!important;line-height:18px!important}
+ .issue-line{padding-left:20px!important;padding-right:20px!important;font-size:11px!important}.section-title{font-size:29px!important;line-height:37px!important}.hero-copy{padding:22px!important}.hero-text{width:100%!important}.hero-title{font-size:29px!important;line-height:34px!important}.hero-bg{background-position:right center!important}
+ .thumb-cell{width:80px!important;padding-right:12px!important}.thumb{width:68px!important;height:50px!important}.row-main{padding-top:12px!important;padding-bottom:8px!important}.row-date{padding-top:4px!important;padding-bottom:6px!important}.row-venue{padding-top:4px!important;padding-bottom:12px!important}
+ .reconsider-title{padding-top:12px!important;padding-bottom:6px!important}.reconsider-main{padding-top:0!important;padding-bottom:8px!important}.event-title{font-size:{{ tokens.mobile_event_title_size }}!important;line-height:{{ tokens.mobile_event_title_line }}!important}
 }
 @media screen and (max-width:360px){.brand{font-size:25px!important;line-height:23px!important}.tagline{font-size:7px!important;letter-spacing:.4px!important}}
 </style></head>
 <body style="margin:0;padding:0;background:#f7f5f3;-webkit-text-size-adjust:100%;color:#101010;">
 <div style="display:none;font-size:1px;line-height:1px;max-height:0;max-width:0;opacity:0;overflow:hidden;">Experimental performance, art and unusual experiences in Stockholm — {{ guide.date_range }}</div>
 {% macro icon(name, white=false) -%}<img src="{{ assets[name ~ ('_white' if white else '')] }}" alt="" width="12" height="13" style="display:inline-block;width:12px;height:13px;vertical-align:-2px;border:0;margin-right:5px;">{%- endmacro %}
-{% macro details(item, light=false) -%}<div class="event-details" style="font:10px/14px Arial,Helvetica,sans-serif;color:{{ '#e4e4e4' if light else '#57514c' }};margin-top:4px;">{{ item.price }} · Booking: {{ item.booking }}</div>{%- endmacro %}
-{% macro section_heading(text) -%}<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="width:100%;border-collapse:collapse;margin-bottom:8px;"><tr><td class="heading-text" style="padding-right:17px;"><h2 class="section-title" style="font:italic bold 30px/35px Georgia,'Times New Roman',serif;letter-spacing:-1px;margin:0;">{{ text }}</h2></td><td width="100%" style="width:100%;vertical-align:middle;"><div style="height:1px;background:#292929;font-size:0;line-height:0;">&nbsp;</div></td></tr></table>{%- endmacro %}
+{% macro details(item, light=false) -%}<div class="event-details" style="font:{{ tokens.event_details }} Arial,Helvetica,sans-serif;color:{{ '#e4e4e4' if light else '#57514c' }};margin-top:7px;">{{ item.price }} · Booking: {{ item.booking }}</div>{%- endmacro %}
+{% macro section_heading(text) -%}<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="width:100%;border-collapse:collapse;margin-bottom:{{ tokens.heading_bottom }};"><tr><td class="heading-text" style="padding-right:17px;"><h2 class="section-title" style="font:italic bold {{ tokens.section_title }} Georgia,'Times New Roman',serif;letter-spacing:-1px;margin:0;">{{ text }}</h2></td><td width="100%" style="width:100%;vertical-align:middle;"><div style="height:1px;background:#292929;font-size:0;line-height:0;">&nbsp;</div></td></tr></table>{%- endmacro %}
 <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="width:100%;border-collapse:collapse;"><tr><td class="outside" align="center" style="padding:10px 12px 30px;">
 <table role="presentation" class="shell" width="650" cellpadding="0" cellspacing="0" border="0" style="width:100%;max-width:650px;background:#fcf6ee;border-spacing:0;border-radius:18px;overflow:hidden;box-shadow:0 3px 8px #dedbd8;">
 <tr><td class="masthead" background="{{ assets.brush }}" bgcolor="#080808" style="background:#080808 url('{{ assets.brush }}') no-repeat right top;background-size:238px 114px;color:#fff;">
@@ -34,14 +34,14 @@
 {% set hero_index = guide.hero_pick_index|default(0) %}{% set hero = guide.top3[hero_index] %}
 <table role="presentation" class="hero-card" width="100%" cellpadding="0" cellspacing="0" border="0" style="width:100%;border-spacing:0;border-radius:13px;overflow:hidden;background:#090909;box-shadow:0 2px 3px #d4cec7;"><tr>
 <td class="hero-bg" background="{{ hero.image_render_url if hero.image_url else assets.hero }}" bgcolor="#090909" style="background-color:#090909;background-image:linear-gradient(90deg,#090909 0%,rgba(9,9,9,.97) 30%,rgba(9,9,9,.65) 58%,rgba(9,9,9,.65) 100%),url('{{ hero.image_render_url if hero.image_url else assets.hero }}');background-size:cover;background-position:center;background-blend-mode:normal,luminosity;border-radius:13px;">
-<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="width:100%;"><tr><td class="hero-copy" style="padding:13px 33px 14px;color:#fff;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="width:100%;"><tr><td class="hero-copy" style="padding:{{ tokens.hero_copy_pad }};color:#fff;">
 <table role="presentation" class="hero-text" width="100%" cellpadding="0" cellspacing="0" border="0" style="width:100%;"><tr><td style="color:#fff;">
-<div style="font:700 11px/16px Arial,Helvetica,sans-serif;text-transform:uppercase;margin-bottom:3px;">{{ hero.dates }}</div>
-<div class="hero-title" style="font:bold 29px/28px Georgia,'Times New Roman',serif;letter-spacing:-.5px;margin-bottom:7px;">{{ hero.display_title|default(hero.title) }}</div>
-<div style="font:13px/16px Arial,Helvetica,sans-serif;">{{ hero.description }}</div>
-<div style="font:12px/17px Arial,Helvetica,sans-serif;margin-top:7px;">{{ icon('pin', true) }}{{ hero.venue }}</div>
+<div style="font:700 {{ tokens.hero_label }} Arial,Helvetica,sans-serif;text-transform:uppercase;margin-bottom:3px;">{{ hero.dates }}</div>
+<div class="hero-title" style="font:bold {{ tokens.hero_title }} Georgia,'Times New Roman',serif;letter-spacing:-.5px;margin-bottom:7px;">{{ hero.display_title|default(hero.title) }}</div>
+<div style="font:{{ tokens.hero_body }} Arial,Helvetica,sans-serif;">{{ hero.description }}</div>
+<div style="font:{{ tokens.hero_venue }} Arial,Helvetica,sans-serif;margin-top:10px;">{{ icon('pin', true) }}{{ hero.venue }}</div>
 {{ details(hero, true) }}
-<a href="{{ hero.url }}" style="display:inline-block;font:10px/16px Arial,Helvetica,sans-serif;color:#fff;text-decoration:underline;margin-top:3px;">{{ hero.link_label|default('Event details & booking') }}</a>
+<a href="{{ hero.url }}" style="display:inline-block;font:{{ tokens.subtle }} Arial,Helvetica,sans-serif;color:#fff;text-decoration:underline;margin-top:3px;">{{ hero.link_label|default('Event details & booking') }}</a>
 {% if hero.image_url and hero.image_credit %}<div style="font:9px/12px Arial,Helvetica,sans-serif;color:#ddd;margin-top:3px;">{{ hero.image_credit }}</div>{% endif %}
 </td></tr></table></td></tr></table></td></tr></table>
 <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td height="7" style="height:7px;font-size:0;line-height:0;">&nbsp;</td></tr></table>
@@ -51,41 +51,41 @@
 <td class="support-column" valign="top" style="display:block;box-sizing:border-box;width:100%;vertical-align:top;border:1px solid #d9d1c9;border-radius:13px;background:#fcf6ee;box-shadow:0 2px 3px #d4cec7;overflow:hidden;margin-bottom:9px;">
 <table role="presentation" class="support-card" width="100%" cellpadding="0" cellspacing="0" border="0" style="width:100%;border:0;border-spacing:0;">
 <tr><td><img class="support-photo" src="{{ pick.image_render_url if pick.image_url else assets.hero }}" alt="{{ pick.image_alt if pick.image_url else 'No verified event photograph available' }}" width="302" height="58" style="display:block;width:100%;height:58px;object-fit:cover;mix-blend-mode:luminosity;border-radius:12px 12px 0 0;border:0;"></td></tr>
-<tr><td style="padding:5px 27px 10px;">
-<div style="font:700 10px/14px Arial,Helvetica,sans-serif;text-transform:uppercase;">{{ pick.dates }}</div>
-<div style="font:bold 22px/21px Georgia,'Times New Roman',serif;letter-spacing:-.5px;margin:1px 0 5px;">{{ pick.display_title|default(pick.title) }}</div>
-<div style="font:12px/15px Arial,Helvetica,sans-serif;">{{ pick.description }}</div>
-<div style="font:700 11px/16px Arial,Helvetica,sans-serif;margin-top:6px;">{{ icon('pin') }}{{ pick.venue }}</div>
+<tr><td style="padding:{{ tokens.card_body_pad }};">
+<div style="font:700 {{ tokens.hero_label }} Arial,Helvetica,sans-serif;text-transform:uppercase;">{{ pick.dates }}</div>
+<div style="font:bold {{ tokens.feature_title }} Georgia,'Times New Roman',serif;letter-spacing:-.5px;margin:1px 0 5px;">{{ pick.display_title|default(pick.title) }}</div>
+<div style="font:{{ tokens.event_body }} Arial,Helvetica,sans-serif;">{{ pick.description }}</div>
+<div style="font:700 {{ tokens.event_metadata }} Arial,Helvetica,sans-serif;margin-top:10px;">{{ icon('pin') }}{{ pick.venue }}</div>
 {{ details(pick) }}
-<a href="{{ pick.url }}" style="font:10px/15px Arial,Helvetica,sans-serif;color:#222;text-decoration:underline;">{{ pick.link_label|default('Event details & booking') }}</a>
+<a href="{{ pick.url }}" style="font:{{ tokens.subtle }} Arial,Helvetica,sans-serif;color:#222;text-decoration:underline;">{{ pick.link_label|default('Event details & booking') }}</a>
 {% if pick.image_url and pick.image_credit %}<div style="font:9px/12px Arial,Helvetica,sans-serif;color:#666;margin-top:3px;">{{ pick.image_credit }}</div>{% endif %}
 </td></tr></table></td>{% endfor %}</tr></table>
 </td></tr>
-<tr><td class="pad" style="padding:14px 25px 0;">{{ section_heading('New discoveries') }}
+<tr><td class="pad" style="padding:{{ tokens.section_gap }} 25px 0;">{{ section_heading('New discoveries') }}
 <table role="presentation" class="discovery-list" width="100%" cellpadding="0" cellspacing="0" border="0" style="width:100%;border-collapse:collapse;table-layout:fixed;">
 {% for item in guide.new_discoveries %}<tr class="discovery-row">
-<td class="thumb-cell" width="111" style="box-sizing:border-box;width:111px;padding:5px 22px 5px 0;vertical-align:top;border-bottom:1px solid #ded6cd;"><img class="thumb" src="{{ item.image_render_url if item.image_url else assets.placeholder_thumb }}" alt="{{ item.image_alt if item.image_url else 'No verified event photograph available' }}" width="89" height="43" style="display:block;width:89px;height:43px;object-fit:cover;mix-blend-mode:luminosity;border-radius:6px;border:0;"></td>
+<td class="thumb-cell" width="111" style="box-sizing:border-box;width:111px;padding:{{ tokens.thumbnail_row_pad }} 22px {{ tokens.thumbnail_row_pad }} 0;vertical-align:top;border-bottom:1px solid #ded6cd;"><img class="thumb" src="{{ item.image_render_url if item.image_url else assets.placeholder_thumb }}" alt="{{ item.image_alt if item.image_url else 'No verified event photograph available' }}" width="89" height="43" style="display:block;width:89px;height:43px;object-fit:cover;mix-blend-mode:luminosity;border-radius:6px;border:0;"></td>
 <td style="vertical-align:top;border-bottom:1px solid #ded6cd;">
 <table role="presentation" class="discovery-columns" width="100%" cellpadding="0" cellspacing="0" border="0" style="width:100%;table-layout:fixed;border-collapse:collapse;"><tr>
-<td class="discovery-main row-main" style="display:block;box-sizing:border-box;width:100%;padding:5px 10px 6px 0;vertical-align:top;">
-<a class="event-title" href="{{ item.url }}" style="font:bold 16px/17px Georgia,'Times New Roman',serif;color:#101010;text-decoration:none;">{{ item.display_title|default(item.title) }}</a>
-<div class="event-description" style="font:12px/15px Arial,Helvetica,sans-serif;">{{ item.description }}</div>{{ details(item) }}
+<td class="discovery-main row-main" style="display:block;box-sizing:border-box;width:100%;padding:{{ tokens.discovery_main_pad }};vertical-align:top;">
+<a class="event-title" href="{{ item.url }}" style="font:bold {{ tokens.event_title }} Georgia,'Times New Roman',serif;color:#101010;text-decoration:none;">{{ item.display_title|default(item.title) }}</a>
+<div class="event-description" style="font:{{ tokens.event_body }} Arial,Helvetica,sans-serif;">{{ item.description }}</div>{{ details(item) }}
 {% if item.image_url and item.image_credit %}<div style="font:9px/12px Arial,Helvetica,sans-serif;color:#666;margin-top:2px;">{{ item.image_credit }}</div>{% endif %}
 </td>
-<td class="discovery-date row-date" style="display:block;box-sizing:border-box;width:100%;padding:9px 9px 6px 0;vertical-align:top;font:10px/14px Arial,Helvetica,sans-serif;">{{ icon('calendar') }}{{ item.dates }}</td>
-<td class="discovery-venue row-venue" style="display:block;box-sizing:border-box;width:100%;padding:9px 0 6px;vertical-align:top;font:10px/14px Arial,Helvetica,sans-serif;">{{ icon('pin') }}{{ item.venue }}</td>
+<td class="discovery-date row-date" style="display:block;box-sizing:border-box;width:100%;padding:12px 9px 10px 0;vertical-align:top;font:{{ tokens.event_metadata }} Arial,Helvetica,sans-serif;">{{ icon('calendar') }}{{ item.dates }}</td>
+<td class="discovery-venue row-venue" style="display:block;box-sizing:border-box;width:100%;padding:12px 0 10px;vertical-align:top;font:{{ tokens.event_metadata }} Arial,Helvetica,sans-serif;">{{ icon('pin') }}{{ item.venue }}</td>
 </tr></table></td></tr>{% endfor %}</table></td></tr>
-<tr><td class="pad" style="padding:17px 25px 0;">{{ section_heading('Worth reconsidering') }}
+<tr><td class="pad" style="padding:{{ tokens.section_gap }} 25px 0;">{{ section_heading('Worth reconsidering') }}
 <table role="presentation" class="reconsider-list" width="100%" cellpadding="0" cellspacing="0" border="0" style="width:100%;border-collapse:collapse;table-layout:fixed;">
 {% for item in guide.worth_reconsidering %}<tr><td style="border-bottom:1px solid #ded6cd;">
 <table role="presentation" class="reconsider-columns" width="100%" cellpadding="0" cellspacing="0" border="0" style="width:100%;table-layout:fixed;border-collapse:collapse;"><tr>
-<td class="reconsider-title" style="display:block;box-sizing:border-box;width:100%;vertical-align:top;padding:8px 10px 7px 0;"><a class="event-title" href="{{ item.url }}" style="font:bold 15px/17px Georgia,'Times New Roman',serif;color:#101010;text-decoration:none;">{{ item.display_title|default(item.title) }}</a></td>
-<td class="reconsider-main" style="display:block;box-sizing:border-box;width:100%;vertical-align:top;padding:8px 10px 7px 0;"><div class="event-description" style="font:12px/15px Arial,Helvetica,sans-serif;">{{ item.description }}</div>{{ details(item) }}</td>
-<td class="reconsider-date row-date" style="display:block;box-sizing:border-box;width:100%;vertical-align:top;padding:9px 9px 7px 0;font:10px/14px Arial,Helvetica,sans-serif;">{{ icon('calendar') }}{{ item.dates }}</td>
-<td class="reconsider-venue row-venue" style="display:block;box-sizing:border-box;width:100%;vertical-align:top;padding:9px 0 7px;font:10px/14px Arial,Helvetica,sans-serif;">{{ icon('pin') }}{{ item.venue }}</td>
+<td class="reconsider-title" style="display:block;box-sizing:border-box;width:100%;vertical-align:top;padding:{{ tokens.reconsider_row_pad }};"><a class="event-title" href="{{ item.url }}" style="font:bold {{ tokens.event_title }} Georgia,'Times New Roman',serif;color:#101010;text-decoration:none;">{{ item.display_title|default(item.title) }}</a></td>
+<td class="reconsider-main" style="display:block;box-sizing:border-box;width:100%;vertical-align:top;padding:{{ tokens.reconsider_row_pad }};"><div class="event-description" style="font:{{ tokens.event_body }} Arial,Helvetica,sans-serif;">{{ item.description }}</div>{{ details(item) }}</td>
+<td class="reconsider-date row-date" style="display:block;box-sizing:border-box;width:100%;vertical-align:top;padding:12px 9px 11px 0;font:{{ tokens.event_metadata }} Arial,Helvetica,sans-serif;">{{ icon('calendar') }}{{ item.dates }}</td>
+<td class="reconsider-venue row-venue" style="display:block;box-sizing:border-box;width:100%;vertical-align:top;padding:12px 0 11px;font:{{ tokens.event_metadata }} Arial,Helvetica,sans-serif;">{{ icon('pin') }}{{ item.venue }}</td>
 </tr></table></td></tr>{% endfor %}</table></td></tr>
-<tr><td class="pad" style="padding:18px 25px 12px;">{{ section_heading('Unavailable / sold out') }}
-{% for item in guide.unavailable %}<div style="border-bottom:1px solid #ded6cd;padding:6px 0;font:10px/14px Arial,Helvetica,sans-serif;"><a href="{{ item.url }}" style="font:bold 12px/16px Georgia,'Times New Roman',serif;color:#111;text-decoration:none;">{{ item.title }}</a><br>{{ item.dates }} · {{ item.price }} · {{ item.booking }}</div>{% endfor %}
-<p style="font:10px/15px Arial,Helvetica,sans-serif;color:#66615e;margin:12px 0 0;">{{ guide.disclaimer }}</p></td></tr>
+<tr><td class="pad" style="padding:{{ tokens.section_gap }} 25px 16px;">{{ section_heading('Unavailable / sold out') }}
+{% for item in guide.unavailable %}<div style="border-bottom:1px solid #ded6cd;padding:10px 0;font:{{ tokens.event_metadata }} Arial,Helvetica,sans-serif;"><a href="{{ item.url }}" style="font:bold 16px/21px Georgia,'Times New Roman',serif;color:#111;text-decoration:none;">{{ item.title }}</a><br>{{ item.dates }} · {{ item.price }} · {{ item.booking }}</div>{% endfor %}
+<p style="font:12px/18px Arial,Helvetica,sans-serif;color:#66615e;margin:12px 0 0;">{{ guide.disclaimer }}</p></td></tr>
 <tr><td style="padding:0;"><img class="sky" src="{{ assets.skyline }}" alt="Decorative Stockholm skyline" width="650" style="display:block;width:100%;height:auto;border:0;"></td></tr>
 </table></td></tr></table></body></html>

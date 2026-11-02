@@ -1,0 +1,22 @@
+{
+  "section_title": "31px/40px",
+  "hero_title": "31px/36px",
+  "hero_body": "15px/22px",
+  "feature_title": "23px/28px",
+  "event_title": "18px/23px",
+  "event_body": "14px/20px",
+  "event_metadata": "12px/18px",
+  "event_details": "12px/18px",
+  "subtle": "11px/16px",
+  "hero_label": "12px/18px",
+  "hero_venue": "13px/19px",
+  "mobile_event_title_size": "18px",
+  "mobile_event_title_line": "23px",
+  "section_gap": "30px",
+  "heading_bottom": "14px",
+  "thumbnail_row_pad": "11px",
+  "discovery_main_pad": "11px 10px 12px 0",
+  "reconsider_row_pad": "12px 10px 11px 0",
+  "card_body_pad": "12px 20px 17px",
+  "hero_copy_pad": "22px 30px 24px"
+}
