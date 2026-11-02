@@ -14,5 +14,5 @@ jobs:
         with:
           python-version: '3.12'
       - run: python -m pip install 'Jinja2>=3.1.6,<4'
-      - run: python -m unittest test_render test_typography
+      - run: python -m unittest test_render test_typography test_design_variant
       - run: python render.py --output /tmp/typography-preview.html
