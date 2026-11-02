@@ -12,7 +12,15 @@
       "rationale": "The most participatory option: real filmmaking, audience involvement and AI-generated worlds.",
       "venue": "Konträr",
       "price": "Price unverified; check subscription/booking conditions",
-      "booking": "Tickets listed; 12 Nov shows few remaining"
+      "booking": "Tickets listed; 12 Nov shows few remaining",
+      "image_url": "https://kontrar.se/wp-content/uploads/2026/03/Verkligheten_PRESS_03-Foto_-Julia-Mard-1.jpg",
+      "image_alt": "Verkligheten production photograph: performers and a camera operator in a film studio",
+      "image_credit": "Photo: Julia Mård / Verkligheten",
+      "image_rights_url": "https://kontrar.se/en/press/",
+      "image_cache_file": "verkligheten-press.jpg",
+      "image_source_url": "https://kontrar.se/en/show/verkligheten/",
+      "image_verified": true,
+      "image_checked_at": "2026-11-02"
     },
     {
       "title": "Adam Pultz & The Spectral Parrot",
@@ -72,7 +80,15 @@
       "price": "Price unverified",
       "description": "Brazilian contemporary dance: nine performers build a fluid landscape of fabric and recycled materials around the idea of borders.",
       "booking": "Tickets listed; seats unverified",
-      "url": "https://dansenshus.se/en/program/lia-rodrigues-bra-borda/"
+      "url": "https://dansenshus.se/en/program/lia-rodrigues-bra-borda/",
+      "image_url": "https://cdn.filestackcontent.com/auto_image/dWBAdpO8R9RXrGpe64Ko",
+      "image_alt": "Borda production photograph: a figure surrounded by translucent fabric and plastic on a dark stage",
+      "image_credit": "Photo: © Sammi Landweer / Borda",
+      "image_rights_url": "https://press.dansenshus.se/media/377195/borda-lia-rodrgues-foto-sammi-landweer1",
+      "image_cache_file": "borda-press.jpg",
+      "image_source_url": "https://dansenshus.se/en/program/lia-rodrigues-bra-borda/",
+      "image_verified": true,
+      "image_checked_at": "2026-11-02"
     },
     {
       "day": "Fri 6 Nov",
@@ -191,7 +207,15 @@
       "price": "Price unverified; check Konträr subscription/booking conditions",
       "description": "Watch a feature film made live in the room; audience members may become extras while AI transforms the filmed environments. Swedish-language.",
       "booking": "Tickets listed; 12 Nov shows few remaining",
-      "url": "https://kontrar.se/en/show/verkligheten/"
+      "url": "https://kontrar.se/en/show/verkligheten/",
+      "image_url": "https://kontrar.se/wp-content/uploads/2026/03/Verkligheten_PRESS_03-Foto_-Julia-Mard-1.jpg",
+      "image_alt": "Verkligheten production photograph: performers and a camera operator in a film studio",
+      "image_credit": "Photo: Julia Mård / Verkligheten",
+      "image_rights_url": "https://kontrar.se/en/press/",
+      "image_cache_file": "verkligheten-press.jpg",
+      "image_source_url": "https://kontrar.se/en/show/verkligheten/",
+      "image_verified": true,
+      "image_checked_at": "2026-11-02"
     },
     {
       "day": "Fri 13 Nov",

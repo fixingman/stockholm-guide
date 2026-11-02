@@ -33,7 +33,7 @@ for key in ('top3','new_discoveries','worth_reconsidering','unavailable'):
    x.pop('image_url',None)
 asset=a.asset_base_url.rstrip('/')
 assets={'stroke':f'{asset}/milestone_heading_stroke.png','brush':f'{asset}/milestone_brush.jpg','torn':f'{asset}/milestone_torn.png','hero':f'{asset}/event-placeholder.jpg','secondary1':f'{asset}/event-placeholder.jpg','secondary2':f'{asset}/event-placeholder.jpg','placeholder_thumb':f'{asset}/event-placeholder-thumb.jpg','skyline':f'{asset}/milestone_skyline.png'}
-env=Environment(loader=FileSystemLoader(base),autoescape=select_autoescape(['html','xml']))
+env=Environment(loader=FileSystemLoader(base),autoescape=select_autoescape(default=True))
 html=env.get_template('template.html.j2').render(guide=g,assets=assets)
 Path(a.output).write_text(html,encoding='utf-8')
 lines=[f"The Stockholm Guide · Issue #{g['issue_number']} · {g['date_range']}",g['intro']]
