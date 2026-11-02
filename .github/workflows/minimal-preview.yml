@@ -1,0 +1,25 @@
+name: Preview alternate minimal editorial layout
+on:
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  preview-minimal:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install 'Jinja2>=3.1.6,<4'
+      - run: python -m unittest test_minimal
+      - name: Generate alternate newsletter HTML
+        run: |
+          python render_minimal.py --output minimal-preview.html
+      - uses: actions/upload-artifact@v4
+        with:
+          name: minimal-editorial-preview
+          path: minimal-preview.html
+          retention-days: 14
