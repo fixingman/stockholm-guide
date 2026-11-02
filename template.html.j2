@@ -2,19 +2,22 @@
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light"><title>The Stockholm Guide · {{ guide.date_range }}</title>
 <style>
 @media screen and (min-width:601px){
- .hero-text{width:64%!important}.issue-line,.tagline{background-color:transparent!important}.heading-text{white-space:nowrap!important}.brand{font-size:30px!important;line-height:25px!important}.brand-cell{width:31%!important;padding-left:30px!important}.tagline-cell{width:69%!important}.tagline{font-size:10px!important;line-height:16px!important;letter-spacing:1.6px!important;padding-left:32px!important}
+ .hero-text{width:64%!important}.heading-text{white-space:nowrap!important}
  .support-column{margin-bottom:0!important;display:table-cell!important;width:49.25%!important}.support-gap{display:table-cell!important;width:1.5%!important}.support-card{margin-bottom:0!important}
  .discovery-main{display:table-cell!important;width:51%!important}.discovery-date{display:table-cell!important;width:22%!important}.discovery-venue{display:table-cell!important;width:27%!important}
  .reconsider-title{display:table-cell!important;width:25%!important}.reconsider-main{display:table-cell!important;width:39%!important}.reconsider-date{display:table-cell!important;width:19%!important}.reconsider-venue{display:table-cell!important;width:17%!important}
 }
 @media screen and (max-width:600px){
- .issue-line,.tagline{background-color:#080808!important}.hero-bg{background-color:#555!important;background-blend-mode:multiply!important}.outside{padding:0!important}.shell{border-radius:0!important}.pad{padding-left:18px!important;padding-right:18px!important}.masthead{background-size:180px auto!important}
- .brand{font-size:29px!important;line-height:25px!important}.brand-cell{width:49%!important;padding-left:20px!important}.tagline-cell{width:51%!important}.tagline{font-size:8px!important;line-height:13px!important;letter-spacing:.8px!important;padding-left:15px!important}
- .issue-line{padding-left:20px!important;padding-right:20px!important;font-size:11px!important}.section-title{font-size:29px!important;line-height:37px!important}.hero-copy{padding:22px!important}.hero-text{width:100%!important}.hero-title{font-size:29px!important;line-height:34px!important}.hero-bg{background-position:right center!important}
- .thumb-cell{width:80px!important;padding-right:12px!important}.thumb{width:68px!important;height:50px!important}.row-main{padding-top:12px!important;padding-bottom:8px!important}.row-date{padding-top:4px!important;padding-bottom:6px!important}.row-venue{padding-top:4px!important;padding-bottom:12px!important}
+ .outside{padding:0!important}.shell{border-radius:0!important}.pad{padding-left:18px!important;padding-right:18px!important}
+ .masthead{background-size:180px auto!important}.masthead-top{padding:31px 22px 27px!important}.masthead-bottom{padding:0 22px 22px!important}.eyebrow{font-size:10px!important;letter-spacing:2px!important;margin-bottom:20px!important}.brand{font-size:43px!important;line-height:42px!important;letter-spacing:-1.8px!important}
+ .tagline{font-size:9px!important;line-height:15px!important;letter-spacing:.75px!important}.issue-line{font-size:10px!important;line-height:16px!important}
+ .section-title{font-size:29px!important;line-height:37px!important}.hero-copy{padding:22px!important}.hero-text{width:100%!important}.hero-title{font-size:29px!important;line-height:34px!important}.hero-bg{background-position:right center!important}
+ .support-photo{height:105px!important}.thumb-cell{width:89px!important;padding-right:13px!important}.thumb{width:76px!important;height:70px!important}.row-main{padding-top:12px!important;padding-bottom:8px!important}.row-date{padding-top:4px!important;padding-bottom:6px!important}.row-venue{padding-top:4px!important;padding-bottom:12px!important}
  .reconsider-title{padding-top:12px!important;padding-bottom:6px!important}.reconsider-main{padding-top:0!important;padding-bottom:8px!important}.event-title{font-size:{{ tokens.mobile_event_title_size }}!important;line-height:{{ tokens.mobile_event_title_line }}!important}
 }
-@media screen and (max-width:360px){.brand{font-size:25px!important;line-height:23px!important}.tagline{font-size:7px!important;letter-spacing:.4px!important}}
+@media screen and (max-width:360px){
+ .brand{font-size:37px!important;line-height:37px!important}.masthead-top{padding:28px 18px 24px!important}.masthead-bottom{padding:0 18px 20px!important}.tagline{font-size:8px!important;letter-spacing:.4px!important}.issue-line{font-size:9px!important}
+}
 </style></head>
 <body style="margin:0;padding:0;background:#f7f5f3;-webkit-text-size-adjust:100%;color:#101010;">
 <div style="display:none;font-size:1px;line-height:1px;max-height:0;max-width:0;opacity:0;overflow:hidden;">Experimental performance, art and unusual experiences in Stockholm — {{ guide.date_range }}</div>
@@ -23,17 +26,24 @@
 {% macro section_heading(text) -%}<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="width:100%;border-collapse:collapse;margin-bottom:{{ tokens.heading_bottom }};"><tr><td class="heading-text" style="padding-right:17px;"><h2 class="section-title" style="font:italic bold {{ tokens.section_title }} Georgia,'Times New Roman',serif;letter-spacing:-1px;margin:0;">{{ text }}</h2></td><td width="100%" style="width:100%;vertical-align:middle;"><div style="height:1px;background:#292929;font-size:0;line-height:0;">&nbsp;</div></td></tr></table>{%- endmacro %}
 <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="width:100%;border-collapse:collapse;"><tr><td class="outside" align="center" style="padding:10px 12px 30px;">
 <table role="presentation" class="shell" width="650" cellpadding="0" cellspacing="0" border="0" style="width:100%;max-width:650px;background:#fcf6ee;border-spacing:0;border-radius:18px;overflow:hidden;box-shadow:0 3px 8px #dedbd8;">
-<tr><td class="masthead" background="{{ assets.brush }}" bgcolor="#080808" style="background:#080808 url('{{ assets.brush }}') no-repeat right top;background-size:238px 114px;color:#fff;">
-<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="width:100%;table-layout:fixed;border-collapse:collapse;"><tr>
-<td class="brand-cell" width="49%" style="box-sizing:border-box;width:49%;padding:8px 0 0 20px;vertical-align:top;"><div class="brand" style="font:bold 24px/23px Georgia,'Times New Roman',serif;letter-spacing:-1px;color:#fff;">The<br>Stockholm<br>Guide</div></td>
-<td class="tagline-cell" width="51%" style="width:51%;padding:17px 0 0;vertical-align:top;"><div class="tagline" style="background-color:#080808;border-left:1px solid #ddd;padding:0 0 0 15px;font:700 8px/13px Arial,Helvetica,sans-serif;letter-spacing:.7px;color:#fff;">A CURATED GUIDE TO<br>CULTURE, ART AND<br>IDEAS IN STOCKHOLM</div></td></tr></table>
-<div class="issue-line" style="background-color:#080808;padding:0 30px 7px;font:13px/18px Arial,Helvetica,sans-serif;color:#fff;"><span style="font:italic bold 14px/18px Georgia,'Times New Roman',serif;">The Weekly</span>&nbsp;&nbsp;&nbsp; {{ guide.date_range }} &nbsp;&nbsp; | &nbsp;&nbsp; ISSUE #{{ guide.issue_number }}</div>
+<tr><td class="masthead" background="{{ assets.brush }}" bgcolor="#080808" style="background:#080808 url('{{ assets.brush }}') no-repeat right top;background-size:260px 126px;color:#fff;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="width:100%;border-collapse:collapse;">
+<tr><td class="masthead-top" style="padding:35px 38px 27px;">
+<div class="eyebrow" style="font:700 11px/16px Arial,Helvetica,sans-serif;letter-spacing:2.3px;color:#fff;margin-bottom:21px;">THE WEEKLY</div>
+<div class="brand" style="font:bold 58px/55px Georgia,'Times New Roman',serif;letter-spacing:-2.5px;color:#fff;">The Stockholm<br>Guide</div>
+</td></tr>
+<tr><td class="masthead-bottom" style="padding:0 38px 25px;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="width:100%;border-top:1px solid #777;border-collapse:collapse;">
+<tr>
+<td class="tagline-cell" width="65%" style="box-sizing:border-box;width:65%;padding:16px 12px 0 0;vertical-align:top;"><div class="tagline" style="font:700 10px/17px Arial,Helvetica,sans-serif;letter-spacing:1.25px;color:#fff;">A CURATED GUIDE TO CULTURE,<br>ART AND IDEAS IN STOCKHOLM</div></td>
+<td class="issue-cell" width="35%" style="box-sizing:border-box;width:35%;padding:16px 0 0;vertical-align:top;text-align:right;"><div class="issue-line" style="font:11px/17px Arial,Helvetica,sans-serif;letter-spacing:.2px;color:#fff;">{{ guide.date_range }}<br>ISSUE #{{ guide.issue_number }}</div></td>
+</tr></table></td></tr></table>
 <img src="{{ assets.torn }}" alt="" width="650" height="7" style="display:block;width:100%;height:7px;border:0;"></td></tr>
 <tr><td class="pad" style="padding:0 18px 0;">
 <h2 class="section-title" style="font:italic bold 31px/39px Georgia,'Times New Roman',serif;letter-spacing:-.8px;margin:0 0 7px 12px;">Top 3 picks for you <img src="{{ assets.stroke }}" alt="" width="112" style="display:inline-block;width:112px;max-width:25%;height:auto;vertical-align:middle;border:0;"></h2>
 {% set hero_index = guide.hero_pick_index|default(0) %}{% set hero = guide.top3[hero_index] %}
 <table role="presentation" class="hero-card" width="100%" cellpadding="0" cellspacing="0" border="0" style="width:100%;border-spacing:0;border-radius:13px;overflow:hidden;background:#090909;box-shadow:0 2px 3px #d4cec7;"><tr>
-<td class="hero-bg" background="{{ hero.image_render_url if hero.image_url else assets.hero }}" bgcolor="#090909" style="background-color:#090909;background-image:linear-gradient(90deg,#090909 0%,rgba(9,9,9,.97) 30%,rgba(9,9,9,.65) 58%,rgba(9,9,9,.65) 100%),url('{{ hero.image_render_url if hero.image_url else assets.hero }}');background-size:cover;background-position:center;background-blend-mode:normal,luminosity;border-radius:13px;">
+<td class="hero-bg" background="{{ hero.image_render_url if hero.image_url else assets.hero }}" bgcolor="#090909" style="background-color:#090909;background-image:linear-gradient(90deg,#090909 0%,rgba(9,9,9,.97) 30%,rgba(9,9,9,.65) 58%,rgba(9,9,9,.65) 100%),url('{{ hero.image_render_url if hero.image_url else assets.hero }}');background-size:cover;background-position:center;background-blend-mode:normal;border-radius:13px;">
 <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="width:100%;"><tr><td class="hero-copy" style="padding:{{ tokens.hero_copy_pad }};color:#fff;">
 <table role="presentation" class="hero-text" width="100%" cellpadding="0" cellspacing="0" border="0" style="width:100%;"><tr><td style="color:#fff;">
 <div style="font:700 {{ tokens.hero_label }} Arial,Helvetica,sans-serif;text-transform:uppercase;margin-bottom:3px;">{{ hero.dates }}</div>
@@ -50,7 +60,7 @@
 {% if not loop.first %}<td class="support-gap" style="display:none;width:1.5%;font-size:0;">&nbsp;</td>{% endif %}
 <td class="support-column" valign="top" style="display:block;box-sizing:border-box;width:100%;vertical-align:top;border:1px solid #d9d1c9;border-radius:13px;background:#fcf6ee;box-shadow:0 2px 3px #d4cec7;overflow:hidden;margin-bottom:9px;">
 <table role="presentation" class="support-card" width="100%" cellpadding="0" cellspacing="0" border="0" style="width:100%;border:0;border-spacing:0;">
-<tr><td><img class="support-photo" src="{{ pick.image_render_url if pick.image_url else assets.hero }}" alt="{{ pick.image_alt if pick.image_url else 'No verified event photograph available' }}" width="302" height="58" style="display:block;width:100%;height:58px;object-fit:cover;mix-blend-mode:luminosity;border-radius:12px 12px 0 0;border:0;"></td></tr>
+<tr><td><img class="support-photo" src="{{ pick.image_render_url if pick.image_url else assets.hero }}" alt="{{ pick.image_alt if pick.image_url else 'No verified event photograph available' }}" width="302" height="120" style="display:block;width:100%;height:120px;object-fit:cover;border-radius:12px 12px 0 0;border:0;"></td></tr>
 <tr><td style="padding:{{ tokens.card_body_pad }};">
 <div style="font:700 {{ tokens.hero_label }} Arial,Helvetica,sans-serif;text-transform:uppercase;">{{ pick.dates }}</div>
 <div style="font:bold {{ tokens.feature_title }} Georgia,'Times New Roman',serif;letter-spacing:-.5px;margin:1px 0 5px;">{{ pick.display_title|default(pick.title) }}</div>
@@ -64,7 +74,7 @@
 <tr><td class="pad" style="padding:{{ tokens.section_gap }} 25px 0;">{{ section_heading('New discoveries') }}
 <table role="presentation" class="discovery-list" width="100%" cellpadding="0" cellspacing="0" border="0" style="width:100%;border-collapse:collapse;table-layout:fixed;">
 {% for item in guide.new_discoveries %}<tr class="discovery-row">
-<td class="thumb-cell" width="111" style="box-sizing:border-box;width:111px;padding:{{ tokens.thumbnail_row_pad }} 22px {{ tokens.thumbnail_row_pad }} 0;vertical-align:top;border-bottom:1px solid #ded6cd;"><img class="thumb" src="{{ item.image_render_url if item.image_url else assets.placeholder_thumb }}" alt="{{ item.image_alt if item.image_url else 'No verified event photograph available' }}" width="89" height="43" style="display:block;width:89px;height:43px;object-fit:cover;mix-blend-mode:luminosity;border-radius:6px;border:0;"></td>
+<td class="thumb-cell" width="115" style="box-sizing:border-box;width:115px;padding:{{ tokens.thumbnail_row_pad }} 15px {{ tokens.thumbnail_row_pad }} 0;vertical-align:top;border-bottom:1px solid #ded6cd;"><img class="thumb" src="{{ item.image_render_url if item.image_url else assets.placeholder_thumb }}" alt="{{ item.image_alt if item.image_url else 'No verified event photograph available' }}" width="100" height="76" style="display:block;width:100px;height:76px;object-fit:cover;border-radius:6px;border:0;"></td>
 <td style="vertical-align:top;border-bottom:1px solid #ded6cd;">
 <table role="presentation" class="discovery-columns" width="100%" cellpadding="0" cellspacing="0" border="0" style="width:100%;table-layout:fixed;border-collapse:collapse;"><tr>
 <td class="discovery-main row-main" style="display:block;box-sizing:border-box;width:100%;padding:{{ tokens.discovery_main_pad }};vertical-align:top;">
