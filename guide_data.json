@@ -20,7 +20,8 @@
       "image_cache_file": "verkligheten-press.jpg",
       "image_source_url": "https://kontrar.se/en/show/verkligheten/",
       "image_verified": true,
-      "image_checked_at": "2026-11-02"
+      "image_checked_at": "2026-11-02",
+      "image_cache_sha256": "10e6d947e937fb2a1c3d6c9d5242acefd3094779c8081d980d4b63d61252ed6d"
     },
     {
       "title": "Adam Pultz & The Spectral Parrot",
@@ -88,7 +89,8 @@
       "image_cache_file": "borda-press.jpg",
       "image_source_url": "https://dansenshus.se/en/program/lia-rodrigues-bra-borda/",
       "image_verified": true,
-      "image_checked_at": "2026-11-02"
+      "image_checked_at": "2026-11-02",
+      "image_cache_sha256": "586814eab78f4143d0cad1b4af269f983a0d032a785c636c105430470cb34c2f"
     },
     {
       "day": "Fri 6 Nov",
@@ -215,7 +217,8 @@
       "image_cache_file": "verkligheten-press.jpg",
       "image_source_url": "https://kontrar.se/en/show/verkligheten/",
       "image_verified": true,
-      "image_checked_at": "2026-11-02"
+      "image_checked_at": "2026-11-02",
+      "image_cache_sha256": "10e6d947e937fb2a1c3d6c9d5242acefd3094779c8081d980d4b63d61252ed6d"
     },
     {
       "day": "Fri 13 Nov",

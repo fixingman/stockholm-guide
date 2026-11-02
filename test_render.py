@@ -14,7 +14,7 @@ class RenderTests(unittest.TestCase):
             source = Path(folder) / 'data.json'
             output = Path(folder) / 'email.html'
             source.write_text(json.dumps(data))
-            result = subprocess.run([sys.executable, str(BASE / 'render.py'), '--data', str(source),
+            result = subprocess.run([sys.executable, *([] if __debug__ else ['-O']), str(BASE / 'render.py'), '--data', str(source),
                                      '--output', str(output)], capture_output=True, text=True)
             return result, output.read_text() if output.exists() else ''
 
@@ -32,6 +32,14 @@ class RenderTests(unittest.TestCase):
         data['top3'][0]['image_verified'] = False
         result, html = self.render(data)
         self.assertNotEqual(result.returncode, 0)
+        self.assertEqual(html, '')
+
+    def test_modified_verified_snapshot_cannot_render(self):
+        data = json.loads((BASE / 'guide_data.json').read_text())
+        data['top3'][0]['image_cache_sha256'] = 'wrong'
+        result, html = self.render(data)
+        self.assertNotEqual(result.returncode, 0)
+        self.assertIn('verified image bytes changed', result.stderr)
         self.assertEqual(html, '')
 
 if __name__ == '__main__':

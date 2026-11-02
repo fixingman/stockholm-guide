@@ -26,16 +26,9 @@ async def main():
         for name, width, inline_only in [('desktop', 1100, False), ('mobile', 390, False),
                                          ('mobile-small', 320, False), ('inline-only', 390, True), ('inline-small', 320, True)]:
             page = await browser.new_page(viewport={'width': width, 'height': 900})
-            # Keep network out of layout QA; official image load checks are recorded separately.
-            # Load the repository preview as a file so relative branding assets resolve.
-            async def route_image(route):
-                matches = [item for group in data.values() if isinstance(group, list)
-                           for item in group if item.get('image_url') == route.request.url]
-                if matches and matches[0].get('image_cache_file'):
-                    await route.fulfill(path=str(base / 'assets' / matches[0]['image_cache_file']))
-                else:
-                    await route.abort()
-            await page.route('https://**/*', route_image)
+            # Preview loads the actual local files published as email assets.
+            # No request interception substitutes photos or hides production URL failures.
+            await page.route('https://**/*', lambda route: route.abort())
             await page.goto((base / 'preview.html').as_uri())
             if inline_only:
                 await page.locator('style').evaluate_all('(els) => els.forEach(e => e.remove())')

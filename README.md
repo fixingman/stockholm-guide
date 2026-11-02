@@ -30,7 +30,7 @@ Jinja autoescaping is enabled explicitly because the source ends in `.html.j2`. 
 
 [IMAGE_AUDIT.md](IMAGE_AUDIT.md) records the official source, publication evidence and unresolved candidates. Two verified editorial press images are enabled: Verkligheten and Borda, with visible credits. Remaining event image slots deliberately use neutral abstract artwork. Do not infer image identity from a subject keyword or list position.
 
-A photo requires `image_url`, `image_source_url`, `image_verified: true` and descriptive `image_alt`. Check identity and publication terms before setting the flag; record `image_rights_url`, `image_credit` and `image_checked_at`. Unverified proposed images fail rendering. Exact downloaded press-image snapshots support reproducible QA; production HTML uses the official HTTPS image URLs.
+A photo requires `image_url`, `image_source_url`, `image_verified: true` and descriptive `image_alt`. Check identity and publication terms before setting the flag; record `image_rights_url`, `image_credit` and `image_checked_at`. Unverified proposed images fail rendering. Exact downloaded press-image snapshots support reproducible QA; production HTML uses checksum-verified copies on the guide’s HTTPS asset host, retaining official URLs as provenance.
 
 ## Validation
 
@@ -43,3 +43,13 @@ python qa.py --output-dir qa-output
 Set `CHROME_PATH` to use an existing browser executable. QA captures 1100px desktop, 390px mobile, 320px mobile, plus 390px/320px inline-only views. It asserts image loading from exact checked snapshots, all event links and metadata, no document overflow, no brand crossing its column, and HTML size below 100 KB. It writes screenshots and a JSON report.
 
 These are Chromium and inline-only resilience tests, **not actual Gmail/Outlook delivery tests**. Gmail sanitization, dark mode, image proxying and Outlook's Word renderer can still differ. No email was sent to validate this change. The existing Pages workflow, weekly automation, schedule and recipients were not changed.
+
+## Delivery readiness is a separate check
+
+```sh
+python preflight.py --html email.html --report delivery-report.json
+```
+
+This read-only check makes real HTTP requests to the production image URLs, decodes image responses, checks hosted photo checksums, and reports visible event slots without verified photos. It also blocks readiness while the milestone reference is absent. It exits nonzero on failure. The current sample is **not ready for unattended delivery**: eight image slots representing seven distinct events still use placeholders, and the original reference has not been supplied.
+
+Browser QA tests local published files and never swaps a failed remote image for a working snapshot. Live HTTP testing is separate so upstream/deployment failures cannot be hidden by local fixtures. `preflight.py` sends no email and is not connected to the existing weekly scheduler. A scheduler must execute the renderer, browser checks and successful delivery check before any sending step; merely mentioning GitHub in its prompt does not implement that pipeline. No scheduler configuration has been changed in this repository work.

@@ -24,3 +24,13 @@
 The full approved milestone screenshot could not be retrieved: it is absent from repository history and the available prior chat. Only existing image fragments and the documented section composition could be compared. An exact visual match is not established.
 
 No actual Gmail message was sent or opened in a Gmail client during this validation. Chromium screenshots and stylesheet-removal checks are evidence of browser layout and fallback resilience, not a Gmail rendering certification. Unresolved event image slots remain abstract rather than inventing a photograph.
+
+## Follow-up: delivery checks
+
+The original sent test message was inspected read-only through Gmail. Its HTML contains the previous template and ten placeholder-image URLs; the missing event photos were in the sent source, not diagnosed as a Gmail network failure.
+
+The November 2 deployed Pages artifact and both hosted press-image files returned HTTP 200. Delivery HTML now uses those hosted copies, checked against recorded SHA-256 hashes, while retaining official source URLs as provenance. Browser QA no longer intercepts photo requests to serve alternate snapshots. Production checks use actual network requests and decode the received image bytes.
+
+A new `preflight.py` exits nonzero for missing event photography, relative/broken image URLs, changed published photo bytes, excessive HTML size, or a missing milestone reference. Tests ensure a loaded placeholder cannot produce a ready result and a network failure stays a failure. Renderer validations use explicit exceptions, which remain enabled under optimized Python execution.
+
+The sample remains **not ready for unattended delivery**: eight visible slots across seven distinct events still lack verified photos. The newly supplied shared image URL opens a titled but empty message body in the available browser, so the reference image still needs to be attached directly. This follow-up adds no layout redesign and no scheduler/send/recipient changes. The preflight is repository tooling, not an already-connected scheduler guarantee.
