@@ -1,24 +1,23 @@
-# November sample image audit — 2 November 2026
+# November image audit — 2 November 2026
 
-The original JSON had no `image_url` fields. All ten visible event image slots therefore intentionally rendered neutral artwork; this was not ten broken image downloads. Seven discoveries plus three picks cover nine distinct events.
+The original test email contained ten deliberate placeholder URLs. All ten visible image slots now have identified official imagery, spanning nine unique events/productions. No mockup event crops or generated event images are used.
 
-## Enabled
-
-- **Verkligheten:** the [official production page](https://kontrar.se/en/show/verkligheten/) links the exact `Verkligheten_PRESS_03-Foto_-Julia-Mard-1.jpg` photograph. Download returned HTTP 200, image/jpeg. Visually inspected: film camera operator and performers on a studio stage. Credit: Julia Mård. The [venue press policy](https://kontrar.se/en/press/) permits publication of press images in related articles/reviews. Used as an editorial event illustration; not a general image license.
-- **Borda:** the [official event page](https://dansenshus.se/en/program/lia-rodrigues-bra-borda/) identifies the production; the [official press-image record](https://press.dansenshus.se/media/377195/borda-lia-rodrgues-foto-sammi-landweer1) explicitly labels this image **Media use**, credits © Sammi Landweer, and identifies the November production. Its actual image URL is `https://cdn.filestackcontent.com/auto_image/dWBAdpO8R9RXrGpe64Ko` (not the press page's generic social header image). Download returned HTTP 200, image/jpeg. Visually inspected: a figure surrounded by translucent material on a dark stage.
-
-The JSON records direct official image URLs, event/source URLs, rights evidence, credit, check date and alt text. Byte-identical downloaded snapshots in `assets/*-press.jpg` make local browser QA deterministic. The renderer checks their SHA-256 values and uses local paths for previews and the guide’s HTTPS asset host for email. QA performs no photo substitution. A separate live preflight validates the actual published image URLs and exact photo bytes. Original official image URLs remain recorded as provenance. Publication terms and upstream availability should be rechecked for future editions.
-
-## Retained neutral artwork
-
-| Event | Finding | Reason not enabled |
+| Event | Exact source and identity | Credit / qualification |
 | --- | --- | --- |
-| Adam Pultz & The Spectral Parrot | Goethe event endpoint returned 403 | Could not verify exact image and publication terms |
-| Fight Symphony | Organizer's Billetto page identifies event; page request returned 403, cached listing exposes a candidate | Identity/rights of the candidate image not independently verified |
-| SELF | Official page publishes a Sanity-hosted candidate | Publication permission for that exact artwork not established |
-| Clown and Le Jeu | Listing publishes `https://nupagang.se/fb-og/90556.jpg` | Aggregator social preview is insufficient official identity/rights evidence |
-| Chamber / Cacti | Official production page publishes a Chamber photograph | Exact publication permission not established |
-| Open Studio — Ink & Line | Tickster listing publishes a CDN candidate | Exact image identity/publication permission not established |
-| Art of: Drag × Admira | Sample event URL returned 404 | No verified event-specific image obtained |
+| Adam Pultz & The Spectral Parrot | [Goethe event page](https://www.goethe.de/ins/se/de/ver.cfm?event_id=27371285), inspected in browser; its published JPEG variant loads and depicts the named artist | © Carina Khorkhordina; artist portrait, not a saxophone performance |
+| Verkligheten | [Official production page](https://kontrar.se/en/show/verkligheten/) and its linked press photo; studio camera operator and performers | Julia Mård; [venue press policy](https://kontrar.se/en/press/) permits editorial use in related articles |
+| Fight Symphony | [Organizer's Billetto event](https://billetto.se/en/e/fight-symphony-seungwoo-park-biljetter-2023053), inspected in browser; airborne martial-arts promotional photograph | Supplied on Galleri Steinsland Berliner event listing; no photographer name invented |
+| SELF | [Fotografiska event](https://stockholm.fotografiska.com/en/events/self-artist-talk-and-opening); published SELF image combines a portrait and eye close-up | Fotografiska / SELF source attribution |
+| Clown and Le Jeu | [Organizer's workshop page](https://jonassodergrenschool.com/workshops.html); source file explicitly identifies an archive workshop group in Caen | Rendered caption: **Organizer workshop archive (Caen)**. Not claimed to show the November Stockholm session. The same source verifies 3, 5, 10 & 12 Nov, 10:00–14:00, 3,200 SEK |
+| Chamber / Cacti | [Royal Swedish Opera production page](https://www.operan.se/en/productions/chamber-cacti); Chamber production photograph of dancers on a blue-lit stage | Royal Swedish Opera / Chamber source attribution; not the mockup's cactus image |
+| Borda | [Official event](https://dansenshus.se/en/program/lia-rodrigues-bra-borda/) and [specific press record](https://press.dansenshus.se/media/377195/borda-lia-rodrgues-foto-sammi-landweer1); figure surrounded by translucent material | © Sammi Landweer; press record labels **Media use** |
+| Open Studio — Ink & Line | [Actual Tickster session](https://www.tickster.com/se/en/events/3k1f32bajd91041/2026-11-06/oppen-atelje); published ink portrait drawing | Organizer session artwork, not a photo of participants |
+| Art of: Drag × Admira | [Official Fotografiska ticket page](https://tickets-stockholm.fotografiska.com/productDetail/240623?lang=en), which names November Nights and the Christmas edition; Admira in a white costume before a pink curtain | Fotografiska / Art of: Drag source attribution; this accessible source replaces reliance on the intermittently unavailable event-page image |
 
-No stock images, generated event imagery, old mockup event crops or photographs of unrelated productions were added. Worth reconsidering remains image-free.
+## URL integrity
+
+Every enabled image was loaded and visually inspected. The exact source bytes have a recorded SHA-256 value, checked by live preflight. The two licensed press snapshots remain hosted on the guide's asset host; newly found official images are linked to their original hosts, with no new redistribution-license claim. `image_verified` means source and visual identity checked, not that all images share the press images' license terms. Credits and source attribution are kept distinct from license evidence.
+
+Two failed candidates were caused by altered URLs, not absent pictures: the earlier Fight Symphony image had signed query parameters reordered, and a cached workshop image URL also differed from the organizer's actual tag. Exact DOM/HTML-published URLs, including their original parameter order and encoding, returned HTTP 200. Do not rebuild these URLs from a query dictionary.
+
+The official archive qualification for the clown photo is preserved in alt text, its visible caption and `image_kind`. No image is presented as documentary evidence of future November attendance. Reconsideration rows do not render event images even when the underlying event also appears in Top 3.

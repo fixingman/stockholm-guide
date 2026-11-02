@@ -1,6 +1,6 @@
 """Delivery checks must report missing and unreachable images as failures."""
 import unittest
-from preflight import check_image, inspect
+from preflight import Images, check_image, inspect
 
 class PreflightTests(unittest.TestCase):
     def test_relative_email_image_is_rejected_without_network(self):
@@ -21,6 +21,16 @@ class PreflightTests(unittest.TestCase):
                          image_checker=lambda url: {'url': url, 'ok': True})
         self.assertFalse(report['ready_for_delivery'])
         self.assertEqual(report['unresolved_event_image_slots'][0]['title'], 'Event')
+
+    def test_signed_query_order_and_background_urls_are_preserved(self):
+        signed = 'https://example.com/photo?w=1440&h=810&auto=compress%2Cformat&s=signature'
+        parser = Images()
+        parser.feed('<td background="' + signed.replace('&', '&amp;') + '"></td>')
+        self.assertEqual(parser.urls, [signed])
+        def verify_request(request, **kwargs):
+            self.assertEqual(request.full_url, signed)
+            raise OSError('checked exact URL')
+        self.assertIn('checked exact URL', check_image(signed, opener=verify_request)['error'])
 
 if __name__ == '__main__':
     unittest.main()

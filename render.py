@@ -20,7 +20,7 @@ require(g.get('hero_pick_index', 0) in (0, 1, 2), 'Invalid guide data')
 for key in ('top3','new_discoveries','worth_reconsidering','unavailable'):
  require(g[key], key)
  for idx,x in enumerate(g[key]):
-  required=('title','dates','url','price','booking') if key=='unavailable' else ('title','dates','url','description','price','booking')
+  required=('title','dates','url','price','booking') if key=='unavailable' else ('title','dates','url','description','price','booking','venue')
   require(all((x.get(k) for k in required)), f'{key}[{idx}] missing metadata')
   require(urlparse(x['url']).scheme == 'https', 'Invalid guide data')
   # An event photograph may be used ONLY when its official provenance was checked.
@@ -47,6 +47,9 @@ for key in ('top3','new_discoveries','worth_reconsidering','unavailable'):
    # Unverified images never render, even if an obsolete thumbnail field exists.
    x.pop('image_url',None)
 assets={'stroke':f'{asset}/milestone_heading_stroke.png','brush':f'{asset}/milestone_brush.jpg','torn':f'{asset}/milestone_torn.png','hero':f'{asset}/event-placeholder.jpg','secondary1':f'{asset}/event-placeholder.jpg','secondary2':f'{asset}/event-placeholder.jpg','placeholder_thumb':f'{asset}/event-placeholder-thumb.jpg','skyline':f'{asset}/milestone_skyline.png'}
+for name in ('calendar','pin'):
+ for suffix in ('','_white'):
+  assets[name+suffix]=f'{asset}/icon-{name}{"-white" if suffix else ""}.png'
 env=Environment(loader=FileSystemLoader(base),autoescape=select_autoescape(default=True))
 html=env.get_template('template.html.j2').render(guide=g,assets=assets)
 Path(a.output).write_text(html,encoding='utf-8')

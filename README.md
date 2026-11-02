@@ -1,55 +1,59 @@
 # Stockholm Guide
 
-A fixed, table-based HTML email template for the November 1–14, 2026 sample. The design described in the earlier milestone uses a black editorial masthead, a dark hero plus two supporting cards, separate discoveries and reconsideration lists, and a skyline footer.
+A reusable HTML email renderer based on the supplied **The Stockholm Guide: Top Picks & Discoveries** milestone image. The original reference is now included as `milestone-reference.png`; its visual composition is recorded in `layout-spec.json`.
 
-**Reference limitation:** the earlier README claimed `milestone-reference.png` was included. It is absent from every repository commit. The available prior-chat history also does not contain the screenshot. The existing `assets/milestone_*` fragments are retained, but a screenshot-level comparison with the approved composition remains pending retrieval of the original reference. Do not describe this build as a verified visual match.
+The layout uses the black masthead and brush, a single continuous photographic hero with live text, two supporting cards, compact discovery rows with thumbnail / text / date / venue columns, separate image-free reconsideration rows, rules beside the section headings, and the skyline footer. Mobile and stylesheet-free views stack the row columns. All 3 picks, 7 discoveries, 17 reconsiderations and 6 unavailable sample entries remain; the real edition is consequently taller than the illustrative reference.
 
-## Build
+The mockup is a design reference, not event evidence: its saxophone photograph, venues, descriptions, dates and issue #142 are not copied as facts. The sample retains issue #001 and verified event information, full prices/booking qualifications and all 33 event links.
+
+## One-command build
 
 ```sh
 python -m pip install -r requirements.txt
-python render.py --data guide_data.json --output preview.html
-cp preview.html index.html
-python render.py --data guide_data.json --output email.html \
-  --asset-base-url https://fixingman.github.io/stockholm-guide/assets
+python -m playwright install chromium
+python build.py --data guide_data.json --output-dir build
 ```
 
-- `template.html.j2`: fixed presentation source; populate it rather than recreating the layout weekly.
-- `guide_data.json`: sample content, with 3 picks, 7 discoveries, 17 reconsiderations and 6 unavailable items. `hero_pick_index: 1` retains the sample's hero choice.
-- `preview.html` and `index.html`: identical browser previews with local branding paths. `index.html` is the existing GitHub Pages entrypoint.
-- `email.html`: populated email HTML with absolute HTTPS branding URLs. Use this artifact as the HTML body when a send is explicitly requested; do not paste or attach the browser preview as a substitute. This repository does not send email.
-- `preview.txt`: full plain-text content. The renderer also produces a text sibling for other output paths.
+Use `CHROME_PATH=/path/to/browser` to select an installed Chromium browser. The build:
 
-## Email layout
+1. Clears any prior success marker and records hashes of the data, template and reference.
+2. Renders a local preview, absolute-HTTPS email HTML and plain text.
+3. Checks desktop 1100px, mobile 390px/320px, and stylesheet-free 390px/320px views.
+4. Verifies actual production image URLs over HTTP, image decoding, and the checked photo hashes.
+5. Writes `build/build-report.json` with `ready_for_delivery: true` only when every step succeeds. Any missing/changed image, layout failure or missing reference leaves a nonzero exit and a false result.
 
-The shell is fluid with a 650px maximum width. Narrow-screen rules stack only the intended feature columns, not every nested table cell. Cards stack by default when a client removes styles; desktop media rules restore the columns. Header columns and brand sizes are constrained for desktop, narrow mobile, and an inline-only fallback. A table spacer separates the feature cards. All factual descriptions, date/price/booking details and original links are retained without truncation; reconsiderations remain image-free.
+The command has **no sending step** and contains no recipient list. The existing scheduler has not been changed or connected to this command. A scheduled runner must execute this build successfully and use its generated `email.html` as the HTML body, rather than reconstructing the email from a prompt. This repository alone does not establish that the weekly automation is configured correctly.
 
-Jinja autoescaping is enabled explicitly because the source ends in `.html.j2`. Browser QA checks text boundaries as well as document overflow.
+## Files
+
+- `template.html.j2`: fixed layout; weekly discovery supplies structured JSON, not new HTML.
+- `guide_data.json`: November 1–14 sample, source/credit records and checked image hashes.
+- `render.py`: requires complete title/date/description/price/booking/venue/link fields; escapes all text; rejects unverified or changed cached photos.
+- `preview.html` / `index.html`: matching preview and existing Pages entrypoint.
+- `email.html`: same edition with absolute HTTPS branding paths.
+- `preview.txt`: full plain-text content.
+- `qa.py`: checks actual images and backgrounds, content, link counts, overflow, masthead boundaries, a single-cell hero, and desktop column alignment/mobile stacking. It never substitutes a working image for a failed URL.
+- `preflight.py`: independent live image/content readiness report.
+- `IMAGE_AUDIT.md`: per-image provenance, credit, source limitations and publication evidence where available.
+- `VALIDATION.md`: comparison findings and validation boundaries.
 
 ## Images
 
-[IMAGE_AUDIT.md](IMAGE_AUDIT.md) records the official source, publication evidence and unresolved candidates. Two verified editorial press images are enabled: Verkligheten and Borda, with visible credits. Remaining event image slots deliberately use neutral abstract artwork. Do not infer image identity from a subject keyword or list position.
+Every visible photo slot now has identified official event/artist/organizer imagery. The clown course uses an explicitly labeled **organizer workshop archive (Caen)**; it is not represented as a photograph of the November Stockholm session. The seven other unique event images and Adam Pultz portrait are matched to their official production/event/ticket sources.
 
-A photo requires `image_url`, `image_source_url`, `image_verified: true` and descriptive `image_alt`. Check identity and publication terms before setting the flag; record `image_rights_url`, `image_credit` and `image_checked_at`. Unverified proposed images fail rendering. Exact downloaded press-image snapshots support reproducible QA; production HTML uses checksum-verified copies on the guide’s HTTPS asset host, retaining official URLs as provenance.
+`image_verified` records official-source provenance and visual identity; it is not a claim of a separate redistribution license. The two previously verified press images are hosted as checked copies; other newly identified images remain linked to their exact official URLs. Original URLs, source pages, credits, check dates and SHA-256 checks are retained. Do not normalize, reorder or regenerate signed image query strings: the exact Fight Symphony URL works while the earlier reordered URL returned 403.
 
-## Validation
+When a future event has no identified image, retain a clearly neutral fallback in the preview and let delivery preflight report the edition incomplete. Never invent event imagery or silently substitute another production's photograph. Reconsiderations remain image-free.
+
+## Individual commands
 
 ```sh
-python test_render.py
-python -m playwright install chromium
+python render.py --output preview.html
+cp preview.html index.html
+python render.py --output email.html --asset-base-url https://fixingman.github.io/stockholm-guide/assets
+python -m unittest test_render test_preflight test_build
 python qa.py --output-dir qa-output
-```
-
-Set `CHROME_PATH` to use an existing browser executable. QA captures 1100px desktop, 390px mobile, 320px mobile, plus 390px/320px inline-only views. It asserts image loading from exact checked snapshots, all event links and metadata, no document overflow, no brand crossing its column, and HTML size below 100 KB. It writes screenshots and a JSON report.
-
-These are Chromium and inline-only resilience tests, **not actual Gmail/Outlook delivery tests**. Gmail sanitization, dark mode, image proxying and Outlook's Word renderer can still differ. No email was sent to validate this change. The existing Pages workflow, weekly automation, schedule and recipients were not changed.
-
-## Delivery readiness is a separate check
-
-```sh
 python preflight.py --html email.html --report delivery-report.json
 ```
 
-This read-only check makes real HTTP requests to the production image URLs, decodes image responses, checks hosted photo checksums, and reports visible event slots without verified photos. It also blocks readiness while the milestone reference is absent. It exits nonzero on failure. The current sample is **not ready for unattended delivery**: eight image slots representing seven distinct events still use placeholders, and the original reference has not been supplied.
-
-Browser QA tests local published files and never swaps a failed remote image for a working snapshot. Live HTTP testing is separate so upstream/deployment failures cannot be hidden by local fixtures. `preflight.py` sends no email and is not connected to the existing weekly scheduler. A scheduler must execute the renderer, browser checks and successful delivery check before any sending step; merely mentioning GitHub in its prompt does not implement that pipeline. No scheduler configuration has been changed in this repository work.
+These are browser composition and live-network checks, **not a Gmail delivery certification**. No new test email has been sent. The template uses tables, inline styles, background attributes and width media queries supported in [Google's Gmail CSS reference](https://developers.google.com/workspace/gmail/design/css); client-specific sanitization, dark mode, proxies and Outlook's Word renderer can still vary.

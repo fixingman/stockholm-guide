@@ -1,36 +1,39 @@
-# Validation — 2 November 2026
+# Validation — reference-based revision, 2 November 2026
 
-## Findings and correction
+## Reference comparison
 
-- All event images were fallbacks because the sample JSON contained no image metadata. Enabled two verified official press photographs and retained neutral artwork for unresolved events; see IMAGE_AUDIT.md.
-- The 650px fixed-width shell was dependent on a media query to shrink. It is now fluid inline, with a desktop maximum.
-- Header percentage widths, padding and a fixed 196px brush competed for space. The brush is now fluid; header type and column widths have narrow-screen and inline-only fallbacks.
-- The former mobile selector changed every nested feature-table cell to a full-width block. Stacking is now limited to the feature columns.
-- Supporting-card spacing now uses a table spacer instead of relying on a table margin.
-- `.html.j2` was not covered by the previous autoescape extension list. Explicit autoescaping prevents event text from injecting markup.
-- Regenerated the Pages entrypoint and added a distinct email artifact with absolute branding paths.
+The user supplied `The Stockholm Guide_ Top Picks & Discoveries.png` directly. It is preserved as `milestone-reference.png`, with its SHA-256 recorded in `layout-spec.json` and every build manifest.
+
+The previous implementation diverged in composition: detached hero photo, paragraph-style discovery/reconsideration lists, dates and venues below the prose, no ruled section headings, and incorrect masthead proportions. The revised template reproduces the reference's composition with:
+
+- A stacked serif brand, vertical tagline separator, brush background, issue line and torn-paper edge.
+- One continuous photographic hero background with readable live text, followed by two equal-height image-strip cards.
+- Compact discovery rows: thumbnail, title/description, date/time and venue in separate desktop columns.
+- Separate image-free reconsideration rows: title, description, date/time and venue columns.
+- Section heading rules, monochrome image blending and the original skyline footer.
+- Stacked mobile/stylesheet-free layouts, with protected text backgrounds in the narrow masthead.
+
+The reference's fictional/inaccurate event photographs, venues, descriptions and issue #142 are not copied as factual content. All 33 entries/links and their complete descriptions, price/booking qualifications remain, so the actual edition is taller than the concept image. The unavailable section remains complete.
+
+## Image verification
+
+All ten visible slots now have identified official event, artist or organizer imagery. Sources were opened, image files loaded and inspected visually, and the exact bytes hashed. The clown photograph is explicitly labeled **Organizer workshop archive (Caen)** rather than represented as the November Stockholm session. See IMAGE_AUDIT.md for all nine unique source records.
+
+The exact signed Fight Symphony URL works; the earlier parameter-reordered URL returned 403. The organizer's exact workshop-image tag also works where the cached reordered candidate failed. URL parameter order and encoding are preserved. Known press-image copies remain self-hosted; newly identified images link to their original official hosts and make no independent redistribution-license claim.
+
+The organizer's workshop page additionally verifies 3, 5, 10 & 12 November, 10:00–14:00 and 3,200 SEK. Those replace the sample's unknown course timetable/price, with the supporting source retained.
 
 ## Checks
 
-- Renderer preserves all 3 / 7 / 17 / 6 items, metadata and original event links.
-- Regression tests reject an unverified photo and escape markup in event titles.
-- Browser checks at 1100px, 390px and 320px, plus 390px and 320px with the stylesheet removed. Assertions cover image loads, all 33 event links, content presence, document overflow, masthead text crossing columns and HTML size.
-- Official Verkligheten and Borda image endpoints returned HTTP 200 image/jpeg; exact photographs were visually inspected. Offline layout tests use byte-identical snapshots, not silent fallback images.
-- `index.html` equals `preview.html`; `email.html` differs only in absolute branding paths.
-- No email-send code or workflow was run. No recipient, schedule, weekly automation or routing configuration was changed.
+- Eight regression tests cover escaping, unverified/modified photos, absolute URLs, network failures, placeholders, signed/background URLs and clearing a stale successful build marker.
+- Five browser views: 1100px desktop, 390px/320px mobile, and 390px/320px with the stylesheet removed. Tests assert full metadata, all 33 links, images/backgrounds loading, no document overflow, masthead boundaries, the integrated hero and the desktop/mobile row-column structure.
+- Browser QA uses actual URLs and local published files, without request interception or substitute photos. One browser context shares its normal network cache across viewport checks.
+- Live preflight fetches and decodes production image URLs, compares checked image hashes and verifies the recorded reference hash. It reports missing or changed image sources and exits nonzero on failure.
+- `build.py` renders preview/email/plain text, runs browser QA and live preflight, and records input/template/reference/email hashes. It clears the old success marker before checking inputs and never marks an interrupted/failed build ready.
+- Preview and Pages entrypoint are identical. Email HTML differs only in absolute branding/hosted-image URLs and remains below the 100 KB clipping guard.
 
-## Limits
+## Execution boundaries
 
-The full approved milestone screenshot could not be retrieved: it is absent from repository history and the available prior chat. Only existing image fragments and the documented section composition could be compared. An exact visual match is not established.
+No new test email has been sent. No recipient, schedule, weekly automation, provider, proxy or routing setting was changed. The repository build command contains no sending code. Connecting/verifying the existing Sunday scheduler is separate from validating this edition; a successful build does not establish that the scheduler invokes it.
 
-No actual Gmail message was sent or opened in a Gmail client during this validation. Chromium screenshots and stylesheet-removal checks are evidence of browser layout and fallback resilience, not a Gmail rendering certification. Unresolved event image slots remain abstract rather than inventing a photograph.
-
-## Follow-up: delivery checks
-
-The original sent test message was inspected read-only through Gmail. Its HTML contains the previous template and ten placeholder-image URLs; the missing event photos were in the sent source, not diagnosed as a Gmail network failure.
-
-The November 2 deployed Pages artifact and both hosted press-image files returned HTTP 200. Delivery HTML now uses those hosted copies, checked against recorded SHA-256 hashes, while retaining official source URLs as provenance. Browser QA no longer intercepts photo requests to serve alternate snapshots. Production checks use actual network requests and decode the received image bytes.
-
-A new `preflight.py` exits nonzero for missing event photography, relative/broken image URLs, changed published photo bytes, excessive HTML size, or a missing milestone reference. Tests ensure a loaded placeholder cannot produce a ready result and a network failure stays a failure. Renderer validations use explicit exceptions, which remain enabled under optimized Python execution.
-
-The sample remains **not ready for unattended delivery**: eight visible slots across seven distinct events still lack verified photos. The newly supplied shared image URL opens a titled but empty message body in the available browser, so the reference image still needs to be attached directly. This follow-up adds no layout redesign and no scheduler/send/recipient changes. The preflight is repository tooling, not an already-connected scheduler guarantee.
+Google's [Gmail CSS reference](https://developers.google.com/workspace/gmail/design/css) documents the table, width media-query, background, object-fit and blend-mode properties used. Browser and live-network checks are not certification of actual Gmail delivery, image proxy behavior, dark mode or Outlook's Word renderer.

@@ -1,0 +1,28 @@
+{
+  "reference_file": "milestone-reference.png",
+  "reference_sha256": "cf52a57fb1384c8a01018b35aed522eba940febf9d1959419cde0728f12f8406",
+  "email_max_width": 650,
+  "hero": "One background cell, readable live text over left side; no detached image column",
+  "supporting_cards": "Two equal-height image-strip cards on desktop; stacked mobile",
+  "discoveries_desktop": [
+    "thumbnail",
+    "title, description, price and booking",
+    "dates and time",
+    "venue"
+  ],
+  "reconsiderations_desktop": [
+    "title",
+    "description, price and booking",
+    "dates and time",
+    "venue"
+  ],
+  "mobile": "Stack text/date/venue columns without truncating metadata",
+  "retained_art": [
+    "masthead brush",
+    "torn edge",
+    "heading stroke",
+    "skyline footer"
+  ],
+  "factual_content": "Use researched JSON, not illustrative text or photos in reference",
+  "additional_content": "Retain all 33 source entries/links, including unavailable section, so full edition is taller than reference"
+}

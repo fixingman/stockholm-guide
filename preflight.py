@@ -17,8 +17,11 @@ class Images(HTMLParser):
         super().__init__()
         self.urls = []
     def handle_starttag(self, tag, attrs):
+        fields = dict(attrs)
         if tag == 'img':
-            self.urls.append(dict(attrs).get('src', ''))
+            self.urls.append(fields.get('src', ''))
+        if fields.get('background'):
+            self.urls.append(fields['background'])
 
 def check_image(url, opener=urlopen):
     if urlparse(url).scheme != 'https' or not urlparse(url).netloc:
@@ -47,10 +50,16 @@ def inspect(html, data, image_checker=check_image):
                   for section in ('top3', 'new_discoveries') for item in data[section]
                   if not item.get('image_url') or item.get('image_verified') is not True]
     failures = []
+    by_url = {result['url']: result for result in results}
     by_name = {Path(urlparse(result['url']).path).name: result for result in results}
     for section in ('top3', 'new_discoveries'):
         for item in data[section]:
             filename = item.get('image_cache_file')
+            source_hash = item.get('image_source_sha256')
+            if source_hash and not filename:
+                actual_source = by_url.get(item['image_url'])
+                if not actual_source or actual_source.get('sha256') != source_hash:
+                    failures.append(f"Official image missing or changed since identity review: {item['title']}")
             if item.get('image_verified') is True and filename:
                 actual = by_name.get(filename)
                 if not actual or actual.get('sha256') != item.get('image_cache_sha256'):
@@ -67,6 +76,10 @@ def inspect(html, data, image_checker=check_image):
     reference = BASE / 'milestone-reference.png'
     if not reference.is_file():
         failures.append('Approved milestone image has not been captured in the repository')
+    else:
+        spec = json.loads((BASE / 'layout-spec.json').read_text())
+        if hashlib.sha256(reference.read_bytes()).hexdigest() != spec['reference_sha256']:
+            failures.append('Milestone reference differs from the recorded layout specification')
     return {'ready_for_delivery': not failures, 'failures': failures,
             'unresolved_event_image_slots': unresolved, 'images': results,
             'html_bytes': len(html.encode('utf-8')),
