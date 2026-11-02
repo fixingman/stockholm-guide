@@ -44,7 +44,7 @@ async def main():
                 await page.locator('.sky').screenshot(path=str(output / f'{name}-footer.png'))
             result = await page.evaluate('''() => ({
                 brandTextRight: (()=>{let r=document.createRange();r.selectNodeContents(document.querySelector('.brand'));return r.getBoundingClientRect().right})(),
-                brandCellRight: document.querySelector('.brand-cell').getBoundingClientRect().right,
+                mastheadRight: document.querySelector('.masthead').getBoundingClientRect().right,
                 viewport: innerWidth, scrollWidth: document.documentElement.scrollWidth,
                 images: [...document.images].map(x => ({src:x.getAttribute('src'),ok:x.complete && x.naturalWidth > 0})),
                 headings: [...document.querySelectorAll('h2')].map(x=>x.textContent.trim()),
@@ -53,7 +53,7 @@ async def main():
                 overflow: [...document.querySelectorAll('*')].filter(e=>e.getBoundingClientRect().right>innerWidth+1)
                     .map(e=>({tag:e.tagName,cls:e.className,right:Math.round(e.getBoundingClientRect().right)}))
             })''')
-            assert result['brandTextRight'] <= result['brandCellRight'] + 1, (name, 'brand crosses column', result['brandTextRight'], result['brandCellRight'])
+            assert result['brandTextRight'] <= result['mastheadRight'] + 1, (name, 'brand crosses masthead', result['brandTextRight'], result['mastheadRight'])
             columns = await page.evaluate('''() => {
                 const rect = s => {let r=document.querySelector(s).getBoundingClientRect();return {x:r.x,y:r.y,right:r.right,bottom:r.bottom}};
                 return {main:rect('.discovery-main'),date:rect('.discovery-date'),venue:rect('.discovery-venue'),
