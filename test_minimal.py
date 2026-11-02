@@ -29,7 +29,7 @@ class MinimalTests(unittest.TestCase):
                 self.assertTrue(any(photo.replace("&", "&amp;") in x or photo in x for x in a.images), photo)
             self.assertNotIn("class=\"top-date",html)
             self.assertEqual(html.count("class=\"top-thumb\""),3)
-            self.assertIn("milestone_skyline.png",a.images[0])
+            self.assertIn("milestone_skyline.png",a.images[-1])
             self.assertEqual(html.count("class=\"event-name\""),expected)
             self.assertNotIn("→",html)
             for section in ("top3","new_discoveries","worth_reconsidering","unavailable"):
