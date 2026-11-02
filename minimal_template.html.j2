@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Stockholm Guide — {{ guide.date_range }}</title>
+<style>
+@media screen and (max-width:600px){
+ .outer{padding:0!important}.shell{width:100%!important;max-width:100%!important;border-radius:0!important}
+ .inset{padding-left:19px!important;padding-right:19px!important}
+ .brand{font-size:36px!important;line-height:35px!important;letter-spacing:-1.6px!important}
+ .descriptor{font-size:8px!important;line-height:13px!important;letter-spacing:.2px!important}
+ .brand-cell{width:63%!important}.descriptor-cell{width:37%!important}
+ .top-thumb-cell{width:88px!important;padding-right:12px!important}.top-thumb{width:76px!important;height:76px!important}.event-content{padding-left:13px!important}
+ .event-name{font-size:17px!important;line-height:23px!important}
+ .event-description{font-size:13px!important;line-height:19px!important}
+ .section-heading{font-size:12px!important;line-height:18px!important;letter-spacing:1px!important}
+ .edition{font-size:11px!important;line-height:16px!important}
+ .section-pad{padding-top:26px!important}.row-pad{padding-top:14px!important;padding-bottom:14px!important}
+}
+@media screen and (max-width:360px){
+ .brand{font-size:30px!important;line-height:30px!important}
+ .descriptor{font-size:7px!important;line-height:12px!important}
+ .inset{padding-left:15px!important;padding-right:15px!important}
+ .top-thumb-cell{width:68px!important;padding-right:8px!important}.top-thumb{width:60px!important;height:60px!important}
+ .event-content{padding-left:10px!important}
+}
+</style>
+</head>
+<body style="margin:0;padding:0;background:#f2f0eb;color:#121212;-webkit-text-size-adjust:100%;">
+<div style="display:none;font-size:1px;line-height:1px;max-height:0;max-width:0;opacity:0;overflow:hidden;">{{ guide.intro }} — {{ guide.date_range }}</div>
+{% macro section_header(name) -%}
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;width:100%;border-bottom:1px solid #292929;">
+<tr><td style="width:14px;vertical-align:middle;padding:0 0 12px;"><span style="display:block;width:10px;height:10px;border-radius:50%;background:#111;font-size:0;line-height:0;">&nbsp;</span></td><td style="vertical-align:middle;padding:0 0 12px 10px;"><div class="section-heading" style="font:bold 14px/20px 'Courier New',Courier,monospace;letter-spacing:1.5px;text-transform:uppercase;">{{ name }}</div></td></tr>
+</table>
+{%- endmacro %}
+{% macro event_body(item, condensed=false) -%}
+<a class="event-name" href="{{ item.url }}" style="font:bold {{ '17px/23px' if condensed else '19px/25px' }} Arial,Helvetica,sans-serif;letter-spacing:-.45px;text-decoration:none;color:#121212;">{{ item.display_title|default(item.title) }}</a>
+<div class="event-meta" style="font:12px/18px 'Courier New',Courier,monospace;color:#444;padding-top:6px;">{{ item.dates }}{% if item.get('venue') %} · {{ item.venue }}{% endif %}</div>
+{% if item.get('description') %}<div class="event-description" style="font:14px/21px Arial,Helvetica,sans-serif;padding-top:7px;color:#262626;">{{ item.description }}</div>{% endif %}
+<div style="font:12px/18px Arial,Helvetica,sans-serif;color:#655f58;padding-top:8px;">{{ item.price }} · Booking: {{ item.booking }}</div>
+{%- endmacro %}
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="width:100%;border-collapse:collapse;">
+<tr><td class="outer" align="center" style="padding:20px 12px 40px;">
+<table role="presentation" class="shell" width="650" cellpadding="0" cellspacing="0" border="0" style="width:100%;max-width:650px;border-collapse:separate;border-spacing:0;background:#fcfaf6;border-radius:15px;overflow:hidden;border:1px solid #e4dfd7;box-shadow:0 4px 16px #0000000b;">
+<tr><td class="inset" style="padding:38px 35px 0;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="width:100%;table-layout:fixed;border-collapse:collapse;"><tr>
+<td class="brand-cell" width="60%" valign="top" style="width:60%;vertical-align:top;padding:0;"><div class="brand" style="font:bold 48px/46px Georgia,'Times New Roman',serif;letter-spacing:-2.2px;color:#101010;">The<br>Stockholm<br>Guide</div></td>
+<td class="descriptor-cell" width="40%" valign="top" style="width:40%;vertical-align:top;padding:9px 0 0 12px;box-sizing:border-box;"><div class="descriptor" style="font:bold 10px/17px 'Courier New',Courier,monospace;letter-spacing:.7px;">A CURATED GUIDE TO<br>CULTURE, ART AND<br>IDEAS IN STOCKHOLM</div></td>
+</tr></table>
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="width:100%;border-collapse:collapse;border-top:1px solid #777;border-bottom:1px solid #777;margin-top:28px;"><tr>
+<td width="30%" style="padding:14px 5px 14px 0;vertical-align:middle;"><div class="edition" style="font:bold 12px/18px 'Courier New',Courier,monospace;">The Weekly</div></td>
+<td width="45%" align="center" style="padding:14px 5px;vertical-align:middle;"><div class="edition" style="font:12px/18px 'Courier New',Courier,monospace;">{{ guide.date_range }}</div></td>
+<td width="25%" align="right" style="padding:14px 0 14px 5px;vertical-align:middle;"><div class="edition" style="font:12px/18px 'Courier New',Courier,monospace;">#{{ guide.issue_number }}</div></td>
+</tr></table>
+</td></tr>
+<tr><td class="inset section-pad" style="padding:33px 35px 0;">
+{{ section_header('Top 3 picks') }}
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;width:100%;">
+{% for item in guide.top3 %}
+<tr><td class="top-thumb-cell row-pad" width="112" valign="top" style="width:112px;vertical-align:top;padding:20px 12px 20px 0;border-bottom:1px solid #d7d2cb;box-sizing:border-box;">
+{% if item.get('image_verified') == true and item.get('image_url') %}
+{% if item.get('image_cache_file') %}{% set photo = asset_base_url ~ '/' ~ item.image_cache_file %}{% else %}{% set photo = item.image_url %}{% endif %}
+<img class="top-thumb" src="{{ photo }}" alt="{{ item.image_alt }}" width="96" height="96" style="display:block;width:96px;height:96px;object-fit:cover;border:0;border-radius:7px;background:#dedad2;">
+{% else %}
+<img class="top-thumb" src="{{ asset_base_url }}/event-placeholder-thumb.jpg" alt="Neutral decorative artwork; no verified event photo available" width="96" height="96" style="display:block;width:96px;height:96px;object-fit:cover;border:0;border-radius:7px;background:#dedad2;">
+{% endif %}
+</td>
+<td class="event-content row-pad" valign="top" style="vertical-align:top;padding:20px 0 20px 18px;border-bottom:1px solid #d7d2cb;">{{ event_body(item) }}</td></tr>
+{% endfor %}</table>
+</td></tr>
+<tr><td class="inset section-pad" style="padding:34px 35px 0;">
+{{ section_header('New discoveries') }}
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;width:100%;">
+{% for item in guide.new_discoveries %}
+<tr><td class="row-pad" style="padding:17px 0;border-bottom:1px solid #d7d2cb;">{{ event_body(item,true) }}</td></tr>
+{% endfor %}
+</table></td></tr>
+<tr><td class="inset section-pad" style="padding:34px 35px 0;">
+{{ section_header('Worth reconsidering') }}
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;width:100%;">
+{% for item in guide.worth_reconsidering %}
+<tr><td class="row-pad" style="padding:17px 0;border-bottom:1px solid #d7d2cb;">{{ event_body(item,true) }}</td></tr>
+{% endfor %}
+</table></td></tr>
+<tr><td class="inset section-pad" style="padding:34px 35px 0;">
+{{ section_header('Unavailable / sold out') }}
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;width:100%;">
+{% for item in guide.unavailable %}
+<tr><td class="row-pad unavailable-row" style="padding:13px 0;border-bottom:1px solid #d7d2cb;">
+<a class="event-name" href="{{ item.url }}" style="font:bold 17px/23px Arial,Helvetica,sans-serif;letter-spacing:-.45px;text-decoration:none;color:#121212;">{{ item.title }}</a>
+<div class="unavailable-meta" style="font:12px/19px 'Courier New',Courier,monospace;color:#555;padding-top:5px;">{{ item.dates }} · {{ item.booking }}</div>
+</td></tr>
+{% endfor %}
+</table>
+<p style="font:12px/19px Arial,Helvetica,sans-serif;color:#716b64;margin:22px 0 24px;">{{ guide.disclaimer }}</p>
+</td></tr>
+<tr><td><img src="{{ asset_base_url }}/milestone_skyline.png" alt="Original black-and-white Stockholm skyline from the approved milestone" width="650" style="display:block;width:100%;height:auto;border:0;" /></td></tr>
+</table></td></tr></table>
+</body></html>
