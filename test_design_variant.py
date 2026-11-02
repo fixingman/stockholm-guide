@@ -21,6 +21,6 @@ class VariantTests(unittest.TestCase):
             self.assertIn('milestone_torn.png',html)
             self.assertNotIn("mix-blend-mode:luminosity",html)
             self.assertNotIn("background-blend-mode:normal,luminosity",html)
-            self.assertEqual(html.count('class="support-photo"'),1)
+            self.assertEqual(html.count('class="support-photo"'),2)
             self.assertEqual(html.count('class="thumb"'),7)
 if __name__ == "__main__":unittest.main()
