@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light"><title>The Stockholm Guide · {{ guide.date_range }}</title>
+<style>
+@media screen and (max-width:600px){
+ .shell{width:100%!important;max-width:100%!important}.outside{padding:0!important}.pad{padding-left:19px!important;padding-right:19px!important}
+ .brand{font-size:34px!important;line-height:31px!important}.tagline{font-size:9px!important;letter-spacing:1.3px!important}.brush{width:95px!important;max-width:95px!important}
+ .section-title{font-size:28px!important;line-height:32px!important}.feature-row,.feature-row tbody,.feature-row tr,.feature-row td{display:block!important;width:100%!important;box-sizing:border-box!important}.feature-gap{display:none!important}
+ .hero-copy{padding:18px 18px 15px!important}.hero-photo{width:100%!important;max-height:165px!important;object-fit:cover!important}.hero-title{font-size:29px!important;line-height:30px!important}
+ .small-card{margin-bottom:12px!important}.small-title{font-size:23px!important;line-height:25px!important}.small-photo{height:82px!important;object-fit:cover!important}
+ .event-row,.event-row tbody,.event-row tr,.event-row td{box-sizing:border-box!important}.thumb-cell{width:65px!important}.thumb{width:54px!important;height:54px!important;object-fit:cover!important}
+ .event-title{font-size:18px!important}.event-description{font-size:14px!important;line-height:21px!important}.event-info{font-size:12px!important;line-height:18px!important}
+ .list-pad{padding-left:0!important;padding-right:0!important}.sky{height:auto!important}
+}
+</style></head>
+<body style="margin:0;padding:0;background:#e7e3dc;-webkit-text-size-adjust:100%;">
+<div style="display:none;font-size:1px;line-height:1px;max-height:0;max-width:0;opacity:0;overflow:hidden;">Experimental performance, art and unusual experiences in Stockholm — {{ guide.date_range }}</div>
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="width:100%;border-collapse:collapse;background:#e7e3dc;"><tr><td align="center" class="outside" style="padding:23px 12px 44px;">
+<table role="presentation" class="shell" width="650" cellpadding="0" cellspacing="0" border="0" style="width:650px;max-width:650px;border-collapse:separate;border-spacing:0;background:#faf5ee;border-radius:15px;overflow:hidden;">
+<!-- FIXED MILESTONE MASTHEAD: stacked white serif brand + tagline + original brush + metadata line -->
+<tr><td style="background:#080808;color:#fff;padding:0;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="width:100%;border-collapse:collapse;"><tr><td class="pad" style="padding:20px 0 7px 31px;vertical-align:top;width:49%;">
+<div class="brand" style="font-family:Georgia,'Times New Roman',serif;font-weight:bold;font-size:38px;line-height:34px;letter-spacing:-1.5px;color:white;">The<br>Stockholm<br>Guide</div></td>
+<td style="padding:22px 0 0 9px;vertical-align:top;width:21%;border-left:0;"><div class="tagline" style="font-family:Arial,Helvetica,sans-serif;font-size:9px;font-weight:700;letter-spacing:2px;line-height:1.65;color:#fff;">A CURATED GUIDE TO<br>CULTURE, ART AND<br>IDEAS IN STOCKHOLM</div></td>
+<td style="width:30%;vertical-align:top;text-align:right;padding:0;"><img class="brush" src="{{ assets.brush|e }}" alt="" width="196" style="display:block;width:196px;max-width:196px;height:auto;border:0;margin-left:auto;"></td></tr></table>
+<div class="pad" style="font-family:Arial,Helvetica,sans-serif;color:#fff;padding:2px 31px 11px;white-space:normal;"><span style="font-family:Georgia,'Times New Roman',serif;font-style:italic;font-size:16px;line-height:23px;">The Weekly</span><span style="font-size:13px;line-height:23px;padding:0 13px;">{{ guide.date_range }}</span><span style="font-size:11px;letter-spacing:1px;">| &nbsp; ISSUE #{{ guide.issue_number }}</span></div>
+<img src="{{ assets.torn|e }}" width="650" alt="" style="display:block;width:100%;height:11px;border:0;"></td></tr>
+<!-- Top 3 layout is one integrated dark feature followed by TWO image-led supporting cards -->
+<tr><td class="pad" style="padding:18px 24px 0;"><h2 class="section-title" style="font-family:Georgia,'Times New Roman',serif;font-size:31px;font-style:italic;line-height:36px;letter-spacing:-1px;margin:0 0 13px;font-weight:normal;color:#101010;">Top 3 picks for you <img src="{{ assets.stroke|e }}" width="95" alt="" style="width:95px;max-width:28%;height:auto;vertical-align:middle;border:0;display:inline-block;"></h2>
+{% set hero_index = guide.hero_pick_index|default(0) %}
+{% set hero = guide.top3[hero_index] %}
+<table role="presentation" class="feature-row" width="100%" cellpadding="0" cellspacing="0" border="0" style="width:100%;background:#090909;border-radius:11px;overflow:hidden;border-collapse:separate;border-spacing:0;">
+<tr><td class="hero-copy" width="49%" valign="middle" style="width:49%;padding:21px 5px 17px 25px;color:#fff;vertical-align:middle;">
+<div style="font-family:Arial,Helvetica,sans-serif;font-size:11px;line-height:17px;letter-spacing:.5px;font-weight:bold;color:#fff;margin-bottom:5px;">{{ hero.dates }}</div>
+<div class="hero-title" style="font-family:Georgia,'Times New Roman',serif;font-size:28px;font-weight:bold;line-height:28px;letter-spacing:-.7px;margin-bottom:9px;">{{ hero.title }}</div>
+<div style="font-family:Arial,Helvetica,sans-serif;font-size:14px;line-height:20px;color:#fff;margin-bottom:11px;">{{ hero.description }}</div>
+<div style="font-family:Arial,Helvetica,sans-serif;font-size:11px;line-height:17px;color:#dedede;margin-bottom:8px;">{{ hero.venue }} &nbsp; · &nbsp; {{ hero.price }}</div>
+<div style="font-family:Arial,Helvetica,sans-serif;font-size:11px;line-height:17px;color:#dedede;margin-bottom:7px;">Booking: {{ hero.booking }}</div>
+<a href="{{ hero.url|e }}" style="font-family:Arial,Helvetica,sans-serif;font-size:12px;color:#fff;text-decoration:underline;">{{ hero.link_label|default('Event details') }}</a>
+</td><td width="51%" style="width:51%;vertical-align:middle;padding:0;"><img class="hero-photo" src="{{ (hero.image_url if hero.image_url is defined and hero.image_url else assets.hero)|e }}" width="307" alt="{{ (hero.image_alt if hero.image_url is defined and hero.image_url else 'Abstract decorative artwork; no verified event image available')|e }}" style="display:block;width:100%;height:auto;min-height:190px;object-fit:cover;border:0;"></td></tr></table>
+<table role="presentation" class="feature-row" cellpadding="0" cellspacing="0" border="0" width="100%" style="border-collapse:collapse;width:100%;margin-top:10px;"><tr>
+{% for pick in (guide.top3[:hero_index] + guide.top3[hero_index+1:]) %}
+{% if not loop.first %}<td class="feature-gap" width="10" style="width:10px;font-size:0;line-height:0;">&nbsp;</td>{% endif %}
+<td valign="top" style="width:50%;vertical-align:top;">
+<table role="presentation" class="small-card" width="100%" cellpadding="0" cellspacing="0" border="0" style="width:100%;border-collapse:separate;border-spacing:0;border-radius:11px;overflow:hidden;background:#fffaf4;border:1px solid #d8cec1;">
+<tr><td><img class="small-photo" src="{{ (pick.image_url if pick.image_url is defined and pick.image_url else (assets.secondary1 if loop.first else assets.secondary2))|e }}" width="292" alt="{{ (pick.image_alt if pick.image_url is defined and pick.image_url else 'Abstract decorative artwork; no verified event image available')|e }}" style="display:block;border:0;width:100%;height:73px;object-fit:cover;"></td></tr>
+<tr><td style="padding:12px 17px 17px;"><div style="font-family:Arial,Helvetica,sans-serif;font-weight:700;font-size:11px;line-height:16px;letter-spacing:.3px;margin-bottom:5px;">{{ pick.dates }}</div>
+<div class="small-title" style="font:700 23px/25px Georgia,'Times New Roman',serif;letter-spacing:-.7px;margin:0 0 9px;">{{ pick.title }}</div>
+<div style="font:13px/19px Arial,Helvetica,sans-serif;margin-bottom:9px;">{{ pick.description }}</div>
+<div style="font:11px/17px Arial,Helvetica,sans-serif;color:#494541;margin-bottom:4px;">{{ pick.venue }} · {{ pick.price }}</div>
+<div style="font:11px/17px Arial,Helvetica,sans-serif;color:#494541;margin-bottom:9px;">Booking: {{ pick.booking }}</div>
+<a href="{{ pick.url|e }}" style="font:12px/17px Arial,Helvetica,sans-serif;text-decoration:underline;color:#222;">{{ pick.link_label|default('Event details') }}</a></td></tr></table></td>{% endfor %}
+</tr></table>
+<p style="font:12px/18px Arial,Helvetica,sans-serif;color:#66615e;margin:11px 0 0;">These are highlights only. All experiences, including the Top 3, are in the complete listings below.</p>
+</td></tr>
+<!-- New discoveries: distinct FULL WIDTH group, image-supported entries, never side-by-side with Worth reconsidering -->
+<tr><td class="pad" style="padding:34px 30px 0;"><h2 class="section-title" style="font:italic 31px/36px Georgia,'Times New Roman',serif;letter-spacing:-.8px;color:#151515;margin:0 0 13px;">New discoveries</h2>
+<table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="border-collapse:collapse;width:100%;">
+{% for item in guide.new_discoveries %}
+{% if loop.first or item.day != guide.new_discoveries[loop.index0-1].day %}<tr><td colspan="2" style="padding:15px 0 5px;color:#81746e;font:700 10px/15px Arial,Helvetica,sans-serif;letter-spacing:1.3px;text-transform:uppercase;">{{ item.day }}</td></tr>{% endif %}
+<tr><td class="thumb-cell" valign="top" width="96" style="width:96px;vertical-align:top;padding:10px 12px 15px 0;border-bottom:1px solid #ddd5ca;">
+<img class="thumb" width="84" height="60" src="{{ (item.image_url if item.image_url is defined and item.image_url else assets.placeholder_thumb)|e }}" alt="{{ (item.image_alt if item.image_url is defined and item.image_url else 'Abstract decorative graphic; no verified event photo')|e }}" style="display:block;width:84px;height:60px;object-fit:cover;border-radius:6px;border:0;"></td>
+<td valign="top" style="vertical-align:top;padding:8px 0 14px;border-bottom:1px solid #ddd5ca;">
+<div class="event-title" style="font:700 18px/22px Georgia,'Times New Roman',serif;letter-spacing:-.3px;margin-bottom:4px;color:#111;">{{ item.title }}</div>
+<div class="event-description" style="font:14px/21px Arial,Helvetica,sans-serif;margin:0 0 8px;color:#292929;">{{ item.description }}</div>
+<div class="event-info" style="font:12px/19px Arial,Helvetica,sans-serif;color:#55504b;margin-bottom:3px;">{{ item.dates }} · {{ item.price }}</div>
+<div class="event-info" style="font:12px/19px Arial,Helvetica,sans-serif;color:#55504b;margin-bottom:7px;">Booking: {{ item.booking }}</div>
+<a href="{{ item.url|e }}" style="font:12px/19px Arial,Helvetica,sans-serif;text-decoration:underline;color:#242424;">Event details &amp; booking</a>
+</td></tr>{% endfor %}
+</table></td></tr>
+<!-- Worth reconsidering: SEPARATE minimal image-free rows, full metadata -->
+<tr><td class="pad" style="padding:42px 30px 0;"><h2 class="section-title" style="font:italic 31px/36px Georgia,'Times New Roman',serif;letter-spacing:-.8px;color:#111;margin:0 0 13px;">Worth reconsidering</h2>
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;width:100%;">
+{% for item in guide.worth_reconsidering %}
+{% if loop.first or item.day != guide.worth_reconsidering[loop.index0-1].day %}<tr><td style="padding:15px 0 5px;color:#81746e;font:700 10px/15px Arial,Helvetica,sans-serif;letter-spacing:1.3px;text-transform:uppercase;">{{ item.day }}</td></tr>{% endif %}
+<tr><td style="padding:10px 0 13px;border-bottom:1px solid #dcd4ca;">
+<div class="event-title" style="font:700 17px/21px Georgia,'Times New Roman',serif;letter-spacing:-.25px;margin-bottom:4px;">{{ item.title }}</div>
+<div class="event-description" style="font:14px/21px Arial,Helvetica,sans-serif;margin-bottom:7px;color:#303030;">{{ item.description }}</div>
+<div class="event-info" style="font:12px/19px Arial,Helvetica,sans-serif;color:#56514b;margin-bottom:3px;">{{ item.dates }} · {{ item.price }}</div>
+<div class="event-info" style="font:12px/19px Arial,Helvetica,sans-serif;color:#56514b;margin-bottom:6px;">Booking: {{ item.booking }}</div>
+<a href="{{ item.url|e }}" style="font:12px/19px Arial,Helvetica,sans-serif;color:#222;text-decoration:underline;">Event details &amp; booking</a>
+</td></tr>{% endfor %}</table></td></tr>
+<!-- Unavailable, deliberately smaller but complete -->
+<tr><td class="pad" style="padding:41px 30px 28px;"><h2 style="font:italic 25px/31px Georgia,'Times New Roman',serif;letter-spacing:-.45px;color:#171717;margin:0 0 11px;">Unavailable / sold out</h2>
+{% for item in guide.unavailable %}<div style="border-top:1px solid #dcd4ca;padding:10px 0 12px;"><div style="font:700 14px/20px Georgia,'Times New Roman',serif;margin-bottom:4px;">{{ item.title }}</div><div style="font:12px/18px Arial,Helvetica,sans-serif;color:#5b5652;margin-bottom:6px;">{{ item.dates }} · {{ item.price }} · {{ item.booking }}</div><a href="{{ item.url|e }}" style="font:12px/18px Arial,Helvetica,sans-serif;color:#282828;text-decoration:underline;">Official listing</a></div>{% endfor %}
+<p style="font:12px/19px Arial,Helvetica,sans-serif;color:#66615e;margin:18px 0 0;">{{ guide.disclaimer }}</p></td></tr>
+<!-- Original milestone's STOCKHOLM SKYLINE illustration, no invented logo -->
+<tr><td style="padding:0;background:#faf5ee;"><img class="sky" src="{{ assets.skyline|e }}" alt="Decorative Stockholm skyline" width="650" style="display:block;width:100%;max-width:650px;height:auto;border:0;"></td></tr>
+</table></td></tr></table></body></html>
