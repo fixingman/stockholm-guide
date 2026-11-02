@@ -10,7 +10,7 @@
  .brand{font-size:36px!important;line-height:35px!important;letter-spacing:-1.6px!important}
  .descriptor{font-size:8px!important;line-height:13px!important;letter-spacing:.2px!important}
  .brand-cell{width:63%!important}.descriptor-cell{width:37%!important}
- .top-date{width:70px!important;padding-right:12px!important}.event-content{padding-left:13px!important}
+ .top-thumb-cell{width:88px!important;padding-right:12px!important}.top-thumb{width:76px!important;height:76px!important}.event-content{padding-left:13px!important}
  .event-name{font-size:17px!important;line-height:23px!important}
  .event-description{font-size:13px!important;line-height:19px!important}
  .section-heading{font-size:12px!important;line-height:18px!important;letter-spacing:1px!important}
@@ -21,7 +21,7 @@
  .brand{font-size:30px!important;line-height:30px!important}
  .descriptor{font-size:7px!important;line-height:12px!important}
  .inset{padding-left:15px!important;padding-right:15px!important}
- .top-date{width:57px!important;padding-right:7px!important}
+ .top-thumb-cell{width:68px!important;padding-right:8px!important}.top-thumb{width:60px!important;height:60px!important}
  .event-content{padding-left:10px!important}
 }
 </style>
@@ -57,7 +57,14 @@
 {{ section_header('Top 3 picks') }}
 <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;width:100%;">
 {% for item in guide.top3 %}
-<tr><td class="top-date row-pad" width="106" valign="top" style="width:106px;vertical-align:top;padding:20px 15px 20px 0;border-right:1px solid #beb9b0;border-bottom:1px solid #d7d2cb;box-sizing:border-box;"><div style="font:bold 12px/18px 'Courier New',Courier,monospace;text-transform:uppercase;">{{ item.dates.split(' · ')[0] }}</div></td>
+<tr><td class="top-thumb-cell row-pad" width="112" valign="top" style="width:112px;vertical-align:top;padding:20px 12px 20px 0;border-bottom:1px solid #d7d2cb;box-sizing:border-box;">
+{% if item.get('image_verified') == true and item.get('image_url') %}
+{% if item.get('image_cache_file') %}{% set photo = asset_base_url ~ '/' ~ item.image_cache_file %}{% else %}{% set photo = item.image_url %}{% endif %}
+<img class="top-thumb" src="{{ photo }}" alt="{{ item.image_alt }}" width="96" height="96" style="display:block;width:96px;height:96px;object-fit:cover;border:0;border-radius:7px;background:#dedad2;">
+{% else %}
+<img class="top-thumb" src="{{ asset_base_url }}/event-placeholder-thumb.jpg" alt="Neutral decorative artwork; no verified event photo available" width="96" height="96" style="display:block;width:96px;height:96px;object-fit:cover;border:0;border-radius:7px;background:#dedad2;">
+{% endif %}
+</td>
 <td class="event-content row-pad" valign="top" style="vertical-align:top;padding:20px 0 20px 18px;border-bottom:1px solid #d7d2cb;">{{ event_body(item) }}</td></tr>
 {% endfor %}</table>
 </td></tr>
