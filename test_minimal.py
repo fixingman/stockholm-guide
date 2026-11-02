@@ -37,4 +37,26 @@ class MinimalTests(unittest.TestCase):
                     self.assertIn(item["url"].replace("&","&amp;"),html)
             self.assertLess(len(html.encode("utf-8")),100_000)
             self.assertIn("class=\"brand\"",html)
+            from html.parser import HTMLParser
+            class UnavailableRows(HTMLParser):
+                def __init__(self):
+                    super().__init__();self.in_row=False;self.rows=[];self.current=""
+                def handle_starttag(self,tag,attrs):
+                    d=dict(attrs)
+                    if tag=="td" and "unavailable-row" in d.get("class","").split():
+                        self.in_row=True;self.current=""
+                def handle_data(self,data):
+                    if self.in_row:self.current+=data
+                def handle_endtag(self,tag):
+                    if tag=="td" and self.in_row:
+                        self.rows.append(self.current);self.in_row=False
+            rows=UnavailableRows();rows.feed(html)
+            self.assertEqual(len(rows.rows),len(g["unavailable"]))
+            self.assertEqual(html.count('class="unavailable-meta"'),len(g["unavailable"]))
+            for row,item in zip(rows.rows,g["unavailable"]):
+                self.assertIn(item["title"],row)
+                self.assertIn(item["dates"],row)
+                self.assertIn(item["booking"],row)
+                self.assertNotIn(item["price"],row)
+
 if __name__=="__main__":unittest.main()
