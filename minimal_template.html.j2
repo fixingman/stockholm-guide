@@ -35,8 +35,8 @@
 {%- endmacro %}
 {% macro event_body(item, condensed=false) -%}
 <a class="event-name" href="{{ item.url }}" style="font:bold {{ '17px/23px' if condensed else '19px/25px' }} Arial,Helvetica,sans-serif;letter-spacing:-.45px;text-decoration:none;color:#121212;">{{ item.display_title|default(item.title) }}</a>
-<div class="event-meta" style="font:12px/18px 'Courier New',Courier,monospace;color:#444;padding-top:6px;">{{ item.dates }}{% if item.venue %} · {{ item.venue }}{% endif %}</div>
-{% if item.description %}<div class="event-description" style="font:14px/21px Arial,Helvetica,sans-serif;padding-top:7px;color:#262626;">{{ item.description }}</div>{% endif %}
+<div class="event-meta" style="font:12px/18px 'Courier New',Courier,monospace;color:#444;padding-top:6px;">{{ item.dates }}{% if item.get('venue') %} · {{ item.venue }}{% endif %}</div>
+{% if item.get('description') %}<div class="event-description" style="font:14px/21px Arial,Helvetica,sans-serif;padding-top:7px;color:#262626;">{{ item.description }}</div>{% endif %}
 <div style="font:12px/18px Arial,Helvetica,sans-serif;color:#655f58;padding-top:8px;">{{ item.price }} · Booking: {{ item.booking }}</div>
 {%- endmacro %}
 <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="width:100%;border-collapse:collapse;">
