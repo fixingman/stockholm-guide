@@ -57,3 +57,10 @@ python preflight.py --html email.html --report delivery-report.json
 ```
 
 These are browser composition and live-network checks, **not a Gmail delivery certification**. No new test email has been sent. The template uses tables, inline styles, background attributes and width media queries supported in [Google's Gmail CSS reference](https://developers.google.com/workspace/gmail/design/css); client-specific sanitization, dark mode, proxies and Outlook's Word renderer can still vary.
+
+
+## Delivery compatibility fix
+
+The white brushstroke is now a literal `<img>` inside the black masthead rather than CSS-only background art. The top hero image also uses an ordinary `<img>` in a table cell beside its text, so clients that discard CSS background images can still render the photograph. This preserves the existing event title, metadata, official links and image provenance. Supporting photos and thumbnails are unchanged in size and color.
+
+Browser previews now use a short **preview-only** error handler: if an external event image fails to load, its slot shows a neutral abstract graphic instead of a broken-photo icon. This does **not** fabricate an event image, nor does it make the broken remote URL reliable for Gmail. Actual outgoing email HTML is script-free. Verified press snapshots with documented editorial-use permission remain hosted locally; official images lacking permission to redistribute remain linked to their source servers. Do not silently copy those images into the public repository. The independent `preflight.py` remains the delivery gate: it can fail if an official remote host rejects requests, in which case investigate licensing/hosting or use a neutral fallback rather than claiming all photos are deliverable.

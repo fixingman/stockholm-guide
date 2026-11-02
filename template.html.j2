@@ -9,14 +9,14 @@
 }
 @media screen and (max-width:600px){
  .outside{padding:0!important}.shell{border-radius:0!important}.pad{padding-left:18px!important;padding-right:18px!important}
- .masthead{background-size:180px auto!important}.masthead-top{padding:31px 22px 27px!important}.masthead-bottom{padding:0 22px 22px!important}.eyebrow{font-size:10px!important;letter-spacing:2px!important;margin-bottom:20px!important}.brand{font-size:43px!important;line-height:42px!important;letter-spacing:-1.8px!important}
+ .masthead{background:#080808!important}.masthead-top{padding:17px 22px 27px!important}.masthead-brush{width:145px!important;height:auto!important}.masthead-decoration{width:45%!important}.hero-image-cell{display:block!important;width:100%!important}.hero-text-cell{display:block!important;width:100%!important}.hero-photo{height:185px!important}.masthead-bottom{padding:0 22px 22px!important}.eyebrow{font-size:10px!important;letter-spacing:2px!important;margin-bottom:20px!important}.brand{font-size:43px!important;line-height:42px!important;letter-spacing:-1.8px!important}
  .tagline{font-size:9px!important;line-height:15px!important;letter-spacing:.75px!important}.issue-line{font-size:10px!important;line-height:16px!important}
  .section-title{font-size:29px!important;line-height:37px!important}.hero-copy{padding:22px!important}.hero-text{width:100%!important}.hero-title{font-size:29px!important;line-height:34px!important}.hero-bg{background-position:right center!important}
  .support-photo{height:105px!important}.thumb-cell{width:89px!important;padding-right:13px!important}.thumb{width:76px!important;height:70px!important}.row-main{padding-top:12px!important;padding-bottom:8px!important}.row-date{padding-top:4px!important;padding-bottom:6px!important}.row-venue{padding-top:4px!important;padding-bottom:12px!important}
  .reconsider-title{padding-top:12px!important;padding-bottom:6px!important}.reconsider-main{padding-top:0!important;padding-bottom:8px!important}.event-title{font-size:{{ tokens.mobile_event_title_size }}!important;line-height:{{ tokens.mobile_event_title_line }}!important}
 }
 @media screen and (max-width:360px){
- .brand{font-size:37px!important;line-height:37px!important}.masthead-top{padding:28px 18px 24px!important}.masthead-bottom{padding:0 18px 20px!important}.tagline{font-size:8px!important;letter-spacing:.4px!important}.issue-line{font-size:9px!important}
+ .brand{font-size:37px!important;line-height:37px!important}.masthead-top{padding:17px 18px 24px!important}.masthead-brush{width:112px!important}.masthead-bottom{padding:0 18px 20px!important}.tagline{font-size:8px!important;letter-spacing:.4px!important}.issue-line{font-size:9px!important}
 }
 </style></head>
 <body style="margin:0;padding:0;background:#f7f5f3;-webkit-text-size-adjust:100%;color:#101010;">
@@ -26,11 +26,14 @@
 {% macro section_heading(text) -%}<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="width:100%;border-collapse:collapse;margin-bottom:{{ tokens.heading_bottom }};"><tr><td class="heading-text" style="padding-right:17px;"><h2 class="section-title" style="font:italic bold {{ tokens.section_title }} Georgia,'Times New Roman',serif;letter-spacing:-1px;margin:0;">{{ text }}</h2></td><td width="100%" style="width:100%;vertical-align:middle;"><div style="height:1px;background:#292929;font-size:0;line-height:0;">&nbsp;</div></td></tr></table>{%- endmacro %}
 <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="width:100%;border-collapse:collapse;"><tr><td class="outside" align="center" style="padding:10px 12px 30px;">
 <table role="presentation" class="shell" width="650" cellpadding="0" cellspacing="0" border="0" style="width:100%;max-width:650px;background:#fcf6ee;border-spacing:0;border-radius:18px;overflow:hidden;box-shadow:0 3px 8px #dedbd8;">
-<tr><td class="masthead" background="{{ assets.brush }}" bgcolor="#080808" style="background:#080808 url('{{ assets.brush }}') no-repeat right top;background-size:260px 126px;color:#fff;">
+<tr><td class="masthead" bgcolor="#080808" style="background:#080808;color:#fff;">
 <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="width:100%;border-collapse:collapse;">
-<tr><td class="masthead-top" style="padding:35px 38px 27px;">
-<div class="eyebrow" style="font:700 11px/16px Arial,Helvetica,sans-serif;letter-spacing:2.3px;color:#fff;margin-bottom:21px;">THE WEEKLY</div>
-<div class="brand" style="font:bold 58px/55px Georgia,'Times New Roman',serif;letter-spacing:-2.5px;color:#fff;">The Stockholm<br>Guide</div>
+<tr><td class="masthead-top" style="padding:17px 38px 27px;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="width:100%;border-collapse:collapse;"><tr>
+<td valign="top" style="vertical-align:top;padding-top:21px;"><div class="eyebrow" style="font:700 11px/16px Arial,Helvetica,sans-serif;letter-spacing:2.3px;color:#fff;">THE WEEKLY</div></td>
+<td class="masthead-decoration" align="right" valign="top" width="45%" style="width:45%;vertical-align:top;text-align:right;"><img class="masthead-brush" src="{{ assets.brush }}" width="200" alt="" style="display:block;width:200px;max-width:100%;height:auto;border:0;margin-left:auto;"></td>
+</tr></table>
+<div class="brand" style="font:bold 58px/55px Georgia,'Times New Roman',serif;letter-spacing:-2.5px;color:#fff;margin-top:4px;">The Stockholm<br>Guide</div>
 </td></tr>
 <tr><td class="masthead-bottom" style="padding:0 38px 25px;">
 <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="width:100%;border-top:1px solid #777;border-collapse:collapse;">
@@ -43,9 +46,9 @@
 <h2 class="section-title" style="font:italic bold 31px/39px Georgia,'Times New Roman',serif;letter-spacing:-.8px;margin:0 0 7px 12px;">Top 3 picks for you <img src="{{ assets.stroke }}" alt="" width="112" style="display:inline-block;width:112px;max-width:25%;height:auto;vertical-align:middle;border:0;"></h2>
 {% set hero_index = guide.hero_pick_index|default(0) %}{% set hero = guide.top3[hero_index] %}
 <table role="presentation" class="hero-card" width="100%" cellpadding="0" cellspacing="0" border="0" style="width:100%;border-spacing:0;border-radius:13px;overflow:hidden;background:#090909;box-shadow:0 2px 3px #d4cec7;"><tr>
-<td class="hero-bg" background="{{ hero.image_render_url if hero.image_url else assets.hero }}" bgcolor="#090909" style="background-color:#090909;background-image:linear-gradient(90deg,#090909 0%,rgba(9,9,9,.97) 30%,rgba(9,9,9,.65) 58%,rgba(9,9,9,.65) 100%),url('{{ hero.image_render_url if hero.image_url else assets.hero }}');background-size:cover;background-position:center;background-blend-mode:normal;border-radius:13px;">
-<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="width:100%;"><tr><td class="hero-copy" style="padding:{{ tokens.hero_copy_pad }};color:#fff;">
-<table role="presentation" class="hero-text" width="100%" cellpadding="0" cellspacing="0" border="0" style="width:100%;"><tr><td style="color:#fff;">
+<td class="hero-bg" bgcolor="#090909" style="background:#090909;border-radius:13px;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="width:100%;border-collapse:collapse;table-layout:fixed;"><tr>
+<td class="hero-text-cell hero-copy" width="59%" valign="middle" style="box-sizing:border-box;width:59%;vertical-align:middle;padding:{{ tokens.hero_copy_pad }};color:#fff;">
 <div style="font:700 {{ tokens.hero_label }} Arial,Helvetica,sans-serif;text-transform:uppercase;margin-bottom:3px;">{{ hero.dates }}</div>
 <div class="hero-title" style="font:bold {{ tokens.hero_title }} Georgia,'Times New Roman',serif;letter-spacing:-.5px;margin-bottom:7px;">{{ hero.display_title|default(hero.title) }}</div>
 <div style="font:{{ tokens.hero_body }} Arial,Helvetica,sans-serif;">{{ hero.description }}</div>
@@ -53,6 +56,10 @@
 {{ details(hero, true) }}
 <a href="{{ hero.url }}" style="display:inline-block;font:{{ tokens.subtle }} Arial,Helvetica,sans-serif;color:#fff;text-decoration:underline;margin-top:3px;">{{ hero.link_label|default('Event details & booking') }}</a>
 {% if hero.image_url and hero.image_credit %}<div style="font:9px/12px Arial,Helvetica,sans-serif;color:#ddd;margin-top:3px;">{{ hero.image_credit }}</div>{% endif %}
+
+</td>
+<td class="hero-image-cell" width="41%" valign="middle" bgcolor="#1b1b1b" background="{{ assets.hero }}" style="box-sizing:border-box;width:41%;vertical-align:middle;background:#1b1b1b url('{{ assets.hero }}') center center / cover no-repeat;">
+<img class="hero-photo event-photo" src="{{ hero.image_render_url if hero.image_url else assets.hero }}" data-fallback="{{ assets.hero }}" alt="{{ hero.image_alt if hero.image_url else 'Decorative neutral image — no verified event photograph' }}" width="260" height="260" style="display:block;width:100%;height:260px;object-fit:cover;border:0;">
 </td></tr></table></td></tr></table></td></tr></table>
 <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td height="7" style="height:7px;font-size:0;line-height:0;">&nbsp;</td></tr></table>
 <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="width:100%;table-layout:fixed;"><tr>
@@ -60,7 +67,7 @@
 {% if not loop.first %}<td class="support-gap" style="display:none;width:1.5%;font-size:0;">&nbsp;</td>{% endif %}
 <td class="support-column" valign="top" style="display:block;box-sizing:border-box;width:100%;vertical-align:top;border:1px solid #d9d1c9;border-radius:13px;background:#fcf6ee;box-shadow:0 2px 3px #d4cec7;overflow:hidden;margin-bottom:9px;">
 <table role="presentation" class="support-card" width="100%" cellpadding="0" cellspacing="0" border="0" style="width:100%;border:0;border-spacing:0;">
-<tr><td><img class="support-photo" src="{{ pick.image_render_url if pick.image_url else assets.hero }}" alt="{{ pick.image_alt if pick.image_url else 'No verified event photograph available' }}" width="302" height="120" style="display:block;width:100%;height:120px;object-fit:cover;border-radius:12px 12px 0 0;border:0;"></td></tr>
+<tr><td><img class="support-photo event-photo" data-fallback="{{ assets.hero }}" src="{{ pick.image_render_url if pick.image_url else assets.hero }}" alt="{{ pick.image_alt if pick.image_url else 'No verified event photograph available' }}" width="302" height="120" style="display:block;width:100%;height:120px;object-fit:cover;background:#e3ddd3;border-radius:12px 12px 0 0;border:0;"></td></tr>
 <tr><td style="padding:{{ tokens.card_body_pad }};">
 <div style="font:700 {{ tokens.hero_label }} Arial,Helvetica,sans-serif;text-transform:uppercase;">{{ pick.dates }}</div>
 <div style="font:bold {{ tokens.feature_title }} Georgia,'Times New Roman',serif;letter-spacing:-.5px;margin:1px 0 5px;">{{ pick.display_title|default(pick.title) }}</div>
@@ -74,7 +81,7 @@
 <tr><td class="pad" style="padding:{{ tokens.section_gap }} 25px 0;">{{ section_heading('New discoveries') }}
 <table role="presentation" class="discovery-list" width="100%" cellpadding="0" cellspacing="0" border="0" style="width:100%;border-collapse:collapse;table-layout:fixed;">
 {% for item in guide.new_discoveries %}<tr class="discovery-row">
-<td class="thumb-cell" width="115" style="box-sizing:border-box;width:115px;padding:{{ tokens.thumbnail_row_pad }} 15px {{ tokens.thumbnail_row_pad }} 0;vertical-align:top;border-bottom:1px solid #ded6cd;"><img class="thumb" src="{{ item.image_render_url if item.image_url else assets.placeholder_thumb }}" alt="{{ item.image_alt if item.image_url else 'No verified event photograph available' }}" width="100" height="76" style="display:block;width:100px;height:76px;object-fit:cover;border-radius:6px;border:0;"></td>
+<td class="thumb-cell" width="115" style="box-sizing:border-box;width:115px;padding:{{ tokens.thumbnail_row_pad }} 15px {{ tokens.thumbnail_row_pad }} 0;vertical-align:top;border-bottom:1px solid #ded6cd;"><img class="thumb event-photo" data-fallback="{{ assets.placeholder_thumb }}" src="{{ item.image_render_url if item.image_url else assets.placeholder_thumb }}" alt="{{ item.image_alt if item.image_url else 'No verified event photograph available' }}" width="100" height="76" style="display:block;width:100px;height:76px;object-fit:cover;background:#e3ddd3;border-radius:6px;border:0;"></td>
 <td style="vertical-align:top;border-bottom:1px solid #ded6cd;">
 <table role="presentation" class="discovery-columns" width="100%" cellpadding="0" cellspacing="0" border="0" style="width:100%;table-layout:fixed;border-collapse:collapse;"><tr>
 <td class="discovery-main row-main" style="display:block;box-sizing:border-box;width:100%;padding:{{ tokens.discovery_main_pad }};vertical-align:top;">

@@ -53,6 +53,24 @@ for name in ('calendar','pin'):
 env=Environment(loader=FileSystemLoader(base),autoescape=select_autoescape(default=True))
 tokens=json.loads((base/'design_tokens.json').read_text(encoding='utf-8'))
 html=env.get_template('template.html.j2').render(guide=g,assets=assets,tokens=tokens)
+# The hosted web preview can replace temporarily failed remote links with neutral art.
+# Never embed active scripts in the actual outgoing email HTML.
+if Path(a.output).name in ('preview.html', 'index.html'):
+ html=html.replace('</body>', """<script>(function(){
+  function protect(img){
+    var backup=img.getAttribute('data-fallback');
+    if(!backup)return;
+    function useNeutral(){
+      if(img.getAttribute('data-fallback-used'))return;
+      img.setAttribute('data-fallback-used','true');
+      img.alt='Event photo unavailable — neutral illustration';
+      img.src=backup;
+    }
+    img.addEventListener('error',useNeutral,{once:true});
+    if(img.complete && !img.naturalWidth)useNeutral();
+  }
+  document.querySelectorAll('img.event-photo').forEach(protect);
+})();</script></body>""")
 Path(a.output).write_text(html,encoding='utf-8')
 lines=[f"The Stockholm Guide · Issue #{g['issue_number']} · {g['date_range']}",g['intro']]
 for key,title in [('top3','TOP 3 PICKS'),('new_discoveries','NEW DISCOVERIES'),('worth_reconsidering','WORTH RECONSIDERING'),('unavailable','UNAVAILABLE / SOLD OUT')]:
