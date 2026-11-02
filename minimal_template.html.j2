@@ -86,7 +86,10 @@
 {{ section_header('Unavailable / sold out') }}
 <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;width:100%;">
 {% for item in guide.unavailable %}
-<tr><td class="row-pad" style="padding:14px 0;border-bottom:1px solid #d7d2cb;">{{ event_body(item,true) }}</td></tr>
+<tr><td class="row-pad unavailable-row" style="padding:13px 0;border-bottom:1px solid #d7d2cb;">
+<a class="event-name" href="{{ item.url }}" style="font:bold 17px/23px Arial,Helvetica,sans-serif;letter-spacing:-.45px;text-decoration:none;color:#121212;">{{ item.title }}</a>
+<div class="unavailable-meta" style="font:12px/19px 'Courier New',Courier,monospace;color:#555;padding-top:5px;">{{ item.dates }} · {{ item.booking }}</div>
+</td></tr>
 {% endfor %}
 </table>
 <p style="font:12px/19px Arial,Helvetica,sans-serif;color:#716b64;margin:22px 0 24px;">{{ guide.disclaimer }}</p>
