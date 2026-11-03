@@ -37,6 +37,29 @@ class MinimalTests(unittest.TestCase):
                     self.assertIn(item["url"].replace("&","&amp;"),html)
             self.assertLess(len(html.encode("utf-8")),100_000)
             self.assertIn("class=\"brand\"",html)
+            from urllib.parse import urlsplit, parse_qs
+            from html import unescape
+            class Feedback(HTMLParser):
+                def __init__(self):
+                    super().__init__();self.links=[]
+                def handle_starttag(self,tag,attrs):
+                    d=dict(attrs)
+                    if tag=="a" and "feedback-link" in d.get("class","").split():
+                        self.links.append(unescape(d["href"]))
+            feedback=Feedback();feedback.feed(html)
+            self.assertEqual(len(feedback.links),3)
+            subjects=[]
+            for link in feedback.links:
+                self.assertTrue(link.startswith("mailto:cankilicbay@gmail.com?"))
+                params=parse_qs(urlsplit(link).query)
+                self.assertIn("subject",params)
+                self.assertIn("body",params)
+                subjects.append(params["subject"][0])
+            self.assertIn("Stockholm Guide #001 | LIKE",subjects)
+            self.assertIn("Stockholm Guide #001 | DISLIKE",subjects)
+            self.assertIn("Stockholm Guide | UNSUBSCRIBE",subjects)
+            self.assertNotIn("<script",html.lower())
+
             from html.parser import HTMLParser
             class UnavailableRows(HTMLParser):
                 def __init__(self):
