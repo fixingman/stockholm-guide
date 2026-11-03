@@ -7,3 +7,8 @@ Design: bold three-line serif masthead, monospaced descriptor and date strip, th
 Files: `minimal_template.html.j2` and `render_minimal.py`. To preview locally: `python render_minimal.py --output minimal-preview.html`. A PR check also uploads a rendered HTML preview artifact.
 
 It is deliberately a **separate experiment**: the old `template.html.j2`, `render.py`, `index.html`, existing GitHub Pages site and scheduled automation are untouched. A GitHub Pages side-by-side URL can be added later if the user chooses to promote this direction.
+
+
+## Reader feedback and unsubscribe (no backend)
+
+Three outlined email-safe `mailto:` links appear immediately above the original skyline: 👍 Like, 👎 Dislike, and Unsubscribe. A click opens the reader's email composer, prefilled with an issue-specific `Stockholm Guide #NNN | LIKE/DISLIKE` subject or the exact `Stockholm Guide | UNSUBSCRIBE` subject. The reader **must send the message**; opening a link does not record a vote or remove anyone. Replies arrive at `cankilicbay@gmail.com`, where subjects can be searched or counted in Gmail. This is intentionally not a one-click unsubscribe endpoint and doesn't supply a `List-Unsubscribe` header. Unsubscribe requests must be processed manually by removing the address from the weekly automation's BCC list before its next send. No external tracking or server is involved.
