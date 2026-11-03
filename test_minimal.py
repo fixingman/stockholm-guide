@@ -60,7 +60,6 @@ class MinimalTests(unittest.TestCase):
             self.assertIn("Stockholm Guide | UNSUBSCRIBE",subjects)
             self.assertNotIn("<script",html.lower())
 
-            from html.parser import HTMLParser
             class UnavailableRows(HTMLParser):
                 def __init__(self):
                     super().__init__();self.in_row=False;self.rows=[];self.current=""
