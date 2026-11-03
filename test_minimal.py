@@ -19,7 +19,7 @@ class MinimalTests(unittest.TestCase):
             html=path.read_text(encoding="utf-8");a=Audit();a.feed(html)
             expected=sum(len(g[k]) for k in ("top3","new_discoveries","worth_reconsidering","unavailable"))
             self.assertEqual(expected,33)
-            self.assertEqual(len(a.links),expected)
+            self.assertEqual(len(a.links),expected+3)  # Every event link plus 3 footer feedback links
             self.assertEqual(len(a.images),4)
             self.assertEqual(sum("milestone_skyline.png" in x for x in a.images),1)
             self.assertEqual(sum("event-placeholder" in x for x in a.images),0)
