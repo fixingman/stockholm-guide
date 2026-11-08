@@ -1,0 +1,65 @@
+name: Probe official featured event images
+on:
+  push:
+    paths:
+      - '.github/workflows/featured-image-probe.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Test official event image URLs (diagnostic, no redistribution)
+        run: |
+          python - <<'PY'
+          import html,json
+          from html.parser import HTMLParser
+          from urllib.parse import urljoin,urlparse
+          from urllib.request import Request,urlopen
+          pages={
+            "Visioner / Tekniska museet":"https://www.tekniskamuseet.se/program-och-upplevelser/art-tech/visioner-av-nuet/",
+            "Visioner / Fylkingen":"https://www.fylkingen.se/en/events/visioner-av-nuet-1966-2026",
+            "Sound Saturday / Fylkingen":"https://www.fylkingen.se/en/events/sound-of-stockholm-lordag",
+            "Sound official festival":"https://soundofstockholm.se/"
+          }
+          def fetch(url,accept):
+              with urlopen(Request(url,headers={"User-Agent":"Mozilla/5.0 (Stockholm Guide event image audit)","Accept":accept}),timeout=14) as r:
+                  return r.status,r.headers.get("Content-Type",""),r.read(1500000),r.geturl()
+          class Images(HTMLParser):
+              def __init__(self):super().__init__();self.rows=[]
+              def handle_starttag(self,tag,attrs):
+                  a=dict(attrs)
+                  if tag=="meta" and a.get("property",a.get("name","")).lower() in ("og:image","twitter:image","twitter:image:src") and a.get("content"):
+                      self.rows.append(("meta",a["content"]))
+                  if tag=="img":
+                      for key in ("src","data-src"):
+                          if a.get(key):self.rows.append(("img "+a.get("alt","")[:50],a[key]))
+          results={}
+          for label,page in pages.items():
+              report={"source_page":page,"images":[]}
+              try:
+                  status,ctype,body,final=fetch(page,"text/html")
+                  report.update(page_status=status,page_type=ctype)
+                  parser=Images();parser.feed(body.decode("utf-8","replace"))
+                  seen=set()
+                  for origin,link in parser.rows:
+                      url=urljoin(final,html.unescape(link))
+                      if urlparse(url).scheme!="https" or url in seen:continue
+                      seen.add(url)
+                      if len(report["images"])>=15:break
+                      image={"origin":origin,"url":url}
+                      try:
+                          status,ctype,data,_=fetch(url,"image/*")
+                          image.update(status=status,content_type=ctype,valid_image=ctype.lower().startswith("image/"),sample_bytes=len(data))
+                      except Exception as error:image["error"]=str(error)[:160]
+                      report["images"].append(image)
+              except Exception as error:report["page_error"]=str(error)[:180]
+              results[label]=report
+          print(json.dumps(results,ensure_ascii=False,indent=2))
+          with open("featured-image-probe.json","w") as fh:json.dump(results,fh,ensure_ascii=False,indent=2)
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: featured-image-probe
+          path: featured-image-probe.json
