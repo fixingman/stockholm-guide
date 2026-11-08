@@ -16,6 +16,20 @@ def render(data_path, output_path, asset_base_url):
             assert all(item.get(key) for key in fields), f"Missing event data: {section}[{i}]"
             assert urlparse(item["url"]).scheme == "https", f"Invalid event link: {section}[{i}]"
     assert len(guide["top3"]) == 3, "Exactly three featured picks required"
+    # An unverified picture must never slip into an email. Missing pictures are
+    # allowed, and the template will show its intentional neutral placeholder.
+    for i, item in enumerate(guide["top3"]):
+        if item.get("image_verified"):
+            for field in ("image_url", "image_source_url", "image_alt"):
+                assert item.get(field), f"Verified image missing {field}: top3[{i}]"
+            for field in ("image_url", "image_source_url"):
+                assert urlparse(item[field]).scheme == "https", f"Non-HTTPS {field}: top3[{i}]"
+            if item.get("image_cache_file"):
+                filename = item["image_cache_file"]
+                assert Path(filename).name == filename, f"Invalid cached image path: top3[{i}]"
+                assert (ROOT/"assets"/filename).is_file(), f"Missing cached image: assets/{filename}"
+        elif item.get("image_cache_file"):
+            raise AssertionError(f"Unverified cached photo: top3[{i}]")
     assert asset_base_url.startswith("https://") or asset_base_url == "../assets", "Asset host must be HTTPS or a local preview path"
     env=Environment(loader=FileSystemLoader(ROOT),undefined=StrictUndefined,autoescape=select_autoescape(default=True))
     result=env.get_template("minimal_template.html.j2").render(guide=guide,asset_base_url=asset_base_url.rstrip("/"))
@@ -30,6 +44,11 @@ def main():
     parser.add_argument("--asset-base-url",default="https://fixingman.github.io/stockholm-guide/assets")
     args=parser.parse_args()
     guide,result=render(args.data,args.output,args.asset_base_url)
+    verified = [x["title"] for x in guide["top3"] if x.get("image_verified") and x.get("image_url")]
+    missing = [x["title"] for x in guide["top3"] if not (x.get("image_verified") and x.get("image_url"))]
+    print(f"Top 3 image coverage: {len(verified)}/3 verified, {len(missing)} intentional placeholders")
+    for title in missing:
+        print(f"  NEEDS IMAGE REVIEW: {title}")
     print(f"Rendered {sum(len(guide[k]) for k in ('top3','new_discoveries','worth_reconsidering','unavailable'))} entries, {len(result.encode())} bytes to {args.output}")
 
 if __name__=="__main__":
