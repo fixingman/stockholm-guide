@@ -48,12 +48,22 @@ class MinimalTests(unittest.TestCase):
             feedback=Feedback();feedback.feed(html)
             self.assertEqual(len(feedback.links),3)
             subjects=[]
-            for link in feedback.links:
-                self.assertTrue(link.startswith("mailto:cankilicbay@gmail.com?"))
+            for index, link in enumerate(feedback.links):
                 params=parse_qs(urlsplit(link).query)
-                self.assertIn("subject",params)
-                self.assertIn("body",params)
-                subjects.append(params["subject"][0])
+                if index < 2:
+                    self.assertEqual(urlsplit(link).netloc,"mail.google.com")
+                    self.assertEqual(params.get("view"),["cm"])
+                    self.assertEqual(params.get("fs"),["1"])
+                    self.assertEqual(params.get("to"),["cankilicbay@gmail.com"])
+                    self.assertIn("su",params)
+                    subjects.append(params["su"][0])
+                    self.assertIn("body",params)
+                    self.assertIn("Stockholm Guide issue #",params["body"][0])
+                else:
+                    self.assertTrue(link.startswith("mailto:cankilicbay@gmail.com?"))
+                    self.assertIn("subject",params)
+                    self.assertIn("body",params)
+                    subjects.append(params["subject"][0])
             self.assertIn(f"Stockholm Guide #{g['issue_number']} | LIKE",subjects)
             self.assertIn(f"Stockholm Guide #{g['issue_number']} | DISLIKE",subjects)
             self.assertIn("Stockholm Guide | UNSUBSCRIBE",subjects)
