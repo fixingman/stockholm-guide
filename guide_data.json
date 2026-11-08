@@ -11,7 +11,12 @@
       "venue": "Konträr, Östgötagatan 33",
       "price": "Price unverified; subscriber booking conditions apply",
       "booking": "Tickets listed 13–14 Nov; few left 16 Nov",
-      "rationale": "A real film studio is assembled live, with audience members potentially becoming extras as AI-assisted environments transform the scene. Swedish-language; especially compelling for participatory theatre and AI."
+      "rationale": "A real film studio is assembled live, with audience members potentially becoming extras as AI-assisted environments transform the scene. Swedish-language; especially compelling for participatory theatre and AI.",
+      "image_url": "https://fixingman.github.io/stockholm-guide/assets/verkligheten-press.jpg",
+      "image_source_url": "https://kontrar.se/en/show/verkligheten/",
+      "image_alt": "Official Verkligheten production photograph showing performers and a camera operator in the live studio; photo Julia Mård",
+      "image_verified": true,
+      "image_cache_file": "verkligheten-press.jpg"
     },
     {
       "title": "Visioner av Nuet 1966–2026",
