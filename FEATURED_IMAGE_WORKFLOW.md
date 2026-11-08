@@ -11,3 +11,12 @@ Required for every new Stockholm Guide edition, before HTML rendering.
 Pre-send: Run `python render_minimal.py --data FRESH_ISSUE.json --output EMAIL.html --asset-base-url https://fixingman.github.io/stockholm-guide/assets`. Its output reports Top 3 verified image coverage and missing-image titles; rendering rejects broken/incomplete verified-image metadata and missing cached files. A missing image does not prevent sending a valid edition.
 
 Audit notes: `IMAGE_AUDIT.md`. In sample edition #002 the previously authorized Verkligheten production press photo is restored; the other two remain placeholders until individually verified, including reuse permissions.
+
+## Tested official-image URLs (8 November 2026)
+
+A reusable diagnostic GitHub Actions workflow, `.github/workflows/featured-image-probe.yml`, fetched official event pages, discovered `og:image` candidates and tested the returned media types. [Workflow run 42480715638](https://github.com/fixingman/stockholm-guide/actions/runs/42480715638) passed. These are **technical availability results, not licenses or guarantees that email clients hotlink them**.
+
+- Visioner av Nuet — official Fylkingen event artwork: `https://fylkingen.se/media/sites%2Fclvuuu5cs0001xwfc7ne538fo%2Fmedia%2Ff29a6c33-2b34-47e5-8359-dbaf58f21682-VaN-2-16x9.jpg`. HTTP 200, image/jpeg. Alternate Tekniska museet event artwork: `https://www.tekniskamuseet.se/app/uploads/2026/10/van-2-fb-event.jpg`, HTTP 200, image/jpeg.
+- Sound of Stockholm Saturday — official Fylkingen Saturday `og:image` (Lisa Ullén): `https://fylkingen.se/media/sites%2Fclvuuu5cs0001xwfc7ne538fo%2Fmedia%2F0ad16af2-9ebe-477d-8e35-c3400eb3c1d5-lisaullen_6W7A1951.jpg`. HTTP 200, image/jpeg. Alternate official festival site `og:image`: `https://freight.cargo.site/w/1000/i/X3215576396280121608059225178842/screenshot-3340826510.jpg`, HTTP 200, image/jpeg.
+
+Current issue #002 stores the two event-specific `image_candidate_*` fields for review but intentionally does **not** set `image_verified` or enable them in the newsletter until embedding and permission concerns are resolved. The original official event-specific links are stored rather than generic venue homepages.
