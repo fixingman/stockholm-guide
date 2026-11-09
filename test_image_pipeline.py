@@ -31,7 +31,7 @@ class ImagePipelineTests(unittest.TestCase):
     def test_approved_image_is_cached_to_stable_name(self):
         with tempfile.TemporaryDirectory() as d, patch.object(p, "ROOT", Path(d)):
             guide = {"issue_number":"900","top3":[{"title":"Exact concert","url":"https://events.example/2026",
-                     "image_reuse_approved": True}]}
+                     "image_reuse_approved": True, "image_approved_source_url":"https://events.example/image.jpg"}]}
             source = Path(d)/"data.json"
             source.write_text(json.dumps(guide))
             picture = Image.open(io.BytesIO(jpeg()))
