@@ -23,6 +23,13 @@ class ImagePipelineTests(unittest.TestCase):
         self.assertEqual(parser.candidates[0][0], "/poster.jpg")
         self.assertIn("https://events.example/photo.jpg", list(p.json_images(json.loads("".join(parser.jsonld[0:])))))
 
+    def test_logos_are_rejected_even_when_in_query_params(self):
+        parser = p.PageImages()
+        parser.feed('<meta property="og:image" content="https://example.com/_next/image?url=%2Fmedia%2FlightLogo.png&amp;w=1920&amp;q=75">')
+        # The full-URL exclusion is part of the production discovery filter.
+        self.assertTrue(p.SKIP.search(parser.candidates[0][0]))
+        self.assertFalse(p.SKIP.search("https://example.com/media/event-photo.jpg"))
+
     def test_reject_invalid_or_insecure_urls(self):
         for url in ["http://example.com/a.jpg", "file:///etc/passwd", "https://user:pass@host/a"]:
             self.assertFalse(p.https(url))
