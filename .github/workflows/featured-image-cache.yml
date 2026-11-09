@@ -1,9 +1,10 @@
-name: Audit and cache featured event images
+name: Discover and link official event images
 on:
   push:
     branches: [main]
     paths:
       - image_pipeline.py
+      - test_image_pipeline.py
       - guide_data.json
       - .github/workflows/featured-image-cache.yml
   workflow_dispatch:
@@ -37,7 +38,7 @@ jobs:
           name: featured-image-audit
           path: image-report.json
           retention-days: 30
-      - name: Commit authorized, cached assets only
+      - name: Commit verified direct links and any approved cached assets
         if: github.event_name == 'push' || inputs.apply_approved_assets == true
         run: |
           git config user.name "stockholm-guide-bot"
