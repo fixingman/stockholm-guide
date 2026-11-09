@@ -1,5 +1,11 @@
 name: Audit and cache featured event images
 on:
+  push:
+    branches: [main]
+    paths:
+      - image_pipeline.py
+      - guide_data.json
+      - .github/workflows/featured-image-cache.yml
   workflow_dispatch:
     inputs:
       apply_approved_assets:
