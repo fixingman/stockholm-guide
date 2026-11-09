@@ -152,7 +152,7 @@ def run(data_path, report_path, write=False, asset_base="https://fixingman.githu
         outcome = {"title": item["title"], "status": "fallback", "source_pages": []}
         pages = [item["url"]] + item.get("image_source_pages", [])
         pages = list(dict.fromkeys(pages))[:4]
-        approved = item.get("image_reuse_approved") is True
+        approved_url = item.get("image_approved_source_url")\n        approved = item.get("image_reuse_approved") is True and bool(approved_url)\n        if item.get("image_reuse_approved") is True and not approved_url:\n            outcome["warning"] = "Approval flag alone is insufficient; pin image_approved_source_url"
         # An already approved cached asset need not be replaced.
         if item.get("image_verified") and item.get("image_cache_file") and (ROOT / "assets" / item["image_cache_file"]).is_file():
             outcome.update(status="existing_cached", asset=item["image_cache_file"])
