@@ -41,3 +41,14 @@ GitHub Actions: `.github/workflows/featured-image-cache.yml` runs automatically 
 Even stable HTTPS hosting cannot override a recipient's email-client image blocking settings. The Minimal Editorial no-photo fallback is an inline HTML tile, which does not depend on downloading an image.
 
 The 8–21 Nov sample is presently **1/3 cached**, with the other two official artwork URLs found and technically validated, but not authorized for redistribution. This approval boundary is deliberate, not a broken fetcher.
+
+
+## Direct official image links — default path (9 November 2026)
+
+For newsletter thumbnails, the default is now **a verified HTTPS image URL from the event's own official page**, not a copied asset. The automated `image_pipeline.py --write` validates image format, dimensions and origin, and writes `image_verified`, `image_url`, `image_source_url` and `image_alt` back into the issue data. It does **not** reproduce that image on our public hosting. An `image_candidate_url` may be used when it was reviewed for the exact official event and source page.
+
+**Caching is separate**: only when explicit authorization exists to republish that image on GitHub Pages should `image_reuse_approved: true` and a matching `image_approved_source_url` be supplied. The presence of an image on an organizer's website alone is not a grant of permission to copy it.
+
+The linked image will remain hosted by the organizer, and the event item links to the organizer's event page. However, linking readers to an organizer page and embedding its photo in an email are distinct things; an organizer's terms and hotlink restrictions still matter. A working origin image may be suppressed by the recipient's mail client. We therefore retain an HTML fallback and continue to report remotely linked versus cached images separately.
+
+The GitHub Actions image workflow runs on new sample issue JSON (or manual dispatch). A fresh Sunday issue generated only in the automation's ephemeral runtime still requires its own retrieval, validation and update process; the repository workflow cannot see that data automatically.
