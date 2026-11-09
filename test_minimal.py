@@ -18,10 +18,15 @@ class MinimalTests(unittest.TestCase):
             subprocess.run([sys.executable,str(ROOT/"render_minimal.py"),"--output",str(path)],check=True,capture_output=True)
             html=path.read_text(encoding="utf-8");a=Audit();a.feed(html)
             expected=sum(len(g[k]) for k in ("top3","new_discoveries","worth_reconsidering","unavailable"))
-            self.assertEqual(len(a.links),expected+3)  # Every event link plus 3 footer feedback links
-            self.assertEqual(len(a.images),4)
+            self.assertEqual(len(a.links),expected+6)  # Event row links, 3 thumbnail links, and 3 feedback links
+            self.assertEqual(len(a.images),1+sum(bool(item.get("image_verified") and item.get("image_url")) for item in g["top3"]))
             self.assertEqual(sum("milestone_skyline.png" in x for x in a.images),1)
-            self.assertEqual(sum("event-placeholder" in x for x in a.images),sum(not (item.get("image_verified") and item.get("image_url")) for item in g["top3"]))
+            self.assertNotIn("event-placeholder-thumb.jpg",html)
+            self.assertEqual(html.count('aria-label="No verified event photo available"'),sum(not (item.get("image_verified") and item.get("image_url")) for item in g["top3"]))
+            self.assertEqual(html.count('class="top-thumb-link"'),3)
+            self.assertEqual(html.count('class="event-card-link"'),expected-len(g["unavailable"]))
+            self.assertIn("font-size:15px!important;line-height:21px!important",html)
+            self.assertIn("font:bold 17px/24px",html)
             for item in g["top3"]:
                 photo = item.get("image_cache_file") or item.get("image_url")
                 if item.get("image_verified") and photo:
