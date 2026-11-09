@@ -59,9 +59,11 @@ class ImagePipelineTests(unittest.TestCase):
             with patch.object(p,"discover",return_value=[{"url":"https://events.example/photo.jpg","description":"og:image","score":100}]), \
                  patch.object(p,"validate_photo",return_value=(jpeg(),picture,"https://events.example/photo.jpg",(960,540))):
                 result=p.run(source,Path(d)/"report.json",write=True)
-            self.assertEqual(result["events"][0]["status"],"needs_rights_review")
+            self.assertEqual(result["events"][0]["status"],"remote_linked")
             self.assertFalse((Path(d)/"assets").exists())
-            self.assertNotIn("image_verified",json.loads(source.read_text())["top3"][0])
+            self.assertTrue(json.loads(source.read_text())["top3"][0]["image_verified"])
+            self.assertEqual(json.loads(source.read_text())["top3"][0]["image_url"],"https://events.example/photo.jpg")
+            self.assertNotIn("image_cache_file",json.loads(source.read_text())["top3"][0])
 
 
 if __name__=="__main__":
