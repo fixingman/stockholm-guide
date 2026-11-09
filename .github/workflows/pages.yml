@@ -23,7 +23,7 @@ jobs:
           python-version: '3.12'
       - name: Build tokenized preview from canonical template
         run: |
-          python -m pip install 'Jinja2>=3.1.6,<4'
+          python -m pip install 'Jinja2>=3.1.6,<4' 'Pillow>=11,<14'
           python render.py --data guide_data.json --output preview.html
           cp preview.html index.html
           python render.py --data guide_data.json --output email.html --asset-base-url https://fixingman.github.io/stockholm-guide/assets
@@ -32,7 +32,7 @@ jobs:
         run: |
           mkdir -p minimal-experiment
           python render_minimal.py --data guide_data.json --output minimal-experiment/index.html
-          python -m unittest test_minimal
+          python -m unittest test_minimal test_image_pipeline
       - name: Commit rendered minimal email for delivery
         run: |
           cp minimal-experiment/index.html latest-minimal-email.html
