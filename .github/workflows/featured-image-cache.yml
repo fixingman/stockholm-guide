@@ -1,0 +1,43 @@
+name: Audit and cache featured event images
+on:
+  workflow_dispatch:
+    inputs:
+      apply_approved_assets:
+        description: 'Cache only images explicitly approved for reuse in guide_data.json'
+        type: boolean
+        default: false
+permissions:
+  contents: write
+jobs:
+  featured-images:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install 'Pillow>=11,<14' 'Jinja2>=3.1.6,<4'
+      - run: python -m unittest test_image_pipeline test_minimal
+      - name: Discover, validate and report images from official event pages
+        run: |
+          if [ "${{ inputs.apply_approved_assets }}" = "true" ]; then
+            python image_pipeline.py --data guide_data.json --report image-report.json --write
+            python render_minimal.py --data guide_data.json --output /tmp/featured-preview.html
+          else
+            python image_pipeline.py --data guide_data.json --report image-report.json
+          fi
+      - uses: actions/upload-artifact@v4
+        with:
+          name: featured-image-audit
+          path: image-report.json
+          retention-days: 30
+      - name: Commit authorized, cached assets only
+        if: inputs.apply_approved_assets == true
+        run: |
+          git config user.name "stockholm-guide-bot"
+          git config user.email "stockholm-guide-bot@users.noreply.github.com"
+          git add guide_data.json assets/featured-*.jpg
+          if ! git diff --cached --quiet; then
+            git commit -m "Cache approved featured event artwork"
+            git push origin HEAD:main
+          fi
