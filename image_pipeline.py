@@ -112,7 +112,7 @@ def discover(page_url):
     candidates = []
     for link, desc, bonus in parser.candidates:
         url = urljoin(final_url, link)
-        if not https(url) or SKIP.search(urlparse(url).path):
+        if not https(url) or SKIP.search(url):
             continue
         if url in seen:
             continue
@@ -167,6 +167,12 @@ def run(data_path, report_path, write=False, asset_base="https://fixingman.githu
             outcome["source_pages"].append(attempt)
             try:
                 candidates = discover(page)
+                pinned = item.get("image_candidate_url")
+                pinned_source = item.get("image_candidate_source_url")
+                if pinned and pinned_source == page and https(pinned) and not SKIP.search(pinned):
+                    candidates = [{"url": pinned, "description": "Reviewed official event candidate", "score": 120}] + [
+                        c for c in candidates if c["url"] != pinned
+                    ]
             except (HTTPError, URLError, TimeoutError, OSError, ValueError) as e:
                 attempt["error"] = str(e)[:180]
                 continue
