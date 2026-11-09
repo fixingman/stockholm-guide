@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
-"""Discover official event artwork, verify it and (only with reuse permission) cache it.
+"""Discover official event artwork, link verified URLs, and cache approved copies.
 
 No image search guessing, and no automatic republication of copyrighted media.
-Output: image-report.json; with --write, approved assets + updated event JSON.
+Output: image-report.json; with --write, link validated official image URLs into JSON,\nand cache a copy only when separately approved for republication.
 """
 import argparse
 import hashlib
@@ -185,8 +185,15 @@ def run(data_path, report_path, write=False, asset_base="https://fixingman.githu
                     check.update(status="valid_image", dimensions=list(dims))
                     # Match to the exact official event page; the source media itself
                     # may be on the organizer's CDN. The organizer must be the input.
-                    if winner is None:
+                    # Only official page metadata / reviewed same-event artwork.
+                    confident = candidate["description"] in (
+                        "og:image", "og:image:url", "twitter:image",
+                        "twitter:image:src", "schema.org image",
+                        "Reviewed official event candidate"
+                    )
+                    if winner is None and confident:
                         winner = (blob, image, url, page, candidate["description"])
+                        break
                 except (HTTPError, URLError, TimeoutError, OSError, ValueError) as e:
                     check["error"] = str(e)[:150]
             if winner:
@@ -194,10 +201,17 @@ def run(data_path, report_path, write=False, asset_base="https://fixingman.githu
         if winner is None:
             outcome["reason"] = "No technically usable image found on supplied official pages"
         elif not approved:
-            outcome["status"] = "needs_rights_review"
-            outcome["candidate_url"] = winner[2]
-            outcome["candidate_source_url"] = winner[3]
-            outcome["reason"] = "Candidate loads; permission to cache or redistribute not approved"
+            # Link directly to the exact organizer image, without rehosting.
+            # Email clients may still block remotely loaded images.
+            blob, image, url, page, desc = winner
+            outcome.update(status="remote_linked" if write else "ready_for_remote_link",
+                           image_url=url, image_source_url=page, image_origin=desc)
+            if write:
+                item.pop("image_cache_file", None)
+                item.pop("image_cache_sha256", None)
+                item.update(image_verified=True, image_url=url,
+                            image_source_url=page,
+                            image_alt=item.get("image_alt") or ("Official event image for " + item["title"]))
         else:
             blob, image, url, page, desc = winner
             encoded = prepare(blob, image)
@@ -219,6 +233,7 @@ def run(data_path, report_path, write=False, asset_base="https://fixingman.githu
         Path(data_path).write_text(json.dumps(guide, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     report = {"issue": guide.get("issue_number"), "total": len(results),
               "cached_or_approved": sum(r["status"] in ("cached", "existing_cached", "ready_to_cache") for r in results),
+              "remote_links": sum(r["status"] in ("remote_linked", "ready_for_remote_link") for r in results),
               "events": results}
     Path(report_path).write_text(json.dumps(report, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     return report
@@ -228,13 +243,13 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--data", default=str(ROOT / "guide_data.json"))
     ap.add_argument("--report", default="image-report.json")
-    ap.add_argument("--write", action="store_true", help="Write only explicitly reuse-approved images to assets and data JSON")
+    ap.add_argument("--write", action="store_true", help="Write verified remote image links; cache only approved copies")
     ap.add_argument("--asset-base-url", default="https://fixingman.github.io/stockholm-guide/assets")
     args = ap.parse_args()
     report = run(args.data, args.report, args.write, args.asset_base_url)
     for event in report["events"]:
         print(event["status"].upper(), event["title"], event.get("asset", event.get("candidate_url", event.get("reason", ""))))
-    print(f"Image coverage: {report['cached_or_approved']}/{report['total']}; full audit: {args.report}")
+    print(f"Image coverage: {report['cached_or_approved']} cached, {report['remote_links']} official remote links / {report['total']} picks; audit: {args.report}")
 
 
 if __name__ == "__main__":
