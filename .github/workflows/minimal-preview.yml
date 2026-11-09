@@ -13,8 +13,8 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - run: python -m pip install 'Jinja2>=3.1.6,<4'
-      - run: python -m unittest test_minimal
+      - run: python -m pip install 'Jinja2>=3.1.6,<4' 'Pillow>=11,<14'
+      - run: python -m unittest test_minimal test_image_pipeline
       - name: Generate alternate newsletter HTML
         run: |
           python render_minimal.py --output minimal-preview.html
