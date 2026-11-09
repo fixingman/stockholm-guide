@@ -27,6 +27,8 @@ class MinimalTests(unittest.TestCase):
             self.assertEqual(html.count('class="event-card-link"'),expected-len(g["unavailable"]))
             self.assertIn("font-size:15px!important;line-height:21px!important",html)
             self.assertIn("font:bold 17px/24px",html)
+            self.assertEqual(html.count('background:#161616;'),4)
+            self.assertEqual(html.count('text-transform:uppercase;color:#fcfaf6;'),4)
             for item in g["top3"]:
                 photo = item.get("image_cache_file") or item.get("image_url")
                 if item.get("image_verified") and photo:
