@@ -26,7 +26,7 @@ jobs:
       - run: python -m unittest test_image_pipeline test_minimal
       - name: Discover, validate and report images from official event pages
         run: |
-          if [ "${{ inputs.apply_approved_assets }}" = "true" ]; then
+          if [ "${{ github.event_name }}" = "push" ] || [ "${{ inputs.apply_approved_assets }}" = "true" ]; then
             python image_pipeline.py --data guide_data.json --report image-report.json --write
             python render_minimal.py --data guide_data.json --output /tmp/featured-preview.html
           else
@@ -38,7 +38,7 @@ jobs:
           path: image-report.json
           retention-days: 30
       - name: Commit authorized, cached assets only
-        if: inputs.apply_approved_assets == true
+        if: github.event_name == 'push' || inputs.apply_approved_assets == true
         run: |
           git config user.name "stockholm-guide-bot"
           git config user.email "stockholm-guide-bot@users.noreply.github.com"
