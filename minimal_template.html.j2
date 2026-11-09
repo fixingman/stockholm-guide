@@ -29,8 +29,8 @@
 <body style="margin:0;padding:0;background:#f2f0eb;color:#121212;-webkit-text-size-adjust:100%;">
 <div style="display:none;font-size:1px;line-height:1px;max-height:0;max-width:0;opacity:0;overflow:hidden;">{{ guide.intro }} — {{ guide.date_range }}</div>
 {% macro section_header(name) -%}
-<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;width:100%;border-bottom:1px solid #292929;">
-<tr><td style="width:14px;vertical-align:middle;padding:0 0 12px;"><span style="display:block;width:10px;height:10px;border-radius:50%;background:#111;font-size:0;line-height:0;">&nbsp;</span></td><td style="vertical-align:middle;padding:0 0 12px 10px;"><div class="section-heading" style="font:bold 17px/24px 'Courier New',Courier,monospace;letter-spacing:1px;text-transform:uppercase;">{{ name }}</div></td></tr>
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;width:100%;background:#161616;">
+<tr><td style="width:14px;vertical-align:middle;padding:13px 0 13px 14px;"><span style="display:block;width:8px;height:8px;border-radius:50%;background:#fcfaf6;font-size:0;line-height:0;">&nbsp;</span></td><td style="vertical-align:middle;padding:11px 15px 11px 13px;"><div class="section-heading" style="font:bold 17px/24px 'Courier New',Courier,monospace;letter-spacing:1px;text-transform:uppercase;color:#fcfaf6;">{{ name }}</div></td></tr>
 </table>
 {%- endmacro %}
 {% macro event_body(item, condensed=false) -%}
