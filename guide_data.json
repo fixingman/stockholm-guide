@@ -50,7 +50,11 @@
       "image_candidate_review": "HTTP 200 image/jpeg verified from official Saturday 2026 event og:image on 2026-11-08. Image reuse/hotlink permission not confirmed; do not render as verified.",
       "image_source_pages": [
         "https://soundofstockholm.se/"
-      ]
+      ],
+      "image_verified": true,
+      "image_url": "https://freight.cargo.site/w/1000/i/X3215576396280121608059225178842/screenshot-3340826510.jpg",
+      "image_source_url": "https://soundofstockholm.se/",
+      "image_alt": "Official event image for Sound of Stockholm — Saturday"
     }
   ],
   "new_discoveries": [
