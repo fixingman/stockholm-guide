@@ -21,6 +21,17 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
+      - name: Prevent private subscriber/consent files from entering public repository
+        run: |
+          python - <<'PY'
+          import re, subprocess
+          tracked=subprocess.check_output(["git","ls-files"],text=True).splitlines()
+          private=re.compile(r"(^|/)(private|\\.private)/|(^|/)(subscribers?|recipients?|suppression|consent)[^/]*\\.(json|csv|tsv|txt)$",re.I)
+          leaks=[path for path in tracked if private.search(path)]
+          if leaks:
+              raise SystemExit("Private subscriber records are tracked: "+", ".join(leaks))
+          print("Subscriber privacy file policy: PASSED")
+          PY
       - name: Build tokenized preview from canonical template
         run: |
           python -m pip install 'Jinja2>=3.1.6,<4' 'Pillow>=11,<14'
