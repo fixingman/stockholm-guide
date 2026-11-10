@@ -7,6 +7,7 @@ from pathlib import Path
 
 from editorial_quality import audit
 from recipient_guard import audit as recipients
+from discovery_ranker import rank
 
 
 ROOT=Path(__file__).resolve().parent
@@ -103,6 +104,22 @@ class SubscriberTests(unittest.TestCase):
     def test_no_unsubscribe_mailbox_blocks(self):
         self.assertFalse(self.run_guard(unsubscribe_mailbox="")["ready_for_send"])
 
+
+
+class DiscoveryTests(unittest.TestCase):
+    def test_organizer_cap_and_duplicate_filter(self):
+        candidates=[{"title":f"Event {i}","url":f"https://same.example.org/{i}","novelty":"unusual"} for i in range(6)]
+        candidates.append({"title":"Other organizer","url":"https://other.example.org/event","novelty":"unusual"})
+        ranked=rank(candidates,limit=10,max_per_organizer=2)
+        self.assertEqual(len(ranked["selected"]),3)
+        self.assertTrue(any(x["reason"]=="organizer_cap" for x in ranked["deferred"]))
+
+    def test_previous_issue_penalizes_repeat(self):
+        candidates=[{"title":"Repeated event","url":"https://one.example.org/repeat","novelty":"unusual"},
+                    {"title":"New event","url":"https://two.example.org/new","novelty":"unusual"}]
+        previous={"new_discoveries":[{"title":"Repeated event"}]}
+        ranked=rank(candidates,history=[previous])
+        self.assertEqual(ranked["selected"][0]["title"],"New event")
 
 if __name__=="__main__":
     unittest.main()
