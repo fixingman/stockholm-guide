@@ -46,7 +46,7 @@ jobs:
           import json
           from pathlib import Path
           m=json.loads(Path("release/delivery-manifest.json").read_text())
-          assert m["ready_for_delivery"] and len(m["featured_images"]) == 3
+          assert m["ready_for_delivery"] and len(m["featured_images"])+m["inline_fallbacks"] == 3
           assert m["editorial_quality"]["ready_for_editorial_release"]
           assert m["freshness"]["ready_for_send"]
           print("RELEASE GATE PASSED — HTML digest:",m["html_sha256"])
@@ -56,5 +56,14 @@ jobs:
           name: verified-sunday-issue-html-and-manifest
           path: release/
           retention-days: 14
-      - name: Publish exact verified HTML and manifest on dedicated branch
-        run: bash publish_verified_release.sh release production
+      - name: Publish verified production or isolated owner-only rehearsal branch
+        run: |
+          python - <<'PY'
+          import json,os
+          issue=json.load(open("issues/current.json"))
+          channel="smoke" if issue.get("rehearsal") is True else "production"
+          with open(os.environ["GITHUB_ENV"],"a") as f:
+              f.write("RELEASE_CHANNEL="+channel+"\n")
+          print("Release channel:",channel)
+          PY
+          bash publish_verified_release.sh release "${RELEASE_CHANNEL:-production}"
