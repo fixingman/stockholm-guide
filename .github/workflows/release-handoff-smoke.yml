@@ -34,11 +34,10 @@ jobs:
           python - <<'PY'
           import json,hashlib
           from pathlib import Path
-          from delivery_guard import html_digest
           html=Path('/tmp/published.html').read_text()
           m=json.loads(Path('/tmp/published-manifest.json').read_text())
           assert m['smoke_test_only'] is True and m['release_channel']=='smoke'
-          assert html_digest(html)==m['html_sha256']
+          assert hashlib.sha256(html.replace('\\r\\n','\\n').rstrip('\\n').encode()).hexdigest()==m['html_sha256']
           assert html == Path('smoke-release/outgoing.html').read_text()
           print('PASS: GitHub artifact branch contains the exact validated issue HTML, no email involved')
           PY
