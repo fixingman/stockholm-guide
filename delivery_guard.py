@@ -16,6 +16,7 @@ from urllib.error import HTTPError, URLError
 from urllib.parse import urlparse
 
 from image_pipeline import validate_photo
+from editorial_quality import audit as editorial_audit
 
 SECTIONS = ("top3", "new_discoveries", "worth_reconsidering", "unavailable")
 MAX_HTML_BYTES = 100_000
@@ -202,6 +203,8 @@ def main():
     parser.add_argument("--html", help="The exact outgoing HTML, not a preview from another issue")
     parser.add_argument("--manifest", help="Output manifest JSON")
     parser.add_argument("--network", action="store_true", help="Perform anonymous image GET/decode checks")
+    parser.add_argument("--editorial-strict", action="store_true", help="Block unverified event facts or unreviewed photo identities")
+    parser.add_argument("--history", action="append", default=[], help="Prior issue JSON for repeat detection")
     parser.add_argument("--verify-sent-mime", help="Optional downloaded raw Gmail RFC822 MIME file")
     args = parser.parse_args()
     if args.verify_sent_mime:
@@ -217,6 +220,13 @@ def main():
     if not (args.data and args.html and args.manifest):
         parser.error("--data, --html and --manifest are required for pre-send checks")
     report = create_manifest(args.data, args.html, network=args.network)
+    if args.editorial_strict:
+        history = [json.loads(Path(p).read_text(encoding="utf-8")) for p in args.history]
+        editorial = editorial_audit(json.loads(Path(args.data).read_text(encoding="utf-8")),history,strict=True)
+        report["editorial_quality"] = editorial
+        report["errors"].extend("EDITORIAL: "+e for e in editorial["errors"])
+        report["warnings"].extend("EDITORIAL: "+w for w in editorial["warnings"])
+        report["ready_for_delivery"] = not report["errors"]
     Path(args.manifest).write_text(json.dumps(report, indent=2, ensure_ascii=False)+"\n")
     print(json.dumps({"ready_for_delivery":report["ready_for_delivery"],
                       "errors":report["errors"],"warnings":report["warnings"],
