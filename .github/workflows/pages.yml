@@ -26,7 +26,7 @@ jobs:
           python - <<'PY'
           import re, subprocess
           tracked=subprocess.check_output(["git","ls-files"],text=True).splitlines()
-          private=re.compile(r"(^|/)(private|\\.private)/|(^|/)(subscribers?|recipients?|suppression|consent)[^/]*\\.(json|csv|tsv|txt)$",re.I)
+          private=re.compile(r"(^|/)(private|[.]private)/|(^|/)(subscribers?|recipients?|suppression|consent)[^/]*[.](json|csv|tsv|txt)$",re.I)
           leaks=[path for path in tracked if private.search(path)]
           if leaks:
               raise SystemExit("Private subscriber records are tracked: "+", ".join(leaks))
