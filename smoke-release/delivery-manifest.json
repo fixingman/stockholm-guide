@@ -1,0 +1,30 @@
+{
+  "ready_for_delivery": true,
+  "errors": [],
+  "warnings": [
+    "Anonymous live image checks not performed; use --network before delivery",
+    "Hosted images must already be deployed before sending"
+  ],
+  "issue_number": "TEST-20261109",
+  "date_range": "9–22 November 2026",
+  "total_event_rows": 13,
+  "section_titles": [
+    "Top 3 picks",
+    "New discoveries",
+    "Worth reconsidering",
+    "Unavailable / sold out"
+  ],
+  "featured_images": [
+    "https://fixingman.github.io/stockholm-guide/assets/verkligheten-press.jpg",
+    "https://fylkingen.se/media/sites%2Fclvuuu5cs0001xwfc7ne538fo%2Fmedia%2Ff29a6c33-2b34-47e5-8359-dbaf58f21682-VaN-2-16x9.jpg",
+    "https://freight.cargo.site/w/1000/i/X3215576396280121608059225178842/screenshot-3340826510.jpg"
+  ],
+  "image_checks": [],
+  "inline_fallbacks": 0,
+  "html_sha256": "e527c228e566bfc4192adf18a3b50bec9bc5feac5f00b8bcbfbe5666b7409547",
+  "html_bytes": 27396,
+  "image_proxy_certified": false,
+  "data_sha256": "c6d116b45bb4bedd87c7851f5d59bf9a9285964752e53893d87e088f113c99ef",
+  "rendered_html_file": "outgoing.html",
+  "preflight_timestamp_utc": "2026-11-10T18:23:39.152254+00:00"
+}

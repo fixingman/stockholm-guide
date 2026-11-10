@@ -1,0 +1,157 @@
+{
+  "issue_number": "TEST-20261109",
+  "date_range": "9–22 November 2026",
+  "intro": "A test edition produced from freshly checked 9–22 November Stockholm event listings. Sent only to the newsletter owner; no public list send.",
+  "top3": [
+    {
+      "title": "VERKLIGHETEN — live film and AI theatre",
+      "dates": "13, 14 & 16 Nov · 19:00–21:00",
+      "description": "A real film studio is assembled live, with audience members potentially becoming extras as AI-assisted environments transform the scene. Swedish-language; especially compelling for participatory theatre and AI.",
+      "url": "https://kontrar.se/en/show/verkligheten/",
+      "venue": "Konträr, Östgötagatan 33",
+      "price": "Price unverified; subscriber booking conditions apply",
+      "booking": "Tickets listed 13–14 Nov; few left 16 Nov",
+      "rationale": "A real film studio is assembled live, with audience members potentially becoming extras as AI-assisted environments transform the scene. Swedish-language; especially compelling for participatory theatre and AI.",
+      "image_url": "https://fixingman.github.io/stockholm-guide/assets/verkligheten-press.jpg",
+      "image_source_url": "https://kontrar.se/en/show/verkligheten/",
+      "image_alt": "Official Verkligheten production photograph showing performers and a camera operator in the live studio; photo Julia Mård",
+      "image_verified": true,
+      "image_cache_file": "verkligheten-press.jpg",
+      "image_cache_sha256": "10e6d947e937fb2a1c3d6c9d5242acefd3094779c8081d980d4b63d61252ed6d"
+    },
+    {
+      "title": "Visioner av Nuet 1966–2026",
+      "dates": "Thu–Sat 12–14 Nov · program times vary",
+      "description": "An anniversary program revisiting experimental art and technology, with sessions at Fylkingen and Tekniska museet. Particularly worth checking for its crossovers between art, electronics and future-facing ideas.",
+      "url": "https://www.fylkingen.se/en/events/visioner-av-nuet-1966-2026",
+      "venue": "Fylkingen and Tekniska museet",
+      "price": "Some sessions free; other prices unverified",
+      "booking": "Program listed; verify individual sessions",
+      "rationale": "An anniversary program revisiting experimental art and technology, with sessions at Fylkingen and Tekniska museet. Particularly worth checking for its crossovers between art, electronics and future-facing ideas.",
+      "image_candidate_url": "https://fylkingen.se/media/sites%2Fclvuuu5cs0001xwfc7ne538fo%2Fmedia%2Ff29a6c33-2b34-47e5-8359-dbaf58f21682-VaN-2-16x9.jpg",
+      "image_candidate_source_url": "https://www.fylkingen.se/en/events/visioner-av-nuet-1966-2026",
+      "image_candidate_review": "HTTP 200 image/jpeg verified from official 2026 event og:image on 2026-11-08. Image reuse/hotlink permission not confirmed; do not render as verified.",
+      "image_verified": true,
+      "image_url": "https://fylkingen.se/media/sites%2Fclvuuu5cs0001xwfc7ne538fo%2Fmedia%2Ff29a6c33-2b34-47e5-8359-dbaf58f21682-VaN-2-16x9.jpg",
+      "image_source_url": "https://www.fylkingen.se/en/events/visioner-av-nuet-1966-2026",
+      "image_alt": "Official event image for Visioner av Nuet 1966–2026"
+    },
+    {
+      "title": "Sound of Stockholm — Saturday",
+      "dates": "Sat 21 Nov · 19:00",
+      "description": "An evening mixing experimental music, vocal performance and dance. Anna Fitoussi and Adele Kosman's short voice-and-movement works are a particularly interesting cross-disciplinary element.",
+      "url": "https://www.fylkingen.se/en/events/sound-of-stockholm-lordag",
+      "venue": "Fylkingen",
+      "price": "250 SEK; members/friends 150 SEK",
+      "booking": "Tickets listed; seats unverified",
+      "rationale": "An evening mixing experimental music, vocal performance and dance. Anna Fitoussi and Adele Kosman's short voice-and-movement works are a particularly interesting cross-disciplinary element.",
+      "image_candidate_url": "https://fylkingen.se/media/sites%2Fclvuuu5cs0001xwfc7ne538fo%2Fmedia%2F0ad16af2-9ebe-477d-8e35-c3400eb3c1d5-lisaullen_6W7A1951.jpg",
+      "image_candidate_source_url": "https://www.fylkingen.se/en/events/sound-of-stockholm-lordag",
+      "image_candidate_review": "HTTP 200 image/jpeg verified from official Saturday 2026 event og:image on 2026-11-08. Image reuse/hotlink permission not confirmed; do not render as verified.",
+      "image_source_pages": [
+        "https://soundofstockholm.se/"
+      ],
+      "image_verified": true,
+      "image_url": "https://freight.cargo.site/w/1000/i/X3215576396280121608059225178842/screenshot-3340826510.jpg",
+      "image_source_url": "https://soundofstockholm.se/",
+      "image_alt": "Official event image for Sound of Stockholm — Saturday"
+    }
+  ],
+  "new_discoveries": [
+    {
+      "title": "Klang Systematiek: Christian Marclay & Giuseppe Chiari",
+      "dates": "Wed 11 Nov · 19:00",
+      "description": "An experimental sound/art encounter built around two influential artists whose practices blur performance, musical scores and visual art. Good for a curious evening outside conventional concerts.",
+      "url": "https://fylkingen.se/en",
+      "venue": "Fylkingen, Saltmätargatan 2",
+      "price": "180 SEK; members/friends 100 SEK",
+      "booking": "Tickets listed; seats unverified"
+    },
+    {
+      "title": "Musiken och maskinen: AI i konstnärligt skapande",
+      "dates": "Thu 12 Nov · 18:00",
+      "description": "An unusually direct match for your work: a public exploration of how AI and machines enter artistic practice, rather than another generic technology lecture.",
+      "url": "https://fylkingen.se/en",
+      "venue": "Fylkingen / Visioner av Nuet program",
+      "price": "Price unverified",
+      "booking": "Event listed; booking unverified"
+    },
+    {
+      "title": "Visioner av Nuet 1966–2026",
+      "dates": "Thu–Sat 12–14 Nov · program times vary",
+      "description": "An anniversary program revisiting experimental art and technology, with sessions at Fylkingen and Tekniska museet. Particularly worth checking for its crossovers between art, electronics and future-facing ideas.",
+      "url": "https://www.fylkingen.se/en/events/visioner-av-nuet-1966-2026",
+      "venue": "Fylkingen and Tekniska museet",
+      "price": "Some sessions free; other prices unverified",
+      "booking": "Program listed; verify individual sessions"
+    },
+    {
+      "title": "INCANT",
+      "dates": "Wed 18 Nov · 18:30",
+      "description": "A contemporary experimental-music evening at Fylkingen; the lineup and artistic format deserve a closer look before committing.",
+      "url": "https://fylkingen.se/en",
+      "venue": "Fylkingen, Saltmätargatan 2",
+      "price": "180 SEK; members/friends 150 SEK",
+      "booking": "Tickets listed; details unverified"
+    },
+    {
+      "title": "Sound of Stockholm — Thursday",
+      "dates": "Thu 19 Nov · 18:30",
+      "description": "The opening festival night ranges across microtonality, electronics and performance; a strong opportunity to sample unconventional sound-making in a dedicated experimental space.",
+      "url": "https://www.fylkingen.se/en/events/sound-of-stockholm-torsdag",
+      "venue": "Fylkingen / Rönnells Antikvariat",
+      "price": "250 SEK; members/friends 150 SEK",
+      "booking": "Tickets listed; seats unverified"
+    },
+    {
+      "title": "Sound of Stockholm — Friday",
+      "dates": "Fri 20 Nov · 19:00",
+      "description": "Experimental improvisation and electronic sound, including harpist Rhodri Davies among a broad festival lineup. Good if you prefer something challenging and unpredictable.",
+      "url": "https://www.fylkingen.se/en/events/sound-of-stockholm-fredag",
+      "venue": "Fylkingen",
+      "price": "250 SEK; members/friends 150 SEK",
+      "booking": "Tickets listed; seats unverified"
+    },
+    {
+      "title": "Sound of Stockholm — Saturday",
+      "dates": "Sat 21 Nov · 19:00",
+      "description": "An evening mixing experimental music, vocal performance and dance. Anna Fitoussi and Adele Kosman's short voice-and-movement works are a particularly interesting cross-disciplinary element.",
+      "url": "https://www.fylkingen.se/en/events/sound-of-stockholm-lordag",
+      "venue": "Fylkingen",
+      "price": "250 SEK; members/friends 150 SEK",
+      "booking": "Tickets listed; seats unverified"
+    }
+  ],
+  "worth_reconsidering": [
+    {
+      "title": "VERKLIGHETEN — live film and AI theatre",
+      "dates": "13, 14 & 16 Nov · 19:00–21:00",
+      "description": "A real film studio is assembled live, with audience members potentially becoming extras as AI-assisted environments transform the scene. Swedish-language; especially compelling for participatory theatre and AI.",
+      "url": "https://kontrar.se/en/show/verkligheten/",
+      "venue": "Konträr, Östgötagatan 33",
+      "price": "Price unverified; subscriber booking conditions apply",
+      "booking": "Tickets listed 13–14 Nov; few left 16 Nov"
+    },
+    {
+      "title": "Sound of Stockholm — festival pass",
+      "dates": "19–21 Nov within the guide window; festival continues 22 Nov",
+      "description": "For a deeper exploration of improvisation, electronics, loudspeaker music and performance, the multi-day pass is better value than separate nights if you plan to attend several.",
+      "url": "https://www.fylkingen.se/en/events/sound-of-stockholm-GPO",
+      "venue": "Fylkingen and Rönnells Antikvariat",
+      "price": "560 SEK; members/friends 340 SEK",
+      "booking": "Pass listed; seats unverified"
+    }
+  ],
+  "unavailable": [
+    {
+      "title": "VERKLIGHETEN — Thursday performance",
+      "dates": "Thu 12 Nov · 19:00–21:00",
+      "description": "",
+      "url": "https://kontrar.se/en/show/verkligheten/",
+      "venue": "Konträr",
+      "price": "Price unverified",
+      "booking": "Sold out (organizer)"
+    }
+  ],
+  "disclaimer": "TEST ISSUE. Organizer dates checked against current November 2026 listings; ticket availability is not guaranteed. Image display depends on the email client."
+}
