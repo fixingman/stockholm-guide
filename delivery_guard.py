@@ -67,7 +67,7 @@ class EmailStructure(HTMLParser):
             self._heading += data
 
     def handle_endtag(self, tag):
-        if tag == "div" and self._in_heading:
+        if tag in ("div", "h2") and self._in_heading:
             self.sections.append(self._heading.strip())
             self._in_heading = False
 
