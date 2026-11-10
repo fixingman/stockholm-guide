@@ -1,0 +1,38 @@
+name: Email accessibility and browser resilience QA
+on:
+  push:
+    branches: [main]
+    paths:
+      - minimal_template.html.j2
+      - render_minimal.py
+      - email_client_qa.py
+      - delivery_guard.py
+      - .github/workflows/email-client-qa.yml
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  email-resilience:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install template, image and headless browser test support
+        run: |
+          python -m pip install 'Jinja2>=3.1.6,<4' 'Pillow>=11,<14' 'playwright>=1.55,<2'
+          python -m playwright install --with-deps chromium
+      - name: Render email and test responsive dark / blocked image scenarios
+        run: |
+          python render_minimal.py --data guide_data.json --output /tmp/stockholm-email.html
+          python email_client_qa.py --html /tmp/stockholm-email.html --browser --report email-client-qa-report.json --screenshots email-client-screenshots
+      - name: Upload quality report and 6 screenshots (not an email send)
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: email-accessibility-and-resilience
+          path: |
+            email-client-qa-report.json
+            email-client-screenshots/
+          retention-days: 14
