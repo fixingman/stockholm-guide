@@ -26,6 +26,11 @@ PLACEHOLDER_MARKER = "event-placeholder-thumb.jpg"
 def sha(raw):
     return hashlib.sha256(raw).hexdigest()
 
+def html_digest(html):
+    # MIME libraries commonly append one terminal newline and normalize CRLF.
+    # Ignore only that transport-level variation; preserve all interior content.
+    return sha(html.replace("\r\n", "\n").rstrip("\n").encode("utf-8"))
+
 
 class EmailStructure(HTMLParser):
     def __init__(self):
@@ -159,7 +164,7 @@ def assess(data, html, *, network=False, checker=image_delivery_check):
         "issue_number": data.get("issue_number"), "date_range": data.get("date_range"),
         "total_event_rows": expected_events, "section_titles": audit.sections,
         "featured_images": selected, "image_checks": checks, "inline_fallbacks": audit.placeholder_tiles,
-        "html_sha256": sha(html.encode("utf-8")), "html_bytes": len(html.encode("utf-8")),
+        "html_sha256": html_digest(html), "html_bytes": len(html.encode("utf-8")),
         "image_proxy_certified": False,
     }
 
@@ -185,7 +190,7 @@ def extract_html_from_mime(mime_bytes):
 
 
 def verify_sent_html(sent_html, manifest):
-    digest = sha(sent_html.encode("utf-8"))
+    digest = html_digest(sent_html)
     valid = digest == manifest.get("html_sha256")
     return {"matched": valid, "expected_sha256": manifest.get("html_sha256"),
             "sent_html_sha256": digest, "reason": None if valid else "Sent HTML differs from preflight"}
