@@ -35,6 +35,7 @@ jobs:
           python -m unittest test_minimal test_image_pipeline test_delivery_guard test_editorial_operations
           python editorial_quality.py --data guide_data.json --report sample-editorial-quality.json
           python delivery_guard.py --data guide_data.json --html minimal-experiment/index.html --manifest minimal-delivery-manifest.json
+          python email_client_qa.py --html minimal-experiment/index.html --report email-client-qa.json
       - name: Commit rendered minimal email for delivery
         run: |
           cp minimal-experiment/index.html latest-minimal-email.html
