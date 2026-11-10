@@ -4,7 +4,6 @@ on:
     branches: [main]
     paths:
       - issues/current.json
-      - .github/workflows/weekly-release-gate.yml
       - final_freshness.py
       - editorial_scanning.py
       - delivery_guard.py
