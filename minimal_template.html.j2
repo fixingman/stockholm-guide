@@ -2,8 +2,20 @@
 <html lang="en">
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark"><meta name="supported-color-schemes" content="light dark">
 <title>The Stockholm Guide — {{ guide.date_range }}</title>
 <style>
+/* Progressive enhancement; non-supporting email clients retain inline light colors. */
+@media (prefers-color-scheme: dark) {
+ body{background:#181818!important;color:#f3f0ec!important}
+ .shell{background:#242424!important;border-color:#454545!important}
+ .brand,.descriptor,.edition,.event-name,.event-card-link{color:#f7f4ef!important}
+ .event-meta,.event-description{color:#e0dbd4!important}
+ .event-content a,.event-card-link span{color:#eae6df!important}
+ .unavailable-meta{color:#d0cbc4!important}
+ .feedback-link{background:#242424!important;color:#f7f4ef!important;border-color:#aaa299!important}
+ .section-heading{color:#fcfaf6!important}
+}
 @media screen and (max-width:600px){
  .outer{padding:0!important}.shell{width:100%!important;max-width:100%!important;border-radius:0!important}
  .inset{padding-left:19px!important;padding-right:19px!important}
@@ -30,7 +42,7 @@
 <div style="display:none;font-size:1px;line-height:1px;max-height:0;max-width:0;opacity:0;overflow:hidden;">{{ guide.intro }} — {{ guide.date_range }}</div>
 {% macro section_header(name) -%}
 <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;width:100%;background:#161616;">
-<tr><td style="width:14px;vertical-align:middle;padding:13px 0 13px 14px;"><span style="display:block;width:8px;height:8px;border-radius:50%;background:#fcfaf6;font-size:0;line-height:0;">&nbsp;</span></td><td style="vertical-align:middle;padding:11px 15px 11px 13px;"><div class="section-heading" style="font:bold 17px/24px 'Courier New',Courier,monospace;letter-spacing:1px;text-transform:uppercase;color:#fcfaf6;">{{ name }}</div></td></tr>
+<tr><td style="width:14px;vertical-align:middle;padding:13px 0 13px 14px;"><span style="display:block;width:8px;height:8px;border-radius:50%;background:#fcfaf6;font-size:0;line-height:0;">&nbsp;</span></td><td style="vertical-align:middle;padding:11px 15px 11px 13px;"><h2 class="section-heading" style="margin:0;font:bold 17px/24px 'Courier New',Courier,monospace;letter-spacing:1px;text-transform:uppercase;color:#fcfaf6;">{{ name }}</h2></td></tr>
 </table>
 {%- endmacro %}
 {% macro event_body(item, condensed=false) -%}
@@ -46,7 +58,7 @@
 <table role="presentation" class="shell" width="650" cellpadding="0" cellspacing="0" border="0" style="width:100%;max-width:650px;border-collapse:separate;border-spacing:0;background:#fcfaf6;border-radius:15px;overflow:hidden;border:1px solid #e4dfd7;box-shadow:0 4px 16px #0000000b;">
 <tr><td class="inset" style="padding:38px 35px 0;">
 <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="width:100%;table-layout:fixed;border-collapse:collapse;"><tr>
-<td class="brand-cell" width="60%" valign="top" style="width:60%;vertical-align:top;padding:0;"><div class="brand" style="font:bold 48px/46px Georgia,'Times New Roman',serif;letter-spacing:-2.2px;color:#101010;">The<br>Stockholm<br>Guide</div></td>
+<td class="brand-cell" width="60%" valign="top" style="width:60%;vertical-align:top;padding:0;"><h1 class="brand" style="margin:0;font:bold 48px/46px Georgia,'Times New Roman',serif;letter-spacing:-2.2px;color:#101010;">The<br>Stockholm<br>Guide</h1></td>
 <td class="descriptor-cell" width="40%" valign="top" style="width:40%;vertical-align:top;padding:9px 0 0 12px;box-sizing:border-box;"><div class="descriptor" style="font:bold 10px/17px 'Courier New',Courier,monospace;letter-spacing:.7px;">A CURATED GUIDE TO<br>CULTURE, ART AND<br>IDEAS IN STOCKHOLM</div></td>
 </tr></table>
 <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="width:100%;border-collapse:collapse;border-top:1px solid #777;border-bottom:1px solid #777;margin-top:28px;"><tr>
