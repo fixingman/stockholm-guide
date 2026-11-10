@@ -5,10 +5,11 @@ import json
 from pathlib import Path
 from urllib.parse import urlparse
 from jinja2 import Environment, FileSystemLoader, StrictUndefined, select_autoescape
+from editorial_scanning import enhance
 
 ROOT = Path(__file__).resolve().parent
 def render(data_path, output_path, asset_base_url):
-    guide = json.loads(Path(data_path).read_text(encoding="utf-8"))
+    guide = enhance(json.loads(Path(data_path).read_text(encoding="utf-8")))
     for section in ("top3", "new_discoveries", "worth_reconsidering", "unavailable"):
         assert guide.get(section), f"Missing section: {section}"
         for i, item in enumerate(guide[section]):
