@@ -1,0 +1,59 @@
+name: Validate fresh Sunday newsletter (no sending)
+on:
+  push:
+    branches: [main]
+    paths:
+      - issues/current.json
+      - .github/workflows/weekly-release-gate.yml
+      - final_freshness.py
+      - editorial_scanning.py
+      - delivery_guard.py
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  fresh-issue-release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install renderer and image checks
+        run: python -m pip install 'Jinja2>=3.1.6,<4' 'Pillow>=11,<14'
+      - name: Assert a genuinely supplied current issue exists
+        run: |
+          test -f issues/current.json || { echo "No fresh issues/current.json. Sample guide_data.json is NOT valid for a Sunday release."; exit 1; }
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          g=json.loads(Path("issues/current.json").read_text())
+          if g.get("issue_number") == "002" and g.get("date_range") == "8–21 November 2026":
+              raise SystemExit("Refusing frozen sample issue #002")
+          if not g.get("published_at"):
+              raise SystemExit("Missing issue publication timestamp")
+          print("Fresh issue:", g.get("issue_number"), g.get("date_range"))
+          PY
+      - name: Run all offline regression tests
+        run: python -m unittest test_minimal test_image_pipeline test_delivery_guard test_editorial_operations test_freshness_scanning
+      - name: Render new issue, validate organizer evidence, links, live photos and final review
+        run: |
+          mkdir -p release
+          python render_minimal.py --data issues/current.json --output release/outgoing.html
+          python delivery_guard.py --data issues/current.json --html release/outgoing.html --manifest release/delivery-manifest.json --network --editorial-strict --freshness-strict
+          python email_client_qa.py --html release/outgoing.html --report release/client-qa.json
+          cp issues/current.json release/issue.json
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          m=json.loads(Path("release/delivery-manifest.json").read_text())
+          assert m["ready_for_delivery"] and len(m["featured_images"]) == 3
+          assert m["editorial_quality"]["ready_for_editorial_release"]
+          assert m["freshness"]["ready_for_send"]
+          print("RELEASE GATE PASSED — HTML digest:",m["html_sha256"])
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: verified-sunday-issue-html-and-manifest
+          path: release/
+          retention-days: 14
