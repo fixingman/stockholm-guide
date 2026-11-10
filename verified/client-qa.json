@@ -1,0 +1,16 @@
+{
+  "static": {
+    "ok": true,
+    "errors": [],
+    "headings": [
+      "Top 3 picks",
+      "New discoveries",
+      "Worth reconsidering",
+      "Unavailable / sold out"
+    ],
+    "image_count": 3
+  },
+  "browser_scenarios": [],
+  "ok": true,
+  "scope": "Chromium responsive/dark/images-blocked proxy; not actual Gmail or Apple Mail"
+}

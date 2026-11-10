@@ -1,157 +1,478 @@
 {
-  "issue_number": "TEST-20261109",
-  "date_range": "9–22 November 2026",
-  "intro": "A test edition produced from freshly checked 9–22 November Stockholm event listings. Sent only to the newsletter owner; no public list send.",
+  "issue_number": "TEST-FRESH-20261110",
+  "date_range": "10–23 November 2026",
+  "published_at": "2026-11-10T19:00:00+01:00",
+  "rehearsal": true,
+  "intro": "A fresh owner-only release rehearsal: AI imagery, experimental performance, punk photography and sound.",
+  "disclaimer": "This is an owner-only release rehearsal. All event details are sourced from official organizer pages; current seats can change. Not a normal Sunday issue.",
   "top3": [
     {
       "title": "VERKLIGHETEN — live film and AI theatre",
-      "dates": "13, 14 & 16 Nov · 19:00–21:00",
-      "description": "A real film studio is assembled live, with audience members potentially becoming extras as AI-assisted environments transform the scene. Swedish-language; especially compelling for participatory theatre and AI.",
+      "dates": "Mon 16 Nov · 19:00–21:00",
       "url": "https://kontrar.se/en/show/verkligheten/",
       "venue": "Konträr, Östgötagatan 33",
-      "price": "Price unverified; subscriber booking conditions apply",
-      "booking": "Tickets listed 13–14 Nov; few left 16 Nov",
-      "rationale": "A real film studio is assembled live, with audience members potentially becoming extras as AI-assisted environments transform the scene. Swedish-language; especially compelling for participatory theatre and AI.",
+      "price": "Price not confirmed",
+      "booking": "Few tickets remaining shown for 16 Nov",
+      "description": "Audience members may become extras in a film created live with AI-assisted shifting environments. Swedish language.",
+      "event_start": "2026-11-16T19:00:00+01:00",
+      "verification": {
+        "checked_at": "2026-11-10T18:05:00+00:00",
+        "date": {
+          "status": "confirmed",
+          "source_url": "https://kontrar.se/en/show/verkligheten/"
+        },
+        "venue": {
+          "status": "confirmed",
+          "source_url": "https://kontrar.se/en/show/verkligheten/"
+        },
+        "booking": {
+          "status": "confirmed",
+          "source_url": "https://kontrar.se/en/show/verkligheten/"
+        },
+        "price": {
+          "status": "unknown",
+          "source_url": "https://kontrar.se/en/show/verkligheten/",
+          "note": "Exact details or remaining tickets were not established on the official page"
+        }
+      },
+      "final_review": {
+        "checked_at": "2026-11-10T18:05:00+00:00",
+        "organizer_source_url": "https://kontrar.se/en/show/verkligheten/",
+        "event_status": "scheduled",
+        "booking_status": "required_unverified",
+        "notes": "Official page checked; exact live ticket inventory not independently confirmed"
+      },
       "image_url": "https://fixingman.github.io/stockholm-guide/assets/verkligheten-press.jpg",
       "image_source_url": "https://kontrar.se/en/show/verkligheten/",
-      "image_alt": "Official Verkligheten production photograph showing performers and a camera operator in the live studio; photo Julia Mård",
+      "image_alt": "Official photograph of VERKLIGHETEN live film performance, credited to Julia Mård",
       "image_verified": true,
       "image_cache_file": "verkligheten-press.jpg",
-      "image_cache_sha256": "10e6d947e937fb2a1c3d6c9d5242acefd3094779c8081d980d4b63d61252ed6d"
-    },
-    {
-      "title": "Visioner av Nuet 1966–2026",
-      "dates": "Thu–Sat 12–14 Nov · program times vary",
-      "description": "An anniversary program revisiting experimental art and technology, with sessions at Fylkingen and Tekniska museet. Particularly worth checking for its crossovers between art, electronics and future-facing ideas.",
-      "url": "https://www.fylkingen.se/en/events/visioner-av-nuet-1966-2026",
-      "venue": "Fylkingen and Tekniska museet",
-      "price": "Some sessions free; other prices unverified",
-      "booking": "Program listed; verify individual sessions",
-      "rationale": "An anniversary program revisiting experimental art and technology, with sessions at Fylkingen and Tekniska museet. Particularly worth checking for its crossovers between art, electronics and future-facing ideas.",
-      "image_candidate_url": "https://fylkingen.se/media/sites%2Fclvuuu5cs0001xwfc7ne538fo%2Fmedia%2Ff29a6c33-2b34-47e5-8359-dbaf58f21682-VaN-2-16x9.jpg",
-      "image_candidate_source_url": "https://www.fylkingen.se/en/events/visioner-av-nuet-1966-2026",
-      "image_candidate_review": "HTTP 200 image/jpeg verified from official 2026 event og:image on 2026-11-08. Image reuse/hotlink permission not confirmed; do not render as verified.",
-      "image_verified": true,
-      "image_url": "https://fylkingen.se/media/sites%2Fclvuuu5cs0001xwfc7ne538fo%2Fmedia%2Ff29a6c33-2b34-47e5-8359-dbaf58f21682-VaN-2-16x9.jpg",
-      "image_source_url": "https://www.fylkingen.se/en/events/visioner-av-nuet-1966-2026",
-      "image_alt": "Official event image for Visioner av Nuet 1966–2026"
+      "image_identity_review": {
+        "event_match": true,
+        "reviewer": "Editorial review of official Konträr production page",
+        "source_page": "https://kontrar.se/en/show/verkligheten/",
+        "checked_at": "2026-11-10T18:05:00+00:00"
+      },
+      "booking_signal": "limited"
     },
     {
       "title": "Sound of Stockholm — Saturday",
       "dates": "Sat 21 Nov · 19:00",
-      "description": "An evening mixing experimental music, vocal performance and dance. Anna Fitoussi and Adele Kosman's short voice-and-movement works are a particularly interesting cross-disciplinary element.",
       "url": "https://www.fylkingen.se/en/events/sound-of-stockholm-lordag",
-      "venue": "Fylkingen",
+      "venue": "Fylkingen, Saltmätargatan 2",
       "price": "250 SEK; members/friends 150 SEK",
-      "booking": "Tickets listed; seats unverified",
-      "rationale": "An evening mixing experimental music, vocal performance and dance. Anna Fitoussi and Adele Kosman's short voice-and-movement works are a particularly interesting cross-disciplinary element.",
-      "image_candidate_url": "https://fylkingen.se/media/sites%2Fclvuuu5cs0001xwfc7ne538fo%2Fmedia%2F0ad16af2-9ebe-477d-8e35-c3400eb3c1d5-lisaullen_6W7A1951.jpg",
-      "image_candidate_source_url": "https://www.fylkingen.se/en/events/sound-of-stockholm-lordag",
-      "image_candidate_review": "HTTP 200 image/jpeg verified from official Saturday 2026 event og:image on 2026-11-08. Image reuse/hotlink permission not confirmed; do not render as verified.",
+      "booking": "Tickets listed; seats not confirmed",
+      "description": "Experimental electronic music, voice and movement including Anna Fitoussi and Adele Kosman's mini works.",
+      "event_start": "2026-11-21T19:00:00+01:00",
+      "verification": {
+        "checked_at": "2026-11-10T18:05:00+00:00",
+        "date": {
+          "status": "confirmed",
+          "source_url": "https://www.fylkingen.se/en/events/sound-of-stockholm-lordag"
+        },
+        "venue": {
+          "status": "confirmed",
+          "source_url": "https://www.fylkingen.se/en/events/sound-of-stockholm-lordag"
+        },
+        "booking": {
+          "status": "confirmed",
+          "source_url": "https://www.fylkingen.se/en/events/sound-of-stockholm-lordag"
+        },
+        "price": {
+          "status": "confirmed",
+          "source_url": "https://www.fylkingen.se/en/events/sound-of-stockholm-lordag"
+        }
+      },
+      "final_review": {
+        "checked_at": "2026-11-10T18:05:00+00:00",
+        "organizer_source_url": "https://www.fylkingen.se/en/events/sound-of-stockholm-lordag",
+        "event_status": "scheduled",
+        "booking_status": "required_unverified",
+        "notes": "Official page checked; exact live ticket inventory not independently confirmed"
+      },
+      "image_url": "https://freight.cargo.site/w/1000/i/X3215576396280121608059225178842/screenshot-3340826510.jpg",
+      "image_source_url": "https://soundofstockholm.se/",
       "image_source_pages": [
         "https://soundofstockholm.se/"
       ],
+      "image_alt": "Official Sound of Stockholm 2026 festival artwork",
       "image_verified": true,
-      "image_url": "https://freight.cargo.site/w/1000/i/X3215576396280121608059225178842/screenshot-3340826510.jpg",
-      "image_source_url": "https://soundofstockholm.se/",
-      "image_alt": "Official event image for Sound of Stockholm — Saturday"
+      "image_identity_review": {
+        "event_match": true,
+        "reviewer": "Official Sound of Stockholm festival artwork reviewed for the 2026 festival",
+        "source_page": "https://soundofstockholm.se/",
+        "checked_at": "2026-11-10T18:05:00+00:00"
+      }
+    },
+    {
+      "title": "The Machine's Eye in Human Hands",
+      "dates": "Until Sun 29 Nov · daily museum hours",
+      "url": "https://stockholm.fotografiska.com/en/exhibitions/the-machines-eye-in-human-hands",
+      "venue": "Fotografiska, Stadsgårdshamnen 22",
+      "price": "Regular museum admission; exact price unverified",
+      "booking": "Museum admission; exhibition currently listed",
+      "description": "Eight artists examine synthetic imagery, AI agents and artificial ecosystems. A compelling art/technology crossover.",
+      "schedule_note": "Schedules vary during the exhibition; verify opening hours before visiting",
+      "verification": {
+        "checked_at": "2026-11-10T18:05:00+00:00",
+        "date": {
+          "status": "confirmed",
+          "source_url": "https://stockholm.fotografiska.com/en/exhibitions/the-machines-eye-in-human-hands"
+        },
+        "venue": {
+          "status": "confirmed",
+          "source_url": "https://stockholm.fotografiska.com/en/exhibitions/the-machines-eye-in-human-hands"
+        },
+        "booking": {
+          "status": "confirmed",
+          "source_url": "https://stockholm.fotografiska.com/en/exhibitions/the-machines-eye-in-human-hands"
+        },
+        "price": {
+          "status": "unknown",
+          "source_url": "https://stockholm.fotografiska.com/en/exhibitions/the-machines-eye-in-human-hands",
+          "note": "Exact details or remaining tickets were not established on the official page"
+        }
+      },
+      "final_review": {
+        "checked_at": "2026-11-10T18:05:00+00:00",
+        "organizer_source_url": "https://stockholm.fotografiska.com/en/exhibitions/the-machines-eye-in-human-hands",
+        "event_status": "scheduled",
+        "booking_status": "required_unverified",
+        "notes": "Official page checked; exact live ticket inventory not independently confirmed"
+      },
+      "image_verified": false,
+      "first_seen_issue": "TEST-FRESH-20261110",
+      "new_discovery_verified": true
     }
   ],
   "new_discoveries": [
     {
-      "title": "Klang Systematiek: Christian Marclay & Giuseppe Chiari",
-      "dates": "Wed 11 Nov · 19:00",
-      "description": "An experimental sound/art encounter built around two influential artists whose practices blur performance, musical scores and visual art. Good for a curious evening outside conventional concerts.",
-      "url": "https://fylkingen.se/en",
-      "venue": "Fylkingen, Saltmätargatan 2",
-      "price": "180 SEK; members/friends 100 SEK",
-      "booking": "Tickets listed; seats unverified"
+      "title": "Strage Sessions: The aesthetics of punk",
+      "dates": "Fri 20 Nov · 19:00–22:00",
+      "url": "https://stockholm.fotografiska.com/en/events/strage-sessions",
+      "venue": "Fotografiska, Stadsgårdshamnen 22",
+      "price": "Included in ordinary museum admission",
+      "booking": "Limited seats; advance booking recommended",
+      "description": "A discussion about punk aesthetics with Lotta Antonsson, followed by DJ set and exhibition closing celebration.",
+      "event_start": "2026-11-20T19:00:00+01:00",
+      "verification": {
+        "checked_at": "2026-11-10T18:05:00+00:00",
+        "date": {
+          "status": "confirmed",
+          "source_url": "https://stockholm.fotografiska.com/en/events/strage-sessions"
+        },
+        "venue": {
+          "status": "confirmed",
+          "source_url": "https://stockholm.fotografiska.com/en/events/strage-sessions"
+        },
+        "booking": {
+          "status": "confirmed",
+          "source_url": "https://stockholm.fotografiska.com/en/events/strage-sessions"
+        },
+        "price": {
+          "status": "confirmed",
+          "source_url": "https://stockholm.fotografiska.com/en/events/strage-sessions"
+        }
+      },
+      "final_review": {
+        "checked_at": "2026-11-10T18:05:00+00:00",
+        "organizer_source_url": "https://stockholm.fotografiska.com/en/events/strage-sessions",
+        "event_status": "scheduled",
+        "booking_status": "required_unverified",
+        "notes": "Official page checked; exact live ticket inventory not independently confirmed"
+      },
+      "booking_signal": "advance_required",
+      "first_seen_issue": "TEST-FRESH-20261110",
+      "new_discovery_verified": true
     },
     {
-      "title": "Musiken och maskinen: AI i konstnärligt skapande",
-      "dates": "Thu 12 Nov · 18:00",
-      "description": "An unusually direct match for your work: a public exploration of how AI and machines enter artistic practice, rather than another generic technology lecture.",
-      "url": "https://fylkingen.se/en",
-      "venue": "Fylkingen / Visioner av Nuet program",
-      "price": "Price unverified",
-      "booking": "Event listed; booking unverified"
+      "title": "Book Talk: Donald Boström",
+      "dates": "Sun 22 Nov · 14:00–17:00",
+      "url": "https://stockholm.fotografiska.com/en/events/book-talk-donald-bostrom",
+      "venue": "Fotografiska, Stadsgårdshamnen 22",
+      "price": "Included in ordinary museum admission",
+      "booking": "Limited seats; advance booking recommended",
+      "description": "Photojournalism, ethical storytelling and live music beside an exhibition of Donald Boström's work.",
+      "event_start": "2026-11-22T14:00:00+01:00",
+      "verification": {
+        "checked_at": "2026-11-10T18:05:00+00:00",
+        "date": {
+          "status": "confirmed",
+          "source_url": "https://stockholm.fotografiska.com/en/events/book-talk-donald-bostrom"
+        },
+        "venue": {
+          "status": "confirmed",
+          "source_url": "https://stockholm.fotografiska.com/en/events/book-talk-donald-bostrom"
+        },
+        "booking": {
+          "status": "confirmed",
+          "source_url": "https://stockholm.fotografiska.com/en/events/book-talk-donald-bostrom"
+        },
+        "price": {
+          "status": "confirmed",
+          "source_url": "https://stockholm.fotografiska.com/en/events/book-talk-donald-bostrom"
+        }
+      },
+      "final_review": {
+        "checked_at": "2026-11-10T18:05:00+00:00",
+        "organizer_source_url": "https://stockholm.fotografiska.com/en/events/book-talk-donald-bostrom",
+        "event_status": "scheduled",
+        "booking_status": "required_unverified",
+        "notes": "Official page checked; exact live ticket inventory not independently confirmed"
+      },
+      "booking_signal": "advance_required",
+      "first_seen_issue": "TEST-FRESH-20261110",
+      "new_discovery_verified": true
     },
     {
-      "title": "Visioner av Nuet 1966–2026",
-      "dates": "Thu–Sat 12–14 Nov · program times vary",
-      "description": "An anniversary program revisiting experimental art and technology, with sessions at Fylkingen and Tekniska museet. Particularly worth checking for its crossovers between art, electronics and future-facing ideas.",
-      "url": "https://www.fylkingen.se/en/events/visioner-av-nuet-1966-2026",
-      "venue": "Fylkingen and Tekniska museet",
-      "price": "Some sessions free; other prices unverified",
-      "booking": "Program listed; verify individual sessions"
-    },
-    {
-      "title": "INCANT",
-      "dates": "Wed 18 Nov · 18:30",
-      "description": "A contemporary experimental-music evening at Fylkingen; the lineup and artistic format deserve a closer look before committing.",
-      "url": "https://fylkingen.se/en",
-      "venue": "Fylkingen, Saltmätargatan 2",
-      "price": "180 SEK; members/friends 150 SEK",
-      "booking": "Tickets listed; details unverified"
-    },
-    {
-      "title": "Sound of Stockholm — Thursday",
-      "dates": "Thu 19 Nov · 18:30",
-      "description": "The opening festival night ranges across microtonality, electronics and performance; a strong opportunity to sample unconventional sound-making in a dedicated experimental space.",
-      "url": "https://www.fylkingen.se/en/events/sound-of-stockholm-torsdag",
-      "venue": "Fylkingen / Rönnells Antikvariat",
-      "price": "250 SEK; members/friends 150 SEK",
-      "booking": "Tickets listed; seats unverified"
-    },
-    {
-      "title": "Sound of Stockholm — Friday",
-      "dates": "Fri 20 Nov · 19:00",
-      "description": "Experimental improvisation and electronic sound, including harpist Rhodri Davies among a broad festival lineup. Good if you prefer something challenging and unpredictable.",
-      "url": "https://www.fylkingen.se/en/events/sound-of-stockholm-fredag",
-      "venue": "Fylkingen",
-      "price": "250 SEK; members/friends 150 SEK",
-      "booking": "Tickets listed; seats unverified"
-    },
-    {
-      "title": "Sound of Stockholm — Saturday",
-      "dates": "Sat 21 Nov · 19:00",
-      "description": "An evening mixing experimental music, vocal performance and dance. Anna Fitoussi and Adele Kosman's short voice-and-movement works are a particularly interesting cross-disciplinary element.",
-      "url": "https://www.fylkingen.se/en/events/sound-of-stockholm-lordag",
-      "venue": "Fylkingen",
-      "price": "250 SEK; members/friends 150 SEK",
-      "booking": "Tickets listed; seats unverified"
+      "title": "The Machine's Eye in Human Hands",
+      "dates": "Until Sun 29 Nov · daily museum hours",
+      "url": "https://stockholm.fotografiska.com/en/exhibitions/the-machines-eye-in-human-hands",
+      "venue": "Fotografiska, Stadsgårdshamnen 22",
+      "price": "Regular museum admission; exact price unverified",
+      "booking": "Museum admission; exhibition currently listed",
+      "description": "Eight artists examine synthetic imagery, AI agents and artificial ecosystems. A compelling art/technology crossover.",
+      "schedule_note": "Schedules vary during the exhibition; verify opening hours before visiting",
+      "verification": {
+        "checked_at": "2026-11-10T18:05:00+00:00",
+        "date": {
+          "status": "confirmed",
+          "source_url": "https://stockholm.fotografiska.com/en/exhibitions/the-machines-eye-in-human-hands"
+        },
+        "venue": {
+          "status": "confirmed",
+          "source_url": "https://stockholm.fotografiska.com/en/exhibitions/the-machines-eye-in-human-hands"
+        },
+        "booking": {
+          "status": "confirmed",
+          "source_url": "https://stockholm.fotografiska.com/en/exhibitions/the-machines-eye-in-human-hands"
+        },
+        "price": {
+          "status": "unknown",
+          "source_url": "https://stockholm.fotografiska.com/en/exhibitions/the-machines-eye-in-human-hands",
+          "note": "Exact details or remaining tickets were not established on the official page"
+        }
+      },
+      "final_review": {
+        "checked_at": "2026-11-10T18:05:00+00:00",
+        "organizer_source_url": "https://stockholm.fotografiska.com/en/exhibitions/the-machines-eye-in-human-hands",
+        "event_status": "scheduled",
+        "booking_status": "required_unverified",
+        "notes": "Official page checked; exact live ticket inventory not independently confirmed"
+      },
+      "image_verified": false,
+      "first_seen_issue": "TEST-FRESH-20261110",
+      "new_discovery_verified": true
     }
   ],
   "worth_reconsidering": [
     {
       "title": "VERKLIGHETEN — live film and AI theatre",
-      "dates": "13, 14 & 16 Nov · 19:00–21:00",
-      "description": "A real film studio is assembled live, with audience members potentially becoming extras as AI-assisted environments transform the scene. Swedish-language; especially compelling for participatory theatre and AI.",
+      "dates": "Mon 16 Nov · 19:00–21:00",
       "url": "https://kontrar.se/en/show/verkligheten/",
       "venue": "Konträr, Östgötagatan 33",
-      "price": "Price unverified; subscriber booking conditions apply",
-      "booking": "Tickets listed 13–14 Nov; few left 16 Nov"
+      "price": "Price not confirmed",
+      "booking": "Few tickets remaining shown for 16 Nov",
+      "description": "Audience members may become extras in a film created live with AI-assisted shifting environments. Swedish language.",
+      "event_start": "2026-11-16T19:00:00+01:00",
+      "verification": {
+        "checked_at": "2026-11-10T18:05:00+00:00",
+        "date": {
+          "status": "confirmed",
+          "source_url": "https://kontrar.se/en/show/verkligheten/"
+        },
+        "venue": {
+          "status": "confirmed",
+          "source_url": "https://kontrar.se/en/show/verkligheten/"
+        },
+        "booking": {
+          "status": "confirmed",
+          "source_url": "https://kontrar.se/en/show/verkligheten/"
+        },
+        "price": {
+          "status": "unknown",
+          "source_url": "https://kontrar.se/en/show/verkligheten/",
+          "note": "Exact details or remaining tickets were not established on the official page"
+        }
+      },
+      "final_review": {
+        "checked_at": "2026-11-10T18:05:00+00:00",
+        "organizer_source_url": "https://kontrar.se/en/show/verkligheten/",
+        "event_status": "scheduled",
+        "booking_status": "required_unverified",
+        "notes": "Official page checked; exact live ticket inventory not independently confirmed"
+      },
+      "image_url": "https://fixingman.github.io/stockholm-guide/assets/verkligheten-press.jpg",
+      "image_source_url": "https://kontrar.se/en/show/verkligheten/",
+      "image_alt": "Official photograph of VERKLIGHETEN live film performance, credited to Julia Mård",
+      "image_verified": true,
+      "image_cache_file": "verkligheten-press.jpg",
+      "image_identity_review": {
+        "event_match": true,
+        "reviewer": "Editorial review of official Konträr production page",
+        "source_page": "https://kontrar.se/en/show/verkligheten/",
+        "checked_at": "2026-11-10T18:05:00+00:00"
+      },
+      "booking_signal": "limited"
     },
     {
-      "title": "Sound of Stockholm — festival pass",
-      "dates": "19–21 Nov within the guide window; festival continues 22 Nov",
-      "description": "For a deeper exploration of improvisation, electronics, loudspeaker music and performance, the multi-day pass is better value than separate nights if you plan to attend several.",
-      "url": "https://www.fylkingen.se/en/events/sound-of-stockholm-GPO",
+      "title": "INCANT",
+      "dates": "Wed 18 Nov · 18:30",
+      "url": "https://fylkingen.se/sv/events",
+      "venue": "Fylkingen, Saltmätargatan 2",
+      "price": "180 SEK; members/friends 150 SEK",
+      "booking": "Event listed; exact seats unverified",
+      "description": "An experimental concert at the independent artist-run Fylkingen space.",
+      "event_start": "2026-11-18T18:30:00+01:00",
+      "verification": {
+        "checked_at": "2026-11-10T18:05:00+00:00",
+        "date": {
+          "status": "confirmed",
+          "source_url": "https://fylkingen.se/sv/events"
+        },
+        "venue": {
+          "status": "confirmed",
+          "source_url": "https://fylkingen.se/sv/events"
+        },
+        "booking": {
+          "status": "confirmed",
+          "source_url": "https://fylkingen.se/sv/events"
+        },
+        "price": {
+          "status": "confirmed",
+          "source_url": "https://fylkingen.se/sv/events"
+        }
+      },
+      "final_review": {
+        "checked_at": "2026-11-10T18:05:00+00:00",
+        "organizer_source_url": "https://fylkingen.se/sv/events",
+        "event_status": "scheduled",
+        "booking_status": "required_unverified",
+        "notes": "Official page checked; exact live ticket inventory not independently confirmed"
+      }
+    },
+    {
+      "title": "Sound of Stockholm — festival program",
+      "dates": "Thu–Sun 19–22 Nov · session times vary",
+      "url": "https://fylkingen.se/sv/events",
       "venue": "Fylkingen and Rönnells Antikvariat",
-      "price": "560 SEK; members/friends 340 SEK",
-      "booking": "Pass listed; seats unverified"
+      "price": "Festival pass 560 SEK; members/friends 340 SEK",
+      "booking": "Festival listed; admission options vary",
+      "description": "Four days of improvisation, electronic music, microtonality and unusual performance formats.",
+      "schedule_note": "Schedules vary during the exhibition; verify opening hours before visiting",
+      "verification": {
+        "checked_at": "2026-11-10T18:05:00+00:00",
+        "date": {
+          "status": "confirmed",
+          "source_url": "https://fylkingen.se/sv/events"
+        },
+        "venue": {
+          "status": "confirmed",
+          "source_url": "https://fylkingen.se/sv/events"
+        },
+        "booking": {
+          "status": "confirmed",
+          "source_url": "https://fylkingen.se/sv/events"
+        },
+        "price": {
+          "status": "confirmed",
+          "source_url": "https://fylkingen.se/sv/events"
+        }
+      },
+      "final_review": {
+        "checked_at": "2026-11-10T18:05:00+00:00",
+        "organizer_source_url": "https://fylkingen.se/sv/events",
+        "event_status": "scheduled",
+        "booking_status": "required_unverified",
+        "notes": "Official page checked; exact live ticket inventory not independently confirmed"
+      }
+    },
+    {
+      "title": "Sound of Stockholm — Saturday",
+      "dates": "Sat 21 Nov · 19:00",
+      "url": "https://www.fylkingen.se/en/events/sound-of-stockholm-lordag",
+      "venue": "Fylkingen, Saltmätargatan 2",
+      "price": "250 SEK; members/friends 150 SEK",
+      "booking": "Tickets listed; seats not confirmed",
+      "description": "Experimental electronic music, voice and movement including Anna Fitoussi and Adele Kosman's mini works.",
+      "event_start": "2026-11-21T19:00:00+01:00",
+      "verification": {
+        "checked_at": "2026-11-10T18:05:00+00:00",
+        "date": {
+          "status": "confirmed",
+          "source_url": "https://www.fylkingen.se/en/events/sound-of-stockholm-lordag"
+        },
+        "venue": {
+          "status": "confirmed",
+          "source_url": "https://www.fylkingen.se/en/events/sound-of-stockholm-lordag"
+        },
+        "booking": {
+          "status": "confirmed",
+          "source_url": "https://www.fylkingen.se/en/events/sound-of-stockholm-lordag"
+        },
+        "price": {
+          "status": "confirmed",
+          "source_url": "https://www.fylkingen.se/en/events/sound-of-stockholm-lordag"
+        }
+      },
+      "final_review": {
+        "checked_at": "2026-11-10T18:05:00+00:00",
+        "organizer_source_url": "https://www.fylkingen.se/en/events/sound-of-stockholm-lordag",
+        "event_status": "scheduled",
+        "booking_status": "required_unverified",
+        "notes": "Official page checked; exact live ticket inventory not independently confirmed"
+      },
+      "image_url": "https://freight.cargo.site/w/1000/i/X3215576396280121608059225178842/screenshot-3340826510.jpg",
+      "image_source_url": "https://soundofstockholm.se/",
+      "image_source_pages": [
+        "https://soundofstockholm.se/"
+      ],
+      "image_alt": "Official Sound of Stockholm 2026 festival artwork",
+      "image_verified": true,
+      "image_identity_review": {
+        "event_match": true,
+        "reviewer": "Official Sound of Stockholm festival artwork reviewed for the 2026 festival",
+        "source_page": "https://soundofstockholm.se/",
+        "checked_at": "2026-11-10T18:05:00+00:00"
+      }
     }
   ],
   "unavailable": [
     {
-      "title": "VERKLIGHETEN — Thursday performance",
-      "dates": "Thu 12 Nov · 19:00–21:00",
-      "description": "",
-      "url": "https://kontrar.se/en/show/verkligheten/",
-      "venue": "Konträr",
-      "price": "Price unverified",
-      "booking": "Sold out (organizer)"
+      "title": "Breathwork with Hale — YIN & YANG",
+      "dates": "Sun 15 Nov · 15:00–16:30",
+      "url": "https://stockholm.fotografiska.com/en/events",
+      "venue": "Fotografiska, Stadsgårdshamnen 22",
+      "price": "395 SEK listed",
+      "booking": "FULLY BOOKED (official calendar)",
+      "description": "A guided immersive breathwork experience; included as unavailable so it isn't recommended for booking.",
+      "event_start": "2026-11-15T15:00:00+01:00",
+      "verification": {
+        "checked_at": "2026-11-10T18:05:00+00:00",
+        "date": {
+          "status": "confirmed",
+          "source_url": "https://stockholm.fotografiska.com/en/events"
+        },
+        "venue": {
+          "status": "confirmed",
+          "source_url": "https://stockholm.fotografiska.com/en/events"
+        },
+        "booking": {
+          "status": "confirmed",
+          "source_url": "https://stockholm.fotografiska.com/en/events"
+        },
+        "price": {
+          "status": "confirmed",
+          "source_url": "https://stockholm.fotografiska.com/en/events"
+        }
+      },
+      "final_review": {
+        "checked_at": "2026-11-10T18:05:00+00:00",
+        "organizer_source_url": "https://stockholm.fotografiska.com/en/events",
+        "event_status": "scheduled",
+        "booking_status": "sold_out",
+        "notes": "Fotografiska events page explicitly says SOLD OUT"
+      }
     }
-  ],
-  "disclaimer": "TEST ISSUE. Organizer dates checked against current November 2026 listings; ticket availability is not guaranteed. Image display depends on the email client."
+  ]
 }

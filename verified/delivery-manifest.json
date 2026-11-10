@@ -2,12 +2,15 @@
   "ready_for_delivery": true,
   "errors": [],
   "warnings": [
+    "HTML fallback instead of verified image: The Machine's Eye in Human Hands",
     "Image load warning: https://fixingman.github.io/stockholm-guide/assets/verkligheten-press.jpg: large_image",
-    "Hosted images must already be deployed before sending"
+    "Hosted images must already be deployed before sending",
+    "EDITORIAL: One organizer dominates over 45% of entries",
+    "EDITORIAL: Top 3 has no verified photo: The Machine's Eye in Human Hands"
   ],
-  "issue_number": "TEST-20261109",
-  "date_range": "9–22 November 2026",
-  "total_event_rows": 13,
+  "issue_number": "TEST-FRESH-20261110",
+  "date_range": "10–23 November 2026",
+  "total_event_rows": 11,
   "section_titles": [
     "Top 3 picks",
     "New discoveries",
@@ -16,7 +19,6 @@
   ],
   "featured_images": [
     "https://fixingman.github.io/stockholm-guide/assets/verkligheten-press.jpg",
-    "https://fylkingen.se/media/sites%2Fclvuuu5cs0001xwfc7ne538fo%2Fmedia%2Ff29a6c33-2b34-47e5-8359-dbaf58f21682-VaN-2-16x9.jpg",
     "https://freight.cargo.site/w/1000/i/X3215576396280121608059225178842/screenshot-3340826510.jpg"
   ],
   "image_checks": [
@@ -34,19 +36,6 @@
       "warning": "large_image"
     },
     {
-      "url": "https://fylkingen.se/media/sites%2Fclvuuu5cs0001xwfc7ne538fo%2Fmedia%2Ff29a6c33-2b34-47e5-8359-dbaf58f21682-VaN-2-16x9.jpg",
-      "ok": true,
-      "bytes": 836067,
-      "format": "JPEG",
-      "dimensions": [
-        1920,
-        1080
-      ],
-      "resolved_url": "https://fylkingen.se/media/sites%2Fclvuuu5cs0001xwfc7ne538fo%2Fmedia%2Ff29a6c33-2b34-47e5-8359-dbaf58f21682-VaN-2-16x9.jpg",
-      "sha256": "ce5d493f77060cc3802a24ba298efd502e6c393c6d52786ec397c1be642f9fef",
-      "warning": null
-    },
-    {
       "url": "https://freight.cargo.site/w/1000/i/X3215576396280121608059225178842/screenshot-3340826510.jpg",
       "ok": true,
       "bytes": 231319,
@@ -60,14 +49,202 @@
       "warning": null
     }
   ],
-  "inline_fallbacks": 0,
-  "html_sha256": "e527c228e566bfc4192adf18a3b50bec9bc5feac5f00b8bcbfbe5666b7409547",
-  "html_bytes": 27396,
+  "inline_fallbacks": 1,
+  "html_sha256": "b4c9fd55ee97a07216a4df996bee544024da4f44b147b66149507199c104e0cb",
+  "html_bytes": 26787,
   "image_proxy_certified": false,
-  "data_sha256": "c6d116b45bb4bedd87c7851f5d59bf9a9285964752e53893d87e088f113c99ef",
+  "data_sha256": "b5febc09949f4b56d6f7dd90cbe17ecf6e5bd60e305e24d7f6a16aa75d4c4338",
   "rendered_html_file": "outgoing.html",
-  "preflight_timestamp_utc": "2026-11-10T18:30:32.942731+00:00",
+  "preflight_timestamp_utc": "2026-11-10T19:13:48.508825+00:00",
+  "editorial_quality": {
+    "ready_for_editorial_release": true,
+    "mode": "strict",
+    "errors": [],
+    "warnings": [
+      "One organizer dominates over 45% of entries",
+      "Top 3 has no verified photo: The Machine's Eye in Human Hands"
+    ],
+    "unique_events": 8,
+    "total_rows": 11,
+    "organizer_count": 3,
+    "dominant_organizer_share": 0.455,
+    "organizer_domains": [
+      "fylkingen.se",
+      "kontrar.se",
+      "stockholm.fotografiska.com"
+    ],
+    "repeat_new_discoveries": [],
+    "identity_reviewed_images": 2,
+    "identity_review_target": 3,
+    "event_evidence_rows": [
+      {
+        "title": "VERKLIGHETEN — live film and AI theatre",
+        "section": "top3",
+        "source": "kontrar.se",
+        "organizer": "kontrar.se"
+      },
+      {
+        "title": "Sound of Stockholm — Saturday",
+        "section": "top3",
+        "source": "fylkingen.se",
+        "organizer": "fylkingen.se"
+      },
+      {
+        "title": "The Machine's Eye in Human Hands",
+        "section": "top3",
+        "source": "stockholm.fotografiska.com",
+        "organizer": "stockholm.fotografiska.com"
+      },
+      {
+        "title": "Strage Sessions: The aesthetics of punk",
+        "section": "new_discoveries",
+        "source": "stockholm.fotografiska.com",
+        "organizer": "stockholm.fotografiska.com"
+      },
+      {
+        "title": "Book Talk: Donald Boström",
+        "section": "new_discoveries",
+        "source": "stockholm.fotografiska.com",
+        "organizer": "stockholm.fotografiska.com"
+      },
+      {
+        "title": "The Machine's Eye in Human Hands",
+        "section": "new_discoveries",
+        "source": "stockholm.fotografiska.com",
+        "organizer": "stockholm.fotografiska.com"
+      },
+      {
+        "title": "VERKLIGHETEN — live film and AI theatre",
+        "section": "worth_reconsidering",
+        "source": "kontrar.se",
+        "organizer": "kontrar.se"
+      },
+      {
+        "title": "INCANT",
+        "section": "worth_reconsidering",
+        "source": "fylkingen.se",
+        "organizer": "fylkingen.se"
+      },
+      {
+        "title": "Sound of Stockholm — festival program",
+        "section": "worth_reconsidering",
+        "source": "fylkingen.se",
+        "organizer": "fylkingen.se"
+      },
+      {
+        "title": "Sound of Stockholm — Saturday",
+        "section": "worth_reconsidering",
+        "source": "fylkingen.se",
+        "organizer": "fylkingen.se"
+      },
+      {
+        "title": "Breathwork with Hale — YIN & YANG",
+        "section": "unavailable",
+        "source": "stockholm.fotografiska.com",
+        "organizer": "stockholm.fotografiska.com"
+      }
+    ],
+    "note": "Evidence bookkeeping, not automated factual confirmation or legal image clearance."
+  },
+  "freshness": {
+    "ready_for_send": true,
+    "errors": [],
+    "warnings": [],
+    "checked_rows": 11,
+    "max_age_hours": 24,
+    "reviewed_events": [
+      {
+        "title": "VERKLIGHETEN — live film and AI theatre",
+        "section": "top3",
+        "event_status": "scheduled",
+        "booking_status": "required_unverified",
+        "checked_at": "2026-11-10T18:05:00+00:00",
+        "organizer_source_url": "https://kontrar.se/en/show/verkligheten/"
+      },
+      {
+        "title": "Sound of Stockholm — Saturday",
+        "section": "top3",
+        "event_status": "scheduled",
+        "booking_status": "required_unverified",
+        "checked_at": "2026-11-10T18:05:00+00:00",
+        "organizer_source_url": "https://www.fylkingen.se/en/events/sound-of-stockholm-lordag"
+      },
+      {
+        "title": "The Machine's Eye in Human Hands",
+        "section": "top3",
+        "event_status": "scheduled",
+        "booking_status": "required_unverified",
+        "checked_at": "2026-11-10T18:05:00+00:00",
+        "organizer_source_url": "https://stockholm.fotografiska.com/en/exhibitions/the-machines-eye-in-human-hands"
+      },
+      {
+        "title": "Strage Sessions: The aesthetics of punk",
+        "section": "new_discoveries",
+        "event_status": "scheduled",
+        "booking_status": "required_unverified",
+        "checked_at": "2026-11-10T18:05:00+00:00",
+        "organizer_source_url": "https://stockholm.fotografiska.com/en/events/strage-sessions"
+      },
+      {
+        "title": "Book Talk: Donald Boström",
+        "section": "new_discoveries",
+        "event_status": "scheduled",
+        "booking_status": "required_unverified",
+        "checked_at": "2026-11-10T18:05:00+00:00",
+        "organizer_source_url": "https://stockholm.fotografiska.com/en/events/book-talk-donald-bostrom"
+      },
+      {
+        "title": "The Machine's Eye in Human Hands",
+        "section": "new_discoveries",
+        "event_status": "scheduled",
+        "booking_status": "required_unverified",
+        "checked_at": "2026-11-10T18:05:00+00:00",
+        "organizer_source_url": "https://stockholm.fotografiska.com/en/exhibitions/the-machines-eye-in-human-hands"
+      },
+      {
+        "title": "VERKLIGHETEN — live film and AI theatre",
+        "section": "worth_reconsidering",
+        "event_status": "scheduled",
+        "booking_status": "required_unverified",
+        "checked_at": "2026-11-10T18:05:00+00:00",
+        "organizer_source_url": "https://kontrar.se/en/show/verkligheten/"
+      },
+      {
+        "title": "INCANT",
+        "section": "worth_reconsidering",
+        "event_status": "scheduled",
+        "booking_status": "required_unverified",
+        "checked_at": "2026-11-10T18:05:00+00:00",
+        "organizer_source_url": "https://fylkingen.se/sv/events"
+      },
+      {
+        "title": "Sound of Stockholm — festival program",
+        "section": "worth_reconsidering",
+        "event_status": "scheduled",
+        "booking_status": "required_unverified",
+        "checked_at": "2026-11-10T18:05:00+00:00",
+        "organizer_source_url": "https://fylkingen.se/sv/events"
+      },
+      {
+        "title": "Sound of Stockholm — Saturday",
+        "section": "worth_reconsidering",
+        "event_status": "scheduled",
+        "booking_status": "required_unverified",
+        "checked_at": "2026-11-10T18:05:00+00:00",
+        "organizer_source_url": "https://www.fylkingen.se/en/events/sound-of-stockholm-lordag"
+      },
+      {
+        "title": "Breathwork with Hale — YIN & YANG",
+        "section": "unavailable",
+        "event_status": "scheduled",
+        "booking_status": "sold_out",
+        "checked_at": "2026-11-10T18:05:00+00:00",
+        "organizer_source_url": "https://stockholm.fotografiska.com/en/events"
+      }
+    ],
+    "note": "Timestamped evidence audit; cannot independently establish that page claims are true."
+  },
   "smoke_test_only": true,
   "release_channel": "smoke",
-  "source_commit_sha": "fe07e7885dde0744ce0d0d852242ebcf0a138476"
+  "source_commit_sha": "580bc23fb873bc7e0a008783629962d36d451878"
 }
