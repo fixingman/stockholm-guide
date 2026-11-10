@@ -32,7 +32,7 @@ jobs:
         run: |
           mkdir -p minimal-experiment
           python render_minimal.py --data guide_data.json --output minimal-experiment/index.html
-          python -m unittest test_minimal test_image_pipeline test_delivery_guard test_editorial_operations
+          python -m unittest test_minimal test_image_pipeline test_delivery_guard test_editorial_operations test_freshness_scanning
           python editorial_quality.py --data guide_data.json --report sample-editorial-quality.json
           python delivery_guard.py --data guide_data.json --html minimal-experiment/index.html --manifest minimal-delivery-manifest.json
           python email_client_qa.py --html minimal-experiment/index.html --report email-client-qa.json
