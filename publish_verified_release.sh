@@ -12,7 +12,7 @@ tmp="$(mktemp -d)"
 cp "$source_dir/outgoing.html" "$source_dir/delivery-manifest.json" "$source_dir/issue.json" "$tmp/"
 [ ! -f "$source_dir/client-qa.json" ] || cp "$source_dir/client-qa.json" "$tmp/"
 python - "$tmp" "$channel" <<'PY'
-import hashlib,json,sys
+import hashlib,json,sys,os
 from pathlib import Path
 path=Path(sys.argv[1]);channel=sys.argv[2]
 m=json.loads((path/"delivery-manifest.json").read_text())
@@ -31,9 +31,12 @@ if channel=="production":
 else:
     m["smoke_test_only"]=True
 m["release_channel"]=channel
+m["source_commit_sha"]=os.environ.get("GITHUB_SHA","unknown")
 (path/"delivery-manifest.json").write_text(json.dumps(m,ensure_ascii=False,indent=2)+"\n")
 print("Validated release",channel,issue["issue_number"],actual)
 PY
+
+rm -rf "$source_dir" # avoid untracked artifacts conflicting with release branch checkout
 
 git config user.name "stockholm-guide-release-bot"
 git config user.email "stockholm-guide-release-bot@users.noreply.github.com"
@@ -43,8 +46,11 @@ if git ls-remote --exit-code --heads origin "$branch" >/dev/null; then
     git checkout -B "$branch" "FETCH_HEAD"
 else
     git checkout --orphan "$branch"
-    git rm -rf . >/dev/null 2>&1 || true
 fi
+# Release branches intentionally contain ONLY verified public artifacts, never
+# the source repository, test fixture, or stray files.
+git rm -rf . >/dev/null 2>&1 || true
+git clean -fdx >/dev/null 2>&1 || true
 mkdir -p verified
 cp "$tmp/"* verified/
 printf 'This branch contains validated newsletter editorial artifacts only. Never put recipients here.\n' > README.md
