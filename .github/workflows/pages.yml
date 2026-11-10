@@ -32,7 +32,8 @@ jobs:
         run: |
           mkdir -p minimal-experiment
           python render_minimal.py --data guide_data.json --output minimal-experiment/index.html
-          python -m unittest test_minimal test_image_pipeline
+          python -m unittest test_minimal test_image_pipeline test_delivery_guard
+          python delivery_guard.py --data guide_data.json --html minimal-experiment/index.html --manifest minimal-delivery-manifest.json
       - name: Commit rendered minimal email for delivery
         run: |
           cp minimal-experiment/index.html latest-minimal-email.html
