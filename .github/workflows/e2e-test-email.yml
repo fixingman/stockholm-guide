@@ -2,7 +2,7 @@ name: E2E test — fresh newsletter render (no recipients)
 on:
   push:
     branches: [main]
-    paths: [e2e_test_issue_2026-11-09.json, .github/workflows/e2e-test-email.yml]
+    paths: [e2e_test_issue_2026-11-09.json, delivery_guard.py, test_delivery_guard.py, .github/workflows/e2e-test-email.yml]
   workflow_dispatch:
 permissions:
   contents: write
