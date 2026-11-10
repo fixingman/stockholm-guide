@@ -17,6 +17,7 @@ from urllib.parse import urlparse
 
 from image_pipeline import validate_photo
 from editorial_quality import audit as editorial_audit
+from final_freshness import audit_freshness
 
 SECTIONS = ("top3", "new_discoveries", "worth_reconsidering", "unavailable")
 MAX_HTML_BYTES = 100_000
@@ -204,6 +205,7 @@ def main():
     parser.add_argument("--manifest", help="Output manifest JSON")
     parser.add_argument("--network", action="store_true", help="Perform anonymous image GET/decode checks")
     parser.add_argument("--editorial-strict", action="store_true", help="Block unverified event facts or unreviewed photo identities")
+    parser.add_argument("--freshness-strict", action="store_true", help="Require final organizer status and booking re-review within 24 hours")
     parser.add_argument("--history", action="append", default=[], help="Prior issue JSON for repeat detection")
     parser.add_argument("--verify-sent-mime", help="Optional downloaded raw Gmail RFC822 MIME file")
     args = parser.parse_args()
@@ -226,6 +228,12 @@ def main():
         report["editorial_quality"] = editorial
         report["errors"].extend("EDITORIAL: "+e for e in editorial["errors"])
         report["warnings"].extend("EDITORIAL: "+w for w in editorial["warnings"])
+        report["ready_for_delivery"] = not report["errors"]
+    if args.freshness_strict:
+        fresh = audit_freshness(json.loads(Path(args.data).read_text(encoding="utf-8")))
+        report["freshness"] = fresh
+        report["errors"].extend("FRESHNESS: "+e for e in fresh["errors"])
+        report["warnings"].extend("FRESHNESS: "+w for w in fresh["warnings"])
         report["ready_for_delivery"] = not report["errors"]
     Path(args.manifest).write_text(json.dumps(report, indent=2, ensure_ascii=False)+"\n")
     print(json.dumps({"ready_for_delivery":report["ready_for_delivery"],
