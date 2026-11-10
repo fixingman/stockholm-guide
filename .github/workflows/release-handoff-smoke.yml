@@ -22,7 +22,7 @@ jobs:
         run: |
           mkdir -p smoke-release
           python render_minimal.py --data e2e_test_issue_2026-11-09.json --output smoke-release/outgoing.html
-          python delivery_guard.py --data e2e_test_issue_2026-11-09.json --html smoke-release/outgoing.html --manifest smoke-release/delivery-manifest.json
+          python delivery_guard.py --data e2e_test_issue_2026-11-09.json --html smoke-release/outgoing.html --manifest smoke-release/delivery-manifest.json --network
           cp e2e_test_issue_2026-11-09.json smoke-release/issue.json
       - name: Publish isolated test fixture on smoke-only branch
         run: bash publish_verified_release.sh smoke-release smoke
@@ -37,6 +37,8 @@ jobs:
           html=Path('/tmp/published.html').read_text()
           m=json.loads(Path('/tmp/published-manifest.json').read_text())
           assert m['smoke_test_only'] is True and m['release_channel']=='smoke'
+          assert len(m['image_checks']) == len(m['featured_images']) == 3
+          assert all(c['ok'] for c in m['image_checks'])
           assert hashlib.sha256(html.replace('\\r\\n','\\n').rstrip('\\n').encode()).hexdigest()==m['html_sha256']
           assert m['source_commit_sha'] == '${{ github.sha }}'
           assert m['issue_number'].startswith('TEST-')
