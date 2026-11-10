@@ -2,3 +2,16 @@ __pycache__/
 qa-output/
 delivery-report.json
 build/
+
+# Private subscription/consent/suppression records and delivery secrets
+private/
+.private/
+subscriber*.json
+subscribers*.json
+recipient*.json
+suppression*.json
+consent*.json
+*.eml
+*.env
+.env*
+!*.env.example
