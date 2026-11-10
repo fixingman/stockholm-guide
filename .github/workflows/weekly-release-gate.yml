@@ -9,7 +9,7 @@ on:
       - delivery_guard.py
   workflow_dispatch:
 permissions:
-  contents: read
+  contents: write
 jobs:
   fresh-issue-release:
     runs-on: ubuntu-latest
@@ -56,3 +56,5 @@ jobs:
           name: verified-sunday-issue-html-and-manifest
           path: release/
           retention-days: 14
+      - name: Publish exact verified HTML and manifest on dedicated branch
+        run: bash publish_verified_release.sh release production
