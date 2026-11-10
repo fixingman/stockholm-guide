@@ -58,12 +58,11 @@ jobs:
           retention-days: 14
       - name: Publish verified production or isolated owner-only rehearsal branch
         run: |
-          python - <<'PY'
-          import json,os
+          CHANNEL=$(python - <<'PY'
+          import json
           issue=json.load(open("issues/current.json"))
-          channel="smoke" if issue.get("rehearsal") is True else "production"
-          with open(os.environ["GITHUB_ENV"],"a") as f:
-              f.write("RELEASE_CHANNEL="+channel+"\n")
-          print("Release channel:",channel)
+          print("smoke" if issue.get("rehearsal") is True else "production")
           PY
-          bash publish_verified_release.sh release "${RELEASE_CHANNEL:-production}"
+          )
+          echo "Publishing validated channel: $CHANNEL"
+          bash publish_verified_release.sh release "$CHANNEL"
