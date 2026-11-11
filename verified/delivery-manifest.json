@@ -1,0 +1,514 @@
+{
+  "ready_for_delivery": true,
+  "errors": [],
+  "warnings": [
+    "HTML fallback instead of verified image: Digital on Stage — immersive performance & technology academy",
+    "Image load warning: https://fixingman.github.io/stockholm-guide/assets/verkligheten-press.jpg: large_image",
+    "Hosted images must already be deployed before sending",
+    "EDITORIAL: Generic listing instead of direct organizer source: Art Without Permission — independent artists' exhibition",
+    "EDITORIAL: Generic listing instead of direct organizer source: Sara-Vide Ericson: DRIFT — polar painting exhibition",
+    "EDITORIAL: Generic listing instead of direct organizer source: Who stole the Lovely Garden from the Goose?",
+    "EDITORIAL: Generic listing instead of direct organizer source: Yokai — supernatural creatures of Japanese culture",
+    "EDITORIAL: Generic listing instead of direct organizer source: Play Beyond Play — immersive gaming history",
+    "EDITORIAL: Top 3 has no verified photo: Digital on Stage — immersive performance & technology academy"
+  ],
+  "issue_number": "003",
+  "date_range": "11–24 November 2026",
+  "total_event_rows": 29,
+  "section_titles": [
+    "Top 3 picks",
+    "New discoveries",
+    "Worth reconsidering",
+    "Unavailable / sold out"
+  ],
+  "featured_images": [
+    "https://fixingman.github.io/stockholm-guide/assets/verkligheten-press.jpg",
+    "https://freight.cargo.site/w/1000/i/X3215576396280121608059225178842/screenshot-3340826510.jpg"
+  ],
+  "image_checks": [
+    {
+      "url": "https://fixingman.github.io/stockholm-guide/assets/verkligheten-press.jpg",
+      "ok": true,
+      "bytes": 2944803,
+      "format": "JPEG",
+      "dimensions": [
+        2500,
+        1667
+      ],
+      "resolved_url": "https://fixingman.github.io/stockholm-guide/assets/verkligheten-press.jpg",
+      "sha256": "10e6d947e937fb2a1c3d6c9d5242acefd3094779c8081d980d4b63d61252ed6d",
+      "warning": "large_image"
+    },
+    {
+      "url": "https://freight.cargo.site/w/1000/i/X3215576396280121608059225178842/screenshot-3340826510.jpg",
+      "ok": true,
+      "bytes": 231319,
+      "format": "JPEG",
+      "dimensions": [
+        1000,
+        625
+      ],
+      "resolved_url": "https://freight.cargo.site/w/1000/i/X3215576396280121608059225178842/screenshot-3340826510.jpg",
+      "sha256": "020dfedc8e6428ef436b7994ec7b77839c9afcc4943e98172d419af0d9566465",
+      "warning": null
+    }
+  ],
+  "inline_fallbacks": 1,
+  "html_sha256": "55ccd704e823504a1c81571386d9c06cb8dfc2cf225041ed42fdc72b0f1be594",
+  "html_bytes": 48456,
+  "image_proxy_certified": false,
+  "data_sha256": "15ca1cc1be01d1dc61189dcf5fb495e6d09f0f0bb85d6854b474c3a9bbdb029f",
+  "rendered_html_file": "outgoing.html",
+  "preflight_timestamp_utc": "2026-11-11T18:52:48.859938+00:00",
+  "editorial_quality": {
+    "ready_for_editorial_release": true,
+    "mode": "strict",
+    "errors": [],
+    "warnings": [
+      "Generic listing instead of direct organizer source: Art Without Permission — independent artists' exhibition",
+      "Generic listing instead of direct organizer source: Sara-Vide Ericson: DRIFT — polar painting exhibition",
+      "Generic listing instead of direct organizer source: Who stole the Lovely Garden from the Goose?",
+      "Generic listing instead of direct organizer source: Yokai — supernatural creatures of Japanese culture",
+      "Generic listing instead of direct organizer source: Play Beyond Play — immersive gaming history",
+      "Top 3 has no verified photo: Digital on Stage — immersive performance & technology academy"
+    ],
+    "unique_events": 26,
+    "total_rows": 29,
+    "organizer_count": 8,
+    "dominant_organizer_share": 0.207,
+    "organizer_domains": [
+      "fylkingen.se",
+      "intercult.se",
+      "kontrar.se",
+      "kulturhusetstadsteatern.se",
+      "soundofstockholm.se",
+      "stockholm.fotografiska.com",
+      "stockholmfilmfestival.se",
+      "visitstockholm.com"
+    ],
+    "repeat_new_discoveries": [],
+    "identity_reviewed_images": 2,
+    "identity_review_target": 3,
+    "event_evidence_rows": [
+      {
+        "title": "VERKLIGHETEN — film created live with AI",
+        "section": "top3",
+        "source": "kontrar.se",
+        "organizer": "kontrar.se"
+      },
+      {
+        "title": "Digital on Stage — immersive performance & technology academy",
+        "section": "top3",
+        "source": "intercult.se",
+        "organizer": "intercult.se"
+      },
+      {
+        "title": "Sound of Stockholm — Saturday experimental performances",
+        "section": "top3",
+        "source": "fylkingen.se",
+        "organizer": "fylkingen.se"
+      },
+      {
+        "title": "Musiken och maskinen — AI in artistic creation",
+        "section": "new_discoveries",
+        "source": "fylkingen.se",
+        "organizer": "fylkingen.se"
+      },
+      {
+        "title": "The Garden Says — VR performance showcase",
+        "section": "new_discoveries",
+        "source": "intercult.se",
+        "organizer": "intercult.se"
+      },
+      {
+        "title": "Visioner av Nuet — Friday at Fylkingen",
+        "section": "new_discoveries",
+        "source": "fylkingen.se",
+        "organizer": "fylkingen.se"
+      },
+      {
+        "title": "Art Without Permission — independent artists' exhibition",
+        "section": "new_discoveries",
+        "source": "visitstockholm.com",
+        "organizer": "visitstockholm.com"
+      },
+      {
+        "title": "Art of Drag x Admira — November Night",
+        "section": "new_discoveries",
+        "source": "stockholm.fotografiska.com",
+        "organizer": "stockholm.fotografiska.com"
+      },
+      {
+        "title": "Sara-Vide Ericson: DRIFT — polar painting exhibition",
+        "section": "new_discoveries",
+        "source": "visitstockholm.com",
+        "organizer": "visitstockholm.com"
+      },
+      {
+        "title": "Stockholm Film Festival — shorts: If Things Could Talk",
+        "section": "new_discoveries",
+        "source": "kulturhusetstadsteatern.se",
+        "organizer": "kulturhusetstadsteatern.se"
+      },
+      {
+        "title": "Stockholm Film Festival — John Turturro Face2Face",
+        "section": "new_discoveries",
+        "source": "stockholmfilmfestival.se",
+        "organizer": "stockholmfilmfestival.se"
+      },
+      {
+        "title": "Strage Sessions — punk aesthetics and exhibition finissage",
+        "section": "new_discoveries",
+        "source": "stockholm.fotografiska.com",
+        "organizer": "stockholm.fotografiska.com"
+      },
+      {
+        "title": "Who stole the Lovely Garden from the Goose?",
+        "section": "new_discoveries",
+        "source": "visitstockholm.com",
+        "organizer": "visitstockholm.com"
+      },
+      {
+        "title": "Donald Boström — photography, ethics & music",
+        "section": "new_discoveries",
+        "source": "stockholm.fotografiska.com",
+        "organizer": "stockholm.fotografiska.com"
+      },
+      {
+        "title": "Stockholm Film Festival — Sad Girl Cinema shorts",
+        "section": "new_discoveries",
+        "source": "kulturhusetstadsteatern.se",
+        "organizer": "kulturhusetstadsteatern.se"
+      },
+      {
+        "title": "VERKLIGHETEN — film created live with AI",
+        "section": "worth_reconsidering",
+        "source": "kontrar.se",
+        "organizer": "kontrar.se"
+      },
+      {
+        "title": "Stockholm International Film Festival 2026",
+        "section": "worth_reconsidering",
+        "source": "stockholmfilmfestival.se",
+        "organizer": "stockholmfilmfestival.se"
+      },
+      {
+        "title": "Visioner av Nuet — Saturday at Tekniska museet",
+        "section": "worth_reconsidering",
+        "source": "fylkingen.se",
+        "organizer": "fylkingen.se"
+      },
+      {
+        "title": "INCANT — experimental music night",
+        "section": "worth_reconsidering",
+        "source": "fylkingen.se",
+        "organizer": "fylkingen.se"
+      },
+      {
+        "title": "Sound of Stockholm — Thursday programme",
+        "section": "worth_reconsidering",
+        "source": "soundofstockholm.se",
+        "organizer": "soundofstockholm.se"
+      },
+      {
+        "title": "Sound of Stockholm — Friday programme",
+        "section": "worth_reconsidering",
+        "source": "soundofstockholm.se",
+        "organizer": "soundofstockholm.se"
+      },
+      {
+        "title": "Sound of Stockholm — Saturday experimental performances",
+        "section": "worth_reconsidering",
+        "source": "fylkingen.se",
+        "organizer": "fylkingen.se"
+      },
+      {
+        "title": "Sound of Stockholm — Marino Formenti's TIME TO GATHER",
+        "section": "worth_reconsidering",
+        "source": "soundofstockholm.se",
+        "organizer": "soundofstockholm.se"
+      },
+      {
+        "title": "The Machine's Eye in Human Hands — AI art exhibition",
+        "section": "worth_reconsidering",
+        "source": "stockholm.fotografiska.com",
+        "organizer": "stockholm.fotografiska.com"
+      },
+      {
+        "title": "Yokai — supernatural creatures of Japanese culture",
+        "section": "worth_reconsidering",
+        "source": "visitstockholm.com",
+        "organizer": "visitstockholm.com"
+      },
+      {
+        "title": "Play Beyond Play — immersive gaming history",
+        "section": "worth_reconsidering",
+        "source": "visitstockholm.com",
+        "organizer": "visitstockholm.com"
+      },
+      {
+        "title": "Digital on Stage — immersive performance & technology academy",
+        "section": "worth_reconsidering",
+        "source": "intercult.se",
+        "organizer": "intercult.se"
+      },
+      {
+        "title": "Breathwork with Hale — Yin/Yang",
+        "section": "unavailable",
+        "source": "stockholm.fotografiska.com",
+        "organizer": "stockholm.fotografiska.com"
+      },
+      {
+        "title": "No Paradise If You Are Killed by a Woman — Face2Face",
+        "section": "unavailable",
+        "source": "stockholmfilmfestival.se",
+        "organizer": "stockholmfilmfestival.se"
+      }
+    ],
+    "note": "Evidence bookkeeping, not automated factual confirmation or legal image clearance."
+  },
+  "freshness": {
+    "ready_for_send": true,
+    "errors": [],
+    "warnings": [],
+    "checked_rows": 29,
+    "max_age_hours": 24,
+    "reviewed_events": [
+      {
+        "title": "VERKLIGHETEN — film created live with AI",
+        "section": "top3",
+        "event_status": "scheduled",
+        "booking_status": "required_unverified",
+        "checked_at": "2026-11-11T19:50:00+01:00",
+        "organizer_source_url": "https://kontrar.se/en/show/verkligheten/"
+      },
+      {
+        "title": "Digital on Stage — immersive performance & technology academy",
+        "section": "top3",
+        "event_status": "scheduled",
+        "booking_status": "required_unverified",
+        "checked_at": "2026-11-11T19:50:00+01:00",
+        "organizer_source_url": "https://intercult.se/en/2026/09/15/intercult-academy-digital-on-stage-2026-innovative-production-programme-release/"
+      },
+      {
+        "title": "Sound of Stockholm — Saturday experimental performances",
+        "section": "top3",
+        "event_status": "scheduled",
+        "booking_status": "required_unverified",
+        "checked_at": "2026-11-11T19:50:00+01:00",
+        "organizer_source_url": "https://www.fylkingen.se/en/events/sound-of-stockholm-lordag"
+      },
+      {
+        "title": "Musiken och maskinen — AI in artistic creation",
+        "section": "new_discoveries",
+        "event_status": "scheduled",
+        "booking_status": "required_unverified",
+        "checked_at": "2026-11-11T19:50:00+01:00",
+        "organizer_source_url": "https://www.fylkingen.se/sv/events"
+      },
+      {
+        "title": "The Garden Says — VR performance showcase",
+        "section": "new_discoveries",
+        "event_status": "scheduled",
+        "booking_status": "unknown",
+        "checked_at": "2026-11-11T19:50:00+01:00",
+        "organizer_source_url": "https://intercult.se/en/2026/09/15/intercult-academy-digital-on-stage-2026-innovative-production-programme-release/"
+      },
+      {
+        "title": "Visioner av Nuet — Friday at Fylkingen",
+        "section": "new_discoveries",
+        "event_status": "scheduled",
+        "booking_status": "unknown",
+        "checked_at": "2026-11-11T19:50:00+01:00",
+        "organizer_source_url": "https://www.fylkingen.se/sv/events"
+      },
+      {
+        "title": "Art Without Permission — independent artists' exhibition",
+        "section": "new_discoveries",
+        "event_status": "scheduled",
+        "booking_status": "unknown",
+        "checked_at": "2026-11-11T19:50:00+01:00",
+        "organizer_source_url": "https://www.visitstockholm.com/events/art-without-permission-group-exhibition-at-chisel/next/"
+      },
+      {
+        "title": "Art of Drag x Admira — November Night",
+        "section": "new_discoveries",
+        "event_status": "scheduled",
+        "booking_status": "required_unverified",
+        "checked_at": "2026-11-11T19:50:00+01:00",
+        "organizer_source_url": "https://stockholm.fotografiska.com/sv/events/art-of-drag-admira-november-night"
+      },
+      {
+        "title": "Sara-Vide Ericson: DRIFT — polar painting exhibition",
+        "section": "new_discoveries",
+        "event_status": "scheduled",
+        "booking_status": "unknown",
+        "checked_at": "2026-11-11T19:50:00+01:00",
+        "organizer_source_url": "https://www.visitstockholm.com/events/exhibition-sara-vide-ericson-drift/next/"
+      },
+      {
+        "title": "Stockholm Film Festival — shorts: If Things Could Talk",
+        "section": "new_discoveries",
+        "event_status": "scheduled",
+        "booking_status": "required_unverified",
+        "checked_at": "2026-11-11T19:50:00+01:00",
+        "organizer_source_url": "https://kulturhusetstadsteatern.se/stockholms-filmfestival-2026-pa-klarabiografen"
+      },
+      {
+        "title": "Stockholm Film Festival — John Turturro Face2Face",
+        "section": "new_discoveries",
+        "event_status": "scheduled",
+        "booking_status": "required_unverified",
+        "checked_at": "2026-11-11T19:50:00+01:00",
+        "organizer_source_url": "https://www.stockholmfilmfestival.se/face2face-2026"
+      },
+      {
+        "title": "Strage Sessions — punk aesthetics and exhibition finissage",
+        "section": "new_discoveries",
+        "event_status": "scheduled",
+        "booking_status": "required_unverified",
+        "checked_at": "2026-11-11T19:50:00+01:00",
+        "organizer_source_url": "https://stockholm.fotografiska.com/en/events/strage-sessions"
+      },
+      {
+        "title": "Who stole the Lovely Garden from the Goose?",
+        "section": "new_discoveries",
+        "event_status": "scheduled",
+        "booking_status": "unknown",
+        "checked_at": "2026-11-11T19:50:00+01:00",
+        "organizer_source_url": "https://www.visitstockholm.com/events/who-stole-the-lovely-garden-from-the-goose/next/"
+      },
+      {
+        "title": "Donald Boström — photography, ethics & music",
+        "section": "new_discoveries",
+        "event_status": "scheduled",
+        "booking_status": "required_unverified",
+        "checked_at": "2026-11-11T19:50:00+01:00",
+        "organizer_source_url": "https://stockholm.fotografiska.com/en/events/book-talk-donald-bostrom"
+      },
+      {
+        "title": "Stockholm Film Festival — Sad Girl Cinema shorts",
+        "section": "new_discoveries",
+        "event_status": "scheduled",
+        "booking_status": "required_unverified",
+        "checked_at": "2026-11-11T19:50:00+01:00",
+        "organizer_source_url": "https://kulturhusetstadsteatern.se/stockholms-filmfestival-2026-pa-klarabiografen"
+      },
+      {
+        "title": "VERKLIGHETEN — film created live with AI",
+        "section": "worth_reconsidering",
+        "event_status": "scheduled",
+        "booking_status": "required_unverified",
+        "checked_at": "2026-11-11T19:50:00+01:00",
+        "organizer_source_url": "https://kontrar.se/en/show/verkligheten/"
+      },
+      {
+        "title": "Stockholm International Film Festival 2026",
+        "section": "worth_reconsidering",
+        "event_status": "scheduled",
+        "booking_status": "required_unverified",
+        "checked_at": "2026-11-11T19:50:00+01:00",
+        "organizer_source_url": "https://www.stockholmfilmfestival.se/en/festival"
+      },
+      {
+        "title": "Visioner av Nuet — Saturday at Tekniska museet",
+        "section": "worth_reconsidering",
+        "event_status": "scheduled",
+        "booking_status": "unknown",
+        "checked_at": "2026-11-11T19:50:00+01:00",
+        "organizer_source_url": "https://www.fylkingen.se/sv/events"
+      },
+      {
+        "title": "INCANT — experimental music night",
+        "section": "worth_reconsidering",
+        "event_status": "scheduled",
+        "booking_status": "required_unverified",
+        "checked_at": "2026-11-11T19:50:00+01:00",
+        "organizer_source_url": "https://www.fylkingen.se/sv/events"
+      },
+      {
+        "title": "Sound of Stockholm — Thursday programme",
+        "section": "worth_reconsidering",
+        "event_status": "scheduled",
+        "booking_status": "required_unverified",
+        "checked_at": "2026-11-11T19:50:00+01:00",
+        "organizer_source_url": "https://soundofstockholm.se/"
+      },
+      {
+        "title": "Sound of Stockholm — Friday programme",
+        "section": "worth_reconsidering",
+        "event_status": "scheduled",
+        "booking_status": "required_unverified",
+        "checked_at": "2026-11-11T19:50:00+01:00",
+        "organizer_source_url": "https://soundofstockholm.se/"
+      },
+      {
+        "title": "Sound of Stockholm — Saturday experimental performances",
+        "section": "worth_reconsidering",
+        "event_status": "scheduled",
+        "booking_status": "required_unverified",
+        "checked_at": "2026-11-11T19:50:00+01:00",
+        "organizer_source_url": "https://www.fylkingen.se/en/events/sound-of-stockholm-lordag"
+      },
+      {
+        "title": "Sound of Stockholm — Marino Formenti's TIME TO GATHER",
+        "section": "worth_reconsidering",
+        "event_status": "scheduled",
+        "booking_status": "required_unverified",
+        "checked_at": "2026-11-11T19:50:00+01:00",
+        "organizer_source_url": "https://soundofstockholm.se/"
+      },
+      {
+        "title": "The Machine's Eye in Human Hands — AI art exhibition",
+        "section": "worth_reconsidering",
+        "event_status": "scheduled",
+        "booking_status": "not_required",
+        "checked_at": "2026-11-11T19:50:00+01:00",
+        "organizer_source_url": "https://stockholm.fotografiska.com/en/exhibitions/the-machines-eye-in-human-hands"
+      },
+      {
+        "title": "Yokai — supernatural creatures of Japanese culture",
+        "section": "worth_reconsidering",
+        "event_status": "scheduled",
+        "booking_status": "not_required",
+        "checked_at": "2026-11-11T19:50:00+01:00",
+        "organizer_source_url": "https://www.visitstockholm.com/events/yokai/2026-11-08/"
+      },
+      {
+        "title": "Play Beyond Play — immersive gaming history",
+        "section": "worth_reconsidering",
+        "event_status": "scheduled",
+        "booking_status": "not_required",
+        "checked_at": "2026-11-11T19:50:00+01:00",
+        "organizer_source_url": "https://www.visitstockholm.com/events/play-beyond-play/2026-11-11/"
+      },
+      {
+        "title": "Digital on Stage — immersive performance & technology academy",
+        "section": "worth_reconsidering",
+        "event_status": "scheduled",
+        "booking_status": "required_unverified",
+        "checked_at": "2026-11-11T19:50:00+01:00",
+        "organizer_source_url": "https://intercult.se/en/2026/09/15/intercult-academy-digital-on-stage-2026-innovative-production-programme-release/"
+      },
+      {
+        "title": "Breathwork with Hale — Yin/Yang",
+        "section": "unavailable",
+        "event_status": "scheduled",
+        "booking_status": "sold_out",
+        "checked_at": "2026-11-11T19:50:00+01:00",
+        "organizer_source_url": "https://stockholm.fotografiska.com/en/events"
+      },
+      {
+        "title": "No Paradise If You Are Killed by a Woman — Face2Face",
+        "section": "unavailable",
+        "event_status": "scheduled",
+        "booking_status": "sold_out",
+        "checked_at": "2026-11-11T19:50:00+01:00",
+        "organizer_source_url": "https://www.stockholmfilmfestival.se/face2face-2026"
+      }
+    ],
+    "note": "Timestamped evidence audit; cannot independently establish that page claims are true."
+  },
+  "release_channel": "production",
+  "source_commit_sha": "2f998ff3d97aff83fa6ec627c2239703c07578c3"
+}

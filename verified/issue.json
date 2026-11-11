@@ -1,0 +1,1166 @@
+{
+  "issue_number": "003",
+  "date_range": "11–24 November 2026",
+  "published_at": "2026-11-11T19:50:00+01:00",
+  "intro": "An unusually rich fortnight of live-film theatre, hands-on digital performance, experimental sound, festival cinema and intimate arts discoveries.",
+  "disclaimer": "Verified against published organizer listings on 11 November 2026. Tickets can sell out and schedules may change; 'listed' never guarantees seats. Prices marked unverified require checking before booking.",
+  "top3": [
+    {
+      "title": "VERKLIGHETEN — film created live with AI",
+      "dates": "Fri 13 & Sat 14, Mon 16 Nov · 19:00–21:00",
+      "url": "https://kontrar.se/en/show/verkligheten/",
+      "venue": "Konträr, Östgötagatan 33",
+      "price": "Price not confirmed on event page",
+      "booking": "Tickets listed for 13–14 Nov; few remain for 16 Nov",
+      "description": "Audience members can become extras while a feature film is shot live in a theatre studio, with AI-assisted settings ranging from prehistoric nature to a spacecraft.",
+      "schedule_note": "13, 14 and 16 November at 19:00; 12 November sold out",
+      "verification": {
+        "checked_at": "2026-11-11T19:50:00+01:00",
+        "date": {
+          "status": "confirmed",
+          "source_url": "https://kontrar.se/en/show/verkligheten/"
+        },
+        "venue": {
+          "status": "confirmed",
+          "source_url": "https://kontrar.se/en/show/verkligheten/"
+        },
+        "booking": {
+          "status": "confirmed",
+          "source_url": "https://kontrar.se/en/show/verkligheten/"
+        },
+        "price": {
+          "status": "unknown",
+          "source_url": "https://kontrar.se/en/show/verkligheten/",
+          "note": "Official listing did not establish this exact detail or live ticket availability"
+        }
+      },
+      "final_review": {
+        "checked_at": "2026-11-11T19:50:00+01:00",
+        "organizer_source_url": "https://kontrar.se/en/show/verkligheten/",
+        "event_status": "scheduled",
+        "booking_status": "required_unverified",
+        "notes": "Organizer's published listing checked; remaining seats not independently confirmed"
+      },
+      "image_verified": true,
+      "image_url": "https://fixingman.github.io/stockholm-guide/assets/verkligheten-press.jpg",
+      "image_source_url": "https://kontrar.se/en/show/verkligheten/",
+      "image_cache_file": "verkligheten-press.jpg",
+      "image_alt": "Official VERKLIGHETEN production photo credited to Julia Mård",
+      "image_identity_review": {
+        "event_match": true,
+        "reviewer": "Editorial review of Konträr official VERKLIGHETEN production photograph",
+        "source_page": "https://kontrar.se/en/show/verkligheten/",
+        "checked_at": "2026-11-11T19:50:00+01:00"
+      },
+      "rationale": "Part theatre, part live film shoot, with unexpected AI staging."
+    },
+    {
+      "title": "Digital on Stage — immersive performance & technology academy",
+      "dates": "11–13 Nov · workshops and talks; VR showcase Thu 12 Nov 14:00–19:00",
+      "url": "https://intercult.se/en/2026/09/15/intercult-academy-digital-on-stage-2026-innovative-production-programme-release/",
+      "venue": "Riksteatern, Hallundavägen 30, Norsborg",
+      "price": "Free",
+      "booking": "Registration required; limited places",
+      "description": "Hands-on workshops on real-time scenography, VR, robotics and AI in performance, including a drop-in presentation of the VR work The Garden Says.",
+      "schedule_note": "Multi-day schedule 11–13 November; Thursday VR showcase 14:00–19:00",
+      "verification": {
+        "checked_at": "2026-11-11T19:50:00+01:00",
+        "date": {
+          "status": "confirmed",
+          "source_url": "https://intercult.se/en/2026/09/15/intercult-academy-digital-on-stage-2026-innovative-production-programme-release/"
+        },
+        "venue": {
+          "status": "confirmed",
+          "source_url": "https://intercult.se/en/2026/09/15/intercult-academy-digital-on-stage-2026-innovative-production-programme-release/"
+        },
+        "booking": {
+          "status": "confirmed",
+          "source_url": "https://intercult.se/en/2026/09/15/intercult-academy-digital-on-stage-2026-innovative-production-programme-release/"
+        },
+        "price": {
+          "status": "confirmed",
+          "source_url": "https://intercult.se/en/2026/09/15/intercult-academy-digital-on-stage-2026-innovative-production-programme-release/"
+        }
+      },
+      "final_review": {
+        "checked_at": "2026-11-11T19:50:00+01:00",
+        "organizer_source_url": "https://intercult.se/en/2026/09/15/intercult-academy-digital-on-stage-2026-innovative-production-programme-release/",
+        "event_status": "scheduled",
+        "booking_status": "required_unverified",
+        "notes": "Organizer's published listing checked; remaining seats not independently confirmed"
+      },
+      "image_verified": false,
+      "first_seen_issue": "003",
+      "new_discovery_verified": true
+    },
+    {
+      "title": "Sound of Stockholm — Saturday experimental performances",
+      "dates": "Sat 21 Nov · evening programme from 18:00",
+      "url": "https://www.fylkingen.se/en/events/sound-of-stockholm-lordag",
+      "venue": "Fylkingen, Saltmätargatan 2",
+      "price": "250 SEK; 150 SEK members/friends",
+      "booking": "Tickets listed; seats not guaranteed",
+      "description": "An evening of voice, movement and experimental music, including Anna Fitoussi & Adele Kosman, Farzané, Lisa Ullén & John Chantler, and eurodyke.",
+      "event_start": "2026-11-21T18:00:00+01:00",
+      "verification": {
+        "checked_at": "2026-11-11T19:50:00+01:00",
+        "date": {
+          "status": "confirmed",
+          "source_url": "https://www.fylkingen.se/en/events/sound-of-stockholm-lordag"
+        },
+        "venue": {
+          "status": "confirmed",
+          "source_url": "https://www.fylkingen.se/en/events/sound-of-stockholm-lordag"
+        },
+        "booking": {
+          "status": "confirmed",
+          "source_url": "https://www.fylkingen.se/en/events/sound-of-stockholm-lordag"
+        },
+        "price": {
+          "status": "confirmed",
+          "source_url": "https://www.fylkingen.se/en/events/sound-of-stockholm-lordag"
+        }
+      },
+      "final_review": {
+        "checked_at": "2026-11-11T19:50:00+01:00",
+        "organizer_source_url": "https://www.fylkingen.se/en/events/sound-of-stockholm-lordag",
+        "event_status": "scheduled",
+        "booking_status": "required_unverified",
+        "notes": "Organizer's published listing checked; remaining seats not independently confirmed"
+      },
+      "image_verified": true,
+      "image_url": "https://freight.cargo.site/w/1000/i/X3215576396280121608059225178842/screenshot-3340826510.jpg",
+      "image_source_url": "https://soundofstockholm.se/",
+      "image_source_pages": [
+        "https://soundofstockholm.se/"
+      ],
+      "image_alt": "Official artwork for the Sound of Stockholm 2026 festival, including the Saturday programme",
+      "image_identity_review": {
+        "event_match": true,
+        "reviewer": "Editorial review of official Sound of Stockholm 2026 festival artwork; represents festival, not an individual performer",
+        "source_page": "https://soundofstockholm.se/",
+        "checked_at": "2026-11-11T19:50:00+01:00"
+      },
+      "rationale": "One of the city's more adventurous combinations of live sound and physical performance.",
+      "first_seen_issue": "003",
+      "new_discovery_verified": false
+    }
+  ],
+  "new_discoveries": [
+    {
+      "title": "Musiken och maskinen — AI in artistic creation",
+      "dates": "Thu 12 Nov · 18:00",
+      "url": "https://www.fylkingen.se/sv/events",
+      "venue": "Fylkingen, Saltmätargatan 2",
+      "price": "Price unverified",
+      "booking": "Listed; booking details unverified",
+      "description": "A direct examination of machines and AI in creative practice, part of the Visioner av Nuet programme.",
+      "event_start": "2026-11-12T18:00:00+01:00",
+      "verification": {
+        "checked_at": "2026-11-11T19:50:00+01:00",
+        "date": {
+          "status": "confirmed",
+          "source_url": "https://www.fylkingen.se/sv/events"
+        },
+        "venue": {
+          "status": "confirmed",
+          "source_url": "https://www.fylkingen.se/sv/events"
+        },
+        "booking": {
+          "status": "unknown",
+          "source_url": "https://www.fylkingen.se/sv/events",
+          "note": "Official listing did not establish this exact detail or live ticket availability"
+        },
+        "price": {
+          "status": "unknown",
+          "source_url": "https://www.fylkingen.se/sv/events",
+          "note": "Official listing did not establish this exact detail or live ticket availability"
+        }
+      },
+      "final_review": {
+        "checked_at": "2026-11-11T19:50:00+01:00",
+        "organizer_source_url": "https://www.fylkingen.se/sv/events",
+        "event_status": "scheduled",
+        "booking_status": "required_unverified",
+        "notes": "Organizer's published listing checked; remaining seats not independently confirmed"
+      }
+    },
+    {
+      "title": "The Garden Says — VR performance showcase",
+      "dates": "Thu 12 Nov · drop in 14:00–19:00",
+      "url": "https://intercult.se/en/2026/09/15/intercult-academy-digital-on-stage-2026-innovative-production-programme-release/",
+      "venue": "Riksteatern, Hallundavägen 30, Norsborg",
+      "price": "Free",
+      "booking": "Drop-in showcase; academy registration may apply",
+      "description": "A VR performance showcase running alongside Intercult's Digital on Stage programme on innovative performing-arts technologies.",
+      "event_start": "2026-11-12T14:00:00+01:00",
+      "verification": {
+        "checked_at": "2026-11-11T19:50:00+01:00",
+        "date": {
+          "status": "confirmed",
+          "source_url": "https://intercult.se/en/2026/09/15/intercult-academy-digital-on-stage-2026-innovative-production-programme-release/"
+        },
+        "venue": {
+          "status": "confirmed",
+          "source_url": "https://intercult.se/en/2026/09/15/intercult-academy-digital-on-stage-2026-innovative-production-programme-release/"
+        },
+        "booking": {
+          "status": "unknown",
+          "source_url": "https://intercult.se/en/2026/09/15/intercult-academy-digital-on-stage-2026-innovative-production-programme-release/",
+          "note": "Official listing did not establish this exact detail or live ticket availability"
+        },
+        "price": {
+          "status": "confirmed",
+          "source_url": "https://intercult.se/en/2026/09/15/intercult-academy-digital-on-stage-2026-innovative-production-programme-release/"
+        }
+      },
+      "final_review": {
+        "checked_at": "2026-11-11T19:50:00+01:00",
+        "organizer_source_url": "https://intercult.se/en/2026/09/15/intercult-academy-digital-on-stage-2026-innovative-production-programme-release/",
+        "event_status": "scheduled",
+        "booking_status": "unknown",
+        "notes": "Organizer's published listing checked; remaining seats not independently confirmed"
+      },
+      "first_seen_issue": "003",
+      "new_discovery_verified": true
+    },
+    {
+      "title": "Visioner av Nuet — Friday at Fylkingen",
+      "dates": "Fri 13 Nov · 14:00",
+      "url": "https://www.fylkingen.se/sv/events",
+      "venue": "Fylkingen, Saltmätargatan 2",
+      "price": "Free",
+      "booking": "Free event listed; entry details unverified",
+      "description": "A daytime programme exploring experimental art, machines and technological imagination in the 60th-anniversary Visioner av Nuet series.",
+      "event_start": "2026-11-13T14:00:00+01:00",
+      "verification": {
+        "checked_at": "2026-11-11T19:50:00+01:00",
+        "date": {
+          "status": "confirmed",
+          "source_url": "https://www.fylkingen.se/sv/events"
+        },
+        "venue": {
+          "status": "confirmed",
+          "source_url": "https://www.fylkingen.se/sv/events"
+        },
+        "booking": {
+          "status": "unknown",
+          "source_url": "https://www.fylkingen.se/sv/events",
+          "note": "Official listing did not establish this exact detail or live ticket availability"
+        },
+        "price": {
+          "status": "confirmed",
+          "source_url": "https://www.fylkingen.se/sv/events"
+        }
+      },
+      "final_review": {
+        "checked_at": "2026-11-11T19:50:00+01:00",
+        "organizer_source_url": "https://www.fylkingen.se/sv/events",
+        "event_status": "scheduled",
+        "booking_status": "unknown",
+        "notes": "Organizer's published listing checked; remaining seats not independently confirmed"
+      }
+    },
+    {
+      "title": "Art Without Permission — independent artists' exhibition",
+      "dates": "Fri 13 Nov · 14:00–21:00",
+      "url": "https://www.visitstockholm.com/events/art-without-permission-group-exhibition-at-chisel/next/",
+      "venue": "Chisel Studios, Almbygatan 10, Spånga",
+      "price": "Price unverified",
+      "booking": "Exhibition time listed; admission unverified",
+      "description": "Local artists show work that deliberately ignores conventional expectations, market preferences and social acceptability.",
+      "event_start": "2026-11-13T14:00:00+01:00",
+      "verification": {
+        "checked_at": "2026-11-11T19:50:00+01:00",
+        "date": {
+          "status": "confirmed",
+          "source_url": "https://www.visitstockholm.com/events/art-without-permission-group-exhibition-at-chisel/next/"
+        },
+        "venue": {
+          "status": "confirmed",
+          "source_url": "https://www.visitstockholm.com/events/art-without-permission-group-exhibition-at-chisel/next/"
+        },
+        "booking": {
+          "status": "unknown",
+          "source_url": "https://www.visitstockholm.com/events/art-without-permission-group-exhibition-at-chisel/next/",
+          "note": "Official listing did not establish this exact detail or live ticket availability"
+        },
+        "price": {
+          "status": "unknown",
+          "source_url": "https://www.visitstockholm.com/events/art-without-permission-group-exhibition-at-chisel/next/",
+          "note": "Official listing did not establish this exact detail or live ticket availability"
+        }
+      },
+      "final_review": {
+        "checked_at": "2026-11-11T19:50:00+01:00",
+        "organizer_source_url": "https://www.visitstockholm.com/events/art-without-permission-group-exhibition-at-chisel/next/",
+        "event_status": "scheduled",
+        "booking_status": "unknown",
+        "notes": "Organizer's published listing checked; remaining seats not independently confirmed"
+      },
+      "first_seen_issue": "003",
+      "new_discovery_verified": true
+    },
+    {
+      "title": "Art of Drag x Admira — November Night",
+      "dates": "Fri 13 Nov · 19:00–22:30",
+      "url": "https://stockholm.fotografiska.com/sv/events/art-of-drag-admira-november-night",
+      "venue": "Fotografiska, Stadsgårdshamnen 22",
+      "price": "295 SEK regular; 245 senior; 195 student/youth; 95 member",
+      "booking": "Tickets listed; availability unverified",
+      "description": "Live singing, transformative costuming, visual installations and stagecraft with drag artist Admira.",
+      "event_start": "2026-11-13T19:00:00+01:00",
+      "verification": {
+        "checked_at": "2026-11-11T19:50:00+01:00",
+        "date": {
+          "status": "confirmed",
+          "source_url": "https://stockholm.fotografiska.com/sv/events/art-of-drag-admira-november-night"
+        },
+        "venue": {
+          "status": "confirmed",
+          "source_url": "https://stockholm.fotografiska.com/sv/events/art-of-drag-admira-november-night"
+        },
+        "booking": {
+          "status": "confirmed",
+          "source_url": "https://stockholm.fotografiska.com/sv/events/art-of-drag-admira-november-night"
+        },
+        "price": {
+          "status": "confirmed",
+          "source_url": "https://stockholm.fotografiska.com/sv/events/art-of-drag-admira-november-night"
+        }
+      },
+      "final_review": {
+        "checked_at": "2026-11-11T19:50:00+01:00",
+        "organizer_source_url": "https://stockholm.fotografiska.com/sv/events/art-of-drag-admira-november-night",
+        "event_status": "scheduled",
+        "booking_status": "required_unverified",
+        "notes": "Organizer's published listing checked; remaining seats not independently confirmed"
+      }
+    },
+    {
+      "title": "Sara-Vide Ericson: DRIFT — polar painting exhibition",
+      "dates": "From Fri 13 Nov · museum opening hours",
+      "url": "https://www.visitstockholm.com/events/exhibition-sara-vide-ericson-drift/next/",
+      "venue": "Liljevalchs+, Djurgårdsvägen 60",
+      "price": "Standard admission; exact price unverified",
+      "booking": "Exhibition listed; check museum hours",
+      "description": "About 80 works made after an expedition aboard the icebreaker Oden, combining polar experience with unconventional materials.",
+      "event_start": "2026-11-13T11:00:00+01:00",
+      "verification": {
+        "checked_at": "2026-11-11T19:50:00+01:00",
+        "date": {
+          "status": "confirmed",
+          "source_url": "https://www.visitstockholm.com/events/exhibition-sara-vide-ericson-drift/next/"
+        },
+        "venue": {
+          "status": "confirmed",
+          "source_url": "https://www.visitstockholm.com/events/exhibition-sara-vide-ericson-drift/next/"
+        },
+        "booking": {
+          "status": "unknown",
+          "source_url": "https://www.visitstockholm.com/events/exhibition-sara-vide-ericson-drift/next/",
+          "note": "Official listing did not establish this exact detail or live ticket availability"
+        },
+        "price": {
+          "status": "unknown",
+          "source_url": "https://www.visitstockholm.com/events/exhibition-sara-vide-ericson-drift/next/",
+          "note": "Official listing did not establish this exact detail or live ticket availability"
+        }
+      },
+      "final_review": {
+        "checked_at": "2026-11-11T19:50:00+01:00",
+        "organizer_source_url": "https://www.visitstockholm.com/events/exhibition-sara-vide-ericson-drift/next/",
+        "event_status": "scheduled",
+        "booking_status": "unknown",
+        "notes": "Organizer's published listing checked; remaining seats not independently confirmed"
+      },
+      "first_seen_issue": "003",
+      "new_discovery_verified": true
+    },
+    {
+      "title": "Stockholm Film Festival — shorts: If Things Could Talk",
+      "dates": "Sat 14 Nov · 16:00",
+      "url": "https://kulturhusetstadsteatern.se/stockholms-filmfestival-2026-pa-klarabiografen",
+      "venue": "Klarabiografen, Kulturhuset Stadsteatern",
+      "price": "Festival ticket price; exact amount unverified",
+      "booking": "Tickets sold via Stockholm Film Festival",
+      "description": "Curated short-film package, one of several unusual discoveries amid the festival's 130-plus screenings.",
+      "event_start": "2026-11-14T16:00:00+01:00",
+      "verification": {
+        "checked_at": "2026-11-11T19:50:00+01:00",
+        "date": {
+          "status": "confirmed",
+          "source_url": "https://kulturhusetstadsteatern.se/stockholms-filmfestival-2026-pa-klarabiografen"
+        },
+        "venue": {
+          "status": "confirmed",
+          "source_url": "https://kulturhusetstadsteatern.se/stockholms-filmfestival-2026-pa-klarabiografen"
+        },
+        "booking": {
+          "status": "confirmed",
+          "source_url": "https://kulturhusetstadsteatern.se/stockholms-filmfestival-2026-pa-klarabiografen"
+        },
+        "price": {
+          "status": "unknown",
+          "source_url": "https://kulturhusetstadsteatern.se/stockholms-filmfestival-2026-pa-klarabiografen",
+          "note": "Official listing did not establish this exact detail or live ticket availability"
+        }
+      },
+      "final_review": {
+        "checked_at": "2026-11-11T19:50:00+01:00",
+        "organizer_source_url": "https://kulturhusetstadsteatern.se/stockholms-filmfestival-2026-pa-klarabiografen",
+        "event_status": "scheduled",
+        "booking_status": "required_unverified",
+        "notes": "Organizer's published listing checked; remaining seats not independently confirmed"
+      },
+      "first_seen_issue": "003",
+      "new_discovery_verified": true
+    },
+    {
+      "title": "Stockholm Film Festival — John Turturro Face2Face",
+      "dates": "Fri 20 Nov · 17:30",
+      "url": "https://www.stockholmfilmfestival.se/face2face-2026",
+      "venue": "Bio Skandia, Drottninggatan",
+      "price": "Festival ticket price; exact amount unverified",
+      "booking": "Screening and conversation listed; seats unverified",
+      "description": "The Only Living Pickpocket in New York followed by a filmmaker conversation and award ceremony with John Turturro.",
+      "event_start": "2026-11-20T17:30:00+01:00",
+      "verification": {
+        "checked_at": "2026-11-11T19:50:00+01:00",
+        "date": {
+          "status": "confirmed",
+          "source_url": "https://www.stockholmfilmfestival.se/face2face-2026"
+        },
+        "venue": {
+          "status": "confirmed",
+          "source_url": "https://www.stockholmfilmfestival.se/face2face-2026"
+        },
+        "booking": {
+          "status": "confirmed",
+          "source_url": "https://www.stockholmfilmfestival.se/face2face-2026"
+        },
+        "price": {
+          "status": "unknown",
+          "source_url": "https://www.stockholmfilmfestival.se/face2face-2026",
+          "note": "Official listing did not establish this exact detail or live ticket availability"
+        }
+      },
+      "final_review": {
+        "checked_at": "2026-11-11T19:50:00+01:00",
+        "organizer_source_url": "https://www.stockholmfilmfestival.se/face2face-2026",
+        "event_status": "scheduled",
+        "booking_status": "required_unverified",
+        "notes": "Organizer's published listing checked; remaining seats not independently confirmed"
+      },
+      "first_seen_issue": "003",
+      "new_discovery_verified": true
+    },
+    {
+      "title": "Strage Sessions — punk aesthetics and exhibition finissage",
+      "dates": "Fri 20 Nov · 19:00–22:00",
+      "url": "https://stockholm.fotografiska.com/en/events/strage-sessions",
+      "venue": "Fotografiska, Stadsgårdshamnen 22",
+      "price": "Included in regular admission; free for members",
+      "booking": "Limited places; advance reservation recommended",
+      "description": "Punk aesthetics with Fredrik Strage, Lotta Antonsson and guests, followed by a DJ set and photography-exhibition closing celebration.",
+      "event_start": "2026-11-20T19:00:00+01:00",
+      "verification": {
+        "checked_at": "2026-11-11T19:50:00+01:00",
+        "date": {
+          "status": "confirmed",
+          "source_url": "https://stockholm.fotografiska.com/en/events/strage-sessions"
+        },
+        "venue": {
+          "status": "confirmed",
+          "source_url": "https://stockholm.fotografiska.com/en/events/strage-sessions"
+        },
+        "booking": {
+          "status": "confirmed",
+          "source_url": "https://stockholm.fotografiska.com/en/events/strage-sessions"
+        },
+        "price": {
+          "status": "confirmed",
+          "source_url": "https://stockholm.fotografiska.com/en/events/strage-sessions"
+        }
+      },
+      "final_review": {
+        "checked_at": "2026-11-11T19:50:00+01:00",
+        "organizer_source_url": "https://stockholm.fotografiska.com/en/events/strage-sessions",
+        "event_status": "scheduled",
+        "booking_status": "required_unverified",
+        "notes": "Organizer's published listing checked; remaining seats not independently confirmed"
+      },
+      "booking_signal": "advance_required",
+      "first_seen_issue": "003",
+      "new_discovery_verified": true
+    },
+    {
+      "title": "Who stole the Lovely Garden from the Goose?",
+      "dates": "From Sat 21 Nov · gallery hours",
+      "url": "https://www.visitstockholm.com/events/who-stole-the-lovely-garden-from-the-goose/next/",
+      "venue": "Konsthall C, Cigarrvägen 14, Hökarängen",
+      "price": "Price unverified",
+      "booking": "Exhibition dates listed; check opening hours",
+      "description": "An enormous musical installation built from artwork by five-year-olds, transforming preschool creativity into an immersive communal gallery.",
+      "event_start": "2026-11-21T12:00:00+01:00",
+      "verification": {
+        "checked_at": "2026-11-11T19:50:00+01:00",
+        "date": {
+          "status": "confirmed",
+          "source_url": "https://www.visitstockholm.com/events/who-stole-the-lovely-garden-from-the-goose/next/"
+        },
+        "venue": {
+          "status": "confirmed",
+          "source_url": "https://www.visitstockholm.com/events/who-stole-the-lovely-garden-from-the-goose/next/"
+        },
+        "booking": {
+          "status": "unknown",
+          "source_url": "https://www.visitstockholm.com/events/who-stole-the-lovely-garden-from-the-goose/next/",
+          "note": "Official listing did not establish this exact detail or live ticket availability"
+        },
+        "price": {
+          "status": "unknown",
+          "source_url": "https://www.visitstockholm.com/events/who-stole-the-lovely-garden-from-the-goose/next/",
+          "note": "Official listing did not establish this exact detail or live ticket availability"
+        }
+      },
+      "final_review": {
+        "checked_at": "2026-11-11T19:50:00+01:00",
+        "organizer_source_url": "https://www.visitstockholm.com/events/who-stole-the-lovely-garden-from-the-goose/next/",
+        "event_status": "scheduled",
+        "booking_status": "unknown",
+        "notes": "Organizer's published listing checked; remaining seats not independently confirmed"
+      },
+      "first_seen_issue": "003",
+      "new_discovery_verified": true
+    },
+    {
+      "title": "Donald Boström — photography, ethics & music",
+      "dates": "Sun 22 Nov · 14:00–17:00",
+      "url": "https://stockholm.fotografiska.com/en/events/book-talk-donald-bostrom",
+      "venue": "Fotografiska, Stadsgårdshamnen 22",
+      "price": "Included in regular admission; free for members",
+      "booking": "Limited places; advance reservation recommended",
+      "description": "The photojournalist speaks with Marika Lagercrantz, followed by a book signing, exhibition reception and live guitar music.",
+      "event_start": "2026-11-22T14:00:00+01:00",
+      "verification": {
+        "checked_at": "2026-11-11T19:50:00+01:00",
+        "date": {
+          "status": "confirmed",
+          "source_url": "https://stockholm.fotografiska.com/en/events/book-talk-donald-bostrom"
+        },
+        "venue": {
+          "status": "confirmed",
+          "source_url": "https://stockholm.fotografiska.com/en/events/book-talk-donald-bostrom"
+        },
+        "booking": {
+          "status": "confirmed",
+          "source_url": "https://stockholm.fotografiska.com/en/events/book-talk-donald-bostrom"
+        },
+        "price": {
+          "status": "confirmed",
+          "source_url": "https://stockholm.fotografiska.com/en/events/book-talk-donald-bostrom"
+        }
+      },
+      "final_review": {
+        "checked_at": "2026-11-11T19:50:00+01:00",
+        "organizer_source_url": "https://stockholm.fotografiska.com/en/events/book-talk-donald-bostrom",
+        "event_status": "scheduled",
+        "booking_status": "required_unverified",
+        "notes": "Organizer's published listing checked; remaining seats not independently confirmed"
+      },
+      "booking_signal": "advance_required",
+      "first_seen_issue": "003",
+      "new_discovery_verified": true
+    },
+    {
+      "title": "Stockholm Film Festival — Sad Girl Cinema shorts",
+      "dates": "Sun 22 Nov · 16:00",
+      "url": "https://kulturhusetstadsteatern.se/stockholms-filmfestival-2026-pa-klarabiografen",
+      "venue": "Klarabiografen, Kulturhuset Stadsteatern",
+      "price": "Festival ticket price; amount unverified",
+      "booking": "Tickets through the festival; seats unverified",
+      "description": "A late-festival short-film programme at Klarabiografen for a compact cinema afternoon.",
+      "event_start": "2026-11-22T16:00:00+01:00",
+      "verification": {
+        "checked_at": "2026-11-11T19:50:00+01:00",
+        "date": {
+          "status": "confirmed",
+          "source_url": "https://kulturhusetstadsteatern.se/stockholms-filmfestival-2026-pa-klarabiografen"
+        },
+        "venue": {
+          "status": "confirmed",
+          "source_url": "https://kulturhusetstadsteatern.se/stockholms-filmfestival-2026-pa-klarabiografen"
+        },
+        "booking": {
+          "status": "confirmed",
+          "source_url": "https://kulturhusetstadsteatern.se/stockholms-filmfestival-2026-pa-klarabiografen"
+        },
+        "price": {
+          "status": "unknown",
+          "source_url": "https://kulturhusetstadsteatern.se/stockholms-filmfestival-2026-pa-klarabiografen",
+          "note": "Official listing did not establish this exact detail or live ticket availability"
+        }
+      },
+      "final_review": {
+        "checked_at": "2026-11-11T19:50:00+01:00",
+        "organizer_source_url": "https://kulturhusetstadsteatern.se/stockholms-filmfestival-2026-pa-klarabiografen",
+        "event_status": "scheduled",
+        "booking_status": "required_unverified",
+        "notes": "Organizer's published listing checked; remaining seats not independently confirmed"
+      },
+      "first_seen_issue": "003",
+      "new_discovery_verified": true
+    }
+  ],
+  "worth_reconsidering": [
+    {
+      "title": "VERKLIGHETEN — film created live with AI",
+      "dates": "Fri 13 & Sat 14, Mon 16 Nov · 19:00–21:00",
+      "url": "https://kontrar.se/en/show/verkligheten/",
+      "venue": "Konträr, Östgötagatan 33",
+      "price": "Price not confirmed on event page",
+      "booking": "Tickets listed for 13–14 Nov; few remain for 16 Nov",
+      "description": "Audience members can become extras while a feature film is shot live in a theatre studio, with AI-assisted settings ranging from prehistoric nature to a spacecraft.",
+      "schedule_note": "13, 14 and 16 November at 19:00; 12 November sold out",
+      "verification": {
+        "checked_at": "2026-11-11T19:50:00+01:00",
+        "date": {
+          "status": "confirmed",
+          "source_url": "https://kontrar.se/en/show/verkligheten/"
+        },
+        "venue": {
+          "status": "confirmed",
+          "source_url": "https://kontrar.se/en/show/verkligheten/"
+        },
+        "booking": {
+          "status": "confirmed",
+          "source_url": "https://kontrar.se/en/show/verkligheten/"
+        },
+        "price": {
+          "status": "unknown",
+          "source_url": "https://kontrar.se/en/show/verkligheten/",
+          "note": "Official listing did not establish this exact detail or live ticket availability"
+        }
+      },
+      "final_review": {
+        "checked_at": "2026-11-11T19:50:00+01:00",
+        "organizer_source_url": "https://kontrar.se/en/show/verkligheten/",
+        "event_status": "scheduled",
+        "booking_status": "required_unverified",
+        "notes": "Organizer's published listing checked; remaining seats not independently confirmed"
+      },
+      "image_verified": true,
+      "image_url": "https://fixingman.github.io/stockholm-guide/assets/verkligheten-press.jpg",
+      "image_source_url": "https://kontrar.se/en/show/verkligheten/",
+      "image_cache_file": "verkligheten-press.jpg",
+      "image_alt": "Official VERKLIGHETEN production photo credited to Julia Mård",
+      "image_identity_review": {
+        "event_match": true,
+        "reviewer": "Editorial review of Konträr official VERKLIGHETEN production photograph",
+        "source_page": "https://kontrar.se/en/show/verkligheten/",
+        "checked_at": "2026-11-11T19:50:00+01:00"
+      },
+      "rationale": "Part theatre, part live film shoot, with unexpected AI staging."
+    },
+    {
+      "title": "Stockholm International Film Festival 2026",
+      "dates": "11–22 Nov · multiple daily screenings",
+      "url": "https://www.stockholmfilmfestival.se/en/festival",
+      "venue": "Bio Skandia, Klarabiografen and other cinemas",
+      "price": "Tickets vary by screening",
+      "booking": "Festival tickets listed; remaining availability depends on screening",
+      "description": "More than 130 films, international guests and live Face2Face conversations, including premieres and experimental cinema.",
+      "schedule_note": "The festival programme runs November 11–22; choose screening times on the official schedule",
+      "verification": {
+        "checked_at": "2026-11-11T19:50:00+01:00",
+        "date": {
+          "status": "confirmed",
+          "source_url": "https://www.stockholmfilmfestival.se/en/festival"
+        },
+        "venue": {
+          "status": "confirmed",
+          "source_url": "https://www.stockholmfilmfestival.se/en/festival"
+        },
+        "booking": {
+          "status": "confirmed",
+          "source_url": "https://www.stockholmfilmfestival.se/en/festival"
+        },
+        "price": {
+          "status": "confirmed",
+          "source_url": "https://www.stockholmfilmfestival.se/en/festival"
+        }
+      },
+      "final_review": {
+        "checked_at": "2026-11-11T19:50:00+01:00",
+        "organizer_source_url": "https://www.stockholmfilmfestival.se/en/festival",
+        "event_status": "scheduled",
+        "booking_status": "required_unverified",
+        "notes": "Organizer's published listing checked; remaining seats not independently confirmed"
+      }
+    },
+    {
+      "title": "Visioner av Nuet — Saturday at Tekniska museet",
+      "dates": "Sat 14 Nov · 19:00",
+      "url": "https://www.fylkingen.se/sv/events",
+      "venue": "Tekniska museet, Museivägen 7",
+      "price": "Price unverified",
+      "booking": "Programme listed; booking details unverified",
+      "description": "A special evening programme exploring experimental media, electronic art and how technology shapes perception.",
+      "event_start": "2026-11-14T19:00:00+01:00",
+      "verification": {
+        "checked_at": "2026-11-11T19:50:00+01:00",
+        "date": {
+          "status": "confirmed",
+          "source_url": "https://www.fylkingen.se/sv/events"
+        },
+        "venue": {
+          "status": "confirmed",
+          "source_url": "https://www.fylkingen.se/sv/events"
+        },
+        "booking": {
+          "status": "unknown",
+          "source_url": "https://www.fylkingen.se/sv/events",
+          "note": "Official listing did not establish this exact detail or live ticket availability"
+        },
+        "price": {
+          "status": "unknown",
+          "source_url": "https://www.fylkingen.se/sv/events",
+          "note": "Official listing did not establish this exact detail or live ticket availability"
+        }
+      },
+      "final_review": {
+        "checked_at": "2026-11-11T19:50:00+01:00",
+        "organizer_source_url": "https://www.fylkingen.se/sv/events",
+        "event_status": "scheduled",
+        "booking_status": "unknown",
+        "notes": "Organizer's published listing checked; remaining seats not independently confirmed"
+      }
+    },
+    {
+      "title": "INCANT — experimental music night",
+      "dates": "Wed 18 Nov · 18:30",
+      "url": "https://www.fylkingen.se/sv/events",
+      "venue": "Fylkingen, Saltmätargatan 2",
+      "price": "180 SEK; 150 SEK members/friends",
+      "booking": "Event listed; seats unverified",
+      "description": "One-off contemporary experimental music in Fylkingen's artist-run space.",
+      "event_start": "2026-11-18T18:30:00+01:00",
+      "verification": {
+        "checked_at": "2026-11-11T19:50:00+01:00",
+        "date": {
+          "status": "confirmed",
+          "source_url": "https://www.fylkingen.se/sv/events"
+        },
+        "venue": {
+          "status": "confirmed",
+          "source_url": "https://www.fylkingen.se/sv/events"
+        },
+        "booking": {
+          "status": "confirmed",
+          "source_url": "https://www.fylkingen.se/sv/events"
+        },
+        "price": {
+          "status": "confirmed",
+          "source_url": "https://www.fylkingen.se/sv/events"
+        }
+      },
+      "final_review": {
+        "checked_at": "2026-11-11T19:50:00+01:00",
+        "organizer_source_url": "https://www.fylkingen.se/sv/events",
+        "event_status": "scheduled",
+        "booking_status": "required_unverified",
+        "notes": "Organizer's published listing checked; remaining seats not independently confirmed"
+      }
+    },
+    {
+      "title": "Sound of Stockholm — Thursday programme",
+      "dates": "Thu 19 Nov · doors 18:30",
+      "url": "https://soundofstockholm.se/",
+      "venue": "Fylkingen, Saltmätargatan 2",
+      "price": "250 SEK regular",
+      "booking": "Ticket links listed; seats unverified",
+      "description": "Kwartludium, Økse and Dror Feiler share an opening night of experimental instrumentation, improvisation and electronic sound.",
+      "event_start": "2026-11-19T18:30:00+01:00",
+      "verification": {
+        "checked_at": "2026-11-11T19:50:00+01:00",
+        "date": {
+          "status": "confirmed",
+          "source_url": "https://soundofstockholm.se/"
+        },
+        "venue": {
+          "status": "confirmed",
+          "source_url": "https://soundofstockholm.se/"
+        },
+        "booking": {
+          "status": "confirmed",
+          "source_url": "https://soundofstockholm.se/"
+        },
+        "price": {
+          "status": "confirmed",
+          "source_url": "https://soundofstockholm.se/"
+        }
+      },
+      "final_review": {
+        "checked_at": "2026-11-11T19:50:00+01:00",
+        "organizer_source_url": "https://soundofstockholm.se/",
+        "event_status": "scheduled",
+        "booking_status": "required_unverified",
+        "notes": "Organizer's published listing checked; remaining seats not independently confirmed"
+      }
+    },
+    {
+      "title": "Sound of Stockholm — Friday programme",
+      "dates": "Fri 20 Nov · 19:00",
+      "url": "https://soundofstockholm.se/",
+      "venue": "Fylkingen, Saltmätargatan 2",
+      "price": "250 SEK regular",
+      "booking": "Ticket links listed; seats unverified",
+      "description": "Rhodri Davies, Peder Simonsen & Jo David Meyer Lysne, Rashad Becker, Sunik Kim and Nitefish.",
+      "event_start": "2026-11-20T19:00:00+01:00",
+      "verification": {
+        "checked_at": "2026-11-11T19:50:00+01:00",
+        "date": {
+          "status": "confirmed",
+          "source_url": "https://soundofstockholm.se/"
+        },
+        "venue": {
+          "status": "confirmed",
+          "source_url": "https://soundofstockholm.se/"
+        },
+        "booking": {
+          "status": "confirmed",
+          "source_url": "https://soundofstockholm.se/"
+        },
+        "price": {
+          "status": "confirmed",
+          "source_url": "https://soundofstockholm.se/"
+        }
+      },
+      "final_review": {
+        "checked_at": "2026-11-11T19:50:00+01:00",
+        "organizer_source_url": "https://soundofstockholm.se/",
+        "event_status": "scheduled",
+        "booking_status": "required_unverified",
+        "notes": "Organizer's published listing checked; remaining seats not independently confirmed"
+      }
+    },
+    {
+      "title": "Sound of Stockholm — Saturday experimental performances",
+      "dates": "Sat 21 Nov · evening programme from 18:00",
+      "url": "https://www.fylkingen.se/en/events/sound-of-stockholm-lordag",
+      "venue": "Fylkingen, Saltmätargatan 2",
+      "price": "250 SEK; 150 SEK members/friends",
+      "booking": "Tickets listed; seats not guaranteed",
+      "description": "An evening of voice, movement and experimental music, including Anna Fitoussi & Adele Kosman, Farzané, Lisa Ullén & John Chantler, and eurodyke.",
+      "event_start": "2026-11-21T18:00:00+01:00",
+      "verification": {
+        "checked_at": "2026-11-11T19:50:00+01:00",
+        "date": {
+          "status": "confirmed",
+          "source_url": "https://www.fylkingen.se/en/events/sound-of-stockholm-lordag"
+        },
+        "venue": {
+          "status": "confirmed",
+          "source_url": "https://www.fylkingen.se/en/events/sound-of-stockholm-lordag"
+        },
+        "booking": {
+          "status": "confirmed",
+          "source_url": "https://www.fylkingen.se/en/events/sound-of-stockholm-lordag"
+        },
+        "price": {
+          "status": "confirmed",
+          "source_url": "https://www.fylkingen.se/en/events/sound-of-stockholm-lordag"
+        }
+      },
+      "final_review": {
+        "checked_at": "2026-11-11T19:50:00+01:00",
+        "organizer_source_url": "https://www.fylkingen.se/en/events/sound-of-stockholm-lordag",
+        "event_status": "scheduled",
+        "booking_status": "required_unverified",
+        "notes": "Organizer's published listing checked; remaining seats not independently confirmed"
+      },
+      "image_verified": true,
+      "image_url": "https://freight.cargo.site/w/1000/i/X3215576396280121608059225178842/screenshot-3340826510.jpg",
+      "image_source_url": "https://soundofstockholm.se/",
+      "image_source_pages": [
+        "https://soundofstockholm.se/"
+      ],
+      "image_alt": "Official artwork for the Sound of Stockholm 2026 festival, including the Saturday programme",
+      "image_identity_review": {
+        "event_match": true,
+        "reviewer": "Editorial review of official Sound of Stockholm 2026 festival artwork; represents festival, not an individual performer",
+        "source_page": "https://soundofstockholm.se/",
+        "checked_at": "2026-11-11T19:50:00+01:00"
+      },
+      "rationale": "One of the city's more adventurous combinations of live sound and physical performance.",
+      "first_seen_issue": "003",
+      "new_discovery_verified": false
+    },
+    {
+      "title": "Sound of Stockholm — Marino Formenti's TIME TO GATHER",
+      "dates": "Sun 22 Nov · open 11:00–23:00",
+      "url": "https://soundofstockholm.se/",
+      "venue": "Rönnells Antikvariat",
+      "price": "Ticket price unverified",
+      "booking": "Tickets referenced; seats unverified",
+      "description": "A durational piano performance stretching across twelve hours, unusual even by experimental-music standards.",
+      "event_start": "2026-11-22T11:00:00+01:00",
+      "verification": {
+        "checked_at": "2026-11-11T19:50:00+01:00",
+        "date": {
+          "status": "confirmed",
+          "source_url": "https://soundofstockholm.se/"
+        },
+        "venue": {
+          "status": "confirmed",
+          "source_url": "https://soundofstockholm.se/"
+        },
+        "booking": {
+          "status": "confirmed",
+          "source_url": "https://soundofstockholm.se/"
+        },
+        "price": {
+          "status": "unknown",
+          "source_url": "https://soundofstockholm.se/",
+          "note": "Official listing did not establish this exact detail or live ticket availability"
+        }
+      },
+      "final_review": {
+        "checked_at": "2026-11-11T19:50:00+01:00",
+        "organizer_source_url": "https://soundofstockholm.se/",
+        "event_status": "scheduled",
+        "booking_status": "required_unverified",
+        "notes": "Organizer's published listing checked; remaining seats not independently confirmed"
+      }
+    },
+    {
+      "title": "The Machine's Eye in Human Hands — AI art exhibition",
+      "dates": "Through Sun 29 Nov · museum hours",
+      "url": "https://stockholm.fotografiska.com/en/exhibitions/the-machines-eye-in-human-hands",
+      "venue": "Fotografiska, Stadsgårdshamnen 22",
+      "price": "Museum entry; exact price unverified",
+      "booking": "Opening hours and admission; no specific event ticket",
+      "description": "Eight artists explore synthetic photographs, fabricated memory, AI agents and the blurred boundary between truth and image-making.",
+      "schedule_note": "Daily opening hours; the exhibition remains open through November 29",
+      "verification": {
+        "checked_at": "2026-11-11T19:50:00+01:00",
+        "date": {
+          "status": "confirmed",
+          "source_url": "https://stockholm.fotografiska.com/en/exhibitions/the-machines-eye-in-human-hands"
+        },
+        "venue": {
+          "status": "confirmed",
+          "source_url": "https://stockholm.fotografiska.com/en/exhibitions/the-machines-eye-in-human-hands"
+        },
+        "booking": {
+          "status": "unknown",
+          "source_url": "https://stockholm.fotografiska.com/en/exhibitions/the-machines-eye-in-human-hands",
+          "note": "Official listing did not establish this exact detail or live ticket availability"
+        },
+        "price": {
+          "status": "unknown",
+          "source_url": "https://stockholm.fotografiska.com/en/exhibitions/the-machines-eye-in-human-hands",
+          "note": "Official listing did not establish this exact detail or live ticket availability"
+        }
+      },
+      "final_review": {
+        "checked_at": "2026-11-11T19:50:00+01:00",
+        "organizer_source_url": "https://stockholm.fotografiska.com/en/exhibitions/the-machines-eye-in-human-hands",
+        "event_status": "scheduled",
+        "booking_status": "not_required",
+        "notes": "Organizer's published listing checked; remaining seats not independently confirmed"
+      }
+    },
+    {
+      "title": "Yokai — supernatural creatures of Japanese culture",
+      "dates": "Through Sun 6 Dec · museum hours",
+      "url": "https://www.visitstockholm.com/events/yokai/2026-11-08/",
+      "venue": "Etnografiska museet, Djurgårdsbrunnsvägen 34",
+      "price": "Museum entry; exact price unverified",
+      "booking": "Check admission and opening hours",
+      "description": "Folklore, woodcuts and popular culture meet in an exhibition tracing Japan's supernatural creatures from Edo-period imagery to games and manga.",
+      "schedule_note": "Dates confirmed; daily admission/session times vary; check organizer page",
+      "verification": {
+        "checked_at": "2026-11-11T19:50:00+01:00",
+        "date": {
+          "status": "confirmed",
+          "source_url": "https://www.visitstockholm.com/events/yokai/2026-11-08/"
+        },
+        "venue": {
+          "status": "confirmed",
+          "source_url": "https://www.visitstockholm.com/events/yokai/2026-11-08/"
+        },
+        "booking": {
+          "status": "unknown",
+          "source_url": "https://www.visitstockholm.com/events/yokai/2026-11-08/",
+          "note": "Official listing did not establish this exact detail or live ticket availability"
+        },
+        "price": {
+          "status": "unknown",
+          "source_url": "https://www.visitstockholm.com/events/yokai/2026-11-08/",
+          "note": "Official listing did not establish this exact detail or live ticket availability"
+        }
+      },
+      "final_review": {
+        "checked_at": "2026-11-11T19:50:00+01:00",
+        "organizer_source_url": "https://www.visitstockholm.com/events/yokai/2026-11-08/",
+        "event_status": "scheduled",
+        "booking_status": "not_required",
+        "notes": "Organizer's published listing checked; remaining seats not independently confirmed"
+      }
+    },
+    {
+      "title": "Play Beyond Play — immersive gaming history",
+      "dates": "Daily during 11–24 Nov · museum hours",
+      "url": "https://www.visitstockholm.com/events/play-beyond-play/2026-11-11/",
+      "venue": "Tekniska museet, Museivägen 7",
+      "price": "Museum entry; exact price unverified",
+      "booking": "Check regular admission and museum hours",
+      "description": "Hands-on game worlds and over a thousand square metres of playable video-game history.",
+      "schedule_note": "Dates confirmed; daily admission/session times vary; check organizer page",
+      "verification": {
+        "checked_at": "2026-11-11T19:50:00+01:00",
+        "date": {
+          "status": "confirmed",
+          "source_url": "https://www.visitstockholm.com/events/play-beyond-play/2026-11-11/"
+        },
+        "venue": {
+          "status": "confirmed",
+          "source_url": "https://www.visitstockholm.com/events/play-beyond-play/2026-11-11/"
+        },
+        "booking": {
+          "status": "unknown",
+          "source_url": "https://www.visitstockholm.com/events/play-beyond-play/2026-11-11/",
+          "note": "Official listing did not establish this exact detail or live ticket availability"
+        },
+        "price": {
+          "status": "unknown",
+          "source_url": "https://www.visitstockholm.com/events/play-beyond-play/2026-11-11/",
+          "note": "Official listing did not establish this exact detail or live ticket availability"
+        }
+      },
+      "final_review": {
+        "checked_at": "2026-11-11T19:50:00+01:00",
+        "organizer_source_url": "https://www.visitstockholm.com/events/play-beyond-play/2026-11-11/",
+        "event_status": "scheduled",
+        "booking_status": "not_required",
+        "notes": "Organizer's published listing checked; remaining seats not independently confirmed"
+      }
+    },
+    {
+      "title": "Digital on Stage — immersive performance & technology academy",
+      "dates": "11–13 Nov · workshops and talks; VR showcase Thu 12 Nov 14:00–19:00",
+      "url": "https://intercult.se/en/2026/09/15/intercult-academy-digital-on-stage-2026-innovative-production-programme-release/",
+      "venue": "Riksteatern, Hallundavägen 30, Norsborg",
+      "price": "Free",
+      "booking": "Registration required; limited places",
+      "description": "Hands-on workshops on real-time scenography, VR, robotics and AI in performance, including a drop-in presentation of the VR work The Garden Says.",
+      "schedule_note": "Multi-day schedule 11–13 November; Thursday VR showcase 14:00–19:00",
+      "verification": {
+        "checked_at": "2026-11-11T19:50:00+01:00",
+        "date": {
+          "status": "confirmed",
+          "source_url": "https://intercult.se/en/2026/09/15/intercult-academy-digital-on-stage-2026-innovative-production-programme-release/"
+        },
+        "venue": {
+          "status": "confirmed",
+          "source_url": "https://intercult.se/en/2026/09/15/intercult-academy-digital-on-stage-2026-innovative-production-programme-release/"
+        },
+        "booking": {
+          "status": "confirmed",
+          "source_url": "https://intercult.se/en/2026/09/15/intercult-academy-digital-on-stage-2026-innovative-production-programme-release/"
+        },
+        "price": {
+          "status": "confirmed",
+          "source_url": "https://intercult.se/en/2026/09/15/intercult-academy-digital-on-stage-2026-innovative-production-programme-release/"
+        }
+      },
+      "final_review": {
+        "checked_at": "2026-11-11T19:50:00+01:00",
+        "organizer_source_url": "https://intercult.se/en/2026/09/15/intercult-academy-digital-on-stage-2026-innovative-production-programme-release/",
+        "event_status": "scheduled",
+        "booking_status": "required_unverified",
+        "notes": "Organizer's published listing checked; remaining seats not independently confirmed"
+      },
+      "image_verified": false,
+      "first_seen_issue": "003",
+      "new_discovery_verified": true
+    }
+  ],
+  "unavailable": [
+    {
+      "title": "Breathwork with Hale — Yin/Yang",
+      "dates": "Sun 15 Nov · 15:00–16:30",
+      "url": "https://stockholm.fotografiska.com/en/events",
+      "venue": "Fotografiska, Stadsgårdshamnen 22",
+      "price": "395 SEK listed previously",
+      "booking": "SOLD OUT (official calendar)",
+      "description": "Guided immersive breathwork journey, shown for awareness only—not bookable.",
+      "event_start": "2026-11-15T15:00:00+01:00",
+      "verification": {
+        "checked_at": "2026-11-11T19:50:00+01:00",
+        "date": {
+          "status": "confirmed",
+          "source_url": "https://stockholm.fotografiska.com/en/events"
+        },
+        "venue": {
+          "status": "confirmed",
+          "source_url": "https://stockholm.fotografiska.com/en/events"
+        },
+        "booking": {
+          "status": "confirmed",
+          "source_url": "https://stockholm.fotografiska.com/en/events"
+        },
+        "price": {
+          "status": "confirmed",
+          "source_url": "https://stockholm.fotografiska.com/en/events"
+        }
+      },
+      "final_review": {
+        "checked_at": "2026-11-11T19:50:00+01:00",
+        "organizer_source_url": "https://stockholm.fotografiska.com/en/events",
+        "event_status": "scheduled",
+        "booking_status": "sold_out",
+        "notes": "Official Fotografiska listing explicitly marks SOLD OUT"
+      }
+    },
+    {
+      "title": "No Paradise If You Are Killed by a Woman — Face2Face",
+      "dates": "Mon 16 Nov · 17:30",
+      "url": "https://www.stockholmfilmfestival.se/face2face-2026",
+      "venue": "Biograf Sture",
+      "price": "Festival screening price; amount unverified",
+      "booking": "SOLD OUT (official Face2Face programme)",
+      "description": "A director conversation with Halkawt Mustafa; included as unavailable rather than recommending tickets.",
+      "event_start": "2026-11-16T17:30:00+01:00",
+      "verification": {
+        "checked_at": "2026-11-11T19:50:00+01:00",
+        "date": {
+          "status": "confirmed",
+          "source_url": "https://www.stockholmfilmfestival.se/face2face-2026"
+        },
+        "venue": {
+          "status": "confirmed",
+          "source_url": "https://www.stockholmfilmfestival.se/face2face-2026"
+        },
+        "booking": {
+          "status": "confirmed",
+          "source_url": "https://www.stockholmfilmfestival.se/face2face-2026"
+        },
+        "price": {
+          "status": "unknown",
+          "source_url": "https://www.stockholmfilmfestival.se/face2face-2026",
+          "note": "Official listing did not establish this exact detail or live ticket availability"
+        }
+      },
+      "final_review": {
+        "checked_at": "2026-11-11T19:50:00+01:00",
+        "organizer_source_url": "https://www.stockholmfilmfestival.se/face2face-2026",
+        "event_status": "scheduled",
+        "booking_status": "sold_out",
+        "notes": "Film Festival Face2Face programme marks this screening sold out"
+      }
+    }
+  ]
+}
