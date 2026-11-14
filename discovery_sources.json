@@ -1,0 +1,65 @@
+{
+  "schema_version": 1,
+  "purpose": "Persistent editorial discovery source registry; never a list of events guaranteed to occur.",
+  "sources": [
+    {
+      "id": "reimersholme-hotel",
+      "name": "Reimersholme Hotel",
+      "category": "independent live-music / experimental performance / club / culture venue",
+      "location": {
+        "address": "Reimersholmsgatan 5, 117 40 Stockholm, Sweden"
+      },
+      "official_calendar_url": "https://reimersholmehotel.se/evenemang/",
+      "official_calendar_en_url": "https://reimersholmehotel.se/en/upcoming-events/",
+      "organizer_ticket_calendar_url": "https://www.tickster.com/se/sv/events/by/6ezv08cafvf0dn1/reimersholme-hotel",
+      "discovery_priority": "recurring",
+      "editorial_fit": [
+        "independent music",
+        "experimental sound",
+        "club nights",
+        "cross-cultural performances",
+        "unusual live events"
+      ],
+      "editorial_instructions": "Check at each weekly discovery cycle, across the full rolling 14-day window. Use the official event detail page for title, year, start/doors, venue, price and booking, and use Tickster as supplementary ticketing evidence. Do not assume listed tickets mean remaining stock. Avoid flooding a single issue with the same organizer; select distinctive relevant experiences. Do not recycle an event after its date passes.",
+      "last_discovered_on": "2026-11-14",
+      "last_discovered_events": [
+        {
+          "title": "Klubb DÖD: Pink Turns Blue + All Lost Joys",
+          "date": "2026-11-14",
+          "calendar_status": "listed"
+        },
+        {
+          "title": "DEN FULE",
+          "date": "2026-11-18",
+          "calendar_status": "listed"
+        },
+        {
+          "title": "Asbest Inc + ARMOURS + DJ Hawk",
+          "date": "2026-11-19",
+          "calendar_status": "listed"
+        },
+        {
+          "title": "Iris / t h e m / Swaysense live!",
+          "date": "2026-11-20",
+          "calendar_status": "listed"
+        },
+        {
+          "title": "Valter Kinbom – Trollsländan, klippan och havet",
+          "date": "2026-11-26",
+          "calendar_status": "listed"
+        },
+        {
+          "title": "Congolese Super Night",
+          "date": "2026-11-27",
+          "calendar_status": "listed"
+        },
+        {
+          "title": "Masangue Maracatu & gäster",
+          "date": "2026-11-28",
+          "calendar_status": "listed"
+        }
+      ],
+      "notes": "Listings above are discovery leads observed November 14, 2026, not independently ticket-verified issue entries. This snapshot is historical and MUST NOT be treated as live facts in future issues."
+    }
+  ]
+}
