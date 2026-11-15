@@ -15,7 +15,9 @@ jobs:
         with:
           python-version: '3.12'
       - name: Install rendering and image-validation dependencies
-        run: python -m pip install 'Jinja2>=3.1.6,<4' 'Pillow>=11,<14'
+        run: |
+          python -m pip install 'Jinja2>=3.1.6,<4' 'Pillow>=11,<14' 'playwright>=1.55,<2'
+          python -m playwright install --with-deps chromium
       - name: Run newsletter and image regression tests
         run: python -m unittest test_minimal test_image_pipeline test_delivery_guard test_editorial_operations test_freshness_scanning test_discovery_sources test_release_authorization
       - name: Audit discovery coverage and public Luma policy (no account or signup)
