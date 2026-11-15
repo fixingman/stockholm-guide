@@ -56,6 +56,30 @@ class DeliveryGuardTests(unittest.TestCase):
         self.assertFalse(result["ready_for_delivery"])
         self.assertEqual(len(result["image_checks"]), 3)
 
+    def test_production_requires_three_real_featured_photos(self):
+        data=json.loads(json.dumps(self.data))
+        data["top3"][0]["image_verified"]=False
+        data["top3"][0].pop("image_url", None)
+        data["top3"][0].pop("image_cache_file", None)
+        with tempfile.TemporaryDirectory() as directory:
+            issue=Path(directory)/"issue.json"
+            issue.write_text(json.dumps(data))
+            _, html=render(issue, Path(directory)/"outgoing.html",
+                           "https://fixingman.github.io/stockholm-guide/assets")
+        # Visual fallback is still available for drafting and owner-only smoke tests.
+        preview=assess(data, html)
+        self.assertTrue(preview["ready_for_delivery"], preview["errors"])
+        self.assertEqual(preview["inline_fallbacks"], 1)
+        # Production must fail until the image is independently verified and reachable.
+        result=assess(data, html, require_featured_photos=True)
+        self.assertFalse(result["ready_for_delivery"])
+        self.assertTrue(any("Production image-quality gate" in e for e in result["errors"]))
+
+    def test_production_with_three_verified_images_passes_offline(self):
+        result=assess(self.data, self.html, require_featured_photos=True)
+        self.assertTrue(result["ready_for_delivery"], result["errors"])
+        self.assertEqual(result["inline_fallbacks"],0)
+
     def test_manifest_and_sent_mime_match(self):
         with tempfile.TemporaryDirectory() as directory:
             d=Path(directory)
