@@ -5,8 +5,6 @@ responsible for isolated test-inbox delivery and read-back before subscriber sen
 """
 from email.utils import parseaddr
 
-OWNER = "cankilicbay@gmail.com"
-
 def clean_address(address):
     name, value = parseaddr(address or "")
     return value.lower() if not name and value else ""
@@ -40,10 +38,10 @@ def verify_release(manifest, issue, *, channel):
         errors.append("Only explicitly marked owner-only visual rehearsals qualify")
     return errors
 
-def verify_test_delivery(release, *, to, cc=(), bcc=(), message_id=None,
+def verify_test_delivery(release, *, owner, to, cc=(), bcc=(), message_id=None,
                          received_html_sha256=None, received=False, subject=""):
     errors=[]
-    if [clean_address(x) for x in to] != [OWNER] or cc or bcc:
+    if not clean_address(owner) or [clean_address(x) for x in to] != [clean_address(owner)] or cc or bcc:
         errors.append("Private test MUST go only to owner, no CC/BCC")
     if not subject.startswith("[TEST]"):
         errors.append("Test subject must be labelled")
@@ -53,7 +51,7 @@ def verify_test_delivery(release, *, to, cc=(), bcc=(), message_id=None,
         errors.append("Test inbox HTML mismatch")
     return errors
 
-def production_authorization(manifest, issue, test_receipt, *, duplicate_sent=False):
+def production_authorization(manifest, issue, test_receipt, *, owner, duplicate_sent=False):
     errors=verify_release(manifest, issue, channel="production")
     if not isinstance(test_receipt,dict):
         errors.append("No private owner-only staging receipt")
@@ -62,7 +60,7 @@ def production_authorization(manifest, issue, test_receipt, *, duplicate_sent=Fa
             errors.append("Staging receipt belongs to a different source commit")
         if test_receipt.get("html_sha256") != manifest.get("html_sha256"):
             errors.append("Staging receipt HTML differs from production artifact")
-        errors.extend(verify_test_delivery(manifest,to=test_receipt.get("to",[]),
+        errors.extend(verify_test_delivery(manifest,owner=owner,to=test_receipt.get("to",[]),
                      cc=test_receipt.get("cc",[]),bcc=test_receipt.get("bcc",[]),
                      message_id=test_receipt.get("message_id"),
                      received_html_sha256=test_receipt.get("received_html_sha256"),
