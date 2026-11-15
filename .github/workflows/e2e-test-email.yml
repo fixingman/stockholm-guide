@@ -2,7 +2,7 @@ name: E2E — historical fixture render, live images and release guards (no emai
 on:
   push:
     branches: [main]
-    paths: [e2e_test_issue_2026-11-09.json, delivery_guard.py, final_freshness.py, editorial_scanning.py, render_minimal.py, minimal_template.html.j2, test_delivery_guard.py, test_freshness_scanning.py, test_discovery_sources.py, discovery_sources.json, .github/workflows/e2e-test-email.yml]
+    paths: [e2e_test_issue_2026-11-09.json, delivery_guard.py, final_freshness.py, editorial_scanning.py, render_minimal.py, minimal_template.html.j2, test_delivery_guard.py, test_freshness_scanning.py, test_discovery_sources.py, test_release_authorization.py, release_authorization.py, email_client_qa.py, discovery_sources.json, .github/workflows/e2e-test-email.yml]
   workflow_dispatch:
 permissions:
   contents: read
@@ -17,7 +17,7 @@ jobs:
       - name: Install rendering and image-validation dependencies
         run: python -m pip install 'Jinja2>=3.1.6,<4' 'Pillow>=11,<14'
       - name: Run newsletter and image regression tests
-        run: python -m unittest test_minimal test_image_pipeline test_delivery_guard test_editorial_operations test_freshness_scanning test_discovery_sources
+        run: python -m unittest test_minimal test_image_pipeline test_delivery_guard test_editorial_operations test_freshness_scanning test_discovery_sources test_release_authorization
       - name: Audit discovery coverage and public Luma policy (no account or signup)
         run: |
           python - <<'PY'
@@ -94,6 +94,20 @@ jobs:
           assert not verify_sent_html(embedded+'<!-- changed -->',manifest)['matched']
           print('PASS: 2 live images / 1 archival fallback; production refuses; MIME digest matches; tampering rejected; no recipients')
           PY
+      - name: Negative visual E2E — archived fallback must NEVER pass release visuals
+        run: |
+          python - <<'PY'
+          import json,subprocess,sys
+          result=subprocess.run([sys.executable,"email_client_qa.py",
+              "--html","e2e-test-email.html","--visual",
+              "--report","e2e-rejected-visual.json","--screenshots","visual-rejection-screenshots"])
+          report=json.load(open("e2e-rejected-visual.json"))
+          assert result.returncode != 0, "BUG: fallback passed images-enabled QA"
+          assert len(report["visual_scenarios"]) == 3, "Expected actual browser runs, not setup failure"
+          assert report["static"]["ok"] and not report["ok"]
+          assert all(x["fallbackCount"]==1 and not x["ok"] for x in report["visual_scenarios"])
+          print("PASS: old fallback fixture explicitly REJECTED by live browser visual gate")
+          PY
       - uses: actions/upload-artifact@v4
         with:
           name: isolated-e2e-email-and-image-audit
@@ -101,4 +115,6 @@ jobs:
             e2e-test-email.html
             e2e-image-audit.json
             e2e-delivery-manifest.json
+            e2e-rejected-visual.json
+            visual-rejection-screenshots/
           retention-days: 7
