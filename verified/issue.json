@@ -1,898 +1,156 @@
 {
-  "issue_number": "TEST-005",
-  "date_range": "15–28 November 2026",
-  "published_at": "2026-11-15T21:34:00+01:00",
-  "intro": "OWNER-ONLY TEST: MALL CALL, live percussion and experimental sound are among this fortnight's unusual Stockholm experiences.",
-  "disclaimer": "OWNER-ONLY REHEARSAL — organizer dates and prices should be checked before booking. Some photo slots intentionally use text fallbacks and do not meet the production group-send standard.",
+  "issue_number": "TEST-20261109",
+  "date_range": "9–22 November 2026",
+  "intro": "A test edition produced from freshly checked 9–22 November Stockholm event listings. Sent only to the newsletter owner; no public list send.",
   "top3": [
     {
-      "title": "MALL CALL — an abandoned shopping mall becomes an electronic festival",
-      "dates": "Fri 27–Sat 28 Nov · 20:00–03:00",
-      "url": "https://www.mallcall.se/info",
-      "venue": "Stinsen, Sollentuna",
-      "price": "605 SEK single-day standard; 1,030 SEK two-day",
-      "booking": "1- and 2-day tickets listed, subject to inventory",
-      "description": "Explore 30,000 square meters of empty shopping-mall corridors transformed into temporary dance floors, art and unexpected club spaces; acts include Röyksopp, Overmono and Mount Kimbie.",
-      "event_start": "2026-11-27T20:00:00+01:00",
-      "image_verified": false,
-      "first_seen_issue": "TEST-005",
-      "new_discovery_verified": true,
-      "verification": {
-        "checked_at": "2026-11-15T21:34:00+01:00",
-        "date": {
-          "status": "confirmed",
-          "source_url": "https://www.mallcall.se/info"
-        },
-        "venue": {
-          "status": "confirmed",
-          "source_url": "https://www.mallcall.se/info"
-        },
-        "booking": {
-          "status": "confirmed",
-          "source_url": "https://www.mallcall.se/tickets"
-        },
-        "price": {
-          "status": "confirmed",
-          "source_url": "https://www.ticketmaster.se/event/mall-call-27-28-november-2026-biljetter/1036912916?language=en-us"
-        }
-      },
-      "final_review": {
-        "checked_at": "2026-11-15T21:34:00+01:00",
-        "organizer_source_url": "https://www.mallcall.se/info",
-        "event_status": "scheduled",
-        "booking_status": "required_unverified",
-        "notes": "Official organizer event information reviewed 15 November; ticket inventory not guaranteed."
-      },
-      "rationale": "An abandoned mall turned into a new musical world—a rare exploration and electronic-music combination."
+      "title": "VERKLIGHETEN — live film and AI theatre",
+      "dates": "13, 14 & 16 Nov · 19:00–21:00",
+      "description": "A real film studio is assembled live, with audience members potentially becoming extras as AI-assisted environments transform the scene. Swedish-language; especially compelling for participatory theatre and AI.",
+      "url": "https://kontrar.se/en/show/verkligheten/",
+      "venue": "Konträr, Östgötagatan 33",
+      "price": "Price unverified; subscriber booking conditions apply",
+      "booking": "Tickets listed 13–14 Nov; few left 16 Nov",
+      "rationale": "A real film studio is assembled live, with audience members potentially becoming extras as AI-assisted environments transform the scene. Swedish-language; especially compelling for participatory theatre and AI.",
+      "image_url": "https://fixingman.github.io/stockholm-guide/assets/verkligheten-press.jpg",
+      "image_source_url": "https://kontrar.se/en/show/verkligheten/",
+      "image_alt": "Official Verkligheten production photograph showing performers and a camera operator in the live studio; photo Julia Mård",
+      "image_verified": true,
+      "image_cache_file": "verkligheten-press.jpg",
+      "image_cache_sha256": "10e6d947e937fb2a1c3d6c9d5242acefd3094779c8081d980d4b63d61252ed6d"
     },
     {
-      "title": "Masangue Maracatu & guests — Brazilian rhythm celebration",
-      "dates": "Sat 28 Nov · doors 18:30 · live 20:00 · DJ 22:00",
-      "url": "https://reimersholmehotel.se/event/masangue-maracatu-gaster/",
-      "venue": "Reimersholme Hotel, Reimersholmsgatan 5",
-      "price": "150 SEK",
-      "booking": "Tickets linked; remaining stock not confirmed",
-      "description": "A genuinely participatory-feeling night of live maracatu percussion, Brazilian rhythms, dancing and special guests; a rare cross-cultural night with plenty of energy.",
-      "verification": {
-        "checked_at": "2026-11-15T19:05:00+01:00",
-        "date": {
-          "status": "confirmed",
-          "source_url": "https://reimersholmehotel.se/event/masangue-maracatu-gaster/"
-        },
-        "venue": {
-          "status": "confirmed",
-          "source_url": "https://reimersholmehotel.se/event/masangue-maracatu-gaster/"
-        },
-        "booking": {
-          "status": "unknown",
-          "source_url": "https://reimersholmehotel.se/event/masangue-maracatu-gaster/",
-          "note": "Organizer listing does not establish this exact detail; verify before booking"
-        },
-        "price": {
-          "status": "confirmed",
-          "source_url": "https://reimersholmehotel.se/event/masangue-maracatu-gaster/"
-        }
-      },
-      "final_review": {
-        "checked_at": "2026-11-15T19:05:00+01:00",
-        "organizer_source_url": "https://reimersholmehotel.se/event/masangue-maracatu-gaster/",
-        "event_status": "scheduled",
-        "booking_status": "required_unverified",
-        "notes": "The official event listing was checked on November 15; no live seat-inventory claim is made."
-      },
-      "image_verified": false,
-      "first_seen_issue": "004",
-      "new_discovery_verified": true,
-      "event_start": "2026-11-28T18:30:00+01:00"
+      "title": "Visioner av Nuet 1966–2026",
+      "dates": "Thu–Sat 12–14 Nov · program times vary",
+      "description": "An anniversary program revisiting experimental art and technology, with sessions at Fylkingen and Tekniska museet. Particularly worth checking for its crossovers between art, electronics and future-facing ideas.",
+      "url": "https://www.fylkingen.se/en/events/visioner-av-nuet-1966-2026",
+      "venue": "Fylkingen and Tekniska museet",
+      "price": "Some sessions free; other prices unverified",
+      "booking": "Program listed; verify individual sessions",
+      "rationale": "An anniversary program revisiting experimental art and technology, with sessions at Fylkingen and Tekniska museet. Particularly worth checking for its crossovers between art, electronics and future-facing ideas.",
+      "image_candidate_url": "https://fylkingen.se/media/sites%2Fclvuuu5cs0001xwfc7ne538fo%2Fmedia%2Ff29a6c33-2b34-47e5-8359-dbaf58f21682-VaN-2-16x9.jpg",
+      "image_candidate_source_url": "https://www.fylkingen.se/en/events/visioner-av-nuet-1966-2026",
+      "image_candidate_review": "HTTP 200 image/jpeg verified from official 2026 event og:image on 2026-11-08. Image reuse/hotlink permission not confirmed; do not render as verified.",
+      "image_verified": true,
+      "image_url": "https://fylkingen.se/media/sites%2Fclvuuu5cs0001xwfc7ne538fo%2Fmedia%2Ff29a6c33-2b34-47e5-8359-dbaf58f21682-VaN-2-16x9.jpg",
+      "image_source_url": "https://www.fylkingen.se/en/events/visioner-av-nuet-1966-2026",
+      "image_alt": "Official event image for Visioner av Nuet 1966–2026"
     },
     {
-      "title": "Sound of Stockholm — Saturday: voice, movement and experimental music",
+      "title": "Sound of Stockholm — Saturday",
       "dates": "Sat 21 Nov · 19:00",
+      "description": "An evening mixing experimental music, vocal performance and dance. Anna Fitoussi and Adele Kosman's short voice-and-movement works are a particularly interesting cross-disciplinary element.",
       "url": "https://www.fylkingen.se/en/events/sound-of-stockholm-lordag",
-      "venue": "Fylkingen, Stockholm (confirm location)",
-      "price": "250 SEK; 150 SEK reduced",
-      "booking": "Tickets listed; remaining seats not confirmed",
-      "description": "The festival's Saturday bill crosses experimental sound, voice, movement and unconventional composition; Anna Fitoussi and Adele Kosman explore mini works for voice and movement.",
-      "verification": {
-        "checked_at": "2026-11-15T19:05:00+01:00",
-        "date": {
-          "status": "confirmed",
-          "source_url": "https://www.fylkingen.se/en/events/sound-of-stockholm-lordag"
-        },
-        "venue": {
-          "status": "unknown",
-          "source_url": "https://www.fylkingen.se/en/events/sound-of-stockholm-lordag",
-          "note": "Organizer listing does not establish this exact detail; verify before booking"
-        },
-        "booking": {
-          "status": "unknown",
-          "source_url": "https://www.fylkingen.se/en/events/sound-of-stockholm-lordag",
-          "note": "Organizer listing does not establish this exact detail; verify before booking"
-        },
-        "price": {
-          "status": "confirmed",
-          "source_url": "https://www.fylkingen.se/en/events/sound-of-stockholm-lordag"
-        }
-      },
-      "final_review": {
-        "checked_at": "2026-11-15T19:05:00+01:00",
-        "organizer_source_url": "https://www.fylkingen.se/en/events/sound-of-stockholm-lordag",
-        "event_status": "scheduled",
-        "booking_status": "required_unverified",
-        "notes": "The official event listing was checked on November 15; no live seat-inventory claim is made."
-      },
+      "venue": "Fylkingen",
+      "price": "250 SEK; members/friends 150 SEK",
+      "booking": "Tickets listed; seats unverified",
+      "rationale": "An evening mixing experimental music, vocal performance and dance. Anna Fitoussi and Adele Kosman's short voice-and-movement works are a particularly interesting cross-disciplinary element.",
+      "image_candidate_url": "https://fylkingen.se/media/sites%2Fclvuuu5cs0001xwfc7ne538fo%2Fmedia%2F0ad16af2-9ebe-477d-8e35-c3400eb3c1d5-lisaullen_6W7A1951.jpg",
+      "image_candidate_source_url": "https://www.fylkingen.se/en/events/sound-of-stockholm-lordag",
+      "image_candidate_review": "HTTP 200 image/jpeg verified from official Saturday 2026 event og:image on 2026-11-08. Image reuse/hotlink permission not confirmed; do not render as verified.",
+      "image_source_pages": [
+        "https://soundofstockholm.se/"
+      ],
       "image_verified": false,
-      "first_seen_issue": "003",
-      "new_discovery_verified": false,
-      "event_start": "2026-11-21T19:00:00+01:00"
+      "image_alt": "No verified photo remains available for this historical Sound of Stockholm test fixture"
     }
   ],
   "new_discoveries": [
     {
-      "title": "MALL CALL — an abandoned shopping mall becomes an electronic festival",
-      "dates": "Fri 27–Sat 28 Nov · 20:00–03:00",
-      "url": "https://www.mallcall.se/info",
-      "venue": "Stinsen, Sollentuna",
-      "price": "605 SEK single-day standard; 1,030 SEK two-day",
-      "booking": "1- and 2-day tickets listed, subject to inventory",
-      "description": "Explore 30,000 square meters of empty shopping-mall corridors transformed into temporary dance floors, art and unexpected club spaces; acts include Röyksopp, Overmono and Mount Kimbie.",
-      "event_start": "2026-11-27T20:00:00+01:00",
-      "image_verified": false,
-      "first_seen_issue": "TEST-005",
-      "new_discovery_verified": true,
-      "verification": {
-        "checked_at": "2026-11-15T21:34:00+01:00",
-        "date": {
-          "status": "confirmed",
-          "source_url": "https://www.mallcall.se/info"
-        },
-        "venue": {
-          "status": "confirmed",
-          "source_url": "https://www.mallcall.se/info"
-        },
-        "booking": {
-          "status": "confirmed",
-          "source_url": "https://www.mallcall.se/tickets"
-        },
-        "price": {
-          "status": "confirmed",
-          "source_url": "https://www.ticketmaster.se/event/mall-call-27-28-november-2026-biljetter/1036912916?language=en-us"
-        }
-      },
-      "final_review": {
-        "checked_at": "2026-11-15T21:34:00+01:00",
-        "organizer_source_url": "https://www.mallcall.se/info",
-        "event_status": "scheduled",
-        "booking_status": "required_unverified",
-        "notes": "Official organizer event information reviewed 15 November; ticket inventory not guaranteed."
-      },
-      "rationale": "An abandoned mall turned into a new musical world—a rare exploration and electronic-music combination."
+      "title": "Klang Systematiek: Christian Marclay & Giuseppe Chiari",
+      "dates": "Wed 11 Nov · 19:00",
+      "description": "An experimental sound/art encounter built around two influential artists whose practices blur performance, musical scores and visual art. Good for a curious evening outside conventional concerts.",
+      "url": "https://fylkingen.se/en",
+      "venue": "Fylkingen, Saltmätargatan 2",
+      "price": "180 SEK; members/friends 100 SEK",
+      "booking": "Tickets listed; seats unverified"
     },
     {
-      "title": "DEN FULE — Scandinavian folk meets world music",
-      "dates": "Wed 18 Nov · doors 18:30 · live 20:00",
-      "url": "https://reimersholmehotel.se/event/den-fule/",
-      "venue": "Reimersholme Hotel, Reimersholmsgatan 5",
-      "price": "Price not listed",
-      "booking": "Tickets/info linked; price and seats unverified",
-      "description": "Award-winning experimental Scandinavian folk group returns ahead of a new album, blending traditional forms with globe-spanning musical encounters.",
-      "verification": {
-        "checked_at": "2026-11-15T19:05:00+01:00",
-        "date": {
-          "status": "confirmed",
-          "source_url": "https://reimersholmehotel.se/event/den-fule/"
-        },
-        "venue": {
-          "status": "confirmed",
-          "source_url": "https://reimersholmehotel.se/event/den-fule/"
-        },
-        "booking": {
-          "status": "unknown",
-          "source_url": "https://reimersholmehotel.se/event/den-fule/",
-          "note": "Organizer listing does not establish this exact detail; verify before booking"
-        },
-        "price": {
-          "status": "unknown",
-          "source_url": "https://reimersholmehotel.se/event/den-fule/",
-          "note": "Organizer listing does not establish this exact detail; verify before booking"
-        }
-      },
-      "final_review": {
-        "checked_at": "2026-11-15T19:05:00+01:00",
-        "organizer_source_url": "https://reimersholmehotel.se/event/den-fule/",
-        "event_status": "scheduled",
-        "booking_status": "required_unverified",
-        "notes": "The official event listing was checked on November 15; no live seat-inventory claim is made."
-      },
-      "image_verified": false,
-      "first_seen_issue": "004",
-      "new_discovery_verified": true,
-      "event_start": "2026-11-18T18:30:00+01:00"
+      "title": "Musiken och maskinen: AI i konstnärligt skapande",
+      "dates": "Thu 12 Nov · 18:00",
+      "description": "An unusually direct match for your work: a public exploration of how AI and machines enter artistic practice, rather than another generic technology lecture.",
+      "url": "https://fylkingen.se/en",
+      "venue": "Fylkingen / Visioner av Nuet program",
+      "price": "Price unverified",
+      "booking": "Event listed; booking unverified"
     },
     {
-      "title": "Asbest Inc + ARMOURS + DJ Hawk — live electronic-industrial night",
-      "dates": "Thu 19 Nov · doors 18:30 · acts 20:00 and 21:00",
-      "url": "https://reimersholmehotel.se/en/event/asbest-inc-armours/",
-      "venue": "Reimersholme Hotel, Reimersholmsgatan 5",
-      "price": "Free entry",
-      "booking": "Free admission listed; door capacity not guaranteed",
-      "description": "An album-release night combining post-industrial EBM and futurepop with ARMOURS' first live performance, vintage synthesizers and live-mixed projections.",
-      "verification": {
-        "checked_at": "2026-11-15T19:05:00+01:00",
-        "date": {
-          "status": "confirmed",
-          "source_url": "https://reimersholmehotel.se/en/event/asbest-inc-armours/"
-        },
-        "venue": {
-          "status": "confirmed",
-          "source_url": "https://reimersholmehotel.se/en/event/asbest-inc-armours/"
-        },
-        "booking": {
-          "status": "confirmed",
-          "source_url": "https://reimersholmehotel.se/en/event/asbest-inc-armours/"
-        },
-        "price": {
-          "status": "confirmed",
-          "source_url": "https://reimersholmehotel.se/en/event/asbest-inc-armours/"
-        }
-      },
-      "final_review": {
-        "checked_at": "2026-11-15T19:05:00+01:00",
-        "organizer_source_url": "https://reimersholmehotel.se/en/event/asbest-inc-armours/",
-        "event_status": "scheduled",
-        "booking_status": "required_unverified",
-        "notes": "The official event listing was checked on November 15; no live seat-inventory claim is made."
-      },
-      "image_verified": false,
-      "first_seen_issue": "004",
-      "new_discovery_verified": true,
-      "event_start": "2026-11-19T18:30:00+01:00"
+      "title": "Visioner av Nuet 1966–2026",
+      "dates": "Thu–Sat 12–14 Nov · program times vary",
+      "description": "An anniversary program revisiting experimental art and technology, with sessions at Fylkingen and Tekniska museet. Particularly worth checking for its crossovers between art, electronics and future-facing ideas.",
+      "url": "https://www.fylkingen.se/en/events/visioner-av-nuet-1966-2026",
+      "venue": "Fylkingen and Tekniska museet",
+      "price": "Some sessions free; other prices unverified",
+      "booking": "Program listed; verify individual sessions"
     },
     {
-      "title": "Iris / t h e m / Swaysense — triple live bill",
-      "dates": "Fri 20 Nov · doors 18:00",
-      "url": "https://reimersholmehotel.se/en/upcoming-events/",
-      "venue": "Reimersholme Hotel, Reimersholmsgatan 5",
-      "price": "Price not listed",
-      "booking": "Program announced; booking details unverified",
-      "description": "Three contemporary acts share an intimate Reimersholme stage. Artist lineup confirmed in the official calendar; check the event details for exact set times.",
-      "verification": {
-        "checked_at": "2026-11-15T19:05:00+01:00",
-        "date": {
-          "status": "confirmed",
-          "source_url": "https://reimersholmehotel.se/en/upcoming-events/"
-        },
-        "venue": {
-          "status": "confirmed",
-          "source_url": "https://reimersholmehotel.se/en/upcoming-events/"
-        },
-        "booking": {
-          "status": "unknown",
-          "source_url": "https://reimersholmehotel.se/en/upcoming-events/",
-          "note": "Organizer listing does not establish this exact detail; verify before booking"
-        },
-        "price": {
-          "status": "unknown",
-          "source_url": "https://reimersholmehotel.se/en/upcoming-events/",
-          "note": "Organizer listing does not establish this exact detail; verify before booking"
-        }
-      },
-      "final_review": {
-        "checked_at": "2026-11-15T19:05:00+01:00",
-        "organizer_source_url": "https://reimersholmehotel.se/en/upcoming-events/",
-        "event_status": "scheduled",
-        "booking_status": "required_unverified",
-        "notes": "The official event listing was checked on November 15; no live seat-inventory claim is made."
-      },
-      "image_verified": false,
-      "first_seen_issue": "004",
-      "new_discovery_verified": true,
-      "event_start": "2026-11-20T18:00:00+01:00"
+      "title": "INCANT",
+      "dates": "Wed 18 Nov · 18:30",
+      "description": "A contemporary experimental-music evening at Fylkingen; the lineup and artistic format deserve a closer look before committing.",
+      "url": "https://fylkingen.se/en",
+      "venue": "Fylkingen, Saltmätargatan 2",
+      "price": "180 SEK; members/friends 150 SEK",
+      "booking": "Tickets listed; details unverified"
     },
     {
-      "title": "EMS course-ending concert — emerging electronic music",
-      "dates": "Tue 24 Nov · 19:00",
-      "url": "https://www.fylkingen.se/en/events",
-      "venue": "Fylkingen, Stockholm (confirm location)",
-      "price": "Free",
-      "booking": "Free event listed; entry capacity not confirmed",
-      "description": "Hear new electronic works from course participants at an artist-run venue focused on adventurous music and sonic experiments.",
-      "verification": {
-        "checked_at": "2026-11-15T19:05:00+01:00",
-        "date": {
-          "status": "confirmed",
-          "source_url": "https://www.fylkingen.se/en/events"
-        },
-        "venue": {
-          "status": "unknown",
-          "source_url": "https://www.fylkingen.se/en/events",
-          "note": "Organizer listing does not establish this exact detail; verify before booking"
-        },
-        "booking": {
-          "status": "unknown",
-          "source_url": "https://www.fylkingen.se/en/events",
-          "note": "Organizer listing does not establish this exact detail; verify before booking"
-        },
-        "price": {
-          "status": "confirmed",
-          "source_url": "https://www.fylkingen.se/en/events"
-        }
-      },
-      "final_review": {
-        "checked_at": "2026-11-15T19:05:00+01:00",
-        "organizer_source_url": "https://www.fylkingen.se/en/events",
-        "event_status": "scheduled",
-        "booking_status": "required_unverified",
-        "notes": "The official event listing was checked on November 15; no live seat-inventory claim is made."
-      },
-      "image_verified": false,
-      "first_seen_issue": "004",
-      "new_discovery_verified": true,
-      "event_start": "2026-11-24T19:00:00+01:00"
+      "title": "Sound of Stockholm — Thursday",
+      "dates": "Thu 19 Nov · 18:30",
+      "description": "The opening festival night ranges across microtonality, electronics and performance; a strong opportunity to sample unconventional sound-making in a dedicated experimental space.",
+      "url": "https://www.fylkingen.se/en/events/sound-of-stockholm-torsdag",
+      "venue": "Fylkingen / Rönnells Antikvariat",
+      "price": "250 SEK; members/friends 150 SEK",
+      "booking": "Tickets listed; seats unverified"
     },
     {
-      "title": "Valter Kinbom — Trollsländan, klippan och havet album release",
-      "dates": "Thu 26 Nov · doors 18:30 · live 20:00",
-      "url": "https://reimersholmehotel.se/event/valter-kinbom-trollslandan-klippan-och-havet/",
-      "venue": "Reimersholme Hotel, Reimersholmsgatan 5",
-      "price": "Price not listed",
-      "booking": "Booking details unverified",
-      "description": "A Cuban trova-inspired album release with a large ensemble, Swedish interpretations and original songs—an unusual Latin/Swedish musical exchange.",
-      "verification": {
-        "checked_at": "2026-11-15T19:05:00+01:00",
-        "date": {
-          "status": "confirmed",
-          "source_url": "https://reimersholmehotel.se/event/valter-kinbom-trollslandan-klippan-och-havet/"
-        },
-        "venue": {
-          "status": "confirmed",
-          "source_url": "https://reimersholmehotel.se/event/valter-kinbom-trollslandan-klippan-och-havet/"
-        },
-        "booking": {
-          "status": "unknown",
-          "source_url": "https://reimersholmehotel.se/event/valter-kinbom-trollslandan-klippan-och-havet/",
-          "note": "Organizer listing does not establish this exact detail; verify before booking"
-        },
-        "price": {
-          "status": "unknown",
-          "source_url": "https://reimersholmehotel.se/event/valter-kinbom-trollslandan-klippan-och-havet/",
-          "note": "Organizer listing does not establish this exact detail; verify before booking"
-        }
-      },
-      "final_review": {
-        "checked_at": "2026-11-15T19:05:00+01:00",
-        "organizer_source_url": "https://reimersholmehotel.se/event/valter-kinbom-trollslandan-klippan-och-havet/",
-        "event_status": "scheduled",
-        "booking_status": "required_unverified",
-        "notes": "The official event listing was checked on November 15; no live seat-inventory claim is made."
-      },
-      "image_verified": false,
-      "first_seen_issue": "004",
-      "new_discovery_verified": true,
-      "event_start": "2026-11-26T18:30:00+01:00"
+      "title": "Sound of Stockholm — Friday",
+      "dates": "Fri 20 Nov · 19:00",
+      "description": "Experimental improvisation and electronic sound, including harpist Rhodri Davies among a broad festival lineup. Good if you prefer something challenging and unpredictable.",
+      "url": "https://www.fylkingen.se/en/events/sound-of-stockholm-fredag",
+      "venue": "Fylkingen",
+      "price": "250 SEK; members/friends 150 SEK",
+      "booking": "Tickets listed; seats unverified"
     },
     {
-      "title": "Congolese Super Night — Reimersholme Hotel",
-      "dates": "Fri 27 Nov · doors 18:30",
-      "url": "https://reimersholmehotel.se/en/upcoming-events/",
-      "venue": "Reimersholme Hotel, Reimersholmsgatan 5",
-      "price": "Price not listed",
-      "booking": "Event announced; ticket details unverified",
-      "description": "A late-November Congolese-themed music evening in Reimersholme's independent live-music calendar. Further set details require the organizer's confirmation.",
-      "verification": {
-        "checked_at": "2026-11-15T19:05:00+01:00",
-        "date": {
-          "status": "confirmed",
-          "source_url": "https://reimersholmehotel.se/en/upcoming-events/"
-        },
-        "venue": {
-          "status": "confirmed",
-          "source_url": "https://reimersholmehotel.se/en/upcoming-events/"
-        },
-        "booking": {
-          "status": "unknown",
-          "source_url": "https://reimersholmehotel.se/en/upcoming-events/",
-          "note": "Organizer listing does not establish this exact detail; verify before booking"
-        },
-        "price": {
-          "status": "unknown",
-          "source_url": "https://reimersholmehotel.se/en/upcoming-events/",
-          "note": "Organizer listing does not establish this exact detail; verify before booking"
-        }
-      },
-      "final_review": {
-        "checked_at": "2026-11-15T19:05:00+01:00",
-        "organizer_source_url": "https://reimersholmehotel.se/en/upcoming-events/",
-        "event_status": "scheduled",
-        "booking_status": "required_unverified",
-        "notes": "The official event listing was checked on November 15; no live seat-inventory claim is made."
-      },
-      "image_verified": false,
-      "first_seen_issue": "004",
-      "new_discovery_verified": true,
-      "event_start": "2026-11-27T18:30:00+01:00"
-    },
-    {
-      "title": "Listening Session: Salla Salazar — The soundtrack to a life",
-      "dates": "Fri 27 Nov · 18:00–21:00",
-      "url": "https://stockholm.fotografiska.com/en/events/listening-session-salla-salazar-the-soundtrack-to-a-life",
-      "venue": "Fotografiska, Stadsgårdshamnen 22",
-      "price": "Included with museum admission; free for members",
-      "booking": "Limited seats; advance booking recommended",
-      "description": "Phone-free intimate listening with tracks selected by Salla Salazar, personal memories, stories of Swedish hip-hop and the new Mejor Futuro book.",
-      "verification": {
-        "checked_at": "2026-11-15T19:05:00+01:00",
-        "date": {
-          "status": "confirmed",
-          "source_url": "https://stockholm.fotografiska.com/en/events/listening-session-salla-salazar-the-soundtrack-to-a-life"
-        },
-        "venue": {
-          "status": "confirmed",
-          "source_url": "https://stockholm.fotografiska.com/en/events/listening-session-salla-salazar-the-soundtrack-to-a-life"
-        },
-        "booking": {
-          "status": "confirmed",
-          "source_url": "https://stockholm.fotografiska.com/en/events/listening-session-salla-salazar-the-soundtrack-to-a-life"
-        },
-        "price": {
-          "status": "confirmed",
-          "source_url": "https://stockholm.fotografiska.com/en/events/listening-session-salla-salazar-the-soundtrack-to-a-life"
-        }
-      },
-      "final_review": {
-        "checked_at": "2026-11-15T19:05:00+01:00",
-        "organizer_source_url": "https://stockholm.fotografiska.com/en/events/listening-session-salla-salazar-the-soundtrack-to-a-life",
-        "event_status": "scheduled",
-        "booking_status": "required_unverified",
-        "notes": "The official event listing was checked on November 15; no live seat-inventory claim is made."
-      },
-      "image_verified": false,
-      "booking_signal": "advance_required",
-      "first_seen_issue": "004",
-      "new_discovery_verified": true,
-      "event_start": "2026-11-27T18:00:00+01:00"
-    },
-    {
-      "title": "A Study of Men — contemporary dance/performance",
-      "dates": "Thu 26 & Fri 27 Nov · consult schedule",
-      "url": "https://mdtsthlm.se/kalender",
-      "venue": "MDT Moderna Dansteatern, Skeppsholmen",
-      "price": "Pay what you can, typically 100–500 SEK",
-      "booking": "Tickets listed by MDT; exact available seats unverified",
-      "description": "Pontus Pettersson's performance at MDT with post-show discussions: artists' conversation Thursday and documentary filmmaker Hampus Linder Friday.",
-      "verification": {
-        "checked_at": "2026-11-15T19:05:00+01:00",
-        "date": {
-          "status": "confirmed",
-          "source_url": "https://mdtsthlm.se/kalender"
-        },
-        "venue": {
-          "status": "confirmed",
-          "source_url": "https://mdtsthlm.se/kalender"
-        },
-        "booking": {
-          "status": "unknown",
-          "source_url": "https://mdtsthlm.se/kalender",
-          "note": "Organizer listing does not establish this exact detail; verify before booking"
-        },
-        "price": {
-          "status": "confirmed",
-          "source_url": "https://mdtsthlm.se/kalender"
-        }
-      },
-      "final_review": {
-        "checked_at": "2026-11-15T19:05:00+01:00",
-        "organizer_source_url": "https://mdtsthlm.se/kalender",
-        "event_status": "scheduled",
-        "booking_status": "required_unverified",
-        "notes": "The official event listing was checked on November 15; no live seat-inventory claim is made."
-      },
-      "image_verified": false,
-      "schedule_note": "Two performances 26–27 Nov 2026; exact start time not confirmed",
-      "first_seen_issue": "004",
-      "new_discovery_verified": true
-    },
-    {
-      "title": "Lane 8 — This Never Happened at BAR15",
-      "dates": "Fri 20 Nov · 20:00–00:00",
-      "url": "https://www.fallan.nu/whats-on",
-      "venue": "BAR15, Hallgränd, Johanneshov",
-      "price": "Ticket price unverified",
-      "booking": "BUY TICKETS listed; remaining stock uncertain",
-      "description": "Melodic electronic music at BAR15; a lead from the newly added Fållan/Distriktfem calendar. Confirm remaining tickets before planning.",
-      "event_start": "2026-11-20T20:00:00+01:00",
-      "image_verified": false,
-      "first_seen_issue": "TEST-005",
-      "new_discovery_verified": true,
-      "verification": {
-        "checked_at": "2026-11-15T21:34:00+01:00",
-        "date": {
-          "status": "confirmed",
-          "source_url": "https://www.fallan.nu/whats-on"
-        },
-        "venue": {
-          "status": "confirmed",
-          "source_url": "https://www.fallan.nu/whats-on"
-        },
-        "booking": {
-          "status": "unknown",
-          "source_url": "https://www.fallan.nu/whats-on",
-          "note": "Listings disagree on remaining inventory; check original ticket vendor"
-        },
-        "price": {
-          "status": "unknown",
-          "source_url": "https://www.fallan.nu/whats-on",
-          "note": "No exact amount established from official organizer listing"
-        }
-      },
-      "final_review": {
-        "checked_at": "2026-11-15T21:34:00+01:00",
-        "organizer_source_url": "https://www.fallan.nu/whats-on",
-        "event_status": "scheduled",
-        "booking_status": "required_unverified",
-        "notes": "Official organizer event information reviewed 15 November; ticket inventory not guaranteed."
-      }
+      "title": "Sound of Stockholm — Saturday",
+      "dates": "Sat 21 Nov · 19:00",
+      "description": "An evening mixing experimental music, vocal performance and dance. Anna Fitoussi and Adele Kosman's short voice-and-movement works are a particularly interesting cross-disciplinary element.",
+      "url": "https://www.fylkingen.se/en/events/sound-of-stockholm-lordag",
+      "venue": "Fylkingen",
+      "price": "250 SEK; members/friends 150 SEK",
+      "booking": "Tickets listed; seats unverified"
     }
   ],
   "worth_reconsidering": [
     {
-      "title": "INCANT — contemporary experimental performance",
-      "dates": "Wed 18 Nov · 18:30",
-      "url": "https://www.fylkingen.se/en/events",
-      "venue": "Fylkingen, Stockholm (confirm location)",
-      "price": "180 SEK; 150 SEK reduced",
-      "booking": "Tickets listed; seat stock not independently confirmed",
-      "description": "An evening at Fylkingen's independent experimental music community, suited to exploring unfamiliar performers and formats.",
-      "verification": {
-        "checked_at": "2026-11-15T19:05:00+01:00",
-        "date": {
-          "status": "confirmed",
-          "source_url": "https://www.fylkingen.se/en/events"
-        },
-        "venue": {
-          "status": "unknown",
-          "source_url": "https://www.fylkingen.se/en/events",
-          "note": "Organizer listing does not establish this exact detail; verify before booking"
-        },
-        "booking": {
-          "status": "confirmed",
-          "source_url": "https://www.fylkingen.se/en/events"
-        },
-        "price": {
-          "status": "confirmed",
-          "source_url": "https://www.fylkingen.se/en/events"
-        }
-      },
-      "final_review": {
-        "checked_at": "2026-11-15T19:05:00+01:00",
-        "organizer_source_url": "https://www.fylkingen.se/en/events",
-        "event_status": "scheduled",
-        "booking_status": "required_unverified",
-        "notes": "The official event listing was checked on November 15; no live seat-inventory claim is made."
-      },
-      "image_verified": false,
-      "first_seen_issue": "003",
-      "event_start": "2026-11-18T18:30:00+01:00"
+      "title": "VERKLIGHETEN — live film and AI theatre",
+      "dates": "13, 14 & 16 Nov · 19:00–21:00",
+      "description": "A real film studio is assembled live, with audience members potentially becoming extras as AI-assisted environments transform the scene. Swedish-language; especially compelling for participatory theatre and AI.",
+      "url": "https://kontrar.se/en/show/verkligheten/",
+      "venue": "Konträr, Östgötagatan 33",
+      "price": "Price unverified; subscriber booking conditions apply",
+      "booking": "Tickets listed 13–14 Nov; few left 16 Nov"
     },
     {
-      "title": "Sound of Stockholm — four-day festival pass",
-      "dates": "Thu–Sun 19–22 Nov · different sets and venues",
+      "title": "Sound of Stockholm — festival pass",
+      "dates": "19–21 Nov within the guide window; festival continues 22 Nov",
+      "description": "For a deeper exploration of improvisation, electronics, loudspeaker music and performance, the multi-day pass is better value than separate nights if you plan to attend several.",
       "url": "https://www.fylkingen.se/en/events/sound-of-stockholm-GPO",
-      "venue": "Fylkingen, Stockholm (confirm location)",
-      "price": "560 SEK; 340 SEK reduced",
-      "booking": "Festival passes listed; remaining stock unverified",
-      "description": "Four days spanning electronic sound, improvisation, microtonality and performances by artists including Rashad Becker, Marino Formenti, NITEFISH and Lisa Ullén.",
-      "verification": {
-        "checked_at": "2026-11-15T19:05:00+01:00",
-        "date": {
-          "status": "confirmed",
-          "source_url": "https://www.fylkingen.se/en/events/sound-of-stockholm-GPO"
-        },
-        "venue": {
-          "status": "unknown",
-          "source_url": "https://www.fylkingen.se/en/events/sound-of-stockholm-GPO",
-          "note": "Organizer listing does not establish this exact detail; verify before booking"
-        },
-        "booking": {
-          "status": "unknown",
-          "source_url": "https://www.fylkingen.se/en/events/sound-of-stockholm-GPO",
-          "note": "Organizer listing does not establish this exact detail; verify before booking"
-        },
-        "price": {
-          "status": "confirmed",
-          "source_url": "https://www.fylkingen.se/en/events/sound-of-stockholm-GPO"
-        }
-      },
-      "final_review": {
-        "checked_at": "2026-11-15T19:05:00+01:00",
-        "organizer_source_url": "https://www.fylkingen.se/en/events/sound-of-stockholm-GPO",
-        "event_status": "scheduled",
-        "booking_status": "required_unverified",
-        "notes": "The official event listing was checked on November 15; no live seat-inventory claim is made."
-      },
-      "image_verified": false,
-      "schedule_note": "Festival 19–22 Nov 2026; session times vary; official schedule required",
-      "first_seen_issue": "003"
-    },
-    {
-      "title": "Strage Sessions — punk aesthetics and photography",
-      "dates": "Fri 20 Nov · 19:00–22:00",
-      "url": "https://stockholm.fotografiska.com/en/events/strage-sessions",
-      "venue": "Fotografiska, Stadsgårdshamnen 22",
-      "price": "Regular museum admission; free for members",
-      "booking": "Museum entry; limited places possible",
-      "description": "A conversation about punk aesthetics around an exhibition closing celebration, paired with DJ music and an evening in the museum.",
-      "verification": {
-        "checked_at": "2026-11-15T19:05:00+01:00",
-        "date": {
-          "status": "confirmed",
-          "source_url": "https://stockholm.fotografiska.com/en/events/strage-sessions"
-        },
-        "venue": {
-          "status": "confirmed",
-          "source_url": "https://stockholm.fotografiska.com/en/events/strage-sessions"
-        },
-        "booking": {
-          "status": "confirmed",
-          "source_url": "https://stockholm.fotografiska.com/en/events/strage-sessions"
-        },
-        "price": {
-          "status": "confirmed",
-          "source_url": "https://stockholm.fotografiska.com/en/events/strage-sessions"
-        }
-      },
-      "final_review": {
-        "checked_at": "2026-11-15T19:05:00+01:00",
-        "organizer_source_url": "https://stockholm.fotografiska.com/en/events/strage-sessions",
-        "event_status": "scheduled",
-        "booking_status": "required_unverified",
-        "notes": "The official event listing was checked on November 15; no live seat-inventory claim is made."
-      },
-      "image_verified": false,
-      "first_seen_issue": "003",
-      "new_discovery_verified": false,
-      "event_start": "2026-11-20T19:00:00+01:00"
-    },
-    {
-      "title": "Sound of Stockholm — Saturday: voice, movement and experimental music",
-      "dates": "Sat 21 Nov · 19:00",
-      "url": "https://www.fylkingen.se/en/events/sound-of-stockholm-lordag",
-      "venue": "Fylkingen, Stockholm (confirm location)",
-      "price": "250 SEK; 150 SEK reduced",
-      "booking": "Tickets listed; remaining seats not confirmed",
-      "description": "The festival's Saturday bill crosses experimental sound, voice, movement and unconventional composition; Anna Fitoussi and Adele Kosman explore mini works for voice and movement.",
-      "verification": {
-        "checked_at": "2026-11-15T19:05:00+01:00",
-        "date": {
-          "status": "confirmed",
-          "source_url": "https://www.fylkingen.se/en/events/sound-of-stockholm-lordag"
-        },
-        "venue": {
-          "status": "unknown",
-          "source_url": "https://www.fylkingen.se/en/events/sound-of-stockholm-lordag",
-          "note": "Organizer listing does not establish this exact detail; verify before booking"
-        },
-        "booking": {
-          "status": "unknown",
-          "source_url": "https://www.fylkingen.se/en/events/sound-of-stockholm-lordag",
-          "note": "Organizer listing does not establish this exact detail; verify before booking"
-        },
-        "price": {
-          "status": "confirmed",
-          "source_url": "https://www.fylkingen.se/en/events/sound-of-stockholm-lordag"
-        }
-      },
-      "final_review": {
-        "checked_at": "2026-11-15T19:05:00+01:00",
-        "organizer_source_url": "https://www.fylkingen.se/en/events/sound-of-stockholm-lordag",
-        "event_status": "scheduled",
-        "booking_status": "required_unverified",
-        "notes": "The official event listing was checked on November 15; no live seat-inventory claim is made."
-      },
-      "image_verified": false,
-      "first_seen_issue": "003",
-      "new_discovery_verified": false,
-      "event_start": "2026-11-21T19:00:00+01:00"
-    },
-    {
-      "title": "Donald Boström — artist talk and photography",
-      "dates": "Sun 22 Nov · 14:00–17:00",
-      "url": "https://stockholm.fotografiska.com/en/events/book-talk-donald-bostrom",
-      "venue": "Fotografiska, Stadsgårdshamnen 22",
-      "price": "Museum admission; exact amount unverified",
-      "booking": "Limited seats; advance booking recommended",
-      "description": "An artist talk exploring the images, ethics and stories of photojournalist Donald Boström, connected to his exhibition.",
-      "verification": {
-        "checked_at": "2026-11-15T19:05:00+01:00",
-        "date": {
-          "status": "confirmed",
-          "source_url": "https://stockholm.fotografiska.com/en/events/book-talk-donald-bostrom"
-        },
-        "venue": {
-          "status": "confirmed",
-          "source_url": "https://stockholm.fotografiska.com/en/events/book-talk-donald-bostrom"
-        },
-        "booking": {
-          "status": "confirmed",
-          "source_url": "https://stockholm.fotografiska.com/en/events/book-talk-donald-bostrom"
-        },
-        "price": {
-          "status": "unknown",
-          "source_url": "https://stockholm.fotografiska.com/en/events/book-talk-donald-bostrom",
-          "note": "Organizer listing does not establish this exact detail; verify before booking"
-        }
-      },
-      "final_review": {
-        "checked_at": "2026-11-15T19:05:00+01:00",
-        "organizer_source_url": "https://stockholm.fotografiska.com/en/events/book-talk-donald-bostrom",
-        "event_status": "scheduled",
-        "booking_status": "required_unverified",
-        "notes": "The official event listing was checked on November 15; no live seat-inventory claim is made."
-      },
-      "image_verified": false,
-      "booking_signal": "advance_required",
-      "first_seen_issue": "003",
-      "event_start": "2026-11-22T14:00:00+01:00"
-    },
-    {
-      "title": "The Machine's Eye in Human Hands — AI art exhibition",
-      "dates": "Until Sun 29 Nov · regular museum hours",
-      "url": "https://stockholm.fotografiska.com/en/exhibitions/the-machines-eye-in-human-hands",
-      "venue": "Fotografiska, Stadsgårdshamnen 22",
-      "price": "Standard museum admission; exact price unverified",
-      "booking": "Museum opening hours; no timed event tickets confirmed",
-      "description": "Artists challenge synthetic imagery, AI and the relationship between images and human authorship. Especially relevant if you want something more exploratory than a conventional exhibition.",
-      "verification": {
-        "checked_at": "2026-11-15T19:05:00+01:00",
-        "date": {
-          "status": "confirmed",
-          "source_url": "https://stockholm.fotografiska.com/en/exhibitions/the-machines-eye-in-human-hands"
-        },
-        "venue": {
-          "status": "confirmed",
-          "source_url": "https://stockholm.fotografiska.com/en/exhibitions/the-machines-eye-in-human-hands"
-        },
-        "booking": {
-          "status": "confirmed",
-          "source_url": "https://stockholm.fotografiska.com/en/exhibitions/the-machines-eye-in-human-hands"
-        },
-        "price": {
-          "status": "unknown",
-          "source_url": "https://stockholm.fotografiska.com/en/exhibitions/the-machines-eye-in-human-hands",
-          "note": "Organizer listing does not establish this exact detail; verify before booking"
-        }
-      },
-      "final_review": {
-        "checked_at": "2026-11-15T19:05:00+01:00",
-        "organizer_source_url": "https://stockholm.fotografiska.com/en/exhibitions/the-machines-eye-in-human-hands",
-        "event_status": "scheduled",
-        "booking_status": "required_unverified",
-        "notes": "The official event listing was checked on November 15; no live seat-inventory claim is made."
-      },
-      "image_verified": false,
-      "schedule_note": "Runs through 29 Nov 2026; check museum daily hours",
-      "first_seen_issue": "003"
-    },
-    {
-      "title": "Aliquī — deep listening, sound and live visual improvisation",
-      "dates": "Thu 26 Nov · doors 19:00 · performance 19:30",
-      "url": "https://www.fylkingen.se/en/events/aliqui",
-      "venue": "Fylkingen, Stockholm (confirm location)",
-      "price": "200 SEK; 120 SEK reduced",
-      "booking": "Tickets at the door; remaining places not confirmed",
-      "description": "A live encounter between contemporary music, moving image and physical space, with Helene Berg, Paul Pignon, Ida Lundén and international guests. Expect immersive, unpredictable soundscapes.",
-      "verification": {
-        "checked_at": "2026-11-15T19:05:00+01:00",
-        "date": {
-          "status": "confirmed",
-          "source_url": "https://www.fylkingen.se/en/events/aliqui"
-        },
-        "venue": {
-          "status": "unknown",
-          "source_url": "https://www.fylkingen.se/en/events/aliqui",
-          "note": "Organizer listing does not establish this exact detail; verify before booking"
-        },
-        "booking": {
-          "status": "unknown",
-          "source_url": "https://www.fylkingen.se/en/events/aliqui",
-          "note": "Organizer listing does not establish this exact detail; verify before booking"
-        },
-        "price": {
-          "status": "confirmed",
-          "source_url": "https://www.fylkingen.se/en/events/aliqui"
-        }
-      },
-      "final_review": {
-        "checked_at": "2026-11-15T19:05:00+01:00",
-        "organizer_source_url": "https://www.fylkingen.se/en/events/aliqui",
-        "event_status": "scheduled",
-        "booking_status": "required_unverified",
-        "notes": "The official event listing was checked on November 15; no live seat-inventory claim is made."
-      },
-      "image_verified": false,
-      "first_seen_issue": "004",
-      "new_discovery_verified": true,
-      "event_start": "2026-11-26T19:00:00+01:00"
-    },
-    {
-      "title": "Masangue Maracatu & guests — Brazilian rhythm celebration",
-      "dates": "Sat 28 Nov · doors 18:30 · live 20:00 · DJ 22:00",
-      "url": "https://reimersholmehotel.se/event/masangue-maracatu-gaster/",
-      "venue": "Reimersholme Hotel, Reimersholmsgatan 5",
-      "price": "150 SEK",
-      "booking": "Tickets linked; remaining stock not confirmed",
-      "description": "A genuinely participatory-feeling night of live maracatu percussion, Brazilian rhythms, dancing and special guests; a rare cross-cultural night with plenty of energy.",
-      "verification": {
-        "checked_at": "2026-11-15T19:05:00+01:00",
-        "date": {
-          "status": "confirmed",
-          "source_url": "https://reimersholmehotel.se/event/masangue-maracatu-gaster/"
-        },
-        "venue": {
-          "status": "confirmed",
-          "source_url": "https://reimersholmehotel.se/event/masangue-maracatu-gaster/"
-        },
-        "booking": {
-          "status": "unknown",
-          "source_url": "https://reimersholmehotel.se/event/masangue-maracatu-gaster/",
-          "note": "Organizer listing does not establish this exact detail; verify before booking"
-        },
-        "price": {
-          "status": "confirmed",
-          "source_url": "https://reimersholmehotel.se/event/masangue-maracatu-gaster/"
-        }
-      },
-      "final_review": {
-        "checked_at": "2026-11-15T19:05:00+01:00",
-        "organizer_source_url": "https://reimersholmehotel.se/event/masangue-maracatu-gaster/",
-        "event_status": "scheduled",
-        "booking_status": "required_unverified",
-        "notes": "The official event listing was checked on November 15; no live seat-inventory claim is made."
-      },
-      "image_verified": false,
-      "first_seen_issue": "004",
-      "new_discovery_verified": true,
-      "event_start": "2026-11-28T18:30:00+01:00"
+      "venue": "Fylkingen and Rönnells Antikvariat",
+      "price": "560 SEK; members/friends 340 SEK",
+      "booking": "Pass listed; seats unverified"
     }
   ],
   "unavailable": [
     {
-      "title": "Breathwork with Hale — immersive YIN / YANG",
-      "dates": "Sun 15 Nov · 15:00–16:30 (already passed)",
-      "url": "https://stockholm.fotografiska.com/en/events",
-      "venue": "Fotografiska, Stadsgårdshamnen 22",
-      "price": "Previous 395 SEK listing",
-      "booking": "SOLD OUT / PAST",
-      "description": "An immersive guided breathwork session; included only as unavailable because it was sold out and its start has passed.",
-      "verification": {
-        "checked_at": "2026-11-15T19:05:00+01:00",
-        "date": {
-          "status": "confirmed",
-          "source_url": "https://stockholm.fotografiska.com/en/events"
-        },
-        "venue": {
-          "status": "confirmed",
-          "source_url": "https://stockholm.fotografiska.com/en/events"
-        },
-        "booking": {
-          "status": "confirmed",
-          "source_url": "https://stockholm.fotografiska.com/en/events"
-        },
-        "price": {
-          "status": "confirmed",
-          "source_url": "https://stockholm.fotografiska.com/en/events"
-        }
-      },
-      "final_review": {
-        "checked_at": "2026-11-15T19:05:00+01:00",
-        "organizer_source_url": "https://stockholm.fotografiska.com/en/events",
-        "event_status": "scheduled",
-        "booking_status": "sold_out",
-        "notes": "Official Fotografiska calendar marks SOLD OUT; performance has already started/passed."
-      },
-      "image_verified": false,
-      "event_start": "2026-11-15T15:00:00+01:00"
+      "title": "VERKLIGHETEN — Thursday performance",
+      "dates": "Thu 12 Nov · 19:00–21:00",
+      "description": "",
+      "url": "https://kontrar.se/en/show/verkligheten/",
+      "venue": "Konträr",
+      "price": "Price unverified",
+      "booking": "Sold out (organizer)"
     }
   ],
-  "rehearsal": true
+  "disclaimer": "TEST ISSUE. Organizer dates checked against current November 2026 listings; ticket availability is not guaranteed. Image display depends on the email client.",
+  "fixture_note": "Historical November 9 layout test data, NOT a current editorial issue. Sound of Stockholm's original external image returned HTTP 404 on November 15; this tests the honest fallback behavior only. The separate production release gate MUST reject any such fallback."
 }
