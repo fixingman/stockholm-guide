@@ -1,10 +1,50 @@
 {
-  "issue_number": "004",
+  "issue_number": "TEST-005",
   "date_range": "15–28 November 2026",
-  "published_at": "2026-11-15T19:05:00+01:00",
-  "intro": "A fortnight of unusual live experiences: Brazilian drumming, experimental sound, club culture and intimate listening. Reimersholme Hotel joins our regular discovery sources.",
-  "disclaimer": "Checked against public organizer listings on 15 November 2026. A listed event or ticket link does not guarantee remaining seats. Confirm venue, prices and booking with the organizer before going.",
+  "published_at": "2026-11-15T21:34:00+01:00",
+  "intro": "OWNER-ONLY TEST: MALL CALL, live percussion and experimental sound are among this fortnight's unusual Stockholm experiences.",
+  "disclaimer": "OWNER-ONLY REHEARSAL — organizer dates and prices should be checked before booking. Some photo slots intentionally use text fallbacks and do not meet the production group-send standard.",
   "top3": [
+    {
+      "title": "MALL CALL — an abandoned shopping mall becomes an electronic festival",
+      "dates": "Fri 27–Sat 28 Nov · 20:00–03:00",
+      "url": "https://www.mallcall.se/info",
+      "venue": "Stinsen, Sollentuna",
+      "price": "605 SEK single-day standard; 1,030 SEK two-day",
+      "booking": "1- and 2-day tickets listed, subject to inventory",
+      "description": "Explore 30,000 square meters of empty shopping-mall corridors transformed into temporary dance floors, art and unexpected club spaces; acts include Röyksopp, Overmono and Mount Kimbie.",
+      "event_start": "2026-11-27T20:00:00+01:00",
+      "image_verified": false,
+      "first_seen_issue": "TEST-005",
+      "new_discovery_verified": true,
+      "verification": {
+        "checked_at": "2026-11-15T21:34:00+01:00",
+        "date": {
+          "status": "confirmed",
+          "source_url": "https://www.mallcall.se/info"
+        },
+        "venue": {
+          "status": "confirmed",
+          "source_url": "https://www.mallcall.se/info"
+        },
+        "booking": {
+          "status": "confirmed",
+          "source_url": "https://www.mallcall.se/tickets"
+        },
+        "price": {
+          "status": "confirmed",
+          "source_url": "https://www.ticketmaster.se/event/mall-call-27-28-november-2026-biljetter/1036912916?language=en-us"
+        }
+      },
+      "final_review": {
+        "checked_at": "2026-11-15T21:34:00+01:00",
+        "organizer_source_url": "https://www.mallcall.se/info",
+        "event_status": "scheduled",
+        "booking_status": "required_unverified",
+        "notes": "Official organizer event information reviewed 15 November; ticket inventory not guaranteed."
+      },
+      "rationale": "An abandoned mall turned into a new musical world—a rare exploration and electronic-music combination."
+    },
     {
       "title": "Masangue Maracatu & guests — Brazilian rhythm celebration",
       "dates": "Sat 28 Nov · doors 18:30 · live 20:00 · DJ 22:00",
@@ -85,50 +125,49 @@
       "first_seen_issue": "003",
       "new_discovery_verified": false,
       "event_start": "2026-11-21T19:00:00+01:00"
-    },
-    {
-      "title": "Aliquī — deep listening, sound and live visual improvisation",
-      "dates": "Thu 26 Nov · doors 19:00 · performance 19:30",
-      "url": "https://www.fylkingen.se/en/events/aliqui",
-      "venue": "Fylkingen, Stockholm (confirm location)",
-      "price": "200 SEK; 120 SEK reduced",
-      "booking": "Tickets at the door; remaining places not confirmed",
-      "description": "A live encounter between contemporary music, moving image and physical space, with Helene Berg, Paul Pignon, Ida Lundén and international guests. Expect immersive, unpredictable soundscapes.",
-      "verification": {
-        "checked_at": "2026-11-15T19:05:00+01:00",
-        "date": {
-          "status": "confirmed",
-          "source_url": "https://www.fylkingen.se/en/events/aliqui"
-        },
-        "venue": {
-          "status": "unknown",
-          "source_url": "https://www.fylkingen.se/en/events/aliqui",
-          "note": "Organizer listing does not establish this exact detail; verify before booking"
-        },
-        "booking": {
-          "status": "unknown",
-          "source_url": "https://www.fylkingen.se/en/events/aliqui",
-          "note": "Organizer listing does not establish this exact detail; verify before booking"
-        },
-        "price": {
-          "status": "confirmed",
-          "source_url": "https://www.fylkingen.se/en/events/aliqui"
-        }
-      },
-      "final_review": {
-        "checked_at": "2026-11-15T19:05:00+01:00",
-        "organizer_source_url": "https://www.fylkingen.se/en/events/aliqui",
-        "event_status": "scheduled",
-        "booking_status": "required_unverified",
-        "notes": "The official event listing was checked on November 15; no live seat-inventory claim is made."
-      },
-      "image_verified": false,
-      "first_seen_issue": "004",
-      "new_discovery_verified": true,
-      "event_start": "2026-11-26T19:00:00+01:00"
     }
   ],
   "new_discoveries": [
+    {
+      "title": "MALL CALL — an abandoned shopping mall becomes an electronic festival",
+      "dates": "Fri 27–Sat 28 Nov · 20:00–03:00",
+      "url": "https://www.mallcall.se/info",
+      "venue": "Stinsen, Sollentuna",
+      "price": "605 SEK single-day standard; 1,030 SEK two-day",
+      "booking": "1- and 2-day tickets listed, subject to inventory",
+      "description": "Explore 30,000 square meters of empty shopping-mall corridors transformed into temporary dance floors, art and unexpected club spaces; acts include Röyksopp, Overmono and Mount Kimbie.",
+      "event_start": "2026-11-27T20:00:00+01:00",
+      "image_verified": false,
+      "first_seen_issue": "TEST-005",
+      "new_discovery_verified": true,
+      "verification": {
+        "checked_at": "2026-11-15T21:34:00+01:00",
+        "date": {
+          "status": "confirmed",
+          "source_url": "https://www.mallcall.se/info"
+        },
+        "venue": {
+          "status": "confirmed",
+          "source_url": "https://www.mallcall.se/info"
+        },
+        "booking": {
+          "status": "confirmed",
+          "source_url": "https://www.mallcall.se/tickets"
+        },
+        "price": {
+          "status": "confirmed",
+          "source_url": "https://www.ticketmaster.se/event/mall-call-27-28-november-2026-biljetter/1036912916?language=en-us"
+        }
+      },
+      "final_review": {
+        "checked_at": "2026-11-15T21:34:00+01:00",
+        "organizer_source_url": "https://www.mallcall.se/info",
+        "event_status": "scheduled",
+        "booking_status": "required_unverified",
+        "notes": "Official organizer event information reviewed 15 November; ticket inventory not guaranteed."
+      },
+      "rationale": "An abandoned mall turned into a new musical world—a rare exploration and electronic-music combination."
+    },
     {
       "title": "DEN FULE — Scandinavian folk meets world music",
       "dates": "Wed 18 Nov · doors 18:30 · live 20:00",
@@ -452,6 +491,47 @@
       "schedule_note": "Two performances 26–27 Nov 2026; exact start time not confirmed",
       "first_seen_issue": "004",
       "new_discovery_verified": true
+    },
+    {
+      "title": "Lane 8 — This Never Happened at BAR15",
+      "dates": "Fri 20 Nov · 20:00–00:00",
+      "url": "https://www.fallan.nu/whats-on",
+      "venue": "BAR15, Hallgränd, Johanneshov",
+      "price": "Ticket price unverified",
+      "booking": "BUY TICKETS listed; remaining stock uncertain",
+      "description": "Melodic electronic music at BAR15; a lead from the newly added Fållan/Distriktfem calendar. Confirm remaining tickets before planning.",
+      "event_start": "2026-11-20T20:00:00+01:00",
+      "image_verified": false,
+      "first_seen_issue": "TEST-005",
+      "new_discovery_verified": true,
+      "verification": {
+        "checked_at": "2026-11-15T21:34:00+01:00",
+        "date": {
+          "status": "confirmed",
+          "source_url": "https://www.fallan.nu/whats-on"
+        },
+        "venue": {
+          "status": "confirmed",
+          "source_url": "https://www.fallan.nu/whats-on"
+        },
+        "booking": {
+          "status": "unknown",
+          "source_url": "https://www.fallan.nu/whats-on",
+          "note": "Listings disagree on remaining inventory; check original ticket vendor"
+        },
+        "price": {
+          "status": "unknown",
+          "source_url": "https://www.fallan.nu/whats-on",
+          "note": "No exact amount established from official organizer listing"
+        }
+      },
+      "final_review": {
+        "checked_at": "2026-11-15T21:34:00+01:00",
+        "organizer_source_url": "https://www.fallan.nu/whats-on",
+        "event_status": "scheduled",
+        "booking_status": "required_unverified",
+        "notes": "Official organizer event information reviewed 15 November; ticket inventory not guaranteed."
+      }
     }
   ],
   "worth_reconsidering": [
@@ -813,5 +893,6 @@
       "image_verified": false,
       "event_start": "2026-11-15T15:00:00+01:00"
     }
-  ]
+  ],
+  "rehearsal": true
 }
