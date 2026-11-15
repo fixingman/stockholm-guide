@@ -66,21 +66,71 @@ def check_browser(html_file, output):
     return results
 
 
+
+def check_visual_images(html_file, output):
+    """Render the actual release with network images ENABLED.
+
+    This is Chromium visual preflight, not a claim about Gmail's image proxy.
+    A broken, blank or missing top photograph fails the release.
+    """
+    try:
+        from playwright.sync_api import sync_playwright
+    except ImportError as exc:
+        raise RuntimeError("Install playwright and chromium for image-enabled QA") from exc
+    results=[]
+    with sync_playwright() as p:
+        browser=p.chromium.launch(headless=True)
+        for width, scheme in ((390,"light"),(390,"dark"),(650,"light")):
+            context=browser.new_context(viewport={"width":width,"height":900},
+                                        color_scheme=scheme,device_scale_factor=1)
+            page=context.new_page()
+            page.goto(html_file.resolve().as_uri(),wait_until="load",timeout=45000)
+            try:
+                page.wait_for_function("""() => [...document.querySelectorAll('img.top-thumb')]
+                    .every(img => img.complete)""",timeout=20000)
+            except Exception:
+                pass
+            measured=page.evaluate("""() => ({
+                photoCount: document.querySelectorAll('a.top-thumb-link img.top-thumb').length,
+                fallbackCount: document.querySelectorAll('[aria-label="No verified event photo available"]').length,
+                photoDetails: [...document.querySelectorAll('a.top-thumb-link img.top-thumb')]
+                    .map(img => ({src:img.currentSrc,complete:img.complete,
+                        naturalWidth:img.naturalWidth,naturalHeight:img.naturalHeight,
+                        width:img.getBoundingClientRect().width,
+                        height:img.getBoundingClientRect().height})),
+                overflow: document.documentElement.scrollWidth > innerWidth + 2
+            })""")
+            ok=(measured["photoCount"]==3 and measured["fallbackCount"]==0
+                and not measured["overflow"] and all(
+                    x["complete"] and x["naturalWidth"]>=420
+                    and x["naturalHeight"]>=230 and x["width"]>=80
+                    and x["height"]>=80 for x in measured["photoDetails"]))
+            page.screenshot(path=str(output/f"visual-{width}-{scheme}-images-enabled.png"),full_page=True)
+            results.append({"width":width,"scheme":scheme,"ok":ok,**measured})
+            context.close()
+        browser.close()
+    return results
+
+
 def main():
     ap=argparse.ArgumentParser()
     ap.add_argument("--html",required=True)
     ap.add_argument("--report",default="email-client-qa.json")
     ap.add_argument("--screenshots",default="email-client-screenshots")
     ap.add_argument("--browser",action="store_true")
+    ap.add_argument("--visual",action="store_true",help="Hard release gate: render 3 real, loaded thumbnails with images ENABLED")
     args=ap.parse_args()
     path=Path(args.html)
     static=inspect_static(path.read_text())
     screens=[]
+    output=Path(args.screenshots)
+    if args.browser or args.visual:
+        output.mkdir(parents=True,exist_ok=True)
     if args.browser:
-        output=Path(args.screenshots);output.mkdir(parents=True,exist_ok=True)
         screens=check_browser(path,output)
-    result={"static":static,"browser_scenarios":screens,
-            "ok":static["ok"] and all(r["ok"] for r in screens),
+    visual=check_visual_images(path,output) if args.visual else []
+    result={"static":static,"browser_scenarios":screens,"visual_scenarios":visual,
+            "ok":static["ok"] and all(r["ok"] for r in screens) and all(r["ok"] for r in visual),
             "scope":"Chromium responsive/dark/images-blocked proxy; not actual Gmail or Apple Mail"}
     Path(args.report).write_text(json.dumps(result,indent=2)+"\n")
     print(json.dumps(result,indent=2))
