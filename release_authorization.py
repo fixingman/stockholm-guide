@@ -3,8 +3,6 @@
 Public CI validates and stages artifacts. The private mail agent is separately
 responsible for isolated test-inbox delivery and read-back before subscriber send.
 """
-from dataclasses import dataclass
-from datetime import datetime, timezone
 from email.utils import parseaddr
 
 OWNER = "cankilicbay@gmail.com"
