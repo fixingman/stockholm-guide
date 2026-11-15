@@ -4,6 +4,7 @@ on:
     branches: [main]
     paths:
       - publish_verified_release.sh
+      - release_authorization.py
       - .github/workflows/release-handoff-smoke.yml
   workflow_dispatch:
 permissions:
@@ -37,7 +38,8 @@ jobs:
           html=Path('/tmp/published.html').read_text()
           m=json.loads(Path('/tmp/published-manifest.json').read_text())
           assert m['smoke_test_only'] is True and m['release_channel']=='smoke'
-          assert len(m['image_checks']) == len(m['featured_images']) == 3
+          assert len(m['image_checks']) == len(m['featured_images']) == 2
+          assert m['inline_fallbacks'] == 1  # archival resilience fixture, not visual release
           assert all(c['ok'] for c in m['image_checks'])
           assert hashlib.sha256(html.replace('\\r\\n','\\n').rstrip('\\n').encode()).hexdigest()==m['html_sha256']
           assert m['source_commit_sha'] == '${{ github.sha }}'
