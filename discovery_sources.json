@@ -430,6 +430,6 @@
     "aggregators": "Discover via Visit Stockholm, Luma Stockholm + category and curated community calendars, Meetup Stockholm, Tickster Stockholm, Nattljud, Resident Advisor, Evenemang Stockholm, Slakthusguiden, and Stockholm Events cross-platform; ALWAYS verify on the original organizer's current public event page. Luma public pages do not need login, but private/member-only/approved details are not accessible without authorization.",
     "removed_source": "Slakthusen removed as user-requested preferred venue; Fållan added instead.",
     "access_policy": "Never sign in, circumvent membership, infer hidden addresses or RSVP capacity, or claim current bookings merely from listing. Record access limitation or unknown availability instead. Prefer uniquely interesting participatory, music, art and AI events instead of generic professional networking.",
-    "overlap_policy": "Luma/Meeetup may repeat in other aggregators: report unique organizer domains and source diversity separately from raw listed source URLs. Do not count discovery index duplicates as new events."
+    "overlap_policy": "Deduplicate event leads across Luma, Meetup, Tickster and indexes using original host, date and canonical event URL; do not count the same event repeatedly as additional discovery, and measure unique organizer domains separately from aggregator sources."
   }
 }
