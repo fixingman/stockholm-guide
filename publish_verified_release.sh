@@ -11,6 +11,7 @@ test -f "$source_dir/issue.json"
 tmp="$(mktemp -d)"
 cp "$source_dir/outgoing.html" "$source_dir/delivery-manifest.json" "$source_dir/issue.json" "$tmp/"
 [ ! -f "$source_dir/client-qa.json" ] || cp "$source_dir/client-qa.json" "$tmp/"
+[ ! -f "$source_dir/visual-qa.json" ] || cp "$source_dir/visual-qa.json" "$tmp/"
 python - "$tmp" "$channel" <<'PY'
 import hashlib,json,sys,os
 from pathlib import Path
@@ -27,9 +28,20 @@ assert actual == m["html_sha256"], "HTML differs from delivery manifest"
 if channel=="production":
     assert m.get("editorial_quality",{}).get("ready_for_editorial_release"), "Strict editorial gate missing"
     assert m.get("freshness",{}).get("ready_for_send"), "Freshness gate missing"
-    assert len(m.get("image_checks",[])) == len(m.get("featured_images",[])), "Live image checks missing"
+    assert len(m.get("image_checks",[])) == len(m.get("featured_images",[])) == 3, "Three live image checks required"
+    assert all(x.get("ok") is True for x in m["image_checks"]), "One or more live image checks failed"
+    assert m.get("inline_fallbacks")==0, "Production cannot publish fallback photos"
+    visual_path=path/"visual-qa.json"
+    assert visual_path.is_file(), "Images-enabled browser QA report missing"
+    visual=json.loads(visual_path.read_text())
+    assert visual.get("ok") is True and len(visual.get("visual_scenarios",[])) == 3, "Visual QA must pass all three viewports"
+    assert all(row.get("ok") is True for row in visual["visual_scenarios"]), "Browser image load/appearance failure"
 else:
     m["smoke_test_only"]=True
+    if issue.get("visual_test") is True:
+        visual_path=path/"visual-qa.json"
+        assert visual_path.is_file(), "Owner visual test must carry images-enabled browser QA"
+        assert json.loads(visual_path.read_text()).get("ok") is True, "Owner visual QA failed"
 m["release_channel"]=channel
 m["source_commit_sha"]=os.environ.get("GITHUB_SHA","unknown")
 (path/"delivery-manifest.json").write_text(json.dumps(m,ensure_ascii=False,indent=2)+"\n")
