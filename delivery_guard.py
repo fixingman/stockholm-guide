@@ -25,6 +25,15 @@ MAX_REMOTE_IMAGE_BYTES = 9_000_000
 PLACEHOLDER_MARKER = "event-placeholder-thumb.jpg"
 
 
+def requires_featured_photos(issue):
+    """True for subscriber production and owner-only visual E2E releases.
+
+    Ordinary fallback exercises are allowed only for explicit nonvisual
+    rehearsals; they must not be reported as a successful visual test.
+    """
+    return issue.get("rehearsal") is not True or issue.get("visual_test") is True
+
+
 def sha(raw):
     return hashlib.sha256(raw).hexdigest()
 
