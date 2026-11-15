@@ -60,6 +60,232 @@
         }
       ],
       "notes": "Listings above are discovery leads observed November 14, 2026, not independently ticket-verified issue entries. This snapshot is historical and MUST NOT be treated as live facts in future issues."
+    },
+    {
+      "id": "fylkingen",
+      "name": "Fylkingen",
+      "category": "experimental electronic music / performance",
+      "official_calendar_url": "https://www.fylkingen.se/en/events",
+      "discovery_priority": "recurring",
+      "editorial_fit": [
+        "experimental electronic music",
+        "performance"
+      ],
+      "editorial_instructions": "Review the current 14-day calendar both Saturday and Sunday. Discover candidate experiences only; individually validate exact organizer event page, date/time, booking status, prices, image identity and actuality. Do not fill quotas or insert generic events merely to increase venue count. Calendar homepage is not event verification."
+    },
+    {
+      "id": "fotografiska",
+      "name": "Fotografiska Stockholm",
+      "category": "artist talks / live / workshops / exhibitions",
+      "official_calendar_url": "https://stockholm.fotografiska.com/en/events",
+      "discovery_priority": "recurring",
+      "editorial_fit": [
+        "artist talks",
+        "live",
+        "workshops",
+        "exhibitions"
+      ],
+      "editorial_instructions": "Review the current 14-day calendar both Saturday and Sunday. Discover candidate experiences only; individually validate exact organizer event page, date/time, booking status, prices, image identity and actuality. Do not fill quotas or insert generic events merely to increase venue count. Calendar homepage is not event verification."
+    },
+    {
+      "id": "mdt",
+      "name": "MDT Moderna Dansteatern",
+      "category": "contemporary dance / interdisciplinary performance",
+      "official_calendar_url": "https://mdtsthlm.se/kalender",
+      "discovery_priority": "recurring",
+      "editorial_fit": [
+        "contemporary dance",
+        "interdisciplinary performance"
+      ],
+      "editorial_instructions": "Review the current 14-day calendar both Saturday and Sunday. Discover candidate experiences only; individually validate exact organizer event page, date/time, booking status, prices, image identity and actuality. Do not fill quotas or insert generic events merely to increase venue count. Calendar homepage is not event verification."
+    },
+    {
+      "id": "kontrar",
+      "name": "Konträr",
+      "category": "independent experimental theatre and performance",
+      "official_calendar_url": "https://kontrar.se/",
+      "discovery_priority": "recurring",
+      "editorial_fit": [
+        "independent experimental theatre and performance"
+      ],
+      "editorial_instructions": "Review the current 14-day calendar both Saturday and Sunday. Discover candidate experiences only; individually validate exact organizer event page, date/time, booking status, prices, image identity and actuality. Do not fill quotas or insert generic events merely to increase venue count. Calendar homepage is not event verification."
+    },
+    {
+      "id": "weld",
+      "name": "Weld",
+      "category": "performance / contemporary dance / experimental art",
+      "official_calendar_url": "https://www.weld.se/",
+      "discovery_priority": "recurring",
+      "editorial_fit": [
+        "performance",
+        "contemporary dance",
+        "experimental art"
+      ],
+      "editorial_instructions": "Review the current 14-day calendar both Saturday and Sunday. Discover candidate experiences only; individually validate exact organizer event page, date/time, booking status, prices, image identity and actuality. Do not fill quotas or insert generic events merely to increase venue count. Calendar homepage is not event verification."
+    },
+    {
+      "id": "dansens-hus",
+      "name": "Dansens Hus",
+      "category": "contemporary dance and movement performance",
+      "official_calendar_url": "https://dansenshus.se/",
+      "discovery_priority": "recurring",
+      "editorial_fit": [
+        "contemporary dance and movement performance"
+      ],
+      "editorial_instructions": "Review the current 14-day calendar both Saturday and Sunday. Discover candidate experiences only; individually validate exact organizer event page, date/time, booking status, prices, image identity and actuality. Do not fill quotas or insert generic events merely to increase venue count. Calendar homepage is not event verification."
+    },
+    {
+      "id": "kulturhuset",
+      "name": "Kulturhuset Stadsteatern",
+      "category": "theatre / film / participatory performances",
+      "official_calendar_url": "https://kulturhusetstadsteatern.se/",
+      "discovery_priority": "recurring",
+      "editorial_fit": [
+        "theatre",
+        "film",
+        "participatory performances"
+      ],
+      "editorial_instructions": "Review the current 14-day calendar both Saturday and Sunday. Discover candidate experiences only; individually validate exact organizer event page, date/time, booking status, prices, image identity and actuality. Do not fill quotas or insert generic events merely to increase venue count. Calendar homepage is not event verification."
+    },
+    {
+      "id": "accelerator",
+      "name": "Accelerator",
+      "category": "experimental contemporary art and events",
+      "official_calendar_url": "https://acceleratorsu.art/",
+      "discovery_priority": "recurring",
+      "editorial_fit": [
+        "experimental contemporary art and events"
+      ],
+      "editorial_instructions": "Review the current 14-day calendar both Saturday and Sunday. Discover candidate experiences only; individually validate exact organizer event page, date/time, booking status, prices, image identity and actuality. Do not fill quotas or insert generic events merely to increase venue count. Calendar homepage is not event verification."
+    },
+    {
+      "id": "bonniers-konsthall",
+      "name": "Bonniers Konsthall",
+      "category": "contemporary exhibitions / artist talks",
+      "official_calendar_url": "https://bonnierskonsthall.se/",
+      "discovery_priority": "recurring",
+      "editorial_fit": [
+        "contemporary exhibitions",
+        "artist talks"
+      ],
+      "editorial_instructions": "Review the current 14-day calendar both Saturday and Sunday. Discover candidate experiences only; individually validate exact organizer event page, date/time, booking status, prices, image identity and actuality. Do not fill quotas or insert generic events merely to increase venue count. Calendar homepage is not event verification."
+    },
+    {
+      "id": "fargfabriken",
+      "name": "Färgfabriken",
+      "category": "cross-disciplinary art / design / installations",
+      "official_calendar_url": "https://fargfabriken.se/",
+      "discovery_priority": "recurring",
+      "editorial_fit": [
+        "cross-disciplinary art",
+        "design",
+        "installations"
+      ],
+      "editorial_instructions": "Review the current 14-day calendar both Saturday and Sunday. Discover candidate experiences only; individually validate exact organizer event page, date/time, booking status, prices, image identity and actuality. Do not fill quotas or insert generic events merely to increase venue count. Calendar homepage is not event verification."
+    },
+    {
+      "id": "stockholm-filmfestival",
+      "name": "Stockholm International Film Festival",
+      "category": "independent films / filmmaker Q&A / special screenings",
+      "official_calendar_url": "https://www.stockholmfilmfestival.se/en/festival",
+      "discovery_priority": "recurring",
+      "editorial_fit": [
+        "independent films",
+        "filmmaker Q&A",
+        "special screenings"
+      ],
+      "editorial_instructions": "Review the current 14-day calendar both Saturday and Sunday. Discover candidate experiences only; individually validate exact organizer event page, date/time, booking status, prices, image identity and actuality. Do not fill quotas or insert generic events merely to increase venue count. Calendar homepage is not event verification."
+    },
+    {
+      "id": "sound-of-stockholm",
+      "name": "Sound of Stockholm",
+      "category": "experimental contemporary music / festival",
+      "official_calendar_url": "https://soundofstockholm.se/",
+      "discovery_priority": "recurring",
+      "editorial_fit": [
+        "experimental contemporary music",
+        "festival"
+      ],
+      "editorial_instructions": "Review the current 14-day calendar both Saturday and Sunday. Discover candidate experiences only; individually validate exact organizer event page, date/time, booking status, prices, image identity and actuality. Do not fill quotas or insert generic events merely to increase venue count. Calendar homepage is not event verification."
+    },
+    {
+      "id": "andētāg",
+      "name": "ANDETAG",
+      "category": "special programmed listening / participatory sessions, not generic admission",
+      "official_calendar_url": "https://andetag.se/",
+      "discovery_priority": "recurring",
+      "editorial_fit": [
+        "special programmed listening",
+        "participatory sessions, not generic admission"
+      ],
+      "editorial_instructions": "Review the current 14-day calendar both Saturday and Sunday. Discover candidate experiences only; individually validate exact organizer event page, date/time, booking status, prices, image identity and actuality. Do not fill quotas or insert generic events merely to increase venue count. Calendar homepage is not event verification."
+    },
+    {
+      "id": "slakthusen",
+      "name": "Slakthusen",
+      "category": "contemporary electronic / club / live programming",
+      "official_calendar_url": "https://slakthusen.se/",
+      "discovery_priority": "recurring",
+      "editorial_fit": [
+        "contemporary electronic",
+        "club",
+        "live programming"
+      ],
+      "editorial_instructions": "Review the current 14-day calendar both Saturday and Sunday. Discover candidate experiences only; individually validate exact organizer event page, date/time, booking status, prices, image identity and actuality. Do not fill quotas or insert generic events merely to increase venue count. Calendar homepage is not event verification."
+    },
+    {
+      "id": "visit-stockholm",
+      "name": "Visit Stockholm events index",
+      "category": "wide discovery only; verify events on ORIGINAL organizer pages",
+      "official_calendar_url": "https://www.visitstockholm.com/events/",
+      "discovery_priority": "recurring",
+      "editorial_fit": [
+        "wide discovery only; verify events on ORIGINAL organizer pages"
+      ],
+      "editorial_instructions": "Review the current 14-day calendar both Saturday and Sunday. Discover candidate experiences only; individually validate exact organizer event page, date/time, booking status, prices, image identity and actuality. Do not fill quotas or insert generic events merely to increase venue count. Calendar homepage is not event verification."
+    },
+    {
+      "id": "konstrhall-c",
+      "name": "Konsthall C",
+      "category": "independent art and contemporary exhibition openings",
+      "official_calendar_url": "https://konsthallc.se/",
+      "discovery_priority": "recurring",
+      "editorial_fit": [
+        "independent art and contemporary exhibition openings"
+      ],
+      "editorial_instructions": "Review the current 14-day calendar both Saturday and Sunday. Discover candidate experiences only; individually validate exact organizer event page, date/time, booking status, prices, image identity and actuality. Do not fill quotas or insert generic events merely to increase venue count. Calendar homepage is not event verification."
+    },
+    {
+      "id": "index",
+      "name": "Index — The Swedish Contemporary Art Foundation",
+      "category": "independent art and performance programs",
+      "official_calendar_url": "https://indexfoundation.se/",
+      "discovery_priority": "recurring",
+      "editorial_fit": [
+        "independent art and performance programs"
+      ],
+      "editorial_instructions": "Review the current 14-day calendar both Saturday and Sunday. Discover candidate experiences only; individually validate exact organizer event page, date/time, booking status, prices, image identity and actuality. Do not fill quotas or insert generic events merely to increase venue count. Calendar homepage is not event verification."
+    },
+    {
+      "id": "mint",
+      "name": "Mint Stockholm",
+      "category": "experimental art / artist-run exhibition and events",
+      "official_calendar_url": "https://mintstockholm.se/",
+      "discovery_priority": "recurring",
+      "editorial_fit": [
+        "experimental art",
+        "artist-run exhibition and events"
+      ],
+      "editorial_instructions": "Review the current 14-day calendar both Saturday and Sunday. Discover candidate experiences only; individually validate exact organizer event page, date/time, booking status, prices, image identity and actuality. Do not fill quotas or insert generic events merely to increase venue count. Calendar homepage is not event verification."
     }
-  ]
+  ],
+  "source_diversity_policy": {
+    "purpose": "Prevent repeated overreliance on two or three organizer sites.",
+    "saturday_and_sunday": "Independently scan broad sets of official organizers, art, participatory, performance, tech, music, cinema and small independent venues in both Swedish and English.",
+    "review_target_distinct_sources": 12,
+    "review_target_categories": 5,
+    "min_unique_organizers_for_release": 5,
+    "scanning_accountability": "Prepare a concise source coverage log listing domains visited, events found, gaps, and why a narrow final edition is justified. Do not falsify visited evidence or add weak filler.",
+    "editorial_selection": "Select events by personal relevance and freshness; reviewed sites need not be featured. No requirement to include events from any particular organizer."
+  }
 }
