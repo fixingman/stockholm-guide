@@ -16,6 +16,16 @@ For a new issue:
 
 **Integration evidence (2026-11-10):** The GitHub smoke workflow successfully published a separately marked TEST-only branch `validated-sunday-smoke`. The connected GitHub action successfully fetched its actual HTML and manifest, and an owner-only `[TEST]` email was sent by Gmail using precisely that HTML, with zero CC/BCC. A read-back of the decoded Sent MIME confirmed normalized HTML byte-for-byte matches the validated file (four section strips, four image elements). No subscription recipients were contacted. This proves the GitHub-branch-to-Gmail handoff can work in the current interactive environment; it does NOT prove that the scheduled November 15 automation can execute fresh research, commit, wait for the CI run, fetch the matching production branch and send unattended. That remains unverified until the actual scheduled run completes all six stages. CI never sends email.
 
+## Test types and release evidence (2026-11-16)
+
+Treat these as separate proofs, not interchangeable green checks:
+
+1. **Functional/resilience CI**: fixed historical fixture checks HTML semantics, image-blocked legibility, two live archival images plus one honest fallback, deliberately broken-image failures, and MIME digest matching. Passing this does NOT certify the visual experience of a current issue.
+2. **Owner-only visual E2E**: a newly researched issue declares `rehearsal: true` and `visual_test: true`, receives independent source/identity review for each Top 3 photo, and runs the real GitHub strict release gate with **three downloadable real images and zero fallback thumbnails**. Only the matching validated smoke HTML may be sent once to the owner, with a [TEST] subject, zero CC/BCC, after checking Gmail Sent for duplicates; then compare decoded Sent HTML to the release manifest hash. A fallback-only smoke run is a transport test, NOT visual E2E.
+3. **Normal subscriber production**: the same three-photo and current event/editorial/freshness gate plus recipient/suppression checks, matching production manifest and verified Gmail Sent audit. Never let an owner test use the real BCC list.
+
+Pre-send HTTP image checking detects currently broken source links, but cannot guarantee future email-client proxy behavior; Litmus or Email on Acid can provide representative Gmail/Outlook/Apple Mail screenshot QA, while Playwright is useful for deterministic browser/mobile/dark-mode regression (not a real email-client emulator). Keep image-blocked resilience tests despite production zero-fallback requirement.
+
 ## Discovery breadth and featured-image release policy (updated 15 November 2026)
 
 The source registry at `discovery_sources.json` now includes **19 recurring candidate sources** instead of only Reimersholme Hotel. Both Saturday preparation and independent Sunday research should consult the full registry, aim to review 12 distinct source domains across 5 cultural categories, and record which sites were actually visited and where coverage was impossible. Those are **research coverage targets**, not quotas for publishing events. Featured picks and listings are chosen by editorial fit, not artificially distributed evenly among venues. Direct organizer pages remain authoritative for details.
