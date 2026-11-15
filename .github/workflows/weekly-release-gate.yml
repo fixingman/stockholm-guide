@@ -20,7 +20,9 @@ jobs:
         with:
           python-version: '3.12'
       - name: Install renderer and image checks
-        run: python -m pip install 'Jinja2>=3.1.6,<4' 'Pillow>=11,<14'
+        run: |
+          python -m pip install 'Jinja2>=3.1.6,<4' 'Pillow>=11,<14' 'playwright>=1.55,<2'
+          python -m playwright install --with-deps chromium
       - name: Assert a genuinely supplied current issue exists
         run: |
           test -f issues/current.json || { echo "No fresh issues/current.json. Sample guide_data.json is NOT valid for a Sunday release."; exit 1; }
@@ -35,7 +37,7 @@ jobs:
           print("Fresh issue:", g.get("issue_number"), g.get("date_range"))
           PY
       - name: Run all offline regression tests
-        run: python -m unittest test_minimal test_image_pipeline test_delivery_guard test_editorial_operations test_freshness_scanning
+        run: python -m unittest test_minimal test_image_pipeline test_delivery_guard test_editorial_operations test_freshness_scanning test_release_authorization
       - name: Render new issue, validate organizer evidence, links, live photos and final review
         run: |
           mkdir -p release
@@ -44,7 +46,10 @@ jobs:
           REQUIRE_IMAGES=$(python -c 'import json; from delivery_guard import requires_featured_photos; print("true" if requires_featured_photos(json.load(open("issues/current.json"))) else "false")')
           if [ "$REQUIRE_IMAGES" = "true" ]; then IMAGE_POLICY="--require-featured-photos"; fi
           python delivery_guard.py --data issues/current.json --html release/outgoing.html --manifest release/delivery-manifest.json --network --editorial-strict --freshness-strict $IMAGE_POLICY
-          python email_client_qa.py --html release/outgoing.html --report release/client-qa.json
+          python email_client_qa.py --html release/outgoing.html --browser --report release/client-qa.json --screenshots release/screenshots
+          if [ "$REQUIRE_IMAGES" = "true" ]; then
+            python email_client_qa.py --html release/outgoing.html --visual --report release/visual-qa.json --screenshots release/screenshots
+          fi
           cp issues/current.json release/issue.json
           python - <<'PY'
           import json
@@ -57,6 +62,11 @@ jobs:
           if requires_featured_photos(issue):
               assert len(m["featured_images"]) == 3 and m["inline_fallbacks"] == 0, "VISUAL/PRODUCTION REQUIREMENT: three verified and downloadable event photos, no fallbacks"
           assert m["freshness"]["ready_for_send"]
+          client=json.loads(Path("release/client-qa.json").read_text())
+          assert client["ok"] and len(client["browser_scenarios"])==6, "Responsive images-disabled visual QA missing"
+          if requires_featured_photos(issue):
+              visual=json.loads(Path("release/visual-qa.json").read_text())
+              assert visual["ok"] and len(visual["visual_scenarios"])==3, "Images-enabled visual QA missing or failed"
           print("RELEASE GATE PASSED — HTML digest:",m["html_sha256"])
           PY
       - uses: actions/upload-artifact@v4
