@@ -5,7 +5,7 @@ import unittest
 from email.message import EmailMessage
 from pathlib import Path
 
-from delivery_guard import assess, create_manifest, extract_html_from_mime, verify_sent_html
+from delivery_guard import assess, create_manifest, extract_html_from_mime, verify_sent_html, requires_featured_photos
 from render_minimal import render
 
 ROOT = Path(__file__).resolve().parent
@@ -116,6 +116,40 @@ class DeliveryGuardTests(unittest.TestCase):
         self.assertFalse(report["ready_for_delivery"])
         self.assertTrue(any("Production image-quality gate" in e for e in report["errors"]))
         self.assertTrue(any("404" in e for e in report["errors"]))
+
+    def test_visual_test_requires_photos_even_for_owner_only_rehearsal(self):
+        self.assertTrue(requires_featured_photos({"rehearsal": True, "visual_test": True}))
+        self.assertTrue(requires_featured_photos({"rehearsal": False}))
+        self.assertTrue(requires_featured_photos({}))
+        self.assertFalse(requires_featured_photos({"rehearsal": True}))
+
+    def test_visual_rehearsal_fails_with_three_fallbacks(self):
+        data=json.loads(json.dumps(self.data))
+        data["rehearsal"]=True
+        data["visual_test"]=True
+        for item in data["top3"]:
+            item["image_verified"]=False
+            item.pop("image_url",None)
+            item.pop("image_cache_file",None)
+        with tempfile.TemporaryDirectory() as directory:
+            path=Path(directory)/"test.json"
+            path.write_text(json.dumps(data))
+            _,html=render(path,Path(directory)/"test.html",
+                          "https://fixingman.github.io/stockholm-guide/assets")
+        self.assertTrue(requires_featured_photos(data))
+        result=assess(data,html,require_featured_photos=requires_featured_photos(data))
+        self.assertFalse(result["ready_for_delivery"])
+        self.assertEqual(result["inline_fallbacks"],3)
+        self.assertTrue(any("Production image-quality gate" in e for e in result["errors"]))
+
+    def test_visual_rehearsal_accepts_three_verified_images_without_network(self):
+        data=json.loads(json.dumps(self.data))
+        data["rehearsal"]=True
+        data["visual_test"]=True
+        result=assess(data,self.html,require_featured_photos=requires_featured_photos(data))
+        self.assertTrue(result["ready_for_delivery"],result["errors"])
+        self.assertEqual(len(result["featured_images"]),3)
+        self.assertEqual(result["inline_fallbacks"],0)
 
     def test_manifest_and_sent_mime_match(self):
         with tempfile.TemporaryDirectory() as directory:
