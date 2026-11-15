@@ -51,10 +51,8 @@
       "image_source_pages": [
         "https://soundofstockholm.se/"
       ],
-      "image_verified": true,
-      "image_url": "https://freight.cargo.site/w/1000/i/X3215576396280121608059225178842/screenshot-3340826510.jpg",
-      "image_source_url": "https://soundofstockholm.se/",
-      "image_alt": "Official event image for Sound of Stockholm — Saturday"
+      "image_verified": false,
+      "image_alt": "No verified photo remains available for this historical Sound of Stockholm test fixture"
     }
   ],
   "new_discoveries": [
@@ -153,5 +151,6 @@
       "booking": "Sold out (organizer)"
     }
   ],
-  "disclaimer": "TEST ISSUE. Organizer dates checked against current November 2026 listings; ticket availability is not guaranteed. Image display depends on the email client."
+  "disclaimer": "TEST ISSUE. Organizer dates checked against current November 2026 listings; ticket availability is not guaranteed. Image display depends on the email client.",
+  "fixture_note": "Historical November 9 layout test data, NOT a current editorial issue. Sound of Stockholm's original external image returned HTTP 404 on November 15; this tests the honest fallback behavior only. The separate production release gate MUST reject any such fallback."
 }
