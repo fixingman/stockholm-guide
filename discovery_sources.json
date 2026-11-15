@@ -350,6 +350,72 @@
         "undercovered event leads"
       ],
       "editorial_instructions": "Discovery only: find lesser-known candidate events and organizer calendars, then click through and independently verify on the ORIGINAL organizer's official event page or ticket seller for times, venue, price, booking and photographs. Never treat aggregator listings as definitive live availability or image identity proof; deduplicate against other discovery sources."
+    },
+    {
+      "id": "luma-stockholm",
+      "name": "Luma — Stockholm public events",
+      "category": "cross-venue discovery / community gatherings / creative workshops / experimental social events",
+      "official_calendar_url": "https://luma.com/stockholm",
+      "source_type": "aggregator",
+      "discovery_priority": "aggregator-discovery-high",
+      "editorial_fit": [
+        "unusual workshops",
+        "creative social gatherings",
+        "AI and design meetups",
+        "participatory experimental events",
+        "art and music pop-ups"
+      ],
+      "additional_discovery_urls": [
+        "https://luma.com/discover/stockholm/arts",
+        "https://luma.com/discover/stockholm/tech",
+        "https://luma.com/stockholmdesign"
+      ],
+      "editorial_instructions": "Public Stockholm city and category pages are readable without signing in. Scan event leads in creative, social, arts, design and tech categories; inspect PUBLIC individual event pages for host identity, full date, venue, price and booking status. Some events are private/member-only, have approval/waitlist or hide exact address: DO NOT attempt login, bypass access restrictions or claim private inventory/confirmed attendance. Report gated/uncertain details; prioritize novelty over routine networking. Direct Luma event page can be the original host page when host actually organizes on Luma; otherwise follow through to official organizer."
+    },
+    {
+      "id": "meetup-stockholm",
+      "name": "Meetup — Stockholm",
+      "category": "cross-venue community / classes / participatory hobbies / independent groups",
+      "official_calendar_url": "https://www.meetup.com/find/se--stockholm/",
+      "source_type": "aggregator",
+      "discovery_priority": "aggregator-discovery",
+      "editorial_fit": [
+        "social experimentation",
+        "creative hobby evenings",
+        "collaborative art",
+        "movement experiences",
+        "unexpected classes"
+      ],
+      "editorial_instructions": "Browse public Stockholm activities and niche community groups for genuinely participatory discoveries. Individual group/host posts and legitimate registration pages require separate checking. Do not assume login-only details, private capacity or RSVP approval are verified. Exclude ordinary networking and generic pub-crawl filler."
+    },
+    {
+      "id": "tickster-stockholm",
+      "name": "Tickster — Stockholm calendar",
+      "category": "cross-venue ticketing index / independent concerts / performance",
+      "official_calendar_url": "https://www.tickster.com/se/sv/events/in/stockholm",
+      "source_type": "aggregator",
+      "discovery_priority": "aggregator-discovery",
+      "editorial_fit": [
+        "independent gigs",
+        "experimental music",
+        "one-off performances",
+        "small venues"
+      ],
+      "editorial_instructions": "Use the broad Stockholm event index rather than a single Reimersholme organizer's Tickster calendar. Discover uncommon concerts and venues, then independently verify the current original organizer listing; Tickster ticket page may supplement actual prices and booking status. Do not assume inventory just because a ticket purchase link is shown."
+    },
+    {
+      "id": "stockholm-events-cross-index",
+      "name": "Stockholm Events — cross-platform index",
+      "category": "cross-platform aggregator / Luma and Meetup event discovery",
+      "official_calendar_url": "https://stockholm-events.com/",
+      "source_type": "aggregator",
+      "discovery_priority": "aggregator-secondary",
+      "editorial_fit": [
+        "cross-platform discoveries",
+        "community events",
+        "smaller niche listings"
+      ],
+      "editorial_instructions": "Secondary cross-platform discovery only. This site imports from sources including Luma and Meetup; deduplicate against source originals and follow through to individual organizer or Luma/Meetup event pages. Never mistake indexed or cached listing dates, prices or photos for verified organizer evidence."
     }
   ],
   "source_diversity_policy": {
@@ -361,7 +427,9 @@
     "scanning_accountability": "Prepare a concise source coverage log listing domains visited, events found, gaps, and why a narrow final edition is justified. Do not falsify visited evidence or add weak filler.",
     "editorial_selection": "Select events by personal relevance and freshness; reviewed sites need not be featured. No requirement to include events from any particular organizer.",
     "personal_priority": "Lumen Project is the user's favorite Stockholm music experience: monitor its rare announcements and future dates without requiring frequent events.",
-    "aggregators": "Use Visit Stockholm, Nattljud, Resident Advisor, Evenemang Stockholm, and Slakthusguiden as discovery indexes; direct organizer pages must independently substantiate each newsletter event.",
-    "removed_source": "Slakthusen removed as user-requested preferred venue; Fållan added instead."
+    "aggregators": "Discover via Visit Stockholm, Luma Stockholm + category and curated community calendars, Meetup Stockholm, Tickster Stockholm, Nattljud, Resident Advisor, Evenemang Stockholm, Slakthusguiden, and Stockholm Events cross-platform; ALWAYS verify on the original organizer's current public event page. Luma public pages do not need login, but private/member-only/approved details are not accessible without authorization.",
+    "removed_source": "Slakthusen removed as user-requested preferred venue; Fållan added instead.",
+    "access_policy": "Never sign in, circumvent membership, infer hidden addresses or RSVP capacity, or claim current bookings merely from listing. Record access limitation or unknown availability instead. Prefer uniquely interesting participatory, music, art and AI events instead of generic professional networking.",
+    "overlap_policy": "Luma/Meeetup may repeat in other aggregators: report unique organizer domains and source diversity separately from raw listed source URLs. Do not count discovery index duplicates as new events."
   }
 }
