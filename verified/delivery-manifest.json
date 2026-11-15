@@ -2,143 +2,184 @@
   "ready_for_delivery": true,
   "errors": [],
   "warnings": [
-    "HTML fallback instead of verified image: The Machine's Eye in Human Hands",
-    "Image load warning: https://fixingman.github.io/stockholm-guide/assets/verkligheten-press.jpg: large_image",
-    "Hosted images must already be deployed before sending",
-    "EDITORIAL: One organizer dominates over 45% of entries",
-    "EDITORIAL: Top 3 has no verified photo: The Machine's Eye in Human Hands"
+    "HTML fallback instead of verified image: MALL CALL — an abandoned shopping mall becomes an electronic festival",
+    "HTML fallback instead of verified image: Masangue Maracatu & guests — Brazilian rhythm celebration",
+    "HTML fallback instead of verified image: Sound of Stockholm — Saturday: voice, movement and experimental music",
+    "EDITORIAL: Top 3 has no verified photo: MALL CALL — an abandoned shopping mall becomes an electronic festival",
+    "EDITORIAL: Top 3 has no verified photo: Masangue Maracatu & guests — Brazilian rhythm celebration",
+    "EDITORIAL: Top 3 has no verified photo: Sound of Stockholm — Saturday: voice, movement and experimental music"
   ],
-  "issue_number": "TEST-FRESH-20261110",
-  "date_range": "10–23 November 2026",
-  "total_event_rows": 11,
+  "issue_number": "TEST-005",
+  "date_range": "15–28 November 2026",
+  "total_event_rows": 22,
   "section_titles": [
     "Top 3 picks",
     "New discoveries",
     "Worth reconsidering",
     "Unavailable / sold out"
   ],
-  "featured_images": [
-    "https://fixingman.github.io/stockholm-guide/assets/verkligheten-press.jpg",
-    "https://freight.cargo.site/w/1000/i/X3215576396280121608059225178842/screenshot-3340826510.jpg"
-  ],
-  "image_checks": [
-    {
-      "url": "https://fixingman.github.io/stockholm-guide/assets/verkligheten-press.jpg",
-      "ok": true,
-      "bytes": 2944803,
-      "format": "JPEG",
-      "dimensions": [
-        2500,
-        1667
-      ],
-      "resolved_url": "https://fixingman.github.io/stockholm-guide/assets/verkligheten-press.jpg",
-      "sha256": "10e6d947e937fb2a1c3d6c9d5242acefd3094779c8081d980d4b63d61252ed6d",
-      "warning": "large_image"
-    },
-    {
-      "url": "https://freight.cargo.site/w/1000/i/X3215576396280121608059225178842/screenshot-3340826510.jpg",
-      "ok": true,
-      "bytes": 231319,
-      "format": "JPEG",
-      "dimensions": [
-        1000,
-        625
-      ],
-      "resolved_url": "https://freight.cargo.site/w/1000/i/X3215576396280121608059225178842/screenshot-3340826510.jpg",
-      "sha256": "020dfedc8e6428ef436b7994ec7b77839c9afcc4943e98172d419af0d9566465",
-      "warning": null
-    }
-  ],
-  "inline_fallbacks": 1,
-  "html_sha256": "b4c9fd55ee97a07216a4df996bee544024da4f44b147b66149507199c104e0cb",
-  "html_bytes": 26787,
+  "featured_images": [],
+  "image_checks": [],
+  "inline_fallbacks": 3,
+  "html_sha256": "62b719db73b9f65199177113d328789a0a072fcb39e7f3e66e1cbbad38951515",
+  "html_bytes": 40591,
   "image_proxy_certified": false,
-  "data_sha256": "b5febc09949f4b56d6f7dd90cbe17ecf6e5bd60e305e24d7f6a16aa75d4c4338",
+  "data_sha256": "888dd65875745d8f82a3496a9a190d9ed8d0a5c2ad4605c3300cea9adb4147e4",
   "rendered_html_file": "outgoing.html",
-  "preflight_timestamp_utc": "2026-11-10T19:13:48.508825+00:00",
+  "preflight_timestamp_utc": "2026-11-15T20:36:33.004136+00:00",
   "editorial_quality": {
     "ready_for_editorial_release": true,
     "mode": "strict",
     "errors": [],
     "warnings": [
-      "One organizer dominates over 45% of entries",
-      "Top 3 has no verified photo: The Machine's Eye in Human Hands"
+      "Top 3 has no verified photo: MALL CALL — an abandoned shopping mall becomes an electronic festival",
+      "Top 3 has no verified photo: Masangue Maracatu & guests — Brazilian rhythm celebration",
+      "Top 3 has no verified photo: Sound of Stockholm — Saturday: voice, movement and experimental music"
     ],
-    "unique_events": 8,
-    "total_rows": 11,
-    "organizer_count": 3,
-    "dominant_organizer_share": 0.455,
+    "unique_events": 19,
+    "total_rows": 22,
+    "organizer_count": 6,
+    "dominant_organizer_share": 0.318,
     "organizer_domains": [
+      "fallan.nu",
       "fylkingen.se",
-      "kontrar.se",
+      "mallcall.se",
+      "mdtsthlm.se",
+      "reimersholmehotel.se",
       "stockholm.fotografiska.com"
     ],
     "repeat_new_discoveries": [],
-    "identity_reviewed_images": 2,
+    "identity_reviewed_images": 0,
     "identity_review_target": 3,
     "event_evidence_rows": [
       {
-        "title": "VERKLIGHETEN — live film and AI theatre",
+        "title": "MALL CALL — an abandoned shopping mall becomes an electronic festival",
         "section": "top3",
-        "source": "kontrar.se",
-        "organizer": "kontrar.se"
+        "source": "mallcall.se",
+        "organizer": "mallcall.se"
       },
       {
-        "title": "Sound of Stockholm — Saturday",
+        "title": "Masangue Maracatu & guests — Brazilian rhythm celebration",
+        "section": "top3",
+        "source": "reimersholmehotel.se",
+        "organizer": "reimersholmehotel.se"
+      },
+      {
+        "title": "Sound of Stockholm — Saturday: voice, movement and experimental music",
         "section": "top3",
         "source": "fylkingen.se",
         "organizer": "fylkingen.se"
       },
       {
-        "title": "The Machine's Eye in Human Hands",
-        "section": "top3",
-        "source": "stockholm.fotografiska.com",
-        "organizer": "stockholm.fotografiska.com"
+        "title": "MALL CALL — an abandoned shopping mall becomes an electronic festival",
+        "section": "new_discoveries",
+        "source": "mallcall.se",
+        "organizer": "mallcall.se"
       },
       {
-        "title": "Strage Sessions: The aesthetics of punk",
+        "title": "DEN FULE — Scandinavian folk meets world music",
+        "section": "new_discoveries",
+        "source": "reimersholmehotel.se",
+        "organizer": "reimersholmehotel.se"
+      },
+      {
+        "title": "Asbest Inc + ARMOURS + DJ Hawk — live electronic-industrial night",
+        "section": "new_discoveries",
+        "source": "reimersholmehotel.se",
+        "organizer": "reimersholmehotel.se"
+      },
+      {
+        "title": "Iris / t h e m / Swaysense — triple live bill",
+        "section": "new_discoveries",
+        "source": "reimersholmehotel.se",
+        "organizer": "reimersholmehotel.se"
+      },
+      {
+        "title": "EMS course-ending concert — emerging electronic music",
+        "section": "new_discoveries",
+        "source": "fylkingen.se",
+        "organizer": "fylkingen.se"
+      },
+      {
+        "title": "Valter Kinbom — Trollsländan, klippan och havet album release",
+        "section": "new_discoveries",
+        "source": "reimersholmehotel.se",
+        "organizer": "reimersholmehotel.se"
+      },
+      {
+        "title": "Congolese Super Night — Reimersholme Hotel",
+        "section": "new_discoveries",
+        "source": "reimersholmehotel.se",
+        "organizer": "reimersholmehotel.se"
+      },
+      {
+        "title": "Listening Session: Salla Salazar — The soundtrack to a life",
         "section": "new_discoveries",
         "source": "stockholm.fotografiska.com",
         "organizer": "stockholm.fotografiska.com"
       },
       {
-        "title": "Book Talk: Donald Boström",
+        "title": "A Study of Men — contemporary dance/performance",
         "section": "new_discoveries",
+        "source": "mdtsthlm.se",
+        "organizer": "mdtsthlm.se"
+      },
+      {
+        "title": "Lane 8 — This Never Happened at BAR15",
+        "section": "new_discoveries",
+        "source": "fallan.nu",
+        "organizer": "fallan.nu"
+      },
+      {
+        "title": "INCANT — contemporary experimental performance",
+        "section": "worth_reconsidering",
+        "source": "fylkingen.se",
+        "organizer": "fylkingen.se"
+      },
+      {
+        "title": "Sound of Stockholm — four-day festival pass",
+        "section": "worth_reconsidering",
+        "source": "fylkingen.se",
+        "organizer": "fylkingen.se"
+      },
+      {
+        "title": "Strage Sessions — punk aesthetics and photography",
+        "section": "worth_reconsidering",
         "source": "stockholm.fotografiska.com",
         "organizer": "stockholm.fotografiska.com"
       },
       {
-        "title": "The Machine's Eye in Human Hands",
-        "section": "new_discoveries",
+        "title": "Sound of Stockholm — Saturday: voice, movement and experimental music",
+        "section": "worth_reconsidering",
+        "source": "fylkingen.se",
+        "organizer": "fylkingen.se"
+      },
+      {
+        "title": "Donald Boström — artist talk and photography",
+        "section": "worth_reconsidering",
         "source": "stockholm.fotografiska.com",
         "organizer": "stockholm.fotografiska.com"
       },
       {
-        "title": "VERKLIGHETEN — live film and AI theatre",
+        "title": "The Machine's Eye in Human Hands — AI art exhibition",
         "section": "worth_reconsidering",
-        "source": "kontrar.se",
-        "organizer": "kontrar.se"
+        "source": "stockholm.fotografiska.com",
+        "organizer": "stockholm.fotografiska.com"
       },
       {
-        "title": "INCANT",
-        "section": "worth_reconsidering",
-        "source": "fylkingen.se",
-        "organizer": "fylkingen.se"
-      },
-      {
-        "title": "Sound of Stockholm — festival program",
+        "title": "Aliquī — deep listening, sound and live visual improvisation",
         "section": "worth_reconsidering",
         "source": "fylkingen.se",
         "organizer": "fylkingen.se"
       },
       {
-        "title": "Sound of Stockholm — Saturday",
+        "title": "Masangue Maracatu & guests — Brazilian rhythm celebration",
         "section": "worth_reconsidering",
-        "source": "fylkingen.se",
-        "organizer": "fylkingen.se"
+        "source": "reimersholmehotel.se",
+        "organizer": "reimersholmehotel.se"
       },
       {
-        "title": "Breathwork with Hale — YIN & YANG",
+        "title": "Breathwork with Hale — immersive YIN / YANG",
         "section": "unavailable",
         "source": "stockholm.fotografiska.com",
         "organizer": "stockholm.fotografiska.com"
@@ -150,95 +191,183 @@
     "ready_for_send": true,
     "errors": [],
     "warnings": [],
-    "checked_rows": 11,
+    "checked_rows": 22,
     "max_age_hours": 24,
     "reviewed_events": [
       {
-        "title": "VERKLIGHETEN — live film and AI theatre",
+        "title": "MALL CALL — an abandoned shopping mall becomes an electronic festival",
         "section": "top3",
         "event_status": "scheduled",
         "booking_status": "required_unverified",
-        "checked_at": "2026-11-10T18:05:00+00:00",
-        "organizer_source_url": "https://kontrar.se/en/show/verkligheten/"
+        "checked_at": "2026-11-15T21:34:00+01:00",
+        "organizer_source_url": "https://www.mallcall.se/info"
       },
       {
-        "title": "Sound of Stockholm — Saturday",
+        "title": "Masangue Maracatu & guests — Brazilian rhythm celebration",
         "section": "top3",
         "event_status": "scheduled",
         "booking_status": "required_unverified",
-        "checked_at": "2026-11-10T18:05:00+00:00",
+        "checked_at": "2026-11-15T19:05:00+01:00",
+        "organizer_source_url": "https://reimersholmehotel.se/event/masangue-maracatu-gaster/"
+      },
+      {
+        "title": "Sound of Stockholm — Saturday: voice, movement and experimental music",
+        "section": "top3",
+        "event_status": "scheduled",
+        "booking_status": "required_unverified",
+        "checked_at": "2026-11-15T19:05:00+01:00",
         "organizer_source_url": "https://www.fylkingen.se/en/events/sound-of-stockholm-lordag"
       },
       {
-        "title": "The Machine's Eye in Human Hands",
-        "section": "top3",
-        "event_status": "scheduled",
-        "booking_status": "required_unverified",
-        "checked_at": "2026-11-10T18:05:00+00:00",
-        "organizer_source_url": "https://stockholm.fotografiska.com/en/exhibitions/the-machines-eye-in-human-hands"
-      },
-      {
-        "title": "Strage Sessions: The aesthetics of punk",
+        "title": "MALL CALL — an abandoned shopping mall becomes an electronic festival",
         "section": "new_discoveries",
         "event_status": "scheduled",
         "booking_status": "required_unverified",
-        "checked_at": "2026-11-10T18:05:00+00:00",
+        "checked_at": "2026-11-15T21:34:00+01:00",
+        "organizer_source_url": "https://www.mallcall.se/info"
+      },
+      {
+        "title": "DEN FULE — Scandinavian folk meets world music",
+        "section": "new_discoveries",
+        "event_status": "scheduled",
+        "booking_status": "required_unverified",
+        "checked_at": "2026-11-15T19:05:00+01:00",
+        "organizer_source_url": "https://reimersholmehotel.se/event/den-fule/"
+      },
+      {
+        "title": "Asbest Inc + ARMOURS + DJ Hawk — live electronic-industrial night",
+        "section": "new_discoveries",
+        "event_status": "scheduled",
+        "booking_status": "required_unverified",
+        "checked_at": "2026-11-15T19:05:00+01:00",
+        "organizer_source_url": "https://reimersholmehotel.se/en/event/asbest-inc-armours/"
+      },
+      {
+        "title": "Iris / t h e m / Swaysense — triple live bill",
+        "section": "new_discoveries",
+        "event_status": "scheduled",
+        "booking_status": "required_unverified",
+        "checked_at": "2026-11-15T19:05:00+01:00",
+        "organizer_source_url": "https://reimersholmehotel.se/en/upcoming-events/"
+      },
+      {
+        "title": "EMS course-ending concert — emerging electronic music",
+        "section": "new_discoveries",
+        "event_status": "scheduled",
+        "booking_status": "required_unverified",
+        "checked_at": "2026-11-15T19:05:00+01:00",
+        "organizer_source_url": "https://www.fylkingen.se/en/events"
+      },
+      {
+        "title": "Valter Kinbom — Trollsländan, klippan och havet album release",
+        "section": "new_discoveries",
+        "event_status": "scheduled",
+        "booking_status": "required_unverified",
+        "checked_at": "2026-11-15T19:05:00+01:00",
+        "organizer_source_url": "https://reimersholmehotel.se/event/valter-kinbom-trollslandan-klippan-och-havet/"
+      },
+      {
+        "title": "Congolese Super Night — Reimersholme Hotel",
+        "section": "new_discoveries",
+        "event_status": "scheduled",
+        "booking_status": "required_unverified",
+        "checked_at": "2026-11-15T19:05:00+01:00",
+        "organizer_source_url": "https://reimersholmehotel.se/en/upcoming-events/"
+      },
+      {
+        "title": "Listening Session: Salla Salazar — The soundtrack to a life",
+        "section": "new_discoveries",
+        "event_status": "scheduled",
+        "booking_status": "required_unverified",
+        "checked_at": "2026-11-15T19:05:00+01:00",
+        "organizer_source_url": "https://stockholm.fotografiska.com/en/events/listening-session-salla-salazar-the-soundtrack-to-a-life"
+      },
+      {
+        "title": "A Study of Men — contemporary dance/performance",
+        "section": "new_discoveries",
+        "event_status": "scheduled",
+        "booking_status": "required_unverified",
+        "checked_at": "2026-11-15T19:05:00+01:00",
+        "organizer_source_url": "https://mdtsthlm.se/kalender"
+      },
+      {
+        "title": "Lane 8 — This Never Happened at BAR15",
+        "section": "new_discoveries",
+        "event_status": "scheduled",
+        "booking_status": "required_unverified",
+        "checked_at": "2026-11-15T21:34:00+01:00",
+        "organizer_source_url": "https://www.fallan.nu/whats-on"
+      },
+      {
+        "title": "INCANT — contemporary experimental performance",
+        "section": "worth_reconsidering",
+        "event_status": "scheduled",
+        "booking_status": "required_unverified",
+        "checked_at": "2026-11-15T19:05:00+01:00",
+        "organizer_source_url": "https://www.fylkingen.se/en/events"
+      },
+      {
+        "title": "Sound of Stockholm — four-day festival pass",
+        "section": "worth_reconsidering",
+        "event_status": "scheduled",
+        "booking_status": "required_unverified",
+        "checked_at": "2026-11-15T19:05:00+01:00",
+        "organizer_source_url": "https://www.fylkingen.se/en/events/sound-of-stockholm-GPO"
+      },
+      {
+        "title": "Strage Sessions — punk aesthetics and photography",
+        "section": "worth_reconsidering",
+        "event_status": "scheduled",
+        "booking_status": "required_unverified",
+        "checked_at": "2026-11-15T19:05:00+01:00",
         "organizer_source_url": "https://stockholm.fotografiska.com/en/events/strage-sessions"
       },
       {
-        "title": "Book Talk: Donald Boström",
-        "section": "new_discoveries",
-        "event_status": "scheduled",
-        "booking_status": "required_unverified",
-        "checked_at": "2026-11-10T18:05:00+00:00",
-        "organizer_source_url": "https://stockholm.fotografiska.com/en/events/book-talk-donald-bostrom"
-      },
-      {
-        "title": "The Machine's Eye in Human Hands",
-        "section": "new_discoveries",
-        "event_status": "scheduled",
-        "booking_status": "required_unverified",
-        "checked_at": "2026-11-10T18:05:00+00:00",
-        "organizer_source_url": "https://stockholm.fotografiska.com/en/exhibitions/the-machines-eye-in-human-hands"
-      },
-      {
-        "title": "VERKLIGHETEN — live film and AI theatre",
+        "title": "Sound of Stockholm — Saturday: voice, movement and experimental music",
         "section": "worth_reconsidering",
         "event_status": "scheduled",
         "booking_status": "required_unverified",
-        "checked_at": "2026-11-10T18:05:00+00:00",
-        "organizer_source_url": "https://kontrar.se/en/show/verkligheten/"
-      },
-      {
-        "title": "INCANT",
-        "section": "worth_reconsidering",
-        "event_status": "scheduled",
-        "booking_status": "required_unverified",
-        "checked_at": "2026-11-10T18:05:00+00:00",
-        "organizer_source_url": "https://fylkingen.se/sv/events"
-      },
-      {
-        "title": "Sound of Stockholm — festival program",
-        "section": "worth_reconsidering",
-        "event_status": "scheduled",
-        "booking_status": "required_unverified",
-        "checked_at": "2026-11-10T18:05:00+00:00",
-        "organizer_source_url": "https://fylkingen.se/sv/events"
-      },
-      {
-        "title": "Sound of Stockholm — Saturday",
-        "section": "worth_reconsidering",
-        "event_status": "scheduled",
-        "booking_status": "required_unverified",
-        "checked_at": "2026-11-10T18:05:00+00:00",
+        "checked_at": "2026-11-15T19:05:00+01:00",
         "organizer_source_url": "https://www.fylkingen.se/en/events/sound-of-stockholm-lordag"
       },
       {
-        "title": "Breathwork with Hale — YIN & YANG",
+        "title": "Donald Boström — artist talk and photography",
+        "section": "worth_reconsidering",
+        "event_status": "scheduled",
+        "booking_status": "required_unverified",
+        "checked_at": "2026-11-15T19:05:00+01:00",
+        "organizer_source_url": "https://stockholm.fotografiska.com/en/events/book-talk-donald-bostrom"
+      },
+      {
+        "title": "The Machine's Eye in Human Hands — AI art exhibition",
+        "section": "worth_reconsidering",
+        "event_status": "scheduled",
+        "booking_status": "required_unverified",
+        "checked_at": "2026-11-15T19:05:00+01:00",
+        "organizer_source_url": "https://stockholm.fotografiska.com/en/exhibitions/the-machines-eye-in-human-hands"
+      },
+      {
+        "title": "Aliquī — deep listening, sound and live visual improvisation",
+        "section": "worth_reconsidering",
+        "event_status": "scheduled",
+        "booking_status": "required_unverified",
+        "checked_at": "2026-11-15T19:05:00+01:00",
+        "organizer_source_url": "https://www.fylkingen.se/en/events/aliqui"
+      },
+      {
+        "title": "Masangue Maracatu & guests — Brazilian rhythm celebration",
+        "section": "worth_reconsidering",
+        "event_status": "scheduled",
+        "booking_status": "required_unverified",
+        "checked_at": "2026-11-15T19:05:00+01:00",
+        "organizer_source_url": "https://reimersholmehotel.se/event/masangue-maracatu-gaster/"
+      },
+      {
+        "title": "Breathwork with Hale — immersive YIN / YANG",
         "section": "unavailable",
         "event_status": "scheduled",
         "booking_status": "sold_out",
-        "checked_at": "2026-11-10T18:05:00+00:00",
+        "checked_at": "2026-11-15T19:05:00+01:00",
         "organizer_source_url": "https://stockholm.fotografiska.com/en/events"
       }
     ],
@@ -246,5 +375,5 @@
   },
   "smoke_test_only": true,
   "release_channel": "smoke",
-  "source_commit_sha": "580bc23fb873bc7e0a008783629962d36d451878"
+  "source_commit_sha": "678f12ca16458347818bac18cab4688063d1142d"
 }
