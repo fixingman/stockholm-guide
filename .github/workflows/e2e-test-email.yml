@@ -1,4 +1,4 @@
-name: E2E test — fresh newsletter render (no recipients)
+name: E2E — historical fixture render, live images and release guards (no email)
 on:
   push:
     branches: [main]
@@ -18,7 +18,7 @@ jobs:
         run: python -m pip install 'Jinja2>=3.1.6,<4' 'Pillow>=11,<14'
       - name: Run newsletter and image regression tests
         run: python -m unittest test_minimal test_image_pipeline test_delivery_guard test_editorial_operations test_freshness_scanning
-      - name: Validate three fresh issue images, audit, render actual template
+      - name: Render archived fixture and validate real image links plus honest fallback
         run: |
           python image_pipeline.py --data e2e_test_issue_2026-11-09.json --report e2e-image-audit.json
           python render_minimal.py --data e2e_test_issue_2026-11-09.json --output e2e-test-email.html
@@ -40,19 +40,45 @@ jobs:
           assert h.count('class="top-thumb-link"')==3, "Thumbnail click targets missing"
           assert h.count('class="event-card-link"')==12, "Full item links missing"
           assert len([l for l in p.links if "feedback-link" in l[0]])==3
+          live_images = 0
           for event in g["top3"]:
-              assert event.get("image_verified")
+              if not event.get("image_verified"):
+                  assert "image_url" not in event, "Archived image must not silently remain linked"
+                  continue
               image_url=event["image_url"]
               if event.get("image_cache_file"):
                   image_url="https://fixingman.github.io/stockholm-guide/assets/"+event["image_cache_file"]
               assert image_url in p.images, "Missing featured image in rendered HTML"
               _,_,actual,dim=validate_photo(image_url)
+              live_images += 1
               print("VALID IMAGE:",event["title"],actual,dim)
+          assert live_images == 2, f"Expected two verified images in archival fixture, got {live_images}"
+          assert h.count('aria-label="No verified event photo available"') == 1, "Missing honest fallback for invalid archived image"
           assert "<script" not in h.lower()
-          print("E2E VERIFIED: 4 black section strips, 3 image links, 12 clickable editorial rows, 3 feedback links.")
+          print("E2E VERIFIED: 4 strips, 3 thumbnail slots, 12 linked editorial rows, 3 feedback links, two live images and one honest archival fallback.")
           PY
       - name: Check exact rendered HTML and anonymous image loads
         run: python delivery_guard.py --data e2e_test_issue_2026-11-09.json --html e2e-test-email.html --manifest e2e-delivery-manifest.json --network
+      - name: Assert subscriber release rejects archival fallback and Gmail MIME round trip is exact (no email sent)
+        run: |
+          python - <<'PY'
+          import json
+          from email.message import EmailMessage
+          from pathlib import Path
+          from delivery_guard import assess, extract_html_from_mime, verify_sent_html
+          g=json.loads(Path('e2e_test_issue_2026-11-09.json').read_text())
+          html=Path('e2e-test-email.html').read_text()
+          manifest=json.loads(Path('e2e-delivery-manifest.json').read_text())
+          assert manifest['ready_for_delivery'] and manifest['inline_fallbacks']==1 and len(manifest['featured_images'])==2
+          forbidden=assess(g,html,network=False,require_featured_photos=True)
+          assert not forbidden['ready_for_delivery']
+          assert any('Production image-quality gate' in msg for msg in forbidden['errors'])
+          msg=EmailMessage();msg['Subject']='[TEST] Offline fixture only';msg.set_content('Text fallback');msg.add_alternative(html,subtype='html')
+          embedded=extract_html_from_mime(msg.as_bytes())
+          assert verify_sent_html(embedded,manifest)['matched']
+          assert not verify_sent_html(embedded+'<!-- changed -->',manifest)['matched']
+          print('PASS: 2 live images / 1 archival fallback; production refuses; MIME digest matches; tampering rejected; no recipients')
+          PY
       - uses: actions/upload-artifact@v4
         with:
           name: isolated-e2e-email-and-image-audit
