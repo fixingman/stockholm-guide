@@ -80,6 +80,43 @@ class DeliveryGuardTests(unittest.TestCase):
         self.assertTrue(result["ready_for_delivery"], result["errors"])
         self.assertEqual(result["inline_fallbacks"],0)
 
+    def test_404_image_blocks_live_delivery_even_if_metadata_says_verified(self):
+        def broken(url):
+            return {"url":url, "ok":False, "reason":"HTTP Error 404: Not Found"}
+        result=assess(self.data,self.html,network=True,checker=broken,
+                      require_featured_photos=True)
+        self.assertFalse(result["ready_for_delivery"])
+        self.assertEqual(len(result["image_checks"]),3)
+        self.assertTrue(any("404" in error for error in result["errors"]))
+
+    def test_live_image_error_is_not_silently_a_fallback(self):
+        def mixed(url):
+            if url == self.data["top3"][2]["image_url"]:
+                return {"url":url,"ok":False,"reason":"HTTP Error 404: Not Found"}
+            return {"url":url,"ok":True,"warning":None}
+        report=assess(self.data,self.html,network=True,checker=mixed,
+                      require_featured_photos=True)
+        self.assertFalse(report["ready_for_delivery"])
+        self.assertEqual(report["inline_fallbacks"],0)
+        self.assertEqual(len(report["featured_images"]),3)
+        self.assertTrue(any("404" in e for e in report["errors"]))
+
+    def test_missing_image_and_broken_image_have_distinct_errors(self):
+        data=json.loads(json.dumps(self.data))
+        data["top3"][0]["image_verified"]=False
+        data["top3"][0].pop("image_url",None)
+        data["top3"][0].pop("image_cache_file",None)
+        with tempfile.TemporaryDirectory() as directory:
+            path=Path(directory)/"issue.json"
+            path.write_text(json.dumps(data))
+            _,html=render(path,Path(directory)/"email.html",
+                          "https://fixingman.github.io/stockholm-guide/assets")
+        report=assess(data,html,network=True,require_featured_photos=True,
+                      checker=lambda url: {"url":url,"ok":False,"reason":"HTTP Error 404: Not Found"})
+        self.assertFalse(report["ready_for_delivery"])
+        self.assertTrue(any("Production image-quality gate" in e for e in report["errors"]))
+        self.assertTrue(any("404" in e for e in report["errors"]))
+
     def test_manifest_and_sent_mime_match(self):
         with tempfile.TemporaryDirectory() as directory:
             d=Path(directory)
