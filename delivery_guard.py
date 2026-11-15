@@ -92,7 +92,7 @@ def image_delivery_check(url, checker=validate_photo):
         return {"url": url, "ok": False, "reason": str(exc)[:200]}
 
 
-def assess(data, html, *, network=False, checker=image_delivery_check):
+def assess(data, html, *, network=False, checker=image_delivery_check, require_featured_photos=False):
     errors, warnings = [], []
     audit = EmailStructure()
     audit.feed(html)
@@ -144,6 +144,8 @@ def assess(data, html, *, network=False, checker=image_delivery_check):
             selected.append(photo)
         else:
             warnings.append(f"HTML fallback instead of verified image: {name}")
+    if require_featured_photos and len(selected) != 3:
+        errors.append(f"Production image-quality gate: all 3 Top 3 events require independently verified real photographs; got {len(selected)}/3. Repair or replace image/featured pick before publishing. Do not auto-send all-fallback issue.")
     if audit.placeholder_tiles != 3-len(selected):
         errors.append("Incorrect HTML fallback thumbnail count")
     if len(audit.images) != len(selected)+1:  # 1 skyline
@@ -171,12 +173,13 @@ def assess(data, html, *, network=False, checker=image_delivery_check):
     }
 
 
-def create_manifest(data_file, html_file, *, network=False, checker=image_delivery_check):
+def create_manifest(data_file, html_file, *, network=False, checker=image_delivery_check, require_featured_photos=False):
     data_bytes = Path(data_file).read_bytes()
     html_bytes = Path(html_file).read_bytes()
     data = json.loads(data_bytes)
     html = html_bytes.decode("utf-8")
-    report = assess(data, html, network=network, checker=checker)
+    report = assess(data, html, network=network, checker=checker,
+                    require_featured_photos=require_featured_photos)
     report["data_sha256"] = sha(data_bytes)
     report["rendered_html_file"] = Path(html_file).name
     report["preflight_timestamp_utc"] = datetime.now(timezone.utc).isoformat()
@@ -204,6 +207,7 @@ def main():
     parser.add_argument("--html", help="The exact outgoing HTML, not a preview from another issue")
     parser.add_argument("--manifest", help="Output manifest JSON")
     parser.add_argument("--network", action="store_true", help="Perform anonymous image GET/decode checks")
+    parser.add_argument("--require-featured-photos", action="store_true", help="Production-only: require three verified event photographs; no automatic HTML fallback release")
     parser.add_argument("--editorial-strict", action="store_true", help="Block unverified event facts or unreviewed photo identities")
     parser.add_argument("--freshness-strict", action="store_true", help="Require final organizer status and booking re-review within 24 hours")
     parser.add_argument("--history", action="append", default=[], help="Prior issue JSON for repeat detection")
@@ -221,7 +225,8 @@ def main():
         return 0 if result["matched"] else 1
     if not (args.data and args.html and args.manifest):
         parser.error("--data, --html and --manifest are required for pre-send checks")
-    report = create_manifest(args.data, args.html, network=args.network)
+    report = create_manifest(args.data, args.html, network=args.network,
+                             require_featured_photos=args.require_featured_photos)
     if args.editorial_strict:
         history = [json.loads(Path(p).read_text(encoding="utf-8")) for p in args.history]
         editorial = editorial_audit(json.loads(Path(args.data).read_text(encoding="utf-8")),history,strict=True)
