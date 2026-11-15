@@ -7,6 +7,8 @@ on:
       - final_freshness.py
       - editorial_scanning.py
       - delivery_guard.py
+      - editorial_quality.py
+      - discovery_sources.json
   workflow_dispatch:
 permissions:
   contents: write
@@ -39,7 +41,10 @@ jobs:
         run: |
           mkdir -p release
           python render_minimal.py --data issues/current.json --output release/outgoing.html
-          python delivery_guard.py --data issues/current.json --html release/outgoing.html --manifest release/delivery-manifest.json --network --editorial-strict --freshness-strict
+          MODE=$(python -c 'import json; print("smoke" if json.load(open("issues/current.json")).get("rehearsal") is True else "production")')
+          IMAGE_POLICY=""
+          if [ "$MODE" = "production" ]; then IMAGE_POLICY="--require-featured-photos"; fi
+          python delivery_guard.py --data issues/current.json --html release/outgoing.html --manifest release/delivery-manifest.json --network --editorial-strict --freshness-strict $IMAGE_POLICY
           python email_client_qa.py --html release/outgoing.html --report release/client-qa.json
           cp issues/current.json release/issue.json
           python - <<'PY'
@@ -48,6 +53,8 @@ jobs:
           m=json.loads(Path("release/delivery-manifest.json").read_text())
           assert m["ready_for_delivery"] and len(m["featured_images"])+m["inline_fallbacks"] == 3
           assert m["editorial_quality"]["ready_for_editorial_release"]
+          if not json.loads(Path("issues/current.json").read_text()).get("rehearsal") is True:
+              assert len(m["featured_images"]) == 3 and m["inline_fallbacks"] == 0, "PRODUCTION REQUIREMENT: three verified and downloadable event photos"
           assert m["freshness"]["ready_for_send"]
           print("RELEASE GATE PASSED — HTML digest:",m["html_sha256"])
           PY
