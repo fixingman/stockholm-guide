@@ -81,16 +81,7 @@
         "booking_status": "required_unverified",
         "notes": "The official event listing was checked on November 15; no live seat-inventory claim is made."
       },
-      "image_verified": true,
-      "image_url": "https://freight.cargo.site/w/1000/i/X3215576396280121608059225178842/screenshot-3340826510.jpg",
-      "image_source_url": "https://soundofstockholm.se/",
-      "image_alt": "Official Sound of Stockholm 2026 festival promotional artwork",
-      "image_identity_review": {
-        "event_match": true,
-        "reviewer": "Editorial identity review of official Sound of Stockholm 2026 festival artwork",
-        "source_page": "https://soundofstockholm.se/",
-        "checked_at": "2026-11-11T19:50:00+01:00"
-      },
+      "image_verified": false,
       "first_seen_issue": "003",
       "new_discovery_verified": false,
       "event_start": "2026-11-21T19:00:00+01:00"
@@ -618,16 +609,7 @@
         "booking_status": "required_unverified",
         "notes": "The official event listing was checked on November 15; no live seat-inventory claim is made."
       },
-      "image_verified": true,
-      "image_url": "https://freight.cargo.site/w/1000/i/X3215576396280121608059225178842/screenshot-3340826510.jpg",
-      "image_source_url": "https://soundofstockholm.se/",
-      "image_alt": "Official Sound of Stockholm 2026 festival promotional artwork",
-      "image_identity_review": {
-        "event_match": true,
-        "reviewer": "Editorial identity review of official Sound of Stockholm 2026 festival artwork",
-        "source_page": "https://soundofstockholm.se/",
-        "checked_at": "2026-11-11T19:50:00+01:00"
-      },
+      "image_verified": false,
       "first_seen_issue": "003",
       "new_discovery_verified": false,
       "event_start": "2026-11-21T19:00:00+01:00"
