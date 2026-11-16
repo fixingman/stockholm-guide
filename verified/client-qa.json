@@ -1,0 +1,91 @@
+{
+  "html_sha256": "75637809b213c5608397d67941b99188a6cad3d170d74efd7ccece265f476bcd",
+  "static": {
+    "ok": true,
+    "errors": [],
+    "headings": [
+      "Top 3 picks",
+      "New discoveries",
+      "Worth reconsidering",
+      "Unavailable / sold out"
+    ],
+    "image_count": 4
+  },
+  "browser_scenarios": [
+    {
+      "width": 320,
+      "scheme": "light",
+      "ok": true,
+      "docWidth": 320,
+      "viewport": 320,
+      "heading1": 1,
+      "heading2": 4,
+      "visibleEventLinks": true,
+      "imgCount": 4,
+      "bg": "rgb(252, 250, 246)"
+    },
+    {
+      "width": 320,
+      "scheme": "dark",
+      "ok": true,
+      "docWidth": 320,
+      "viewport": 320,
+      "heading1": 1,
+      "heading2": 4,
+      "visibleEventLinks": true,
+      "imgCount": 4,
+      "bg": "rgb(36, 36, 36)"
+    },
+    {
+      "width": 390,
+      "scheme": "light",
+      "ok": true,
+      "docWidth": 390,
+      "viewport": 390,
+      "heading1": 1,
+      "heading2": 4,
+      "visibleEventLinks": true,
+      "imgCount": 4,
+      "bg": "rgb(252, 250, 246)"
+    },
+    {
+      "width": 390,
+      "scheme": "dark",
+      "ok": true,
+      "docWidth": 390,
+      "viewport": 390,
+      "heading1": 1,
+      "heading2": 4,
+      "visibleEventLinks": true,
+      "imgCount": 4,
+      "bg": "rgb(36, 36, 36)"
+    },
+    {
+      "width": 650,
+      "scheme": "light",
+      "ok": true,
+      "docWidth": 650,
+      "viewport": 650,
+      "heading1": 1,
+      "heading2": 4,
+      "visibleEventLinks": true,
+      "imgCount": 4,
+      "bg": "rgb(252, 250, 246)"
+    },
+    {
+      "width": 650,
+      "scheme": "dark",
+      "ok": true,
+      "docWidth": 650,
+      "viewport": 650,
+      "heading1": 1,
+      "heading2": 4,
+      "visibleEventLinks": true,
+      "imgCount": 4,
+      "bg": "rgb(36, 36, 36)"
+    }
+  ],
+  "visual_scenarios": [],
+  "ok": true,
+  "scope": "Chromium responsive/dark/images-blocked proxy; not actual Gmail or Apple Mail"
+}
