@@ -115,5 +115,26 @@ class ArtifactAuthorizationTests(unittest.TestCase):
         self.assertTrue(check())
 
 
+class VisualDimensionsTests(unittest.TestCase):
+    def test_mobile_design_size_passes_but_missing_or_collapsed_photo_fails(self):
+        from email_client_qa import visual_result_ok
+        row = {'photoCount': 3, 'fallbackCount': 0, 'overflow': False,
+               'photoDetails': [dict(complete=True, naturalWidth=750,
+                    naturalHeight=750, width=76, height=76) for _ in range(3)]}
+        self.assertTrue(visual_result_ok(row, 390))
+        self.assertFalse(visual_result_ok(row, 650))
+        row['photoDetails'][0]['naturalWidth'] = 0
+        self.assertFalse(visual_result_ok(row, 390))
+        row['photoDetails'][0]['naturalWidth'] = 750
+        row['photoDetails'][0]['width'] = 0
+        self.assertFalse(visual_result_ok(row, 390))
+        row['photoDetails'][0]['width'] = 76
+        row['fallbackCount'] = 1
+        self.assertFalse(visual_result_ok(row, 390))
+        row['fallbackCount'] = 0
+        row['overflow'] = True
+        self.assertFalse(visual_result_ok(row, 390))
+
+
 if __name__ == "__main__":
     unittest.main()
