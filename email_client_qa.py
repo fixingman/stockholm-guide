@@ -67,6 +67,18 @@ def check_browser(html_file, output):
 
 
 
+def visual_result_ok(measured, viewport_width):
+    # Existing Minimal Editorial design: 60px narrow, 76px mobile, 96px desktop.
+    minimum = 60 if viewport_width <= 360 else 76 if viewport_width <= 600 else 96
+    photos = measured.get("photoDetails", [])
+    return (measured.get("photoCount") == 3 and len(photos) == 3
+            and measured.get("fallbackCount") == 0 and not measured.get("overflow")
+            and all(x.get("complete") is True and x.get("naturalWidth", 0) >= 420
+                    and x.get("naturalHeight", 0) >= 230
+                    and x.get("width", 0) >= minimum
+                    and x.get("height", 0) >= minimum for x in photos))
+
+
 def check_visual_images(html_file, output):
     """Render the actual release with network images ENABLED.
 
@@ -100,11 +112,7 @@ def check_visual_images(html_file, output):
                         height:img.getBoundingClientRect().height})),
                 overflow: document.documentElement.scrollWidth > innerWidth + 2
             })""")
-            ok=(measured["photoCount"]==3 and measured["fallbackCount"]==0
-                and not measured["overflow"] and all(
-                    x["complete"] and x["naturalWidth"]>=420
-                    and x["naturalHeight"]>=230 and x["width"]>=80
-                    and x["height"]>=80 for x in measured["photoDetails"]))
+            ok=visual_result_ok(measured, width)
             page.screenshot(path=str(output/f"visual-{width}-{scheme}-images-enabled.png"),full_page=True)
             results.append({"width":width,"scheme":scheme,"ok":ok,**measured})
             context.close()
