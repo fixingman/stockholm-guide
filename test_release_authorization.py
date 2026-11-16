@@ -81,5 +81,39 @@ class ReleaseAuthorizationTests(unittest.TestCase):
         self.assertTrue(production_authorization(manifest,issue,receipt,owner="owner@example.org"))
 
 
+class ArtifactAuthorizationTests(unittest.TestCase):
+    def test_exact_artifacts_pass_and_tampering_blocks(self):
+        from release_authorization import authorize_artifacts
+        from delivery_guard import html_digest
+        issue, manifest, receipt = fixture()
+        html = '<html>approved</html>'
+        digest = html_digest(html)
+        manifest['html_sha256'] = digest
+        receipt.update(html_sha256=digest, received_html_sha256=digest)
+        client = {'ok': True, 'html_sha256': digest, 'browser_scenarios': [
+            {'width': w, 'scheme': s, 'ok': True}
+            for w in (320, 390, 650) for s in ('light', 'dark')]}
+        visual = {'ok': True, 'html_sha256': digest, 'visual_scenarios': [
+            {'width': w, 'scheme': s, 'ok': True}
+            for w, s in ((390, 'light'), (390, 'dark'), (650, 'light'))]}
+        def check(**changes):
+            args = dict(owner='owner@example.org', html=html,
+                        client_qa=client, visual_qa=visual)
+            args.update(changes)
+            return authorize_artifacts(manifest, issue, receipt, **args)
+        self.assertEqual(check(), [])
+        self.assertTrue(check(html=html + 'changed'))
+        self.assertTrue(check(visual_qa=None))
+        self.assertTrue(check(duplicate_sent=True))
+        visual['html_sha256'] = 'old-artifact'
+        self.assertTrue(check())
+        visual['html_sha256'] = digest
+        visual['visual_scenarios'][0]['ok'] = False
+        self.assertTrue(check())
+        visual['visual_scenarios'][0]['ok'] = True
+        visual['visual_scenarios'][1] = visual['visual_scenarios'][0]
+        self.assertTrue(check())
+
+
 if __name__ == "__main__":
     unittest.main()

@@ -77,3 +77,23 @@ If evidence is absent, render **no cue**, not an unverified assumption. The fami
 ## Screenshots
 
 The email-client browser test stores six light/dark, 320/390/650-pixel, images-blocked screenshots as a **downloadable ZIP artifact** under GitHub Actions → run details → Artifacts. Artifacts expire after their retention period; they are not permanent files in the code repository.
+
+
+## Executable private authorization boundary
+
+Immediately before any subscriber send, execute `release_authorization.py` with
+`--manifest`, `--issue`, `--html`, `--client-qa` and `--visual-qa` pointing at the
+exact fetched production artifacts. Supply a JSON object on stdin with `owner`
+and `receipt` (the private Inbox receipt described above). Keep these inputs
+outside the public repository. Require exit 0 and `authorized: true`; inability
+to execute or missing evidence blocks delivery. Never manufacture a receipt.
+The command sends nothing. It recomputes outgoing HTML's digest, requires both
+QA reports to be bound to that digest with all required scenarios passing, and
+checks the matching owner-only Inbox receipt. Pass `--duplicate-sent` whenever
+an existing production send was found; this must fail. Recipient suppression
+and consent checks remain a separate mandatory private gate.
+
+This guard is called by the private mail agent; it is not a transport-level lock
+on the Gmail connector. End-to-end Inbox delivery remains unproven until an
+actual authorized staged release completes. Do not equate historical-fixture CI
+with that proof.

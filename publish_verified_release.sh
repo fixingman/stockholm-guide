@@ -25,6 +25,14 @@ from hashlib import sha256
 # Same MIME-newline normalization as delivery_guard.html_digest.
 actual=sha256(content.replace("\r\n","\n").rstrip("\n").encode()).hexdigest()
 assert actual == m["html_sha256"], "HTML differs from delivery manifest"
+if channel=="production" or issue.get("visual_test") is True:
+    for report_name, scenario_key, count in (("client-qa.json", "browser_scenarios", 6),
+                                              ("visual-qa.json", "visual_scenarios", 3)):
+        report=json.loads((path/report_name).read_text())
+        assert report.get("html_sha256") == actual, "QA report belongs to different HTML"
+        assert report.get("ok") is True, "QA failed"
+        assert len(report.get(scenario_key, [])) == count, "QA scenarios incomplete"
+        assert all(row.get("ok") is True for row in report[scenario_key]), "QA scenario failed"
 if channel=="production":
     assert m.get("editorial_quality",{}).get("ready_for_editorial_release"), "Strict editorial gate missing"
     assert m.get("freshness",{}).get("ready_for_send"), "Freshness gate missing"

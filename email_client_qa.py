@@ -8,7 +8,7 @@ import argparse
 import json
 from pathlib import Path
 
-from delivery_guard import EmailStructure
+from delivery_guard import EmailStructure, html_digest
 
 
 def inspect_static(html):
@@ -129,7 +129,7 @@ def main():
     if args.browser:
         screens=check_browser(path,output)
     visual=check_visual_images(path,output) if args.visual else []
-    result={"static":static,"browser_scenarios":screens,"visual_scenarios":visual,
+    result={"html_sha256":html_digest(path.read_text()),"static":static,"browser_scenarios":screens,"visual_scenarios":visual,
             "ok":static["ok"] and all(r["ok"] for r in screens) and all(r["ok"] for r in visual),
             "scope":"Chromium responsive/dark/images-blocked proxy; not actual Gmail or Apple Mail"}
     Path(args.report).write_text(json.dumps(result,indent=2)+"\n")

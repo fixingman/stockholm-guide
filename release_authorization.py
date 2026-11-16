@@ -69,3 +69,58 @@ def production_authorization(manifest, issue, test_receipt, *, owner, duplicate_
     if duplicate_sent:
         errors.append("Already sent: refuse duplicate")
     return errors
+
+
+def authorize_artifacts(manifest, issue, receipt, *, owner, html, client_qa,
+                        visual_qa, duplicate_sent=False):
+    """Check the exact artifacts at the private delivery boundary, without sending."""
+    from delivery_guard import html_digest
+    errors = production_authorization(manifest, issue, receipt, owner=owner,
+                                      duplicate_sent=duplicate_sent)
+    if html_digest(html) != manifest.get('html_sha256'):
+        errors.append('Actual outgoing HTML differs from approved digest')
+    for name, report, key, expected in (
+        ('Responsive QA', client_qa, 'browser_scenarios',
+         {(w, s) for w in (320, 390, 650) for s in ('light', 'dark')}),
+        ('Visual QA', visual_qa, 'visual_scenarios',
+         {(390, 'light'), (390, 'dark'), (650, 'light')}),
+    ):
+        if not isinstance(report, dict):
+            errors.append(name + ' report missing')
+            continue
+        rows = report.get(key, [])
+        if (report.get('html_sha256') != manifest.get('html_sha256')
+                or report.get('ok') is not True
+                or len(rows) != len(expected)
+                or {(r.get('width'), r.get('scheme')) for r in rows} != expected
+                or not all(r.get('ok') is True for r in rows)):
+            errors.append(name + ' failed, incomplete or belongs to different HTML')
+    return errors
+
+
+def main():
+    import argparse
+    import json
+    import sys
+    from pathlib import Path
+    parser = argparse.ArgumentParser(description='Private, no-send production authorization')
+    for field in ('manifest', 'issue', 'html', 'client-qa', 'visual-qa'):
+        parser.add_argument('--' + field, required=True)
+    parser.add_argument('--duplicate-sent', action='store_true')
+    args = parser.parse_args()
+    # Private receipt and owner arrive on stdin, never command arguments or public CI.
+    try:
+        private = json.load(sys.stdin)
+        read = lambda path: json.loads(Path(path).read_text())
+        errors = authorize_artifacts(read(args.manifest), read(args.issue),
+            private.get('receipt'), owner=private.get('owner', ''),
+            html=Path(args.html).read_text(), client_qa=read(args.client_qa),
+            visual_qa=read(args.visual_qa), duplicate_sent=args.duplicate_sent)
+    except (OSError, ValueError, TypeError, KeyError, AttributeError):
+        errors = ['Invalid or unavailable authorization evidence']
+    print(json.dumps({'authorized': not errors, 'errors': errors}))
+    return 1 if errors else 0
+
+
+if __name__ == '__main__':
+    raise SystemExit(main())
