@@ -4,6 +4,9 @@ on:
     branches: [owner-staging-20261116]
     paths:
       - issues/owner-staging.json
+      - email_client_qa.py
+      - test_release_authorization.py
+      - .github/workflows/owner-staging.yml
       - final_freshness.py
       - editorial_scanning.py
       - delivery_guard.py
