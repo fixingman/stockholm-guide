@@ -416,6 +416,23 @@
         "smaller niche listings"
       ],
       "editorial_instructions": "Secondary cross-platform discovery only. This site imports from sources including Luma and Meetup; deduplicate against source originals and follow through to individual organizer or Luma/Meetup event pages. Never mistake indexed or cached listing dates, prices or photos for verified organizer evidence."
+    },
+    {
+      "id": "kollektivet-livet",
+      "name": "Kollektivet Livet",
+      "category": "independent live music / experimental concerts / club nights / creative workshops",
+      "official_calendar_url": "https://kollektivetlivet.se/evenemang-biljetter/",
+      "official_home_url": "https://kollektivetlivet.se/",
+      "organizer_ticket_calendar_url": "https://www.tickster.com/se/sv/events/by/xbkctx6vlrp1jhe/kollektivet-livet",
+      "discovery_priority": "recurring",
+      "editorial_fit": [
+        "experimental and electronic music",
+        "independent live performances",
+        "unusual club formats",
+        "special creative workshops"
+      ],
+      "editorial_instructions": "Review the full rolling 14-day programme during Saturday preparation and fresh Sunday research, including load-more/pagination beyond the first listings. Verify individual organizer event pages and linked official ticket sellers, including Tickster and Nortic. Distinguish Stora Scen, Lilla Scen, Hallen and other rooms; deduplicate across venue and ticketing indexes. Prioritize genuinely engaging unusual experiences over generic concerts or routine attractions; inclusion is by fit, not automatic. Record sold-out and uncertain inventory honestly, verify authentic featured photos, dates, room, prices and age limits. The venue FAQ says concert times generally indicate DOORS, not actual stage start: label doors explicitly and never invent a performance start.",
+      "faq_url": "https://kollektivetlivet.se/faq-3/"
     }
   ],
   "source_diversity_policy": {
