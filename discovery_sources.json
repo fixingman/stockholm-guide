@@ -449,6 +449,136 @@
         "cross-disciplinary or unusual exhibition concepts"
       ],
       "editorial_instructions": "Review the gallery's official homepage and exhibition updates during Saturday preparation and fresh Sunday discovery for the rolling 14-day window. Check for newly announced exhibitions, opening receptions (vernissages), special events and artist talks; the homepage may feature the current exhibition while /gallery archives past ones. Verify each exhibition's opening/closing dates and reception times against official materials; never mistake past shows for upcoming events or assume the vernissage date is the exhibition end date. Address: Vattugatan 13, 111 52 Stockholm; typical listed hours Wed–Fri 12:00–18:00 and Sat 12:00–16:00, but verify for each event. Curate by editorial fit rather than automatically include every exhibition, and deduplicate with art indexes and event platforms. Do not invent admission fees, ticketing, dates or images."
+    },
+    {
+      "id": "stadsgardsterminalen",
+      "name": "Stadsgårdsterminalen",
+      "category": "independent multidisciplinary cultural venue / music / exhibitions / workshops",
+      "official_calendar_url": "https://stadsgardsterminalen.com/program/",
+      "official_home_url": "https://stadsgardsterminalen.com/",
+      "discovery_priority": "recurring",
+      "editorial_fit": [
+        "unexpected multidisciplinary performances",
+        "live music and alternative cultural evenings",
+        "participatory workshops",
+        "art openings"
+      ],
+      "editorial_instructions": "Review upcoming public events within the rolling 14-day window during Saturday preparation and fresh Sunday research. Follow through to original organizer listings for dates, exact times, location, price, booking, age requirements and authentic images; exclude past events, private hire listings and generic venue marketing. Deduplicate against other registered sources and only recommend events with strong experiential fit. Distinguish which event space and ticketing organizer is hosting; the programme may include unrelated rentals."
+    },
+    {
+      "id": "bio-fagel-bla",
+      "name": "Bio Fågel Blå",
+      "category": "independent cinema / special screenings / film events",
+      "official_calendar_url": "https://biofagelbla.se/program/",
+      "official_special_events_url": "https://biofagelbla.se/evenemang/",
+      "official_ticket_url": "https://tickets.biofagelbla.se/",
+      "discovery_priority": "recurring",
+      "editorial_fit": [
+        "special screenings and premieres",
+        "director Q&A or filmmaker events",
+        "themed or participatory cinema nights",
+        "unusual film experiences"
+      ],
+      "editorial_instructions": "Review upcoming public events within the rolling 14-day window during Saturday preparation and fresh Sunday research. Follow through to original organizer listings for dates, exact times, location, price, booking, age requirements and authentic images; exclude past events, private hire listings and generic venue marketing. Deduplicate against other registered sources and only recommend events with strong experiential fit. Prioritize special and curated cinema experiences over routine showtimes; verify exact screening time and event-specific ticket listing."
+    },
+    {
+      "id": "opi-lab",
+      "name": "Of Public Interest (OPI) Lab",
+      "category": "experimental art / participatory public-space research / open sessions",
+      "official_calendar_url": "https://www.of-public-interest.com/calendar",
+      "official_home_url": "https://opi-lab.com/",
+      "discovery_priority": "recurring",
+      "editorial_fit": [
+        "public open-door sessions",
+        "participatory art and architecture workshops",
+        "experimental urban space interventions",
+        "artist and researcher talks"
+      ],
+      "editorial_instructions": "Review upcoming public events within the rolling 14-day window during Saturday preparation and fresh Sunday research. Follow through to original organizer listings for dates, exact times, location, price, booking, age requirements and authentic images; exclude past events, private hire listings and generic venue marketing. Deduplicate against other registered sources and only recommend events with strong experiential fit. Distinguish publicly accessible gatherings from student/course activities; cross-check dates using current public calendar and organizer channels."
+    },
+    {
+      "id": "nattoga",
+      "name": "NATTÖGA",
+      "category": "independent electronic-music promoter / club sessions",
+      "official_calendar_url": "https://ra.co/promoters/131068",
+      "official_instagram_url": "https://www.instagram.com/nattoga.sthlm/",
+      "discovery_priority": "recurring-selective",
+      "editorial_fit": [
+        "intimate and unusual electronic nights",
+        "distinctive underground music lineups",
+        "special themed club events"
+      ],
+      "editorial_instructions": "Review upcoming public events within the rolling 14-day window during Saturday preparation and fresh Sunday research. Follow through to original organizer listings for dates, exact times, location, price, booking, age requirements and authentic images; exclude past events, private hire listings and generic venue marketing. Deduplicate against other registered sources and only recommend events with strong experiential fit. Organizer listings on Resident Advisor are the primary accessible event index; do not treat every standard DJ night as an editorial pick; avoid duplicates with Resident Advisor discovery."
+    },
+    {
+      "id": "the-well-zone",
+      "name": "The Well Zone",
+      "category": "participatory wellness / community workshops / social experiences",
+      "official_calendar_url": "https://www.thewellzone.se/events",
+      "official_home_url": "https://www.thewellzone.se/",
+      "discovery_priority": "recurring",
+      "editorial_fit": [
+        "social wellness gatherings",
+        "unusual participatory body or mind workshops",
+        "thought-provoking community talks"
+      ],
+      "editorial_instructions": "Review upcoming public events within the rolling 14-day window during Saturday preparation and fresh Sunday research. Follow through to original organizer listings for dates, exact times, location, price, booking, age requirements and authentic images; exclude past events, private hire listings and generic venue marketing. Deduplicate against other registered sources and only recommend events with strong experiential fit. Distinguish public one-off sessions from members-only programming, recurring classes, and sales promotions; verify eligibility and booking."
+    },
+    {
+      "id": "eken-marknad",
+      "name": "Eken Marknad",
+      "category": "curated vintage / second-hand markets / social cultural pop-ups",
+      "official_calendar_url": "https://www.ekenmarknad.se/",
+      "official_home_url": "https://www.ekenmarknad.se/",
+      "discovery_priority": "recurring",
+      "editorial_fit": [
+        "special vintage and design markets",
+        "seasonal creative markets",
+        "social pop-ups at interesting venues"
+      ],
+      "editorial_instructions": "Review upcoming public events within the rolling 14-day window during Saturday preparation and fresh Sunday research. Follow through to original organizer listings for dates, exact times, location, price, booking, age requirements and authentic images; exclude past events, private hire listings and generic venue marketing. Deduplicate against other registered sources and only recommend events with strong experiential fit. Inspect organiser announcements for exact upcoming market dates, location and admission; avoid treating permanent retail as an event; cross-check listings with Slakthusguiden."
+    },
+    {
+      "id": "sthlm-baile",
+      "name": "STHLM Baile",
+      "category": "Brazilian funk / reggaeton / dance-party promoter",
+      "official_calendar_url": "https://debaser.se/kalender",
+      "official_instagram_url": "https://www.instagram.com/sthlmbaile/",
+      "discovery_priority": "recurring-selective",
+      "editorial_fit": [
+        "Brazilian funk and baile parties",
+        "participatory dance-forward social nights",
+        "unusual Latin club formats"
+      ],
+      "editorial_instructions": "Review upcoming public events within the rolling 14-day window during Saturday preparation and fresh Sunday research. Follow through to original organizer listings for dates, exact times, location, price, booking, age requirements and authentic images; exclude past events, private hire listings and generic venue marketing. Deduplicate against other registered sources and only recommend events with strong experiential fit. Find organizer-specific events via STHLM Baile and venue calendars, not historic single-event URLs. Confirm each dated event through the venue or organizer; avoid overwhelming the shortlist with routine club listings."
+    },
+    {
+      "id": "varmeverket",
+      "name": "Värmeverket",
+      "category": "industrial creative venue / cross-disciplinary culture / workshops / performance",
+      "official_calendar_url": "https://www.varmeverket.com/evenemang",
+      "official_home_url": "https://www.varmeverket.com/",
+      "discovery_priority": "recurring-selective",
+      "editorial_fit": [
+        "experimental performance in an industrial setting",
+        "maker workshops and creative labs",
+        "arts and community gatherings",
+        "unusual multi-disciplinary events"
+      ],
+      "editorial_instructions": "Review upcoming public events within the rolling 14-day window during Saturday preparation and fresh Sunday research. Follow through to original organizer listings for dates, exact times, location, price, booking, age requirements and authentic images; exclude past events, private hire listings and generic venue marketing. Deduplicate against other registered sources and only recommend events with strong experiential fit. Calendar may include venue rental/marketing; select only publicly bookable happenings, with real dates and entry conditions."
+    },
+    {
+      "id": "klubb-kaprifol",
+      "name": "Klubb Kaprifol",
+      "category": "independent club / intimate nightlife organiser",
+      "official_calendar_url": "https://klubb-kaprifol.se/",
+      "official_instagram_url": "https://www.instagram.com/klubbkaprifol/",
+      "discovery_priority": "recurring-selective",
+      "editorial_fit": [
+        "intimate distinctive club programming",
+        "unusual thematic social or dance nights"
+      ],
+      "editorial_instructions": "Review upcoming public events within the rolling 14-day window during Saturday preparation and fresh Sunday research. Follow through to original organizer listings for dates, exact times, location, price, booking, age requirements and authentic images; exclude past events, private hire listings and generic venue marketing. Deduplicate against other registered sources and only recommend events with strong experiential fit. Confirm a current dated public programme on organizer/venue/ticket pages; if no public dates, report no confirmed candidate rather than inventing one."
     }
   ],
   "source_diversity_policy": {
