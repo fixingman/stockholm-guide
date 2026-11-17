@@ -433,6 +433,22 @@
       ],
       "editorial_instructions": "Review the full rolling 14-day programme during Saturday preparation and fresh Sunday research, including load-more/pagination beyond the first listings. Verify individual organizer event pages and linked official ticket sellers, including Tickster and Nortic. Distinguish Stora Scen, Lilla Scen, Hallen and other rooms; deduplicate across venue and ticketing indexes. Prioritize genuinely engaging unusual experiences over generic concerts or routine attractions; inclusion is by fit, not automatic. Record sold-out and uncertain inventory honestly, verify authentic featured photos, dates, room, prices and age limits. The venue FAQ says concert times generally indicate DOORS, not actual stage start: label doors explicitly and never invent a performance start.",
       "faq_url": "https://kollektivetlivet.se/faq-3/"
+    },
+    {
+      "id": "richter-holtermann",
+      "name": "Richter Holtermann",
+      "category": "contemporary art gallery / emerging artists / exhibitions / vernissages",
+      "official_calendar_url": "https://www.richterholtermann.com/",
+      "official_home_url": "https://www.richterholtermann.com/",
+      "past_exhibitions_url": "https://www.richterholtermann.com/gallery",
+      "discovery_priority": "recurring",
+      "editorial_fit": [
+        "distinctive contemporary art exhibitions",
+        "emerging artist showcases",
+        "vernissages and gallery openings",
+        "cross-disciplinary or unusual exhibition concepts"
+      ],
+      "editorial_instructions": "Review the gallery's official homepage and exhibition updates during Saturday preparation and fresh Sunday discovery for the rolling 14-day window. Check for newly announced exhibitions, opening receptions (vernissages), special events and artist talks; the homepage may feature the current exhibition while /gallery archives past ones. Verify each exhibition's opening/closing dates and reception times against official materials; never mistake past shows for upcoming events or assume the vernissage date is the exhibition end date. Address: Vattugatan 13, 111 52 Stockholm; typical listed hours Wed–Fri 12:00–18:00 and Sat 12:00–16:00, but verify for each event. Curate by editorial fit rather than automatically include every exhibition, and deduplicate with art indexes and event platforms. Do not invent admission fees, ticketing, dates or images."
     }
   ],
   "source_diversity_policy": {
