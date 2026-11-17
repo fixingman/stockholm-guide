@@ -463,14 +463,13 @@
         "participatory workshops",
         "art openings"
       ],
-      "editorial_instructions": "Review upcoming public events within the rolling 14-day window during Saturday preparation and fresh Sunday research. Follow through to original organizer listings for dates, exact times, location, price, booking, age requirements and authentic images; exclude past events, private hire listings and generic venue marketing. Deduplicate against other registered sources and only recommend events with strong experiential fit. Distinguish which event space and ticketing organizer is hosting; the programme may include unrelated rentals."
+      "editorial_instructions": "Review upcoming public events within the rolling 14-day window during Saturday preparation and fresh Sunday research. Follow through to original organizer listings for dates, exact times, location, price, booking, age requirements and authentic images; exclude past events, private hire listings and generic venue marketing. Deduplicate against other registered sources and only recommend events with strong experiential fit. Distinguish which event space and ticketing organizer is hosting; the programme may include unrelated rentals. Note this venue programme cross-lists Kollektivet Livet; never count cross-listed gigs as distinct discoveries or extra-source diversity."
     },
     {
       "id": "bio-fagel-bla",
       "name": "Bio Fågel Blå",
       "category": "independent cinema / special screenings / film events",
       "official_calendar_url": "https://biofagelbla.se/program/",
-      "official_special_events_url": "https://biofagelbla.se/evenemang/",
       "official_ticket_url": "https://tickets.biofagelbla.se/",
       "discovery_priority": "recurring",
       "editorial_fit": [
@@ -479,7 +478,7 @@
         "themed or participatory cinema nights",
         "unusual film experiences"
       ],
-      "editorial_instructions": "Review upcoming public events within the rolling 14-day window during Saturday preparation and fresh Sunday research. Follow through to original organizer listings for dates, exact times, location, price, booking, age requirements and authentic images; exclude past events, private hire listings and generic venue marketing. Deduplicate against other registered sources and only recommend events with strong experiential fit. Prioritize special and curated cinema experiences over routine showtimes; verify exact screening time and event-specific ticket listing."
+      "editorial_instructions": "Review upcoming public events within the rolling 14-day window during Saturday preparation and fresh Sunday research. Follow through to original organizer listings for dates, exact times, location, price, booking, age requirements and authentic images; exclude past events, private hire listings and generic venue marketing. Deduplicate against other registered sources and only recommend events with strong experiential fit. Prioritize special and curated cinema experiences over routine showtimes; verify exact screening time and event-specific ticket listing. IMPORTANT: /evenemang/ is a private venue-hire sales page, NOT a public event listing. Use /program/ and individual screenings only."
     },
     {
       "id": "opi-lab",
@@ -494,7 +493,7 @@
         "experimental urban space interventions",
         "artist and researcher talks"
       ],
-      "editorial_instructions": "Review upcoming public events within the rolling 14-day window during Saturday preparation and fresh Sunday research. Follow through to original organizer listings for dates, exact times, location, price, booking, age requirements and authentic images; exclude past events, private hire listings and generic venue marketing. Deduplicate against other registered sources and only recommend events with strong experiential fit. Distinguish publicly accessible gatherings from student/course activities; cross-check dates using current public calendar and organizer channels."
+      "editorial_instructions": "Review upcoming public events within the rolling 14-day window during Saturday preparation and fresh Sunday research. Follow through to original organizer listings for dates, exact times, location, price, booking, age requirements and authentic images; exclude past events, private hire listings and generic venue marketing. Deduplicate against other registered sources and only recommend events with strong experiential fit. Distinguish publicly accessible gatherings from student/course activities; cross-check dates using current public calendar and organizer channels. The public calendar may have no dated entries. Do not infer dates from archived material or courses; fall back to dated official organizer posts only."
     },
     {
       "id": "nattoga",
@@ -556,7 +555,7 @@
       "id": "varmeverket",
       "name": "Värmeverket",
       "category": "industrial creative venue / cross-disciplinary culture / workshops / performance",
-      "official_calendar_url": "https://www.varmeverket.com/evenemang",
+      "official_calendar_url": "https://www.varmeverket.com/",
       "official_home_url": "https://www.varmeverket.com/",
       "discovery_priority": "recurring-selective",
       "editorial_fit": [
@@ -565,7 +564,7 @@
         "arts and community gatherings",
         "unusual multi-disciplinary events"
       ],
-      "editorial_instructions": "Review upcoming public events within the rolling 14-day window during Saturday preparation and fresh Sunday research. Follow through to original organizer listings for dates, exact times, location, price, booking, age requirements and authentic images; exclude past events, private hire listings and generic venue marketing. Deduplicate against other registered sources and only recommend events with strong experiential fit. Calendar may include venue rental/marketing; select only publicly bookable happenings, with real dates and entry conditions."
+      "editorial_instructions": "Review upcoming public events within the rolling 14-day window during Saturday preparation and fresh Sunday research. Follow through to original organizer listings for dates, exact times, location, price, booking, age requirements and authentic images; exclude past events, private hire listings and generic venue marketing. Deduplicate against other registered sources and only recommend events with strong experiential fit. Calendar may include venue rental/marketing; select only publicly bookable happenings, with real dates and entry conditions. IMPORTANT: /evenemang is a venue-hire/promotional page, NOT a dated public event calendar. Require independently dated public promoter/ticket listings; otherwise mark no verified upcoming events."
     },
     {
       "id": "klubb-kaprifol",
@@ -578,7 +577,7 @@
         "intimate distinctive club programming",
         "unusual thematic social or dance nights"
       ],
-      "editorial_instructions": "Review upcoming public events within the rolling 14-day window during Saturday preparation and fresh Sunday research. Follow through to original organizer listings for dates, exact times, location, price, booking, age requirements and authentic images; exclude past events, private hire listings and generic venue marketing. Deduplicate against other registered sources and only recommend events with strong experiential fit. Confirm a current dated public programme on organizer/venue/ticket pages; if no public dates, report no confirmed candidate rather than inventing one."
+      "editorial_instructions": "Review upcoming public events within the rolling 14-day window during Saturday preparation and fresh Sunday research. Follow through to original organizer listings for dates, exact times, location, price, booking, age requirements and authentic images; exclude past events, private hire listings and generic venue marketing. Deduplicate against other registered sources and only recommend events with strong experiential fit. Confirm a current dated public programme on organizer/venue/ticket pages; if no public dates, report no confirmed candidate rather than inventing one. Website currently exposes an undated-year March 15 historical listing; this MUST NOT be treated as an upcoming event without fresh independently dated organizer/ticket evidence."
     }
   ],
   "source_diversity_policy": {
