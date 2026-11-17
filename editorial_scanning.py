@@ -67,8 +67,8 @@ def enhance(guide):
             # Normalize TEST-008-era title prefixes into the existing badge
             # system without rewriting immutable historical issue artifacts.
             title=item.get("title", "")
-            if item.get("last_chance") is True and re.match(r"^LAST CHANCE\\s*[-—–:]\\s*", title, re.I):
-                item["display_title"]=re.sub(r"^LAST CHANCE\\s*[-—–:]\\s*", "", title, count=1, flags=re.I)
+            if item.get("last_chance") is True and re.match(r"^LAST CHANCE\s*[-—–:]\s*", title, re.I):
+                item["display_title"]=re.sub(r"^LAST CHANCE\s*[-—–:]\s*", "", title, count=1, flags=re.I)
             item["scan_cues"]=cues_for(item,guide)
     guide["inbox_preheader"]=inbox_preview(guide)
     return guide
