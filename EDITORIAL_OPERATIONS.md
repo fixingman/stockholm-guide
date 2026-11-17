@@ -46,6 +46,14 @@ python discovery_ranker.py --candidates researched-candidates.json --history LAS
 
 Candidates are researcher-supplied JSON, with fields `title`, `url`, optional `organizer_url`, `evidence_url`, `novelty` (e.g. `unusual`), `participatory`, and `image_candidate_url`. The ranker penalizes repeats, deprioritizes generic aggregators, deduplicates normalized titles, and limits any one organizer to four entries by default. The cap is an editorial heuristic, not a coverage limit; the full issue must include all relevant experiences. Inspect deferred items and override the cap when necessary.
 
+## 2a. Edition breadth and intelligent reconsideration (17 November 2026)
+
+A fresh 14-day issue is a real editorial survey, **not a nine-row technical rehearsal**. Start with the entire live `discovery_sources.json` and cross-check official organizers, Swedish-language programmes, venue calendars and useful cross-platform indexes. Aim for a meaningful variety of interesting experiences and at least 12 source domains / five categories when accessible. If the shortlist is unusually small, explicitly revisit overlooked source classes before publishing. Never force a numeric event quota or fill the edition with generic concerts; document actual scans and unavailable pages.
+
+**Worth reconsidering** should also surface genuine **last-chance** opportunities from prior editions. Inspect past issues and their organizer pages for multi-week or multi-month exhibitions, installations and runs of performances. When a previously recommended experience is entering roughly its final **7–14 days** (or earlier for verified advance-booking constraints), evaluate whether it merits one timely resurfacing. Verify the official final date, remaining public access, admission / booking conditions, and distinguish closing dates from advance-booking deadlines. Use a calm factual label (e.g. **Last chance — closes 29 Nov**) only with original organizer evidence. Do not repeatedly relist the same show weekly; do not call ordinary repeat concerts or uncertain closing dates “last chance.”
+
+Optional event metadata may include `event_end` (timezone-aware timestamp), `last_chance` (boolean), `last_chance_source_url` (official closing-date evidence), and `previous_issue_number`. These fields help editorial research, but alone do not establish truth. Source pages must be rechecked and `final_review` updated; existing strict gates and photo/recipient rules still apply.
+
 ## 3. Featured photography identity and email robustness
 
 An HTTP 200, successful JPEG decode, or matching `og:image` tag only proves technical validity. It does **not** confirm that the photo depicts the actual event. Manually review exact event artwork; for an organizer-wide festival graphic, explicitly verify that the festival graphic is an appropriate representation of the named performance, rather than treating all festival images as interchangeable.
