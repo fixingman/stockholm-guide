@@ -101,6 +101,7 @@ class ScanningTests(unittest.TestCase):
         g=sample()
         g["published_at"]="2026-11-17T22:23:00+01:00"
         item=g["worth_reconsidering"][0]
+        item.pop("final_review", None)  # The sample fixture may already have a review.
         item.update({"last_chance":True,"event_end":"2026-11-29T23:00:00+01:00",
             "last_chance_source_url":item["url"],"first_seen_issue":g["issue_number"],"new_discovery_verified":True})
         self.assertNotIn("LAST CHANCE",enhance(g)["worth_reconsidering"][0]["scan_cues"])
