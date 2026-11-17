@@ -904,44 +904,44 @@
     },
     {
       "title": "The Node — Lougglan video installation",
-      "dates": "24 Nov–22 Dec · opening 24 Nov 18:00",
-      "url": "https://www.visitstockholm.com/events/on-screen-the-node-lougglan-av-lisa-pettersson/2026-11-23/",
-      "venue": "The Node, Stockholm",
+      "dates": "Tue 24 Nov · opening 18:00; installation through Dec 22",
+      "url": "https://www.thenode.se/sv/whats-on/opening-night-lougglan-by-lisa-pettersson",
+      "venue": "The Node, Regeringsgatan 89",
       "price": "Price not published",
       "booking": "Check organizer; inventory not confirmed",
-      "description": "Lisa Pettersson's public video installation closes the year of On Screen programming; original host listing not independently retrieved, so visit details should be checked.",
+      "description": "The Node's own page confirms the November 24 opening at 18:00 of Lisa Pettersson's moving-image installation on human-nature relationships; it remains on display until December 22.",
       "image_verified": false,
       "verification": {
         "checked_at": "2026-11-17T22:23:26+01:00",
         "date": {
           "status": "confirmed",
-          "source_url": "https://www.visitstockholm.com/events/on-screen-the-node-lougglan-av-lisa-pettersson/2026-11-23/"
+          "source_url": "https://www.thenode.se/sv/whats-on/opening-night-lougglan-by-lisa-pettersson"
         },
         "venue": {
           "status": "confirmed",
-          "source_url": "https://www.visitstockholm.com/events/on-screen-the-node-lougglan-av-lisa-pettersson/2026-11-23/"
+          "source_url": "https://www.thenode.se/sv/whats-on/opening-night-lougglan-by-lisa-pettersson"
         },
         "price": {
           "status": "unknown",
-          "source_url": "https://www.visitstockholm.com/events/on-screen-the-node-lougglan-av-lisa-pettersson/2026-11-23/",
+          "source_url": "https://www.thenode.se/sv/whats-on/opening-night-lougglan-by-lisa-pettersson",
           "note": "Exact admission price not independently found on original organizer listing"
         },
         "booking": {
           "status": "unknown",
-          "source_url": "https://www.visitstockholm.com/events/on-screen-the-node-lougglan-av-lisa-pettersson/2026-11-23/",
+          "source_url": "https://www.thenode.se/sv/whats-on/opening-night-lougglan-by-lisa-pettersson",
           "note": "Organizer has public programme; live ticket inventory not independently verified"
         }
       },
       "final_review": {
         "checked_at": "2026-11-17T22:23:26+01:00",
-        "organizer_source_url": "https://www.visitstockholm.com/events/on-screen-the-node-lougglan-av-lisa-pettersson/2026-11-23/",
+        "organizer_source_url": "https://www.thenode.se/sv/whats-on/opening-night-lougglan-by-lisa-pettersson",
         "event_status": "scheduled",
         "booking_status": "unknown",
         "notes": "Current organizer source reviewed 17 Nov 2026; price or remaining places should be reconfirmed before visiting."
       },
-      "schedule_note": "Visit Stockholm confirms 23 Nov–22 Dec and opening Nov 24; original host should be rechecked.",
       "first_seen_issue": "TEST-008",
-      "new_discovery_verified": true
+      "new_discovery_verified": true,
+      "event_start": "2026-11-24T18:00:00+01:00"
     },
     {
       "title": "Congolese Super Night — live dance music",
@@ -1306,7 +1306,8 @@
       "Visit Stockholm",
       "Nattljud",
       "Resident Advisor",
-      "Lumen Project"
+      "Lumen Project",
+      "The Node"
     ],
     "limitations": [
       "The 39-source registry was consulted; 18 named organizer/discovery channels were actively reviewed or cross-checked. This is not evidence that all 39 websites were individually visited.",

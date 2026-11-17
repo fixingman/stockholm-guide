@@ -2,8 +2,7 @@
   "ready_for_delivery": true,
   "errors": [],
   "warnings": [
-    "Image load warning: https://acceleratorsu.art/wp-content/uploads/2024/03/Ester_Bergsmark-face-1.jpg: large_image",
-    "EDITORIAL: Generic listing instead of direct organizer source: The Node — Lougglan video installation"
+    "Image load warning: https://acceleratorsu.art/wp-content/uploads/2024/03/Ester_Bergsmark-face-1.jpg: large_image"
   ],
   "issue_number": "TEST-008",
   "date_range": "22 November–5 December 2026",
@@ -61,19 +60,17 @@
     }
   ],
   "inline_fallbacks": 0,
-  "html_sha256": "1a448a33b6429190ceaca656ba4c465ff8be28a584e8de7f9a63369b663b0b2e",
-  "html_bytes": 51669,
+  "html_sha256": "597e21797b2c6f896e3b76c924c4be283481122d48b78a453d7ff0d11abcf563",
+  "html_bytes": 51686,
   "image_proxy_certified": false,
-  "data_sha256": "794fb2656ad2c8fa0d8b9b1043157fafd798211e2163a57f84efba038f1b693d",
+  "data_sha256": "ffa8527dbb843090166bdd77400a8073887d4fccf20db7ada054926ec4d06498",
   "rendered_html_file": "outgoing.html",
-  "preflight_timestamp_utc": "2026-11-17T21:26:41.997590+00:00",
+  "preflight_timestamp_utc": "2026-11-17T21:28:43.494324+00:00",
   "editorial_quality": {
     "ready_for_editorial_release": true,
     "mode": "strict",
     "errors": [],
-    "warnings": [
-      "Generic listing instead of direct organizer source: The Node — Lougglan video installation"
-    ],
+    "warnings": [],
     "unique_events": 30,
     "total_rows": 30,
     "organizer_count": 16,
@@ -93,7 +90,7 @@
       "reimersholmehotel.se",
       "stockholm.fotografiska.com",
       "studio44-stockholm.com",
-      "visitstockholm.com",
+      "thenode.se",
       "weld.se"
     ],
     "repeat_new_discoveries": [],
@@ -229,8 +226,8 @@
       {
         "title": "The Node — Lougglan video installation",
         "section": "new_discoveries",
-        "source": "visitstockholm.com",
-        "organizer": "visitstockholm.com"
+        "source": "thenode.se",
+        "organizer": "thenode.se"
       },
       {
         "title": "Congolese Super Night — live dance music",
@@ -464,7 +461,7 @@
         "event_status": "scheduled",
         "booking_status": "unknown",
         "checked_at": "2026-11-17T22:23:26+01:00",
-        "organizer_source_url": "https://www.visitstockholm.com/events/on-screen-the-node-lougglan-av-lisa-pettersson/2026-11-23/"
+        "organizer_source_url": "https://www.thenode.se/sv/whats-on/opening-night-lougglan-by-lisa-pettersson"
       },
       {
         "title": "Congolese Super Night — live dance music",
@@ -535,5 +532,5 @@
   },
   "smoke_test_only": true,
   "release_channel": "smoke",
-  "source_commit_sha": "1599b0f6fc040688f1d261df387658b68449e337"
+  "source_commit_sha": "59a9953024b8b8ca0a4c4aad16bc7bc9a27de94f"
 }
