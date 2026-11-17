@@ -5,6 +5,8 @@ on:
     paths:
       - issues/current.json
       - final_freshness.py
+      - optimize_issue_images.py
+      - test_optimize_issue_images.py
       - editorial_scanning.py
       - delivery_guard.py
       - editorial_quality.py
@@ -37,20 +39,21 @@ jobs:
           print("Fresh issue:", g.get("issue_number"), g.get("date_range"))
           PY
       - name: Run all offline regression tests
-        run: python -m unittest test_minimal test_image_pipeline test_delivery_guard test_editorial_operations test_freshness_scanning test_release_authorization
+        run: python -m unittest test_minimal test_image_pipeline test_optimize_issue_images test_delivery_guard test_editorial_operations test_freshness_scanning test_release_authorization
       - name: Render new issue, validate organizer evidence, links, live photos and final review
         run: |
           mkdir -p release
-          python render_minimal.py --data issues/current.json --output release/outgoing.html
+          python optimize_issue_images.py --data issues/current.json --output release/optimized-issue.json --report release/image-optimization.json
+          python render_minimal.py --data release/optimized-issue.json --output release/outgoing.html
           IMAGE_POLICY=""
           REQUIRE_IMAGES=$(python -c 'import json; from delivery_guard import requires_featured_photos; print("true" if requires_featured_photos(json.load(open("issues/current.json"))) else "false")')
           if [ "$REQUIRE_IMAGES" = "true" ]; then IMAGE_POLICY="--require-featured-photos"; fi
-          python delivery_guard.py --data issues/current.json --html release/outgoing.html --manifest release/delivery-manifest.json --network --editorial-strict --freshness-strict $IMAGE_POLICY
+          python delivery_guard.py --data release/optimized-issue.json --html release/outgoing.html --manifest release/delivery-manifest.json --network --editorial-strict --freshness-strict $IMAGE_POLICY
           python email_client_qa.py --html release/outgoing.html --browser --report release/client-qa.json --screenshots release/screenshots
           if [ "$REQUIRE_IMAGES" = "true" ]; then
             python email_client_qa.py --html release/outgoing.html --visual --report release/visual-qa.json --screenshots release/screenshots
           fi
-          cp issues/current.json release/issue.json
+          cp release/optimized-issue.json release/issue.json
           python - <<'PY'
           import json
           from pathlib import Path
