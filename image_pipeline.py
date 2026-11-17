@@ -139,10 +139,14 @@ def validate_photo(url):
 
 def prepare(data, image):
     image = ImageOps.exif_transpose(image).convert("RGB")
-    image.thumbnail((1120, 880), Image.Resampling.LANCZOS)
-    out = io.BytesIO()
-    image.save(out, "JPEG", quality=83, optimize=True, progressive=True)
-    return out.getvalue()
+    image.thumbnail((1024, 800), Image.Resampling.LANCZOS)
+    # Only called when republication was explicitly approved. Aim for an email-
+    # friendly size without replacing organizer-owned remote images by default.
+    for quality in (80, 72, 64):
+        out = io.BytesIO()
+        image.save(out, "JPEG", quality=quality, optimize=True, progressive=True)
+        if out.tell() <= 350_000 or quality == 64:
+            return out.getvalue()
 
 
 def run(data_path, report_path, write=False, asset_base="https://fixingman.github.io/stockholm-guide/assets"):
