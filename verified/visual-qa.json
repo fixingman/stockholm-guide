@@ -1,5 +1,5 @@
 {
-  "html_sha256": "522425d796597347957e83e06791a3e66dc5852a1dd2a79f1d248b51c9aba765",
+  "html_sha256": "1a448a33b6429190ceaca656ba4c465ff8be28a584e8de7f9a63369b663b0b2e",
   "static": {
     "ok": true,
     "errors": [],
@@ -29,10 +29,10 @@
           "height": 76
         },
         {
-          "src": "https://www.fylkingen.se/_next/image?url=%2Fmedia%2Fsites%252Fclvuuu5cs0001xwfc7ne538fo%252Fmedia%252Fdb20cec9-e78d-4e58-a2f7-274f9e06d656-HeleneBergportratt.jpg&w=3840&q=75",
+          "src": "https://www.fylkingen.se/_next/image?url=%2Fmedia%2Fsites%252Fclvuuu5cs0001xwfc7ne538fo%252Fmedia%252Fdb20cec9-e78d-4e58-a2f7-274f9e06d656-HeleneBergportratt.jpg&w=1080&q=70",
           "complete": true,
-          "naturalWidth": 1426,
-          "naturalHeight": 1772,
+          "naturalWidth": 1080,
+          "naturalHeight": 1342,
           "width": 76,
           "height": 76
         },
@@ -63,10 +63,10 @@
           "height": 76
         },
         {
-          "src": "https://www.fylkingen.se/_next/image?url=%2Fmedia%2Fsites%252Fclvuuu5cs0001xwfc7ne538fo%252Fmedia%252Fdb20cec9-e78d-4e58-a2f7-274f9e06d656-HeleneBergportratt.jpg&w=3840&q=75",
+          "src": "https://www.fylkingen.se/_next/image?url=%2Fmedia%2Fsites%252Fclvuuu5cs0001xwfc7ne538fo%252Fmedia%252Fdb20cec9-e78d-4e58-a2f7-274f9e06d656-HeleneBergportratt.jpg&w=1080&q=70",
           "complete": true,
-          "naturalWidth": 1426,
-          "naturalHeight": 1772,
+          "naturalWidth": 1080,
+          "naturalHeight": 1342,
           "width": 76,
           "height": 76
         },
@@ -97,10 +97,10 @@
           "height": 96
         },
         {
-          "src": "https://www.fylkingen.se/_next/image?url=%2Fmedia%2Fsites%252Fclvuuu5cs0001xwfc7ne538fo%252Fmedia%252Fdb20cec9-e78d-4e58-a2f7-274f9e06d656-HeleneBergportratt.jpg&w=3840&q=75",
+          "src": "https://www.fylkingen.se/_next/image?url=%2Fmedia%2Fsites%252Fclvuuu5cs0001xwfc7ne538fo%252Fmedia%252Fdb20cec9-e78d-4e58-a2f7-274f9e06d656-HeleneBergportratt.jpg&w=1080&q=70",
           "complete": true,
-          "naturalWidth": 1426,
-          "naturalHeight": 1772,
+          "naturalWidth": 1080,
+          "naturalHeight": 1342,
           "width": 96,
           "height": 96
         },

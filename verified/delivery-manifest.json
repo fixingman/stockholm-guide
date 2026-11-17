@@ -2,11 +2,12 @@
   "ready_for_delivery": true,
   "errors": [],
   "warnings": [
-    "Image load warning: https://acceleratorsu.art/wp-content/uploads/2024/03/Ester_Bergsmark-face-1.jpg: large_image"
+    "Image load warning: https://acceleratorsu.art/wp-content/uploads/2024/03/Ester_Bergsmark-face-1.jpg: large_image",
+    "EDITORIAL: Generic listing instead of direct organizer source: The Node — Lougglan video installation"
   ],
-  "issue_number": "TEST-007",
+  "issue_number": "TEST-008",
   "date_range": "22 November–5 December 2026",
-  "total_event_rows": 9,
+  "total_event_rows": 30,
   "section_titles": [
     "Top 3 picks",
     "New discoveries",
@@ -15,7 +16,7 @@
   ],
   "featured_images": [
     "https://acceleratorsu.art/wp-content/uploads/2024/03/Ester_Bergsmark-face-1.jpg",
-    "https://www.fylkingen.se/_next/image?url=%2Fmedia%2Fsites%252Fclvuuu5cs0001xwfc7ne538fo%252Fmedia%252Fdb20cec9-e78d-4e58-a2f7-274f9e06d656-HeleneBergportratt.jpg&w=3840&q=75",
+    "https://www.fylkingen.se/_next/image?url=%2Fmedia%2Fsites%252Fclvuuu5cs0001xwfc7ne538fo%252Fmedia%252Fdb20cec9-e78d-4e58-a2f7-274f9e06d656-HeleneBergportratt.jpg&w=1080&q=70",
     "https://cdn.sanity.io/images/2xi539qp/production/f90f2827b3bc91616ae3b05ce97210dfce71d2eb-3264x2448.jpg?rect=408,0,2448,2448&w=750&h=750&q=75&auto=format"
   ],
   "image_checks": [
@@ -33,16 +34,16 @@
       "warning": "large_image"
     },
     {
-      "url": "https://www.fylkingen.se/_next/image?url=%2Fmedia%2Fsites%252Fclvuuu5cs0001xwfc7ne538fo%252Fmedia%252Fdb20cec9-e78d-4e58-a2f7-274f9e06d656-HeleneBergportratt.jpg&w=3840&q=75",
+      "url": "https://www.fylkingen.se/_next/image?url=%2Fmedia%2Fsites%252Fclvuuu5cs0001xwfc7ne538fo%252Fmedia%252Fdb20cec9-e78d-4e58-a2f7-274f9e06d656-HeleneBergportratt.jpg&w=1080&q=70",
       "ok": true,
-      "bytes": 244511,
+      "bytes": 152456,
       "format": "JPEG",
       "dimensions": [
-        1426,
-        1772
+        1080,
+        1342
       ],
-      "resolved_url": "https://www.fylkingen.se/_next/image?url=%2Fmedia%2Fsites%252Fclvuuu5cs0001xwfc7ne538fo%252Fmedia%252Fdb20cec9-e78d-4e58-a2f7-274f9e06d656-HeleneBergportratt.jpg&w=3840&q=75",
-      "sha256": "170f784596a8c65b4c9090f7dbd42088032573047fa3a0c915aba72566de1c14",
+      "resolved_url": "https://www.fylkingen.se/_next/image?url=%2Fmedia%2Fsites%252Fclvuuu5cs0001xwfc7ne538fo%252Fmedia%252Fdb20cec9-e78d-4e58-a2f7-274f9e06d656-HeleneBergportratt.jpg&w=1080&q=70",
+      "sha256": "c99bf6788fb25b7fa66e064d02e2cc2c3a919a34489aae26e0dc3066acb4e350",
       "warning": null
     },
     {
@@ -60,29 +61,40 @@
     }
   ],
   "inline_fallbacks": 0,
-  "html_sha256": "522425d796597347957e83e06791a3e66dc5852a1dd2a79f1d248b51c9aba765",
-  "html_bytes": 24466,
+  "html_sha256": "1a448a33b6429190ceaca656ba4c465ff8be28a584e8de7f9a63369b663b0b2e",
+  "html_bytes": 51669,
   "image_proxy_certified": false,
-  "data_sha256": "4978331b13dc40affcb164e5d7ae9f53ee20178467151f88bc928d3e69e480f2",
+  "data_sha256": "794fb2656ad2c8fa0d8b9b1043157fafd798211e2163a57f84efba038f1b693d",
   "rendered_html_file": "outgoing.html",
-  "preflight_timestamp_utc": "2026-11-17T20:58:09.354765+00:00",
+  "preflight_timestamp_utc": "2026-11-17T21:26:41.997590+00:00",
   "editorial_quality": {
     "ready_for_editorial_release": true,
     "mode": "strict",
     "errors": [],
-    "warnings": [],
-    "unique_events": 9,
-    "total_rows": 9,
-    "organizer_count": 7,
-    "dominant_organizer_share": 0.333,
+    "warnings": [
+      "Generic listing instead of direct organizer source: The Node — Lougglan video installation"
+    ],
+    "unique_events": 30,
+    "total_rows": 30,
+    "organizer_count": 16,
+    "dominant_organizer_share": 0.2,
     "organizer_domains": [
       "acceleratorsu.art",
+      "book.weld.se",
+      "etnografiskamuseet.se",
       "fargfabriken.se",
       "fylkingen.se",
       "indexfoundation.se",
+      "kollektivetlivet.se",
+      "konsthallc.se",
       "kontrar.se",
+      "kulturhusetstadsteatern.se",
+      "mdtsthlm.se",
       "reimersholmehotel.se",
-      "stockholm.fotografiska.com"
+      "stockholm.fotografiska.com",
+      "studio44-stockholm.com",
+      "visitstockholm.com",
+      "weld.se"
     ],
     "repeat_new_discoveries": [],
     "identity_reviewed_images": 3,
@@ -107,22 +119,40 @@
         "organizer": "stockholm.fotografiska.com"
       },
       {
-        "title": "Changing Landscape — dance, ink and live sound",
+        "title": "Donald Boström — photographs, conversation and live guitar",
+        "section": "new_discoveries",
+        "source": "stockholm.fotografiska.com",
+        "organizer": "stockholm.fotografiska.com"
+      },
+      {
+        "title": "EMS course-ending concert — new electronic sound",
         "section": "new_discoveries",
         "source": "fylkingen.se",
         "organizer": "fylkingen.se"
       },
       {
-        "title": "Microcosm/Macrocosm — field recordings and climate futures",
+        "title": "ASPHALT Series — CNIDARIEL and C0rp0Lento",
+        "section": "new_discoveries",
+        "source": "weld.se",
+        "organizer": "weld.se"
+      },
+      {
+        "title": "ASPHALT Series — performance, pirate radio and Brazilian DJs",
+        "section": "new_discoveries",
+        "source": "weld.se",
+        "organizer": "weld.se"
+      },
+      {
+        "title": "Evanora Unlimited — cinematic electronic performance",
+        "section": "new_discoveries",
+        "source": "kollektivetlivet.se",
+        "organizer": "kollektivetlivet.se"
+      },
+      {
+        "title": "CHIMERA / EVOLVER — Emma DJ + Keiska + DJ Haydn",
         "section": "new_discoveries",
         "source": "fylkingen.se",
         "organizer": "fylkingen.se"
-      },
-      {
-        "title": "Färgfabriken Christmas market — art, crafts and live music",
-        "section": "new_discoveries",
-        "source": "fargfabriken.se",
-        "organizer": "fargfabriken.se"
       },
       {
         "title": "Myriam Diatta — creative work from your political body",
@@ -131,16 +161,124 @@
         "organizer": "indexfoundation.se"
       },
       {
+        "title": "Dance Is Ancient — participatory dance and techno experiments",
+        "section": "new_discoveries",
+        "source": "book.weld.se",
+        "organizer": "book.weld.se"
+      },
+      {
+        "title": "Polymoon + GORMA — hypnotic post-gaze performance",
+        "section": "new_discoveries",
+        "source": "kollektivetlivet.se",
+        "organizer": "kollektivetlivet.se"
+      },
+      {
+        "title": "Changing Landscape, Evolving Experiences — dance and ink",
+        "section": "new_discoveries",
+        "source": "fylkingen.se",
+        "organizer": "fylkingen.se"
+      },
+      {
+        "title": "Aural Onsdag — Roberto N Peyre",
+        "section": "new_discoveries",
+        "source": "reimersholmehotel.se",
+        "organizer": "reimersholmehotel.se"
+      },
+      {
+        "title": "First Run Stockholm — performance premiere",
+        "section": "new_discoveries",
+        "source": "mdtsthlm.se",
+        "organizer": "mdtsthlm.se"
+      },
+      {
+        "title": "Saul Leiter: Assemblages — exhibition opening",
+        "section": "new_discoveries",
+        "source": "kulturhusetstadsteatern.se",
+        "organizer": "kulturhusetstadsteatern.se"
+      },
+      {
+        "title": "Microcosm/Macrocosm — field recordings and climate futures",
+        "section": "new_discoveries",
+        "source": "fylkingen.se",
+        "organizer": "fylkingen.se"
+      },
+      {
+        "title": "Färgfabriken winter craft and design market",
+        "section": "new_discoveries",
+        "source": "fargfabriken.se",
+        "organizer": "fargfabriken.se"
+      },
+      {
+        "title": "Kvinnor bakom kameran — women behind the camera",
+        "section": "new_discoveries",
+        "source": "stockholm.fotografiska.com",
+        "organizer": "stockholm.fotografiska.com"
+      },
+      {
+        "title": "What happens to the heart — Studio 44 group exhibition",
+        "section": "new_discoveries",
+        "source": "studio44-stockholm.com",
+        "organizer": "studio44-stockholm.com"
+      },
+      {
+        "title": "Who stole the Lovely Garden from the Goose? — musical installation",
+        "section": "new_discoveries",
+        "source": "konsthallc.se",
+        "organizer": "konsthallc.se"
+      },
+      {
+        "title": "The Node — Lougglan video installation",
+        "section": "new_discoveries",
+        "source": "visitstockholm.com",
+        "organizer": "visitstockholm.com"
+      },
+      {
+        "title": "Congolese Super Night — live dance music",
+        "section": "new_discoveries",
+        "source": "reimersholmehotel.se",
+        "organizer": "reimersholmehotel.se"
+      },
+      {
+        "title": "LAST CHANCE — The Machine's Eye in Human Hands",
+        "section": "worth_reconsidering",
+        "source": "stockholm.fotografiska.com",
+        "organizer": "stockholm.fotografiska.com"
+      },
+      {
+        "title": "LAST CHANCE — Lotta Antonsson: I Am Everything",
+        "section": "worth_reconsidering",
+        "source": "stockholm.fotografiska.com",
+        "organizer": "stockholm.fotografiska.com"
+      },
+      {
+        "title": "LAST CHANCE — Yokai: Spirits of Japan",
+        "section": "worth_reconsidering",
+        "source": "etnografiskamuseet.se",
+        "organizer": "etnografiskamuseet.se"
+      },
+      {
         "title": "Masangue Maracatu & guests — Brazilian percussion",
         "section": "worth_reconsidering",
         "source": "reimersholmehotel.se",
         "organizer": "reimersholmehotel.se"
       },
       {
+        "title": "A Study of Men — Pontus Pettersson",
+        "section": "worth_reconsidering",
+        "source": "mdtsthlm.se",
+        "organizer": "mdtsthlm.se"
+      },
+      {
         "title": "LLL presents SPEAKEASY — sold out",
         "section": "unavailable",
         "source": "kontrar.se",
         "organizer": "kontrar.se"
+      },
+      {
+        "title": "Standup x Oslipat — Kirsty Armstrong & Hanna Lublin Niklasson",
+        "section": "unavailable",
+        "source": "stockholm.fotografiska.com",
+        "organizer": "stockholm.fotografiska.com"
       }
     ],
     "note": "Evidence bookkeeping, not automated factual confirmation or legal image clearance."
@@ -149,7 +287,7 @@
     "ready_for_send": true,
     "errors": [],
     "warnings": [],
-    "checked_rows": 9,
+    "checked_rows": 30,
     "max_age_hours": 24,
     "reviewed_events": [
       {
@@ -157,7 +295,7 @@
         "section": "top3",
         "event_status": "scheduled",
         "booking_status": "not_required",
-        "checked_at": "2026-11-17T21:27:00+01:00",
+        "checked_at": "2026-11-17T22:23:26+01:00",
         "organizer_source_url": "https://acceleratorsu.art/evenemang/filmvisning-en-ljuvlighet-fran-ingenstans/"
       },
       {
@@ -165,7 +303,7 @@
         "section": "top3",
         "event_status": "scheduled",
         "booking_status": "required_unverified",
-        "checked_at": "2026-11-17T21:27:00+01:00",
+        "checked_at": "2026-11-17T22:23:26+01:00",
         "organizer_source_url": "https://www.fylkingen.se/en/events/aliqui"
       },
       {
@@ -173,61 +311,229 @@
         "section": "top3",
         "event_status": "scheduled",
         "booking_status": "required_unverified",
-        "checked_at": "2026-11-17T21:27:00+01:00",
+        "checked_at": "2026-11-17T22:23:26+01:00",
         "organizer_source_url": "https://stockholm.fotografiska.com/en/events/listening-session-salla-salazar-the-soundtrack-to-a-life"
       },
       {
-        "title": "Changing Landscape — dance, ink and live sound",
+        "title": "Donald Boström — photographs, conversation and live guitar",
         "section": "new_discoveries",
         "event_status": "scheduled",
-        "booking_status": "required_unverified",
-        "checked_at": "2026-11-17T21:27:00+01:00",
-        "organizer_source_url": "https://www.fylkingen.se/en/events/changing-landscape-evolving-experiences"
+        "booking_status": "unknown",
+        "checked_at": "2026-11-17T22:23:26+01:00",
+        "organizer_source_url": "https://stockholm.fotografiska.com/en/events/artist-talk-donald-bostrom"
       },
       {
-        "title": "Microcosm/Macrocosm — field recordings and climate futures",
+        "title": "EMS course-ending concert — new electronic sound",
         "section": "new_discoveries",
         "event_status": "scheduled",
-        "booking_status": "required_unverified",
-        "checked_at": "2026-11-17T21:27:00+01:00",
-        "organizer_source_url": "https://www.fylkingen.se/en/events/microcosmmacrocosm-sensing-beyond-the-human-present"
+        "booking_status": "unknown",
+        "checked_at": "2026-11-17T22:23:26+01:00",
+        "organizer_source_url": "https://www.fylkingen.se/en/events"
       },
       {
-        "title": "Färgfabriken Christmas market — art, crafts and live music",
+        "title": "ASPHALT Series — CNIDARIEL and C0rp0Lento",
         "section": "new_discoveries",
         "event_status": "scheduled",
-        "booking_status": "required_unverified",
-        "checked_at": "2026-11-17T21:27:00+01:00",
-        "organizer_source_url": "https://fargfabriken.se/sv/pa-gang/julmarknad-3/"
+        "booking_status": "unknown",
+        "checked_at": "2026-11-17T22:23:26+01:00",
+        "organizer_source_url": "https://www.weld.se/program/nov-2425-asphalt-series/eng/"
+      },
+      {
+        "title": "ASPHALT Series — performance, pirate radio and Brazilian DJs",
+        "section": "new_discoveries",
+        "event_status": "scheduled",
+        "booking_status": "unknown",
+        "checked_at": "2026-11-17T22:23:26+01:00",
+        "organizer_source_url": "https://www.weld.se/program/nov-2425-asphalt-series/eng/"
+      },
+      {
+        "title": "Evanora Unlimited — cinematic electronic performance",
+        "section": "new_discoveries",
+        "event_status": "scheduled",
+        "booking_status": "unknown",
+        "checked_at": "2026-11-17T22:23:26+01:00",
+        "organizer_source_url": "https://kollektivetlivet.se/event/evanora-unlimited/"
+      },
+      {
+        "title": "CHIMERA / EVOLVER — Emma DJ + Keiska + DJ Haydn",
+        "section": "new_discoveries",
+        "event_status": "scheduled",
+        "booking_status": "unknown",
+        "checked_at": "2026-11-17T22:23:26+01:00",
+        "organizer_source_url": "https://www.fylkingen.se/en/events"
       },
       {
         "title": "Myriam Diatta — creative work from your political body",
         "section": "new_discoveries",
         "event_status": "scheduled",
         "booking_status": "unknown",
-        "checked_at": "2026-11-17T21:27:00+01:00",
+        "checked_at": "2026-11-17T22:23:26+01:00",
         "organizer_source_url": "https://indexfoundation.se/talks-and-events/bookshop-situation-series-myriam-diatta-doing-creative-work-from-your-political-body"
+      },
+      {
+        "title": "Dance Is Ancient — participatory dance and techno experiments",
+        "section": "new_discoveries",
+        "event_status": "scheduled",
+        "booking_status": "unknown",
+        "checked_at": "2026-11-17T22:23:26+01:00",
+        "organizer_source_url": "https://book.weld.se/e/dance-is-ancient-dance-is-ancient/"
+      },
+      {
+        "title": "Polymoon + GORMA — hypnotic post-gaze performance",
+        "section": "new_discoveries",
+        "event_status": "scheduled",
+        "booking_status": "unknown",
+        "checked_at": "2026-11-17T22:23:26+01:00",
+        "organizer_source_url": "https://kollektivetlivet.se/event/polymoon-gorma/"
+      },
+      {
+        "title": "Changing Landscape, Evolving Experiences — dance and ink",
+        "section": "new_discoveries",
+        "event_status": "scheduled",
+        "booking_status": "unknown",
+        "checked_at": "2026-11-17T22:23:26+01:00",
+        "organizer_source_url": "https://www.fylkingen.se/en/events/changing-landscape-evolving-experiences"
+      },
+      {
+        "title": "Aural Onsdag — Roberto N Peyre",
+        "section": "new_discoveries",
+        "event_status": "scheduled",
+        "booking_status": "unknown",
+        "checked_at": "2026-11-17T22:23:26+01:00",
+        "organizer_source_url": "https://reimersholmehotel.se/en/upcoming-events/"
+      },
+      {
+        "title": "First Run Stockholm — performance premiere",
+        "section": "new_discoveries",
+        "event_status": "scheduled",
+        "booking_status": "unknown",
+        "checked_at": "2026-11-17T22:23:26+01:00",
+        "organizer_source_url": "https://mdtsthlm.se/kalender"
+      },
+      {
+        "title": "Saul Leiter: Assemblages — exhibition opening",
+        "section": "new_discoveries",
+        "event_status": "scheduled",
+        "booking_status": "unknown",
+        "checked_at": "2026-11-17T22:23:26+01:00",
+        "organizer_source_url": "https://kulturhusetstadsteatern.se/utstallningar/saul-leiter-assemblages"
+      },
+      {
+        "title": "Microcosm/Macrocosm — field recordings and climate futures",
+        "section": "new_discoveries",
+        "event_status": "scheduled",
+        "booking_status": "unknown",
+        "checked_at": "2026-11-17T22:23:26+01:00",
+        "organizer_source_url": "https://www.fylkingen.se/en/events/microcosmmacrocosm-sensing-beyond-the-human-present"
+      },
+      {
+        "title": "Färgfabriken winter craft and design market",
+        "section": "new_discoveries",
+        "event_status": "scheduled",
+        "booking_status": "unknown",
+        "checked_at": "2026-11-17T22:23:26+01:00",
+        "organizer_source_url": "https://fargfabriken.se/sv/pa-gang/"
+      },
+      {
+        "title": "Kvinnor bakom kameran — women behind the camera",
+        "section": "new_discoveries",
+        "event_status": "scheduled",
+        "booking_status": "unknown",
+        "checked_at": "2026-11-17T22:23:26+01:00",
+        "organizer_source_url": "https://stockholm.fotografiska.com/en/exhibitions/kvinnor-bakom-kameran-1848-1968"
+      },
+      {
+        "title": "What happens to the heart — Studio 44 group exhibition",
+        "section": "new_discoveries",
+        "event_status": "scheduled",
+        "booking_status": "unknown",
+        "checked_at": "2026-11-17T22:23:26+01:00",
+        "organizer_source_url": "https://studio44-stockholm.com/en/39499-2/what-happens-to-the-heart/"
+      },
+      {
+        "title": "Who stole the Lovely Garden from the Goose? — musical installation",
+        "section": "new_discoveries",
+        "event_status": "scheduled",
+        "booking_status": "unknown",
+        "checked_at": "2026-11-17T22:23:26+01:00",
+        "organizer_source_url": "https://konsthallc.se/"
+      },
+      {
+        "title": "The Node — Lougglan video installation",
+        "section": "new_discoveries",
+        "event_status": "scheduled",
+        "booking_status": "unknown",
+        "checked_at": "2026-11-17T22:23:26+01:00",
+        "organizer_source_url": "https://www.visitstockholm.com/events/on-screen-the-node-lougglan-av-lisa-pettersson/2026-11-23/"
+      },
+      {
+        "title": "Congolese Super Night — live dance music",
+        "section": "new_discoveries",
+        "event_status": "scheduled",
+        "booking_status": "unknown",
+        "checked_at": "2026-11-17T22:23:26+01:00",
+        "organizer_source_url": "https://reimersholmehotel.se/en/upcoming-events/"
+      },
+      {
+        "title": "LAST CHANCE — The Machine's Eye in Human Hands",
+        "section": "worth_reconsidering",
+        "event_status": "scheduled",
+        "booking_status": "unknown",
+        "checked_at": "2026-11-17T22:23:26+01:00",
+        "organizer_source_url": "https://stockholm.fotografiska.com/en/exhibitions/the-machines-eye-in-human-hands"
+      },
+      {
+        "title": "LAST CHANCE — Lotta Antonsson: I Am Everything",
+        "section": "worth_reconsidering",
+        "event_status": "scheduled",
+        "booking_status": "unknown",
+        "checked_at": "2026-11-17T22:23:26+01:00",
+        "organizer_source_url": "https://stockholm.fotografiska.com/en/exhibitions/lotta-antonsson"
+      },
+      {
+        "title": "LAST CHANCE — Yokai: Spirits of Japan",
+        "section": "worth_reconsidering",
+        "event_status": "scheduled",
+        "booking_status": "unknown",
+        "checked_at": "2026-11-17T22:23:26+01:00",
+        "organizer_source_url": "https://www.etnografiskamuseet.se/en/exhibitions/yokai/"
       },
       {
         "title": "Masangue Maracatu & guests — Brazilian percussion",
         "section": "worth_reconsidering",
         "event_status": "scheduled",
-        "booking_status": "required_unverified",
-        "checked_at": "2026-11-17T21:27:00+01:00",
+        "booking_status": "unknown",
+        "checked_at": "2026-11-17T22:23:26+01:00",
         "organizer_source_url": "https://reimersholmehotel.se/event/masangue-maracatu-gaster/"
+      },
+      {
+        "title": "A Study of Men — Pontus Pettersson",
+        "section": "worth_reconsidering",
+        "event_status": "scheduled",
+        "booking_status": "unknown",
+        "checked_at": "2026-11-17T22:23:26+01:00",
+        "organizer_source_url": "https://mdtsthlm.se/kalender"
       },
       {
         "title": "LLL presents SPEAKEASY — sold out",
         "section": "unavailable",
         "event_status": "scheduled",
         "booking_status": "sold_out",
-        "checked_at": "2026-11-17T21:27:00+01:00",
+        "checked_at": "2026-11-17T22:23:26+01:00",
         "organizer_source_url": "https://kontrar.se/en/show/lll/"
+      },
+      {
+        "title": "Standup x Oslipat — Kirsty Armstrong & Hanna Lublin Niklasson",
+        "section": "unavailable",
+        "event_status": "scheduled",
+        "booking_status": "sold_out",
+        "checked_at": "2026-11-17T22:23:26+01:00",
+        "organizer_source_url": "https://stockholm.fotografiska.com/en/events"
       }
     ],
     "note": "Timestamped evidence audit; cannot independently establish that page claims are true."
   },
   "smoke_test_only": true,
   "release_channel": "smoke",
-  "source_commit_sha": "fc1535ca34aeb49d41be0966613fbb8e092f424e"
+  "source_commit_sha": "1599b0f6fc040688f1d261df387658b68449e337"
 }
