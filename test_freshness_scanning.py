@@ -77,6 +77,41 @@ class ScanningTests(unittest.TestCase):
         g["new_discoveries"][0]["new_discovery_verified"]=True
         self.assertNotIn("JUST FOUND",enhance(g)["new_discoveries"][0]["scan_cues"])
 
+    def test_last_chance_badge_uses_verified_closing_not_just_found(self):
+        g=sample()
+        g["issue_number"]="TEST-008"
+        g["published_at"]="2026-11-17T22:23:00+01:00"
+        item=g["worth_reconsidering"][0]
+        item.update({
+            "title":"LAST CHANCE — The Machine's Eye in Human Hands",
+            "last_chance":True,
+            "event_end":"2026-11-29T23:00:00+01:00",
+            "last_chance_source_url":item["url"],
+            "final_review":{"organizer_source_url":item["url"],"event_status":"scheduled","booking_status":"not_required"},
+            "first_seen_issue":"TEST-008",
+            "new_discovery_verified":True
+        })
+        enhanced=enhance(g)
+        item=enhanced["worth_reconsidering"][0]
+        self.assertEqual(item["display_title"],"The Machine's Eye in Human Hands")
+        self.assertIn("LAST CHANCE",item["scan_cues"])
+        self.assertNotIn("JUST FOUND",item["scan_cues"])
+
+    def test_unverified_or_expired_last_chance_does_not_claim_urgency(self):
+        g=sample()
+        g["published_at"]="2026-11-17T22:23:00+01:00"
+        item=g["worth_reconsidering"][0]
+        item.update({"last_chance":True,"event_end":"2026-11-29T23:00:00+01:00",
+            "last_chance_source_url":item["url"],"first_seen_issue":g["issue_number"],"new_discovery_verified":True})
+        self.assertNotIn("LAST CHANCE",enhance(g)["worth_reconsidering"][0]["scan_cues"])
+        self.assertNotIn("JUST FOUND",enhance(g)["worth_reconsidering"][0]["scan_cues"])
+        item["final_review"]={"organizer_source_url":item["url"],"event_status":"scheduled","booking_status":"not_required"}
+        item["event_end"]="2026-11-16T23:00:00+01:00"
+        self.assertNotIn("LAST CHANCE",enhance(g)["worth_reconsidering"][0]["scan_cues"])
+        item["event_end"]="2026-11-29T23:00:00+01:00"
+        item["final_review"]["booking_status"]="sold_out"
+        self.assertNotIn("LAST CHANCE",enhance(g)["worth_reconsidering"][0]["scan_cues"])
+
     def test_full_list_survives_enhancement_and_render(self):
         g=sample();n=sum(len(g[k]) for k in ("top3","new_discoveries","worth_reconsidering","unavailable"))
         self.assertEqual(n,sum(len(enhance(g)[k]) for k in ("top3","new_discoveries","worth_reconsidering","unavailable")))
