@@ -5,8 +5,6 @@ on:
     paths:
       - issues/current.json
       - final_freshness.py
-      - optimize_issue_images.py
-      - test_optimize_issue_images.py
       - editorial_scanning.py
       - delivery_guard.py
       - editorial_quality.py
