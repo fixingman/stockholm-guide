@@ -20,6 +20,27 @@ jobs:
           python -m playwright install --with-deps chromium
       - name: Run newsletter and image regression tests
         run: python -m unittest test_minimal test_image_pipeline test_optimize_issue_images test_delivery_guard test_editorial_operations test_freshness_scanning test_discovery_sources test_release_authorization
+      - name: Real-world photo performance probe (official source, no sending)
+        run: |
+          python - <<'PY'
+          import json
+          from optimize_issue_images import optimize_entry
+          photo = {
+              "title": "TEST-007 Accelerator large photograph",
+              "image_verified": True,
+              "image_url": "https://acceleratorsu.art/wp-content/uploads/2024/03/Ester_Bergsmark-face-1.jpg",
+          }
+          result = optimize_entry(photo)
+          result["original_url"] = photo.get("image_original_url", photo["image_url"])
+          print("PHOTO PERFORMANCE:", json.dumps(result, ensure_ascii=False))
+          with open("photo-optimization-probe.json", "w") as f:
+              json.dump(result, f, indent=2)
+          if result["status"] == "optimized":
+              assert "image_original_url" in photo
+              assert photo["image_url"] != photo["image_original_url"]
+          else:
+              assert "image_original_url" not in photo, "Non-optimized photo was altered"
+          PY
       - name: Audit discovery coverage and public Luma policy (no account or signup)
         run: |
           python - <<'PY'
@@ -116,6 +137,7 @@ jobs:
           path: |
             e2e-test-email.html
             e2e-image-audit.json
+            photo-optimization-probe.json
             e2e-delivery-manifest.json
             e2e-rejected-visual.json
             visual-rejection-screenshots/
