@@ -1,11 +1,11 @@
 {
-  "issue_number": "TEST-006",
+  "issue_number": "TEST-007",
   "rehearsal": true,
   "visual_test": true,
-  "published_at": "2026-11-16T01:28:25+01:00",
-  "date_range": "16–29 November 2026",
-  "intro": "A fresh look at the next fortnight: exploratory sound, phone-free listening, a free film-and-conversation evening, and independent performances worth stepping outside for. This owner-only staging edition uses three real artist photographs.",
-  "disclaimer": "Organizer pages reviewed 16 November. Prices and ticket links are reported as listed; remaining seats are not guaranteed. This private test edition is not a subscriber release.",
+  "published_at": "2026-11-17T21:27:00+01:00",
+  "date_range": "22 November–5 December 2026",
+  "intro": "Fresh owner-only technical rehearsal of selected upcoming events: experimental film, moving-image improvisation, phone-free listening, performance and markets. NOT a subscriber edition.",
+  "disclaimer": "OWNER ONLY — TEST-007. Organizer dates checked 17 November; stock may change. Photo identity records originate 16 November and CI must check live photo downloads and Chromium visuals.",
   "top3": [
     {
       "title": "En ljuvlighet från ingenstans — film and conversation",
@@ -17,7 +17,7 @@
       "description": "Ester M. Bergsmark’s experimental 2026 film is followed by a Swedish-language conversation with Lina Selander. A free, one-off encounter between cinema, art and bodily experience.",
       "image_verified": true,
       "verification": {
-        "checked_at": "2026-11-16T01:28:25+01:00",
+        "checked_at": "2026-11-17T21:27:00+01:00",
         "date": {
           "status": "confirmed",
           "source_url": "https://acceleratorsu.art/evenemang/filmvisning-en-ljuvlighet-fran-ingenstans/"
@@ -36,11 +36,11 @@
         }
       },
       "final_review": {
-        "checked_at": "2026-11-16T01:28:25+01:00",
+        "checked_at": "2026-11-17T21:27:00+01:00",
         "organizer_source_url": "https://acceleratorsu.art/evenemang/filmvisning-en-ljuvlighet-fran-ingenstans/",
         "event_status": "scheduled",
         "booking_status": "not_required",
-        "notes": "Current organizer listing reviewed. Ticket link is not proof of remaining inventory."
+        "notes": "Current organizer event page revisited 17 November 2026; inventory not guaranteed."
       },
       "event_start": "2026-11-25T18:30:00+01:00",
       "image_url": "https://acceleratorsu.art/wp-content/uploads/2024/03/Ester_Bergsmark-face-1.jpg",
@@ -52,11 +52,13 @@
         "source_page": "https://acceleratorsu.art/evenemang/filmvisning-en-ljuvlighet-fran-ingenstans/",
         "checked_at": "2026-11-16T01:28:25+01:00",
         "notes": "Authentic participant photograph published on the exact 2026 event page; not represented as a photograph of a future performance. Portrait of filmmaker Ester M. Bergsmark, photo Erica Moon-Nam Lindberg; supplied on the screening page."
-      }
+      },
+      "first_seen_issue": "TEST-006",
+      "new_discovery_verified": false
     },
     {
       "title": "Aliquī — deep listening and visual improvisation",
-      "dates": "Thu 26 Nov · bar 19:00; performance 19:30",
+      "dates": "Thu 26 Nov · Fylkingen lists 19:00 (performance time unverified)",
       "url": "https://www.fylkingen.se/en/events/aliqui",
       "venue": "Fylkingen, Saltmätargatan 2",
       "price": "200 SEK; 120 SEK members + friends",
@@ -64,7 +66,7 @@
       "description": "Helene Berg, Paul Pignon, Ida Lundén, Thomas Bjelkeborn and guests explore the meeting of sound, image and space. A good fit for an unpredictable, absorbing evening.",
       "image_verified": true,
       "verification": {
-        "checked_at": "2026-11-16T01:28:25+01:00",
+        "checked_at": "2026-11-17T21:27:00+01:00",
         "date": {
           "status": "confirmed",
           "source_url": "https://www.fylkingen.se/en/events/aliqui"
@@ -83,14 +85,14 @@
         }
       },
       "final_review": {
-        "checked_at": "2026-11-16T01:28:25+01:00",
+        "checked_at": "2026-11-17T21:27:00+01:00",
         "organizer_source_url": "https://www.fylkingen.se/en/events/aliqui",
         "event_status": "scheduled",
         "booking_status": "required_unverified",
-        "notes": "Current organizer listing reviewed. Ticket link is not proof of remaining inventory."
+        "notes": "Current organizer event page revisited 17 November 2026; inventory not guaranteed."
       },
-      "event_start": "2026-11-26T19:30:00+01:00",
-      "first_seen_issue": "004",
+      "event_start": "2026-11-26T19:00:00+01:00",
+      "first_seen_issue": "TEST-006",
       "image_url": "https://www.fylkingen.se/_next/image?url=%2Fmedia%2Fsites%252Fclvuuu5cs0001xwfc7ne538fo%252Fmedia%252Fdb20cec9-e78d-4e58-a2f7-274f9e06d656-HeleneBergportratt.jpg&w=3840&q=75",
       "image_source_url": "https://www.fylkingen.se/en/events/aliqui",
       "image_alt": "Artist Helene Berg with an owl sculpture; participant portrait supplied on the Aliquī event page.",
@@ -100,7 +102,8 @@
         "source_page": "https://www.fylkingen.se/en/events/aliqui",
         "checked_at": "2026-11-16T01:28:25+01:00",
         "notes": "Authentic participant photograph published on the exact 2026 event page; not represented as a photograph of a future performance. Artist Helene Berg with an owl sculpture; participant portrait supplied on the Aliquī event page."
-      }
+      },
+      "new_discovery_verified": false
     },
     {
       "title": "Salla Salazar — a phone-free listening session",
@@ -112,7 +115,7 @@
       "description": "Salla Salazar shares complete songs and the memories behind them. A seated, phone-free format that puts shared listening ahead of spectacle.",
       "image_verified": true,
       "verification": {
-        "checked_at": "2026-11-16T01:28:25+01:00",
+        "checked_at": "2026-11-17T21:27:00+01:00",
         "date": {
           "status": "confirmed",
           "source_url": "https://stockholm.fotografiska.com/en/events/listening-session-salla-salazar-the-soundtrack-to-a-life"
@@ -131,14 +134,14 @@
         }
       },
       "final_review": {
-        "checked_at": "2026-11-16T01:28:25+01:00",
+        "checked_at": "2026-11-17T21:27:00+01:00",
         "organizer_source_url": "https://stockholm.fotografiska.com/en/events/listening-session-salla-salazar-the-soundtrack-to-a-life",
         "event_status": "scheduled",
         "booking_status": "required_unverified",
-        "notes": "Current organizer listing reviewed. Ticket link is not proof of remaining inventory."
+        "notes": "Current organizer event page revisited 17 November 2026; inventory not guaranteed."
       },
       "event_start": "2026-11-27T18:00:00+01:00",
-      "first_seen_issue": "004",
+      "first_seen_issue": "TEST-006",
       "image_url": "https://cdn.sanity.io/images/2xi539qp/production/f90f2827b3bc91616ae3b05ce97210dfce71d2eb-3264x2448.jpg?rect=408,0,2448,2448&w=750&h=750&q=75&auto=format",
       "image_source_url": "https://stockholm.fotografiska.com/en/events/listening-session-salla-salazar-the-soundtrack-to-a-life",
       "image_alt": "Salla Salazar event photograph supplied on Fotografiska’s listening-session page.",
@@ -148,245 +151,130 @@
         "source_page": "https://stockholm.fotografiska.com/en/events/listening-session-salla-salazar-the-soundtrack-to-a-life",
         "checked_at": "2026-11-16T01:28:25+01:00",
         "notes": "Authentic participant photograph published on the exact 2026 event page; not represented as a photograph of a future performance. Salla Salazar event photograph supplied on Fotografiska’s listening-session page."
-      }
+      },
+      "new_discovery_verified": false
     }
   ],
   "new_discoveries": [
     {
-      "title": "Weld Extended + Anna Nowicka — an open choreographic process",
-      "dates": "Fri 20 Nov 18:00–19:00; Sat 21 Nov 16:00–17:00",
-      "url": "https://book.weld.se/e/open-showing-weld-extended-anna-nowicka-pl-de/",
-      "venue": "Weld, Stockholm; confirm address with organizer",
-      "price": "Free (0 SEK)",
-      "booking": "Reservation form open; remaining places unverified",
-      "description": "An intimate look into movement developed from sensations, memories and imagined landscapes. A stronger participatory connection than a conventional stage spectacle.",
+      "title": "Changing Landscape — dance, ink and live sound",
+      "dates": "Sun 29 Nov · 16:00",
+      "url": "https://www.fylkingen.se/en/events/changing-landscape-evolving-experiences",
+      "venue": "Fylkingen, Saltmätargatan 21",
+      "price": "150 SEK; 80 SEK members/friends",
+      "booking": "Tickets/details on official listing; remaining availability unverified",
+      "description": "Dance, projections, calligraphy and live improvisation converge in a cross-cultural installation-performance.",
       "image_verified": false,
       "verification": {
-        "checked_at": "2026-11-16T01:28:25+01:00",
+        "checked_at": "2026-11-17T21:27:00+01:00",
         "date": {
           "status": "confirmed",
-          "source_url": "https://book.weld.se/e/open-showing-weld-extended-anna-nowicka-pl-de/"
+          "source_url": "https://www.fylkingen.se/en/events/changing-landscape-evolving-experiences"
         },
         "venue": {
-          "status": "unknown",
-          "source_url": "https://book.weld.se/e/open-showing-weld-extended-anna-nowicka-pl-de/",
-          "note": "Not established by the current organizer page; Dates cross-checked on the organizer booking calendar; Saturday has a separate booking page."
+          "status": "confirmed",
+          "source_url": "https://www.fylkingen.se/en/events/changing-landscape-evolving-experiences"
         },
         "price": {
           "status": "confirmed",
-          "source_url": "https://book.weld.se/e/open-showing-weld-extended-anna-nowicka-pl-de/"
+          "source_url": "https://www.fylkingen.se/en/events/changing-landscape-evolving-experiences"
         },
         "booking": {
-          "status": "confirmed",
-          "source_url": "https://book.weld.se/e/open-showing-weld-extended-anna-nowicka-pl-de/"
+          "status": "unknown",
+          "source_url": "https://www.fylkingen.se/en/events/changing-landscape-evolving-experiences",
+          "note": "Ticket inventory not independently accessible"
         }
       },
       "final_review": {
-        "checked_at": "2026-11-16T01:28:25+01:00",
-        "organizer_source_url": "https://book.weld.se/e/open-showing-weld-extended-anna-nowicka-pl-de/",
+        "checked_at": "2026-11-17T21:27:00+01:00",
+        "organizer_source_url": "https://www.fylkingen.se/en/events/changing-landscape-evolving-experiences",
         "event_status": "scheduled",
         "booking_status": "required_unverified",
-        "notes": "Dates cross-checked on the organizer booking calendar; Saturday has a separate booking page."
+        "notes": "Dated original organizer listing checked 17 November; no live seat claim."
       },
-      "schedule_note": "Fri 20 Nov 18:00–19:00; Sat 21 Nov 16:00–17:00"
+      "event_start": "2026-11-29T16:00:00+01:00",
+      "first_seen_issue": "TEST-007",
+      "new_discovery_verified": true
     },
     {
-      "title": "En ljuvlighet från ingenstans — film and conversation",
-      "dates": "Wed 25 Nov · 18:30; film 86 min + conversation about 30 min",
-      "url": "https://acceleratorsu.art/evenemang/filmvisning-en-ljuvlighet-fran-ingenstans/",
-      "venue": "Accelerator café, Frescativägen 26A",
-      "price": "Free",
-      "booking": "No advance registration required",
-      "description": "Ester M. Bergsmark’s experimental 2026 film is followed by a Swedish-language conversation with Lina Selander. A free, one-off encounter between cinema, art and bodily experience.",
-      "image_verified": true,
-      "verification": {
-        "checked_at": "2026-11-16T01:28:25+01:00",
-        "date": {
-          "status": "confirmed",
-          "source_url": "https://acceleratorsu.art/evenemang/filmvisning-en-ljuvlighet-fran-ingenstans/"
-        },
-        "venue": {
-          "status": "confirmed",
-          "source_url": "https://acceleratorsu.art/evenemang/filmvisning-en-ljuvlighet-fran-ingenstans/"
-        },
-        "price": {
-          "status": "confirmed",
-          "source_url": "https://acceleratorsu.art/evenemang/filmvisning-en-ljuvlighet-fran-ingenstans/"
-        },
-        "booking": {
-          "status": "confirmed",
-          "source_url": "https://acceleratorsu.art/evenemang/filmvisning-en-ljuvlighet-fran-ingenstans/"
-        }
-      },
-      "final_review": {
-        "checked_at": "2026-11-16T01:28:25+01:00",
-        "organizer_source_url": "https://acceleratorsu.art/evenemang/filmvisning-en-ljuvlighet-fran-ingenstans/",
-        "event_status": "scheduled",
-        "booking_status": "not_required",
-        "notes": "Current organizer listing reviewed. Ticket link is not proof of remaining inventory."
-      },
-      "event_start": "2026-11-25T18:30:00+01:00",
-      "image_url": "https://acceleratorsu.art/wp-content/uploads/2024/03/Ester_Bergsmark-face-1.jpg",
-      "image_source_url": "https://acceleratorsu.art/evenemang/filmvisning-en-ljuvlighet-fran-ingenstans/",
-      "image_alt": "Portrait of filmmaker Ester M. Bergsmark, photo Erica Moon-Nam Lindberg; supplied on the screening page.",
-      "image_identity_review": {
-        "event_match": true,
-        "reviewer": "Editorial assistant; organizer-page association and local visual inspection",
-        "source_page": "https://acceleratorsu.art/evenemang/filmvisning-en-ljuvlighet-fran-ingenstans/",
-        "checked_at": "2026-11-16T01:28:25+01:00",
-        "notes": "Authentic participant photograph published on the exact 2026 event page; not represented as a photograph of a future performance. Portrait of filmmaker Ester M. Bergsmark, photo Erica Moon-Nam Lindberg; supplied on the screening page."
-      }
-    },
-    {
-      "title": "JJJJJerome Ellis — opening and sound performance",
-      "dates": "Fri 20 Nov · opening 17:00–20:00; performance 18:00",
-      "url": "https://indexfoundation.se/talks-and-events/opening-jjjjjerome-ellis-a-calendar-commemorating-slaves-who-escaped-their-enslavers-1673-1886",
-      "venue": "Index, Kungsbrostrand 19",
-      "price": "Price not specified on event page",
-      "booking": "Opening announced; reservation requirement not specified",
-      "description": "A sound-based performance moves between the gallery and the waterfront. The exhibition considers listening, time and justice through sound, writing and improvisation.",
+      "title": "Microcosm/Macrocosm — field recordings and climate futures",
+      "dates": "Fri 4 Dec · 19:00",
+      "url": "https://www.fylkingen.se/en/events/microcosmmacrocosm-sensing-beyond-the-human-present",
+      "venue": "Fylkingen, Saltmätargatan 21",
+      "price": "200 SEK; 120 SEK members/friends",
+      "booking": "Tickets/details on official listing; remaining availability unverified",
+      "description": "Cecilia Enberg and Meghan Quinlan combine close-range natural field recordings with environmental data and live audiovisual composition. Distinct from a cancelled April event.",
       "image_verified": false,
       "verification": {
-        "checked_at": "2026-11-16T01:28:25+01:00",
+        "checked_at": "2026-11-17T21:27:00+01:00",
         "date": {
           "status": "confirmed",
-          "source_url": "https://indexfoundation.se/talks-and-events/opening-jjjjjerome-ellis-a-calendar-commemorating-slaves-who-escaped-their-enslavers-1673-1886"
+          "source_url": "https://www.fylkingen.se/en/events/microcosmmacrocosm-sensing-beyond-the-human-present"
         },
         "venue": {
           "status": "confirmed",
-          "source_url": "https://indexfoundation.se/talks-and-events/opening-jjjjjerome-ellis-a-calendar-commemorating-slaves-who-escaped-their-enslavers-1673-1886"
+          "source_url": "https://www.fylkingen.se/en/events/microcosmmacrocosm-sensing-beyond-the-human-present"
         },
         "price": {
-          "status": "unknown",
-          "source_url": "https://indexfoundation.se/talks-and-events/opening-jjjjjerome-ellis-a-calendar-commemorating-slaves-who-escaped-their-enslavers-1673-1886",
-          "note": "Not established by the current organizer page; Event is listed; price and registration conditions are not stated."
+          "status": "confirmed",
+          "source_url": "https://www.fylkingen.se/en/events/microcosmmacrocosm-sensing-beyond-the-human-present"
         },
         "booking": {
           "status": "unknown",
-          "source_url": "https://indexfoundation.se/talks-and-events/opening-jjjjjerome-ellis-a-calendar-commemorating-slaves-who-escaped-their-enslavers-1673-1886",
-          "note": "Not established by the current organizer page; Event is listed; price and registration conditions are not stated."
+          "source_url": "https://www.fylkingen.se/en/events/microcosmmacrocosm-sensing-beyond-the-human-present",
+          "note": "Ticket inventory not independently accessible"
         }
       },
       "final_review": {
-        "checked_at": "2026-11-16T01:28:25+01:00",
-        "organizer_source_url": "https://indexfoundation.se/talks-and-events/opening-jjjjjerome-ellis-a-calendar-commemorating-slaves-who-escaped-their-enslavers-1673-1886",
+        "checked_at": "2026-11-17T21:27:00+01:00",
+        "organizer_source_url": "https://www.fylkingen.se/en/events/microcosmmacrocosm-sensing-beyond-the-human-present",
         "event_status": "scheduled",
-        "booking_status": "unknown",
-        "notes": "Event is listed; price and registration conditions are not stated."
+        "booking_status": "required_unverified",
+        "notes": "Dated original organizer listing checked 17 November; no live seat claim."
       },
-      "event_start": "2026-11-20T18:00:00+01:00"
+      "event_start": "2026-12-04T19:00:00+01:00",
+      "first_seen_issue": "TEST-007",
+      "new_discovery_verified": true
     },
     {
-      "title": "Ndidi Dike finissage — a conversation in the exhibition",
-      "dates": "Sat 21 Nov · 14:00–15:00",
-      "url": "https://fargfabriken.se/sv/pa-gang/finissage-samtal-i-utstallningen/",
+      "title": "Färgfabriken Christmas market — art, crafts and live music",
+      "dates": "Sat 5 Dec · 11:00–17:00",
+      "url": "https://fargfabriken.se/sv/pa-gang/julmarknad-3/",
       "venue": "Färgfabriken, Lövholmsbrinken 1",
-      "price": "From 60 SEK (linked Billetto listing)",
-      "booking": "Advance registration required; remaining stock unverified",
-      "description": "Curator Tawanda Appiah and Anna-Karin Wulgué discuss Rare Earth Rare Justice in English, inside the exhibition. A focused way into the art before it closes.",
+      "price": "60 SEK; under-16s free",
+      "booking": "Tickets/details on official listing; remaining availability unverified",
+      "description": "An art and design market across several exhibition spaces with handmade crafts, artists and live music.",
       "image_verified": false,
       "verification": {
-        "checked_at": "2026-11-16T01:28:25+01:00",
+        "checked_at": "2026-11-17T21:27:00+01:00",
         "date": {
           "status": "confirmed",
-          "source_url": "https://fargfabriken.se/sv/pa-gang/finissage-samtal-i-utstallningen/"
+          "source_url": "https://fargfabriken.se/sv/pa-gang/julmarknad-3/"
         },
         "venue": {
           "status": "confirmed",
-          "source_url": "https://fargfabriken.se/sv/pa-gang/finissage-samtal-i-utstallningen/"
+          "source_url": "https://fargfabriken.se/sv/pa-gang/julmarknad-3/"
         },
         "price": {
           "status": "confirmed",
-          "source_url": "https://fargfabriken.se/sv/pa-gang/finissage-samtal-i-utstallningen/"
+          "source_url": "https://fargfabriken.se/sv/pa-gang/julmarknad-3/"
         },
         "booking": {
-          "status": "confirmed",
-          "source_url": "https://fargfabriken.se/sv/pa-gang/finissage-samtal-i-utstallningen/"
-        }
-      },
-      "final_review": {
-        "checked_at": "2026-11-16T01:28:25+01:00",
-        "organizer_source_url": "https://fargfabriken.se/sv/pa-gang/finissage-samtal-i-utstallningen/",
-        "event_status": "scheduled",
-        "booking_status": "required_unverified",
-        "notes": "Current organizer listing reviewed. Ticket link is not proof of remaining inventory."
-      },
-      "event_start": "2026-11-21T14:00:00+01:00"
-    },
-    {
-      "title": "Lane 8 — This Never Happened",
-      "dates": "Fri 20 Nov · 20:00–00:00 · 18+",
-      "url": "https://www.fallan.nu/whats-on/lane-8",
-      "venue": "BAR15 / Fållan, Hallgränd 19",
-      "price": "Current ticket price unverified",
-      "booking": "Ticket link listed; current inventory unverified",
-      "description": "A melodic electronic night with a no-recording policy: phones and cameras are secured or disabled on entry. The appeal is sustained attention to music and the room.",
-      "image_verified": false,
-      "verification": {
-        "checked_at": "2026-11-16T01:28:25+01:00",
-        "date": {
-          "status": "confirmed",
-          "source_url": "https://www.fallan.nu/whats-on/lane-8"
-        },
-        "venue": {
-          "status": "confirmed",
-          "source_url": "https://www.fallan.nu/whats-on/lane-8"
-        },
-        "price": {
           "status": "unknown",
-          "source_url": "https://www.fallan.nu/whats-on/lane-8",
-          "note": "Not established by the current organizer page; confirm directly before booking."
-        },
-        "booking": {
-          "status": "confirmed",
-          "source_url": "https://www.fallan.nu/whats-on/lane-8"
+          "source_url": "https://fargfabriken.se/sv/pa-gang/julmarknad-3/",
+          "note": "Ticket inventory not independently accessible"
         }
       },
       "final_review": {
-        "checked_at": "2026-11-16T01:28:25+01:00",
-        "organizer_source_url": "https://www.fallan.nu/whats-on/lane-8",
+        "checked_at": "2026-11-17T21:27:00+01:00",
+        "organizer_source_url": "https://fargfabriken.se/sv/pa-gang/julmarknad-3/",
         "event_status": "scheduled",
         "booking_status": "required_unverified",
-        "notes": "Current organizer listing reviewed. Ticket link is not proof of remaining inventory."
+        "notes": "Dated original organizer listing checked 17 November; no live seat claim."
       },
-      "event_start": "2026-11-20T20:00:00+01:00"
-    },
-    {
-      "title": "En Hemlig Artist #12 — the artist is revealed on stage",
-      "dates": "Fri 20 Nov · doors 19:00 · 18+",
-      "url": "https://www.fallan.nu/whats-on/en-hemlig-artist-12",
-      "venue": "Fållan, Hallgränd 19",
-      "price": "100 SEK + service fee",
-      "booking": "Ticket link listed; current availability unverified",
-      "description": "Take a chance on a concert without knowing the performer. Best if the surprise itself appeals; the mystery does not establish musical fit.",
-      "image_verified": false,
-      "verification": {
-        "checked_at": "2026-11-16T01:28:25+01:00",
-        "date": {
-          "status": "confirmed",
-          "source_url": "https://www.fallan.nu/whats-on/en-hemlig-artist-12"
-        },
-        "venue": {
-          "status": "confirmed",
-          "source_url": "https://www.fallan.nu/whats-on/en-hemlig-artist-12"
-        },
-        "price": {
-          "status": "confirmed",
-          "source_url": "https://www.fallan.nu/whats-on/en-hemlig-artist-12"
-        },
-        "booking": {
-          "status": "confirmed",
-          "source_url": "https://www.fallan.nu/whats-on/en-hemlig-artist-12"
-        }
-      },
-      "final_review": {
-        "checked_at": "2026-11-16T01:28:25+01:00",
-        "organizer_source_url": "https://www.fallan.nu/whats-on/en-hemlig-artist-12",
-        "event_status": "scheduled",
-        "booking_status": "required_unverified",
-        "notes": "Current organizer listing reviewed. Ticket link is not proof of remaining inventory."
-      },
-      "event_start": "2026-11-20T19:00:00+01:00"
+      "event_start": "2026-12-05T11:00:00+01:00",
+      "first_seen_issue": "TEST-007",
+      "new_discovery_verified": true
     },
     {
       "title": "Myriam Diatta — creative work from your political body",
@@ -398,7 +286,7 @@
       "description": "A reading and conversation with Myriam Diatta and Maryam Fanni about creative practice, embodied knowledge and the gap between values and everyday work.",
       "image_verified": false,
       "verification": {
-        "checked_at": "2026-11-16T01:28:25+01:00",
+        "checked_at": "2026-11-17T21:27:00+01:00",
         "date": {
           "status": "confirmed",
           "source_url": "https://indexfoundation.se/talks-and-events/bookshop-situation-series-myriam-diatta-doing-creative-work-from-your-political-body"
@@ -419,228 +307,18 @@
         }
       },
       "final_review": {
-        "checked_at": "2026-11-16T01:28:25+01:00",
+        "checked_at": "2026-11-17T21:27:00+01:00",
         "organizer_source_url": "https://indexfoundation.se/talks-and-events/bookshop-situation-series-myriam-diatta-doing-creative-work-from-your-political-body",
         "event_status": "scheduled",
         "booking_status": "unknown",
         "notes": "Event date and speakers listed; price and registration not stated."
       },
-      "event_start": "2026-11-27T18:00:00+01:00"
+      "event_start": "2026-11-27T18:00:00+01:00",
+      "first_seen_issue": "TEST-006",
+      "new_discovery_verified": false
     }
   ],
   "worth_reconsidering": [
-    {
-      "title": "DEN FULE — Scandinavian folk across borders",
-      "dates": "Wed 18 Nov · doors 18:30; live 20:00",
-      "url": "https://reimersholmehotel.se/event/den-fule/",
-      "venue": "Reimersholme Hotel, Reimersholmsgatan 5",
-      "price": "Price unverified",
-      "booking": "Tickets linked; remaining places unverified",
-      "description": "An established Scandinavian folk group with world-music influences and a new album planned this autumn. An intimate live alternative to a large concert.",
-      "image_verified": false,
-      "verification": {
-        "checked_at": "2026-11-16T01:28:25+01:00",
-        "date": {
-          "status": "confirmed",
-          "source_url": "https://reimersholmehotel.se/event/den-fule/"
-        },
-        "venue": {
-          "status": "confirmed",
-          "source_url": "https://reimersholmehotel.se/event/den-fule/"
-        },
-        "price": {
-          "status": "unknown",
-          "source_url": "https://reimersholmehotel.se/event/den-fule/",
-          "note": "Not established by the current organizer page; confirm directly before booking."
-        },
-        "booking": {
-          "status": "confirmed",
-          "source_url": "https://reimersholmehotel.se/event/den-fule/"
-        }
-      },
-      "final_review": {
-        "checked_at": "2026-11-16T01:28:25+01:00",
-        "organizer_source_url": "https://reimersholmehotel.se/event/den-fule/",
-        "event_status": "scheduled",
-        "booking_status": "required_unverified",
-        "notes": "Current organizer listing reviewed. Ticket link is not proof of remaining inventory."
-      },
-      "event_start": "2026-11-18T20:00:00+01:00",
-      "first_seen_issue": "004"
-    },
-    {
-      "title": "Asbest Inc + ARMOURS — synths and live projections",
-      "dates": "Thu 19 Nov · doors 18:30; acts 20:00 and 21:00",
-      "url": "https://reimersholmehotel.se/en/event/asbest-inc-armours/",
-      "venue": "Reimersholme Hotel, Reimersholmsgatan 5",
-      "price": "Free",
-      "booking": "Free entry; door capacity not guaranteed",
-      "description": "An electro-industrial album release shares the bill with ARMOURS’ live debut, old synthesizers and live-mixed projections.",
-      "image_verified": false,
-      "verification": {
-        "checked_at": "2026-11-16T01:28:25+01:00",
-        "date": {
-          "status": "confirmed",
-          "source_url": "https://reimersholmehotel.se/en/event/asbest-inc-armours/"
-        },
-        "venue": {
-          "status": "confirmed",
-          "source_url": "https://reimersholmehotel.se/en/event/asbest-inc-armours/"
-        },
-        "price": {
-          "status": "confirmed",
-          "source_url": "https://reimersholmehotel.se/en/event/asbest-inc-armours/"
-        },
-        "booking": {
-          "status": "confirmed",
-          "source_url": "https://reimersholmehotel.se/en/event/asbest-inc-armours/"
-        }
-      },
-      "final_review": {
-        "checked_at": "2026-11-16T01:28:25+01:00",
-        "organizer_source_url": "https://reimersholmehotel.se/en/event/asbest-inc-armours/",
-        "event_status": "scheduled",
-        "booking_status": "not_required",
-        "notes": "Current organizer listing reviewed. Ticket link is not proof of remaining inventory."
-      },
-      "event_start": "2026-11-19T20:00:00+01:00",
-      "first_seen_issue": "004"
-    },
-    {
-      "title": "Sound of Stockholm — Saturday programme",
-      "dates": "Sat 21 Nov · festival site: doors 17:30, first set 18:00; venue page says 19:00",
-      "url": "https://soundofstockholm.se/",
-      "venue": "Fylkingen, Saltmätargatan 2",
-      "price": "250 SEK; 150 SEK reduced on venue listing",
-      "booking": "Tickets linked; timing conflict — check before going",
-      "description": "Anna Fitoussi and Adele Kosman, Farzané, Lisa Ullén with John Chantler, and eurodyke. A concentrated evening of experimental sound, voice and improvisation.",
-      "image_verified": false,
-      "verification": {
-        "checked_at": "2026-11-16T01:28:25+01:00",
-        "date": {
-          "status": "unknown",
-          "source_url": "https://soundofstockholm.se/",
-          "note": "Not established by the current organizer page; Organizer and venue list conflicting start times. Festival site lists 18:00 first set; Fylkingen event header lists 19:00. No single start asserted."
-        },
-        "venue": {
-          "status": "confirmed",
-          "source_url": "https://soundofstockholm.se/"
-        },
-        "price": {
-          "status": "confirmed",
-          "source_url": "https://soundofstockholm.se/"
-        },
-        "booking": {
-          "status": "confirmed",
-          "source_url": "https://soundofstockholm.se/"
-        }
-      },
-      "final_review": {
-        "checked_at": "2026-11-16T01:28:25+01:00",
-        "organizer_source_url": "https://soundofstockholm.se/",
-        "event_status": "scheduled",
-        "booking_status": "required_unverified",
-        "notes": "Organizer and venue list conflicting start times. Festival site lists 18:00 first set; Fylkingen event header lists 19:00. No single start asserted."
-      },
-      "schedule_note": "Sat 21 Nov · festival site: doors 17:30, first set 18:00; venue page says 19:00",
-      "first_seen_issue": "004"
-    },
-    {
-      "title": "Aliquī — deep listening and visual improvisation",
-      "dates": "Thu 26 Nov · bar 19:00; performance 19:30",
-      "url": "https://www.fylkingen.se/en/events/aliqui",
-      "venue": "Fylkingen, Saltmätargatan 2",
-      "price": "200 SEK; 120 SEK members + friends",
-      "booking": "Tickets at the door; capacity not confirmed",
-      "description": "Helene Berg, Paul Pignon, Ida Lundén, Thomas Bjelkeborn and guests explore the meeting of sound, image and space. A good fit for an unpredictable, absorbing evening.",
-      "image_verified": true,
-      "verification": {
-        "checked_at": "2026-11-16T01:28:25+01:00",
-        "date": {
-          "status": "confirmed",
-          "source_url": "https://www.fylkingen.se/en/events/aliqui"
-        },
-        "venue": {
-          "status": "confirmed",
-          "source_url": "https://www.fylkingen.se/en/events/aliqui"
-        },
-        "price": {
-          "status": "confirmed",
-          "source_url": "https://www.fylkingen.se/en/events/aliqui"
-        },
-        "booking": {
-          "status": "confirmed",
-          "source_url": "https://www.fylkingen.se/en/events/aliqui"
-        }
-      },
-      "final_review": {
-        "checked_at": "2026-11-16T01:28:25+01:00",
-        "organizer_source_url": "https://www.fylkingen.se/en/events/aliqui",
-        "event_status": "scheduled",
-        "booking_status": "required_unverified",
-        "notes": "Current organizer listing reviewed. Ticket link is not proof of remaining inventory."
-      },
-      "event_start": "2026-11-26T19:30:00+01:00",
-      "first_seen_issue": "004",
-      "image_url": "https://www.fylkingen.se/_next/image?url=%2Fmedia%2Fsites%252Fclvuuu5cs0001xwfc7ne538fo%252Fmedia%252Fdb20cec9-e78d-4e58-a2f7-274f9e06d656-HeleneBergportratt.jpg&w=3840&q=75",
-      "image_source_url": "https://www.fylkingen.se/en/events/aliqui",
-      "image_alt": "Artist Helene Berg with an owl sculpture; participant portrait supplied on the Aliquī event page.",
-      "image_identity_review": {
-        "event_match": true,
-        "reviewer": "Editorial assistant; organizer-page association and local visual inspection",
-        "source_page": "https://www.fylkingen.se/en/events/aliqui",
-        "checked_at": "2026-11-16T01:28:25+01:00",
-        "notes": "Authentic participant photograph published on the exact 2026 event page; not represented as a photograph of a future performance. Artist Helene Berg with an owl sculpture; participant portrait supplied on the Aliquī event page."
-      }
-    },
-    {
-      "title": "Salla Salazar — a phone-free listening session",
-      "dates": "Fri 27 Nov · 18:00–21:00",
-      "url": "https://stockholm.fotografiska.com/en/events/listening-session-salla-salazar-the-soundtrack-to-a-life",
-      "venue": "Fotografiska Studio, floor 2, Stadsgårdshamnen 22",
-      "price": "Included with regular admission; free for members; admission amount varies",
-      "booking": "Limited seats; advance booking recommended",
-      "description": "Salla Salazar shares complete songs and the memories behind them. A seated, phone-free format that puts shared listening ahead of spectacle.",
-      "image_verified": true,
-      "verification": {
-        "checked_at": "2026-11-16T01:28:25+01:00",
-        "date": {
-          "status": "confirmed",
-          "source_url": "https://stockholm.fotografiska.com/en/events/listening-session-salla-salazar-the-soundtrack-to-a-life"
-        },
-        "venue": {
-          "status": "confirmed",
-          "source_url": "https://stockholm.fotografiska.com/en/events/listening-session-salla-salazar-the-soundtrack-to-a-life"
-        },
-        "price": {
-          "status": "confirmed",
-          "source_url": "https://stockholm.fotografiska.com/en/events/listening-session-salla-salazar-the-soundtrack-to-a-life"
-        },
-        "booking": {
-          "status": "confirmed",
-          "source_url": "https://stockholm.fotografiska.com/en/events/listening-session-salla-salazar-the-soundtrack-to-a-life"
-        }
-      },
-      "final_review": {
-        "checked_at": "2026-11-16T01:28:25+01:00",
-        "organizer_source_url": "https://stockholm.fotografiska.com/en/events/listening-session-salla-salazar-the-soundtrack-to-a-life",
-        "event_status": "scheduled",
-        "booking_status": "required_unverified",
-        "notes": "Current organizer listing reviewed. Ticket link is not proof of remaining inventory."
-      },
-      "event_start": "2026-11-27T18:00:00+01:00",
-      "first_seen_issue": "004",
-      "image_url": "https://cdn.sanity.io/images/2xi539qp/production/f90f2827b3bc91616ae3b05ce97210dfce71d2eb-3264x2448.jpg?rect=408,0,2448,2448&w=750&h=750&q=75&auto=format",
-      "image_source_url": "https://stockholm.fotografiska.com/en/events/listening-session-salla-salazar-the-soundtrack-to-a-life",
-      "image_alt": "Salla Salazar event photograph supplied on Fotografiska’s listening-session page.",
-      "image_identity_review": {
-        "event_match": true,
-        "reviewer": "Editorial assistant; organizer-page association and local visual inspection",
-        "source_page": "https://stockholm.fotografiska.com/en/events/listening-session-salla-salazar-the-soundtrack-to-a-life",
-        "checked_at": "2026-11-16T01:28:25+01:00",
-        "notes": "Authentic participant photograph published on the exact 2026 event page; not represented as a photograph of a future performance. Salla Salazar event photograph supplied on Fotografiska’s listening-session page."
-      }
-    },
     {
       "title": "Masangue Maracatu & guests — Brazilian percussion",
       "dates": "Sat 28 Nov · doors 18:30; live 20:00; DJ 22:00",
@@ -651,7 +329,7 @@
       "description": "Maracatu, ijexá, funk and guests in a rhythm-led night with room for dancing. A lively option if you want to feel involved rather than sit and observe.",
       "image_verified": false,
       "verification": {
-        "checked_at": "2026-11-16T01:28:25+01:00",
+        "checked_at": "2026-11-17T21:27:00+01:00",
         "date": {
           "status": "confirmed",
           "source_url": "https://reimersholmehotel.se/event/masangue-maracatu-gaster/"
@@ -670,7 +348,7 @@
         }
       },
       "final_review": {
-        "checked_at": "2026-11-16T01:28:25+01:00",
+        "checked_at": "2026-11-17T21:27:00+01:00",
         "organizer_source_url": "https://reimersholmehotel.se/event/masangue-maracatu-gaster/",
         "event_status": "scheduled",
         "booking_status": "required_unverified",
@@ -691,7 +369,7 @@
       "description": "A clandestine theatrical world, but both dates are currently sold out. Kept here as unavailable, not a bookable recommendation.",
       "image_verified": false,
       "verification": {
-        "checked_at": "2026-11-16T01:28:25+01:00",
+        "checked_at": "2026-11-17T21:27:00+01:00",
         "date": {
           "status": "confirmed",
           "source_url": "https://kontrar.se/en/show/lll/"
@@ -710,7 +388,7 @@
         }
       },
       "final_review": {
-        "checked_at": "2026-11-16T01:28:25+01:00",
+        "checked_at": "2026-11-17T21:27:00+01:00",
         "organizer_source_url": "https://kontrar.se/en/show/lll/",
         "event_status": "scheduled",
         "booking_status": "sold_out",
@@ -720,29 +398,28 @@
     }
   ],
   "research_coverage": {
-    "checked_at": "2026-11-16T01:28:25+01:00",
+    "checked_at": "2026-11-17T21:27:00+01:00",
     "sources_reviewed": [
-      "Reimersholme Hotel",
       "Fylkingen",
-      "Fotografiska",
-      "Lumen Project",
-      "Konträr",
       "Accelerator",
-      "Färgfabriken",
-      "Fållan",
-      "Weld",
-      "Bonniers Konsthall",
+      "Fotografiska",
       "Index",
+      "Reimersholme Hotel",
+      "Konträr",
+      "Fållan",
+      "Stadsgårdsterminalen / Kollektivet Livet",
+      "Färgfabriken",
+      "Lumen Project",
       "Visit Stockholm",
-      "Sound of Stockholm",
-      "Luma Stockholm"
+      "Nattljud"
     ],
     "limitations": [
-      "MDT calendar fetch exceeded tool content limit; excluded rather than assumed current.",
-      "Luma discoveries had unclear year/time or historic text and were not included without confirmation.",
-      "Bonniers galleries currently closed; next opening outside issue window.",
-      "Lumen next listed future event is February 2027, outside this issue window."
+      "A select set of 12 source domains was checked for this rehearsal, not a complete all-39 source scan.",
+      "Stadsgårdsterminalen Skaparverkstad is 21 November, outside this issue and excluded.",
+      "Eken Marknad's Fållan listing contains conflicting calendar text; excluded pending clarification.",
+      "Lumen's next published event is in February 2027, beyond this window.",
+      "Photograph identity review timestamps from TEST-006 are preserved honestly; newly downloaded image and rendered visuals must be validated by CI."
     ],
-    "duplicate_check": "Compared with Issue #004; previously included events placed in Worth reconsidering. Newly researched additions are not asserted to be absent from all older issues."
+    "duplicate_check": "Compared against owner-only TEST-006; previously found top picks and Index talk are not labeled first discoveries. New event selections from official public calendars."
   }
 }
