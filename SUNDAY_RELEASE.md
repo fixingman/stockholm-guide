@@ -97,3 +97,11 @@ This guard is called by the private mail agent; it is not a transport-level lock
 on the Gmail connector. End-to-end Inbox delivery remains unproven until an
 actual authorized staged release completes. Do not equate historical-fixture CI
 with that proof.
+
+## Featured-image performance optimization (17 November 2026)
+
+Before rendering a newly committed fresh issue, the no-email GitHub release gate now runs `optimize_issue_images.py` to create an **ephemeral** `release/optimized-issue.json`. It fetches each verified original featured photograph, tries smaller variants from the **same organizer or image-CDN host** (supported WordPress, Sanity and Next.js resize URL conventions), and compares decoded pixels to reject unrelated or cropped images. It prefers images around 1024px wide / 350 KB, and only switches when the source-hosted variant is sufficiently smaller and its identity matches. The committed source issue and original image metadata remain unmodified; successful variants retain `image_original_url` and optimization evidence. The renderer, delivery guard, browser QA, artifact issue JSON, and email must all use the **same optimized output**.
+
+If a host cannot serve a matching smaller original, the pipeline keeps the verified original and emits the existing `large_image` warning rather than making a broken link or silently copying copyrighted imagery. A warning is **not** proof that the photo was optimized. An editor can select a different organizer-supported size where available. Separately, **explicitly authorized** hosted copies produced by `image_pipeline.prepare()` are constrained to roughly 1024×800 pixels with a JPEG compression budget; unapproved organizer photos are never rehosted automatically.
+
+All existing three-photo identity, anonymous HTTPS image loading, zero-fallback, responsive, and images-enabled Chromium requirements remain in force. No-email regression tests cover URL host preservation, image similarity, fallback, and idempotence.
