@@ -578,6 +578,22 @@
         "unusual thematic social or dance nights"
       ],
       "editorial_instructions": "Review upcoming public events within the rolling 14-day window during Saturday preparation and fresh Sunday research. Follow through to original organizer listings for dates, exact times, location, price, booking, age requirements and authentic images; exclude past events, private hire listings and generic venue marketing. Deduplicate against other registered sources and only recommend events with strong experiential fit. Confirm a current dated public programme on organizer/venue/ticket pages; if no public dates, report no confirmed candidate rather than inventing one. Website currently exposes an undated-year March 15 historical listing; this MUST NOT be treated as an upcoming event without fresh independently dated organizer/ticket evidence."
+    },
+    {
+      "id": "selam-music",
+      "name": "Selam Music",
+      "category": "global music / international concerts / festivals / club events / intercultural programming",
+      "official_calendar_url": "https://selam.se/events/",
+      "official_home_url": "https://selam.se/",
+      "discovery_priority": "recurring",
+      "editorial_fit": [
+        "live African, Latin American and Caribbean music",
+        "international and cross-cultural concerts",
+        "Selam Festival Stockholm",
+        "distinctive world music and dance-oriented club nights",
+        "new Selam Stockholm Marievik venue programme"
+      ],
+      "editorial_instructions": "Check Selam's official event calendar and current announcements on both Saturday preparation and Sunday discovery. Prioritize confirmed Stockholm-area dates and newly announced Selam Stockholm / Marievik performances; note significant future dates beyond the 14-day issue window as advance-booking leads when editorially useful. Selam produces events in other cities and abroad: verify the actual city and venue of each listing, and exclude non-Stockholm performances from the Stockholm edition unless explicitly relevant. Verify year, time, lineup, pricing, ticket status and actual organizer/venue listing, especially when an old event remains indexed. Cross-check partner venue calendars, deduplicate overlap with other sources and avoid treating a festival announcement without a confirmed date as a current bookable event. Select for musical and cultural distinctiveness, not routine concert volume."
     }
   ],
   "source_diversity_policy": {
