@@ -1,0 +1,356 @@
+{
+  "schema_version": 1,
+  "draft_status": "incomplete_research_not_release_ready",
+  "issue_number": "005-DRAFT",
+  "date_range": "22 November–5 December 2026",
+  "draft_created_at": "2026-11-21T15:19:00+01:00",
+  "source_commit_sha": "6460b71199a012e8c0d7e97323964ae8e1770622",
+  "intro": "Research-stage selection spanning experimental club music, psychedelic performance, participatory listening, design, and closing exhibitions.",
+  "disclaimer": "Saturday research leads only. Not final editorial verification or a ticket-availability claim. No email is authorized.",
+  "top3": [
+    {
+      "title": "CHIMERA / EVOLVER: Emma DJ + Keiska + DJ Haydn",
+      "dates": "Fri 27 Nov · 21:00",
+      "url": "https://www.fylkingen.se/en/events",
+      "venue": "Fylkingen, Stockholm",
+      "price": "250 SEK; 180 SEK members",
+      "booking": "Organizer listing found; live capacity and checkout not independently verified",
+      "description": "An experimental club collaboration with live sets and extended late-night programming.",
+      "category": "experimental club",
+      "verification": {
+        "checked_at": "2026-11-21T15:19:00+01:00",
+        "source_url": "https://www.fylkingen.se/en/events",
+        "status": "candidate_public_listing",
+        "booking_status": "unverified"
+      },
+      "image_verified": false
+    },
+    {
+      "title": "Träden + Homegrown — psychedelic improvisation",
+      "dates": "Sun 29 Nov · doors 19:00",
+      "url": "https://stadsgardsterminalen.com/event/traden-homegrown/",
+      "venue": "Kollektivet Livet, Lilla Scen",
+      "price": "250–270 SEK",
+      "booking": "Organizer listing found; live capacity and checkout not independently verified",
+      "description": "Psychedelic rock, drone and improvisation from the lineage of Träd Gräs och Stenar.",
+      "category": "live music",
+      "verification": {
+        "checked_at": "2026-11-21T15:19:00+01:00",
+        "source_url": "https://stadsgardsterminalen.com/event/traden-homegrown/",
+        "status": "candidate_public_listing",
+        "booking_status": "unverified"
+      },
+      "image_verified": false
+    },
+    {
+      "title": "Listening Session: Salla Salazar — The soundtrack to a life",
+      "dates": "Fri 27 Nov · 18:00–21:00",
+      "url": "https://stockholm.fotografiska.com/en/events",
+      "venue": "Fotografiska Stockholm",
+      "price": "Price not verified",
+      "booking": "Organizer listing found; live capacity and checkout not independently verified",
+      "description": "An intimate, phone-free listening experience.",
+      "category": "participatory listening",
+      "verification": {
+        "checked_at": "2026-11-21T15:19:00+01:00",
+        "source_url": "https://stockholm.fotografiska.com/en/events",
+        "status": "candidate_public_listing",
+        "booking_status": "unverified"
+      },
+      "image_verified": false
+    }
+  ],
+  "new_discoveries": [
+    {
+      "title": "Changing Landscape, Evolving Experiences",
+      "dates": "Sun 29 Nov · 16:00",
+      "url": "https://www.fylkingen.se/en/events",
+      "venue": "Fylkingen",
+      "price": "150 SEK; 80 SEK members",
+      "booking": "Organizer listing found; live capacity and checkout not independently verified",
+      "description": "Experimental sound/performance programme.",
+      "category": "experimental performance",
+      "verification": {
+        "checked_at": "2026-11-21T15:19:00+01:00",
+        "source_url": "https://www.fylkingen.se/en/events",
+        "status": "candidate_public_listing",
+        "booking_status": "unverified"
+      },
+      "image_verified": false
+    },
+    {
+      "title": "CNDNSD",
+      "dates": "Fri 4 Dec · 19:00",
+      "url": "https://www.fylkingen.se/en/events",
+      "venue": "Fylkingen",
+      "price": "200 SEK; 150 SEK members",
+      "booking": "Organizer listing found; live capacity and checkout not independently verified",
+      "description": "Contemporary experimental music event.",
+      "category": "experimental music",
+      "verification": {
+        "checked_at": "2026-11-21T15:19:00+01:00",
+        "source_url": "https://www.fylkingen.se/en/events",
+        "status": "candidate_public_listing",
+        "booking_status": "unverified"
+      },
+      "image_verified": false
+    },
+    {
+      "title": "EMS Kursavslutningskonsert",
+      "dates": "Tue 24 Nov · 19:00",
+      "url": "https://www.fylkingen.se/en/events",
+      "venue": "Fylkingen",
+      "price": "Free",
+      "booking": "Organizer listing found; live capacity and checkout not independently verified",
+      "description": "Electronic music course-ending performance.",
+      "category": "electronic music",
+      "verification": {
+        "checked_at": "2026-11-21T15:19:00+01:00",
+        "source_url": "https://www.fylkingen.se/en/events",
+        "status": "candidate_public_listing",
+        "booking_status": "unverified"
+      },
+      "image_verified": false
+    },
+    {
+      "title": "Honeymilk + Shy Away",
+      "dates": "Wed 25 Nov · doors 19:00",
+      "url": "https://stadsgardsterminalen.com/event/honeymilk/",
+      "venue": "Kollektivet Livet, Lilla Scen",
+      "price": "120–140 SEK",
+      "booking": "Organizer listing found; live capacity and checkout not independently verified",
+      "description": "Psychedelic-tinged indie and guitar pop.",
+      "category": "live music",
+      "verification": {
+        "checked_at": "2026-11-21T15:19:00+01:00",
+        "source_url": "https://stadsgardsterminalen.com/event/honeymilk/",
+        "status": "candidate_public_listing",
+        "booking_status": "unverified"
+      },
+      "image_verified": false
+    },
+    {
+      "title": "Per Persson & Nya Packet + Sand & Hallander",
+      "dates": "Fri 27 Nov · doors 19:00",
+      "url": "https://stadsgardsterminalen.com/event/per-persson-nya-packet/",
+      "venue": "Kollektivet Livet, Stora Scen",
+      "price": "320–370 SEK",
+      "booking": "Organizer listing found; live capacity and checkout not independently verified",
+      "description": "Swedish folk-rock songwriting concert.",
+      "category": "live music",
+      "verification": {
+        "checked_at": "2026-11-21T15:19:00+01:00",
+        "source_url": "https://stadsgardsterminalen.com/event/per-persson-nya-packet/",
+        "status": "candidate_public_listing",
+        "booking_status": "unverified"
+      },
+      "image_verified": false
+    },
+    {
+      "title": "Aural Onsdag: Roberto N Peyre",
+      "dates": "Wed 2 Dec · 19:00",
+      "url": "https://reimersholmehotel.se/en/",
+      "venue": "Reimersholme Hotel",
+      "price": "Price not verified",
+      "booking": "Organizer listing found; live capacity and checkout not independently verified",
+      "description": "Aural Wednesday programme; detailed performance format to verify.",
+      "category": "experimental music",
+      "verification": {
+        "checked_at": "2026-11-21T15:19:00+01:00",
+        "source_url": "https://reimersholmehotel.se/en/",
+        "status": "candidate_public_listing",
+        "booking_status": "unverified"
+      },
+      "image_verified": false
+    },
+    {
+      "title": "Congolese Super Night",
+      "dates": "Fri 27 Nov · doors 18:30",
+      "url": "https://reimersholmehotel.se/en/",
+      "venue": "Reimersholme Hotel",
+      "price": "Price not verified",
+      "booking": "Organizer listing found; live capacity and checkout not independently verified",
+      "description": "Congolese music night; confirm line-up and programme.",
+      "category": "world music",
+      "verification": {
+        "checked_at": "2026-11-21T15:19:00+01:00",
+        "source_url": "https://reimersholmehotel.se/en/",
+        "status": "candidate_public_listing",
+        "booking_status": "unverified"
+      },
+      "image_verified": false
+    },
+    {
+      "title": "Masangue Maracatu & gäster",
+      "dates": "Sat 28 Nov · doors 18:30",
+      "url": "https://reimersholmehotel.se/en/",
+      "venue": "Reimersholme Hotel",
+      "price": "Price not reverified",
+      "booking": "Organizer listing found; live capacity and checkout not independently verified",
+      "description": "Brazilian maracatu percussion and guests.",
+      "category": "participatory music",
+      "verification": {
+        "checked_at": "2026-11-21T15:19:00+01:00",
+        "source_url": "https://reimersholmehotel.se/en/",
+        "status": "candidate_public_listing",
+        "booking_status": "unverified"
+      },
+      "image_verified": false,
+      "first_seen_issue": "004"
+    },
+    {
+      "title": "Artist Talk: Donald Boström",
+      "dates": "Sun 22 Nov · 14:00–17:00",
+      "url": "https://stockholm.fotografiska.com/en/events",
+      "venue": "Fotografiska Stockholm",
+      "price": "Price not verified",
+      "booking": "Organizer listing found; live capacity and checkout not independently verified",
+      "description": "Artist conversation about the exhibition and book En stund på jorden.",
+      "category": "artist talk",
+      "verification": {
+        "checked_at": "2026-11-21T15:19:00+01:00",
+        "source_url": "https://stockholm.fotografiska.com/en/events",
+        "status": "candidate_public_listing",
+        "booking_status": "unverified"
+      },
+      "image_verified": false
+    },
+    {
+      "title": "Pepparkakshus 2026 — architecture of the future",
+      "dates": "From Fri 27 Nov; runs to 10 Jan 2027",
+      "url": "https://pepparkakshus.arkdes.se/en/questions-and-answers/",
+      "venue": "ArkDes, Skeppsholmen",
+      "price": "Admission not verified",
+      "booking": "Organizer listing found; live capacity and checkout not independently verified",
+      "description": "A playful architectural exhibition of gingerbread visions of the future.",
+      "category": "design exhibition",
+      "verification": {
+        "checked_at": "2026-11-21T15:19:00+01:00",
+        "source_url": "https://pepparkakshus.arkdes.se/en/questions-and-answers/",
+        "status": "candidate_public_listing",
+        "booking_status": "unverified"
+      },
+      "image_verified": false
+    },
+    {
+      "title": "Folkmusik- och danskvällar — open house",
+      "dates": "Sun 22 and 29 Nov · 18:00–23:00",
+      "url": "https://folkmusikhuset.se",
+      "venue": "Skeppsholmens Folkhögskola",
+      "price": "Free open house listed by Visit Stockholm; organizer confirmation pending",
+      "booking": "Organizer listing found; live capacity and checkout not independently verified",
+      "description": "Participatory folk dance, jam sessions and acoustic music.",
+      "category": "participatory workshop",
+      "verification": {
+        "checked_at": "2026-11-21T15:19:00+01:00",
+        "source_url": "https://folkmusikhuset.se",
+        "status": "candidate_public_listing",
+        "booking_status": "unverified"
+      },
+      "image_verified": false
+    },
+    {
+      "title": "The Kokomo Kings",
+      "dates": "Thu 3 Dec · doors 18:30",
+      "url": "https://reimersholmehotel.se/en/",
+      "venue": "Reimersholme Hotel",
+      "price": "Price not verified",
+      "booking": "Organizer listing found; live capacity and checkout not independently verified",
+      "description": "Live band at the hotel's intimate stage.",
+      "category": "live music",
+      "verification": {
+        "checked_at": "2026-11-21T15:19:00+01:00",
+        "source_url": "https://reimersholmehotel.se/en/",
+        "status": "candidate_public_listing",
+        "booking_status": "unverified"
+      },
+      "image_verified": false
+    }
+  ],
+  "worth_reconsidering": [
+    {
+      "title": "Maskinens öga i människans hand",
+      "dates": "Closes Sun 29 Nov",
+      "url": "https://stockholm.fotografiska.com/sv/utstallningar",
+      "venue": "Fotografiska Stockholm",
+      "price": "Museum admission; verify current rate",
+      "booking": "Organizer listing found; live capacity and checkout not independently verified",
+      "description": "AI-generated imagery and the changing boundary between photographic truth and fiction.",
+      "category": "photography exhibition",
+      "verification": {
+        "checked_at": "2026-11-21T15:19:00+01:00",
+        "source_url": "https://stockholm.fotografiska.com/sv/utstallningar",
+        "status": "candidate_public_listing",
+        "booking_status": "unverified"
+      },
+      "image_verified": false,
+      "last_chance": true,
+      "event_end": "2026-11-29T23:59:00+01:00",
+      "last_chance_source_url": "https://stockholm.fotografiska.com/sv/utstallningar",
+      "last_chance_verified_scope": "organizer confirms closing date; exact closing hour not verified",
+      "first_seen_issue": "unknown"
+    },
+    {
+      "title": "Lotta Antonsson — I Am Everything",
+      "dates": "Closes Sun 29 Nov",
+      "url": "https://stockholm.fotografiska.com/sv/utstallningar",
+      "venue": "Fotografiska Stockholm",
+      "price": "Museum admission; verify current rate",
+      "booking": "Organizer listing found; live capacity and checkout not independently verified",
+      "description": "An exhibition examining image culture, identity and gender.",
+      "category": "photography exhibition",
+      "verification": {
+        "checked_at": "2026-11-21T15:19:00+01:00",
+        "source_url": "https://stockholm.fotografiska.com/sv/utstallningar",
+        "status": "candidate_public_listing",
+        "booking_status": "unverified"
+      },
+      "image_verified": false,
+      "last_chance": true,
+      "event_end": "2026-11-29T23:59:00+01:00",
+      "last_chance_source_url": "https://stockholm.fotografiska.com/sv/utstallningar",
+      "last_chance_verified_scope": "organizer confirms closing date; exact closing hour not verified",
+      "first_seen_issue": "unknown"
+    }
+  ],
+  "unavailable": [],
+  "research_coverage": {
+    "registered_source_count": 40,
+    "checked_public_domains": [
+      "fylkingen.se",
+      "stockholm.fotografiska.com",
+      "stadsgardsterminalen.com",
+      "reimersholmehotel.se",
+      "pepparkakshus.arkdes.se",
+      "folkmusikhuset.se",
+      "visitstockholm.se",
+      "lumenproject.se",
+      "slakthusguiden.se",
+      "fargfabriken.se"
+    ],
+    "coverage_method": "Public web-search results and indexed organizer pages; not all 40 registry sources independently visited",
+    "inaccessible_or_unverified": [
+      "Luma Stockholm individual public events not validated",
+      "Färgfabriken closing exhibition details require direct official-page confirmation",
+      "Remaining 30 source entries not fully scanned",
+      "Prior-issue provenance for both closing Fotografiska shows not established",
+      "Exact closing hours for Fotografiska exhibitions not verified"
+    ],
+    "editorial_categories": [
+      "experimental music",
+      "participatory listening and dance",
+      "design exhibitions",
+      "photography exhibitions",
+      "artist talks",
+      "independent live music"
+    ]
+  },
+  "release_blockers": [
+    "Top 3 have no verified authentic photographs; image_verified=false",
+    "No Sunday final_review timestamps (must be real Sunday organizer review)",
+    "Individual organizer detail pages and ticket availability require Sunday validation",
+    "Historical prior-issue provenance for last-chance selections needs review",
+    "Source breadth below target of 12 distinct domains; Sunday must expand",
+    "Some source links point to organizer calendar rather than event detail"
+  ]
+}
