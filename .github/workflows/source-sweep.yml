@@ -11,6 +11,7 @@ on:
       - source_sweep.py
       - source_coverage.py
       - test_source_coverage.py
+      - test_discovery_sources.py
       - discovery_sources.json
       - .github/workflows/source-sweep.yml
   workflow_dispatch:
@@ -48,6 +49,28 @@ jobs:
                 "reachable:",r["index_reachable_count"],
                 "inaccessible:",r["index_unavailable_count"],
                 "unverified public leads:",r["total_discovered_links"])
+          PY
+      - name: Summarize all attempted sources without calling them reviewed
+        run: |
+          python - <<'PY'
+          import json,os
+          result=json.load(open("/tmp/source-probe.json"))
+          lines=[
+            "# Stockholm Guide — Full public source probe",
+            f"**{result['attempted_count']}/{result['registered_count']} sources attempted** — "
+            f"{result['index_reachable_count']} indexes reachable; "
+            f"{result['index_unavailable_count']} inaccessible; "
+            f"{result['total_discovered_links']} unverified leads.",
+            "",
+            "> Index loading is not editorial verification. Every source requires a separate source_scans review before release.",
+            "",
+            "| Source | Probe status | Leads |",
+            "|:--|:--|--:|"
+          ]
+          for src in result["sources"]:
+              lines.append(f"| {src['source_id']} | {src['probe_status']} | {len(src['candidate_links'])} |")
+          with open(os.environ["GITHUB_STEP_SUMMARY"],"a",encoding="utf-8") as out:
+              out.write("\\n".join(lines)+"\\n")
           PY
       - name: Upload complete timestamped source probe
         uses: actions/upload-artifact@v4
