@@ -1,13 +1,13 @@
 {
   "schema_version": 1,
-  "created_at": "2026-11-22T20:52:11.092998+00:00",
+  "created_at": "2026-11-22T20:53:08.197846+00:00",
   "registry_sha256": "02a3bf7e6a009bc13205c882c35e3809c37ba6425618c9dd186ee0c6a3f8bde8",
   "registered_count": 49,
   "attempted_count": 49,
   "index_reachable_count": 47,
   "index_unavailable_count": 2,
   "editorially_reviewed_count": 0,
-  "total_discovered_links": 569,
+  "total_discovered_links": 555,
   "sources": [
     {
       "source_id": "reimersholme-hotel",
@@ -25,7 +25,7 @@
           "status": "reachable",
           "page_title": "Evenemang - Reimersholme Hotel Evenemang - Reimersholme Hotel",
           "html_bytes_seen": 133947,
-          "seconds": 2.9,
+          "seconds": 3.06,
           "attempt": 1
         }
       ],
@@ -130,7 +130,7 @@
           "status": "reachable",
           "page_title": "Fylkingen Events Fylkingen Events",
           "html_bytes_seen": 276336,
-          "seconds": 1.45,
+          "seconds": 1.62,
           "attempt": 1
         }
       ],
@@ -291,8 +291,8 @@
           "http_code": 200,
           "status": "reachable",
           "page_title": "Events | Fotografiska Stockholm Events | Fotografiska Stockholm",
-          "html_bytes_seen": 236857,
-          "seconds": 0.56,
+          "html_bytes_seen": 236856,
+          "seconds": 0.61,
           "attempt": 1
         }
       ],
@@ -412,7 +412,7 @@
           "status": "reachable",
           "page_title": "Kalender | MDT MDT | Calendar",
           "html_bytes_seen": 600000,
-          "seconds": 1.07,
+          "seconds": 1.27,
           "attempt": 1
         }
       ],
@@ -524,7 +524,7 @@
           "status": "reachable",
           "page_title": "Konträr – Contemporary theatre in Stockholm",
           "html_bytes_seen": 85413,
-          "seconds": 1.11,
+          "seconds": 1.4,
           "attempt": 1
         }
       ],
@@ -544,58 +544,23 @@
           "unverified": true
         },
         {
-          "url": "https://kontrar.se/forestallning/finsk-festival-finskt-disco/",
-          "label": "FESTIVAALI VASTAKARVA: FINSKT DISCO",
-          "unverified": true
-        },
-        {
-          "url": "https://kontrar.se/forestallning/kontrar-showcase-iii-beachparty-pa-kontrar/",
-          "label": "KONTRÄR SHOWCASE III: BEACHPARTY PÅ KONTRÄR",
-          "unverified": true
-        },
-        {
-          "url": "https://kontrar.se/forestallning/kontrar-julshow-2/",
-          "label": "KONTRÄR JULSHOW",
-          "unverified": true
-        },
-        {
-          "url": "https://kontrar.se/forestallning/presentation-av-varens-program-och-gastspel-av-stina-fors-at/",
-          "label": "PRESENTATION AV VÅRENS PROGRAM OCH GÄSTSPEL AV STINA FORS (AT)",
-          "unverified": true
-        },
-        {
-          "url": "https://kontrar.se/forestallning/nakenkorens-julkonsert/",
-          "label": "NAKENKÖRENS JULKONSERT",
-          "unverified": true
-        },
-        {
-          "url": "https://kontrar.se/forestallning/fragments-samtal/",
-          "label": "FRAGMENTS SAMTAL",
-          "unverified": true
-        },
-        {
-          "url": "https://kontrar.se/forestallning/finsk-festival-neon-beige/",
-          "label": "FESTIVAALI VASTAKARVA: NEON BEIGE",
-          "unverified": true
-        },
-        {
-          "url": "https://kontrar.se/forestallning/sound-of-stockholm-18-november/",
-          "label": "SOUND OF STOCKHOLM",
-          "unverified": true
-        },
-        {
-          "url": "https://kontrar.se/forestallning/sound-of-stockholm-1718-november/",
-          "label": "SOUND OF STOCKHOLM",
-          "unverified": true
-        },
-        {
-          "url": "https://kontrar.se/forestallning/finsk-festival-finsk-karaoke/",
-          "label": "FESTIVAALI VASTAKARVA: FINSK KARAOKE",
-          "unverified": true
-        },
-        {
           "url": "https://kontrar.se/forestallning/fragments-utstallning/",
           "label": "FRAGMENTS",
+          "unverified": true
+        },
+        {
+          "url": "https://kontrar.se/forestallning/finsk-festival-vau-vau/",
+          "label": "FESTIVAALI VASTAKARVA: VAU VAU",
+          "unverified": true
+        },
+        {
+          "url": "https://kontrar.se/forestallning/presentation-av-hostens-program-och-mingel/",
+          "label": "PRESENTATION AV HÖSTENS PROGRAM OCH MINGEL",
+          "unverified": true
+        },
+        {
+          "url": "https://kontrar.se/forestallning/finsk-festival-finskt-disco/",
+          "label": "FESTIVAALI VASTAKARVA: FINSKT DISCO",
           "unverified": true
         },
         {
@@ -604,8 +569,38 @@
           "unverified": true
         },
         {
+          "url": "https://kontrar.se/forestallning/kontrar-julshow-2/",
+          "label": "KONTRÄR JULSHOW",
+          "unverified": true
+        },
+        {
+          "url": "https://kontrar.se/forestallning/finsk-festival-finsk-karaoke/",
+          "label": "FESTIVAALI VASTAKARVA: FINSK KARAOKE",
+          "unverified": true
+        },
+        {
+          "url": "https://kontrar.se/forestallning/nakenkorens-julkonsert/",
+          "label": "NAKENKÖRENS JULKONSERT",
+          "unverified": true
+        },
+        {
+          "url": "https://kontrar.se/forestallning/finsk-festival-neon-beige/",
+          "label": "FESTIVAALI VASTAKARVA: NEON BEIGE",
+          "unverified": true
+        },
+        {
+          "url": "https://kontrar.se/forestallning/kontrar-showcase-iii-international-practices-shared-presentations-conversations/",
+          "label": "KONTRÄR SHOWCASE III: INTERNATIONAL PRACTISES – SHARED PRESENTATIONS & CONVERSATIONS",
+          "unverified": true
+        },
+        {
           "url": "https://kontrar.se/forestallning/samtal-dokumentar-scenkonst/",
           "label": "SAMTAL: DOKUMENTÄR SCENKONST",
+          "unverified": true
+        },
+        {
+          "url": "https://kontrar.se/forestallning/sound-of-stockholm-17-november/",
+          "label": "SOUND OF STOCKHOLM",
           "unverified": true
         },
         {
@@ -614,13 +609,18 @@
           "unverified": true
         },
         {
+          "url": "https://kontrar.se/forestallning/programslapp-hosten-2026/",
+          "label": "PROGRAMSLÄPP HÖSTEN 2026",
+          "unverified": true
+        },
+        {
           "url": "https://kontrar.se/forestallning/slapp-av-varens-program/",
           "label": "SLÄPP AV VÅRENS PROGRAM",
           "unverified": true
         },
         {
-          "url": "https://kontrar.se/forestallning/finsk-festival-vau-vau/",
-          "label": "FESTIVAALI VASTAKARVA: VAU VAU",
+          "url": "https://kontrar.se/forestallning/presentation-av-varens-program-och-gastspel-av-stina-fors-at/",
+          "label": "PRESENTATION AV VÅRENS PROGRAM OCH GÄSTSPEL AV STINA FORS (AT)",
           "unverified": true
         }
       ],
@@ -644,7 +644,7 @@
           "status": "reachable",
           "page_title": "Weld – Independent platform for experimental processes and knowledge production",
           "html_bytes_seen": 13418,
-          "seconds": 0.63,
+          "seconds": 0.72,
           "attempt": 1
         }
       ],
@@ -699,7 +699,7 @@
           "status": "reachable",
           "page_title": "Dansens Hus | I ständig rörelse sedan 1991 Dansens Hus | I ständig rörelse sedan 1991",
           "html_bytes_seen": 222259,
-          "seconds": 0.8,
+          "seconds": 1.08,
           "attempt": 1
         }
       ],
@@ -779,7 +779,7 @@
           "status": "reachable",
           "page_title": "Kulturhuset Stadsteatern | Kulturhuset Stadsteatern",
           "html_bytes_seen": 132959,
-          "seconds": 1.32,
+          "seconds": 1.82,
           "attempt": 1
         }
       ],
@@ -899,7 +899,7 @@
           "status": "reachable",
           "page_title": "Accelerator",
           "html_bytes_seen": 35621,
-          "seconds": 0.61,
+          "seconds": 0.99,
           "attempt": 1
         }
       ],
@@ -974,7 +974,7 @@
           "status": "reachable",
           "page_title": "Bonniers Konsthall Bonniers Konsthall",
           "html_bytes_seen": 208477,
-          "seconds": 0.41,
+          "seconds": 0.57,
           "attempt": 1
         }
       ],
@@ -1054,7 +1054,7 @@
           "status": "reachable",
           "page_title": "Färgfabriken konsthall Färgfabriken konsthall",
           "html_bytes_seen": 210830,
-          "seconds": 1.68,
+          "seconds": 1.93,
           "attempt": 1
         }
       ],
@@ -1106,7 +1106,7 @@
           "status": "reachable",
           "page_title": "Stockholm International Film Festival Stockholm International Film Festival",
           "html_bytes_seen": 11798,
-          "seconds": 0.59,
+          "seconds": 0.83,
           "attempt": 1
         }
       ],
@@ -1115,6 +1115,21 @@
         "Stockholm International Film Festival Stockholm International Film Festival"
       ],
       "candidate_links": [
+        {
+          "url": "https://www.stockholmfilmfestival.se/en/festival",
+          "label": "Consent",
+          "unverified": true
+        },
+        {
+          "url": "https://www2.stockholmfilmfestival.se/",
+          "label": "www2.stockholmfilmfestival.se",
+          "unverified": true
+        },
+        {
+          "url": "https://www.stockholmfilmfestival.se/",
+          "label": "www.stockholmfilmfestival.se",
+          "unverified": true
+        },
         {
           "url": "https://www.stockholmfilmfestival.se/en/",
           "label": "Stockholms internationella filmfestival",
@@ -1139,12 +1154,27 @@
           "final_url": "https://www.stockholmfilmfestival.se/en/festival",
           "http_code": 200,
           "status": "dom_read",
-          "all_visible_anchor_count": 12,
-          "event_candidate_count": 3
+          "all_visible_anchor_count": 49,
+          "event_candidate_count": 6
         }
       ],
       "browser_status": "dom_read",
       "browser_candidate_links": [
+        {
+          "url": "https://www.stockholmfilmfestival.se/en/festival",
+          "label": "Consent",
+          "unverified": true
+        },
+        {
+          "url": "https://www2.stockholmfilmfestival.se/",
+          "label": "www2.stockholmfilmfestival.se",
+          "unverified": true
+        },
+        {
+          "url": "https://www.stockholmfilmfestival.se/",
+          "label": "www.stockholmfilmfestival.se",
+          "unverified": true
+        },
         {
           "url": "https://www.stockholmfilmfestival.se/en/",
           "label": "Stockholms internationella filmfestival",
@@ -1178,7 +1208,7 @@
           "status": "reachable",
           "page_title": "Sound of Stockholm 2026 Sound of Stockholm 2026",
           "html_bytes_seen": 260379,
-          "seconds": 0.22,
+          "seconds": 0.43,
           "attempt": 1
         }
       ],
@@ -1237,8 +1267,8 @@
           "http_code": 200,
           "status": "reachable",
           "page_title": "ANDETAG | The Breathing Museum in Stockholm ANDETAG | The Breathing Museum in Stockholm",
-          "html_bytes_seen": 108091,
-          "seconds": 0.23,
+          "html_bytes_seen": 107954,
+          "seconds": 0.28,
           "attempt": 1
         }
       ],
@@ -1308,11 +1338,6 @@
           "unverified": true
         },
         {
-          "url": "https://andetag.understory.io/checkout/7c07bc40-b7c1-4cfa-9294-8b448fca326e?eventId=6ff4e371-a458-4584-9536-d4ac3839e57e",
-          "label": "Book 20 November, Henryk Górecki, Symphony No. 3 “Symphony of Sorrowful Songs”",
-          "unverified": true
-        },
-        {
           "url": "https://andetag.understory.io/checkout/7c07bc40-b7c1-4cfa-9294-8b448fca326e?eventId=4e857854-b56f-40d6-8f41-f617c1be6ab9",
           "label": "Book 27 November, Jon Hopkins, Music for Psychedelic Therapy",
           "unverified": true
@@ -1320,6 +1345,11 @@
         {
           "url": "https://andetag.understory.io/checkout/7c07bc40-b7c1-4cfa-9294-8b448fca326e?eventId=006c99dc-dff0-4d18-8e76-30cca5e91251",
           "label": "Book 4 December, Sigur Rós, ( )",
+          "unverified": true
+        },
+        {
+          "url": "https://andetag.understory.io/checkout/7c07bc40-b7c1-4cfa-9294-8b448fca326e?eventId=a4637463-3595-4d95-bcb2-4a59df37c31e",
+          "label": "Book 11 December, Howard Blake, The Snowman",
           "unverified": true
         },
         {
@@ -1358,7 +1388,7 @@
           "status": "reachable",
           "page_title": "",
           "html_bytes_seen": 48310,
-          "seconds": 0.75,
+          "seconds": 0.87,
           "attempt": 1
         }
       ],
@@ -1580,7 +1610,7 @@
           "status": "reachable",
           "page_title": "Konsthall C",
           "html_bytes_seen": 2586,
-          "seconds": 0.77,
+          "seconds": 0.88,
           "attempt": 1
         }
       ],
@@ -1588,53 +1618,21 @@
       "page_titles": [
         "Konsthall C"
       ],
-      "candidate_links": [
-        {
-          "url": "https://www.konsthallc.se/en/program",
-          "label": "Program",
-          "unverified": true
-        },
-        {
-          "url": "https://www.konsthallc.se/en/program/kif-2026",
-          "label": "EXHIBITION 21 NOVEMBER–6 DECEMBER 2026 Who Stole the Lovely Grey Garden From the Goose?",
-          "unverified": true
-        },
-        {
-          "url": "https://www.konsthallc.se/en/program/centrifug-spring2027",
-          "label": "CENTRIFUG GALLERY 12 DECEMBER 2026 Exhibit in Centrifug Gallery",
-          "unverified": true
-        }
-      ],
+      "candidate_links": [],
       "editorial_review_status": "NOT_REVIEWED",
       "note": "Index reachability and links are NOT a reviewed event search; editor must inspect actual dated original event pages.",
       "browser_attempts": [
         {
           "url": "https://konsthallc.se/",
-          "final_url": "https://www.konsthallc.se/en",
+          "final_url": "https://www.konsthallc.se/",
           "http_code": 200,
           "status": "dom_read",
-          "all_visible_anchor_count": 13,
-          "event_candidate_count": 3
+          "all_visible_anchor_count": 0,
+          "event_candidate_count": 0
         }
       ],
       "browser_status": "dom_read",
-      "browser_candidate_links": [
-        {
-          "url": "https://www.konsthallc.se/en/program",
-          "label": "Program",
-          "unverified": true
-        },
-        {
-          "url": "https://www.konsthallc.se/en/program/kif-2026",
-          "label": "EXHIBITION 21 NOVEMBER–6 DECEMBER 2026 Who Stole the Lovely Grey Garden From the Goose?",
-          "unverified": true
-        },
-        {
-          "url": "https://www.konsthallc.se/en/program/centrifug-spring2027",
-          "label": "CENTRIFUG GALLERY 12 DECEMBER 2026 Exhibit in Centrifug Gallery",
-          "unverified": true
-        }
-      ]
+      "browser_candidate_links": []
     },
     {
       "source_id": "index",
@@ -1652,7 +1650,7 @@
           "status": "reachable",
           "page_title": "Index – The Swedish Contemporary Art Foundation Index – The Swedish Contemporary Art Foundation",
           "html_bytes_seen": 12323,
-          "seconds": 0.71,
+          "seconds": 1.17,
           "attempt": 1
         }
       ],
@@ -1722,7 +1720,7 @@
           "status": "reachable",
           "page_title": "Programme – Mint",
           "html_bytes_seen": 81428,
-          "seconds": 1.08,
+          "seconds": 1.17,
           "attempt": 1
         }
       ],
@@ -1842,7 +1840,7 @@
           "status": "reachable",
           "page_title": "Events · Lumen Project Events · Lumen Project",
           "html_bytes_seen": 23908,
-          "seconds": 0.12,
+          "seconds": 0.29,
           "attempt": 1
         }
       ],
@@ -1962,7 +1960,7 @@
           "status": "reachable",
           "page_title": "What's on – our upcoming events What's on – our upcoming events",
           "html_bytes_seen": 154533,
-          "seconds": 0.6,
+          "seconds": 0.87,
           "attempt": 1
         }
       ],
@@ -2082,7 +2080,7 @@
           "status": "reachable",
           "page_title": "Nattljud Stockholm Nattljud Stockholm",
           "html_bytes_seen": 484878,
-          "seconds": 0.95,
+          "seconds": 1.19,
           "attempt": 1
         }
       ],
@@ -2302,7 +2300,7 @@
           "http_code": 403,
           "status": "blocked",
           "error": "HTTP 403",
-          "seconds": 0.06,
+          "seconds": 0.14,
           "attempt": 1
         },
         {
@@ -2310,7 +2308,7 @@
           "http_code": 403,
           "status": "blocked",
           "error": "HTTP 403",
-          "seconds": 0.05,
+          "seconds": 0.11,
           "attempt": 2
         }
       ],
@@ -2348,7 +2346,7 @@
           "status": "reachable",
           "page_title": "Karta över evenemang i Stockholm Karta över evenemang i Stockholm",
           "html_bytes_seen": 188164,
-          "seconds": 0.19,
+          "seconds": 0.42,
           "attempt": 1
         }
       ],
@@ -2570,7 +2568,7 @@
           "status": "reachable",
           "page_title": "Events in Slakthusområdet – concerts, clubs and matches Events in Slakthusområdet – concerts, clubs and matches",
           "html_bytes_seen": 600000,
-          "seconds": 1.06,
+          "seconds": 1.31,
           "attempt": 1
         }
       ],
@@ -2795,7 +2793,7 @@
           "status": "reachable",
           "page_title": "Popular events in Stockholm · Events Calendar Popular events in Stockholm · Events Calendar",
           "html_bytes_seen": 410211,
-          "seconds": 0.89,
+          "seconds": 0.4,
           "attempt": 1
         },
         {
@@ -2815,7 +2813,7 @@
           "status": "reachable",
           "page_title": "Tech Events in Stockholm · Luma Tech Events in Stockholm · Luma",
           "html_bytes_seen": 424510,
-          "seconds": 0.49,
+          "seconds": 0.55,
           "attempt": 1
         },
         {
@@ -2825,7 +2823,7 @@
           "status": "reachable",
           "page_title": "Stockholm Design & UX Events · Events Calendar Stockholm Design & UX Events · Events Calendar",
           "html_bytes_seen": 289648,
-          "seconds": 0.68,
+          "seconds": 0.54,
           "attempt": 1
         }
       ],
@@ -2874,7 +2872,7 @@
           "final_url": "https://luma.com/discover/stockholm/arts",
           "http_code": 200,
           "status": "dom_read",
-          "all_visible_anchor_count": 20,
+          "all_visible_anchor_count": 21,
           "event_candidate_count": 1
         },
         {
@@ -2929,7 +2927,7 @@
           "status": "reachable",
           "page_title": "Events in Stockholm | Meetup Events in Stockholm | Meetup Bending Spoons",
           "html_bytes_seen": 520030,
-          "seconds": 3.25,
+          "seconds": 0.14,
           "attempt": 1
         }
       ],
@@ -3151,7 +3149,7 @@
           "status": "reachable",
           "page_title": "Evenemang - Tickster",
           "html_bytes_seen": 37614,
-          "seconds": 4.61,
+          "seconds": 0.27,
           "attempt": 1
         }
       ],
@@ -3373,7 +3371,7 @@
           "status": "reachable",
           "page_title": "Stockholm Events - Discover Upcoming Events in Stockholm Stockholm Events - Discover Upcoming Events in Stockholm",
           "html_bytes_seen": 4272,
-          "seconds": 0.15,
+          "seconds": 0.26,
           "attempt": 1
         }
       ],
@@ -3401,76 +3399,6 @@
           "url": "https://www.facebook.com/events/explore/stockholm-sweden/",
           "label": "Facebook Events",
           "unverified": true
-        },
-        {
-          "url": "https://www.svenskakyrkan.se/gustafvasa/musikprogram",
-          "label": "View",
-          "unverified": true
-        },
-        {
-          "url": "https://www.meetup.com/prata-svenska/events/316746979/",
-          "label": "View",
-          "unverified": true
-        },
-        {
-          "url": "https://www.meetup.com/japanese-chess-in-stockholm/events/317150559/",
-          "label": "View",
-          "unverified": true
-        },
-        {
-          "url": "https://www.meetup.com/intercambio/events/316539115/",
-          "label": "View",
-          "unverified": true
-        },
-        {
-          "url": "https://www.meetup.com/stockholm-art-hobby-group/events/317473455/",
-          "label": "View",
-          "unverified": true
-        },
-        {
-          "url": "https://www.meetup.com/the-writers-collective/events/317519464/",
-          "label": "View",
-          "unverified": true
-        },
-        {
-          "url": "https://www.meetup.com/stockholm-science-and-spirituality-meetup-group/events/317271854/",
-          "label": "View",
-          "unverified": true
-        },
-        {
-          "url": "https://www.meetup.com/stockholm-speakers-club/events/317157355/",
-          "label": "View",
-          "unverified": true
-        },
-        {
-          "url": "https://www.debaser.se/events/pop-culture-quiz-with-joseph-cb58e",
-          "label": "View",
-          "unverified": true
-        },
-        {
-          "url": "https://stampen.se/events/stampens-jazz-jam-free-entry-579/",
-          "label": "View",
-          "unverified": true
-        },
-        {
-          "url": "https://www.kulturhusetstadsteatern.se/konserter/lunchkonserter-med-kungliga-operan",
-          "label": "View",
-          "unverified": true
-        },
-        {
-          "url": "https://www.meetup.com/kista-culture-exchange-friend-making-meetup/events/317281817/",
-          "label": "View",
-          "unverified": true
-        },
-        {
-          "url": "https://www.meetup.com/klustret/events/317283867/",
-          "label": "View",
-          "unverified": true
-        },
-        {
-          "url": "https://www.meetup.com/stockholm-social-life/events/317482518/",
-          "label": "View",
-          "unverified": true
         }
       ],
       "editorial_review_status": "NOT_REVIEWED",
@@ -3481,8 +3409,8 @@
           "final_url": "https://stockholm-events.com/",
           "http_code": 200,
           "status": "dom_read",
-          "all_visible_anchor_count": 900,
-          "event_candidate_count": 18
+          "all_visible_anchor_count": 5,
+          "event_candidate_count": 4
         }
       ],
       "browser_status": "dom_read",
@@ -3506,76 +3434,6 @@
           "url": "https://www.facebook.com/events/explore/stockholm-sweden/",
           "label": "Facebook Events",
           "unverified": true
-        },
-        {
-          "url": "https://www.svenskakyrkan.se/gustafvasa/musikprogram",
-          "label": "View",
-          "unverified": true
-        },
-        {
-          "url": "https://www.meetup.com/prata-svenska/events/316746979/",
-          "label": "View",
-          "unverified": true
-        },
-        {
-          "url": "https://www.meetup.com/japanese-chess-in-stockholm/events/317150559/",
-          "label": "View",
-          "unverified": true
-        },
-        {
-          "url": "https://www.meetup.com/intercambio/events/316539115/",
-          "label": "View",
-          "unverified": true
-        },
-        {
-          "url": "https://www.meetup.com/stockholm-art-hobby-group/events/317473455/",
-          "label": "View",
-          "unverified": true
-        },
-        {
-          "url": "https://www.meetup.com/the-writers-collective/events/317519464/",
-          "label": "View",
-          "unverified": true
-        },
-        {
-          "url": "https://www.meetup.com/stockholm-science-and-spirituality-meetup-group/events/317271854/",
-          "label": "View",
-          "unverified": true
-        },
-        {
-          "url": "https://www.meetup.com/stockholm-speakers-club/events/317157355/",
-          "label": "View",
-          "unverified": true
-        },
-        {
-          "url": "https://www.debaser.se/events/pop-culture-quiz-with-joseph-cb58e",
-          "label": "View",
-          "unverified": true
-        },
-        {
-          "url": "https://stampen.se/events/stampens-jazz-jam-free-entry-579/",
-          "label": "View",
-          "unverified": true
-        },
-        {
-          "url": "https://www.kulturhusetstadsteatern.se/konserter/lunchkonserter-med-kungliga-operan",
-          "label": "View",
-          "unverified": true
-        },
-        {
-          "url": "https://www.meetup.com/kista-culture-exchange-friend-making-meetup/events/317281817/",
-          "label": "View",
-          "unverified": true
-        },
-        {
-          "url": "https://www.meetup.com/klustret/events/317283867/",
-          "label": "View",
-          "unverified": true
-        },
-        {
-          "url": "https://www.meetup.com/stockholm-social-life/events/317482518/",
-          "label": "View",
-          "unverified": true
         }
       ]
     },
@@ -3595,7 +3453,7 @@
           "status": "reachable",
           "page_title": "Evenemang & Biljetter – Kollektivet Livet",
           "html_bytes_seen": 156725,
-          "seconds": 1.37,
+          "seconds": 1.4,
           "attempt": 1
         }
       ],
@@ -3715,7 +3573,7 @@
           "status": "reachable",
           "page_title": "RICHTER HOLTERMANN RICHTER HOLTERMANN",
           "html_bytes_seen": 600000,
-          "seconds": 0.34,
+          "seconds": 0.52,
           "attempt": 1
         }
       ],
@@ -3767,7 +3625,7 @@
           "status": "reachable",
           "page_title": "Kommande evenemang - Stadsgårdsterminalen Kommande evenemang - Stadsgårdsterminalen",
           "html_bytes_seen": 109022,
-          "seconds": 1.05,
+          "seconds": 1.32,
           "attempt": 1
         }
       ],
@@ -3887,7 +3745,7 @@
           "status": "reachable",
           "page_title": "Program - Bio Fågel Blå Program - Bio Fågel Blå",
           "html_bytes_seen": 335365,
-          "seconds": 0.29,
+          "seconds": 0.92,
           "attempt": 1
         }
       ],
@@ -4007,7 +3865,7 @@
           "status": "reachable",
           "page_title": "Of Public Interest calendar Of Public Interest calendar",
           "html_bytes_seen": 8199,
-          "seconds": 0.17,
+          "seconds": 0.27,
           "attempt": 1
         }
       ],
@@ -4057,7 +3915,7 @@
           "http_code": 403,
           "status": "blocked",
           "error": "HTTP 403",
-          "seconds": 0.05,
+          "seconds": 0.11,
           "attempt": 1
         },
         {
@@ -4065,7 +3923,7 @@
           "http_code": 403,
           "status": "blocked",
           "error": "HTTP 403",
-          "seconds": 0.04,
+          "seconds": 0.26,
           "attempt": 2
         }
       ],
@@ -4103,7 +3961,7 @@
           "status": "reachable",
           "page_title": "Events | The Well Zone Events | The Well Zone",
           "html_bytes_seen": 600000,
-          "seconds": 0.2,
+          "seconds": 0.21,
           "attempt": 1
         }
       ],
@@ -4185,7 +4043,7 @@
           "status": "reachable",
           "page_title": "Eken Marknad — Stockholms vintage- & second hand-marknad Eken Marknad — Stockholms vintage- & second hand-marknad",
           "html_bytes_seen": 5364,
-          "seconds": 1.13,
+          "seconds": 0.41,
           "attempt": 1
         }
       ],
@@ -4225,7 +4083,7 @@
           "status": "reachable",
           "page_title": "Kalender Kalender",
           "html_bytes_seen": 372397,
-          "seconds": 1.31,
+          "seconds": 1.24,
           "attempt": 1
         }
       ],
@@ -4345,7 +4203,7 @@
           "status": "reachable",
           "page_title": "Värmeverket",
           "html_bytes_seen": 171001,
-          "seconds": 1.68,
+          "seconds": 1.78,
           "attempt": 1
         }
       ],
@@ -4445,7 +4303,7 @@
           "status": "reachable",
           "page_title": "Klubb KAPRIFOL",
           "html_bytes_seen": 5763,
-          "seconds": 0.35,
+          "seconds": 0.31,
           "attempt": 1
         }
       ],
@@ -4485,7 +4343,7 @@
           "status": "reachable",
           "page_title": "Selam |   Event",
           "html_bytes_seen": 20429,
-          "seconds": 1.82,
+          "seconds": 2.17,
           "attempt": 1
         }
       ],
@@ -4550,7 +4408,7 @@
           "status": "reachable",
           "page_title": "Kalender «  Cyklopen",
           "html_bytes_seen": 90207,
-          "seconds": 0.66,
+          "seconds": 0.81,
           "attempt": 1
         }
       ],
@@ -4620,7 +4478,7 @@
           "status": "reachable",
           "page_title": "Evenemang arkiv - Rönnells antikvariatRönnells antikvariat  Evenemang arkiv - Rönnells antikvariat",
           "html_bytes_seen": 549513,
-          "seconds": 1.18,
+          "seconds": 1.21,
           "attempt": 1
         }
       ],
@@ -4740,7 +4598,7 @@
           "status": "reachable",
           "page_title": "Filmform –\n        Calendar",
           "html_bytes_seen": 69616,
-          "seconds": 0.82,
+          "seconds": 0.88,
           "attempt": 1
         }
       ],
@@ -4809,8 +4667,8 @@
           "http_code": 200,
           "status": "reachable",
           "page_title": "FRIM - Concert Calendar Concert Calendar",
-          "html_bytes_seen": 162899,
-          "seconds": 0.25,
+          "html_bytes_seen": 162753,
+          "seconds": 0.44,
           "attempt": 1
         }
       ],
@@ -4930,7 +4788,7 @@
           "status": "reachable",
           "page_title": "Calendar | Moderna Museet Calendar | Moderna Museet",
           "html_bytes_seen": 183137,
-          "seconds": 0.78,
+          "seconds": 1.06,
           "attempt": 1
         }
       ],
@@ -5050,7 +4908,7 @@
           "status": "reachable",
           "page_title": "Events - ArkDes Events - ArkDes",
           "html_bytes_seen": 97899,
-          "seconds": 4.14,
+          "seconds": 4.18,
           "attempt": 1
         }
       ],
@@ -5165,7 +5023,7 @@
           "status": "reachable",
           "page_title": "Program hösten 2026: Tema Stadens ljus Cinemateket Stockholm Program",
           "html_bytes_seen": 311114,
-          "seconds": 1.64,
+          "seconds": 1.55,
           "attempt": 1
         }
       ],
@@ -5285,7 +5143,7 @@
           "status": "reachable",
           "page_title": "ThirdPlace · Events Calendar ThirdPlace · Events Calendar",
           "html_bytes_seen": 177872,
-          "seconds": 0.38,
+          "seconds": 0.32,
           "attempt": 1
         }
       ],
@@ -5347,7 +5205,7 @@
           "status": "reachable",
           "page_title": "Vad händer i Stockholm idag, i helgen, i veckan | Startskott Vad händer i Stockholm?",
           "html_bytes_seen": 90931,
-          "seconds": 0.46,
+          "seconds": 0.54,
           "attempt": 1
         }
       ],
