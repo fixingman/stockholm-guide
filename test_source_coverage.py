@@ -8,6 +8,7 @@ from unittest.mock import patch
 
 from source_coverage import audit
 from source_sweep import LinkExtractor, discover_links, inspect, sweep
+from source_review_checklist import build as build_review_checklist
 
 ROOT = Path(__file__).resolve().parent
 
@@ -158,6 +159,42 @@ class SourceProbeTests(unittest.TestCase):
         self.assertEqual(result["editorially_reviewed_count"], 0)
         self.assertTrue(all(x["editorial_review_status"]=="NOT_REVIEWED" for x in result["sources"]))
         self.assertEqual(len(result["sources"][1]["attempts"]), 2)
+
+
+
+class ChecklistTests(unittest.TestCase):
+    def test_handoff_has_every_source_but_no_false_reviews(self):
+        reg = registry()
+        observed = {
+            "sources": [
+                {"source_id": x["id"], "probe_status": "index_reachable",
+                 "candidate_links": [{"url": x["official_calendar_url"],
+                                      "label": x["name"], "unverified": True}]}
+                for x in reg["sources"]
+            ],
+            "created_at": datetime.now(timezone.utc).isoformat(),
+        }
+        handoff = build_review_checklist(reg, observed)
+        self.assertEqual(handoff["registry_count"], len(reg["sources"]))
+        self.assertEqual(handoff["accounted_for_count"], len(reg["sources"]))
+        self.assertEqual(len(handoff["rows"]), len(reg["sources"]))
+        self.assertEqual(len({x["source_id"] for x in handoff["rows"]}), len(reg["sources"]))
+        self.assertTrue(all(x["status"] == "NOT_REVIEWED" and x["checked_at"] is None
+                            for x in handoff["rows"]))
+        luma = next(x for x in handoff["rows"] if x["source_id"] == "luma-stockholm")
+        self.assertEqual(len(luma["required_urls"]),
+                         1 + len(reg["sources"][[x["id"] for x in reg["sources"]].index("luma-stockholm")].get("additional_discovery_urls", [])))
+        self.assertFalse(audit({
+            "issue_number": "006", "published_at": datetime.now(timezone.utc).isoformat(),
+            "research_coverage": {"source_scans": handoff["rows"]},
+        }, reg, strict=True)["ready_for_source_coverage"])
+
+    def test_stale_or_incomplete_probe_cannot_create_false_complete_checklist(self):
+        reg = registry()
+        observed = {"sources": [{"source_id": x["id"]}
+                                for x in reg["sources"][:-1]]}
+        with self.assertRaises(ValueError):
+            build_review_checklist(reg, observed)
 
 
 if __name__ == "__main__":
