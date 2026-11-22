@@ -1,1 +1,84 @@
-:root{--ink:#161616;--paper:#f2f0ea;--panel:#fcfaf5;--line:#d6d0c6;--muted:#64605a;--accent:#a14b35;--highlight:#ebe3d5;color-scheme:light}*{box-sizing:border-box}html{font-family:Arial,Helvetica,sans-serif;background:var(--paper);color:var(--ink);scroll-behavior:smooth}body{margin:0}button,input{font:inherit}button{cursor:pointer}a{color:inherit}.page{max-width:1120px;margin:0 auto;padding:34px 28px 18px}.masthead{border-top:3px solid var(--ink)}.masthead-top{display:flex;align-items:start;justify-content:space-between;padding:25px 0 23px;gap:16px}.brand{font:bold 48px/.86 Georgia,serif;text-decoration:none;letter-spacing:-2px}.brand-period{color:var(--accent)}.descriptor{font:bold 11px/1.6 'Courier New',monospace;letter-spacing:.45px;text-align:right;margin-top:8px}.edition{display:flex;justify-content:space-between;gap:16px;border-top:1px solid var(--ink);border-bottom:1px solid var(--ink);padding:14px 0;font:700 11px/1.4 'Courier New',monospace;letter-spacing:.3px}.introduction{display:flex;justify-content:space-between;align-items:end;gap:25px;padding:55px 0 45px}.eyebrow{font:700 11px/1.4 'Courier New',monospace;letter-spacing:1.5px;margin:0 0 18px}.introduction h1{font:normal clamp(47px,7.5vw,91px)/.99 Georgia,serif;letter-spacing:-3.5px;margin:0 0 22px}.introduction h1 em{font-weight:normal;color:var(--accent)}.dek{line-height:1.6;max-width:530px;font-size:15px;color:#49453f;margin:0}.count{font:700 11px/2 'Courier New',monospace;text-align:right;white-space:nowrap;margin:0 0 4px}.count span{font-weight:400;color:var(--muted)}.calendar-shell{border:1px solid var(--line);background:var(--panel);border-radius:8px;overflow:hidden;box-shadow:0 6px 26px #1d160808}.toolbar{display:flex;justify-content:space-between;gap:15px;align-items:center;padding:21px 22px 15px}.view-switch{background:#eee9df;border-radius:5px;padding:3px;display:flex}.switch{border:0;background:transparent;padding:10px 17px;border-radius:4px;font-weight:700;font-size:13px;color:#6a625a}.switch.active{background:var(--ink);color:white}.search-label{flex:1;max-width:330px}.search-label input{width:100%;border:1px solid var(--line);background:#fffdfa;border-radius:4px;padding:12px 13px;font-size:13px;outline-offset:2px}.filter-bar{display:flex;gap:8px;flex-wrap:wrap;padding:0 22px 20px}.filter{border:1px solid var(--line);background:transparent;border-radius:999px;padding:8px 13px;font-size:12px;color:#55504a}.filter.active{background:#dfd6c8;color:var(--ink);border-color:#b8ab98;font-weight:700}.month-header,.list-heading{display:flex;justify-content:space-between;align-items:center;padding:24px 23px 19px;background:var(--ink);color:#faf6ef}.month-header h2,.list-heading h2{margin:0;font:normal 32px/1.1 Georgia,serif}.month-actions{display:flex;gap:6px}.month-actions button{background:#343434;border:1px solid #666;color:#fff;font-size:24px;width:39px;height:37px;line-height:1;border-radius:4px}.month-actions button:disabled{opacity:.28;cursor:not-allowed}.week-labels,.month-grid{display:grid;grid-template-columns:repeat(7,minmax(0,1fr))}.week-labels{background:#ebe6dc;border-bottom:1px solid var(--line)}.week-labels span{text-align:center;font:700 10px/1.4 'Courier New',monospace;letter-spacing:.8px;padding:13px 3px}.month-grid{border-left:1px solid var(--line)}.calendar-day{position:relative;text-align:left;display:flex;flex-direction:column;gap:8px;min-height:115px;border:0;border-right:1px solid var(--line);border-bottom:1px solid var(--line);background:var(--panel);padding:12px 9px 11px;color:var(--ink);min-width:0}.calendar-day:not([disabled]):hover{background:#f2ebdf}.calendar-day:focus-visible{outline:3px solid var(--accent);outline-offset:-3px;z-index:1}.calendar-day.outside{background:#f6f3ed;color:#a8a093}.calendar-day.selected{background:#eee3d4;box-shadow:inset 0 0 0 2px var(--ink)}.calendar-day.today .day-number{background:var(--ink);color:white;border-radius:100%;min-width:29px;height:29px;display:inline-grid;place-items:center;padding:0 6px}.calendar-day .day-number{font:bold 12px/1.6 'Courier New',monospace;width:max-content}.calendar-day .day-events{display:flex;flex-direction:column;gap:4px;width:100%}.calendar-day .day-mini{display:block;padding:5px 6px;border-radius:3px;font-size:10px;font-weight:700;line-height:1.3;background:#e8e0d4;white-space:nowrap;text-overflow:ellipsis;overflow:hidden}.calendar-day .day-mini.pick{background:#c9d0c5}.calendar-day .day-mini.last{background:#dfc4b4}.calendar-day .day-more{font:10px/1.3 'Courier New',monospace;color:var(--muted)}.mobile-count{display:none}.day-details{padding:25px 23px 30px}.day-title,.flexible-head{border-bottom:1px solid var(--line);padding-bottom:18px;margin-bottom:5px}.day-title{display:flex;justify-content:space-between;gap:12px;align-items:center}.day-title h3{font:normal 28px/1.2 Georgia,serif;margin:0}.day-title span,.list-heading span{font:11px/1.4 'Courier New',monospace;color:var(--muted)}.list-heading span{color:#d8d1c6}#list-view .event-list{padding:12px 23px 28px}.event-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:13px;margin-top:17px}.event-card{border:1px solid var(--line);background:#fffdfa;border-radius:5px;padding:18px;min-width:0}.event-card .tags{display:flex;flex-wrap:wrap;gap:7px;margin-bottom:12px}.tag{font:700 10px/1.4 'Courier New',monospace;letter-spacing:.45px;color:#5f5042;border:1px solid #bcb3a6;padding:4px 6px;border-radius:3px}.tag.featured{border-color:#adb6a8;background:#e7ece2}.tag.closing{border-color:#cfaa93;color:#8a3b25;background:#f5e9e0}.event-card h4{font:700 18px/1.25 Arial,Helvetica,sans-serif;letter-spacing:-.35px;margin:0 0 9px}.event-card .when{font:700 12px/1.6 'Courier New',monospace;margin:0 0 7px}.event-card .where{font:12px/1.4 'Courier New',monospace;color:var(--muted);margin:0 0 10px}.event-card .description{font:13px/1.55 Arial,Helvetica,sans-serif;color:#4e4942;margin:0 0 12px}.event-card .booking{font:12px/1.5 Arial,Helvetica,sans-serif;color:#5d5850;margin:0 0 14px}.event-card a{font:700 12px/1.5 'Courier New',monospace;text-decoration:underline;text-underline-offset:3px}.empty{padding:22px;border:1px dashed var(--line);color:var(--muted);grid-column:1/-1;font-size:13px}.flexible-section{border-top:1px solid var(--line);background:#f2eee7;padding:28px 23px 35px}.flexible-head .eyebrow{margin-bottom:10px}.flexible-head h2{font:normal 34px/1.1 Georgia,serif;margin:0 0 11px}.flexible-head p:last-child{max-width:690px;font:13px/1.6 Arial,sans-serif;color:var(--muted);margin:0}.flexible-section .event-list{margin-top:21px}footer{display:flex;justify-content:space-between;align-items:start;gap:20px;border-top:1px solid var(--ink);padding:23px 0 10px;margin-top:42px;font:10px/1.6 'Courier New',monospace;color:var(--muted)}footer span:last-child{text-align:right}.noscript{padding:28px}.noscript article{border-bottom:1px solid #ddd;padding:10px 0}.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}[hidden]{display:none!important}@media(max-width:750px){.page{padding:12px 12px 20px}.masthead-top{padding-top:22px}.brand{font-size:37px}.descriptor{font-size:9px}.introduction{padding:37px 4px 34px}.introduction h1{letter-spacing:-1.9px}.count{display:none}.toolbar{padding:17px 14px 12px}.filter-bar{padding:0 14px 15px}.month-header,.list-heading{padding:18px 14px}.calendar-day{min-height:76px;padding:7px 4px;gap:3px}.calendar-day .day-mini{display:none}.calendar-day .day-events{display:none}.mobile-count{display:inline-flex;background:#e4dacc;border-radius:50%;font:700 10px/1;height:23px;min-width:23px;align-items:center;justify-content:center;padding:0 5px}.day-details{padding:19px 14px}.flexible-section{padding:23px 14px}.event-list{grid-template-columns:1fr}#list-view .event-list{padding:13px 14px}footer{flex-direction:column;gap:7px}footer span:last-child{text-align:left}}@media(max-width:450px){.descriptor{font-size:8px;line-height:1.45}.brand{font-size:33px}.edition{font-size:9px;gap:5px}.edition span:nth-child(2){text-align:center}.toolbar{flex-direction:column;align-items:stretch}.search-label{max-width:none}.view-switch{align-self:start}.filter{padding:7px 10px}.month-header h2{font-size:27px}.calendar-day{min-height:63px}.calendar-day .day-number{font-size:11px}.calendar-day.today .day-number{min-width:24px;height:24px}}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+/* The Stockholm Guide calendar. FullCalendar Standard owns all date-grid
+   and list-view behavior; these styles only adapt its look to the publication. */
+:root{--ink:#181817;--paper:#f2f0ea;--panel:#fcfaf5;--line:#d6d0c6;--muted:#64605a;--accent:#9d4936;color-scheme:light}
+*{box-sizing:border-box}
+html{font-family:Arial,Helvetica,sans-serif;background:var(--paper);color:var(--ink)}
+body{margin:0}button,input{font:inherit}button{cursor:pointer}a{color:inherit}
+.page{max-width:1120px;margin:0 auto;padding:34px 28px 18px}
+.masthead{border-top:3px solid var(--ink)}
+.masthead-top{display:flex;align-items:start;justify-content:space-between;padding:25px 0 23px;gap:16px}
+.brand{font:bold 48px/.86 Georgia,serif;text-decoration:none;letter-spacing:-2px}.brand-period{color:var(--accent)}
+.descriptor{font:bold 11px/1.6 'Courier New',monospace;letter-spacing:.45px;text-align:right;margin-top:8px}
+.edition{display:flex;justify-content:space-between;gap:16px;border-top:1px solid var(--ink);border-bottom:1px solid var(--ink);padding:14px 0;font:700 11px/1.4 'Courier New',monospace}
+.introduction{display:flex;justify-content:space-between;align-items:end;gap:25px;padding:55px 0 45px}
+.eyebrow{font:700 11px/1.4 'Courier New',monospace;letter-spacing:1.5px;margin:0 0 18px}
+.introduction h1{font:normal clamp(47px,7.5vw,91px)/.99 Georgia,serif;letter-spacing:-3.5px;margin:0 0 22px}
+.introduction h1 em{font-weight:normal;color:var(--accent)}
+.dek{line-height:1.6;max-width:530px;font-size:15px;color:#49453f;margin:0}
+.count{font:700 11px/2 'Courier New',monospace;text-align:right;white-space:nowrap;margin:0 0 4px}
+.count span{font-weight:400;color:var(--muted)}
+.calendar-shell{border:1px solid var(--line);background:var(--panel);border-radius:8px;overflow:hidden;box-shadow:0 6px 26px #1d160808}
+.toolbar{display:flex;justify-content:space-between;gap:15px;align-items:center;padding:21px 22px 15px}
+.view-switch{background:#eee9df;border-radius:5px;padding:3px;display:flex}
+.switch{border:0;background:transparent;padding:10px 17px;border-radius:4px;font-weight:700;font-size:13px;color:#6a625a}
+.switch.active{background:var(--ink);color:#fff}
+.search-label{flex:1;max-width:330px}.search-label input{width:100%;border:1px solid var(--line);background:#fffdfa;border-radius:4px;padding:12px 13px;font-size:13px;outline-offset:2px}
+.filter-bar{display:flex;gap:8px;flex-wrap:wrap;padding:0 22px 20px}
+.filter{border:1px solid var(--line);background:transparent;border-radius:999px;padding:8px 13px;font-size:12px;color:#55504a}
+.filter.active{background:#dfd6c8;color:var(--ink);border-color:#b8ab98;font-weight:700}
+.calendar-panel{padding:0 21px 23px}
+#fullcalendar{padding:20px 2px 7px;border-top:3px solid var(--ink)}
+/* FullCalendar's own accessible month/list layout, navigation and overflow. */
+.fc{--fc-border-color:#d9d2c7;--fc-page-bg-color:#fcfaf5;--fc-neutral-bg-color:#f2eee7;--fc-today-bg-color:#e9e2d5;--fc-list-event-hover-bg-color:#f1ebe1;font-family:Arial,Helvetica,sans-serif}
+.fc .fc-toolbar{gap:12px;flex-wrap:wrap}
+.fc .fc-toolbar-title{font:normal 31px/1.2 Georgia,serif;letter-spacing:-.6px}
+.fc .fc-button-primary{border-radius:4px;background:#242322;border-color:#242322;font-size:12px;font-weight:700;box-shadow:none}
+.fc .fc-button-primary:hover:not(:disabled){background:#514940;border-color:#514940}
+.fc .fc-button-primary:focus-visible,.filter:focus-visible,.switch:focus-visible{outline:3px solid #c6866a;outline-offset:2px}
+.fc .fc-col-header-cell{background:#ede8df}
+.fc .fc-col-header-cell-cushion{font:700 11px/1.4 'Courier New',monospace;letter-spacing:.5px;padding:12px 3px;text-decoration:none}
+.fc .fc-daygrid-day-number{color:#2b2926;text-decoration:none;font:bold 12px/1.5 'Courier New',monospace;padding:8px}
+.fc .fc-daygrid-day-frame{min-height:106px}
+.fc .fc-event{border:none;background:#e4dfd5;color:#272422;border-radius:3px;margin:2px 4px;padding:2px 4px;font-size:11px;font-weight:700;cursor:pointer}
+.fc .fc-event:hover{background:#d4c9b9}
+.fc .fc-top-pick{background:#d8e0d3;color:#233529}.fc .fc-top-pick:hover{background:#c5d0bf}
+.fc .fc-last-chance{background:#efd9cc;color:#753c28}.fc .fc-last-chance:hover{background:#e5c5b2}
+.fc .fc-daygrid-more-link{font:700 11px/1.5 'Courier New',monospace;color:#645548}
+.fc .fc-list-day-cushion{background:#eee6d9}
+.fc .fc-list-day-text,.fc .fc-list-day-side-text{font:700 12px/1.6 'Courier New',monospace;text-decoration:none;color:#292622}
+.fc .fc-list-event-time{font:700 12px/1.5 'Courier New',monospace}
+.fc .fc-list-event-title{font:700 13px/1.5 Arial,Helvetica,sans-serif}
+.fc .fc-list-event-dot{border-color:#75695a}
+.fc .fc-list-empty{background:transparent;color:var(--muted)}
+.fc .fc-list-empty-cushion{font:13px/1.5 Arial,sans-serif}
+.day-details{border-top:1px solid var(--line);margin-top:20px;padding:25px 0 7px}
+.day-title{display:flex;justify-content:space-between;gap:12px;align-items:center;padding-bottom:18px;border-bottom:1px solid var(--line)}
+.day-title h3{font:normal 28px/1.2 Georgia,serif;margin:0}
+.day-title span{font:11px/1.4 'Courier New',monospace;color:var(--muted)}
+.event-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:13px;margin-top:17px}
+.event-card{border:1px solid var(--line);background:#fffdfa;border-radius:5px;padding:18px;min-width:0}
+.event-card .tags{display:flex;flex-wrap:wrap;gap:7px;margin-bottom:12px}
+.tag{font:700 10px/1.4 'Courier New',monospace;letter-spacing:.45px;color:#5f5042;border:1px solid #bcb3a6;padding:4px 6px;border-radius:3px}
+.tag.featured{border-color:#adb6a8;background:#e7ece2}
+.tag.closing{border-color:#cfaa93;color:#8a3b25;background:#f5e9e0}
+.event-card h4{font:700 18px/1.25 Arial,Helvetica,sans-serif;letter-spacing:-.35px;margin:0 0 9px}
+.event-card .when{font:700 12px/1.6 'Courier New',monospace;margin:0 0 7px}
+.event-card .where{font:12px/1.4 'Courier New',monospace;color:var(--muted);margin:0 0 10px}
+.event-card .description{font:13px/1.55 Arial,Helvetica,sans-serif;color:#4e4942;margin:0 0 12px}
+.event-card .booking{font:12px/1.5 Arial,Helvetica,sans-serif;color:#5d5850;margin:0 0 14px}
+.event-card a{font:700 12px/1.5 'Courier New',monospace;text-decoration:underline;text-underline-offset:3px}
+.empty{padding:22px;border:1px dashed var(--line);color:var(--muted);grid-column:1/-1;font-size:13px}
+.unavailable-calendar{background:#eee4d6;color:#55463a;padding:14px;font:13px/1.6 Arial,sans-serif}
+.flexible-section{border-top:1px solid var(--line);background:#f2eee7;padding:28px 23px 35px}
+.flexible-head{padding-bottom:18px;border-bottom:1px solid var(--line);margin-bottom:5px}
+.flexible-head .eyebrow{margin-bottom:10px}.flexible-head h2{font:normal 34px/1.1 Georgia,serif;margin:0 0 11px}
+.flexible-head p:last-child{max-width:690px;font:13px/1.6 Arial,sans-serif;color:var(--muted);margin:0}
+.flexible-section .event-list{margin-top:21px}
+footer{display:flex;justify-content:space-between;align-items:start;gap:20px;border-top:1px solid var(--ink);padding:23px 0 10px;margin-top:42px;font:10px/1.6 'Courier New',monospace;color:var(--muted)}
+footer span:last-child{text-align:right}
+.noscript{padding:28px}.noscript article{border-bottom:1px solid #ddd;padding:10px 0}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+[hidden]{display:none!important}
+@media(max-width:750px){.page{padding:12px 12px 20px}.masthead-top{padding-top:22px}.brand{font-size:37px}.descriptor{font-size:9px}.introduction{padding:37px 4px 34px}.introduction h1{letter-spacing:-1.9px}.count{display:none}.toolbar{padding:17px 14px 12px}.filter-bar{padding:0 14px 15px}.calendar-panel{padding:0 13px 22px}.fc .fc-daygrid-day-frame{min-height:72px}.fc .fc-daygrid-event{display:none}.fc .fc-daygrid-day-bottom{font-size:11px}.fc .fc-toolbar-title{font-size:26px}.event-list{grid-template-columns:1fr}.flexible-section{padding:23px 14px}footer{flex-direction:column;gap:7px}footer span:last-child{text-align:left}}
+@media(max-width:450px){.descriptor{font-size:8px;line-height:1.45}.brand{font-size:33px}.edition{font-size:9px;gap:5px}.edition span:nth-child(2){text-align:center}.toolbar{flex-direction:column;align-items:stretch}.search-label{max-width:none}.view-switch{align-self:start}.filter{padding:7px 10px}.fc .fc-toolbar-title{font-size:24px}.fc .fc-daygrid-day-frame{min-height:55px}.fc .fc-daygrid-day-number{font-size:10px;padding:5px}.fc .fc-col-header-cell-cushion{font-size:9px;padding:9px 1px}.day-title h3{font-size:24px}}
+@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important}}
