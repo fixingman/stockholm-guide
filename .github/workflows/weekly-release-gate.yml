@@ -9,6 +9,8 @@ on:
       - delivery_guard.py
       - editorial_quality.py
       - source_coverage.py
+      - test_source_coverage.py
+      - test_discovery_sources.py
       - discovery_sources.json
   workflow_dispatch:
 permissions:
