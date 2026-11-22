@@ -50,11 +50,24 @@ jobs:
           python email_client_qa.py --html minimal-experiment/index.html --report email-client-qa.json
       - name: Build the live issue calendar (public dates, no subscribers)
         run: |
-          python -m unittest test_calendar
+          python -m unittest test_calendar test_calendar_ical
           node --check calendar.js
-          python build_calendar.py --data issues/current.json --output calendar.html
-          python build_calendar.py --data issues/owner-rehearsal-2026-11-22.json --output owner-issue-005-calendar.html
+          python build_calendar.py --data issues/current.json --output calendar.html --feed-file calendar.ics --events-dir calendar-events
+          python calendar_ical.py --data issues/current.json --output calendar.ics --events-dir calendar-events
+          python build_calendar.py --data issues/owner-rehearsal-2026-11-22.json --output owner-issue-005-calendar.html --feed-file owner-issue-005-calendar.ics --events-dir owner-issue-005-events
+          python calendar_ical.py --data issues/owner-rehearsal-2026-11-22.json --output owner-issue-005-calendar.ics --events-dir owner-issue-005-events
           test -s owner-issue-005-calendar.html
+          test -s calendar.ics
+          test -s owner-issue-005-calendar.ics
+          test "$(find calendar-events -name '*.ics' | wc -l)" -gt 0
+          python - <<'PY'
+          from pathlib import Path
+          for path in ('calendar.ics','owner-issue-005-calendar.ics'):
+              feed=Path(path).read_bytes()
+              assert feed.startswith(b'BEGIN:VCALENDAR\r\n') and feed.endswith(b'END:VCALENDAR\r\n')
+              assert b'BEGIN:VEVENT' in feed
+              print(path, 'ready, dated VEVENTs:', feed.count(b'BEGIN:VEVENT'))
+          PY
           python - <<'PY'
           import json
           from pathlib import Path
