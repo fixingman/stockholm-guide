@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <meta name="description" content="Explore this fortnight's curated Stockholm arts, music, and cultural events by date.">
+  <title>Event Calendar · The Stockholm Guide · {{ data.date_range }}</title>
+  <link rel="stylesheet" href="./calendar.css">
+</head>
+<body>
+  <div class="page">
+    <header class="masthead">
+      <div class="masthead-top">
+        <a class="brand" href="./calendar.html" aria-label="Stockholm Guide calendar home">The Stockholm<br>Guide<span class="brand-period">.</span></a>
+        <div class="descriptor">AN INDEPENDENT GUIDE TO<br>ART, CULTURE &amp; IDEAS<br>IN STOCKHOLM</div>
+      </div>
+      <div class="edition"><span>THE EVENT CALENDAR</span><span>{{ data.date_range }}</span><span>ISSUE #{{ data.issue_number }}</span></div>
+    </header>
+
+    <main>
+      <section class="introduction" aria-labelledby="main-heading">
+        <div>
+          <p class="eyebrow">EXPLORE BY DATE</p>
+          <h1 id="main-heading">Good things are<br><em>happening.</em></h1>
+          <p class="dek">Every recommendation from the latest edition, arranged around your calendar. Choose a date, discover an event, then check the organizer for final details.</p>
+        </div>
+        <p class="count">{{ data.event_count }} CURATED EXPERIENCES<br><span>{{ data.date_range }}</span></p>
+      </section>
+
+      <section class="calendar-shell" aria-label="Events calendar">
+        <div class="toolbar">
+          <div class="view-switch" role="group" aria-label="Calendar display">
+            <button type="button" data-view="calendar" aria-pressed="true" class="switch active">Calendar</button>
+            <button type="button" data-view="list" aria-pressed="false" class="switch">All events</button>
+          </div>
+          <label class="search-label"><span class="sr-only">Search events</span>
+            <input id="search" type="search" placeholder="Search events or venues" autocomplete="off">
+          </label>
+        </div>
+        <div class="filter-bar" id="filters" role="group" aria-label="Filter events">
+          <button type="button" class="filter active" aria-pressed="true" data-filter="all">All</button>
+          <button type="button" class="filter" aria-pressed="false" data-filter="top3">Top picks</button>
+          <button type="button" class="filter" aria-pressed="false" data-filter="new_discoveries">New discoveries</button>
+          <button type="button" class="filter" aria-pressed="false" data-filter="worth_reconsidering">Reconsider</button>
+          <button type="button" class="filter" aria-pressed="false" data-filter="last_chance">Last chance</button>
+        </div>
+
+        <div id="calendar-view">
+          <div class="month-header">
+            <h2 id="month-heading">Loading events…</h2>
+            <div class="month-actions">
+              <button type="button" id="prev-month" aria-label="Previous month">‹</button>
+              <button type="button" id="next-month" aria-label="Next month">›</button>
+            </div>
+          </div>
+          <div class="week-labels" aria-hidden="true"><span>Mon</span><span>Tue</span><span>Wed</span><span>Thu</span><span>Fri</span><span>Sat</span><span>Sun</span></div>
+          <div class="month-grid" id="month-grid" aria-label="Select a date"></div>
+          <div class="day-details" aria-live="polite" aria-atomic="false">
+            <div class="day-title"><h3 id="day-heading">Select a date</h3><span id="day-count"></span></div>
+            <div id="day-events" class="event-list"></div>
+          </div>
+        </div>
+
+        <div id="list-view" hidden>
+          <div class="list-heading"><h2>All dates, one list.</h2><span id="list-count"></span></div>
+          <div id="all-events" class="event-list"></div>
+        </div>
+
+        <section class="flexible-section" aria-labelledby="flexible-title">
+          <div class="flexible-head">
+            <p class="eyebrow">VISIT WHEN IT SUITS</p>
+            <h2 id="flexible-title">Ongoing &amp; flexible dates</h2>
+            <p>Exhibitions and experiences without a confirmed single session time. A final-day pin is a closing reminder, not an invitation to arrive at that hour.</p>
+          </div>
+          <div id="flexible-events" class="event-list"></div>
+        </section>
+      </section>
+    </main>
+    <footer><span>THE STOCKHOLM GUIDE · INDEPENDENTLY CURATED</span><span>Dates and tickets may change. Always confirm with the organizer. Times in Stockholm (CET/CEST).</span></footer>
+  </div>
+  <script id="calendar-data" type="application/json">{{ json_blob | safe }}</script>
+  <script src="./calendar.js" defer></script>
+  <noscript><section class="noscript"><h2>Events in this issue</h2><p>Enable JavaScript for the interactive calendar. Organizer links remain available below.</p>
+  {% for event in data.events %}<article><strong>{{ event.title }}</strong><p>{{ event.dates }} · {{ event.venue }}</p><a href="{{ event.url }}">Official event page</a></article>{% endfor %}</section></noscript>
+</body>
+</html>
