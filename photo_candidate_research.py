@@ -1,5 +1,6 @@
 """No-send organizer photo research; suggestions are NOT identity approvals."""
 import json
+import base64
 from io import BytesIO
 from urllib.parse import urljoin, urlparse
 import requests
@@ -43,11 +44,15 @@ def inspect(item):
     except Exception as exc:
         result["page_error"]=str(exc)[:220]
         return result
-    for c in found:
+    for idx,c in enumerate(found):
         try:
             response=get(c["url"])
             img=Image.open(BytesIO(response.content))
             img.load()
+            if idx == 0 and img.width>=500 and img.height>=300:
+                preview=img.convert("RGB");preview.thumbnail((360,260))
+                out=BytesIO();preview.save(out,"JPEG",quality=68)
+                print("REVIEW_IMAGE",item["title"].replace(" ","_"),base64.b64encode(out.getvalue()).decode("ascii"),flush=True)
             if img.width>=500 and img.height>=300:
                 result["images"].append({**c,"bytes":len(response.content),"size":[img.width,img.height],"format":img.format,"redirect":response.url})
         except Exception as exc:
