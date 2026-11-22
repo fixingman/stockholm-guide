@@ -48,5 +48,52 @@
       "issue": "005",
       "kind": "production-validated"
     }
+  ],
+  "top3": [
+    {
+      "title": "Masangue Maracatu & guests — Brazilian rhythm celebration",
+      "issue": "004",
+      "kind": "production"
+    },
+    {
+      "title": "Sound of Stockholm — Saturday: voice, movement and experimental music",
+      "issue": "004",
+      "kind": "production"
+    },
+    {
+      "title": "Aliquī — deep listening, sound and live visual improvisation",
+      "issue": "004",
+      "kind": "production"
+    },
+    {
+      "title": "En ljuvlighet från ingenstans — film and conversation",
+      "issue": "TEST-008",
+      "kind": "owner-only-test"
+    },
+    {
+      "title": "Aliquī — deep listening and visual improvisation",
+      "issue": "TEST-008",
+      "kind": "owner-only-test"
+    },
+    {
+      "title": "Salla Salazar — a phone-free listening session",
+      "issue": "TEST-008",
+      "kind": "owner-only-test"
+    },
+    {
+      "title": "En ljuvlighet från ingenstans — film and conversation",
+      "issue": "005",
+      "kind": "production-validated"
+    },
+    {
+      "title": "Aliquī — deep listening and visual improvisation",
+      "issue": "005",
+      "kind": "production-validated"
+    },
+    {
+      "title": "Salla Salazar — a phone-free listening session",
+      "issue": "005",
+      "kind": "production-validated"
+    }
   ]
 }
