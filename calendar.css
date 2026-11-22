@@ -183,3 +183,20 @@ footer{border-top:1px solid #777}
   .filter{padding:9px 10px}
   .switch{padding:10px 13px}
 }
+
+
+/* Restore the earlier event containers, retaining the newsletter typography
+   and the now-readable sans-serif interactive controls. Visual-only change. */
+.event-list{
+  gap:13px;
+}
+.event-card{
+  min-width:0;
+  background:#fffdfa;
+  border:1px solid var(--line);
+  border-radius:5px;
+  padding:18px;
+}
+@media(max-width:750px){
+  .event-card{padding:18px}
+}
