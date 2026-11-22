@@ -7,6 +7,7 @@ permissions:
   contents: write
   pages: write
   id-token: write
+  actions: read
 concurrency:
   group: pages
   cancel-in-progress: true
@@ -61,5 +62,9 @@ jobs:
       - uses: actions/upload-pages-artifact@v3
         with:
           path: .
+      # GitHub may briefly delay indexing a freshly uploaded Pages artifact.
+      # Retain the actual deploy-pages gate; never report preview success unless it succeeds.
+      - name: Allow Pages artifact indexing
+        run: sleep 20
       - id: deployment
         uses: actions/deploy-pages@v4
