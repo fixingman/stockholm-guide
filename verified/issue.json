@@ -6,185 +6,6 @@
   "disclaimer": "Organizer programme and event pages reviewed on Sunday 22 November 2026. A listed ticket link is not proof of remaining stock; where admission or booking is not confirmed it is explicitly marked unknown. Closing dates are verified; visit hours may vary.",
   "top3": [
     {
-      "title": "Träden + Homegrown — psychedelic improvisation",
-      "dates": "Sun 29 Nov · doors 19:00 · ends 23:00",
-      "url": "https://stadsgardsterminalen.com/event/traden-homegrown/",
-      "venue": "Kollektivet Livet, Lilla Scen",
-      "price": "250–270 SEK",
-      "booking": "Official Nortic ticket link; check stock",
-      "description": "Psychedelic improvisation with Swedish veterans Träden and the unpredictable, shape-shifting Homegrown.",
-      "verification": {
-        "checked_at": "2026-11-22T16:46:51+01:00",
-        "date": {
-          "status": "confirmed",
-          "source_url": "https://stadsgardsterminalen.com/event/traden-homegrown/"
-        },
-        "venue": {
-          "status": "confirmed",
-          "source_url": "https://stadsgardsterminalen.com/event/traden-homegrown/"
-        },
-        "booking": {
-          "status": "confirmed",
-          "source_url": "https://stadsgardsterminalen.com/event/traden-homegrown/"
-        },
-        "price": {
-          "status": "confirmed",
-          "source_url": "https://stadsgardsterminalen.com/event/traden-homegrown/"
-        }
-      },
-      "final_review": {
-        "checked_at": "2026-11-22T16:46:51+01:00",
-        "organizer_source_url": "https://stadsgardsterminalen.com/event/traden-homegrown/",
-        "event_status": "scheduled",
-        "booking_status": "required_unverified",
-        "notes": "Original official event page checked 22 Nov; gallery/organizer-hosted artwork reviewed separately; remaining ticket stock not guaranteed."
-      },
-      "image_verified": true,
-      "event_start": "2026-11-29T19:00:00+01:00",
-      "first_seen_issue": "005",
-      "new_discovery_verified": true,
-      "organizer_url": "https://stadsgardsterminalen.com/event/traden-homegrown/",
-      "image_url": "https://stadsgardsterminalen.com/wp-content/uploads/2026/10/nortic-traden-homegrown-1200x675.jpg",
-      "image_source_url": "https://stadsgardsterminalen.com/event/traden-homegrown/",
-      "image_alt": "Illustrated Träden + Homegrown concert flyer with ornate forest lettering and decorative art",
-      "image_identity_review": {
-        "event_match": true,
-        "reviewer": "Editorial assistant — inspected exact organizer-page photo thumbnails using no-send GitHub Actions on 22 November 2026",
-        "source_page": "https://stadsgardsterminalen.com/event/traden-homegrown/",
-        "checked_at": "2026-11-22T16:46:51+01:00",
-        "notes": "Verified organizer's original Träden + Homegrown event flyer via exact page meta and visual inspection; readable act names Träden and Homegrown in illustration."
-      },
-      "image_review_evidence": {
-        "review_run_url": "https://github.com/fixingman/stockholm-guide/actions/runs/45040097163",
-        "organizer_image_dimensions": [
-          1200,
-          675
-        ],
-        "method": "same-official-event-page plus visually inspected tiny preview"
-      },
-      "source_id": "stadsgardsterminalen"
-    },
-    {
-      "title": "Aliquī — deep listening and visual improvisation",
-      "dates": "Thu 26 Nov · 19:00",
-      "url": "https://www.fylkingen.se/en/events/aliqui",
-      "venue": "Fylkingen, Saltmätargatan 2",
-      "price": "200 SEK; 120 SEK members/friends (individual organizer page)",
-      "booking": "Ticket information on Fylkingen event page; remaining stock unverified",
-      "description": "Helene Berg, Paul Pignon, Ida Lundén, Thomas Bjelkeborn and guests explore the meeting of sound, image and space. A good fit for an unpredictable, absorbing evening.",
-      "image_verified": true,
-      "verification": {
-        "checked_at": "2026-11-22T16:20:06+01:00",
-        "date": {
-          "status": "confirmed",
-          "source_url": "https://www.fylkingen.se/en/events/aliqui"
-        },
-        "venue": {
-          "status": "confirmed",
-          "source_url": "https://www.fylkingen.se/en/events/aliqui"
-        },
-        "price": {
-          "status": "confirmed",
-          "source_url": "https://www.fylkingen.se/en/events/aliqui"
-        },
-        "booking": {
-          "status": "unknown",
-          "source_url": "https://www.fylkingen.se/en/events/aliqui",
-          "note": "Live ticket stock not verified; calendar list displays a lower price, individual event page used."
-        }
-      },
-      "final_review": {
-        "checked_at": "2026-11-22T16:20:06+01:00",
-        "organizer_source_url": "https://www.fylkingen.se/en/events/aliqui",
-        "event_status": "scheduled",
-        "booking_status": "required_unverified",
-        "notes": "Fresh official organizer event page checked Sunday 22 Nov 2026; original 16 Nov image identity review retained, live image download and visual validation required. Moved out of Top 3 due to repetition across TEST-006/007/008; retained as optional reconsideration."
-      },
-      "event_start": "2026-11-26T19:00:00+01:00",
-      "first_seen_issue": "TEST-006",
-      "image_url": "https://www.fylkingen.se/_next/image?url=%2Fmedia%2Fsites%252Fclvuuu5cs0001xwfc7ne538fo%252Fmedia%252Fdb20cec9-e78d-4e58-a2f7-274f9e06d656-HeleneBergportratt.jpg&w=1080&q=70",
-      "image_source_url": "https://www.fylkingen.se/en/events/aliqui",
-      "image_alt": "Artist Helene Berg with an owl sculpture; participant portrait supplied on the Aliquī event page.",
-      "image_identity_review": {
-        "event_match": true,
-        "reviewer": "Editorial assistant; organizer-page association and local visual inspection",
-        "source_page": "https://www.fylkingen.se/en/events/aliqui",
-        "checked_at": "2026-11-16T01:28:25+01:00",
-        "notes": "Authentic participant photograph published on the exact 2026 event page; not represented as a photograph of a future performance. Artist Helene Berg with an owl sculpture; participant portrait supplied on the Aliquī event page."
-      },
-      "new_discovery_verified": false,
-      "image_original_url": "https://www.fylkingen.se/_next/image?url=%2Fmedia%2Fsites%252Fclvuuu5cs0001xwfc7ne538fo%252Fmedia%252Fdb20cec9-e78d-4e58-a2f7-274f9e06d656-HeleneBergportratt.jpg&w=3840&q=75",
-      "image_optimization": {
-        "source_bytes": 244511,
-        "optimized_bytes": 152456,
-        "original_dimensions": [
-          1426,
-          1772
-        ],
-        "optimized_dimensions": [
-          1080,
-          1342
-        ],
-        "max_pixel_rms": 1.2,
-        "method": "same-host-cms-variant"
-      },
-      "populated_from_historical_visual_test": "Photo identity metadata from visual TEST-006; event facts independently rechecked for issue 005.",
-      "source_id": "fylkingen"
-    },
-    {
-      "title": "En ljuvlighet från ingenstans — film and conversation",
-      "dates": "Wed 25 Nov · 18:30 · 86-minute film + conversation",
-      "url": "https://acceleratorsu.art/evenemang/filmvisning-en-ljuvlighet-fran-ingenstans/",
-      "venue": "Accelerator café, Frescativägen 26A",
-      "price": "Free",
-      "booking": "No preregistration required",
-      "description": "Ester M. Bergsmark’s experimental 2026 film is followed by a Swedish-language conversation with Lina Selander. A free, one-off encounter between cinema, art and bodily experience.",
-      "image_verified": true,
-      "verification": {
-        "checked_at": "2026-11-22T16:20:06+01:00",
-        "date": {
-          "status": "confirmed",
-          "source_url": "https://acceleratorsu.art/evenemang/filmvisning-en-ljuvlighet-fran-ingenstans/"
-        },
-        "venue": {
-          "status": "confirmed",
-          "source_url": "https://acceleratorsu.art/evenemang/filmvisning-en-ljuvlighet-fran-ingenstans/"
-        },
-        "price": {
-          "status": "confirmed",
-          "source_url": "https://acceleratorsu.art/evenemang/filmvisning-en-ljuvlighet-fran-ingenstans/"
-        },
-        "booking": {
-          "status": "confirmed",
-          "source_url": "https://acceleratorsu.art/evenemang/filmvisning-en-ljuvlighet-fran-ingenstans/"
-        }
-      },
-      "final_review": {
-        "checked_at": "2026-11-22T16:20:06+01:00",
-        "organizer_source_url": "https://acceleratorsu.art/evenemang/filmvisning-en-ljuvlighet-fran-ingenstans/",
-        "event_status": "scheduled",
-        "booking_status": "not_required",
-        "notes": "Fresh official organizer event page checked Sunday 22 Nov 2026; original 16 Nov image identity review retained, live image download and visual validation required. Moved out of Top 3 due to repetition across TEST-006/007/008; retained as optional reconsideration."
-      },
-      "event_start": "2026-11-25T18:30:00+01:00",
-      "image_url": "https://acceleratorsu.art/wp-content/uploads/2024/03/Ester_Bergsmark-face-1.jpg",
-      "image_source_url": "https://acceleratorsu.art/evenemang/filmvisning-en-ljuvlighet-fran-ingenstans/",
-      "image_alt": "Portrait of filmmaker Ester M. Bergsmark, photo Erica Moon-Nam Lindberg; supplied on the screening page.",
-      "image_identity_review": {
-        "event_match": true,
-        "reviewer": "Editorial assistant; organizer-page association and local visual inspection",
-        "source_page": "https://acceleratorsu.art/evenemang/filmvisning-en-ljuvlighet-fran-ingenstans/",
-        "checked_at": "2026-11-16T01:28:25+01:00",
-        "notes": "Authentic participant photograph published on the exact 2026 event page; not represented as a photograph of a future performance. Portrait of filmmaker Ester M. Bergsmark, photo Erica Moon-Nam Lindberg; supplied on the screening page."
-      },
-      "first_seen_issue": "TEST-006",
-      "new_discovery_verified": false,
-      "populated_from_historical_visual_test": "Photo identity metadata from visual TEST-006; event facts independently rechecked for issue 005.",
-      "source_id": "accelerator"
-    }
-  ],
-  "new_discoveries": [
-    {
       "source_id": "filmform",
       "title": "BUSINESS AS USUAL — experimental-film archive screening",
       "url": "https://www.filmform.com/calendar/business-as-usual-screening-at-filmform-on-thursday-december-3rd/",
@@ -193,7 +14,7 @@
       "price": "50 SEK",
       "booking": "RSVP to info@filmform.com",
       "description": "A small-room programme of archival experimental film about national memory and identity.",
-      "image_verified": false,
+      "image_verified": true,
       "first_seen_issue": "005",
       "new_discovery_verified": true,
       "verification": {
@@ -223,7 +44,34 @@
         "booking_status": "required_unverified",
         "notes": "Public organizer page consulted 23 Nov 2026; remaining ticket inventory not independently checked."
       },
-      "event_start": "2026-12-03T18:00:00+01:00"
+      "event_start": "2026-12-03T18:00:00+01:00",
+      "image_url": "https://www.filmform.com/wp-content/uploads/2026/11/info-paper-collage-v4-1024x557.jpg",
+      "image_source_url": "https://www.filmform.com/calendar/business-as-usual-screening-at-filmform-on-thursday-december-3rd/",
+      "image_alt": "Filmform's official Business as Usual collage cover image",
+      "organizer_url": "https://www.filmform.com/calendar/business-as-usual-screening-at-filmform-on-thursday-december-3rd/",
+      "image_identity_review": {
+        "event_match": true,
+        "reviewer": "Editorial assistant; event-specific organizer artwork review",
+        "source_page": "https://www.filmform.com/calendar/business-as-usual-screening-at-filmform-on-thursday-december-3rd/",
+        "checked_at": "2026-11-22T23:27:42.430Z",
+        "notes": "Official image linked on exact organizer event page"
+      },
+      "image_review_evidence": "Official image linked on exact organizer event page",
+      "image_original_url": "https://www.filmform.com/wp-content/uploads/2026/11/info-paper-collage-v4.jpg",
+      "image_optimization": {
+        "source_bytes": 2446878,
+        "optimized_bytes": 100539,
+        "original_dimensions": [
+          2480,
+          1350
+        ],
+        "optimized_dimensions": [
+          1024,
+          557
+        ],
+        "max_pixel_rms": 0.7,
+        "method": "same-host-cms-variant"
+      }
     },
     {
       "source_id": "thirdplace-stockholm",
@@ -234,7 +82,7 @@
       "price": "250 SEK",
       "booking": "Tickets listed through Luma; confirm availability",
       "description": "A gothic-themed life-drawing session open to all levels.",
-      "image_verified": false,
+      "image_verified": true,
       "first_seen_issue": "005",
       "new_discovery_verified": true,
       "verification": {
@@ -264,8 +112,75 @@
         "booking_status": "required_unverified",
         "notes": "Public organizer page consulted 23 Nov 2026; remaining ticket inventory not independently checked."
       },
-      "event_start": "2026-11-26T18:00:00+01:00"
+      "event_start": "2026-11-26T18:00:00+01:00",
+      "image_url": "https://images.lumacdn.com/cdn-cgi/image/format%3Dauto%2Cfit%3Dcover%2Cdpr%3D2%2Cbackground%3Dwhite%2Cquality%3D75%2Cwidth%3D400%2Cheight%3D400/uploads/y2/57ba37f7-6aad-4247-9f61-23f3d8468c88.jpg",
+      "image_source_url": "https://luma.com/86iayxvq",
+      "image_alt": "The Sweeney Todd themed croquis event's cover image on Luma",
+      "organizer_url": "https://luma.com/86iayxvq",
+      "image_identity_review": {
+        "event_match": true,
+        "reviewer": "Editorial assistant; event-specific organizer artwork review",
+        "source_page": "https://luma.com/86iayxvq",
+        "checked_at": "2026-11-22T23:27:42.430Z",
+        "notes": "Event-specific cover linked by original Luma listing"
+      },
+      "image_review_evidence": "Event-specific cover linked by original Luma listing"
     },
+    {
+      "source_id": "ronnells-antikvariat",
+      "title": "Maya Bennardo + Leah Asher — intimate violin duo",
+      "url": "https://ronnells.se/?events=maya-bennardo-och-leah-asher-live",
+      "dates": "Thu 26 Nov · 19:30–21:00",
+      "venue": "Rönnells, Birger Jarlsgatan 32",
+      "price": "150 SEK",
+      "booking": "Reserve in shop or via email",
+      "description": "Winding sonic textures and close-up experimental violin improvisation.",
+      "image_verified": true,
+      "first_seen_issue": "005",
+      "new_discovery_verified": true,
+      "verification": {
+        "checked_at": "2026-11-22T23:15:54.799Z",
+        "date": {
+          "status": "confirmed",
+          "source_url": "https://ronnells.se/?events=maya-bennardo-och-leah-asher-live"
+        },
+        "venue": {
+          "status": "confirmed",
+          "source_url": "https://ronnells.se/?events=maya-bennardo-och-leah-asher-live"
+        },
+        "booking": {
+          "status": "unknown",
+          "source_url": "https://ronnells.se/?events=maya-bennardo-och-leah-asher-live",
+          "note": "Event published, but live ticket stock/remaining seats not confirmed."
+        },
+        "price": {
+          "status": "confirmed",
+          "source_url": "https://ronnells.se/?events=maya-bennardo-och-leah-asher-live"
+        }
+      },
+      "final_review": {
+        "checked_at": "2026-11-22T23:15:54.799Z",
+        "organizer_source_url": "https://ronnells.se/?events=maya-bennardo-och-leah-asher-live",
+        "event_status": "scheduled",
+        "booking_status": "required_unverified",
+        "notes": "Public organizer page consulted 23 Nov 2026; remaining ticket inventory not independently checked."
+      },
+      "event_start": "2026-11-26T19:30:00+01:00",
+      "image_url": "https://ronnells.se/wp-content/uploads/2026/11/BA1.jpg",
+      "image_source_url": "https://ronnells.se/?events=maya-bennardo-och-leah-asher-live",
+      "image_alt": "Duo portrait published with Rönnells' Maya Bennardo and Leah Asher concert listing",
+      "organizer_url": "https://ronnells.se/?events=maya-bennardo-och-leah-asher-live",
+      "image_identity_review": {
+        "event_match": true,
+        "reviewer": "Editorial assistant; event-specific organizer artwork review",
+        "source_page": "https://ronnells.se/?events=maya-bennardo-och-leah-asher-live",
+        "checked_at": "2026-11-22T23:27:42.430Z",
+        "notes": "Event-specific violin duo portrait visually inspected on organizer page"
+      },
+      "image_review_evidence": "Event-specific violin duo portrait visually inspected on organizer page"
+    }
+  ],
+  "new_discoveries": [
     {
       "source_id": "mdt",
       "title": "A Study of Men — contemporary choreography",
@@ -307,47 +222,6 @@
         "notes": "Public organizer page consulted 23 Nov 2026; remaining ticket inventory not independently checked."
       },
       "schedule_note": "Check organizer for exact performance session time"
-    },
-    {
-      "source_id": "ronnells-antikvariat",
-      "title": "Maya Bennardo + Leah Asher — intimate violin duo",
-      "url": "https://ronnells.se/?events=maya-bennardo-och-leah-asher-live",
-      "dates": "Thu 26 Nov · 19:30–21:00",
-      "venue": "Rönnells, Birger Jarlsgatan 32",
-      "price": "150 SEK",
-      "booking": "Reserve in shop or via email",
-      "description": "Winding sonic textures and close-up experimental violin improvisation.",
-      "image_verified": false,
-      "first_seen_issue": "005",
-      "new_discovery_verified": true,
-      "verification": {
-        "checked_at": "2026-11-22T23:15:54.799Z",
-        "date": {
-          "status": "confirmed",
-          "source_url": "https://ronnells.se/?events=maya-bennardo-och-leah-asher-live"
-        },
-        "venue": {
-          "status": "confirmed",
-          "source_url": "https://ronnells.se/?events=maya-bennardo-och-leah-asher-live"
-        },
-        "booking": {
-          "status": "unknown",
-          "source_url": "https://ronnells.se/?events=maya-bennardo-och-leah-asher-live",
-          "note": "Event published, but live ticket stock/remaining seats not confirmed."
-        },
-        "price": {
-          "status": "confirmed",
-          "source_url": "https://ronnells.se/?events=maya-bennardo-och-leah-asher-live"
-        }
-      },
-      "final_review": {
-        "checked_at": "2026-11-22T23:15:54.799Z",
-        "organizer_source_url": "https://ronnells.se/?events=maya-bennardo-och-leah-asher-live",
-        "event_status": "scheduled",
-        "booking_status": "required_unverified",
-        "notes": "Public organizer page consulted 23 Nov 2026; remaining ticket inventory not independently checked."
-      },
-      "event_start": "2026-11-26T19:30:00+01:00"
     },
     {
       "source_id": "cyklopen",
@@ -600,6 +474,267 @@
       "event_end": "2026-11-29T23:00:00+01:00",
       "last_chance_source_url": "https://stockholm.fotografiska.com/en/exhibitions/the-machines-eye-in-human-hands",
       "source_id": "fotografiska"
+    },
+    {
+      "title": "Färgfabriken winter craft and design market",
+      "dates": "Sat 5 Dec · 11:00–17:00",
+      "url": "https://fargfabriken.se/sv/pa-gang/julmarknad-3/",
+      "venue": "Färgfabriken, Lövholmsbrinken 1",
+      "price": "60 SEK; free for under-16s",
+      "booking": "Admission at venue; capacity not verified",
+      "description": "Art, design, craft and live music spread across the industrial gallery's halls, upper floor and studios.",
+      "verification": {
+        "checked_at": "2026-11-22T16:20:06+01:00",
+        "date": {
+          "status": "confirmed",
+          "source_url": "https://fargfabriken.se/sv/pa-gang/julmarknad-3/"
+        },
+        "venue": {
+          "status": "confirmed",
+          "source_url": "https://fargfabriken.se/sv/pa-gang/julmarknad-3/"
+        },
+        "booking": {
+          "status": "unknown",
+          "source_url": "https://fargfabriken.se/sv/pa-gang/julmarknad-3/",
+          "note": "Official event page is live but remaining ticket stock / registration conditions were not confirmed"
+        },
+        "price": {
+          "status": "confirmed",
+          "source_url": "https://fargfabriken.se/sv/pa-gang/julmarknad-3/"
+        }
+      },
+      "final_review": {
+        "checked_at": "2026-11-22T16:20:06+01:00",
+        "organizer_source_url": "https://fargfabriken.se/sv/pa-gang/julmarknad-3/",
+        "event_status": "scheduled",
+        "booking_status": "not_required",
+        "notes": "Sunday organizer listing reviewed 22 November; event is listed, live stock not guaranteed."
+      },
+      "image_verified": false,
+      "event_start": "2026-12-05T11:00:00+01:00",
+      "first_seen_issue": "005",
+      "new_discovery_verified": true,
+      "source_id": "fargfabriken"
+    },
+    {
+      "title": "Women Behind the Camera, 1848–1968 — exhibition opening",
+      "dates": "Opens Sat 5 Dec",
+      "url": "https://stockholm.fotografiska.com/en/exhibitions/women-behind-the-camera-1848-1968",
+      "venue": "Fotografiska, Stadsgårdshamnen 22",
+      "price": "Museum admission; exact daily rate not reverified",
+      "booking": "Check official page; remaining capacity unverified",
+      "description": "An overlooked history of women photographers, from early studios to experimental twentieth-century imagemaking.",
+      "verification": {
+        "checked_at": "2026-11-22T16:20:06+01:00",
+        "date": {
+          "status": "confirmed",
+          "source_url": "https://stockholm.fotografiska.com/en/exhibitions/women-behind-the-camera-1848-1968"
+        },
+        "venue": {
+          "status": "confirmed",
+          "source_url": "https://stockholm.fotografiska.com/en/exhibitions/women-behind-the-camera-1848-1968"
+        },
+        "booking": {
+          "status": "unknown",
+          "source_url": "https://stockholm.fotografiska.com/en/exhibitions/women-behind-the-camera-1848-1968",
+          "note": "Official event page is live but remaining ticket stock / registration conditions were not confirmed"
+        },
+        "price": {
+          "status": "unknown",
+          "source_url": "https://stockholm.fotografiska.com/en/exhibitions/women-behind-the-camera-1848-1968",
+          "note": "Organizer page does not provide an exact current admission rate"
+        }
+      },
+      "final_review": {
+        "checked_at": "2026-11-22T16:20:06+01:00",
+        "organizer_source_url": "https://stockholm.fotografiska.com/en/exhibitions/women-behind-the-camera-1848-1968",
+        "event_status": "scheduled",
+        "booking_status": "not_required",
+        "notes": "Sunday organizer listing reviewed 22 November; event is listed, live stock not guaranteed."
+      },
+      "image_verified": false,
+      "schedule_note": "Exhibition 5 Dec 2026–11 Apr 2027; museum hours vary.",
+      "first_seen_issue": "005",
+      "new_discovery_verified": true,
+      "source_id": "fotografiska"
+    },
+    {
+      "title": "Pepparkakshus 2026 — Gingerbread architecture of the future",
+      "dates": "Opens Fri 27 Nov · through 10 Jan",
+      "url": "https://pepparkakshus.arkdes.se/en/questions-and-answers/",
+      "venue": "ArkDes, Exercisplan 4, Skeppsholmen",
+      "price": "Price not published",
+      "booking": "Check official page; remaining capacity unverified",
+      "description": "A playful community competition and exhibition building imagined future homes and cities out of gingerbread; visitors can vote until Dec 9.",
+      "verification": {
+        "checked_at": "2026-11-22T16:20:06+01:00",
+        "date": {
+          "status": "confirmed",
+          "source_url": "https://pepparkakshus.arkdes.se/en/questions-and-answers/"
+        },
+        "venue": {
+          "status": "confirmed",
+          "source_url": "https://pepparkakshus.arkdes.se/en/questions-and-answers/"
+        },
+        "booking": {
+          "status": "unknown",
+          "source_url": "https://pepparkakshus.arkdes.se/en/questions-and-answers/",
+          "note": "Official event page is live but remaining ticket stock / registration conditions were not confirmed"
+        },
+        "price": {
+          "status": "unknown",
+          "source_url": "https://pepparkakshus.arkdes.se/en/questions-and-answers/",
+          "note": "Organizer page does not provide an exact current admission rate"
+        }
+      },
+      "final_review": {
+        "checked_at": "2026-11-22T16:20:06+01:00",
+        "organizer_source_url": "https://pepparkakshus.arkdes.se/en/questions-and-answers/",
+        "event_status": "scheduled",
+        "booking_status": "unknown",
+        "notes": "Sunday organizer listing reviewed 22 November; event is listed, live stock not guaranteed."
+      },
+      "image_verified": false,
+      "schedule_note": "Open 27 Nov 2026–10 Jan 2027; museum hours vary.",
+      "first_seen_issue": "005",
+      "new_discovery_verified": true,
+      "source_id": "arkdes-events"
+    },
+    {
+      "title": "Salla Salazar — a phone-free listening session",
+      "dates": "Fri 27 Nov · 18:00–21:00",
+      "url": "https://stockholm.fotografiska.com/en/events/listening-session-salla-salazar-the-soundtrack-to-a-life",
+      "venue": "Fotografiska Studio, floor 2, Stadsgårdshamnen 22",
+      "price": "Included with regular museum admission; free for members",
+      "booking": "Limited seats; advance booking recommended, not guaranteed",
+      "description": "Salla Salazar shares complete songs and the memories behind them. A seated, phone-free format that puts shared listening ahead of spectacle.",
+      "image_verified": true,
+      "verification": {
+        "checked_at": "2026-11-22T16:20:06+01:00",
+        "date": {
+          "status": "confirmed",
+          "source_url": "https://stockholm.fotografiska.com/en/events/listening-session-salla-salazar-the-soundtrack-to-a-life"
+        },
+        "venue": {
+          "status": "confirmed",
+          "source_url": "https://stockholm.fotografiska.com/en/events/listening-session-salla-salazar-the-soundtrack-to-a-life"
+        },
+        "price": {
+          "status": "confirmed",
+          "source_url": "https://stockholm.fotografiska.com/en/events/listening-session-salla-salazar-the-soundtrack-to-a-life"
+        },
+        "booking": {
+          "status": "confirmed",
+          "source_url": "https://stockholm.fotografiska.com/en/events/listening-session-salla-salazar-the-soundtrack-to-a-life"
+        }
+      },
+      "final_review": {
+        "checked_at": "2026-11-22T16:20:06+01:00",
+        "organizer_source_url": "https://stockholm.fotografiska.com/en/events/listening-session-salla-salazar-the-soundtrack-to-a-life",
+        "event_status": "scheduled",
+        "booking_status": "required_unverified",
+        "notes": "Fresh official organizer event page checked Sunday 22 Nov 2026; original 16 Nov image identity review retained, live image download and visual validation required. Moved out of Top 3 due to repetition across TEST-006/007/008; retained as optional reconsideration."
+      },
+      "event_start": "2026-11-27T18:00:00+01:00",
+      "first_seen_issue": "TEST-006",
+      "image_url": "https://cdn.sanity.io/images/2xi539qp/production/f90f2827b3bc91616ae3b05ce97210dfce71d2eb-3264x2448.jpg?rect=408,0,2448,2448&w=750&h=750&q=75&auto=format",
+      "image_source_url": "https://stockholm.fotografiska.com/en/events/listening-session-salla-salazar-the-soundtrack-to-a-life",
+      "image_alt": "Salla Salazar event photograph supplied on Fotografiska’s listening-session page.",
+      "image_identity_review": {
+        "event_match": true,
+        "reviewer": "Editorial assistant; organizer-page association and local visual inspection",
+        "source_page": "https://stockholm.fotografiska.com/en/events/listening-session-salla-salazar-the-soundtrack-to-a-life",
+        "checked_at": "2026-11-16T01:28:25+01:00",
+        "notes": "Authentic participant photograph published on the exact 2026 event page; not represented as a photograph of a future performance. Salla Salazar event photograph supplied on Fotografiska’s listening-session page."
+      },
+      "new_discovery_verified": false,
+      "populated_from_historical_visual_test": "Photo identity metadata from visual TEST-006; event facts independently rechecked for issue 005.",
+      "source_id": "fotografiska"
+    },
+    {
+      "title": "Lotta Antonsson — I Am Everything",
+      "dates": "Final week · closes Sun 29 Nov",
+      "url": "https://stockholm.fotografiska.com/en/exhibitions/lotta-antonsson",
+      "venue": "Fotografiska, Stadsgårdshamnen 22",
+      "price": "Museum admission; current rate varies",
+      "booking": "General museum entry; check availability",
+      "description": "Collages, altered portraits and material-led installation confronting the gaze and the representation of women's bodies.",
+      "verification": {
+        "checked_at": "2026-11-22T16:20:06+01:00",
+        "date": {
+          "status": "confirmed",
+          "source_url": "https://stockholm.fotografiska.com/en/exhibitions/lotta-antonsson"
+        },
+        "venue": {
+          "status": "confirmed",
+          "source_url": "https://stockholm.fotografiska.com/en/exhibitions/lotta-antonsson"
+        },
+        "booking": {
+          "status": "unknown",
+          "source_url": "https://stockholm.fotografiska.com/en/exhibitions/lotta-antonsson",
+          "note": "Official event page is live but remaining ticket stock / registration conditions were not confirmed"
+        },
+        "price": {
+          "status": "unknown",
+          "source_url": "https://stockholm.fotografiska.com/en/exhibitions/lotta-antonsson",
+          "note": "Organizer page does not provide an exact current admission rate"
+        }
+      },
+      "final_review": {
+        "checked_at": "2026-11-22T16:20:06+01:00",
+        "organizer_source_url": "https://stockholm.fotografiska.com/en/exhibitions/lotta-antonsson",
+        "event_status": "scheduled",
+        "booking_status": "not_required",
+        "notes": "Sunday organizer listing reviewed 22 November; event is listed, live stock not guaranteed."
+      },
+      "image_verified": false,
+      "schedule_note": "Closes 29 Nov 2026; museum lists 10:00–23:00 daily.",
+      "first_seen_issue": "005",
+      "new_discovery_verified": false,
+      "last_chance": true,
+      "event_end": "2026-11-29T23:00:00+01:00",
+      "last_chance_source_url": "https://stockholm.fotografiska.com/en/exhibitions/lotta-antonsson",
+      "source_id": "fotografiska"
+    },
+    {
+      "title": "Polymoon + GORMA — psychedelic post-gaze",
+      "dates": "Sat 28 Nov · doors 19:30",
+      "url": "https://stadsgardsterminalen.com/event/polymoon-gorma/",
+      "venue": "Kollektivet Livet, Lilla Scen",
+      "price": "195–245 SEK",
+      "booking": "Nortic ticket link; check stock",
+      "description": "Finnish psychedelic rock, shoegaze, heavy riffs and soundscapes from Per Nordmark's GORMA.",
+      "verification": {
+        "checked_at": "2026-11-22T16:20:06+01:00",
+        "date": {
+          "status": "confirmed",
+          "source_url": "https://stadsgardsterminalen.com/event/polymoon-gorma/"
+        },
+        "venue": {
+          "status": "confirmed",
+          "source_url": "https://stadsgardsterminalen.com/event/polymoon-gorma/"
+        },
+        "booking": {
+          "status": "confirmed",
+          "source_url": "https://stadsgardsterminalen.com/event/polymoon-gorma/"
+        },
+        "price": {
+          "status": "confirmed",
+          "source_url": "https://stadsgardsterminalen.com/event/polymoon-gorma/"
+        }
+      },
+      "final_review": {
+        "checked_at": "2026-11-22T16:20:06+01:00",
+        "organizer_source_url": "https://stadsgardsterminalen.com/event/polymoon-gorma/",
+        "event_status": "scheduled",
+        "booking_status": "required_unverified",
+        "notes": "Sunday organizer listing reviewed 22 November; event is listed, live stock not guaranteed."
+      },
+      "image_verified": false,
+      "event_start": "2026-11-28T19:30:00+01:00",
+      "first_seen_issue": "005",
+      "new_discovery_verified": true,
+      "source_id": "stadsgardsterminalen"
     }
   ],
   "unavailable": [
@@ -1337,205 +1472,205 @@
     "source_probe_created_at": "2026-11-22T20:53:08.197846+00:00",
     "eligible_verified_events": [
       {
-        "source_id": "stadsgardsterminalen",
-        "url": "https://stadsgardsterminalen.com/event/traden-homegrown/",
-        "title": "Träden + Homegrown — psychedelic improvisation",
-        "verification_status": "verified_eligible"
-      },
-      {
-        "source_id": "fylkingen",
-        "url": "https://www.fylkingen.se/en/events/aliqui",
-        "title": "Aliquī — deep listening and visual improvisation",
-        "verification_status": "verified_eligible"
-      },
-      {
-        "source_id": "accelerator",
-        "url": "https://acceleratorsu.art/evenemang/filmvisning-en-ljuvlighet-fran-ingenstans/",
-        "title": "En ljuvlighet från ingenstans — film and conversation",
-        "verification_status": "verified_eligible"
-      },
-      {
         "source_id": "filmform",
-        "url": "https://www.filmform.com/calendar/business-as-usual-screening-at-filmform-on-thursday-december-3rd/",
         "title": "BUSINESS AS USUAL — experimental-film archive screening",
+        "url": "https://www.filmform.com/calendar/business-as-usual-screening-at-filmform-on-thursday-december-3rd/",
         "verification_status": "verified_eligible"
       },
       {
         "source_id": "thirdplace-stockholm",
-        "url": "https://luma.com/86iayxvq",
         "title": "Sweeney Todd Croquis — theatrical life drawing",
-        "verification_status": "verified_eligible"
-      },
-      {
-        "source_id": "mdt",
-        "url": "https://mdtsthlm.se/a-study-of-men",
-        "title": "A Study of Men — contemporary choreography",
+        "url": "https://luma.com/86iayxvq",
         "verification_status": "verified_eligible"
       },
       {
         "source_id": "ronnells-antikvariat",
-        "url": "https://ronnells.se/?events=maya-bennardo-och-leah-asher-live",
         "title": "Maya Bennardo + Leah Asher — intimate violin duo",
+        "url": "https://ronnells.se/?events=maya-bennardo-och-leah-asher-live",
+        "verification_status": "verified_eligible"
+      },
+      {
+        "source_id": "mdt",
+        "title": "A Study of Men — contemporary choreography",
+        "url": "https://mdtsthlm.se/a-study-of-men",
         "verification_status": "verified_eligible"
       },
       {
         "source_id": "cyklopen",
-        "url": "https://cyklopen.se/events/oppen-atelje-oppet-bibliotek/2026-11-24/",
         "title": "Cyklopen open studio + community library",
+        "url": "https://cyklopen.se/events/oppen-atelje-oppet-bibliotek/2026-11-24/",
         "verification_status": "verified_eligible"
       },
       {
         "source_id": "frim-stockholm",
-        "url": "https://frim-stockholm.se/en/events/blomsterunge-50-ar",
         "title": "BLOMSTERUNGE 50 ÅR — improvisation anniversary",
+        "url": "https://frim-stockholm.se/en/events/blomsterunge-50-ar",
         "verification_status": "verified_eligible"
       },
       {
         "source_id": "kulturhuset",
-        "url": "https://kulturhusetstadsteatern.se/teater/karleken",
         "title": "Kärleken — independent theatre premiere",
+        "url": "https://kulturhusetstadsteatern.se/teater/karleken",
         "verification_status": "verified_eligible"
       },
       {
         "source_id": "fylkingen",
-        "url": "https://www.fylkingen.se/en/events/cndnsd",
         "title": "CNDNSD — experimental electronic performance",
+        "url": "https://www.fylkingen.se/en/events/cndnsd",
         "verification_status": "verified_eligible"
       },
       {
         "source_id": "fylkingen",
-        "url": "https://www.fylkingen.se/en/events/ems-avslutningskonsert",
         "title": "EMS Kursavslutningskonsert — electronic sound workshop finale",
+        "url": "https://www.fylkingen.se/en/events/ems-avslutningskonsert",
         "verification_status": "verified_eligible"
       },
       {
         "source_id": "fotografiska",
-        "url": "https://stockholm.fotografiska.com/en/exhibitions/the-machines-eye-in-human-hands",
         "title": "The Machine's Eye in Human Hands",
-        "verification_status": "verified_eligible"
-      },
-      {
-        "source_id": "frim-stockholm",
-        "url": "https://frim-stockholm.se/en/events/the-electrics-nils-agnas",
-        "title": "The Electrics / Nils Agnas — free improvisation",
-        "verification_status": "verified_eligible"
-      },
-      {
-        "source_id": "arkdes-events",
-        "url": "https://arkdes.se/en/calendar/themed-tour-without-borders/",
-        "title": "Without Borders — architecture collection tour",
-        "verification_status": "verified_eligible"
-      },
-      {
-        "source_id": "cyklopen",
-        "url": "https://cyklopen.se/events/oppen-atelje-oppet-bibliotek/2026-12-01/",
-        "title": "Cyklopen open studio — December edition",
-        "verification_status": "verified_eligible"
-      },
-      {
-        "source_id": "fylkingen",
-        "url": "https://fylkingen.se/en/events/chimera-evolver",
-        "title": "CHIMERA / EVOLVER: Emma DJ + Keiska + DJ Haydn",
-        "verification_status": "verified_eligible"
-      },
-      {
-        "source_id": "fylkingen",
-        "url": "https://fylkingen.se/en/events/changing-landscape-evolving-experiences",
-        "title": "Changing Landscape, Evolving Experiences — dance, ink and sound",
-        "verification_status": "verified_eligible"
-      },
-      {
-        "source_id": "stadsgardsterminalen",
-        "url": "https://stadsgardsterminalen.com/event/honeymilk/",
-        "title": "Honeymilk + Shy Away — intimate indie show",
-        "verification_status": "verified_eligible"
-      },
-      {
-        "source_id": "stadsgardsterminalen",
-        "url": "https://stadsgardsterminalen.com/event/per-persson-nya-packet/",
-        "title": "Per Persson & Nya Packet + Sand & Hallander",
-        "verification_status": "verified_eligible"
-      },
-      {
-        "source_id": "reimersholme-hotel",
-        "url": "https://reimersholmehotel.se/en/event/aural-onsdag-roberto-n-peyre/",
-        "title": "Aural Onsdag — Roberto N Peyre deep-listening session",
-        "verification_status": "verified_eligible"
-      },
-      {
-        "source_id": "reimersholme-hotel",
-        "url": "https://reimersholmehotel.se/en/event/dias-the-afro-express/",
-        "title": "Congolese Super Night — rumba, ndombolo and afrobeats",
-        "verification_status": "verified_eligible"
-      },
-      {
-        "source_id": "arkdes-events",
-        "url": "https://pepparkakshus.arkdes.se/en/questions-and-answers/",
-        "title": "Pepparkakshus 2026 — Gingerbread architecture of the future",
-        "verification_status": "verified_eligible"
-      },
-      {
-        "source_id": "stadsgardsterminalen",
-        "url": "https://stadsgardsterminalen.com/event/polymoon-gorma/",
-        "title": "Polymoon + GORMA — psychedelic post-gaze",
-        "verification_status": "verified_eligible"
-      },
-      {
-        "source_id": "stadsgardsterminalen",
-        "url": "https://stadsgardsterminalen.com/event/evanora-unlimited/",
-        "title": "Evanora Unlimited — cinematic experimental grime",
-        "verification_status": "verified_eligible"
-      },
-      {
-        "source_id": "index",
-        "url": "https://indexfoundation.se/talks-and-events/bookshop-situation-series-myriam-diatta-doing-creative-work-from-your-political-body",
-        "title": "Myriam Diatta — Doing Creative Work from Your Political Body",
+        "url": "https://stockholm.fotografiska.com/en/exhibitions/the-machines-eye-in-human-hands",
         "verification_status": "verified_eligible"
       },
       {
         "source_id": "fargfabriken",
-        "url": "https://fargfabriken.se/sv/pa-gang/julmarknad-3/",
         "title": "Färgfabriken winter craft and design market",
+        "url": "https://fargfabriken.se/sv/pa-gang/julmarknad-3/",
         "verification_status": "verified_eligible"
       },
       {
         "source_id": "fotografiska",
-        "url": "https://stockholm.fotografiska.com/en/exhibitions/women-behind-the-camera-1848-1968",
         "title": "Women Behind the Camera, 1848–1968 — exhibition opening",
+        "url": "https://stockholm.fotografiska.com/en/exhibitions/women-behind-the-camera-1848-1968",
         "verification_status": "verified_eligible"
       },
       {
-        "source_id": "reimersholme-hotel",
-        "url": "https://reimersholmehotel.se/en/event/voidgarden/",
-        "title": "Voidgarden — post-punk debut-album release",
-        "verification_status": "verified_eligible"
-      },
-      {
-        "source_id": "fotografiska",
-        "url": "https://stockholm.fotografiska.com/en/exhibitions/lotta-antonsson",
-        "title": "Lotta Antonsson — I Am Everything",
-        "verification_status": "verified_eligible"
-      },
-      {
-        "source_id": "reimersholme-hotel",
-        "url": "https://reimersholmehotel.se/event/masangue-maracatu-gaster/",
-        "title": "Masangue Maracatu & guests — Brazilian rhythm celebration",
+        "source_id": "arkdes-events",
+        "title": "Pepparkakshus 2026 — Gingerbread architecture of the future",
+        "url": "https://pepparkakshus.arkdes.se/en/questions-and-answers/",
         "verification_status": "verified_eligible"
       },
       {
         "source_id": "fotografiska",
-        "url": "https://stockholm.fotografiska.com/en/events/listening-session-salla-salazar-the-soundtrack-to-a-life",
         "title": "Salla Salazar — a phone-free listening session",
+        "url": "https://stockholm.fotografiska.com/en/events/listening-session-salla-salazar-the-soundtrack-to-a-life",
+        "verification_status": "verified_eligible"
+      },
+      {
+        "source_id": "fotografiska",
+        "title": "Lotta Antonsson — I Am Everything",
+        "url": "https://stockholm.fotografiska.com/en/exhibitions/lotta-antonsson",
+        "verification_status": "verified_eligible"
+      },
+      {
+        "source_id": "stadsgardsterminalen",
+        "title": "Polymoon + GORMA — psychedelic post-gaze",
+        "url": "https://stadsgardsterminalen.com/event/polymoon-gorma/",
+        "verification_status": "verified_eligible"
+      },
+      {
+        "source_id": "frim-stockholm",
+        "title": "The Electrics / Nils Agnas — free improvisation",
+        "url": "https://frim-stockholm.se/en/events/the-electrics-nils-agnas",
+        "verification_status": "verified_eligible"
+      },
+      {
+        "source_id": "arkdes-events",
+        "title": "Without Borders — architecture collection tour",
+        "url": "https://arkdes.se/en/calendar/themed-tour-without-borders/",
+        "verification_status": "verified_eligible"
+      },
+      {
+        "source_id": "cyklopen",
+        "title": "Cyklopen open studio — December edition",
+        "url": "https://cyklopen.se/events/oppen-atelje-oppet-bibliotek/2026-12-01/",
+        "verification_status": "verified_eligible"
+      },
+      {
+        "source_id": "fylkingen",
+        "title": "CHIMERA / EVOLVER: Emma DJ + Keiska + DJ Haydn",
+        "url": "https://fylkingen.se/en/events/chimera-evolver",
+        "verification_status": "verified_eligible"
+      },
+      {
+        "source_id": "fylkingen",
+        "title": "Changing Landscape, Evolving Experiences — dance, ink and sound",
+        "url": "https://fylkingen.se/en/events/changing-landscape-evolving-experiences",
+        "verification_status": "verified_eligible"
+      },
+      {
+        "source_id": "stadsgardsterminalen",
+        "title": "Honeymilk + Shy Away — intimate indie show",
+        "url": "https://stadsgardsterminalen.com/event/honeymilk/",
+        "verification_status": "verified_eligible"
+      },
+      {
+        "source_id": "stadsgardsterminalen",
+        "title": "Per Persson & Nya Packet + Sand & Hallander",
+        "url": "https://stadsgardsterminalen.com/event/per-persson-nya-packet/",
+        "verification_status": "verified_eligible"
+      },
+      {
+        "source_id": "reimersholme-hotel",
+        "title": "Aural Onsdag — Roberto N Peyre deep-listening session",
+        "url": "https://reimersholmehotel.se/en/event/aural-onsdag-roberto-n-peyre/",
+        "verification_status": "verified_eligible"
+      },
+      {
+        "source_id": "reimersholme-hotel",
+        "title": "Congolese Super Night — rumba, ndombolo and afrobeats",
+        "url": "https://reimersholmehotel.se/en/event/dias-the-afro-express/",
+        "verification_status": "verified_eligible"
+      },
+      {
+        "source_id": "stadsgardsterminalen",
+        "title": "Evanora Unlimited — cinematic experimental grime",
+        "url": "https://stadsgardsterminalen.com/event/evanora-unlimited/",
+        "verification_status": "verified_eligible"
+      },
+      {
+        "source_id": "index",
+        "title": "Myriam Diatta — Doing Creative Work from Your Political Body",
+        "url": "https://indexfoundation.se/talks-and-events/bookshop-situation-series-myriam-diatta-doing-creative-work-from-your-political-body",
+        "verification_status": "verified_eligible"
+      },
+      {
+        "source_id": "reimersholme-hotel",
+        "title": "Voidgarden — post-punk debut-album release",
+        "url": "https://reimersholmehotel.se/en/event/voidgarden/",
+        "verification_status": "verified_eligible"
+      },
+      {
+        "source_id": "reimersholme-hotel",
+        "title": "Masangue Maracatu & guests — Brazilian rhythm celebration",
+        "url": "https://reimersholmehotel.se/event/masangue-maracatu-gaster/",
+        "verification_status": "verified_eligible"
+      },
+      {
+        "source_id": "stadsgardsterminalen",
+        "title": "Träden + Homegrown — psychedelic improvisation",
+        "url": "https://stadsgardsterminalen.com/event/traden-homegrown/",
+        "verification_status": "verified_eligible"
+      },
+      {
+        "source_id": "fylkingen",
+        "title": "Aliquī — deep listening and visual improvisation",
+        "url": "https://www.fylkingen.se/en/events/aliqui",
+        "verification_status": "verified_eligible"
+      },
+      {
+        "source_id": "accelerator",
+        "title": "En ljuvlighet från ingenstans — film and conversation",
+        "url": "https://acceleratorsu.art/evenemang/filmvisning-en-ljuvlighet-fran-ingenstans/",
         "verification_status": "verified_eligible"
       }
     ],
     "event_pool_reconciliation": {
       "eligible_verified": 32,
-      "newsletter": 13,
-      "calendar_only": 19,
+      "newsletter": 16,
+      "calendar_only": 16,
       "raw_probe_links_not_claimed_verified": true,
       "owner_only": true,
-      "notes": "Newly verified missed events plus previously organizer-reviewed and still scheduled Issue 005 entries; no claim all raw links are events."
+      "notes": "New Top 3 with distinct original event pages and organizer-sourced covers; expanded Worth reconsidering; no duplicate URL."
     }
   },
   "rehearsal": true,
@@ -1945,88 +2080,6 @@
       "source_id": "reimersholme-hotel"
     },
     {
-      "title": "Pepparkakshus 2026 — Gingerbread architecture of the future",
-      "dates": "Opens Fri 27 Nov · through 10 Jan",
-      "url": "https://pepparkakshus.arkdes.se/en/questions-and-answers/",
-      "venue": "ArkDes, Exercisplan 4, Skeppsholmen",
-      "price": "Price not published",
-      "booking": "Check official page; remaining capacity unverified",
-      "description": "A playful community competition and exhibition building imagined future homes and cities out of gingerbread; visitors can vote until Dec 9.",
-      "verification": {
-        "checked_at": "2026-11-22T16:20:06+01:00",
-        "date": {
-          "status": "confirmed",
-          "source_url": "https://pepparkakshus.arkdes.se/en/questions-and-answers/"
-        },
-        "venue": {
-          "status": "confirmed",
-          "source_url": "https://pepparkakshus.arkdes.se/en/questions-and-answers/"
-        },
-        "booking": {
-          "status": "unknown",
-          "source_url": "https://pepparkakshus.arkdes.se/en/questions-and-answers/",
-          "note": "Official event page is live but remaining ticket stock / registration conditions were not confirmed"
-        },
-        "price": {
-          "status": "unknown",
-          "source_url": "https://pepparkakshus.arkdes.se/en/questions-and-answers/",
-          "note": "Organizer page does not provide an exact current admission rate"
-        }
-      },
-      "final_review": {
-        "checked_at": "2026-11-22T16:20:06+01:00",
-        "organizer_source_url": "https://pepparkakshus.arkdes.se/en/questions-and-answers/",
-        "event_status": "scheduled",
-        "booking_status": "unknown",
-        "notes": "Sunday organizer listing reviewed 22 November; event is listed, live stock not guaranteed."
-      },
-      "image_verified": false,
-      "schedule_note": "Open 27 Nov 2026–10 Jan 2027; museum hours vary.",
-      "first_seen_issue": "005",
-      "new_discovery_verified": true,
-      "source_id": "arkdes-events"
-    },
-    {
-      "title": "Polymoon + GORMA — psychedelic post-gaze",
-      "dates": "Sat 28 Nov · doors 19:30",
-      "url": "https://stadsgardsterminalen.com/event/polymoon-gorma/",
-      "venue": "Kollektivet Livet, Lilla Scen",
-      "price": "195–245 SEK",
-      "booking": "Nortic ticket link; check stock",
-      "description": "Finnish psychedelic rock, shoegaze, heavy riffs and soundscapes from Per Nordmark's GORMA.",
-      "verification": {
-        "checked_at": "2026-11-22T16:20:06+01:00",
-        "date": {
-          "status": "confirmed",
-          "source_url": "https://stadsgardsterminalen.com/event/polymoon-gorma/"
-        },
-        "venue": {
-          "status": "confirmed",
-          "source_url": "https://stadsgardsterminalen.com/event/polymoon-gorma/"
-        },
-        "booking": {
-          "status": "confirmed",
-          "source_url": "https://stadsgardsterminalen.com/event/polymoon-gorma/"
-        },
-        "price": {
-          "status": "confirmed",
-          "source_url": "https://stadsgardsterminalen.com/event/polymoon-gorma/"
-        }
-      },
-      "final_review": {
-        "checked_at": "2026-11-22T16:20:06+01:00",
-        "organizer_source_url": "https://stadsgardsterminalen.com/event/polymoon-gorma/",
-        "event_status": "scheduled",
-        "booking_status": "required_unverified",
-        "notes": "Sunday organizer listing reviewed 22 November; event is listed, live stock not guaranteed."
-      },
-      "image_verified": false,
-      "event_start": "2026-11-28T19:30:00+01:00",
-      "first_seen_issue": "005",
-      "new_discovery_verified": true,
-      "source_id": "stadsgardsterminalen"
-    },
-    {
       "title": "Evanora Unlimited — cinematic experimental grime",
       "dates": "Thu 26 Nov · doors 19:00",
       "url": "https://stadsgardsterminalen.com/event/evanora-unlimited/",
@@ -2109,89 +2162,6 @@
       "source_id": "index"
     },
     {
-      "title": "Färgfabriken winter craft and design market",
-      "dates": "Sat 5 Dec · 11:00–17:00",
-      "url": "https://fargfabriken.se/sv/pa-gang/julmarknad-3/",
-      "venue": "Färgfabriken, Lövholmsbrinken 1",
-      "price": "60 SEK; free for under-16s",
-      "booking": "Admission at venue; capacity not verified",
-      "description": "Art, design, craft and live music spread across the industrial gallery's halls, upper floor and studios.",
-      "verification": {
-        "checked_at": "2026-11-22T16:20:06+01:00",
-        "date": {
-          "status": "confirmed",
-          "source_url": "https://fargfabriken.se/sv/pa-gang/julmarknad-3/"
-        },
-        "venue": {
-          "status": "confirmed",
-          "source_url": "https://fargfabriken.se/sv/pa-gang/julmarknad-3/"
-        },
-        "booking": {
-          "status": "unknown",
-          "source_url": "https://fargfabriken.se/sv/pa-gang/julmarknad-3/",
-          "note": "Official event page is live but remaining ticket stock / registration conditions were not confirmed"
-        },
-        "price": {
-          "status": "confirmed",
-          "source_url": "https://fargfabriken.se/sv/pa-gang/julmarknad-3/"
-        }
-      },
-      "final_review": {
-        "checked_at": "2026-11-22T16:20:06+01:00",
-        "organizer_source_url": "https://fargfabriken.se/sv/pa-gang/julmarknad-3/",
-        "event_status": "scheduled",
-        "booking_status": "not_required",
-        "notes": "Sunday organizer listing reviewed 22 November; event is listed, live stock not guaranteed."
-      },
-      "image_verified": false,
-      "event_start": "2026-12-05T11:00:00+01:00",
-      "first_seen_issue": "005",
-      "new_discovery_verified": true,
-      "source_id": "fargfabriken"
-    },
-    {
-      "title": "Women Behind the Camera, 1848–1968 — exhibition opening",
-      "dates": "Opens Sat 5 Dec",
-      "url": "https://stockholm.fotografiska.com/en/exhibitions/women-behind-the-camera-1848-1968",
-      "venue": "Fotografiska, Stadsgårdshamnen 22",
-      "price": "Museum admission; exact daily rate not reverified",
-      "booking": "Check official page; remaining capacity unverified",
-      "description": "An overlooked history of women photographers, from early studios to experimental twentieth-century imagemaking.",
-      "verification": {
-        "checked_at": "2026-11-22T16:20:06+01:00",
-        "date": {
-          "status": "confirmed",
-          "source_url": "https://stockholm.fotografiska.com/en/exhibitions/women-behind-the-camera-1848-1968"
-        },
-        "venue": {
-          "status": "confirmed",
-          "source_url": "https://stockholm.fotografiska.com/en/exhibitions/women-behind-the-camera-1848-1968"
-        },
-        "booking": {
-          "status": "unknown",
-          "source_url": "https://stockholm.fotografiska.com/en/exhibitions/women-behind-the-camera-1848-1968",
-          "note": "Official event page is live but remaining ticket stock / registration conditions were not confirmed"
-        },
-        "price": {
-          "status": "unknown",
-          "source_url": "https://stockholm.fotografiska.com/en/exhibitions/women-behind-the-camera-1848-1968",
-          "note": "Organizer page does not provide an exact current admission rate"
-        }
-      },
-      "final_review": {
-        "checked_at": "2026-11-22T16:20:06+01:00",
-        "organizer_source_url": "https://stockholm.fotografiska.com/en/exhibitions/women-behind-the-camera-1848-1968",
-        "event_status": "scheduled",
-        "booking_status": "not_required",
-        "notes": "Sunday organizer listing reviewed 22 November; event is listed, live stock not guaranteed."
-      },
-      "image_verified": false,
-      "schedule_note": "Exhibition 5 Dec 2026–11 Apr 2027; museum hours vary.",
-      "first_seen_issue": "005",
-      "new_discovery_verified": true,
-      "source_id": "fotografiska"
-    },
-    {
       "title": "Voidgarden — post-punk debut-album release",
       "dates": "Fri 4 Dec · doors 18:30",
       "url": "https://reimersholmehotel.se/en/event/voidgarden/",
@@ -2230,51 +2200,6 @@
       "first_seen_issue": "005",
       "new_discovery_verified": true,
       "source_id": "reimersholme-hotel"
-    },
-    {
-      "title": "Lotta Antonsson — I Am Everything",
-      "dates": "Final week · closes Sun 29 Nov",
-      "url": "https://stockholm.fotografiska.com/en/exhibitions/lotta-antonsson",
-      "venue": "Fotografiska, Stadsgårdshamnen 22",
-      "price": "Museum admission; current rate varies",
-      "booking": "General museum entry; check availability",
-      "description": "Collages, altered portraits and material-led installation confronting the gaze and the representation of women's bodies.",
-      "verification": {
-        "checked_at": "2026-11-22T16:20:06+01:00",
-        "date": {
-          "status": "confirmed",
-          "source_url": "https://stockholm.fotografiska.com/en/exhibitions/lotta-antonsson"
-        },
-        "venue": {
-          "status": "confirmed",
-          "source_url": "https://stockholm.fotografiska.com/en/exhibitions/lotta-antonsson"
-        },
-        "booking": {
-          "status": "unknown",
-          "source_url": "https://stockholm.fotografiska.com/en/exhibitions/lotta-antonsson",
-          "note": "Official event page is live but remaining ticket stock / registration conditions were not confirmed"
-        },
-        "price": {
-          "status": "unknown",
-          "source_url": "https://stockholm.fotografiska.com/en/exhibitions/lotta-antonsson",
-          "note": "Organizer page does not provide an exact current admission rate"
-        }
-      },
-      "final_review": {
-        "checked_at": "2026-11-22T16:20:06+01:00",
-        "organizer_source_url": "https://stockholm.fotografiska.com/en/exhibitions/lotta-antonsson",
-        "event_status": "scheduled",
-        "booking_status": "not_required",
-        "notes": "Sunday organizer listing reviewed 22 November; event is listed, live stock not guaranteed."
-      },
-      "image_verified": false,
-      "schedule_note": "Closes 29 Nov 2026; museum lists 10:00–23:00 daily.",
-      "first_seen_issue": "005",
-      "new_discovery_verified": false,
-      "last_chance": true,
-      "event_end": "2026-11-29T23:00:00+01:00",
-      "last_chance_source_url": "https://stockholm.fotografiska.com/en/exhibitions/lotta-antonsson",
-      "source_id": "fotografiska"
     },
     {
       "title": "Masangue Maracatu & guests — Brazilian rhythm celebration",
@@ -2318,55 +2243,182 @@
       "source_id": "reimersholme-hotel"
     },
     {
-      "title": "Salla Salazar — a phone-free listening session",
-      "dates": "Fri 27 Nov · 18:00–21:00",
-      "url": "https://stockholm.fotografiska.com/en/events/listening-session-salla-salazar-the-soundtrack-to-a-life",
-      "venue": "Fotografiska Studio, floor 2, Stadsgårdshamnen 22",
-      "price": "Included with regular museum admission; free for members",
-      "booking": "Limited seats; advance booking recommended, not guaranteed",
-      "description": "Salla Salazar shares complete songs and the memories behind them. A seated, phone-free format that puts shared listening ahead of spectacle.",
+      "title": "Träden + Homegrown — psychedelic improvisation",
+      "dates": "Sun 29 Nov · doors 19:00 · ends 23:00",
+      "url": "https://stadsgardsterminalen.com/event/traden-homegrown/",
+      "venue": "Kollektivet Livet, Lilla Scen",
+      "price": "250–270 SEK",
+      "booking": "Official Nortic ticket link; check stock",
+      "description": "Psychedelic improvisation with Swedish veterans Träden and the unpredictable, shape-shifting Homegrown.",
+      "verification": {
+        "checked_at": "2026-11-22T16:46:51+01:00",
+        "date": {
+          "status": "confirmed",
+          "source_url": "https://stadsgardsterminalen.com/event/traden-homegrown/"
+        },
+        "venue": {
+          "status": "confirmed",
+          "source_url": "https://stadsgardsterminalen.com/event/traden-homegrown/"
+        },
+        "booking": {
+          "status": "confirmed",
+          "source_url": "https://stadsgardsterminalen.com/event/traden-homegrown/"
+        },
+        "price": {
+          "status": "confirmed",
+          "source_url": "https://stadsgardsterminalen.com/event/traden-homegrown/"
+        }
+      },
+      "final_review": {
+        "checked_at": "2026-11-22T16:46:51+01:00",
+        "organizer_source_url": "https://stadsgardsterminalen.com/event/traden-homegrown/",
+        "event_status": "scheduled",
+        "booking_status": "required_unverified",
+        "notes": "Original official event page checked 22 Nov; gallery/organizer-hosted artwork reviewed separately; remaining ticket stock not guaranteed."
+      },
+      "image_verified": true,
+      "event_start": "2026-11-29T19:00:00+01:00",
+      "first_seen_issue": "005",
+      "new_discovery_verified": true,
+      "organizer_url": "https://stadsgardsterminalen.com/event/traden-homegrown/",
+      "image_url": "https://stadsgardsterminalen.com/wp-content/uploads/2026/10/nortic-traden-homegrown-1200x675.jpg",
+      "image_source_url": "https://stadsgardsterminalen.com/event/traden-homegrown/",
+      "image_alt": "Illustrated Träden + Homegrown concert flyer with ornate forest lettering and decorative art",
+      "image_identity_review": {
+        "event_match": true,
+        "reviewer": "Editorial assistant — inspected exact organizer-page photo thumbnails using no-send GitHub Actions on 22 November 2026",
+        "source_page": "https://stadsgardsterminalen.com/event/traden-homegrown/",
+        "checked_at": "2026-11-22T16:46:51+01:00",
+        "notes": "Verified organizer's original Träden + Homegrown event flyer via exact page meta and visual inspection; readable act names Träden and Homegrown in illustration."
+      },
+      "image_review_evidence": {
+        "review_run_url": "https://github.com/fixingman/stockholm-guide/actions/runs/45040097163",
+        "organizer_image_dimensions": [
+          1200,
+          675
+        ],
+        "method": "same-official-event-page plus visually inspected tiny preview"
+      },
+      "source_id": "stadsgardsterminalen"
+    },
+    {
+      "title": "Aliquī — deep listening and visual improvisation",
+      "dates": "Thu 26 Nov · 19:00",
+      "url": "https://www.fylkingen.se/en/events/aliqui",
+      "venue": "Fylkingen, Saltmätargatan 2",
+      "price": "200 SEK; 120 SEK members/friends (individual organizer page)",
+      "booking": "Ticket information on Fylkingen event page; remaining stock unverified",
+      "description": "Helene Berg, Paul Pignon, Ida Lundén, Thomas Bjelkeborn and guests explore the meeting of sound, image and space. A good fit for an unpredictable, absorbing evening.",
       "image_verified": true,
       "verification": {
         "checked_at": "2026-11-22T16:20:06+01:00",
         "date": {
           "status": "confirmed",
-          "source_url": "https://stockholm.fotografiska.com/en/events/listening-session-salla-salazar-the-soundtrack-to-a-life"
+          "source_url": "https://www.fylkingen.se/en/events/aliqui"
         },
         "venue": {
           "status": "confirmed",
-          "source_url": "https://stockholm.fotografiska.com/en/events/listening-session-salla-salazar-the-soundtrack-to-a-life"
+          "source_url": "https://www.fylkingen.se/en/events/aliqui"
         },
         "price": {
           "status": "confirmed",
-          "source_url": "https://stockholm.fotografiska.com/en/events/listening-session-salla-salazar-the-soundtrack-to-a-life"
+          "source_url": "https://www.fylkingen.se/en/events/aliqui"
         },
         "booking": {
-          "status": "confirmed",
-          "source_url": "https://stockholm.fotografiska.com/en/events/listening-session-salla-salazar-the-soundtrack-to-a-life"
+          "status": "unknown",
+          "source_url": "https://www.fylkingen.se/en/events/aliqui",
+          "note": "Live ticket stock not verified; calendar list displays a lower price, individual event page used."
         }
       },
       "final_review": {
         "checked_at": "2026-11-22T16:20:06+01:00",
-        "organizer_source_url": "https://stockholm.fotografiska.com/en/events/listening-session-salla-salazar-the-soundtrack-to-a-life",
+        "organizer_source_url": "https://www.fylkingen.se/en/events/aliqui",
         "event_status": "scheduled",
         "booking_status": "required_unverified",
         "notes": "Fresh official organizer event page checked Sunday 22 Nov 2026; original 16 Nov image identity review retained, live image download and visual validation required. Moved out of Top 3 due to repetition across TEST-006/007/008; retained as optional reconsideration."
       },
-      "event_start": "2026-11-27T18:00:00+01:00",
+      "event_start": "2026-11-26T19:00:00+01:00",
       "first_seen_issue": "TEST-006",
-      "image_url": "https://cdn.sanity.io/images/2xi539qp/production/f90f2827b3bc91616ae3b05ce97210dfce71d2eb-3264x2448.jpg?rect=408,0,2448,2448&w=750&h=750&q=75&auto=format",
-      "image_source_url": "https://stockholm.fotografiska.com/en/events/listening-session-salla-salazar-the-soundtrack-to-a-life",
-      "image_alt": "Salla Salazar event photograph supplied on Fotografiska’s listening-session page.",
+      "image_url": "https://www.fylkingen.se/_next/image?url=%2Fmedia%2Fsites%252Fclvuuu5cs0001xwfc7ne538fo%252Fmedia%252Fdb20cec9-e78d-4e58-a2f7-274f9e06d656-HeleneBergportratt.jpg&w=1080&q=70",
+      "image_source_url": "https://www.fylkingen.se/en/events/aliqui",
+      "image_alt": "Artist Helene Berg with an owl sculpture; participant portrait supplied on the Aliquī event page.",
       "image_identity_review": {
         "event_match": true,
         "reviewer": "Editorial assistant; organizer-page association and local visual inspection",
-        "source_page": "https://stockholm.fotografiska.com/en/events/listening-session-salla-salazar-the-soundtrack-to-a-life",
+        "source_page": "https://www.fylkingen.se/en/events/aliqui",
         "checked_at": "2026-11-16T01:28:25+01:00",
-        "notes": "Authentic participant photograph published on the exact 2026 event page; not represented as a photograph of a future performance. Salla Salazar event photograph supplied on Fotografiska’s listening-session page."
+        "notes": "Authentic participant photograph published on the exact 2026 event page; not represented as a photograph of a future performance. Artist Helene Berg with an owl sculpture; participant portrait supplied on the Aliquī event page."
       },
       "new_discovery_verified": false,
+      "image_original_url": "https://www.fylkingen.se/_next/image?url=%2Fmedia%2Fsites%252Fclvuuu5cs0001xwfc7ne538fo%252Fmedia%252Fdb20cec9-e78d-4e58-a2f7-274f9e06d656-HeleneBergportratt.jpg&w=3840&q=75",
+      "image_optimization": {
+        "source_bytes": 244511,
+        "optimized_bytes": 152456,
+        "original_dimensions": [
+          1426,
+          1772
+        ],
+        "optimized_dimensions": [
+          1080,
+          1342
+        ],
+        "max_pixel_rms": 1.2,
+        "method": "same-host-cms-variant"
+      },
       "populated_from_historical_visual_test": "Photo identity metadata from visual TEST-006; event facts independently rechecked for issue 005.",
-      "source_id": "fotografiska"
+      "source_id": "fylkingen"
+    },
+    {
+      "title": "En ljuvlighet från ingenstans — film and conversation",
+      "dates": "Wed 25 Nov · 18:30 · 86-minute film + conversation",
+      "url": "https://acceleratorsu.art/evenemang/filmvisning-en-ljuvlighet-fran-ingenstans/",
+      "venue": "Accelerator café, Frescativägen 26A",
+      "price": "Free",
+      "booking": "No preregistration required",
+      "description": "Ester M. Bergsmark’s experimental 2026 film is followed by a Swedish-language conversation with Lina Selander. A free, one-off encounter between cinema, art and bodily experience.",
+      "image_verified": true,
+      "verification": {
+        "checked_at": "2026-11-22T16:20:06+01:00",
+        "date": {
+          "status": "confirmed",
+          "source_url": "https://acceleratorsu.art/evenemang/filmvisning-en-ljuvlighet-fran-ingenstans/"
+        },
+        "venue": {
+          "status": "confirmed",
+          "source_url": "https://acceleratorsu.art/evenemang/filmvisning-en-ljuvlighet-fran-ingenstans/"
+        },
+        "price": {
+          "status": "confirmed",
+          "source_url": "https://acceleratorsu.art/evenemang/filmvisning-en-ljuvlighet-fran-ingenstans/"
+        },
+        "booking": {
+          "status": "confirmed",
+          "source_url": "https://acceleratorsu.art/evenemang/filmvisning-en-ljuvlighet-fran-ingenstans/"
+        }
+      },
+      "final_review": {
+        "checked_at": "2026-11-22T16:20:06+01:00",
+        "organizer_source_url": "https://acceleratorsu.art/evenemang/filmvisning-en-ljuvlighet-fran-ingenstans/",
+        "event_status": "scheduled",
+        "booking_status": "not_required",
+        "notes": "Fresh official organizer event page checked Sunday 22 Nov 2026; original 16 Nov image identity review retained, live image download and visual validation required. Moved out of Top 3 due to repetition across TEST-006/007/008; retained as optional reconsideration."
+      },
+      "event_start": "2026-11-25T18:30:00+01:00",
+      "image_url": "https://acceleratorsu.art/wp-content/uploads/2024/03/Ester_Bergsmark-face-1.jpg",
+      "image_source_url": "https://acceleratorsu.art/evenemang/filmvisning-en-ljuvlighet-fran-ingenstans/",
+      "image_alt": "Portrait of filmmaker Ester M. Bergsmark, photo Erica Moon-Nam Lindberg; supplied on the screening page.",
+      "image_identity_review": {
+        "event_match": true,
+        "reviewer": "Editorial assistant; organizer-page association and local visual inspection",
+        "source_page": "https://acceleratorsu.art/evenemang/filmvisning-en-ljuvlighet-fran-ingenstans/",
+        "checked_at": "2026-11-16T01:28:25+01:00",
+        "notes": "Authentic participant photograph published on the exact 2026 event page; not represented as a photograph of a future performance. Portrait of filmmaker Ester M. Bergsmark, photo Erica Moon-Nam Lindberg; supplied on the screening page."
+      },
+      "first_seen_issue": "TEST-006",
+      "new_discovery_verified": false,
+      "populated_from_historical_visual_test": "Photo identity metadata from visual TEST-006; event facts independently rechecked for issue 005.",
+      "source_id": "accelerator"
     }
-  ]
+  ],
+  "window_start": "2026-11-22"
 }

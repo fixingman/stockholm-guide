@@ -1,5 +1,5 @@
 {
-  "html_sha256": "45bcdd3eec0d8216ab39a325204a0e8f7c68370460e5105396e2808883cf46a1",
+  "html_sha256": "98ccea7e86490013d733b129ccd6d2b4fd3c136956b3700bde07f6f31bddfbed",
   "static": {
     "ok": true,
     "errors": [],
@@ -21,26 +21,26 @@
       "fallbackCount": 0,
       "photoDetails": [
         {
-          "src": "https://stadsgardsterminalen.com/wp-content/uploads/2026/10/nortic-traden-homegrown-1200x675.jpg",
+          "src": "https://www.filmform.com/wp-content/uploads/2026/11/info-paper-collage-v4-1024x557.jpg",
           "complete": true,
-          "naturalWidth": 1200,
-          "naturalHeight": 675,
+          "naturalWidth": 1024,
+          "naturalHeight": 557,
           "width": 76,
           "height": 76
         },
         {
-          "src": "https://www.fylkingen.se/_next/image?url=%2Fmedia%2Fsites%252Fclvuuu5cs0001xwfc7ne538fo%252Fmedia%252Fdb20cec9-e78d-4e58-a2f7-274f9e06d656-HeleneBergportratt.jpg&w=1080&q=70",
+          "src": "https://images.lumacdn.com/cdn-cgi/image/format%3Dauto%2Cfit%3Dcover%2Cdpr%3D2%2Cbackground%3Dwhite%2Cquality%3D75%2Cwidth%3D400%2Cheight%3D400/uploads/y2/57ba37f7-6aad-4247-9f61-23f3d8468c88.jpg",
           "complete": true,
-          "naturalWidth": 1080,
-          "naturalHeight": 1342,
+          "naturalWidth": 800,
+          "naturalHeight": 800,
           "width": 76,
           "height": 76
         },
         {
-          "src": "https://acceleratorsu.art/wp-content/uploads/2024/03/Ester_Bergsmark-face-1.jpg",
+          "src": "https://ronnells.se/wp-content/uploads/2026/11/BA1.jpg",
           "complete": true,
-          "naturalWidth": 4000,
-          "naturalHeight": 2727,
+          "naturalWidth": 800,
+          "naturalHeight": 533,
           "width": 76,
           "height": 76
         }
@@ -55,26 +55,26 @@
       "fallbackCount": 0,
       "photoDetails": [
         {
-          "src": "https://stadsgardsterminalen.com/wp-content/uploads/2026/10/nortic-traden-homegrown-1200x675.jpg",
+          "src": "https://www.filmform.com/wp-content/uploads/2026/11/info-paper-collage-v4-1024x557.jpg",
           "complete": true,
-          "naturalWidth": 1200,
-          "naturalHeight": 675,
+          "naturalWidth": 1024,
+          "naturalHeight": 557,
           "width": 76,
           "height": 76
         },
         {
-          "src": "https://www.fylkingen.se/_next/image?url=%2Fmedia%2Fsites%252Fclvuuu5cs0001xwfc7ne538fo%252Fmedia%252Fdb20cec9-e78d-4e58-a2f7-274f9e06d656-HeleneBergportratt.jpg&w=1080&q=70",
+          "src": "https://images.lumacdn.com/cdn-cgi/image/format%3Dauto%2Cfit%3Dcover%2Cdpr%3D2%2Cbackground%3Dwhite%2Cquality%3D75%2Cwidth%3D400%2Cheight%3D400/uploads/y2/57ba37f7-6aad-4247-9f61-23f3d8468c88.jpg",
           "complete": true,
-          "naturalWidth": 1080,
-          "naturalHeight": 1342,
+          "naturalWidth": 800,
+          "naturalHeight": 800,
           "width": 76,
           "height": 76
         },
         {
-          "src": "https://acceleratorsu.art/wp-content/uploads/2024/03/Ester_Bergsmark-face-1.jpg",
+          "src": "https://ronnells.se/wp-content/uploads/2026/11/BA1.jpg",
           "complete": true,
-          "naturalWidth": 4000,
-          "naturalHeight": 2727,
+          "naturalWidth": 800,
+          "naturalHeight": 533,
           "width": 76,
           "height": 76
         }
@@ -89,26 +89,26 @@
       "fallbackCount": 0,
       "photoDetails": [
         {
-          "src": "https://stadsgardsterminalen.com/wp-content/uploads/2026/10/nortic-traden-homegrown-1200x675.jpg",
+          "src": "https://www.filmform.com/wp-content/uploads/2026/11/info-paper-collage-v4-1024x557.jpg",
           "complete": true,
-          "naturalWidth": 1200,
-          "naturalHeight": 675,
+          "naturalWidth": 1024,
+          "naturalHeight": 557,
           "width": 96,
           "height": 96
         },
         {
-          "src": "https://www.fylkingen.se/_next/image?url=%2Fmedia%2Fsites%252Fclvuuu5cs0001xwfc7ne538fo%252Fmedia%252Fdb20cec9-e78d-4e58-a2f7-274f9e06d656-HeleneBergportratt.jpg&w=1080&q=70",
+          "src": "https://images.lumacdn.com/cdn-cgi/image/format%3Dauto%2Cfit%3Dcover%2Cdpr%3D2%2Cbackground%3Dwhite%2Cquality%3D75%2Cwidth%3D400%2Cheight%3D400/uploads/y2/57ba37f7-6aad-4247-9f61-23f3d8468c88.jpg",
           "complete": true,
-          "naturalWidth": 1080,
-          "naturalHeight": 1342,
+          "naturalWidth": 800,
+          "naturalHeight": 800,
           "width": 96,
           "height": 96
         },
         {
-          "src": "https://acceleratorsu.art/wp-content/uploads/2024/03/Ester_Bergsmark-face-1.jpg",
+          "src": "https://ronnells.se/wp-content/uploads/2026/11/BA1.jpg",
           "complete": true,
-          "naturalWidth": 4000,
-          "naturalHeight": 2727,
+          "naturalWidth": 800,
+          "naturalHeight": 533,
           "width": 96,
           "height": 96
         }
