@@ -24,7 +24,7 @@ jobs:
           from pathlib import Path
           files = sorted(Path('.github/workflows').glob('*.yml'))
           stale = [(str(p), ref) for p in files for ref in
-                   ('actions/checkout@v4','actions/setup-python@v5','actions/upload-artifact@v4')
+                   ('actions/checkout@'+'v4','actions/setup-python@'+'v5','actions/upload-artifact@'+'v4')
                    if ref in p.read_text()]
           assert not stale, f'Node 20 action refs remain: {stale}'
           print(f'Checked {len(files)} workflows for deprecated action majors')
