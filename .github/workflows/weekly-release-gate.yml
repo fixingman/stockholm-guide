@@ -22,8 +22,8 @@ jobs:
   fresh-issue-release:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
         with:
           python-version: '3.12'
       - name: Install renderer and image checks
@@ -95,7 +95,7 @@ jobs:
               assert visual["ok"] and len(visual["visual_scenarios"])==3, "Images-enabled visual QA missing or failed"
           print("RELEASE GATE PASSED — HTML digest:",m["html_sha256"])
           PY
-      - uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v6
         with:
           name: verified-sunday-issue-html-and-manifest
           path: release/
