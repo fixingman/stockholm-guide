@@ -28,10 +28,10 @@ jobs:
           python-version: '3.12'
       - name: Verify source-to-verified-pool-to-output regression tests
         run: python -m unittest test_editorial_pool_audit
-      - name: Demonstrate unchanged owner Issue 005 fixture is correctly rejected
+      - name: Demonstrate that the original published Issue 005 is rejected as an owner full-source rehearsal
         run: |
-          if python editorial_pool_audit.py --issue issues/owner-rehearsal-2026-11-22.json --comparison issues/current.json --report /tmp/known-bad-report.json; then
-            echo 'ERROR: Old unchanged Issue 005 incorrectly passed'
+          if python editorial_pool_audit.py --issue issues/current.json --comparison issues/current.json --report /tmp/known-bad-report.json; then
+            echo 'ERROR: Original unchanged Issue 005 incorrectly passed'
             exit 1
           fi
           python - <<'PY'
@@ -40,5 +40,16 @@ jobs:
           assert not r['ok'] and r['errors']
           assert any('reuses ALL' in e for e in r['errors'])
           assert any('calendar-only' in e for e in r['errors'])
-          print('Known-bad unchanged owner edition rejected as intended')
+          print('Original sent issue rejected as full-source owner rehearsal')
+          PY
+      - name: Require ACTUAL revised owner issue to differ and reconcile events across email and calendar
+        run: |
+          python editorial_pool_audit.py --issue issues/owner-rehearsal-2026-11-22.json --comparison issues/current.json --report /tmp/rebuilt-owner-report.json
+          python - <<'PY'
+          import json
+          r=json.load(open('/tmp/rebuilt-owner-report.json'))
+          assert r['ok']
+          assert r['new_vs_reference']>=5, 'Rebuild needs multiple genuine new original event URLs'
+          assert r['calendar_only']>=3, 'Calendar must include verified non-newsletter events'
+          print('Actual owner rebuild has',r['newsletter'],'newsletter events,',r['calendar_only'],'calendar-only events,',r['new_vs_reference'],'new event URLs')
           PY
