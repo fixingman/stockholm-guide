@@ -54,7 +54,18 @@ jobs:
                   assert page.locator(".fc-list-event").count()==3, "Top Picks filter did not show exactly three"
                   page.get_by_role("button",name="Calendar",exact=True).click()
                   page.locator(".fc-daygrid").wait_for(timeout=10000)
+                  # Load from scratch at phone width: FullCalendar's resize
+                  # is debounced and an immediate post-resize screenshot is stale.
                   page.set_viewport_size({"width":390,"height":844})
+                  page.reload(wait_until="load",timeout=60000)
+                  page.locator(".fc-daygrid").wait_for(timeout=30000)
+                  page.wait_for_timeout(450)
+                  days=page.locator(".fc-col-header-cell")
+                  assert days.count()==7, "Expected all seven weekdays"
+                  left=days.first.bounding_box()
+                  right=days.last.bounding_box()
+                  assert left and right and left["x"]>=0 and right["x"]+right["width"]<=393, "Clipped weekday columns on mobile"
+                  assert page.locator(".fc-daygrid-event").count()>=3, "No calendar events on mobile"
                   page.screenshot(path="calendar-mobile.png",full_page=True)
                   assert page.evaluate("document.documentElement.scrollWidth <= window.innerWidth + 3"), "Mobile horizontal overflow"
                   browser.close()
