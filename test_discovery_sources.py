@@ -64,7 +64,7 @@ class DiscoverySourceTests(unittest.TestCase):
         self.assertIn("Luma", policy["luma_explicit_check"])
         self.assertIn("Log", policy["luma_explicit_check"])
         self.assertIn("not checked", policy["scanning_accountability"])
-        self.assertIn("do not", policy["new_source_rotation"].lower() + " do not assume all sources scanned")
+        self.assertIn("no obligation to scan every registered source", policy["new_source_rotation"].lower())
 
     def test_no_signup_bypass_or_unverified_publication_policy(self):
         policy = self.registry["source_diversity_policy"]
