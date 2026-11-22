@@ -9,6 +9,8 @@ on:
       - delivery_guard.py
       - editorial_quality.py
       - source_coverage.py
+      - editorial_pool_audit.py
+      - test_editorial_pool_audit.py
       - test_source_coverage.py
       - test_discovery_sources.py
       - .github/workflows/weekly-release-gate.yml
@@ -45,8 +47,22 @@ jobs:
         run: |
           mkdir -p release
           python source_coverage.py --issue issues/current.json --registry discovery_sources.json --strict --report release/source-coverage-report.json
+      - name: Verify entire eligible event pool flows into email or calendar (Issue 006+)
+        run: |
+          mkdir -p release
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          issue=json.loads(Path('issues/current.json').read_text())
+          if int(issue['issue_number']) >= 6:
+              from editorial_pool_audit import main
+              import sys
+              sys.argv=['editorial_pool_audit.py','--issue','issues/current.json','--report','release/editorial-pool-report.json']
+              raise SystemExit(main())
+          print('Historical Issue 005 already sent; event-pool gate enforced from 006')
+          PY
       - name: Run all offline regression tests
-        run: python -m unittest test_minimal test_image_pipeline test_optimize_issue_images test_delivery_guard test_editorial_operations test_freshness_scanning test_release_authorization test_source_coverage
+        run: python -m unittest test_minimal test_image_pipeline test_optimize_issue_images test_delivery_guard test_editorial_operations test_freshness_scanning test_release_authorization test_source_coverage test_editorial_pool_audit
       - name: Render new issue, validate organizer evidence, links, live photos and final review
         run: |
           mkdir -p release
