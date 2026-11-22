@@ -65,7 +65,7 @@
   "image_proxy_certified": false,
   "data_sha256": "2f1d11185ebda70dfe4d4aac4fcf259d6454c2f6ff6397bcce5518547345f0f4",
   "rendered_html_file": "outgoing.html",
-  "preflight_timestamp_utc": "2026-11-22T15:24:18.172692+00:00",
+  "preflight_timestamp_utc": "2026-11-22T15:34:13.982653+00:00",
   "editorial_quality": {
     "ready_for_editorial_release": true,
     "mode": "strict",
@@ -90,6 +90,7 @@
     "repeat_new_discoveries": [],
     "identity_reviewed_images": 3,
     "identity_review_target": 3,
+    "repeated_top3": [],
     "event_evidence_rows": [
       {
         "title": "En ljuvlighet från ingenstans — film and conversation",
@@ -455,5 +456,5 @@
     "note": "Timestamped evidence audit; cannot independently establish that page claims are true."
   },
   "release_channel": "production",
-  "source_commit_sha": "46883204cc3236c0c805e1990a94c88d31a8b054"
+  "source_commit_sha": "0403d468d8fa878b74c39f831ab4f4e3029cffbf"
 }
