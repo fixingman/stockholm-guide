@@ -33,7 +33,7 @@ def checked_issue(reg=None):
             "review_method": "public_organizer_calendar",
             "reviewer": "Stockholm editorial agent",
             "checked_urls": checked,
-            "finding": "Reviewed upcoming public programme; no suitable unique events in this test fixture."
+            "finding": f"Reviewed {src['name']} upcoming public programme; no suitable unique event found in this fixture."
         })
     return issue
 
@@ -57,6 +57,15 @@ class CoverageTests(unittest.TestCase):
         self.assertFalse(result["ready_for_source_coverage"])
         self.assertEqual(result["not_checked_count"], 1)
         self.assertTrue(any("never examined" in x for x in result["errors"]))
+
+    def test_copied_boilerplate_not_accepted_as_49_distinct_reviews(self):
+        reg = registry()
+        issue = checked_issue(reg)
+        for row in issue["research_coverage"]["source_scans"][:4]:
+            row["finding"] = "Nothing was available anywhere in the programme."
+        result = audit(issue, reg, strict=True)
+        self.assertFalse(result["ready_for_source_coverage"])
+        self.assertTrue(any("Boilerplate" in e for e in result["errors"]))
 
     def test_http_probe_only_is_never_an_editorial_review(self):
         reg = registry()
