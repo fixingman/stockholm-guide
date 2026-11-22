@@ -10,6 +10,7 @@ on:
     paths:
       - source_sweep.py
       - source_browser_sweep.py
+      - source_review_checklist.py
       - source_coverage.py
       - test_source_coverage.py
       - test_discovery_sources.py
@@ -64,6 +65,17 @@ jobs:
           print("Public browser-enriched sources:",p["browser_enriched_count"])
           print("Unverified candidate links:",p["total_discovered_links"])
           PY
+      - name: Produce 100% source checklist for Saturday editorial handoff
+        run: |
+          python source_review_checklist.py --registry discovery_sources.json --probe /tmp/source-probe.json --output /tmp/source-review-checklist.json
+          python - <<'PY'
+          import json
+          d=json.load(open("/tmp/source-review-checklist.json"))
+          assert d["registry_count"] == d["accounted_for_count"] == len(d["rows"])
+          assert d["editorially_reviewed_count"] == 0
+          assert all(x["status"]=="NOT_REVIEWED" for x in d["rows"])
+          print("COMPLETE EDITORIAL HANDOFF TEMPLATE:",len(d["rows"]),"unreviewed sources")
+          PY
       - name: Summarize all attempted sources without calling them reviewed
         run: |
           python - <<'PY'
@@ -90,7 +102,9 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: public-source-probe-all-registered
-          path: /tmp/source-probe.json
+          path: |
+            /tmp/source-probe.json
+            /tmp/source-review-checklist.json
           retention-days: 21
       - name: Update separate public source-audit branch for Saturday and Sunday editorial agents
         run: |
@@ -100,7 +114,8 @@ jobs:
           git switch -C source-audit origin/source-audit
           mkdir -p research
           cp /tmp/source-probe.json research/source-probe.json
-          git add research/source-probe.json
+          cp /tmp/source-review-checklist.json research/source-review-checklist.json
+          git add research/source-probe.json research/source-review-checklist.json
           if ! git diff --cached --quiet; then
             git commit -m "Public sweep of all registered source calendars [skip ci]"
             git push origin HEAD:source-audit
