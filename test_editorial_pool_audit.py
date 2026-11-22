@@ -9,7 +9,7 @@ class PoolAuditTests(unittest.TestCase):
     def fixture(self):
         a, b = event("https://venue.test/a"), event("https://venue.test/b")
         return {
-            "research_coverage": {"eligible_verified_events": [a,b]},
+            "research_coverage": {"eligible_verified_events": [a,b], "source_scans": [{"source_id": "venue", "status": "reviewed_leads", "candidate_urls": [a["url"], b["url"]]}]},
             "top3": [a], "new_discoveries": [],
             "worth_reconsidering": [], "calendar_only_events": [b],
         }
