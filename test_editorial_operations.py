@@ -56,6 +56,15 @@ class EditorialTests(unittest.TestCase):
         r2=audit(g,history=[previous],strict=True)
         self.assertTrue(r2["ready_for_editorial_release"])
 
+        # A renamed event must still be rejected when its exact official event
+        # page matches something previously featured.
+        previous["top3"][0]["url"]=g["top3"][0]["url"]
+        r3=audit(g,history=[previous],strict=True)
+        self.assertFalse(r3["ready_for_editorial_release"])
+        self.assertEqual(len(r3["repeated_top3"]),1)
+        g["top3"][0]["url"]="https://events.example.org/a-truly-new-event"
+        self.assertTrue(audit(g,history=[previous],strict=True)["ready_for_editorial_release"])
+
     def test_issue_005_legacy_repeat_reports_but_does_not_retroactively_block(self):
         g=make_strict_issue()
         g["issue_number"]="005"
