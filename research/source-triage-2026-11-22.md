@@ -43,6 +43,16 @@
 | Selam · no confirmed new Stockholm date | After 22 Nov | [Open](https://selam.se/eng/events) | November 6 concert already passed; don't infer from 'coming soon' |
 | NATTÖGA · no new current public date confirmed | Not established | [Open](https://ra.co/promoters/131068) | RA public page available via alternative search; automated probe 403 |
 
+### Additional corroborated dated candidates
+
+- **Andersson Dance — ORE**, Dansens Hus Blackbox, **26 November–3 December 2026**. Official [Dansens Hus programme](https://dansenshus.se/en/program/). Contemporary movement performance not in Issue 005; inspect exact individual showtimes, audience format and ticket stock.
+- **Kärleken**, a new play at Kulturhuset Stadsteatern's Fri Scen, **27 November 2026** premiere date listed by [venue](https://kulturhusetstadsteatern.se/teater/karleken). Unusual independent theatre lead, verify full run and actual available dates.
+- **Sauna Radio**, Reimersholme Hotel, **27 November 2026**, publicly indexed by [Resident Advisor](https://ra.co/events/2583904); must check actual organizer page before qualifying.
+- **Mall Call**, Stinsen in Sollentuna, **27–28 November 2026**, via [Resident Advisor](https://ra.co/events/2520566). Distinctive improvised venue use; do not treat a suburb listing as central Stockholm or assume tickets.
+- **Sips & Styles**, circular fashion at Green Little Heart, **26 November 2026**, original public [Luma](https://luma.com/bkr97sab) entry; avoid ordinary retail promotion unless there is genuinely participatory creative content.
+- **Cinemateket — Metropolis**, **5 December 2026**, original [Film Institute programme](https://www.filminstitutet.se/sv/se-och-samtala-om-film/cinemateket-stockholm/program/); check special format and ticket stock before inclusion.
+- **Fållan — Omah Lay**, **24 November 2026**, [official venue list](https://www.fallan.nu/whats-on). Larger conventional concert, editorial fit less distinctive than experimental formats.
+
 ## All 49 registered sources: raw index probe evidence
 
 The last column is an **unverified link from the source index**, not an event acceptance decision. Some entries will be navigation or historical: that is precisely why editorial follow-through is required.
