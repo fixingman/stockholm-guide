@@ -63,8 +63,9 @@ jobs:
           result=build_data(issue)
           assert result['event_count']==32
           assert result['window_start']=='2026-11-22' and result['window_end']=='2026-12-05'
-          assert len(issue['calendar_only_events'])==19
-          print('Owner-only Issue 005 calendar preview: 32 events (19 extra), correct dates')
+          assert result['event_count'] == sum(len(issue.get(section, [])) for section in ('top3','new_discoveries','worth_reconsidering','calendar_only_events'))
+          assert len(issue['calendar_only_events']) >= 1, 'Owner expanded calendar pool cannot be empty'
+          print('Owner-only Issue 005 calendar preview:', result['event_count'], 'total events,', len(issue['calendar_only_events']), 'extras; correct dates')
           PY
           test -s calendar.html
           test -s calendar.js
