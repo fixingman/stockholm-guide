@@ -74,7 +74,7 @@ def run():
             feed_response = page.request.get(feed_url, timeout=20000)
             assert_that(feed_response.status == 200, "Subscription feed URL unavailable")
             feed_bytes = feed_response.body()
-            assert_that(feed_bytes.startswith(b"BEGIN:VCALENDAR\\r\\n"), "Not a valid iCalendar feed")
+            assert_that(feed_bytes.startswith(b"BEGIN:VCALENDAR\r\n"), "Not a valid iCalendar feed")
             assert_that(feed_bytes.count(b"BEGIN:VEVENT") >= 1, "Subscription feed has no dated entries")
             assert_that(page.get_by_role("button", name="Copy feed URL").count() == 1,
                         "Missing manual subscription URL copy control")
