@@ -7,8 +7,9 @@ from bs4 import BeautifulSoup
 from PIL import Image
 
 SOURCES = [
- {"title":"CHIMERA / EVOLVER","url":"https://fylkingen.se/en"},
+ {"title":"CHIMERA / EVOLVER","url":"https://fylkingen.se/en/events/chimera-evolver"},
  {"title":"Träden + Homegrown","url":"https://stadsgardsterminalen.com/event/traden-homegrown/"},
+ {"title":"Changing Landscape","url":"https://fylkingen.se/en/events/changing-landscape-evolving-experiences"},
  {"title":"Pepparkakshus 2026","url":"https://arkdes.se/utstallningar/pepparkakshus-2026/"},
 ]
 HEADERS={"User-Agent":"Mozilla/5.0 StockholmGuide-EditorialResearch/1.0"}
