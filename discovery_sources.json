@@ -332,7 +332,11 @@
         "cross-venue discovery",
         "undercovered event leads"
       ],
-      "editorial_instructions": "Discovery only: find lesser-known candidate events and organizer calendars, then click through and independently verify on the ORIGINAL organizer's official event page or ticket seller for times, venue, price, booking and photographs. Never treat aggregator listings as definitive live availability or image identity proof; deduplicate against other discovery sources."
+      "editorial_instructions": "Discovery only: find lesser-known candidate events and organizer calendars, then click through and independently verify on the ORIGINAL organizer's official event page or ticket seller for times, venue, price, booking and photographs. Never treat aggregator listings as definitive live availability or image identity proof; deduplicate against other discovery sources. Public anonymous Python index sweep can return HTTP 403; retry, then use public browser/search index and specific dated RA event pages, or promoter/venue primary listings. Record original 403 honestly; do not automatically mark blocked RA as editorial no-events. Do not hard-code past example query dates when searching the next issue.",
+      "alternate_public_research_urls": [
+        "https://ra.co/events/se/stockholm?startDate=2026-11-27",
+        "https://ra.co/events/se/stockholm/club"
+      ]
     },
     {
       "id": "evenemangstockholm",
@@ -379,7 +383,7 @@
         "https://luma.com/discover/stockholm/tech",
         "https://luma.com/stockholmdesign"
       ],
-      "editorial_instructions": "Public Stockholm city and category pages are readable without signing in. Scan event leads in creative, social, arts, design and tech categories; inspect PUBLIC individual event pages for host identity, full date, venue, price and booking status. Some events are private/member-only, have approval/waitlist or hide exact address: DO NOT attempt login, bypass access restrictions or claim private inventory/confirmed attendance. Report gated/uncertain details; prioritize novelty over routine networking. Direct Luma event page can be the original host page when host actually organizes on Luma; otherwise follow through to official organizer."
+      "editorial_instructions": "Public Stockholm city and category pages are readable without signing in. Scan event leads in creative, social, arts, design and tech categories; inspect PUBLIC individual event pages for host identity, full date, venue, price and booking status. Some events are private/member-only, have approval/waitlist or hide exact address: DO NOT attempt login, bypass access restrictions or claim private inventory/confirmed attendance. Report gated/uncertain details; prioritize novelty over routine networking. Direct Luma event page can be the original host page when host actually organizes on Luma; otherwise follow through to official organizer. CAUTION: raw HTML-anchor extraction of Luma public city/category pages can reveal few event links despite many event cards; use a rendered public browser or search indexing to discover event details, including organizer-specific Luma calendars, rather than treating a low anchor count as no upcoming events."
     },
     {
       "id": "meetup-stockholm",
@@ -516,7 +520,11 @@
         "distinctive underground music lineups",
         "special themed club events"
       ],
-      "editorial_instructions": "Review upcoming public events within the rolling 14-day window during Saturday preparation and fresh Sunday research. Follow through to original organizer listings for dates, exact times, location, price, booking, age requirements and authentic images; exclude past events, private hire listings and generic venue marketing. Deduplicate against other registered sources and only recommend events with strong experiential fit. Organizer listings on Resident Advisor are the primary accessible event index; do not treat every standard DJ night as an editorial pick; avoid duplicates with Resident Advisor discovery."
+      "editorial_instructions": "Review upcoming public events within the rolling 14-day window during Saturday preparation and fresh Sunday research. Follow through to original organizer listings for dates, exact times, location, price, booking, age requirements and authentic images; exclude past events, private hire listings and generic venue marketing. Deduplicate against other registered sources and only recommend events with strong experiential fit. Organizer listings on Resident Advisor are the primary accessible event index; do not treat every standard DJ night as an editorial pick; avoid duplicates with Resident Advisor discovery. Public anonymous HTTP sweep of ra.co/promoters/131068 can return HTTP 403; check public indexed organizer/RA pages or official public Instagram posts for current exact dates, not just their last historical club night. Log 403 and alternate attempts separately; never infer login-only details.",
+      "alternate_public_research_urls": [
+        "https://www.instagram.com/nattoga.sthlm/",
+        "https://ra.co/promoters/se/stockholm"
+      ]
     },
     {
       "id": "the-well-zone",
