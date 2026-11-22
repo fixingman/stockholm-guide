@@ -1,0 +1,43 @@
+name: Live calendar acceptance — public website (no email)
+on:
+  push:
+    branches: [main]
+    paths:
+      - test_calendar_live.py
+      - .github/workflows/calendar-live-acceptance.yml
+  workflow_dispatch:
+  workflow_run:
+    workflows: ["Publish Stockholm Guide preview"]
+    types: [completed]
+permissions:
+  contents: read
+concurrency:
+  group: calendar-live-acceptance
+  cancel-in-progress: true
+jobs:
+  test-deployed-website:
+    if: ${{ github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success' }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install browser test dependencies (no email)
+        run: |
+          python -m pip install 'playwright>=1.55,<2'
+          python -m playwright install --with-deps chromium
+      - name: Exercise ACTUAL GitHub Pages calendar with a real browser
+        run: python test_calendar_live.py
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: live-calendar-acceptance-report
+          path: |
+            live-calendar-test-report.json
+            live-calendar-desktop.png
+            live-calendar-mobile.png
+          if-no-files-found: warn
+          retention-days: 7
