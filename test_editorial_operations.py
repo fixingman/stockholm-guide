@@ -74,6 +74,25 @@ class EditorialTests(unittest.TestCase):
         self.assertTrue(r["ready_for_editorial_release"])
         self.assertTrue(any("Previously featured Top 3 recycled" in s for s in r["warnings"]))
 
+    def test_owner_005_rehearsal_blocks_repeat_from_actual_featured_history(self):
+        g=make_strict_issue()
+        g["issue_number"]="005"
+        g["rehearsal"]=True
+        previous={"top3":[{"title":"Older title", "url":g["top3"][0]["url"],
+                           "issue":"005", "kind":"production-sent"}]}
+        r=audit(g,history=[previous],strict=True)
+        self.assertFalse(r["ready_for_editorial_release"])
+        self.assertTrue(r["repeated_top3"])
+        self.assertTrue(any("Previously featured Top 3" in e for e in r["errors"]))
+
+    def test_published_historical_005_remains_exempt(self):
+        g=make_strict_issue()
+        g["issue_number"]="005"
+        g.pop("rehearsal",None)
+        previous={"top3":[{"title":g["top3"][0]["title"]}]}
+        r=audit(g,history=[previous],strict=True)
+        self.assertTrue(r["ready_for_editorial_release"])
+
     def test_missing_event_verification_blocks_strict(self):
         g=make_strict_issue()
         del g["top3"][0]["verification"]["date"]
