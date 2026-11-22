@@ -43,7 +43,22 @@ jobs:
           assert result["not_checked_count"]==0
           PY
       - name: Run offline editorial, image, email, source-coverage and privacy regressions
-        run: python -m unittest test_minimal test_image_pipeline test_optimize_issue_images test_delivery_guard test_editorial_operations test_freshness_scanning test_release_authorization test_source_coverage test_discovery_sources
+        run: python -m unittest test_minimal test_image_pipeline test_optimize_issue_images test_delivery_guard test_editorial_operations test_freshness_scanning test_release_authorization test_source_coverage test_discovery_sources test_calendar
+      - name: Verify owner rehearsal calendar handoff and issue 005 display
+        run: |
+          node --check calendar.js
+          python build_calendar.py --data issues/owner-rehearsal-2026-11-22.json --output release/owner-calendar.html
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          from build_calendar import build_data
+          issue=json.loads(Path("issues/owner-rehearsal-2026-11-22.json").read_text())
+          result=build_data(issue)
+          assert result["issue_number"]=="005"
+          assert len(issue["research_coverage"]["source_scans"])==49
+          assert result["event_count"] >= 3
+          print("ISSUE 005 OWNER-ONLY CALENDAR:",result["event_count"],"events")
+          PY
       - name: Render exact current-week owner-only rehearsal with authentic photo verification
         run: |
           python optimize_issue_images.py --data issues/owner-rehearsal-2026-11-22.json --output release/optimized-issue.json --report release/image-optimization.json
