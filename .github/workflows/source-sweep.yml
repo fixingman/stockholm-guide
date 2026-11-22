@@ -70,7 +70,7 @@ jobs:
           for src in result["sources"]:
               lines.append(f"| {src['source_id']} | {src['probe_status']} | {len(src['candidate_links'])} |")
           with open(os.environ["GITHUB_STEP_SUMMARY"],"a",encoding="utf-8") as out:
-              out.write("\\n".join(lines)+"\\n")
+              out.write("\n".join(lines)+"\n")
           PY
       - name: Upload complete timestamped source probe
         uses: actions/upload-artifact@v4
