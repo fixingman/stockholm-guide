@@ -68,6 +68,18 @@ def run():
             assert_that(style != "none", "Website stylesheet not applied")
             checks.append("Live calendar CSS and JS loaded")
 
+            subscribe = page.get_by_role("link", name="Subscribe to calendar")
+            assert_that(subscribe.get_attribute("href").startswith("webcal://"), "No calendar subscription handler")
+            feed_url = "https://fixingman.github.io/stockholm-guide/calendar.ics"
+            feed_response = page.request.get(feed_url, timeout=20000)
+            assert_that(feed_response.status == 200, "Subscription feed URL unavailable")
+            feed_bytes = feed_response.body()
+            assert_that(feed_bytes.startswith(b"BEGIN:VCALENDAR\\r\\n"), "Not a valid iCalendar feed")
+            assert_that(feed_bytes.count(b"BEGIN:VEVENT") >= 1, "Subscription feed has no dated entries")
+            assert_that(page.get_by_role("button", name="Copy feed URL").count() == 1,
+                        "Missing manual subscription URL copy control")
+            checks.append("Public iCalendar subscription feed and setup controls available")
+
             page.get_by_role("button", name="All events", exact=True).click()
             page.locator(".fc-list").wait_for(timeout=12000)
             assert_that(page.locator(".fc-list-event").count() >= 3, "Agenda list is empty")
@@ -113,6 +125,20 @@ def run():
             assert_that(page.locator("#day-events .event-card a[href^='https://']").count() == len(corresponding),
                         "Date drill-down missing official event links")
             checks.append("Clicking day opens event cards with official organizer links")
+            expected_ics = [e for e in corresponding if e.get("ical_url")]
+            buttons = page.locator("#day-events .event-ical-link")
+            assert_that(buttons.count() == len(expected_ics),
+                        "Dated event cards missing individual calendar download links")
+            if expected_ics:
+                path = buttons.first.get_attribute("href")
+                assert_that(path.startswith("./calendar-events/") and path.endswith(".ics"),
+                            "Unsafe or missing single-event iCal path")
+                download_url = "https://fixingman.github.io/stockholm-guide/" + path[2:]
+                event_response = page.request.get(download_url, timeout=20000)
+                assert_that(event_response.status == 200, "Individual event iCal download unavailable")
+                assert_that(event_response.body().count(b"BEGIN:VEVENT") == 1,
+                            "Single-event download must not add the entire calendar")
+            checks.append("Per-event .ics links return single verified event imports")
 
             page.screenshot(path="live-calendar-desktop.png", full_page=True)
             mobile = browser.new_page(viewport={"width": 390, "height": 844}, device_scale_factor=1)
