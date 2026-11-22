@@ -38,6 +38,7 @@ def audit(issue, *, comparison=None):
     selected = {x for x in selected_ids if x}
     if len(selected) != len([x for x in selected_ids if x]):
         errors.append("Duplicate original event URLs across newsletter/calendar sections")
+    scans = {row.get("source_id"): row for row in (issue.get("research_coverage") or {}).get("source_scans", []) if isinstance(row, dict)}
     pool_ids = []
     for event in pool:
         if not isinstance(event, dict):
@@ -49,6 +50,9 @@ def audit(issue, *, comparison=None):
             continue
         if event.get("verification_status") != "verified_eligible":
             errors.append(f"{key}: eligibility not explicitly verified")
+        scan = scans.get(event.get("source_id"))
+        if not scan or scan.get("status") != "reviewed_leads" or event.get("url") not in (scan.get("candidate_urls") or []):
+            errors.append(f"{key}: no matching genuine reviewed_leads source record for original event URL")
         pool_ids.append(key)
     if len(set(pool_ids)) != len(pool_ids):
         errors.append("Duplicate original URLs within eligible verified pool")
