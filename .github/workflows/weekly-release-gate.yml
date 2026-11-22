@@ -46,7 +46,7 @@ jobs:
           IMAGE_POLICY=""
           REQUIRE_IMAGES=$(python -c 'import json; from delivery_guard import requires_featured_photos; print("true" if requires_featured_photos(json.load(open("issues/current.json"))) else "false")')
           if [ "$REQUIRE_IMAGES" = "true" ]; then IMAGE_POLICY="--require-featured-photos"; fi
-          python delivery_guard.py --data release/optimized-issue.json --html release/outgoing.html --manifest release/delivery-manifest.json --network --editorial-strict --freshness-strict $IMAGE_POLICY
+          python delivery_guard.py --data release/optimized-issue.json --html release/outgoing.html --manifest release/delivery-manifest.json --network --editorial-strict --freshness-strict --history issues/featured-history.json $IMAGE_POLICY
           python email_client_qa.py --html release/outgoing.html --browser --report release/client-qa.json --screenshots release/screenshots
           if [ "$REQUIRE_IMAGES" = "true" ]; then
             python email_client_qa.py --html release/outgoing.html --visual --report release/visual-qa.json --screenshots release/screenshots
