@@ -1,10 +1,7 @@
 {
   "ready_for_delivery": true,
   "errors": [],
-  "warnings": [
-    "Image load warning: https://acceleratorsu.art/wp-content/uploads/2024/03/Ester_Bergsmark-face-1.jpg: large_image",
-    "EDITORIAL: Previously featured Top 3 recycled: 3; select new Top Picks and move worthwhile repeats to Worth reconsidering"
-  ],
+  "warnings": [],
   "issue_number": "005",
   "date_range": "22 November–5 December 2026",
   "total_event_rows": 25,
@@ -15,65 +12,63 @@
     "Unavailable / sold out"
   ],
   "featured_images": [
-    "https://acceleratorsu.art/wp-content/uploads/2024/03/Ester_Bergsmark-face-1.jpg",
-    "https://www.fylkingen.se/_next/image?url=%2Fmedia%2Fsites%252Fclvuuu5cs0001xwfc7ne538fo%252Fmedia%252Fdb20cec9-e78d-4e58-a2f7-274f9e06d656-HeleneBergportratt.jpg&w=1080&q=70",
-    "https://cdn.sanity.io/images/2xi539qp/production/f90f2827b3bc91616ae3b05ce97210dfce71d2eb-3264x2448.jpg?rect=408,0,2448,2448&w=750&h=750&q=75&auto=format"
+    "https://fylkingen.se/media/sites%2Fclvuuu5cs0001xwfc7ne538fo%2Fmedia%2Fd6632067-61c4-4f91-97d2-7549d3e9343f-a1077103124_10.jpg",
+    "https://stadsgardsterminalen.com/wp-content/uploads/2026/10/nortic-traden-homegrown-1200x675.jpg",
+    "https://fylkingen.se/_next/image?url=%2Fmedia%2Fsites%252Fclvuuu5cs0001xwfc7ne538fo%252Fmedia%252F959c2f91-59fd-4fb3-8134-f6720717bb28-EVENT-BILD-CHANGING-LANDSCAPE.jpeg&w=1080&q=70"
   ],
   "image_checks": [
     {
-      "url": "https://acceleratorsu.art/wp-content/uploads/2024/03/Ester_Bergsmark-face-1.jpg",
+      "url": "https://fylkingen.se/media/sites%2Fclvuuu5cs0001xwfc7ne538fo%2Fmedia%2Fd6632067-61c4-4f91-97d2-7549d3e9343f-a1077103124_10.jpg",
       "ok": true,
-      "bytes": 1940036,
+      "bytes": 152762,
       "format": "JPEG",
       "dimensions": [
-        4000,
-        2727
+        1200,
+        1200
       ],
-      "resolved_url": "https://acceleratorsu.art/wp-content/uploads/2024/03/Ester_Bergsmark-face-1.jpg",
-      "sha256": "c23f0f92a6e44db43e8467b5a31fc694c017df94236e4aedb2e7ef55ee0ae35c",
-      "warning": "large_image"
-    },
-    {
-      "url": "https://www.fylkingen.se/_next/image?url=%2Fmedia%2Fsites%252Fclvuuu5cs0001xwfc7ne538fo%252Fmedia%252Fdb20cec9-e78d-4e58-a2f7-274f9e06d656-HeleneBergportratt.jpg&w=1080&q=70",
-      "ok": true,
-      "bytes": 152456,
-      "format": "JPEG",
-      "dimensions": [
-        1080,
-        1342
-      ],
-      "resolved_url": "https://www.fylkingen.se/_next/image?url=%2Fmedia%2Fsites%252Fclvuuu5cs0001xwfc7ne538fo%252Fmedia%252Fdb20cec9-e78d-4e58-a2f7-274f9e06d656-HeleneBergportratt.jpg&w=1080&q=70",
-      "sha256": "c99bf6788fb25b7fa66e064d02e2cc2c3a919a34489aae26e0dc3066acb4e350",
+      "resolved_url": "https://fylkingen.se/media/sites%2Fclvuuu5cs0001xwfc7ne538fo%2Fmedia%2Fd6632067-61c4-4f91-97d2-7549d3e9343f-a1077103124_10.jpg",
+      "sha256": "9b602ef5a7ca17a08c4aa7901ca53c0578c85f800d4f975a61dd705335655160",
       "warning": null
     },
     {
-      "url": "https://cdn.sanity.io/images/2xi539qp/production/f90f2827b3bc91616ae3b05ce97210dfce71d2eb-3264x2448.jpg?rect=408,0,2448,2448&w=750&h=750&q=75&auto=format",
+      "url": "https://stadsgardsterminalen.com/wp-content/uploads/2026/10/nortic-traden-homegrown-1200x675.jpg",
       "ok": true,
-      "bytes": 61930,
+      "bytes": 175316,
       "format": "JPEG",
       "dimensions": [
-        750,
-        750
+        1200,
+        675
       ],
-      "resolved_url": "https://cdn.sanity.io/images/2xi539qp/production/f90f2827b3bc91616ae3b05ce97210dfce71d2eb-3264x2448.jpg?rect=408,0,2448,2448&w=750&h=750&q=75&auto=format",
-      "sha256": "fa9eb5885475ee6d439514a0ca1b53b788a9a342084ff09447a09d4d086157c4",
+      "resolved_url": "https://stadsgardsterminalen.com/wp-content/uploads/2026/10/nortic-traden-homegrown-1200x675.jpg",
+      "sha256": "d4fb0cf0c32aa3f06f04698c8ebc478ba6b573728d81316ee36ce982679c7571",
+      "warning": null
+    },
+    {
+      "url": "https://fylkingen.se/_next/image?url=%2Fmedia%2Fsites%252Fclvuuu5cs0001xwfc7ne538fo%252Fmedia%252F959c2f91-59fd-4fb3-8134-f6720717bb28-EVENT-BILD-CHANGING-LANDSCAPE.jpeg&w=1080&q=70",
+      "ok": true,
+      "bytes": 131753,
+      "format": "JPEG",
+      "dimensions": [
+        1080,
+        810
+      ],
+      "resolved_url": "https://fylkingen.se/_next/image?url=%2Fmedia%2Fsites%252Fclvuuu5cs0001xwfc7ne538fo%252Fmedia%252F959c2f91-59fd-4fb3-8134-f6720717bb28-EVENT-BILD-CHANGING-LANDSCAPE.jpeg&w=1080&q=70",
+      "sha256": "24434255b7f3fdaa0d5445e6b1fd0751aea99d8541e1fd2f1b0b76407cb78eb6",
       "warning": null
     }
   ],
   "inline_fallbacks": 0,
-  "html_sha256": "f537bddf6b7a6ff1bcf0d2b91b79a98bbd4990b13e856e646f5de07f8705cf99",
-  "html_bytes": 46791,
+  "html_sha256": "a50973dc6fbbe101d48b3464325b3061080b3291709f9c8fbfe52efa44c8a157",
+  "html_bytes": 46743,
   "image_proxy_certified": false,
-  "data_sha256": "2f1d11185ebda70dfe4d4aac4fcf259d6454c2f6ff6397bcce5518547345f0f4",
+  "data_sha256": "b73aa818abf20dcc19af57395ea7e1ea6d25fb798708cda5b5759439d4e1e8e1",
   "rendered_html_file": "outgoing.html",
-  "preflight_timestamp_utc": "2026-11-22T15:37:15.807647+00:00",
+  "preflight_timestamp_utc": "2026-11-22T15:47:53.302793+00:00",
   "editorial_quality": {
     "ready_for_editorial_release": true,
     "mode": "strict",
     "errors": [],
-    "warnings": [
-      "Previously featured Top 3 recycled: 3; select new Top Picks and move worthwhile repeats to Worth reconsidering"
-    ],
+    "warnings": [],
     "unique_events": 25,
     "total_rows": 25,
     "organizer_count": 10,
@@ -93,45 +88,23 @@
     "repeat_new_discoveries": [],
     "identity_reviewed_images": 3,
     "identity_review_target": 3,
-    "repeated_top3": [
-      "aliqu deep listening and visual improvisation",
-      "en ljuvlighet fr n ingenstans film and conversation",
-      "salla salazar a phone free listening session"
-    ],
+    "repeated_top3": [],
     "event_evidence_rows": [
       {
-        "title": "En ljuvlighet från ingenstans — film and conversation",
-        "section": "top3",
-        "source": "acceleratorsu.art",
-        "organizer": "acceleratorsu.art"
-      },
-      {
-        "title": "Aliquī — deep listening and visual improvisation",
-        "section": "top3",
-        "source": "fylkingen.se",
-        "organizer": "fylkingen.se"
-      },
-      {
-        "title": "Salla Salazar — a phone-free listening session",
-        "section": "top3",
-        "source": "stockholm.fotografiska.com",
-        "organizer": "stockholm.fotografiska.com"
-      },
-      {
         "title": "CHIMERA / EVOLVER: Emma DJ + Keiska + DJ Haydn",
-        "section": "new_discoveries",
+        "section": "top3",
         "source": "fylkingen.se",
         "organizer": "fylkingen.se"
       },
       {
         "title": "Träden + Homegrown — psychedelic improvisation",
-        "section": "new_discoveries",
+        "section": "top3",
         "source": "stadsgardsterminalen.com",
         "organizer": "stadsgardsterminalen.com"
       },
       {
         "title": "Changing Landscape, Evolving Experiences — dance, ink and sound",
-        "section": "new_discoveries",
+        "section": "top3",
         "source": "fylkingen.se",
         "organizer": "fylkingen.se"
       },
@@ -244,6 +217,24 @@
         "organizer": "reimersholmehotel.se"
       },
       {
+        "title": "En ljuvlighet från ingenstans — film and conversation",
+        "section": "worth_reconsidering",
+        "source": "acceleratorsu.art",
+        "organizer": "acceleratorsu.art"
+      },
+      {
+        "title": "Aliquī — deep listening and visual improvisation",
+        "section": "worth_reconsidering",
+        "source": "fylkingen.se",
+        "organizer": "fylkingen.se"
+      },
+      {
+        "title": "Salla Salazar — a phone-free listening session",
+        "section": "worth_reconsidering",
+        "source": "stockholm.fotografiska.com",
+        "organizer": "stockholm.fotografiska.com"
+      },
+      {
         "title": "Standup x Oslipat — Kirsty Armstrong & Hanna Lublin Niklasson",
         "section": "unavailable",
         "source": "stockholm.fotografiska.com",
@@ -260,52 +251,28 @@
     "max_age_hours": 24,
     "reviewed_events": [
       {
-        "title": "En ljuvlighet från ingenstans — film and conversation",
-        "section": "top3",
-        "event_status": "scheduled",
-        "booking_status": "not_required",
-        "checked_at": "2026-11-22T16:20:06+01:00",
-        "organizer_source_url": "https://acceleratorsu.art/evenemang/filmvisning-en-ljuvlighet-fran-ingenstans/"
-      },
-      {
-        "title": "Aliquī — deep listening and visual improvisation",
-        "section": "top3",
-        "event_status": "scheduled",
-        "booking_status": "required_unverified",
-        "checked_at": "2026-11-22T16:20:06+01:00",
-        "organizer_source_url": "https://www.fylkingen.se/en/events/aliqui"
-      },
-      {
-        "title": "Salla Salazar — a phone-free listening session",
-        "section": "top3",
-        "event_status": "scheduled",
-        "booking_status": "required_unverified",
-        "checked_at": "2026-11-22T16:20:06+01:00",
-        "organizer_source_url": "https://stockholm.fotografiska.com/en/events/listening-session-salla-salazar-the-soundtrack-to-a-life"
-      },
-      {
         "title": "CHIMERA / EVOLVER: Emma DJ + Keiska + DJ Haydn",
-        "section": "new_discoveries",
+        "section": "top3",
         "event_status": "scheduled",
         "booking_status": "required_unverified",
-        "checked_at": "2026-11-22T16:20:06+01:00",
-        "organizer_source_url": "https://www.fylkingen.se/en/events"
+        "checked_at": "2026-11-22T16:46:51+01:00",
+        "organizer_source_url": "https://fylkingen.se/en/events/chimera-evolver"
       },
       {
         "title": "Träden + Homegrown — psychedelic improvisation",
-        "section": "new_discoveries",
+        "section": "top3",
         "event_status": "scheduled",
         "booking_status": "required_unverified",
-        "checked_at": "2026-11-22T16:20:06+01:00",
+        "checked_at": "2026-11-22T16:46:51+01:00",
         "organizer_source_url": "https://stadsgardsterminalen.com/event/traden-homegrown/"
       },
       {
         "title": "Changing Landscape, Evolving Experiences — dance, ink and sound",
-        "section": "new_discoveries",
+        "section": "top3",
         "event_status": "scheduled",
         "booking_status": "required_unverified",
-        "checked_at": "2026-11-22T16:20:06+01:00",
-        "organizer_source_url": "https://www.fylkingen.se/en/events/changing-landscape-evolving-experiences"
+        "checked_at": "2026-11-22T16:46:51+01:00",
+        "organizer_source_url": "https://fylkingen.se/en/events/changing-landscape-evolving-experiences"
       },
       {
         "title": "CNDNSD — experimental electronic performance",
@@ -452,6 +419,30 @@
         "organizer_source_url": "https://reimersholmehotel.se/event/masangue-maracatu-gaster/"
       },
       {
+        "title": "En ljuvlighet från ingenstans — film and conversation",
+        "section": "worth_reconsidering",
+        "event_status": "scheduled",
+        "booking_status": "not_required",
+        "checked_at": "2026-11-22T16:20:06+01:00",
+        "organizer_source_url": "https://acceleratorsu.art/evenemang/filmvisning-en-ljuvlighet-fran-ingenstans/"
+      },
+      {
+        "title": "Aliquī — deep listening and visual improvisation",
+        "section": "worth_reconsidering",
+        "event_status": "scheduled",
+        "booking_status": "required_unverified",
+        "checked_at": "2026-11-22T16:20:06+01:00",
+        "organizer_source_url": "https://www.fylkingen.se/en/events/aliqui"
+      },
+      {
+        "title": "Salla Salazar — a phone-free listening session",
+        "section": "worth_reconsidering",
+        "event_status": "scheduled",
+        "booking_status": "required_unverified",
+        "checked_at": "2026-11-22T16:20:06+01:00",
+        "organizer_source_url": "https://stockholm.fotografiska.com/en/events/listening-session-salla-salazar-the-soundtrack-to-a-life"
+      },
+      {
         "title": "Standup x Oslipat — Kirsty Armstrong & Hanna Lublin Niklasson",
         "section": "unavailable",
         "event_status": "scheduled",
@@ -463,5 +454,5 @@
     "note": "Timestamped evidence audit; cannot independently establish that page claims are true."
   },
   "release_channel": "production",
-  "source_commit_sha": "0e99c10acaded8735fa20990dc1d5ac29e1dc047"
+  "source_commit_sha": "4d49d2c56ee47dfba542ac367f06cce13f33dcfc"
 }
