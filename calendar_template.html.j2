@@ -46,25 +46,13 @@
           <button type="button" class="filter" aria-pressed="false" data-filter="last_chance">Last chance</button>
         </div>
 
-        <div id="calendar-view">
-          <div class="month-header">
-            <h2 id="month-heading">Loading events…</h2>
-            <div class="month-actions">
-              <button type="button" id="prev-month" aria-label="Previous month">‹</button>
-              <button type="button" id="next-month" aria-label="Next month">›</button>
-            </div>
-          </div>
-          <div class="week-labels" aria-hidden="true"><span>Mon</span><span>Tue</span><span>Wed</span><span>Thu</span><span>Fri</span><span>Sat</span><span>Sun</span></div>
-          <div class="month-grid" id="month-grid" aria-label="Select a date"></div>
-          <div class="day-details" aria-live="polite" aria-atomic="false">
+        <div class="calendar-panel">
+          <div id="fullcalendar" aria-label="Interactive month and list calendar"></div>
+          <div id="calendar-unavailable" class="unavailable-calendar" hidden>Calendar display is temporarily unavailable. The individual event listings below remain accessible.</div>
+          <div class="day-details" aria-live="polite">
             <div class="day-title"><h3 id="day-heading">Select a date</h3><span id="day-count"></span></div>
             <div id="day-events" class="event-list"></div>
           </div>
-        </div>
-
-        <div id="list-view" hidden>
-          <div class="list-heading"><h2>All dates, one list.</h2><span id="list-count"></span></div>
-          <div id="all-events" class="event-list"></div>
         </div>
 
         <section class="flexible-section" aria-labelledby="flexible-title">
@@ -80,6 +68,8 @@
     <footer><span>THE STOCKHOLM GUIDE · INDEPENDENTLY CURATED</span><span>Dates and tickets may change. Always confirm with the organizer. Times in Stockholm (CET/CEST).</span></footer>
   </div>
   <script id="calendar-data" type="application/json">{{ json_blob | safe }}</script>
+  <!-- FullCalendar Standard v6 (MIT); pinned CDN build includes dayGrid, list, interaction and CSS. -->
+  <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.22/index.global.min.js" defer></script>
   <script src="./calendar.js" defer></script>
   <noscript><section class="noscript"><h2>Events in this issue</h2><p>Enable JavaScript for the interactive calendar. Organizer links remain available below.</p>
   {% for event in data.events %}<article><strong>{{ event.title }}</strong><p>{{ event.dates }} · {{ event.venue }}</p><a href="{{ event.url }}">Official event page</a></article>{% endfor %}</section></noscript>
