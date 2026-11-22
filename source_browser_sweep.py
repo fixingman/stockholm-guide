@@ -53,13 +53,22 @@ async def enrich(report, concurrency=4, timeout=11000):
                                 "(nodes) => nodes.slice(0,900).map(n => [n.href, (n.innerText||n.getAttribute('aria-label')||'').trim().slice(0,140)])"
                             )
                             status = response.status if response else None
-                            links = discover_links(page.url, fetched)
-                            for lead in links:
-                                leads.setdefault(lead["url"],lead)
-                            attempts.append({"url": url, "final_url":page.url,
-                                             "http_code":status, "status":"dom_read",
-                                             "all_visible_anchor_count":len(fetched),
-                                             "event_candidate_count":len(links)})
+                            if status is None or status >= 400:
+                                # Chromium can successfully render an HTTP 403/404
+                                # error page. Never call that a reachable event calendar.
+                                attempts.append({"url":url,"final_url":page.url,
+                                                 "http_code":status,
+                                                 "status":"browser_http_error",
+                                                 "all_visible_anchor_count":len(fetched),
+                                                 "event_candidate_count":0})
+                            else:
+                                links = discover_links(page.url, fetched)
+                                for lead in links:
+                                    leads.setdefault(lead["url"],lead)
+                                attempts.append({"url": url, "final_url":page.url,
+                                                 "http_code":status, "status":"dom_read",
+                                                 "all_visible_anchor_count":len(fetched),
+                                                 "event_candidate_count":len(links)})
                         except Exception as exc:
                             attempts.append({"url":url,"status":"browser_error","error":str(exc)[:180]})
                         finally:
