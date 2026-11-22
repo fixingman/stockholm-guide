@@ -2,7 +2,7 @@ name: E2E — historical fixture render, live images and release guards (no emai
 on:
   push:
     branches: [main]
-    paths: [e2e_test_issue_2026-11-09.json, delivery_guard.py, final_freshness.py, editorial_scanning.py, render_minimal.py, minimal_template.html.j2, test_delivery_guard.py, test_freshness_scanning.py, test_discovery_sources.py, test_release_authorization.py, release_authorization.py, editorial_quality.py, test_editorial_operations.py, issues/featured-history.json, email_client_qa.py, discovery_sources.json, optimize_issue_images.py, test_optimize_issue_images.py, image_pipeline.py, .github/workflows/e2e-test-email.yml]
+    paths: [e2e_test_issue_2026-11-09.json, delivery_guard.py, final_freshness.py, editorial_scanning.py, render_minimal.py, minimal_template.html.j2, test_delivery_guard.py, test_freshness_scanning.py, test_discovery_sources.py, test_release_authorization.py, release_authorization.py, editorial_quality.py, test_editorial_operations.py, issues/featured-history.json, email_client_qa.py, discovery_sources.json, optimize_issue_images.py, test_optimize_issue_images.py, image_pipeline.py, build_calendar.py, calendar_template.html.j2, calendar.js, calendar.css, test_calendar.py, test_minimal.py, .github/workflows/e2e-test-email.yml]
   workflow_dispatch:
 permissions:
   contents: read
@@ -19,7 +19,20 @@ jobs:
           python -m pip install 'Jinja2>=3.1.6,<4' 'Pillow>=11,<14' 'playwright>=1.55,<2'
           python -m playwright install --with-deps chromium
       - name: Run newsletter and image regression tests
-        run: python -m unittest test_minimal test_image_pipeline test_optimize_issue_images test_delivery_guard test_editorial_operations test_freshness_scanning test_discovery_sources test_release_authorization
+        run: python -m unittest test_minimal test_image_pipeline test_optimize_issue_images test_delivery_guard test_editorial_operations test_freshness_scanning test_discovery_sources test_release_authorization test_calendar
+      - name: Validate maintained public calendar integration (no email)
+        run: |
+          node --check calendar.js
+          python build_calendar.py --data issues/current.json --output calendar.html
+          python - <<'PY'
+          from pathlib import Path
+          html = Path("calendar.html").read_text()
+          assert "fullcalendar@6.1.22/index.global.min.js" in html
+          assert 'id="fullcalendar"' in html
+          assert "calendar-data" in html
+          assert "CHIMERA" in html
+          print("PASS: Current issue calendar renders with FullCalendar and no subscriber data")
+          PY
       - name: Real-world photo performance probe (official source, no sending)
         run: |
           python - <<'PY'
