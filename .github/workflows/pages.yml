@@ -53,6 +53,19 @@ jobs:
           python -m unittest test_calendar
           node --check calendar.js
           python build_calendar.py --data issues/current.json --output calendar.html
+          python build_calendar.py --data issues/owner-rehearsal-2026-11-22.json --output owner-issue-005-calendar.html
+          test -s owner-issue-005-calendar.html
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          from build_calendar import build_data
+          issue=json.loads(Path('issues/owner-rehearsal-2026-11-22.json').read_text())
+          result=build_data(issue)
+          assert result['event_count']==32
+          assert result['window_start']=='2026-11-22' and result['window_end']=='2026-12-05'
+          assert len(issue['calendar_only_events'])==19
+          print('Owner-only Issue 005 calendar preview: 32 events (19 extra), correct dates')
+          PY
           test -s calendar.html
           test -s calendar.js
           test -s calendar.css
