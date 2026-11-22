@@ -44,8 +44,9 @@ class CoverageTests(unittest.TestCase):
         issue = checked_issue(reg)
         out = audit(issue, reg, strict=True)
         self.assertTrue(out["ready_for_source_coverage"], out["errors"])
-        self.assertEqual(out["registered_count"], 49)
-        self.assertEqual(out["reviewed_count"], 49)
+        self.assertGreaterEqual(out["registered_count"], 49)
+        self.assertEqual(out["registered_count"], len(reg["sources"]))
+        self.assertEqual(out["reviewed_count"], len(reg["sources"]))
         self.assertEqual(out["not_checked_count"], 0)
 
     def test_one_missing_source_blocks_even_if_many_organizers_featured(self):
@@ -98,7 +99,7 @@ class CoverageTests(unittest.TestCase):
     def test_too_many_blocked_is_an_incomplete_search(self):
         reg = registry()
         issue = checked_issue(reg)
-        for row in issue["research_coverage"]["source_scans"][:10]:
+        for row in issue["research_coverage"]["source_scans"][:max(2, len(reg["sources"])//5)+1]:
             row.update({
                 "status": "blocked_after_retry",
                 "attempts": [{"url":row["checked_urls"][0],"outcome":"HTTP 403"}]*2,
