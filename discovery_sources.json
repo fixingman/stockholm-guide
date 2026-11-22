@@ -212,13 +212,16 @@
       "id": "andētāg",
       "name": "ANDETAG",
       "category": "special programmed listening / participatory sessions, not generic admission",
-      "official_calendar_url": "https://andetag.se/",
+      "official_calendar_url": "https://www.andetag.museum/en/stockholm/",
       "discovery_priority": "recurring",
       "editorial_fit": [
         "special programmed listening",
         "participatory sessions, not generic admission"
       ],
-      "editorial_instructions": "Review the current 14-day calendar both Saturday and Sunday. Discover candidate experiences only; individually validate exact organizer event page, date/time, booking status, prices, image identity and actuality. Do not fill quotas or insert generic events merely to increase venue count. Calendar homepage is not event verification."
+      "editorial_instructions": "Review the current 14-day calendar both Saturday and Sunday. Discover candidate experiences only; individually validate exact organizer event page, date/time, booking status, prices, image identity and actuality. Do not fill quotas or insert generic events merely to increase venue count. Calendar homepage is not event verification.",
+      "previous_calendar_url": "https://andetag.se/",
+      "source_access_note": "Current public Stockholm exhibition and booking information; the prior andetag.se domain was no longer resolving from GitHub runners.",
+      "last_url_verified_date": "2026-11-22"
     },
     {
       "id": "visit-stockholm",
@@ -258,13 +261,16 @@
       "id": "mint",
       "name": "Mint Stockholm",
       "category": "experimental art / artist-run exhibition and events",
-      "official_calendar_url": "https://mintstockholm.se/",
+      "official_calendar_url": "https://m-i-n-t.se/en/programme/",
       "discovery_priority": "recurring",
       "editorial_fit": [
         "experimental art",
         "artist-run exhibition and events"
       ],
-      "editorial_instructions": "Review the current 14-day calendar both Saturday and Sunday. Discover candidate experiences only; individually validate exact organizer event page, date/time, booking status, prices, image identity and actuality. Do not fill quotas or insert generic events merely to increase venue count. Calendar homepage is not event verification."
+      "editorial_instructions": "Review the current 14-day calendar both Saturday and Sunday. Discover candidate experiences only; individually validate exact organizer event page, date/time, booking status, prices, image identity and actuality. Do not fill quotas or insert generic events merely to increase venue count. Calendar homepage is not event verification.",
+      "previous_calendar_url": "https://mintstockholm.se/",
+      "source_access_note": "Current official public Mint programme archive and upcoming listings; mintstockholm.se did not resolve from runner.",
+      "last_url_verified_date": "2026-11-22"
     },
     {
       "id": "lumen-project",
@@ -303,14 +309,17 @@
       "id": "nattljud",
       "name": "Nattljud Stockholm",
       "category": "independent live-music listings and venue discovery",
-      "official_calendar_url": "https://nattljud.se/en/",
+      "official_calendar_url": "https://nattljud.se/en",
       "discovery_priority": "aggregator-discovery",
       "source_type": "aggregator",
       "editorial_fit": [
         "cross-venue discovery",
         "undercovered event leads"
       ],
-      "editorial_instructions": "Discovery only: find lesser-known candidate events and organizer calendars, then click through and independently verify on the ORIGINAL organizer's official event page or ticket seller for times, venue, price, booking and photographs. Never treat aggregator listings as definitive live availability or image identity proof; deduplicate against other discovery sources."
+      "editorial_instructions": "Discovery only: find lesser-known candidate events and organizer calendars, then click through and independently verify on the ORIGINAL organizer's official event page or ticket seller for times, venue, price, booking and photographs. Never treat aggregator listings as definitive live availability or image identity proof; deduplicate against other discovery sources.",
+      "previous_calendar_url": "https://nattljud.se/en/",
+      "source_access_note": "Current official English programme endpoint uses a canonical path WITHOUT trailing slash; /en/ returned HTTP 404.",
+      "last_url_verified_date": "2026-11-22"
     },
     {
       "id": "resident-advisor",
