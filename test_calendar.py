@@ -84,6 +84,15 @@ class CalendarTests(unittest.TestCase):
         self.assertEqual(item["date"], "2026-11-29")
         self.assertEqual(item["time"], "00:30")
 
+    def test_late_owner_rehearsal_preserves_original_issue_dates(self):
+        issue = sample()
+        issue["published_at"] = "2026-11-30T08:00:00+01:00"
+        issue["window_start"] = "2026-11-29"
+        data = build_data(issue)
+        self.assertEqual((data["window_start"], data["window_end"]),
+                         ("2026-11-29", "2026-12-12"))
+        self.assertEqual(data["event_count"], 3)
+
     def test_invalid_url_omitted_and_script_breakout_is_escaped(self):
         issue = sample()
         issue["new_discoveries"][0]["title"] = '</script><script>alert("danger")</script>'
