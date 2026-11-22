@@ -51,7 +51,16 @@
     link.href = e.url;
     link.rel = "noopener noreferrer";
     link.target = "_blank";
-    article.append(link);
+    const actions = text("div", "event-actions");
+    actions.append(link);
+    if (e.ical_url) {
+      const add = text("a", "event-ical-link", "Add to calendar (.ics)");
+      add.href = e.ical_url;
+      add.download = "stockholm-guide-" + e.ical_url.split("/").pop();
+      add.setAttribute("aria-label", "Download calendar entry for " + e.title);
+      actions.append(add);
+    }
+    article.append(actions);
     return article;
   }
 
@@ -169,6 +178,20 @@
     button.addEventListener("click", () => {
       if (calendar) calendar.changeView(button.dataset.view === "list" ? "listMonth" : "dayGridMonth");
       refreshView();
+    });
+  }
+  const copySubscription = $("copy-subscription-url");
+  if (copySubscription) {
+    copySubscription.addEventListener("click", async () => {
+      const status = $("copy-subscription-feedback");
+      try {
+        if (!navigator.clipboard || !navigator.clipboard.writeText) throw new Error("Clipboard unavailable");
+        await navigator.clipboard.writeText(guide.subscribe_url);
+        status.textContent = "Feed URL copied. Paste it into your calendar app's subscription settings.";
+      } catch (_) {
+        // Avoid silent failure on browsers without Clipboard API permissions.
+        status.textContent = "Copy this feed URL: " + guide.subscribe_url;
+      }
     });
   }
   refresh();
