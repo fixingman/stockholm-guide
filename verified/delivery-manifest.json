@@ -65,7 +65,7 @@
   "image_proxy_certified": false,
   "data_sha256": "b73aa818abf20dcc19af57395ea7e1ea6d25fb798708cda5b5759439d4e1e8e1",
   "rendered_html_file": "outgoing.html",
-  "preflight_timestamp_utc": "2026-11-22T20:37:53.619504+00:00",
+  "preflight_timestamp_utc": "2026-11-22T20:42:02.067770+00:00",
   "editorial_quality": {
     "ready_for_editorial_release": true,
     "mode": "strict",
@@ -462,5 +462,5 @@
     "note": "Timestamped evidence audit; cannot independently establish that page claims are true."
   },
   "release_channel": "production",
-  "source_commit_sha": "85a00e8f5b6e7dcc4151334cc14c8ce3267d5a01"
+  "source_commit_sha": "af3cc3872598db2b026b8144d6f184db51c3a922"
 }
