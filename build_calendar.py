@@ -8,7 +8,7 @@ become calendar pins. Other items remain discoverable as flexible listings.
 import argparse
 import json
 import re
-from datetime import datetime, timedelta
+from datetime import date, datetime, timedelta
 from pathlib import Path
 from urllib.parse import urlparse
 from zoneinfo import ZoneInfo
@@ -79,7 +79,7 @@ def build_data(issue):
     if publication is None:
         raise ValueError("published_at requires a timezone")
     issue = enhance(issue)
-    start = publication.date()
+    start = date.fromisoformat(issue['window_start']) if issue.get('window_start') else publication.date()
     end = start + timedelta(days=13)
     items, seen = [], set()
     for section in SECTIONS:
