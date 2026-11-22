@@ -8,6 +8,8 @@ on:
       - editorial_scanning.py
       - delivery_guard.py
       - editorial_quality.py
+      - source_coverage.py
+      - discovery_sources.json
   workflow_dispatch:
 permissions:
   contents: write
@@ -36,8 +38,12 @@ jobs:
               raise SystemExit("Missing issue publication timestamp")
           print("Fresh issue:", g.get("issue_number"), g.get("date_range"))
           PY
+      - name: Require every registered source accounted for (Issue 006+)
+        run: |
+          mkdir -p release
+          python source_coverage.py --issue issues/current.json --registry discovery_sources.json --strict --report release/source-coverage-report.json
       - name: Run all offline regression tests
-        run: python -m unittest test_minimal test_image_pipeline test_optimize_issue_images test_delivery_guard test_editorial_operations test_freshness_scanning test_release_authorization
+        run: python -m unittest test_minimal test_image_pipeline test_optimize_issue_images test_delivery_guard test_editorial_operations test_freshness_scanning test_release_authorization test_source_coverage
       - name: Render new issue, validate organizer evidence, links, live photos and final review
         run: |
           mkdir -p release
