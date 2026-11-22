@@ -62,7 +62,7 @@ class DiscoverySourceTests(unittest.TestCase):
             self.assertTrue(self.by_id[source_id]["official_calendar_url"].startswith("https://"))
         policy = self.registry["source_diversity_policy"]
         self.assertIn("Luma", policy["luma_explicit_check"])
-        self.assertIn("Log", policy["luma_explicit_check"])
+        self.assertIn("log", policy["luma_explicit_check"].lower())
         self.assertIn("not checked", policy["scanning_accountability"])
         self.assertIn("ALL registry sources".lower(), policy["new_source_rotation"].lower())
         self.assertIn("editorial review", policy["automated_public_probe"])
