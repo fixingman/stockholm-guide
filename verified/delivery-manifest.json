@@ -2,170 +2,241 @@
   "ready_for_delivery": true,
   "errors": [],
   "warnings": [
-    "HTML fallback instead of verified image: Masangue Maracatu & guests — Brazilian rhythm celebration",
-    "HTML fallback instead of verified image: Sound of Stockholm — Saturday: voice, movement and experimental music",
-    "HTML fallback instead of verified image: Aliquī — deep listening, sound and live visual improvisation",
-    "EDITORIAL: Top 3 has no verified photo: Masangue Maracatu & guests — Brazilian rhythm celebration",
-    "EDITORIAL: Top 3 has no verified photo: Sound of Stockholm — Saturday: voice, movement and experimental music",
-    "EDITORIAL: Top 3 has no verified photo: Aliquī — deep listening, sound and live visual improvisation"
+    "Image load warning: https://acceleratorsu.art/wp-content/uploads/2024/03/Ester_Bergsmark-face-1.jpg: large_image"
   ],
-  "issue_number": "004",
-  "date_range": "15–28 November 2026",
-  "total_event_rows": 20,
+  "issue_number": "005",
+  "date_range": "22 November–5 December 2026",
+  "total_event_rows": 25,
   "section_titles": [
     "Top 3 picks",
     "New discoveries",
     "Worth reconsidering",
     "Unavailable / sold out"
   ],
-  "featured_images": [],
-  "image_checks": [],
-  "inline_fallbacks": 3,
-  "html_sha256": "6fbee373f7fbe8624757574f3d64cb66592388de1ff78fe181dc5ddb2fbd72cc",
-  "html_bytes": 40958,
+  "featured_images": [
+    "https://acceleratorsu.art/wp-content/uploads/2024/03/Ester_Bergsmark-face-1.jpg",
+    "https://www.fylkingen.se/_next/image?url=%2Fmedia%2Fsites%252Fclvuuu5cs0001xwfc7ne538fo%252Fmedia%252Fdb20cec9-e78d-4e58-a2f7-274f9e06d656-HeleneBergportratt.jpg&w=1080&q=70",
+    "https://cdn.sanity.io/images/2xi539qp/production/f90f2827b3bc91616ae3b05ce97210dfce71d2eb-3264x2448.jpg?rect=408,0,2448,2448&w=750&h=750&q=75&auto=format"
+  ],
+  "image_checks": [
+    {
+      "url": "https://acceleratorsu.art/wp-content/uploads/2024/03/Ester_Bergsmark-face-1.jpg",
+      "ok": true,
+      "bytes": 1940036,
+      "format": "JPEG",
+      "dimensions": [
+        4000,
+        2727
+      ],
+      "resolved_url": "https://acceleratorsu.art/wp-content/uploads/2024/03/Ester_Bergsmark-face-1.jpg",
+      "sha256": "c23f0f92a6e44db43e8467b5a31fc694c017df94236e4aedb2e7ef55ee0ae35c",
+      "warning": "large_image"
+    },
+    {
+      "url": "https://www.fylkingen.se/_next/image?url=%2Fmedia%2Fsites%252Fclvuuu5cs0001xwfc7ne538fo%252Fmedia%252Fdb20cec9-e78d-4e58-a2f7-274f9e06d656-HeleneBergportratt.jpg&w=1080&q=70",
+      "ok": true,
+      "bytes": 152456,
+      "format": "JPEG",
+      "dimensions": [
+        1080,
+        1342
+      ],
+      "resolved_url": "https://www.fylkingen.se/_next/image?url=%2Fmedia%2Fsites%252Fclvuuu5cs0001xwfc7ne538fo%252Fmedia%252Fdb20cec9-e78d-4e58-a2f7-274f9e06d656-HeleneBergportratt.jpg&w=1080&q=70",
+      "sha256": "c99bf6788fb25b7fa66e064d02e2cc2c3a919a34489aae26e0dc3066acb4e350",
+      "warning": null
+    },
+    {
+      "url": "https://cdn.sanity.io/images/2xi539qp/production/f90f2827b3bc91616ae3b05ce97210dfce71d2eb-3264x2448.jpg?rect=408,0,2448,2448&w=750&h=750&q=75&auto=format",
+      "ok": true,
+      "bytes": 61930,
+      "format": "JPEG",
+      "dimensions": [
+        750,
+        750
+      ],
+      "resolved_url": "https://cdn.sanity.io/images/2xi539qp/production/f90f2827b3bc91616ae3b05ce97210dfce71d2eb-3264x2448.jpg?rect=408,0,2448,2448&w=750&h=750&q=75&auto=format",
+      "sha256": "fa9eb5885475ee6d439514a0ca1b53b788a9a342084ff09447a09d4d086157c4",
+      "warning": null
+    }
+  ],
+  "inline_fallbacks": 0,
+  "html_sha256": "f537bddf6b7a6ff1bcf0d2b91b79a98bbd4990b13e856e646f5de07f8705cf99",
+  "html_bytes": 46791,
   "image_proxy_certified": false,
-  "data_sha256": "eae51626310cfce89224a860aca75bcc70981db169c68dc901c31a9d6a7666e5",
+  "data_sha256": "2f1d11185ebda70dfe4d4aac4fcf259d6454c2f6ff6397bcce5518547345f0f4",
   "rendered_html_file": "outgoing.html",
-  "preflight_timestamp_utc": "2026-11-15T19:43:13.817545+00:00",
+  "preflight_timestamp_utc": "2026-11-22T15:24:18.172692+00:00",
   "editorial_quality": {
     "ready_for_editorial_release": true,
     "mode": "strict",
     "errors": [],
-    "warnings": [
-      "Top 3 has no verified photo: Masangue Maracatu & guests — Brazilian rhythm celebration",
-      "Top 3 has no verified photo: Sound of Stockholm — Saturday: voice, movement and experimental music",
-      "Top 3 has no verified photo: Aliquī — deep listening, sound and live visual improvisation"
-    ],
-    "unique_events": 17,
-    "total_rows": 20,
-    "organizer_count": 4,
-    "dominant_organizer_share": 0.35,
+    "warnings": [],
+    "unique_events": 25,
+    "total_rows": 25,
+    "organizer_count": 10,
+    "dominant_organizer_share": 0.2,
     "organizer_domains": [
+      "acceleratorsu.art",
+      "etnografiskamuseet.se",
+      "fargfabriken.se",
       "fylkingen.se",
-      "mdtsthlm.se",
+      "indexfoundation.se",
+      "pepparkakshus.arkdes.se",
       "reimersholmehotel.se",
-      "stockholm.fotografiska.com"
+      "stadsgardsterminalen.com",
+      "stockholm.fotografiska.com",
+      "thenode.se"
     ],
     "repeat_new_discoveries": [],
-    "identity_reviewed_images": 0,
+    "identity_reviewed_images": 3,
     "identity_review_target": 3,
     "event_evidence_rows": [
       {
+        "title": "En ljuvlighet från ingenstans — film and conversation",
+        "section": "top3",
+        "source": "acceleratorsu.art",
+        "organizer": "acceleratorsu.art"
+      },
+      {
+        "title": "Aliquī — deep listening and visual improvisation",
+        "section": "top3",
+        "source": "fylkingen.se",
+        "organizer": "fylkingen.se"
+      },
+      {
+        "title": "Salla Salazar — a phone-free listening session",
+        "section": "top3",
+        "source": "stockholm.fotografiska.com",
+        "organizer": "stockholm.fotografiska.com"
+      },
+      {
+        "title": "CHIMERA / EVOLVER: Emma DJ + Keiska + DJ Haydn",
+        "section": "new_discoveries",
+        "source": "fylkingen.se",
+        "organizer": "fylkingen.se"
+      },
+      {
+        "title": "Träden + Homegrown — psychedelic improvisation",
+        "section": "new_discoveries",
+        "source": "stadsgardsterminalen.com",
+        "organizer": "stadsgardsterminalen.com"
+      },
+      {
+        "title": "Changing Landscape, Evolving Experiences — dance, ink and sound",
+        "section": "new_discoveries",
+        "source": "fylkingen.se",
+        "organizer": "fylkingen.se"
+      },
+      {
+        "title": "CNDNSD — experimental electronic performance",
+        "section": "new_discoveries",
+        "source": "fylkingen.se",
+        "organizer": "fylkingen.se"
+      },
+      {
+        "title": "EMS Kursavslutningskonsert — electronic sound workshop finale",
+        "section": "new_discoveries",
+        "source": "fylkingen.se",
+        "organizer": "fylkingen.se"
+      },
+      {
+        "title": "Honeymilk + Shy Away — intimate indie show",
+        "section": "new_discoveries",
+        "source": "stadsgardsterminalen.com",
+        "organizer": "stadsgardsterminalen.com"
+      },
+      {
+        "title": "Per Persson & Nya Packet + Sand & Hallander",
+        "section": "new_discoveries",
+        "source": "stadsgardsterminalen.com",
+        "organizer": "stadsgardsterminalen.com"
+      },
+      {
+        "title": "Aural Onsdag — Roberto N Peyre deep-listening session",
+        "section": "new_discoveries",
+        "source": "reimersholmehotel.se",
+        "organizer": "reimersholmehotel.se"
+      },
+      {
+        "title": "Congolese Super Night — rumba, ndombolo and afrobeats",
+        "section": "new_discoveries",
+        "source": "reimersholmehotel.se",
+        "organizer": "reimersholmehotel.se"
+      },
+      {
+        "title": "Pepparkakshus 2026 — Gingerbread architecture of the future",
+        "section": "new_discoveries",
+        "source": "pepparkakshus.arkdes.se",
+        "organizer": "pepparkakshus.arkdes.se"
+      },
+      {
+        "title": "Polymoon + GORMA — psychedelic post-gaze",
+        "section": "new_discoveries",
+        "source": "stadsgardsterminalen.com",
+        "organizer": "stadsgardsterminalen.com"
+      },
+      {
+        "title": "Evanora Unlimited — cinematic experimental grime",
+        "section": "new_discoveries",
+        "source": "stadsgardsterminalen.com",
+        "organizer": "stadsgardsterminalen.com"
+      },
+      {
+        "title": "Myriam Diatta — Doing Creative Work from Your Political Body",
+        "section": "new_discoveries",
+        "source": "indexfoundation.se",
+        "organizer": "indexfoundation.se"
+      },
+      {
+        "title": "Färgfabriken winter craft and design market",
+        "section": "new_discoveries",
+        "source": "fargfabriken.se",
+        "organizer": "fargfabriken.se"
+      },
+      {
+        "title": "Women Behind the Camera, 1848–1968 — exhibition opening",
+        "section": "new_discoveries",
+        "source": "stockholm.fotografiska.com",
+        "organizer": "stockholm.fotografiska.com"
+      },
+      {
+        "title": "Lougglan — Lisa Pettersson moving-image opening",
+        "section": "new_discoveries",
+        "source": "thenode.se",
+        "organizer": "thenode.se"
+      },
+      {
+        "title": "Voidgarden — post-punk debut-album release",
+        "section": "new_discoveries",
+        "source": "reimersholmehotel.se",
+        "organizer": "reimersholmehotel.se"
+      },
+      {
+        "title": "The Machine's Eye in Human Hands",
+        "section": "worth_reconsidering",
+        "source": "stockholm.fotografiska.com",
+        "organizer": "stockholm.fotografiska.com"
+      },
+      {
+        "title": "Lotta Antonsson — I Am Everything",
+        "section": "worth_reconsidering",
+        "source": "stockholm.fotografiska.com",
+        "organizer": "stockholm.fotografiska.com"
+      },
+      {
+        "title": "Yokai — Spirits of Japan",
+        "section": "worth_reconsidering",
+        "source": "etnografiskamuseet.se",
+        "organizer": "etnografiskamuseet.se"
+      },
+      {
         "title": "Masangue Maracatu & guests — Brazilian rhythm celebration",
-        "section": "top3",
-        "source": "reimersholmehotel.se",
-        "organizer": "reimersholmehotel.se"
-      },
-      {
-        "title": "Sound of Stockholm — Saturday: voice, movement and experimental music",
-        "section": "top3",
-        "source": "fylkingen.se",
-        "organizer": "fylkingen.se"
-      },
-      {
-        "title": "Aliquī — deep listening, sound and live visual improvisation",
-        "section": "top3",
-        "source": "fylkingen.se",
-        "organizer": "fylkingen.se"
-      },
-      {
-        "title": "DEN FULE — Scandinavian folk meets world music",
-        "section": "new_discoveries",
-        "source": "reimersholmehotel.se",
-        "organizer": "reimersholmehotel.se"
-      },
-      {
-        "title": "Asbest Inc + ARMOURS + DJ Hawk — live electronic-industrial night",
-        "section": "new_discoveries",
-        "source": "reimersholmehotel.se",
-        "organizer": "reimersholmehotel.se"
-      },
-      {
-        "title": "Iris / t h e m / Swaysense — triple live bill",
-        "section": "new_discoveries",
-        "source": "reimersholmehotel.se",
-        "organizer": "reimersholmehotel.se"
-      },
-      {
-        "title": "EMS course-ending concert — emerging electronic music",
-        "section": "new_discoveries",
-        "source": "fylkingen.se",
-        "organizer": "fylkingen.se"
-      },
-      {
-        "title": "Valter Kinbom — Trollsländan, klippan och havet album release",
-        "section": "new_discoveries",
-        "source": "reimersholmehotel.se",
-        "organizer": "reimersholmehotel.se"
-      },
-      {
-        "title": "Congolese Super Night — Reimersholme Hotel",
-        "section": "new_discoveries",
-        "source": "reimersholmehotel.se",
-        "organizer": "reimersholmehotel.se"
-      },
-      {
-        "title": "Listening Session: Salla Salazar — The soundtrack to a life",
-        "section": "new_discoveries",
-        "source": "stockholm.fotografiska.com",
-        "organizer": "stockholm.fotografiska.com"
-      },
-      {
-        "title": "A Study of Men — contemporary dance/performance",
-        "section": "new_discoveries",
-        "source": "mdtsthlm.se",
-        "organizer": "mdtsthlm.se"
-      },
-      {
-        "title": "INCANT — contemporary experimental performance",
-        "section": "worth_reconsidering",
-        "source": "fylkingen.se",
-        "organizer": "fylkingen.se"
-      },
-      {
-        "title": "Sound of Stockholm — four-day festival pass",
-        "section": "worth_reconsidering",
-        "source": "fylkingen.se",
-        "organizer": "fylkingen.se"
-      },
-      {
-        "title": "Strage Sessions — punk aesthetics and photography",
-        "section": "worth_reconsidering",
-        "source": "stockholm.fotografiska.com",
-        "organizer": "stockholm.fotografiska.com"
-      },
-      {
-        "title": "Sound of Stockholm — Saturday: voice, movement and experimental music",
-        "section": "worth_reconsidering",
-        "source": "fylkingen.se",
-        "organizer": "fylkingen.se"
-      },
-      {
-        "title": "Donald Boström — artist talk and photography",
-        "section": "worth_reconsidering",
-        "source": "stockholm.fotografiska.com",
-        "organizer": "stockholm.fotografiska.com"
-      },
-      {
-        "title": "The Machine's Eye in Human Hands — AI art exhibition",
-        "section": "worth_reconsidering",
-        "source": "stockholm.fotografiska.com",
-        "organizer": "stockholm.fotografiska.com"
-      },
-      {
-        "title": "Aliquī — deep listening, sound and live visual improvisation",
-        "section": "worth_reconsidering",
-        "source": "fylkingen.se",
-        "organizer": "fylkingen.se"
-      },
-      {
-        "title": "Masangue Maracatu & guests — Brazilian rhythm celebration",
         "section": "worth_reconsidering",
         "source": "reimersholmehotel.se",
         "organizer": "reimersholmehotel.se"
       },
       {
-        "title": "Breathwork with Hale — immersive YIN / YANG",
+        "title": "Standup x Oslipat — Kirsty Armstrong & Hanna Lublin Niklasson",
         "section": "unavailable",
         "source": "stockholm.fotografiska.com",
         "organizer": "stockholm.fotografiska.com"
@@ -177,172 +248,212 @@
     "ready_for_send": true,
     "errors": [],
     "warnings": [],
-    "checked_rows": 20,
+    "checked_rows": 25,
     "max_age_hours": 24,
     "reviewed_events": [
       {
-        "title": "Masangue Maracatu & guests — Brazilian rhythm celebration",
+        "title": "En ljuvlighet från ingenstans — film and conversation",
         "section": "top3",
         "event_status": "scheduled",
-        "booking_status": "required_unverified",
-        "checked_at": "2026-11-15T19:05:00+01:00",
-        "organizer_source_url": "https://reimersholmehotel.se/event/masangue-maracatu-gaster/"
+        "booking_status": "not_required",
+        "checked_at": "2026-11-22T16:20:06+01:00",
+        "organizer_source_url": "https://acceleratorsu.art/evenemang/filmvisning-en-ljuvlighet-fran-ingenstans/"
       },
       {
-        "title": "Sound of Stockholm — Saturday: voice, movement and experimental music",
+        "title": "Aliquī — deep listening and visual improvisation",
         "section": "top3",
         "event_status": "scheduled",
         "booking_status": "required_unverified",
-        "checked_at": "2026-11-15T19:05:00+01:00",
-        "organizer_source_url": "https://www.fylkingen.se/en/events/sound-of-stockholm-lordag"
-      },
-      {
-        "title": "Aliquī — deep listening, sound and live visual improvisation",
-        "section": "top3",
-        "event_status": "scheduled",
-        "booking_status": "required_unverified",
-        "checked_at": "2026-11-15T19:05:00+01:00",
+        "checked_at": "2026-11-22T16:20:06+01:00",
         "organizer_source_url": "https://www.fylkingen.se/en/events/aliqui"
       },
       {
-        "title": "DEN FULE — Scandinavian folk meets world music",
-        "section": "new_discoveries",
+        "title": "Salla Salazar — a phone-free listening session",
+        "section": "top3",
         "event_status": "scheduled",
         "booking_status": "required_unverified",
-        "checked_at": "2026-11-15T19:05:00+01:00",
-        "organizer_source_url": "https://reimersholmehotel.se/event/den-fule/"
-      },
-      {
-        "title": "Asbest Inc + ARMOURS + DJ Hawk — live electronic-industrial night",
-        "section": "new_discoveries",
-        "event_status": "scheduled",
-        "booking_status": "required_unverified",
-        "checked_at": "2026-11-15T19:05:00+01:00",
-        "organizer_source_url": "https://reimersholmehotel.se/en/event/asbest-inc-armours/"
-      },
-      {
-        "title": "Iris / t h e m / Swaysense — triple live bill",
-        "section": "new_discoveries",
-        "event_status": "scheduled",
-        "booking_status": "required_unverified",
-        "checked_at": "2026-11-15T19:05:00+01:00",
-        "organizer_source_url": "https://reimersholmehotel.se/en/upcoming-events/"
-      },
-      {
-        "title": "EMS course-ending concert — emerging electronic music",
-        "section": "new_discoveries",
-        "event_status": "scheduled",
-        "booking_status": "required_unverified",
-        "checked_at": "2026-11-15T19:05:00+01:00",
-        "organizer_source_url": "https://www.fylkingen.se/en/events"
-      },
-      {
-        "title": "Valter Kinbom — Trollsländan, klippan och havet album release",
-        "section": "new_discoveries",
-        "event_status": "scheduled",
-        "booking_status": "required_unverified",
-        "checked_at": "2026-11-15T19:05:00+01:00",
-        "organizer_source_url": "https://reimersholmehotel.se/event/valter-kinbom-trollslandan-klippan-och-havet/"
-      },
-      {
-        "title": "Congolese Super Night — Reimersholme Hotel",
-        "section": "new_discoveries",
-        "event_status": "scheduled",
-        "booking_status": "required_unverified",
-        "checked_at": "2026-11-15T19:05:00+01:00",
-        "organizer_source_url": "https://reimersholmehotel.se/en/upcoming-events/"
-      },
-      {
-        "title": "Listening Session: Salla Salazar — The soundtrack to a life",
-        "section": "new_discoveries",
-        "event_status": "scheduled",
-        "booking_status": "required_unverified",
-        "checked_at": "2026-11-15T19:05:00+01:00",
+        "checked_at": "2026-11-22T16:20:06+01:00",
         "organizer_source_url": "https://stockholm.fotografiska.com/en/events/listening-session-salla-salazar-the-soundtrack-to-a-life"
       },
       {
-        "title": "A Study of Men — contemporary dance/performance",
+        "title": "CHIMERA / EVOLVER: Emma DJ + Keiska + DJ Haydn",
         "section": "new_discoveries",
         "event_status": "scheduled",
         "booking_status": "required_unverified",
-        "checked_at": "2026-11-15T19:05:00+01:00",
-        "organizer_source_url": "https://mdtsthlm.se/kalender"
-      },
-      {
-        "title": "INCANT — contemporary experimental performance",
-        "section": "worth_reconsidering",
-        "event_status": "scheduled",
-        "booking_status": "required_unverified",
-        "checked_at": "2026-11-15T19:05:00+01:00",
+        "checked_at": "2026-11-22T16:20:06+01:00",
         "organizer_source_url": "https://www.fylkingen.se/en/events"
       },
       {
-        "title": "Sound of Stockholm — four-day festival pass",
-        "section": "worth_reconsidering",
+        "title": "Träden + Homegrown — psychedelic improvisation",
+        "section": "new_discoveries",
         "event_status": "scheduled",
         "booking_status": "required_unverified",
-        "checked_at": "2026-11-15T19:05:00+01:00",
-        "organizer_source_url": "https://www.fylkingen.se/en/events/sound-of-stockholm-GPO"
+        "checked_at": "2026-11-22T16:20:06+01:00",
+        "organizer_source_url": "https://stadsgardsterminalen.com/event/traden-homegrown/"
       },
       {
-        "title": "Strage Sessions — punk aesthetics and photography",
-        "section": "worth_reconsidering",
+        "title": "Changing Landscape, Evolving Experiences — dance, ink and sound",
+        "section": "new_discoveries",
         "event_status": "scheduled",
         "booking_status": "required_unverified",
-        "checked_at": "2026-11-15T19:05:00+01:00",
-        "organizer_source_url": "https://stockholm.fotografiska.com/en/events/strage-sessions"
+        "checked_at": "2026-11-22T16:20:06+01:00",
+        "organizer_source_url": "https://www.fylkingen.se/en/events/changing-landscape-evolving-experiences"
       },
       {
-        "title": "Sound of Stockholm — Saturday: voice, movement and experimental music",
-        "section": "worth_reconsidering",
+        "title": "CNDNSD — experimental electronic performance",
+        "section": "new_discoveries",
         "event_status": "scheduled",
         "booking_status": "required_unverified",
-        "checked_at": "2026-11-15T19:05:00+01:00",
-        "organizer_source_url": "https://www.fylkingen.se/en/events/sound-of-stockholm-lordag"
+        "checked_at": "2026-11-22T16:20:06+01:00",
+        "organizer_source_url": "https://www.fylkingen.se/en/events/cndnsd"
       },
       {
-        "title": "Donald Boström — artist talk and photography",
-        "section": "worth_reconsidering",
+        "title": "EMS Kursavslutningskonsert — electronic sound workshop finale",
+        "section": "new_discoveries",
         "event_status": "scheduled",
-        "booking_status": "required_unverified",
-        "checked_at": "2026-11-15T19:05:00+01:00",
-        "organizer_source_url": "https://stockholm.fotografiska.com/en/events/book-talk-donald-bostrom"
+        "booking_status": "unknown",
+        "checked_at": "2026-11-22T16:20:06+01:00",
+        "organizer_source_url": "https://www.fylkingen.se/en/events/ems-avslutningskonsert"
       },
       {
-        "title": "The Machine's Eye in Human Hands — AI art exhibition",
-        "section": "worth_reconsidering",
+        "title": "Honeymilk + Shy Away — intimate indie show",
+        "section": "new_discoveries",
         "event_status": "scheduled",
         "booking_status": "required_unverified",
-        "checked_at": "2026-11-15T19:05:00+01:00",
+        "checked_at": "2026-11-22T16:20:06+01:00",
+        "organizer_source_url": "https://stadsgardsterminalen.com/event/honeymilk/"
+      },
+      {
+        "title": "Per Persson & Nya Packet + Sand & Hallander",
+        "section": "new_discoveries",
+        "event_status": "scheduled",
+        "booking_status": "required_unverified",
+        "checked_at": "2026-11-22T16:20:06+01:00",
+        "organizer_source_url": "https://stadsgardsterminalen.com/event/per-persson-nya-packet/"
+      },
+      {
+        "title": "Aural Onsdag — Roberto N Peyre deep-listening session",
+        "section": "new_discoveries",
+        "event_status": "scheduled",
+        "booking_status": "not_required",
+        "checked_at": "2026-11-22T16:20:06+01:00",
+        "organizer_source_url": "https://reimersholmehotel.se/en/event/aural-onsdag-roberto-n-peyre/"
+      },
+      {
+        "title": "Congolese Super Night — rumba, ndombolo and afrobeats",
+        "section": "new_discoveries",
+        "event_status": "scheduled",
+        "booking_status": "required_unverified",
+        "checked_at": "2026-11-22T16:20:06+01:00",
+        "organizer_source_url": "https://reimersholmehotel.se/en/event/dias-the-afro-express/"
+      },
+      {
+        "title": "Pepparkakshus 2026 — Gingerbread architecture of the future",
+        "section": "new_discoveries",
+        "event_status": "scheduled",
+        "booking_status": "unknown",
+        "checked_at": "2026-11-22T16:20:06+01:00",
+        "organizer_source_url": "https://pepparkakshus.arkdes.se/en/questions-and-answers/"
+      },
+      {
+        "title": "Polymoon + GORMA — psychedelic post-gaze",
+        "section": "new_discoveries",
+        "event_status": "scheduled",
+        "booking_status": "required_unverified",
+        "checked_at": "2026-11-22T16:20:06+01:00",
+        "organizer_source_url": "https://stadsgardsterminalen.com/event/polymoon-gorma/"
+      },
+      {
+        "title": "Evanora Unlimited — cinematic experimental grime",
+        "section": "new_discoveries",
+        "event_status": "scheduled",
+        "booking_status": "required_unverified",
+        "checked_at": "2026-11-22T16:20:06+01:00",
+        "organizer_source_url": "https://stadsgardsterminalen.com/event/evanora-unlimited/"
+      },
+      {
+        "title": "Myriam Diatta — Doing Creative Work from Your Political Body",
+        "section": "new_discoveries",
+        "event_status": "scheduled",
+        "booking_status": "unknown",
+        "checked_at": "2026-11-22T16:20:06+01:00",
+        "organizer_source_url": "https://indexfoundation.se/talks-and-events/bookshop-situation-series-myriam-diatta-doing-creative-work-from-your-political-body"
+      },
+      {
+        "title": "Färgfabriken winter craft and design market",
+        "section": "new_discoveries",
+        "event_status": "scheduled",
+        "booking_status": "not_required",
+        "checked_at": "2026-11-22T16:20:06+01:00",
+        "organizer_source_url": "https://fargfabriken.se/sv/pa-gang/julmarknad-3/"
+      },
+      {
+        "title": "Women Behind the Camera, 1848–1968 — exhibition opening",
+        "section": "new_discoveries",
+        "event_status": "scheduled",
+        "booking_status": "not_required",
+        "checked_at": "2026-11-22T16:20:06+01:00",
+        "organizer_source_url": "https://stockholm.fotografiska.com/en/exhibitions/women-behind-the-camera-1848-1968"
+      },
+      {
+        "title": "Lougglan — Lisa Pettersson moving-image opening",
+        "section": "new_discoveries",
+        "event_status": "scheduled",
+        "booking_status": "unknown",
+        "checked_at": "2026-11-22T16:20:06+01:00",
+        "organizer_source_url": "https://www.thenode.se/sv/whats-on/opening-night-lougglan-by-lisa-pettersson"
+      },
+      {
+        "title": "Voidgarden — post-punk debut-album release",
+        "section": "new_discoveries",
+        "event_status": "scheduled",
+        "booking_status": "required_unverified",
+        "checked_at": "2026-11-22T16:20:06+01:00",
+        "organizer_source_url": "https://reimersholmehotel.se/en/event/voidgarden/"
+      },
+      {
+        "title": "The Machine's Eye in Human Hands",
+        "section": "worth_reconsidering",
+        "event_status": "scheduled",
+        "booking_status": "not_required",
+        "checked_at": "2026-11-22T16:20:06+01:00",
         "organizer_source_url": "https://stockholm.fotografiska.com/en/exhibitions/the-machines-eye-in-human-hands"
       },
       {
-        "title": "Aliquī — deep listening, sound and live visual improvisation",
+        "title": "Lotta Antonsson — I Am Everything",
         "section": "worth_reconsidering",
         "event_status": "scheduled",
-        "booking_status": "required_unverified",
-        "checked_at": "2026-11-15T19:05:00+01:00",
-        "organizer_source_url": "https://www.fylkingen.se/en/events/aliqui"
+        "booking_status": "not_required",
+        "checked_at": "2026-11-22T16:20:06+01:00",
+        "organizer_source_url": "https://stockholm.fotografiska.com/en/exhibitions/lotta-antonsson"
+      },
+      {
+        "title": "Yokai — Spirits of Japan",
+        "section": "worth_reconsidering",
+        "event_status": "scheduled",
+        "booking_status": "unknown",
+        "checked_at": "2026-11-22T16:20:06+01:00",
+        "organizer_source_url": "https://www.etnografiskamuseet.se/en/exhibitions/yokai/"
       },
       {
         "title": "Masangue Maracatu & guests — Brazilian rhythm celebration",
         "section": "worth_reconsidering",
         "event_status": "scheduled",
         "booking_status": "required_unverified",
-        "checked_at": "2026-11-15T19:05:00+01:00",
+        "checked_at": "2026-11-22T16:20:06+01:00",
         "organizer_source_url": "https://reimersholmehotel.se/event/masangue-maracatu-gaster/"
       },
       {
-        "title": "Breathwork with Hale — immersive YIN / YANG",
+        "title": "Standup x Oslipat — Kirsty Armstrong & Hanna Lublin Niklasson",
         "section": "unavailable",
         "event_status": "scheduled",
         "booking_status": "sold_out",
-        "checked_at": "2026-11-15T19:05:00+01:00",
+        "checked_at": "2026-11-22T16:20:06+01:00",
         "organizer_source_url": "https://stockholm.fotografiska.com/en/events"
       }
     ],
     "note": "Timestamped evidence audit; cannot independently establish that page claims are true."
   },
   "release_channel": "production",
-  "source_commit_sha": "aa14157e8296f69105ef378c4197b6b30d8998eb"
+  "source_commit_sha": "46883204cc3236c0c805e1990a94c88d31a8b054"
 }

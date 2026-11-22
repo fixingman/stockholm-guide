@@ -1,4 +1,5 @@
 {
+  "html_sha256": "f537bddf6b7a6ff1bcf0d2b91b79a98bbd4990b13e856e646f5de07f8705cf99",
   "static": {
     "ok": true,
     "errors": [],
@@ -8,9 +9,83 @@
       "Worth reconsidering",
       "Unavailable / sold out"
     ],
-    "image_count": 1
+    "image_count": 4
   },
-  "browser_scenarios": [],
+  "browser_scenarios": [
+    {
+      "width": 320,
+      "scheme": "light",
+      "ok": true,
+      "docWidth": 320,
+      "viewport": 320,
+      "heading1": 1,
+      "heading2": 4,
+      "visibleEventLinks": true,
+      "imgCount": 4,
+      "bg": "rgb(252, 250, 246)"
+    },
+    {
+      "width": 320,
+      "scheme": "dark",
+      "ok": true,
+      "docWidth": 320,
+      "viewport": 320,
+      "heading1": 1,
+      "heading2": 4,
+      "visibleEventLinks": true,
+      "imgCount": 4,
+      "bg": "rgb(36, 36, 36)"
+    },
+    {
+      "width": 390,
+      "scheme": "light",
+      "ok": true,
+      "docWidth": 390,
+      "viewport": 390,
+      "heading1": 1,
+      "heading2": 4,
+      "visibleEventLinks": true,
+      "imgCount": 4,
+      "bg": "rgb(252, 250, 246)"
+    },
+    {
+      "width": 390,
+      "scheme": "dark",
+      "ok": true,
+      "docWidth": 390,
+      "viewport": 390,
+      "heading1": 1,
+      "heading2": 4,
+      "visibleEventLinks": true,
+      "imgCount": 4,
+      "bg": "rgb(36, 36, 36)"
+    },
+    {
+      "width": 650,
+      "scheme": "light",
+      "ok": true,
+      "docWidth": 650,
+      "viewport": 650,
+      "heading1": 1,
+      "heading2": 4,
+      "visibleEventLinks": true,
+      "imgCount": 4,
+      "bg": "rgb(252, 250, 246)"
+    },
+    {
+      "width": 650,
+      "scheme": "dark",
+      "ok": true,
+      "docWidth": 650,
+      "viewport": 650,
+      "heading1": 1,
+      "heading2": 4,
+      "visibleEventLinks": true,
+      "imgCount": 4,
+      "bg": "rgb(36, 36, 36)"
+    }
+  ],
+  "visual_scenarios": [],
   "ok": true,
   "scope": "Chromium responsive/dark/images-blocked proxy; not actual Gmail or Apple Mail"
 }

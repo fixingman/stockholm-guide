@@ -1,0 +1,121 @@
+{
+  "html_sha256": "f537bddf6b7a6ff1bcf0d2b91b79a98bbd4990b13e856e646f5de07f8705cf99",
+  "static": {
+    "ok": true,
+    "errors": [],
+    "headings": [
+      "Top 3 picks",
+      "New discoveries",
+      "Worth reconsidering",
+      "Unavailable / sold out"
+    ],
+    "image_count": 4
+  },
+  "browser_scenarios": [],
+  "visual_scenarios": [
+    {
+      "width": 390,
+      "scheme": "light",
+      "ok": true,
+      "photoCount": 3,
+      "fallbackCount": 0,
+      "photoDetails": [
+        {
+          "src": "https://acceleratorsu.art/wp-content/uploads/2024/03/Ester_Bergsmark-face-1.jpg",
+          "complete": true,
+          "naturalWidth": 4000,
+          "naturalHeight": 2727,
+          "width": 76,
+          "height": 76
+        },
+        {
+          "src": "https://www.fylkingen.se/_next/image?url=%2Fmedia%2Fsites%252Fclvuuu5cs0001xwfc7ne538fo%252Fmedia%252Fdb20cec9-e78d-4e58-a2f7-274f9e06d656-HeleneBergportratt.jpg&w=1080&q=70",
+          "complete": true,
+          "naturalWidth": 1080,
+          "naturalHeight": 1342,
+          "width": 76,
+          "height": 76
+        },
+        {
+          "src": "https://cdn.sanity.io/images/2xi539qp/production/f90f2827b3bc91616ae3b05ce97210dfce71d2eb-3264x2448.jpg?rect=408,0,2448,2448&w=750&h=750&q=75&auto=format",
+          "complete": true,
+          "naturalWidth": 750,
+          "naturalHeight": 750,
+          "width": 76,
+          "height": 76
+        }
+      ],
+      "overflow": false
+    },
+    {
+      "width": 390,
+      "scheme": "dark",
+      "ok": true,
+      "photoCount": 3,
+      "fallbackCount": 0,
+      "photoDetails": [
+        {
+          "src": "https://acceleratorsu.art/wp-content/uploads/2024/03/Ester_Bergsmark-face-1.jpg",
+          "complete": true,
+          "naturalWidth": 4000,
+          "naturalHeight": 2727,
+          "width": 76,
+          "height": 76
+        },
+        {
+          "src": "https://www.fylkingen.se/_next/image?url=%2Fmedia%2Fsites%252Fclvuuu5cs0001xwfc7ne538fo%252Fmedia%252Fdb20cec9-e78d-4e58-a2f7-274f9e06d656-HeleneBergportratt.jpg&w=1080&q=70",
+          "complete": true,
+          "naturalWidth": 1080,
+          "naturalHeight": 1342,
+          "width": 76,
+          "height": 76
+        },
+        {
+          "src": "https://cdn.sanity.io/images/2xi539qp/production/f90f2827b3bc91616ae3b05ce97210dfce71d2eb-3264x2448.jpg?rect=408,0,2448,2448&w=750&h=750&q=75&auto=format",
+          "complete": true,
+          "naturalWidth": 750,
+          "naturalHeight": 750,
+          "width": 76,
+          "height": 76
+        }
+      ],
+      "overflow": false
+    },
+    {
+      "width": 650,
+      "scheme": "light",
+      "ok": true,
+      "photoCount": 3,
+      "fallbackCount": 0,
+      "photoDetails": [
+        {
+          "src": "https://acceleratorsu.art/wp-content/uploads/2024/03/Ester_Bergsmark-face-1.jpg",
+          "complete": true,
+          "naturalWidth": 4000,
+          "naturalHeight": 2727,
+          "width": 96,
+          "height": 96
+        },
+        {
+          "src": "https://www.fylkingen.se/_next/image?url=%2Fmedia%2Fsites%252Fclvuuu5cs0001xwfc7ne538fo%252Fmedia%252Fdb20cec9-e78d-4e58-a2f7-274f9e06d656-HeleneBergportratt.jpg&w=1080&q=70",
+          "complete": true,
+          "naturalWidth": 1080,
+          "naturalHeight": 1342,
+          "width": 96,
+          "height": 96
+        },
+        {
+          "src": "https://cdn.sanity.io/images/2xi539qp/production/f90f2827b3bc91616ae3b05ce97210dfce71d2eb-3264x2448.jpg?rect=408,0,2448,2448&w=750&h=750&q=75&auto=format",
+          "complete": true,
+          "naturalWidth": 750,
+          "naturalHeight": 750,
+          "width": 96,
+          "height": 96
+        }
+      ],
+      "overflow": false
+    }
+  ],
+  "ok": true,
+  "scope": "Chromium responsive/dark/images-blocked proxy; not actual Gmail or Apple Mail"
+}
