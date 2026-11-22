@@ -1,5 +1,14 @@
 # Sunday release integration, subscriber privacy and scanning cues
 
+## Critical: source review accounting is NOT a reviewed event pool
+
+A test which uses the same newsletter events as an already delivered issue and merely attaches 49 `source_scans` rows is **NOT a full-source-to-output rehearsal**. This exact false positive occurred in the 22 Nov Issue 005 owner tests: the email body was identical despite new source leads. Never call that successful editorial integration.
+
+For Issue 006+, after reviewing every registered source, maintain a structured `research_coverage.eligible_verified_events` array containing every individually reviewed suitable event in the fortnight, including items promoted to email and those that fit only the calendar. Each record must have `source_id`, `title`, original event `url`, `verification_status=verified_eligible`; the linked `source_scans` row must be `reviewed_leads` and contain the same exact URL in `candidate_urls`. Include only genuinely organizer-verified eligible events, not raw crawl links or speculative availability. The `editorial_pool_audit.py` executable release check requires every eligible event's original URL to occur in exactly one of newsletter `top3` / `new_discoveries` / `worth_reconsidering` or `calendar_only_events`, and forbids unexplained extra selections, omissions and duplicates. Keep newsletter selective; calendar contains the larger eligible pool. Do not force events from no-fit sources.
+
+The isolated Issue 005 owner rehearsal must additionally compare selections to the actually sent `issues/current.json`, require at least one genuinely new original event URL and at least one verified `calendar_only_events` entry, and fail if it merely re-renders the old issue. This guard is intentionally red for the old owner fixture until real new editorial findings are verified and integrated. Green 49/49 source record coverage is not proof of event breadth or new newsletter content. Do not send a repeated owner test merely because photo/render checks pass.
+
+
 ## Reviewed-event pool to newsletter AND calendar (Issue 006 onward)
 
 The sweep's public `source-probe.json` is discovery evidence, NOT the event database.
