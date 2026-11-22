@@ -1,0 +1,36 @@
+name: Node.js 24 action runtime compatibility (no email)
+on:
+  pull_request:
+    paths:
+      - '.github/workflows/**'
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/**'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  verify-node24-actions:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+      - name: Prove all workflow action refs are upgraded
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          files = sorted(Path('.github/workflows').glob('*.yml'))
+          stale = [(str(p), ref) for p in files for ref in
+                   ('actions/checkout@v4','actions/setup-python@v5','actions/upload-artifact@v4')
+                   if ref in p.read_text()]
+          assert not stale, f'Node 20 action refs remain: {stale}'
+          print(f'Checked {len(files)} workflows for deprecated action majors')
+          Path('node24-ci-smoke.txt').write_text('checkout v5, setup-python v6, upload-artifact v6 smoke\n')
+          PY
+      - uses: actions/upload-artifact@v6
+        with:
+          name: node24-action-smoke
+          path: node24-ci-smoke.txt
