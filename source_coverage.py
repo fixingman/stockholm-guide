@@ -9,6 +9,7 @@ All public data; no subscribers. Older already-sent issues are grandfathered.
 import argparse
 import json
 import re
+from collections import Counter
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 from urllib.parse import urlparse
@@ -73,6 +74,7 @@ def audit(issue, registry, *, strict=True, as_of=None):
 
     index = {s["id"]: s for s in registry.get("sources", [])}
     reviewed = blocked = 0
+    substantive_findings = []
     for row in records:
         if not isinstance(row, dict):
             errors.append("Invalid source scan record")
@@ -119,6 +121,8 @@ def audit(issue, registry, *, strict=True, as_of=None):
         if not isinstance(finding, str) or len(finding.strip()) < 18:
             errors.append(source_id + ": missing specific editorial finding/obstacle")
         if status in REVIEWED:
+            if isinstance(finding, str):
+                substantive_findings.append(re.sub(r"\s+", " ", finding.casefold()).strip())
             reviewer = row.get("reviewer")
             if not isinstance(reviewer, str) or len(reviewer.strip()) < 3:
                 errors.append(source_id + ": no named assistant/editor who actually reviewed listing")
@@ -138,6 +142,12 @@ def audit(issue, registry, *, strict=True, as_of=None):
                 errors.append(source_id + ": blocked attempts need public URL and exact outcome")
             if not isinstance(row.get("alternate_search"), str) or len(row["alternate_search"].strip()) < 12:
                 errors.append(source_id + ": blocked source needs a documented alternative search")
+    # Repeated boilerplate across many registrants is not a credible
+    # individual editorial review. Each source requires a specific finding.
+    repeated_notes = [note for note, count in Counter(substantive_findings).items()
+                      if note and count >= 3]
+    if repeated_notes:
+        errors.append("Boilerplate identical findings reused for 3+ distinct sources; review each calendar individually")
     missing = ids - seen
     if missing:
         errors.append("Sources never examined: " + ", ".join(sorted(missing)))
