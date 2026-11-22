@@ -64,7 +64,9 @@ class DiscoverySourceTests(unittest.TestCase):
         self.assertIn("Luma", policy["luma_explicit_check"])
         self.assertIn("Log", policy["luma_explicit_check"])
         self.assertIn("not checked", policy["scanning_accountability"])
-        self.assertIn("no obligation to scan every registered source", policy["new_source_rotation"].lower())
+        self.assertIn("ALL registry sources".lower(), policy["new_source_rotation"].lower())
+        self.assertIn("editorial review", policy["automated_public_probe"])
+        self.assertIn("From Issue 006", policy["mandatory_source_review"])
 
     def test_no_signup_bypass_or_unverified_publication_policy(self):
         policy = self.registry["source_diversity_policy"]
@@ -75,7 +77,9 @@ class DiscoverySourceTests(unittest.TestCase):
 
     def test_recurring_scanning_targets(self):
         p = self.registry["source_diversity_policy"]
-        self.assertGreaterEqual(p["review_target_distinct_sources"], 12)
+        self.assertEqual(p["review_target_distinct_sources"], len(self.sources))
+        self.assertIn("EVERY registered source", p["saturday_and_sunday"])
+        self.assertIn("100% coverage", p["scanning_accountability"])
         self.assertGreaterEqual(p["review_target_categories"], 5)
 
 
