@@ -51,6 +51,7 @@ jobs:
       - name: Build the live issue calendar (public dates, no subscribers)
         run: |
           python -m unittest test_calendar
+          node --check calendar.js
           python build_calendar.py --data issues/current.json --output calendar.html
           test -s calendar.html
           test -s calendar.js
