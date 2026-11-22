@@ -1,5 +1,5 @@
 {
-  "html_sha256": "6ed06ad4371e77a73995f1cd624057ac8711f62dcc3eace01ce8772b84f178b4",
+  "html_sha256": "45bcdd3eec0d8216ab39a325204a0e8f7c68370460e5105396e2808883cf46a1",
   "static": {
     "ok": true,
     "errors": [],
@@ -21,14 +21,6 @@
       "fallbackCount": 0,
       "photoDetails": [
         {
-          "src": "https://fylkingen.se/media/sites%2Fclvuuu5cs0001xwfc7ne538fo%2Fmedia%2Fd6632067-61c4-4f91-97d2-7549d3e9343f-a1077103124_10.jpg",
-          "complete": true,
-          "naturalWidth": 1200,
-          "naturalHeight": 1200,
-          "width": 76,
-          "height": 76
-        },
-        {
           "src": "https://stadsgardsterminalen.com/wp-content/uploads/2026/10/nortic-traden-homegrown-1200x675.jpg",
           "complete": true,
           "naturalWidth": 1200,
@@ -37,10 +29,18 @@
           "height": 76
         },
         {
-          "src": "https://fylkingen.se/_next/image?url=%2Fmedia%2Fsites%252Fclvuuu5cs0001xwfc7ne538fo%252Fmedia%252F959c2f91-59fd-4fb3-8134-f6720717bb28-EVENT-BILD-CHANGING-LANDSCAPE.jpeg&w=1080&q=70",
+          "src": "https://www.fylkingen.se/_next/image?url=%2Fmedia%2Fsites%252Fclvuuu5cs0001xwfc7ne538fo%252Fmedia%252Fdb20cec9-e78d-4e58-a2f7-274f9e06d656-HeleneBergportratt.jpg&w=1080&q=70",
           "complete": true,
           "naturalWidth": 1080,
-          "naturalHeight": 810,
+          "naturalHeight": 1342,
+          "width": 76,
+          "height": 76
+        },
+        {
+          "src": "https://acceleratorsu.art/wp-content/uploads/2024/03/Ester_Bergsmark-face-1.jpg",
+          "complete": true,
+          "naturalWidth": 4000,
+          "naturalHeight": 2727,
           "width": 76,
           "height": 76
         }
@@ -55,14 +55,6 @@
       "fallbackCount": 0,
       "photoDetails": [
         {
-          "src": "https://fylkingen.se/media/sites%2Fclvuuu5cs0001xwfc7ne538fo%2Fmedia%2Fd6632067-61c4-4f91-97d2-7549d3e9343f-a1077103124_10.jpg",
-          "complete": true,
-          "naturalWidth": 1200,
-          "naturalHeight": 1200,
-          "width": 76,
-          "height": 76
-        },
-        {
           "src": "https://stadsgardsterminalen.com/wp-content/uploads/2026/10/nortic-traden-homegrown-1200x675.jpg",
           "complete": true,
           "naturalWidth": 1200,
@@ -71,10 +63,18 @@
           "height": 76
         },
         {
-          "src": "https://fylkingen.se/_next/image?url=%2Fmedia%2Fsites%252Fclvuuu5cs0001xwfc7ne538fo%252Fmedia%252F959c2f91-59fd-4fb3-8134-f6720717bb28-EVENT-BILD-CHANGING-LANDSCAPE.jpeg&w=1080&q=70",
+          "src": "https://www.fylkingen.se/_next/image?url=%2Fmedia%2Fsites%252Fclvuuu5cs0001xwfc7ne538fo%252Fmedia%252Fdb20cec9-e78d-4e58-a2f7-274f9e06d656-HeleneBergportratt.jpg&w=1080&q=70",
           "complete": true,
           "naturalWidth": 1080,
-          "naturalHeight": 810,
+          "naturalHeight": 1342,
+          "width": 76,
+          "height": 76
+        },
+        {
+          "src": "https://acceleratorsu.art/wp-content/uploads/2024/03/Ester_Bergsmark-face-1.jpg",
+          "complete": true,
+          "naturalWidth": 4000,
+          "naturalHeight": 2727,
           "width": 76,
           "height": 76
         }
@@ -89,14 +89,6 @@
       "fallbackCount": 0,
       "photoDetails": [
         {
-          "src": "https://fylkingen.se/media/sites%2Fclvuuu5cs0001xwfc7ne538fo%2Fmedia%2Fd6632067-61c4-4f91-97d2-7549d3e9343f-a1077103124_10.jpg",
-          "complete": true,
-          "naturalWidth": 1200,
-          "naturalHeight": 1200,
-          "width": 96,
-          "height": 96
-        },
-        {
           "src": "https://stadsgardsterminalen.com/wp-content/uploads/2026/10/nortic-traden-homegrown-1200x675.jpg",
           "complete": true,
           "naturalWidth": 1200,
@@ -105,10 +97,18 @@
           "height": 96
         },
         {
-          "src": "https://fylkingen.se/_next/image?url=%2Fmedia%2Fsites%252Fclvuuu5cs0001xwfc7ne538fo%252Fmedia%252F959c2f91-59fd-4fb3-8134-f6720717bb28-EVENT-BILD-CHANGING-LANDSCAPE.jpeg&w=1080&q=70",
+          "src": "https://www.fylkingen.se/_next/image?url=%2Fmedia%2Fsites%252Fclvuuu5cs0001xwfc7ne538fo%252Fmedia%252Fdb20cec9-e78d-4e58-a2f7-274f9e06d656-HeleneBergportratt.jpg&w=1080&q=70",
           "complete": true,
           "naturalWidth": 1080,
-          "naturalHeight": 810,
+          "naturalHeight": 1342,
+          "width": 96,
+          "height": 96
+        },
+        {
+          "src": "https://acceleratorsu.art/wp-content/uploads/2024/03/Ester_Bergsmark-face-1.jpg",
+          "complete": true,
+          "naturalWidth": 4000,
+          "naturalHeight": 2727,
           "width": 96,
           "height": 96
         }
