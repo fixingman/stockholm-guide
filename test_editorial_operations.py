@@ -63,6 +63,7 @@ class EditorialTests(unittest.TestCase):
         self.assertFalse(r3["ready_for_editorial_release"])
         self.assertEqual(len(r3["repeated_top3"]),1)
         g["top3"][0]["url"]="https://events.example.org/a-truly-new-event"
+        g["top3"][0]["image_identity_review"]["source_page"]=g["top3"][0]["url"]
         self.assertTrue(audit(g,history=[previous],strict=True)["ready_for_editorial_release"])
 
     def test_issue_005_legacy_repeat_reports_but_does_not_retroactively_block(self):
