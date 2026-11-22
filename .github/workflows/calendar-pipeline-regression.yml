@@ -40,5 +40,5 @@ jobs:
           test -s calendar.html
           grep -q 'calendar-data' calendar.html
           grep -q 'calendar_only_events' calendar.html
-      - name: Safety: no Gmail/subscriber actions in this workflow
+      - name: Assert no Gmail or subscriber actions in this workflow
         run: echo 'Public read-only calendar test; no email sending or subscriber access'
