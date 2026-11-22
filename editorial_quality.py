@@ -91,6 +91,19 @@ def audit(issue, history=(), strict=False, as_of=None):
     repeats=sorted(current_new & past)
     if repeats:
         warnings.append(str(len(repeats))+" items labeled new were in previous issues")
+    # A fresh issue must not promote an already featured recommendation as a
+    # NEW Top Pick just because its photograph has passed a previous E2E.
+    # Keep issue 005's previously published artifacts intact; enforce from 006.
+    previously_featured={event_key(x) for old in history for x in old.get("top3",[])}
+    repeated_top3=sorted({event_key(x) for x in issue.get("top3",[]) if event_key(x) in previously_featured})
+    match=re.search(r"(\\d+)",str(issue.get("issue_number","")))
+    issue_index=int(match.group(1)) if match else 0
+    if repeated_top3:
+        message=f"Previously featured Top 3 recycled: {len(repeated_top3)}; select new Top Picks and move worthwhile repeats to Worth reconsidering"
+        if strict and issue_index>=6:
+            errors.append(message)
+        else:
+            warnings.append(message)
     reviewed=0
     for item in issue.get("top3",[]):
         if not item.get("image_verified"):
@@ -112,6 +125,7 @@ def audit(issue, history=(), strict=False, as_of=None):
         "organizer_count":len(domains),"dominant_organizer_share":round(concentration,3),
         "organizer_domains":sorted(domains),"repeat_new_discoveries":repeats,
         "identity_reviewed_images":reviewed,"identity_review_target":len(issue.get("top3",[])),
+        "repeated_top3":repeated_top3,
         "event_evidence_rows":records,
         "note":"Evidence bookkeeping, not automated factual confirmation or legal image clearance."
     }
