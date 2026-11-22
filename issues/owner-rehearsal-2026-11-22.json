@@ -2368,5 +2368,6 @@
       "populated_from_historical_visual_test": "Photo identity metadata from visual TEST-006; event facts independently rechecked for issue 005.",
       "source_id": "fotografiska"
     }
-  ]
+  ],
+  "window_start": "2026-11-22"
 }
