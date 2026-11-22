@@ -18,7 +18,7 @@ from editorial_scanning import enhance, has_verified_last_chance
 
 ROOT = Path(__file__).resolve().parent
 TZ = ZoneInfo("Europe/Stockholm")
-SECTIONS = ("top3", "new_discoveries", "worth_reconsidering")
+SECTIONS = ("top3", "new_discoveries", "worth_reconsidering", "calendar_only_events")
 
 
 def timestamp(value):
@@ -39,6 +39,39 @@ def https_url(value):
         return False
 
 
+def calendar_extra_approved(entry, issue):
+    """Only original, dated editorial evidence may populate calendar-only listings.
+
+    The source probe/checklist is not a review. Its unverified candidate links
+    must never become public events just because a website returned HTTP 200.
+    """
+    url = entry.get("url")
+    review = entry.get("final_review") or {}
+    source_id = entry.get("source_id")
+    published = timestamp(issue.get("published_at"))
+    checked = timestamp(review.get("checked_at"))
+    if not (https_url(url) and source_id and published and checked):
+        return False
+    age = published - checked
+    if not (timedelta(0) <= age <= timedelta(hours=72)):
+        return False
+    if review.get("organizer_source_url") != url or review.get("event_status") != "scheduled":
+        return False
+    if review.get("booking_status") in ("sold_out", "cancelled", "unavailable"):
+        return False
+    if not (entry.get("title") and entry.get("dates") and entry.get("venue")):
+        return False
+    if entry.get("event_start") and timestamp(entry["event_start"]) is None:
+        return False
+    scans = (issue.get("research_coverage") or {}).get("source_scans") or []
+    return any(
+        row.get("source_id") == source_id
+        and row.get("status") == "reviewed_leads"
+        and url in (row.get("candidate_urls") or [])
+        for row in scans if isinstance(row, dict)
+    )
+
+
 def build_data(issue):
     if not issue.get("issue_number") or not issue.get("published_at"):
         raise ValueError("A published issue with a dated publication time is required")
@@ -51,6 +84,8 @@ def build_data(issue):
     items, seen = [], set()
     for section in SECTIONS:
         for index, entry in enumerate(issue.get(section, [])):
+            if section == "calendar_only_events" and not calendar_extra_approved(entry, issue):
+                continue
             url = entry.get("url", "")
             if not https_url(url):
                 continue
@@ -63,6 +98,8 @@ def build_data(issue):
                 continue
             seen.add(key)
             beginning = timestamp(entry.get("event_start"))
+            if section == "calendar_only_events" and beginning and not (start <= beginning.date() <= end):
+                continue
             closing = timestamp(entry.get("event_end"))
             verified_closing = bool(closing and has_verified_last_chance(entry, issue))
             # Last chance is pinned to the CLOSING DATE only if no precise
