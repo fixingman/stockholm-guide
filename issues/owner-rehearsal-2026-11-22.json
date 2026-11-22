@@ -593,7 +593,10 @@
         "status": "reviewed_leads",
         "finding": "Venue programme includes Masangue Maracatu and niche live shows, already represented in Issue 005.",
         "candidate_urls": [
-          "https://reimersholmehotel.se/event/masangue-maracatu-gaster/"
+          "https://reimersholmehotel.se/event/masangue-maracatu-gaster/",
+          "https://reimersholmehotel.se/en/event/aural-onsdag-roberto-n-peyre/",
+          "https://reimersholmehotel.se/en/event/dias-the-afro-express/",
+          "https://reimersholmehotel.se/en/event/voidgarden/"
         ]
       },
       {
@@ -610,7 +613,9 @@
           "https://www.fylkingen.se/en/events/chimera-evolver",
           "https://www.fylkingen.se/en/events/aliqui",
           "https://www.fylkingen.se/en/events/cndnsd",
-          "https://www.fylkingen.se/en/events/ems-avslutningskonsert"
+          "https://www.fylkingen.se/en/events/ems-avslutningskonsert",
+          "https://fylkingen.se/en/events/chimera-evolver",
+          "https://fylkingen.se/en/events/changing-landscape-evolving-experiences"
         ]
       },
       {
@@ -624,7 +629,10 @@
         "status": "reviewed_leads",
         "finding": "Fotografiska lists Salla Salazar 27 Nov and sold-out Oslipat 4 Dec; issue already accounts for both.",
         "candidate_urls": [
-          "https://stockholm.fotografiska.com/en/events/listening-session-salla-salazar-the-soundtrack-to-a-life"
+          "https://stockholm.fotografiska.com/en/events/listening-session-salla-salazar-the-soundtrack-to-a-life",
+          "https://stockholm.fotografiska.com/en/exhibitions/women-behind-the-camera-1848-1968",
+          "https://stockholm.fotografiska.com/en/exhibitions/the-machines-eye-in-human-hands",
+          "https://stockholm.fotografiska.com/en/exhibitions/lotta-antonsson"
         ]
       },
       {
@@ -992,7 +1000,11 @@
         "status": "reviewed_leads",
         "finding": "Original calendar lists Träden, Honeymilk and Per Persson, already represented in Issue 005.",
         "candidate_urls": [
-          "https://stadsgardsterminalen.com/event/traden-homegrown/"
+          "https://stadsgardsterminalen.com/event/traden-homegrown/",
+          "https://stadsgardsterminalen.com/event/honeymilk/",
+          "https://stadsgardsterminalen.com/event/per-persson-nya-packet/",
+          "https://stadsgardsterminalen.com/event/polymoon-gorma/",
+          "https://stadsgardsterminalen.com/event/evanora-unlimited/"
         ]
       },
       {
@@ -1185,7 +1197,8 @@
         "finding": "ArkDes lists architectural tours and the upcoming Pepparkakshus exhibition already featured in issue.",
         "candidate_urls": [
           "https://arkdes.se/en/calendar/",
-          "https://arkdes.se/en/calendar/themed-tour-without-borders/"
+          "https://arkdes.se/en/calendar/themed-tour-without-borders/",
+          "https://pepparkakshus.arkdes.se/en/questions-and-answers/"
         ]
       },
       {
@@ -1317,14 +1330,117 @@
         "url": "https://cyklopen.se/events/oppen-atelje-oppet-bibliotek/2026-12-01/",
         "title": "Cyklopen open studio — December edition",
         "verification_status": "verified_eligible"
+      },
+      {
+        "source_id": "fylkingen",
+        "url": "https://fylkingen.se/en/events/chimera-evolver",
+        "title": "CHIMERA / EVOLVER: Emma DJ + Keiska + DJ Haydn",
+        "verification_status": "verified_eligible"
+      },
+      {
+        "source_id": "fylkingen",
+        "url": "https://fylkingen.se/en/events/changing-landscape-evolving-experiences",
+        "title": "Changing Landscape, Evolving Experiences — dance, ink and sound",
+        "verification_status": "verified_eligible"
+      },
+      {
+        "source_id": "stadsgardsterminalen",
+        "url": "https://stadsgardsterminalen.com/event/honeymilk/",
+        "title": "Honeymilk + Shy Away — intimate indie show",
+        "verification_status": "verified_eligible"
+      },
+      {
+        "source_id": "stadsgardsterminalen",
+        "url": "https://stadsgardsterminalen.com/event/per-persson-nya-packet/",
+        "title": "Per Persson & Nya Packet + Sand & Hallander",
+        "verification_status": "verified_eligible"
+      },
+      {
+        "source_id": "reimersholme-hotel",
+        "url": "https://reimersholmehotel.se/en/event/aural-onsdag-roberto-n-peyre/",
+        "title": "Aural Onsdag — Roberto N Peyre deep-listening session",
+        "verification_status": "verified_eligible"
+      },
+      {
+        "source_id": "reimersholme-hotel",
+        "url": "https://reimersholmehotel.se/en/event/dias-the-afro-express/",
+        "title": "Congolese Super Night — rumba, ndombolo and afrobeats",
+        "verification_status": "verified_eligible"
+      },
+      {
+        "source_id": "arkdes-events",
+        "url": "https://pepparkakshus.arkdes.se/en/questions-and-answers/",
+        "title": "Pepparkakshus 2026 — Gingerbread architecture of the future",
+        "verification_status": "verified_eligible"
+      },
+      {
+        "source_id": "stadsgardsterminalen",
+        "url": "https://stadsgardsterminalen.com/event/polymoon-gorma/",
+        "title": "Polymoon + GORMA — psychedelic post-gaze",
+        "verification_status": "verified_eligible"
+      },
+      {
+        "source_id": "stadsgardsterminalen",
+        "url": "https://stadsgardsterminalen.com/event/evanora-unlimited/",
+        "title": "Evanora Unlimited — cinematic experimental grime",
+        "verification_status": "verified_eligible"
+      },
+      {
+        "source_id": "index",
+        "url": "https://indexfoundation.se/talks-and-events/bookshop-situation-series-myriam-diatta-doing-creative-work-from-your-political-body",
+        "title": "Myriam Diatta — Doing Creative Work from Your Political Body",
+        "verification_status": "verified_eligible"
+      },
+      {
+        "source_id": "fargfabriken",
+        "url": "https://fargfabriken.se/sv/pa-gang/julmarknad-3/",
+        "title": "Färgfabriken winter craft and design market",
+        "verification_status": "verified_eligible"
+      },
+      {
+        "source_id": "fotografiska",
+        "url": "https://stockholm.fotografiska.com/en/exhibitions/women-behind-the-camera-1848-1968",
+        "title": "Women Behind the Camera, 1848–1968 — exhibition opening",
+        "verification_status": "verified_eligible"
+      },
+      {
+        "source_id": "reimersholme-hotel",
+        "url": "https://reimersholmehotel.se/en/event/voidgarden/",
+        "title": "Voidgarden — post-punk debut-album release",
+        "verification_status": "verified_eligible"
+      },
+      {
+        "source_id": "fotografiska",
+        "url": "https://stockholm.fotografiska.com/en/exhibitions/the-machines-eye-in-human-hands",
+        "title": "The Machine's Eye in Human Hands",
+        "verification_status": "verified_eligible"
+      },
+      {
+        "source_id": "fotografiska",
+        "url": "https://stockholm.fotografiska.com/en/exhibitions/lotta-antonsson",
+        "title": "Lotta Antonsson — I Am Everything",
+        "verification_status": "verified_eligible"
+      },
+      {
+        "source_id": "reimersholme-hotel",
+        "url": "https://reimersholmehotel.se/event/masangue-maracatu-gaster/",
+        "title": "Masangue Maracatu & guests — Brazilian rhythm celebration",
+        "verification_status": "verified_eligible"
+      },
+      {
+        "source_id": "fotografiska",
+        "url": "https://stockholm.fotografiska.com/en/events/listening-session-salla-salazar-the-soundtrack-to-a-life",
+        "title": "Salla Salazar — a phone-free listening session",
+        "verification_status": "verified_eligible"
       }
     ],
     "event_pool_reconciliation": {
-      "eligible_verified": 15,
+      "eligible_verified": 32,
       "newsletter": 12,
-      "calendar_only": 3,
+      "calendar_only": 20,
       "raw_probe_links_not_claimed_verified": true,
-      "owner_only": true
+      "owner_only": true,
+      "notes": "Newly verified missed events plus previously organizer-reviewed and still scheduled Issue 005 entries; no claim all raw links are events."
     }
   },
   "rehearsal": true,
@@ -1449,6 +1565,757 @@
         "notes": "Public organizer page consulted 23 Nov 2026; remaining ticket inventory not independently checked."
       },
       "event_start": "2026-12-01T18:00:00+01:00"
+    },
+    {
+      "title": "CHIMERA / EVOLVER: Emma DJ + Keiska + DJ Haydn",
+      "dates": "Fri 27 Nov · 21:00",
+      "url": "https://fylkingen.se/en/events/chimera-evolver",
+      "venue": "Fylkingen, Saltmätargatan 21",
+      "price": "250 SEK; 180 SEK members/friends",
+      "booking": "Official Tickster ticket link; live stock unverified",
+      "description": "Live electronic sets and adventurous late club programming by CHIMERA and EVOLVER.",
+      "verification": {
+        "checked_at": "2026-11-22T16:46:51+01:00",
+        "date": {
+          "status": "confirmed",
+          "source_url": "https://fylkingen.se/en/events/chimera-evolver"
+        },
+        "venue": {
+          "status": "confirmed",
+          "source_url": "https://fylkingen.se/en/events/chimera-evolver"
+        },
+        "booking": {
+          "status": "confirmed",
+          "source_url": "https://fylkingen.se/en/events/chimera-evolver"
+        },
+        "price": {
+          "status": "confirmed",
+          "source_url": "https://fylkingen.se/en/events/chimera-evolver"
+        }
+      },
+      "final_review": {
+        "checked_at": "2026-11-22T16:46:51+01:00",
+        "organizer_source_url": "https://fylkingen.se/en/events/chimera-evolver",
+        "event_status": "scheduled",
+        "booking_status": "required_unverified",
+        "notes": "Original official event page checked 22 Nov; gallery/organizer-hosted artwork reviewed separately; remaining ticket stock not guaranteed."
+      },
+      "image_verified": true,
+      "event_start": "2026-11-27T21:00:00+01:00",
+      "first_seen_issue": "005",
+      "new_discovery_verified": true,
+      "organizer_url": "https://fylkingen.se/en/events/chimera-evolver",
+      "image_url": "https://fylkingen.se/media/sites%2Fclvuuu5cs0001xwfc7ne538fo%2Fmedia%2Fd6632067-61c4-4f91-97d2-7549d3e9343f-a1077103124_10.jpg",
+      "image_source_url": "https://fylkingen.se/en/events/chimera-evolver",
+      "image_alt": "Abstract distorted-face artwork published on the CHIMERA / EVOLVER 27 Nov 2026 event page",
+      "image_identity_review": {
+        "event_match": true,
+        "reviewer": "Editorial assistant — inspected exact organizer-page photo thumbnails using no-send GitHub Actions on 22 November 2026",
+        "source_page": "https://fylkingen.se/en/events/chimera-evolver",
+        "checked_at": "2026-11-22T16:46:51+01:00",
+        "notes": "Verified by inspecting organizer's exact CHIMERA event-page OG image and a separately rendered thumbnail on 22 Nov; surreal distorted face is event artwork, not a performance documentary photo."
+      },
+      "image_review_evidence": {
+        "review_run_url": "https://github.com/fixingman/stockholm-guide/actions/runs/45040097163",
+        "organizer_image_dimensions": [
+          1200,
+          1200
+        ],
+        "method": "same-official-event-page plus visually inspected tiny preview"
+      },
+      "source_id": "fylkingen"
+    },
+    {
+      "title": "Changing Landscape, Evolving Experiences — dance, ink and sound",
+      "dates": "Sun 29 Nov · 16:00",
+      "url": "https://fylkingen.se/en/events/changing-landscape-evolving-experiences",
+      "venue": "Fylkingen, Saltmätargatan 21",
+      "price": "150 SEK; 80 SEK members/friends",
+      "booking": "Ticket link on official event page; stock unverified",
+      "description": "Japanese and Spanish dance, brush and ink, projections and improvisation with Christer Bothén.",
+      "verification": {
+        "checked_at": "2026-11-22T16:46:51+01:00",
+        "date": {
+          "status": "confirmed",
+          "source_url": "https://fylkingen.se/en/events/changing-landscape-evolving-experiences"
+        },
+        "venue": {
+          "status": "confirmed",
+          "source_url": "https://fylkingen.se/en/events/changing-landscape-evolving-experiences"
+        },
+        "booking": {
+          "status": "confirmed",
+          "source_url": "https://fylkingen.se/en/events/changing-landscape-evolving-experiences"
+        },
+        "price": {
+          "status": "confirmed",
+          "source_url": "https://fylkingen.se/en/events/changing-landscape-evolving-experiences"
+        }
+      },
+      "final_review": {
+        "checked_at": "2026-11-22T16:46:51+01:00",
+        "organizer_source_url": "https://fylkingen.se/en/events/changing-landscape-evolving-experiences",
+        "event_status": "scheduled",
+        "booking_status": "required_unverified",
+        "notes": "Original official event page checked 22 Nov; gallery/organizer-hosted artwork reviewed separately; remaining ticket stock not guaranteed."
+      },
+      "image_verified": true,
+      "event_start": "2026-11-29T16:00:00+01:00",
+      "first_seen_issue": "005",
+      "new_discovery_verified": true,
+      "organizer_url": "https://fylkingen.se/en/events/changing-landscape-evolving-experiences",
+      "image_url": "https://fylkingen.se/_next/image?url=%2Fmedia%2Fsites%252Fclvuuu5cs0001xwfc7ne538fo%252Fmedia%252F959c2f91-59fd-4fb3-8134-f6720717bb28-EVENT-BILD-CHANGING-LANDSCAPE.jpeg&w=3840&q=75",
+      "image_source_url": "https://fylkingen.se/en/events/changing-landscape-evolving-experiences",
+      "image_alt": "Black-and-white dancer silhouette beside expressive ink brushstrokes, official Changing Landscape event artwork",
+      "image_identity_review": {
+        "event_match": true,
+        "reviewer": "Editorial assistant — inspected exact organizer-page photo thumbnails using no-send GitHub Actions on 22 November 2026",
+        "source_page": "https://fylkingen.se/en/events/changing-landscape-evolving-experiences",
+        "checked_at": "2026-11-22T16:46:51+01:00",
+        "notes": "Verified image linked by the exact Changing Landscape organizer event page; visually inspected black-and-white dance and ink graphic; filename explicitly identifies event."
+      },
+      "image_review_evidence": {
+        "review_run_url": "https://github.com/fixingman/stockholm-guide/actions/runs/45040097163",
+        "organizer_image_dimensions": [
+          3840,
+          2880
+        ],
+        "method": "same-official-event-page plus visually inspected tiny preview"
+      },
+      "source_id": "fylkingen"
+    },
+    {
+      "title": "Honeymilk + Shy Away — intimate indie show",
+      "dates": "Wed 25 Nov · doors 19:00",
+      "url": "https://stadsgardsterminalen.com/event/honeymilk/",
+      "venue": "Kollektivet Livet, Lilla Scen",
+      "price": "120–140 SEK",
+      "booking": "Nortic ticket link; check current stock",
+      "description": "Dreamy indie guitars and psych-pop from a reunited lineup, with Shy Away supporting.",
+      "verification": {
+        "checked_at": "2026-11-22T16:20:06+01:00",
+        "date": {
+          "status": "confirmed",
+          "source_url": "https://stadsgardsterminalen.com/event/honeymilk/"
+        },
+        "venue": {
+          "status": "confirmed",
+          "source_url": "https://stadsgardsterminalen.com/event/honeymilk/"
+        },
+        "booking": {
+          "status": "confirmed",
+          "source_url": "https://stadsgardsterminalen.com/event/honeymilk/"
+        },
+        "price": {
+          "status": "confirmed",
+          "source_url": "https://stadsgardsterminalen.com/event/honeymilk/"
+        }
+      },
+      "final_review": {
+        "checked_at": "2026-11-22T16:20:06+01:00",
+        "organizer_source_url": "https://stadsgardsterminalen.com/event/honeymilk/",
+        "event_status": "scheduled",
+        "booking_status": "required_unverified",
+        "notes": "Sunday organizer listing reviewed 22 November; event is listed, live stock not guaranteed."
+      },
+      "image_verified": false,
+      "event_start": "2026-11-25T19:00:00+01:00",
+      "first_seen_issue": "005",
+      "new_discovery_verified": true,
+      "source_id": "stadsgardsterminalen"
+    },
+    {
+      "title": "Per Persson & Nya Packet + Sand & Hallander",
+      "dates": "Fri 27 Nov · doors 19:00",
+      "url": "https://stadsgardsterminalen.com/event/per-persson-nya-packet/",
+      "venue": "Kollektivet Livet, Stora Scen",
+      "price": "320–370 SEK",
+      "booking": "Official Nortic link; check stock",
+      "description": "Swedish folk-rock songwriting with a new band and an intimate duo opening.",
+      "verification": {
+        "checked_at": "2026-11-22T16:20:06+01:00",
+        "date": {
+          "status": "confirmed",
+          "source_url": "https://stadsgardsterminalen.com/event/per-persson-nya-packet/"
+        },
+        "venue": {
+          "status": "confirmed",
+          "source_url": "https://stadsgardsterminalen.com/event/per-persson-nya-packet/"
+        },
+        "booking": {
+          "status": "confirmed",
+          "source_url": "https://stadsgardsterminalen.com/event/per-persson-nya-packet/"
+        },
+        "price": {
+          "status": "confirmed",
+          "source_url": "https://stadsgardsterminalen.com/event/per-persson-nya-packet/"
+        }
+      },
+      "final_review": {
+        "checked_at": "2026-11-22T16:20:06+01:00",
+        "organizer_source_url": "https://stadsgardsterminalen.com/event/per-persson-nya-packet/",
+        "event_status": "scheduled",
+        "booking_status": "required_unverified",
+        "notes": "Sunday organizer listing reviewed 22 November; event is listed, live stock not guaranteed."
+      },
+      "image_verified": false,
+      "event_start": "2026-11-27T19:00:00+01:00",
+      "first_seen_issue": "005",
+      "new_discovery_verified": true,
+      "source_id": "stadsgardsterminalen"
+    },
+    {
+      "title": "Aural Onsdag — Roberto N Peyre deep-listening session",
+      "dates": "Wed 2 Dec · 19:00–21:00",
+      "url": "https://reimersholmehotel.se/en/event/aural-onsdag-roberto-n-peyre/",
+      "venue": "Reimersholme Hotel, Reimersholmsgatan 5",
+      "price": "Free",
+      "booking": "No ticket required",
+      "description": "A low-key vinyl journey through Haitian Mizik Vodou, Rara, field recordings and transatlantic spiritual sound.",
+      "verification": {
+        "checked_at": "2026-11-22T16:20:06+01:00",
+        "date": {
+          "status": "confirmed",
+          "source_url": "https://reimersholmehotel.se/en/event/aural-onsdag-roberto-n-peyre/"
+        },
+        "venue": {
+          "status": "confirmed",
+          "source_url": "https://reimersholmehotel.se/en/event/aural-onsdag-roberto-n-peyre/"
+        },
+        "booking": {
+          "status": "confirmed",
+          "source_url": "https://reimersholmehotel.se/en/event/aural-onsdag-roberto-n-peyre/"
+        },
+        "price": {
+          "status": "confirmed",
+          "source_url": "https://reimersholmehotel.se/en/event/aural-onsdag-roberto-n-peyre/"
+        }
+      },
+      "final_review": {
+        "checked_at": "2026-11-22T16:20:06+01:00",
+        "organizer_source_url": "https://reimersholmehotel.se/en/event/aural-onsdag-roberto-n-peyre/",
+        "event_status": "scheduled",
+        "booking_status": "not_required",
+        "notes": "Sunday organizer listing reviewed 22 November; event is listed, live stock not guaranteed."
+      },
+      "image_verified": false,
+      "event_start": "2026-12-02T19:00:00+01:00",
+      "previous_issue_number": "004",
+      "first_seen_issue": "004",
+      "new_discovery_verified": false,
+      "source_id": "reimersholme-hotel"
+    },
+    {
+      "title": "Congolese Super Night — rumba, ndombolo and afrobeats",
+      "dates": "Fri 27 Nov · doors 18:30 · show 20:00",
+      "url": "https://reimersholmehotel.se/en/event/dias-the-afro-express/",
+      "venue": "Reimersholme Hotel, Reimersholmsgatan 5",
+      "price": "Price not published",
+      "booking": "Check official page; remaining capacity unverified",
+      "description": "Alicios and Luke join Dias & The Afro Express for Congolese dance music and live performances.",
+      "verification": {
+        "checked_at": "2026-11-22T16:20:06+01:00",
+        "date": {
+          "status": "confirmed",
+          "source_url": "https://reimersholmehotel.se/en/event/dias-the-afro-express/"
+        },
+        "venue": {
+          "status": "confirmed",
+          "source_url": "https://reimersholmehotel.se/en/event/dias-the-afro-express/"
+        },
+        "booking": {
+          "status": "unknown",
+          "source_url": "https://reimersholmehotel.se/en/event/dias-the-afro-express/",
+          "note": "Official event page is live but remaining ticket stock / registration conditions were not confirmed"
+        },
+        "price": {
+          "status": "unknown",
+          "source_url": "https://reimersholmehotel.se/en/event/dias-the-afro-express/",
+          "note": "Organizer page does not provide an exact current admission rate"
+        }
+      },
+      "final_review": {
+        "checked_at": "2026-11-22T16:20:06+01:00",
+        "organizer_source_url": "https://reimersholmehotel.se/en/event/dias-the-afro-express/",
+        "event_status": "scheduled",
+        "booking_status": "required_unverified",
+        "notes": "Sunday organizer listing reviewed 22 November; event is listed, live stock not guaranteed."
+      },
+      "image_verified": false,
+      "event_start": "2026-11-27T18:30:00+01:00",
+      "first_seen_issue": "005",
+      "new_discovery_verified": true,
+      "source_id": "reimersholme-hotel"
+    },
+    {
+      "title": "Pepparkakshus 2026 — Gingerbread architecture of the future",
+      "dates": "Opens Fri 27 Nov · through 10 Jan",
+      "url": "https://pepparkakshus.arkdes.se/en/questions-and-answers/",
+      "venue": "ArkDes, Exercisplan 4, Skeppsholmen",
+      "price": "Price not published",
+      "booking": "Check official page; remaining capacity unverified",
+      "description": "A playful community competition and exhibition building imagined future homes and cities out of gingerbread; visitors can vote until Dec 9.",
+      "verification": {
+        "checked_at": "2026-11-22T16:20:06+01:00",
+        "date": {
+          "status": "confirmed",
+          "source_url": "https://pepparkakshus.arkdes.se/en/questions-and-answers/"
+        },
+        "venue": {
+          "status": "confirmed",
+          "source_url": "https://pepparkakshus.arkdes.se/en/questions-and-answers/"
+        },
+        "booking": {
+          "status": "unknown",
+          "source_url": "https://pepparkakshus.arkdes.se/en/questions-and-answers/",
+          "note": "Official event page is live but remaining ticket stock / registration conditions were not confirmed"
+        },
+        "price": {
+          "status": "unknown",
+          "source_url": "https://pepparkakshus.arkdes.se/en/questions-and-answers/",
+          "note": "Organizer page does not provide an exact current admission rate"
+        }
+      },
+      "final_review": {
+        "checked_at": "2026-11-22T16:20:06+01:00",
+        "organizer_source_url": "https://pepparkakshus.arkdes.se/en/questions-and-answers/",
+        "event_status": "scheduled",
+        "booking_status": "unknown",
+        "notes": "Sunday organizer listing reviewed 22 November; event is listed, live stock not guaranteed."
+      },
+      "image_verified": false,
+      "schedule_note": "Open 27 Nov 2026–10 Jan 2027; museum hours vary.",
+      "first_seen_issue": "005",
+      "new_discovery_verified": true,
+      "source_id": "arkdes-events"
+    },
+    {
+      "title": "Polymoon + GORMA — psychedelic post-gaze",
+      "dates": "Sat 28 Nov · doors 19:30",
+      "url": "https://stadsgardsterminalen.com/event/polymoon-gorma/",
+      "venue": "Kollektivet Livet, Lilla Scen",
+      "price": "195–245 SEK",
+      "booking": "Nortic ticket link; check stock",
+      "description": "Finnish psychedelic rock, shoegaze, heavy riffs and soundscapes from Per Nordmark's GORMA.",
+      "verification": {
+        "checked_at": "2026-11-22T16:20:06+01:00",
+        "date": {
+          "status": "confirmed",
+          "source_url": "https://stadsgardsterminalen.com/event/polymoon-gorma/"
+        },
+        "venue": {
+          "status": "confirmed",
+          "source_url": "https://stadsgardsterminalen.com/event/polymoon-gorma/"
+        },
+        "booking": {
+          "status": "confirmed",
+          "source_url": "https://stadsgardsterminalen.com/event/polymoon-gorma/"
+        },
+        "price": {
+          "status": "confirmed",
+          "source_url": "https://stadsgardsterminalen.com/event/polymoon-gorma/"
+        }
+      },
+      "final_review": {
+        "checked_at": "2026-11-22T16:20:06+01:00",
+        "organizer_source_url": "https://stadsgardsterminalen.com/event/polymoon-gorma/",
+        "event_status": "scheduled",
+        "booking_status": "required_unverified",
+        "notes": "Sunday organizer listing reviewed 22 November; event is listed, live stock not guaranteed."
+      },
+      "image_verified": false,
+      "event_start": "2026-11-28T19:30:00+01:00",
+      "first_seen_issue": "005",
+      "new_discovery_verified": true,
+      "source_id": "stadsgardsterminalen"
+    },
+    {
+      "title": "Evanora Unlimited — cinematic experimental grime",
+      "dates": "Thu 26 Nov · doors 19:00",
+      "url": "https://stadsgardsterminalen.com/event/evanora-unlimited/",
+      "venue": "Kollektivet Livet, Lilla Scen",
+      "price": "220–240 SEK",
+      "booking": "Nortic ticket link; check stock",
+      "description": "Orion Ohana's shape-shifting audiovisual world of film, character-driven punk, grime and experimental performance.",
+      "verification": {
+        "checked_at": "2026-11-22T16:20:06+01:00",
+        "date": {
+          "status": "confirmed",
+          "source_url": "https://stadsgardsterminalen.com/event/evanora-unlimited/"
+        },
+        "venue": {
+          "status": "confirmed",
+          "source_url": "https://stadsgardsterminalen.com/event/evanora-unlimited/"
+        },
+        "booking": {
+          "status": "confirmed",
+          "source_url": "https://stadsgardsterminalen.com/event/evanora-unlimited/"
+        },
+        "price": {
+          "status": "confirmed",
+          "source_url": "https://stadsgardsterminalen.com/event/evanora-unlimited/"
+        }
+      },
+      "final_review": {
+        "checked_at": "2026-11-22T16:20:06+01:00",
+        "organizer_source_url": "https://stadsgardsterminalen.com/event/evanora-unlimited/",
+        "event_status": "scheduled",
+        "booking_status": "required_unverified",
+        "notes": "Sunday organizer listing reviewed 22 November; event is listed, live stock not guaranteed."
+      },
+      "image_verified": false,
+      "event_start": "2026-11-26T19:00:00+01:00",
+      "first_seen_issue": "005",
+      "new_discovery_verified": true,
+      "source_id": "stadsgardsterminalen"
+    },
+    {
+      "title": "Myriam Diatta — Doing Creative Work from Your Political Body",
+      "dates": "Fri 27 Nov · 18:00",
+      "url": "https://indexfoundation.se/talks-and-events/bookshop-situation-series-myriam-diatta-doing-creative-work-from-your-political-body",
+      "venue": "Index, Kungsbrostrand 19",
+      "price": "Price not published",
+      "booking": "Check official page; remaining capacity unverified",
+      "description": "A reading and discussion about making political, creative and embodied work while resisting the separation of practice and theory.",
+      "verification": {
+        "checked_at": "2026-11-22T16:20:06+01:00",
+        "date": {
+          "status": "confirmed",
+          "source_url": "https://indexfoundation.se/talks-and-events/bookshop-situation-series-myriam-diatta-doing-creative-work-from-your-political-body"
+        },
+        "venue": {
+          "status": "confirmed",
+          "source_url": "https://indexfoundation.se/talks-and-events/bookshop-situation-series-myriam-diatta-doing-creative-work-from-your-political-body"
+        },
+        "booking": {
+          "status": "unknown",
+          "source_url": "https://indexfoundation.se/talks-and-events/bookshop-situation-series-myriam-diatta-doing-creative-work-from-your-political-body",
+          "note": "Official event page is live but remaining ticket stock / registration conditions were not confirmed"
+        },
+        "price": {
+          "status": "unknown",
+          "source_url": "https://indexfoundation.se/talks-and-events/bookshop-situation-series-myriam-diatta-doing-creative-work-from-your-political-body",
+          "note": "Organizer page does not provide an exact current admission rate"
+        }
+      },
+      "final_review": {
+        "checked_at": "2026-11-22T16:20:06+01:00",
+        "organizer_source_url": "https://indexfoundation.se/talks-and-events/bookshop-situation-series-myriam-diatta-doing-creative-work-from-your-political-body",
+        "event_status": "scheduled",
+        "booking_status": "unknown",
+        "notes": "Sunday organizer listing reviewed 22 November; event is listed, live stock not guaranteed."
+      },
+      "image_verified": false,
+      "event_start": "2026-11-27T18:00:00+01:00",
+      "first_seen_issue": "005",
+      "new_discovery_verified": true,
+      "source_id": "index"
+    },
+    {
+      "title": "Färgfabriken winter craft and design market",
+      "dates": "Sat 5 Dec · 11:00–17:00",
+      "url": "https://fargfabriken.se/sv/pa-gang/julmarknad-3/",
+      "venue": "Färgfabriken, Lövholmsbrinken 1",
+      "price": "60 SEK; free for under-16s",
+      "booking": "Admission at venue; capacity not verified",
+      "description": "Art, design, craft and live music spread across the industrial gallery's halls, upper floor and studios.",
+      "verification": {
+        "checked_at": "2026-11-22T16:20:06+01:00",
+        "date": {
+          "status": "confirmed",
+          "source_url": "https://fargfabriken.se/sv/pa-gang/julmarknad-3/"
+        },
+        "venue": {
+          "status": "confirmed",
+          "source_url": "https://fargfabriken.se/sv/pa-gang/julmarknad-3/"
+        },
+        "booking": {
+          "status": "unknown",
+          "source_url": "https://fargfabriken.se/sv/pa-gang/julmarknad-3/",
+          "note": "Official event page is live but remaining ticket stock / registration conditions were not confirmed"
+        },
+        "price": {
+          "status": "confirmed",
+          "source_url": "https://fargfabriken.se/sv/pa-gang/julmarknad-3/"
+        }
+      },
+      "final_review": {
+        "checked_at": "2026-11-22T16:20:06+01:00",
+        "organizer_source_url": "https://fargfabriken.se/sv/pa-gang/julmarknad-3/",
+        "event_status": "scheduled",
+        "booking_status": "not_required",
+        "notes": "Sunday organizer listing reviewed 22 November; event is listed, live stock not guaranteed."
+      },
+      "image_verified": false,
+      "event_start": "2026-12-05T11:00:00+01:00",
+      "first_seen_issue": "005",
+      "new_discovery_verified": true,
+      "source_id": "fargfabriken"
+    },
+    {
+      "title": "Women Behind the Camera, 1848–1968 — exhibition opening",
+      "dates": "Opens Sat 5 Dec",
+      "url": "https://stockholm.fotografiska.com/en/exhibitions/women-behind-the-camera-1848-1968",
+      "venue": "Fotografiska, Stadsgårdshamnen 22",
+      "price": "Museum admission; exact daily rate not reverified",
+      "booking": "Check official page; remaining capacity unverified",
+      "description": "An overlooked history of women photographers, from early studios to experimental twentieth-century imagemaking.",
+      "verification": {
+        "checked_at": "2026-11-22T16:20:06+01:00",
+        "date": {
+          "status": "confirmed",
+          "source_url": "https://stockholm.fotografiska.com/en/exhibitions/women-behind-the-camera-1848-1968"
+        },
+        "venue": {
+          "status": "confirmed",
+          "source_url": "https://stockholm.fotografiska.com/en/exhibitions/women-behind-the-camera-1848-1968"
+        },
+        "booking": {
+          "status": "unknown",
+          "source_url": "https://stockholm.fotografiska.com/en/exhibitions/women-behind-the-camera-1848-1968",
+          "note": "Official event page is live but remaining ticket stock / registration conditions were not confirmed"
+        },
+        "price": {
+          "status": "unknown",
+          "source_url": "https://stockholm.fotografiska.com/en/exhibitions/women-behind-the-camera-1848-1968",
+          "note": "Organizer page does not provide an exact current admission rate"
+        }
+      },
+      "final_review": {
+        "checked_at": "2026-11-22T16:20:06+01:00",
+        "organizer_source_url": "https://stockholm.fotografiska.com/en/exhibitions/women-behind-the-camera-1848-1968",
+        "event_status": "scheduled",
+        "booking_status": "not_required",
+        "notes": "Sunday organizer listing reviewed 22 November; event is listed, live stock not guaranteed."
+      },
+      "image_verified": false,
+      "schedule_note": "Exhibition 5 Dec 2026–11 Apr 2027; museum hours vary.",
+      "first_seen_issue": "005",
+      "new_discovery_verified": true,
+      "source_id": "fotografiska"
+    },
+    {
+      "title": "Voidgarden — post-punk debut-album release",
+      "dates": "Fri 4 Dec · doors 18:30",
+      "url": "https://reimersholmehotel.se/en/event/voidgarden/",
+      "venue": "Reimersholme Hotel, Reimersholmsgatan 5",
+      "price": "150 SEK",
+      "booking": "Tickets via organizer; live stock unverified",
+      "description": "Dark Stockholm post-punk with Brännbart and Sadly Sunday supporting the launch of Funeral.",
+      "verification": {
+        "checked_at": "2026-11-22T16:20:06+01:00",
+        "date": {
+          "status": "confirmed",
+          "source_url": "https://reimersholmehotel.se/en/event/voidgarden/"
+        },
+        "venue": {
+          "status": "confirmed",
+          "source_url": "https://reimersholmehotel.se/en/event/voidgarden/"
+        },
+        "booking": {
+          "status": "confirmed",
+          "source_url": "https://reimersholmehotel.se/en/event/voidgarden/"
+        },
+        "price": {
+          "status": "confirmed",
+          "source_url": "https://reimersholmehotel.se/en/event/voidgarden/"
+        }
+      },
+      "final_review": {
+        "checked_at": "2026-11-22T16:20:06+01:00",
+        "organizer_source_url": "https://reimersholmehotel.se/en/event/voidgarden/",
+        "event_status": "scheduled",
+        "booking_status": "required_unverified",
+        "notes": "Sunday organizer listing reviewed 22 November; event is listed, live stock not guaranteed."
+      },
+      "image_verified": false,
+      "event_start": "2026-12-04T18:30:00+01:00",
+      "first_seen_issue": "005",
+      "new_discovery_verified": true,
+      "source_id": "reimersholme-hotel"
+    },
+    {
+      "title": "The Machine's Eye in Human Hands",
+      "dates": "Final week · closes Sun 29 Nov",
+      "url": "https://stockholm.fotografiska.com/en/exhibitions/the-machines-eye-in-human-hands",
+      "venue": "Fotografiska, Stadsgårdshamnen 22",
+      "price": "Museum admission; current rate varies",
+      "booking": "General museum entry; check availability",
+      "description": "The AI photography exhibition previously recommended in Issue 004, exploring synthetic images, memory and authenticity.",
+      "verification": {
+        "checked_at": "2026-11-22T16:20:06+01:00",
+        "date": {
+          "status": "confirmed",
+          "source_url": "https://stockholm.fotografiska.com/en/exhibitions/the-machines-eye-in-human-hands"
+        },
+        "venue": {
+          "status": "confirmed",
+          "source_url": "https://stockholm.fotografiska.com/en/exhibitions/the-machines-eye-in-human-hands"
+        },
+        "booking": {
+          "status": "unknown",
+          "source_url": "https://stockholm.fotografiska.com/en/exhibitions/the-machines-eye-in-human-hands",
+          "note": "Official event page is live but remaining ticket stock / registration conditions were not confirmed"
+        },
+        "price": {
+          "status": "unknown",
+          "source_url": "https://stockholm.fotografiska.com/en/exhibitions/the-machines-eye-in-human-hands",
+          "note": "Organizer page does not provide an exact current admission rate"
+        }
+      },
+      "final_review": {
+        "checked_at": "2026-11-22T16:20:06+01:00",
+        "organizer_source_url": "https://stockholm.fotografiska.com/en/exhibitions/the-machines-eye-in-human-hands",
+        "event_status": "scheduled",
+        "booking_status": "not_required",
+        "notes": "Sunday organizer listing reviewed 22 November; event is listed, live stock not guaranteed."
+      },
+      "image_verified": false,
+      "schedule_note": "Closes 29 Nov 2026; museum lists 10:00–23:00 daily.",
+      "previous_issue_number": "004",
+      "first_seen_issue": "004",
+      "new_discovery_verified": false,
+      "last_chance": true,
+      "event_end": "2026-11-29T23:00:00+01:00",
+      "last_chance_source_url": "https://stockholm.fotografiska.com/en/exhibitions/the-machines-eye-in-human-hands",
+      "source_id": "fotografiska"
+    },
+    {
+      "title": "Lotta Antonsson — I Am Everything",
+      "dates": "Final week · closes Sun 29 Nov",
+      "url": "https://stockholm.fotografiska.com/en/exhibitions/lotta-antonsson",
+      "venue": "Fotografiska, Stadsgårdshamnen 22",
+      "price": "Museum admission; current rate varies",
+      "booking": "General museum entry; check availability",
+      "description": "Collages, altered portraits and material-led installation confronting the gaze and the representation of women's bodies.",
+      "verification": {
+        "checked_at": "2026-11-22T16:20:06+01:00",
+        "date": {
+          "status": "confirmed",
+          "source_url": "https://stockholm.fotografiska.com/en/exhibitions/lotta-antonsson"
+        },
+        "venue": {
+          "status": "confirmed",
+          "source_url": "https://stockholm.fotografiska.com/en/exhibitions/lotta-antonsson"
+        },
+        "booking": {
+          "status": "unknown",
+          "source_url": "https://stockholm.fotografiska.com/en/exhibitions/lotta-antonsson",
+          "note": "Official event page is live but remaining ticket stock / registration conditions were not confirmed"
+        },
+        "price": {
+          "status": "unknown",
+          "source_url": "https://stockholm.fotografiska.com/en/exhibitions/lotta-antonsson",
+          "note": "Organizer page does not provide an exact current admission rate"
+        }
+      },
+      "final_review": {
+        "checked_at": "2026-11-22T16:20:06+01:00",
+        "organizer_source_url": "https://stockholm.fotografiska.com/en/exhibitions/lotta-antonsson",
+        "event_status": "scheduled",
+        "booking_status": "not_required",
+        "notes": "Sunday organizer listing reviewed 22 November; event is listed, live stock not guaranteed."
+      },
+      "image_verified": false,
+      "schedule_note": "Closes 29 Nov 2026; museum lists 10:00–23:00 daily.",
+      "first_seen_issue": "005",
+      "new_discovery_verified": false,
+      "last_chance": true,
+      "event_end": "2026-11-29T23:00:00+01:00",
+      "last_chance_source_url": "https://stockholm.fotografiska.com/en/exhibitions/lotta-antonsson",
+      "source_id": "fotografiska"
+    },
+    {
+      "title": "Masangue Maracatu & guests — Brazilian rhythm celebration",
+      "dates": "Sat 28 Nov · doors 18:30 · live 20:00 · DJ 22:00",
+      "url": "https://reimersholmehotel.se/event/masangue-maracatu-gaster/",
+      "venue": "Reimersholme Hotel, Reimersholmsgatan 5",
+      "price": "150 SEK",
+      "booking": "Ticket link on official organizer page; stock unverified",
+      "description": "Previously featured in Issue 004: percussion-driven maracatu, ijexá, funk and Brazilian dance energy.",
+      "verification": {
+        "checked_at": "2026-11-22T16:20:06+01:00",
+        "date": {
+          "status": "confirmed",
+          "source_url": "https://reimersholmehotel.se/event/masangue-maracatu-gaster/"
+        },
+        "venue": {
+          "status": "confirmed",
+          "source_url": "https://reimersholmehotel.se/event/masangue-maracatu-gaster/"
+        },
+        "booking": {
+          "status": "confirmed",
+          "source_url": "https://reimersholmehotel.se/event/masangue-maracatu-gaster/"
+        },
+        "price": {
+          "status": "confirmed",
+          "source_url": "https://reimersholmehotel.se/event/masangue-maracatu-gaster/"
+        }
+      },
+      "final_review": {
+        "checked_at": "2026-11-22T16:20:06+01:00",
+        "organizer_source_url": "https://reimersholmehotel.se/event/masangue-maracatu-gaster/",
+        "event_status": "scheduled",
+        "booking_status": "required_unverified",
+        "notes": "Sunday organizer listing reviewed 22 November; event is listed, live stock not guaranteed."
+      },
+      "image_verified": false,
+      "event_start": "2026-11-28T18:30:00+01:00",
+      "previous_issue_number": "004",
+      "first_seen_issue": "004",
+      "new_discovery_verified": false,
+      "source_id": "reimersholme-hotel"
+    },
+    {
+      "title": "Salla Salazar — a phone-free listening session",
+      "dates": "Fri 27 Nov · 18:00–21:00",
+      "url": "https://stockholm.fotografiska.com/en/events/listening-session-salla-salazar-the-soundtrack-to-a-life",
+      "venue": "Fotografiska Studio, floor 2, Stadsgårdshamnen 22",
+      "price": "Included with regular museum admission; free for members",
+      "booking": "Limited seats; advance booking recommended, not guaranteed",
+      "description": "Salla Salazar shares complete songs and the memories behind them. A seated, phone-free format that puts shared listening ahead of spectacle.",
+      "image_verified": true,
+      "verification": {
+        "checked_at": "2026-11-22T16:20:06+01:00",
+        "date": {
+          "status": "confirmed",
+          "source_url": "https://stockholm.fotografiska.com/en/events/listening-session-salla-salazar-the-soundtrack-to-a-life"
+        },
+        "venue": {
+          "status": "confirmed",
+          "source_url": "https://stockholm.fotografiska.com/en/events/listening-session-salla-salazar-the-soundtrack-to-a-life"
+        },
+        "price": {
+          "status": "confirmed",
+          "source_url": "https://stockholm.fotografiska.com/en/events/listening-session-salla-salazar-the-soundtrack-to-a-life"
+        },
+        "booking": {
+          "status": "confirmed",
+          "source_url": "https://stockholm.fotografiska.com/en/events/listening-session-salla-salazar-the-soundtrack-to-a-life"
+        }
+      },
+      "final_review": {
+        "checked_at": "2026-11-22T16:20:06+01:00",
+        "organizer_source_url": "https://stockholm.fotografiska.com/en/events/listening-session-salla-salazar-the-soundtrack-to-a-life",
+        "event_status": "scheduled",
+        "booking_status": "required_unverified",
+        "notes": "Fresh official organizer event page checked Sunday 22 Nov 2026; original 16 Nov image identity review retained, live image download and visual validation required. Moved out of Top 3 due to repetition across TEST-006/007/008; retained as optional reconsideration."
+      },
+      "event_start": "2026-11-27T18:00:00+01:00",
+      "first_seen_issue": "TEST-006",
+      "image_url": "https://cdn.sanity.io/images/2xi539qp/production/f90f2827b3bc91616ae3b05ce97210dfce71d2eb-3264x2448.jpg?rect=408,0,2448,2448&w=750&h=750&q=75&auto=format",
+      "image_source_url": "https://stockholm.fotografiska.com/en/events/listening-session-salla-salazar-the-soundtrack-to-a-life",
+      "image_alt": "Salla Salazar event photograph supplied on Fotografiska’s listening-session page.",
+      "image_identity_review": {
+        "event_match": true,
+        "reviewer": "Editorial assistant; organizer-page association and local visual inspection",
+        "source_page": "https://stockholm.fotografiska.com/en/events/listening-session-salla-salazar-the-soundtrack-to-a-life",
+        "checked_at": "2026-11-16T01:28:25+01:00",
+        "notes": "Authentic participant photograph published on the exact 2026 event page; not represented as a photograph of a future performance. Salla Salazar event photograph supplied on Fotografiska’s listening-session page."
+      },
+      "new_discovery_verified": false,
+      "populated_from_historical_visual_test": "Photo identity metadata from visual TEST-006; event facts independently rechecked for issue 005.",
+      "source_id": "fotografiska"
     }
   ]
 }
