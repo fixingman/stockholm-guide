@@ -158,3 +158,28 @@ footer{border-top:1px solid #777}
   .descriptor{font-size:7px;line-height:1.55}
   .edition{font-size:10px}
 }
+
+
+/* Interaction typography: editorial monospace is reserved for metadata and
+   section labels; every interactive control uses a legible sans-serif face. */
+.switch,
+.filter,
+.search-label input,
+.fc .fc-button-primary,
+.fc .fc-daygrid-more-link,
+.event-card a{
+  font-family:Arial,Helvetica,sans-serif;
+  font-size:13px;
+  font-weight:600;
+  line-height:1.4;
+  letter-spacing:0;
+}
+.filter{font-size:13px;padding:9px 12px}
+.switch{font-size:13px;padding:10px 16px}
+.search-label input{font-size:14px}
+.fc .fc-button-primary{font-size:13px}
+.event-card a{font-size:13px}
+@media(max-width:450px){
+  .filter{padding:9px 10px}
+  .switch{padding:10px 13px}
+}
