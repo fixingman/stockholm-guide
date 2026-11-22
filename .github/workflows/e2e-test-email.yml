@@ -10,8 +10,8 @@ jobs:
   build-test-email:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
         with:
           python-version: '3.12'
       - name: Install rendering and image-validation dependencies
@@ -185,7 +185,7 @@ jobs:
           assert all(x["fallbackCount"]==1 and not x["ok"] for x in report["visual_scenarios"])
           print("PASS: old fallback fixture explicitly REJECTED by live browser visual gate")
           PY
-      - uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v6
         with:
           name: isolated-e2e-email-and-image-audit
           path: |

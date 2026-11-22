@@ -59,7 +59,7 @@ jobs:
           print(json.dumps(results,ensure_ascii=False,indent=2))
           with open("featured-image-probe.json","w") as fh:json.dump(results,fh,ensure_ascii=False,indent=2)
           PY
-      - uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v6
         with:
           name: featured-image-probe
           path: featured-image-probe.json

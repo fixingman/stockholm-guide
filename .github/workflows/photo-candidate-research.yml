@@ -12,15 +12,15 @@ jobs:
   inspect-public-organizer-images:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
         with:
           python-version: '3.12'
       - name: Install editorial photo inspector
         run: python -m pip install 'requests>=2.31,<3' 'beautifulsoup4>=4.12,<5' 'Pillow>=11,<14'
       - name: Find exact-page official image candidates (not an identity approval)
         run: python photo_candidate_research.py
-      - uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v6
         with:
           name: organizer-photo-research
           path: photo-candidates.json

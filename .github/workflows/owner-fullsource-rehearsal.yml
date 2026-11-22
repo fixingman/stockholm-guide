@@ -15,8 +15,8 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 24
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
         with:
           python-version: '3.12'
       - name: Install same production render and browser dependencies
@@ -99,7 +99,7 @@ jobs:
           assert v["ok"] and len(v["visual_scenarios"])==3
           print("OWNER STAGING ELIGIBLE — image QA 3/3, browser scenarios 9/9, full-source audit 49/49")
           PY
-      - uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v6
         with:
           name: owner-only-49source-rehearsal-release
           path: release/
