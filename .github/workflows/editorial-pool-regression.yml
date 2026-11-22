@@ -1,0 +1,44 @@
+name: Verified editorial event pool regression (no email)
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - editorial_pool_audit.py
+      - test_editorial_pool_audit.py
+      - .github/workflows/owner-fullsource-rehearsal.yml
+      - .github/workflows/weekly-release-gate.yml
+      - .github/workflows/editorial-pool-regression.yml
+      - issues/owner-rehearsal-2026-11-22.json
+  push:
+    branches: [main]
+    paths:
+      - editorial_pool_audit.py
+      - test_editorial_pool_audit.py
+      - .github/workflows/editorial-pool-regression.yml
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  validate-verified-pool-handoff:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Verify source-to-verified-pool-to-output regression tests
+        run: python -m unittest test_editorial_pool_audit
+      - name: Demonstrate unchanged owner Issue 005 fixture is correctly rejected
+        run: |
+          if python editorial_pool_audit.py --issue issues/owner-rehearsal-2026-11-22.json --comparison issues/current.json --report /tmp/known-bad-report.json; then
+            echo 'ERROR: Old unchanged Issue 005 incorrectly passed'
+            exit 1
+          fi
+          python - <<'PY'
+          import json
+          r=json.load(open('/tmp/known-bad-report.json'))
+          assert not r['ok'] and r['errors']
+          assert any('reuses ALL' in e for e in r['errors'])
+          assert any('calendar-only' in e for e in r['errors'])
+          print('Known-bad unchanged owner edition rejected as intended')
+          PY
