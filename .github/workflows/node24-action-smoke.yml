@@ -21,14 +21,47 @@ jobs:
       - name: Prove all workflow action refs are upgraded
         run: |
           python - <<'PY'
+          import os
+          import re
           from pathlib import Path
+
+          # Only inspect real action declarations. Documentation, comments,
+          # and regression fixtures containing old-version strings are not uses.
+          def action_refs(content):
+              return re.findall(r'^\\s*-\\s*uses:\\s*([^\\s#]+)', content, re.MULTILINE)
+
+          minimum = {
+              'actions/checkout': 5,
+              'actions/setup-python': 6,
+              'actions/upload-artifact': 6,
+          }
+          # Sanity-check the scanner: it must reject real old uses but never
+          # flag explanatory strings inside Python steps or YAML comments.
+          assert action_refs('# actions/checkout@v4\\nprint("actions/setup-python@v5")') == []
+          assert action_refs('      - uses: actions/checkout@v4') == ['actions/checkout@v4']
+
           files = sorted(Path('.github/workflows').glob('*.yml'))
-          stale = [(str(p), ref) for p in files for ref in
-                   ('actions/checkout@'+'v4','actions/setup-python@'+'v5','actions/upload-artifact@'+'v4')
-                   if ref in p.read_text()]
-          assert not stale, f'Node 20 action refs remain: {stale}'
-          print(f'Checked {len(files)} workflows for deprecated action majors')
-          Path('node24-ci-smoke.txt').write_text('checkout v5, setup-python v6, upload-artifact v6 smoke\n')
+          actual = [(str(p), ref) for p in files for ref in action_refs(p.read_text())]
+          stale = []
+          for path, ref in actual:
+              name, sep, version = ref.partition('@')
+              if name not in minimum:
+                  continue
+              match = re.fullmatch(r'v(\\d+)(?:\\..*)?', version)
+              if not sep or not match or int(match.group(1)) < minimum[name]:
+                  stale.append((path, ref))
+          print(f'Checked {len(actual)} uses declarations in {len(files)} workflow files')
+          assert not stale, f'Outdated action versions in actual uses declarations: {stale}'
+          summary = os.environ.get('GITHUB_STEP_SUMMARY')
+          if summary:
+              Path(summary).open('a').write(
+                  f'### Action runtime compatibility: PASS\\n'
+                  f'Checked {len(actual)} actual uses declarations across {len(files)} workflows.\\n'
+                  'No outdated checkout/setup-python/upload-artifact majors.\\n'
+              )
+          Path('node24-ci-smoke.txt').write_text(
+              f'PASS: {len(actual)} actual uses declarations across {len(files)} workflows\\n'
+          )
           PY
       - uses: actions/upload-artifact@v6
         with:
