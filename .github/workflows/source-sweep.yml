@@ -1,0 +1,70 @@
+name: Sweep every registered public source (no email)
+on:
+  schedule:
+    # Run ahead of Saturday 15:00 and Sunday 09:00 Stockholm automations.
+    # UTC cron cannot adjust for DST; both finish before the local task.
+    - cron: '10 12 * * 6'
+    - cron: '10 5 * * 0'
+  push:
+    branches: [main]
+    paths:
+      - source_sweep.py
+      - source_coverage.py
+      - test_source_coverage.py
+      - discovery_sources.json
+      - .github/workflows/source-sweep.yml
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: registered-sources-probe
+  cancel-in-progress: false
+jobs:
+  public-index-probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Validate 100% source accounting rules (offline)
+        run: python -m unittest test_source_coverage test_discovery_sources
+      - name: Attempt every official public source and configured category page
+        run: |
+          python source_sweep.py --registry discovery_sources.json --output /tmp/source-probe.json --workers 7 --timeout 12 --retries 2
+          python - <<'PY'
+          import json
+          r=json.load(open("/tmp/source-probe.json"))
+          assert r["registered_count"] == r["attempted_count"]
+          assert r["registered_count"] == len(r["sources"])
+          assert r["editorially_reviewed_count"] == 0, "A network index probe is not an editorial review"
+          assert len({s["source_id"] for s in r["sources"]}) == r["registered_count"]
+          luma=next(s for s in r["sources"] if s["source_id"]=="luma-stockholm")
+          assert len(luma["attempted_urls"]) >= 3, "Luma categories must be included"
+          print("FULL REGISTRY PROBED:",r["attempted_count"],
+                "reachable:",r["index_reachable_count"],
+                "inaccessible:",r["index_unavailable_count"],
+                "unverified public leads:",r["total_discovered_links"])
+          PY
+      - name: Upload complete timestamped source probe
+        uses: actions/upload-artifact@v4
+        with:
+          name: public-source-probe-all-registered
+          path: /tmp/source-probe.json
+          retention-days: 21
+      - name: Update separate public source-audit branch for Saturday and Sunday editorial agents
+        run: |
+          git config user.name stockholm-guide-bot
+          git config user.email stockholm-guide-bot@users.noreply.github.com
+          git fetch origin source-audit
+          git switch -C source-audit origin/source-audit
+          mkdir -p research
+          cp /tmp/source-probe.json research/source-probe.json
+          git add research/source-probe.json
+          if ! git diff --cached --quiet; then
+            git commit -m "Public sweep of all registered source calendars [skip ci]"
+            git push origin HEAD:source-audit
+          fi
