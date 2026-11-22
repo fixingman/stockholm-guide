@@ -95,7 +95,18 @@ def audit(issue, history=(), strict=False, as_of=None):
     # NEW Top Pick just because its photograph has passed a previous E2E.
     # Keep issue 005's previously published artifacts intact; enforce from 006.
     previously_featured={event_key(x) for old in history for x in old.get("top3",[])}
-    repeated_top3=sorted({event_key(x) for x in issue.get("top3",[]) if event_key(x) in previously_featured})
+    def exact_event_url(item):
+        u=urlparse(item.get("url",""))
+        path=u.path.lower().rstrip("/")
+        # Generic event calendars do not prove two listings are the same event.
+        if not u.hostname or path in ("","/events","/kalender","/en/events","/sv/evenemang"):
+            return None
+        return (u.hostname.lower().removeprefix("www."),path)
+    previously_featured_urls={exact_event_url(x) for old in history for x in old.get("top3",[])}
+    previously_featured_urls.discard(None)
+    repeated_top3=sorted({event_key(x) for x in issue.get("top3",[])
+        if event_key(x) in previously_featured or
+           (exact_event_url(x) is not None and exact_event_url(x) in previously_featured_urls)})
     match=re.search(r"(\d+)",str(issue.get("issue_number","")))
     issue_index=int(match.group(1)) if match else 0
     if repeated_top3:
