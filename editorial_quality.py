@@ -111,7 +111,7 @@ def audit(issue, history=(), strict=False, as_of=None):
     issue_index=int(match.group(1)) if match else 0
     if repeated_top3:
         message=f"Previously featured Top 3 recycled: {len(repeated_top3)}; select new Top Picks and move worthwhile repeats to Worth reconsidering"
-        if strict and issue_index>=6:
+        if strict and (issue_index>=6 or issue.get("rehearsal") is True):
             errors.append(message)
         else:
             warnings.append(message)
