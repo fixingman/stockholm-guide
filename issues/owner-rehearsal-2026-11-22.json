@@ -546,8 +546,95 @@
       "source_id": "fylkingen"
     }
   ],
-  "worth_reconsidering": [],
-  "unavailable": [],
+  "worth_reconsidering": [
+    {
+      "title": "The Machine's Eye in Human Hands",
+      "dates": "Final week · closes Sun 29 Nov",
+      "url": "https://stockholm.fotografiska.com/en/exhibitions/the-machines-eye-in-human-hands",
+      "venue": "Fotografiska, Stadsgårdshamnen 22",
+      "price": "Museum admission; current rate varies",
+      "booking": "General museum entry; check availability",
+      "description": "The AI photography exhibition previously recommended in Issue 004, exploring synthetic images, memory and authenticity.",
+      "verification": {
+        "checked_at": "2026-11-22T16:20:06+01:00",
+        "date": {
+          "status": "confirmed",
+          "source_url": "https://stockholm.fotografiska.com/en/exhibitions/the-machines-eye-in-human-hands"
+        },
+        "venue": {
+          "status": "confirmed",
+          "source_url": "https://stockholm.fotografiska.com/en/exhibitions/the-machines-eye-in-human-hands"
+        },
+        "booking": {
+          "status": "unknown",
+          "source_url": "https://stockholm.fotografiska.com/en/exhibitions/the-machines-eye-in-human-hands",
+          "note": "Official event page is live but remaining ticket stock / registration conditions were not confirmed"
+        },
+        "price": {
+          "status": "unknown",
+          "source_url": "https://stockholm.fotografiska.com/en/exhibitions/the-machines-eye-in-human-hands",
+          "note": "Organizer page does not provide an exact current admission rate"
+        }
+      },
+      "final_review": {
+        "checked_at": "2026-11-22T16:20:06+01:00",
+        "organizer_source_url": "https://stockholm.fotografiska.com/en/exhibitions/the-machines-eye-in-human-hands",
+        "event_status": "scheduled",
+        "booking_status": "not_required",
+        "notes": "Sunday organizer listing reviewed 22 November; event is listed, live stock not guaranteed."
+      },
+      "image_verified": false,
+      "schedule_note": "Closes 29 Nov 2026; museum lists 10:00–23:00 daily.",
+      "previous_issue_number": "004",
+      "first_seen_issue": "004",
+      "new_discovery_verified": false,
+      "last_chance": true,
+      "event_end": "2026-11-29T23:00:00+01:00",
+      "last_chance_source_url": "https://stockholm.fotografiska.com/en/exhibitions/the-machines-eye-in-human-hands",
+      "source_id": "fotografiska"
+    }
+  ],
+  "unavailable": [
+    {
+      "title": "Standup x Oslipat — Kirsty Armstrong & Hanna Lublin Niklasson",
+      "dates": "Fri 4 Dec · 19:30–21:30",
+      "url": "https://stockholm.fotografiska.com/en/events",
+      "venue": "Fotografiska, Stadsgårdshamnen 22",
+      "price": "Sold out",
+      "booking": "SOLD OUT according to current official venue calendar",
+      "description": "A comedy evening, but the organizer's public programme currently marks it sold out; not presented as bookable.",
+      "verification": {
+        "checked_at": "2026-11-22T16:20:06+01:00",
+        "date": {
+          "status": "confirmed",
+          "source_url": "https://stockholm.fotografiska.com/en/events"
+        },
+        "venue": {
+          "status": "confirmed",
+          "source_url": "https://stockholm.fotografiska.com/en/events"
+        },
+        "booking": {
+          "status": "confirmed",
+          "source_url": "https://stockholm.fotografiska.com/en/events"
+        },
+        "price": {
+          "status": "confirmed",
+          "source_url": "https://stockholm.fotografiska.com/en/events"
+        }
+      },
+      "final_review": {
+        "checked_at": "2026-11-22T16:20:06+01:00",
+        "organizer_source_url": "https://stockholm.fotografiska.com/en/events",
+        "event_status": "scheduled",
+        "booking_status": "sold_out",
+        "notes": "Sunday organizer listing reviewed 22 November; event is listed, live stock not guaranteed."
+      },
+      "image_verified": false,
+      "event_start": "2026-12-04T19:30:00+01:00",
+      "first_seen_issue": "005",
+      "new_discovery_verified": true
+    }
+  ],
   "research_coverage": {
     "checked_at": "2026-11-22T16:20:06+01:00",
     "registered_source_count": 49,
@@ -1314,6 +1401,12 @@
         "verification_status": "verified_eligible"
       },
       {
+        "source_id": "fotografiska",
+        "url": "https://stockholm.fotografiska.com/en/exhibitions/the-machines-eye-in-human-hands",
+        "title": "The Machine's Eye in Human Hands",
+        "verification_status": "verified_eligible"
+      },
+      {
         "source_id": "frim-stockholm",
         "url": "https://frim-stockholm.se/en/events/the-electrics-nils-agnas",
         "title": "The Electrics / Nils Agnas — free improvisation",
@@ -1411,12 +1504,6 @@
       },
       {
         "source_id": "fotografiska",
-        "url": "https://stockholm.fotografiska.com/en/exhibitions/the-machines-eye-in-human-hands",
-        "title": "The Machine's Eye in Human Hands",
-        "verification_status": "verified_eligible"
-      },
-      {
-        "source_id": "fotografiska",
         "url": "https://stockholm.fotografiska.com/en/exhibitions/lotta-antonsson",
         "title": "Lotta Antonsson — I Am Everything",
         "verification_status": "verified_eligible"
@@ -1436,8 +1523,8 @@
     ],
     "event_pool_reconciliation": {
       "eligible_verified": 32,
-      "newsletter": 12,
-      "calendar_only": 20,
+      "newsletter": 13,
+      "calendar_only": 19,
       "raw_probe_links_not_claimed_verified": true,
       "owner_only": true,
       "notes": "Newly verified missed events plus previously organizer-reviewed and still scheduled Issue 005 entries; no claim all raw links are events."
@@ -2133,52 +2220,6 @@
       "first_seen_issue": "005",
       "new_discovery_verified": true,
       "source_id": "reimersholme-hotel"
-    },
-    {
-      "title": "The Machine's Eye in Human Hands",
-      "dates": "Final week · closes Sun 29 Nov",
-      "url": "https://stockholm.fotografiska.com/en/exhibitions/the-machines-eye-in-human-hands",
-      "venue": "Fotografiska, Stadsgårdshamnen 22",
-      "price": "Museum admission; current rate varies",
-      "booking": "General museum entry; check availability",
-      "description": "The AI photography exhibition previously recommended in Issue 004, exploring synthetic images, memory and authenticity.",
-      "verification": {
-        "checked_at": "2026-11-22T16:20:06+01:00",
-        "date": {
-          "status": "confirmed",
-          "source_url": "https://stockholm.fotografiska.com/en/exhibitions/the-machines-eye-in-human-hands"
-        },
-        "venue": {
-          "status": "confirmed",
-          "source_url": "https://stockholm.fotografiska.com/en/exhibitions/the-machines-eye-in-human-hands"
-        },
-        "booking": {
-          "status": "unknown",
-          "source_url": "https://stockholm.fotografiska.com/en/exhibitions/the-machines-eye-in-human-hands",
-          "note": "Official event page is live but remaining ticket stock / registration conditions were not confirmed"
-        },
-        "price": {
-          "status": "unknown",
-          "source_url": "https://stockholm.fotografiska.com/en/exhibitions/the-machines-eye-in-human-hands",
-          "note": "Organizer page does not provide an exact current admission rate"
-        }
-      },
-      "final_review": {
-        "checked_at": "2026-11-22T16:20:06+01:00",
-        "organizer_source_url": "https://stockholm.fotografiska.com/en/exhibitions/the-machines-eye-in-human-hands",
-        "event_status": "scheduled",
-        "booking_status": "not_required",
-        "notes": "Sunday organizer listing reviewed 22 November; event is listed, live stock not guaranteed."
-      },
-      "image_verified": false,
-      "schedule_note": "Closes 29 Nov 2026; museum lists 10:00–23:00 daily.",
-      "previous_issue_number": "004",
-      "first_seen_issue": "004",
-      "new_discovery_verified": false,
-      "last_chance": true,
-      "event_end": "2026-11-29T23:00:00+01:00",
-      "last_chance_source_url": "https://stockholm.fotografiska.com/en/exhibitions/the-machines-eye-in-human-hands",
-      "source_id": "fotografiska"
     },
     {
       "title": "Lotta Antonsson — I Am Everything",
