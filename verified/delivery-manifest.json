@@ -1,7 +1,9 @@
 {
   "ready_for_delivery": true,
   "errors": [],
-  "warnings": [],
+  "warnings": [
+    "EDITORIAL: Previously featured Top 3 recycled: 3; select new Top Picks and move worthwhile repeats to Worth reconsidering"
+  ],
   "issue_number": "005",
   "date_range": "22 November–5 December 2026",
   "total_event_rows": 25,
@@ -58,17 +60,19 @@
     }
   ],
   "inline_fallbacks": 0,
-  "html_sha256": "a50973dc6fbbe101d48b3464325b3061080b3291709f9c8fbfe52efa44c8a157",
-  "html_bytes": 46743,
+  "html_sha256": "6ed06ad4371e77a73995f1cd624057ac8711f62dcc3eace01ce8772b84f178b4",
+  "html_bytes": 47159,
   "image_proxy_certified": false,
   "data_sha256": "b73aa818abf20dcc19af57395ea7e1ea6d25fb798708cda5b5759439d4e1e8e1",
   "rendered_html_file": "outgoing.html",
-  "preflight_timestamp_utc": "2026-11-22T15:47:53.302793+00:00",
+  "preflight_timestamp_utc": "2026-11-22T20:32:08.650933+00:00",
   "editorial_quality": {
     "ready_for_editorial_release": true,
     "mode": "strict",
     "errors": [],
-    "warnings": [],
+    "warnings": [
+      "Previously featured Top 3 recycled: 3; select new Top Picks and move worthwhile repeats to Worth reconsidering"
+    ],
     "unique_events": 25,
     "total_rows": 25,
     "organizer_count": 10,
@@ -88,7 +92,11 @@
     "repeat_new_discoveries": [],
     "identity_reviewed_images": 3,
     "identity_review_target": 3,
-    "repeated_top3": [],
+    "repeated_top3": [
+      "changing landscape evolving experiences dance ink and sound",
+      "chimera evolver emma dj keiska dj haydn",
+      "tr den homegrown psychedelic improvisation"
+    ],
     "event_evidence_rows": [
       {
         "title": "CHIMERA / EVOLVER: Emma DJ + Keiska + DJ Haydn",
@@ -454,5 +462,5 @@
     "note": "Timestamped evidence audit; cannot independently establish that page claims are true."
   },
   "release_channel": "production",
-  "source_commit_sha": "4d49d2c56ee47dfba542ac367f06cce13f33dcfc"
+  "source_commit_sha": "5316e55a568ceaeee4ca3ca844752c814f4da4e4"
 }
