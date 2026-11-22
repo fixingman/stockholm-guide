@@ -1,0 +1,76 @@
+name: Owner-only Issue 005 — full-source rehearsal (no email sending)
+on:
+  push:
+    branches: [main]
+    paths:
+      - issues/owner-rehearsal-2026-11-22.json
+      - .github/workflows/owner-fullsource-rehearsal.yml
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  test-owner-only-release:
+    runs-on: ubuntu-latest
+    timeout-minutes: 24
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install same production render and browser dependencies
+        run: |
+          python -m pip install 'Jinja2>=3.1.6,<4' 'Pillow>=11,<14' 'playwright>=1.55,<2'
+          python -m playwright install --with-deps chromium
+      - name: Run actual full-registry coverage gate as ISSUE 006 POLICY, not grandfathered Issue 005
+        run: |
+          mkdir -p release
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          from source_coverage import audit
+          issue=json.loads(Path("issues/owner-rehearsal-2026-11-22.json").read_text())
+          reg=json.loads(Path("discovery_sources.json").read_text())
+          assert issue["rehearsal"] is True and issue["visual_test"] is True
+          assert issue["issue_number"]=="005"
+          # Force full new-issue checks while maintaining actual Issue 005 content.
+          issue["issue_number"]="006"
+          result=audit(issue,reg,strict=True)
+          Path("release/source-coverage-report.json").write_text(json.dumps(result,indent=2,ensure_ascii=False)+"\n")
+          print(json.dumps(result,indent=2))
+          assert result["ready_for_source_coverage"], "Full 49-source editorial coverage audit FAILED"
+          assert result["registered_count"]==result["accounted_for_count"]==len(reg["sources"])
+          assert result["reviewed_count"]+result["blocked_count"]==len(reg["sources"])
+          assert result["not_checked_count"]==0
+          PY
+      - name: Run offline editorial, image, email, source-coverage and privacy regressions
+        run: python -m unittest test_minimal test_image_pipeline test_optimize_issue_images test_delivery_guard test_editorial_operations test_freshness_scanning test_release_authorization test_source_coverage test_discovery_sources
+      - name: Render exact current-week owner-only rehearsal with authentic photo verification
+        run: |
+          python optimize_issue_images.py --data issues/owner-rehearsal-2026-11-22.json --output release/optimized-issue.json --report release/image-optimization.json
+          python render_minimal.py --data release/optimized-issue.json --output release/outgoing.html
+          python delivery_guard.py --data release/optimized-issue.json --html release/outgoing.html --manifest release/delivery-manifest.json --network --editorial-strict --freshness-strict --history issues/featured-history.json --require-featured-photos
+          python email_client_qa.py --html release/outgoing.html --browser --report release/client-qa.json --screenshots release/screenshots
+          python email_client_qa.py --html release/outgoing.html --visual --report release/visual-qa.json --screenshots release/screenshots
+          cp release/optimized-issue.json release/issue.json
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          m=json.loads(Path("release/delivery-manifest.json").read_text())
+          q=json.loads(Path("release/client-qa.json").read_text())
+          v=json.loads(Path("release/visual-qa.json").read_text())
+          assert m["ready_for_delivery"] and not m.get("errors")
+          assert len(m["featured_images"])==3 and m["inline_fallbacks"]==0
+          assert m["editorial_quality"]["ready_for_editorial_release"] and m["freshness"]["ready_for_send"]
+          assert q["ok"] and len(q["browser_scenarios"])==6
+          assert v["ok"] and len(v["visual_scenarios"])==3
+          print("OWNER STAGING ELIGIBLE — image QA 3/3, browser scenarios 9/9, full-source audit 49/49")
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: owner-only-49source-rehearsal-release
+          path: release/
+          retention-days: 14
+      - name: Publish isolated test-only validated-sunday-smoke branch
+        run: |
+          bash publish_verified_release.sh release smoke
+          echo "NO EMAIL IS SENT BY THIS GITHUB ACTION."
