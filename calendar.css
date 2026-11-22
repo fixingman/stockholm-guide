@@ -200,3 +200,63 @@ footer{border-top:1px solid #777}
 @media(max-width:750px){
   .event-card{padding:18px}
 }
+
+
+/* Read-only iCalendar actions follow the newsletter's restrained paper-and-ink UI. */
+.subscription-bar{
+  margin:0 22px 19px;
+  padding:15px 16px 13px;
+  background:#f2f0eb;
+  border:1px solid var(--line);
+  border-radius:5px;
+  display:grid;
+  grid-template-columns:minmax(180px,1fr) auto;
+  column-gap:18px;
+  row-gap:8px;
+  align-items:center;
+}
+.subscription-copy{display:flex;flex-direction:column;gap:4px}
+.subscription-copy strong{font:700 14px/1.4 Arial,Helvetica,sans-serif}
+.subscription-copy span,.subscription-hint{font:12px/1.5 Arial,Helvetica,sans-serif;color:var(--muted)}
+.subscription-actions{display:flex;flex-wrap:wrap;align-items:center;gap:7px;justify-content:flex-end}
+.subscription-actions a,.subscription-actions button{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  border:1px solid #aaa39a;
+  border-radius:4px;
+  background:#fcfaf6;
+  padding:9px 11px;
+  font:600 12px/1.4 Arial,Helvetica,sans-serif;
+  text-decoration:none;
+  color:#161616;
+  white-space:nowrap;
+  cursor:pointer;
+}
+.subscription-actions .subscribe-primary{background:#161616;color:#fcfaf6;border-color:#161616}
+.subscription-actions a:hover,.subscription-actions button:hover{background:#e7e1d8}
+.subscription-actions .subscribe-primary:hover{background:#3e3b38;color:#fff}
+.subscription-actions a:focus-visible,.subscription-actions button:focus-visible,.event-ical-link:focus-visible{outline:3px solid #c6866a;outline-offset:2px}
+.subscription-hint{grid-column:1/-1;margin:2px 0 0}
+.copy-feedback{grid-column:1/-1;margin:0;font:12px/1.5 Arial,Helvetica,sans-serif;color:#393630;overflow-wrap:anywhere}
+.copy-feedback:empty{display:none}
+.event-actions{display:flex;align-items:center;gap:9px 16px;flex-wrap:wrap}
+.event-actions .event-ical-link{
+  border:1px solid #bdb5a8;
+  border-radius:4px;
+  padding:7px 10px;
+  color:#161616;
+  background:#f2f0eb;
+  text-decoration:none;
+  font:600 12px/1.4 Arial,Helvetica,sans-serif;
+}
+.event-actions .event-ical-link:hover{background:#e8e3db}
+@media(max-width:850px){
+  .subscription-bar{grid-template-columns:1fr}
+  .subscription-actions{justify-content:flex-start}
+}
+@media(max-width:750px){.subscription-bar{margin:0 14px 17px}}
+@media(max-width:450px){
+  .subscription-actions a,.subscription-actions button{white-space:normal;font-size:12px}
+  .subscription-bar{padding:13px 12px}
+}

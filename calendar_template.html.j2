@@ -40,6 +40,19 @@
             <input id="search" type="search" placeholder="Search events or venues" autocomplete="off">
           </label>
         </div>
+        <div class="subscription-bar" aria-label="Calendar subscription">
+          <div class="subscription-copy">
+            <strong>Keep the good things coming.</strong>
+            <span>Subscribe to the published event feed. It refreshes when a new issue is released.</span>
+          </div>
+          <div class="subscription-actions">
+            <a class="subscribe-primary" href="{{ data.webcal_url }}">Subscribe to calendar</a>
+            <button type="button" id="copy-subscription-url" class="subscription-control">Copy feed URL</button>
+            <a class="subscription-control" href="{{ data.download_feed_url }}" download="stockholm-guide.ics">Download current .ics</a>
+          </div>
+          <p class="subscription-hint">Apple Calendar / Outlook: Subscribe. Google Calendar (desktop): Add calendar → From URL, then paste the feed link. Refresh timing is controlled by your calendar app. Only dated sessions and verified closing reminders are included.</p>
+          <p class="copy-feedback" id="copy-subscription-feedback" role="status" aria-live="polite"></p>
+        </div>
         <div class="filter-bar" id="filters" role="group" aria-label="Filter events">
           <button type="button" class="filter active" aria-pressed="true" data-filter="all">All</button>
           <button type="button" class="filter" aria-pressed="false" data-filter="top3">Top picks</button>
