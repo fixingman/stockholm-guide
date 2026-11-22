@@ -45,6 +45,27 @@ class DiscoverySourceTests(unittest.TestCase):
         self.assertTrue(any("/arts" in x for x in luma["additional_discovery_urls"]))
         self.assertTrue(any("/tech" in x for x in luma["additional_discovery_urls"]))
 
+    def test_expanded_unique_stockholm_sources_and_luma_scan_accountability(self):
+        # Future regressions must not silently drop the independent venues
+        # or revert to merely registering Luma without scanning it.
+        required = (
+            "cyklopen", "ronnells-antikvariat", "filmform",
+            "frim-stockholm", "moderna-museet-stockholm",
+            "arkdes-events", "cinemateket-stockholm",
+            "thirdplace-stockholm", "startskott-stockholm",
+        )
+        self.assertGreaterEqual(len(self.sources), 49)
+        for source_id in required:
+            self.assertIn(source_id, self.by_id)
+            self.assertTrue(self.by_id[source_id]["editorial_fit"])
+            self.assertTrue(self.by_id[source_id]["editorial_instructions"])
+            self.assertTrue(self.by_id[source_id]["official_calendar_url"].startswith("https://"))
+        policy = self.registry["source_diversity_policy"]
+        self.assertIn("Luma", policy["luma_explicit_check"])
+        self.assertIn("Log", policy["luma_explicit_check"])
+        self.assertIn("not checked", policy["scanning_accountability"])
+        self.assertIn("do not", policy["new_source_rotation"].lower() + " do not assume all sources scanned")
+
     def test_no_signup_bypass_or_unverified_publication_policy(self):
         policy = self.registry["source_diversity_policy"]
         self.assertIn("Never sign in", policy["access_policy"])
