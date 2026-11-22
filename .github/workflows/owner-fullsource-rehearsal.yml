@@ -47,6 +47,20 @@ jobs:
       - name: Prove fresh organizer discoveries reached outputs, not just attached 49 source rows
         run: |
           python editorial_pool_audit.py --issue issues/owner-rehearsal-2026-11-22.json --comparison issues/current.json --report release/editorial-pool-report.json
+      - name: Block previously featured Top 3 and prevent a one-item Worth reconsidering section
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          from editorial_quality import audit
+          issue=json.loads(Path('issues/owner-rehearsal-2026-11-22.json').read_text())
+          history=json.loads(Path('issues/featured-history.json').read_text())
+          review=audit(issue,history=[history],strict=True)
+          assert len(issue['top3'])==3
+          assert not review['repeated_top3'], 'Owner Top 3 duplicates featured history: '+repr(review['repeated_top3'])
+          assert len(issue.get('worth_reconsidering',[]))>=4, 'Worth reconsidering lacks editorial breadth for this owner rehearsal'
+          print('All 3 Top Picks unfeatured before; Worth reconsidering:', len(issue['worth_reconsidering']))
+          PY
       - name: Run offline editorial, image, email, source-coverage and privacy regressions
         run: python -m unittest test_minimal test_image_pipeline test_optimize_issue_images test_delivery_guard test_editorial_operations test_freshness_scanning test_release_authorization test_source_coverage test_discovery_sources test_calendar test_editorial_pool_audit
       - name: Verify owner rehearsal calendar handoff and issue 005 display
