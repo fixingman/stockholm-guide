@@ -9,6 +9,7 @@ on:
     branches: [main]
     paths:
       - source_sweep.py
+      - source_browser_sweep.py
       - source_coverage.py
       - test_source_coverage.py
       - test_discovery_sources.py
@@ -49,6 +50,19 @@ jobs:
                 "reachable:",r["index_reachable_count"],
                 "inaccessible:",r["index_unavailable_count"],
                 "unverified public leads:",r["total_discovered_links"])
+          PY
+      - name: Add read-only Chromium extraction for Luma and other JS-heavy calendars
+        run: |
+          python -m pip install 'playwright>=1.55,<2'
+          python -m playwright install --with-deps chromium
+          python source_browser_sweep.py --probe /tmp/source-probe.json
+          python - <<'PY'
+          import json
+          p=json.load(open("/tmp/source-probe.json"))
+          assert p["attempted_count"] == p["registered_count"]
+          assert p["editorially_reviewed_count"] == 0
+          print("Public browser-enriched sources:",p["browser_enriched_count"])
+          print("Unverified candidate links:",p["total_discovered_links"])
           PY
       - name: Summarize all attempted sources without calling them reviewed
         run: |
