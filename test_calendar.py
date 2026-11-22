@@ -103,6 +103,66 @@ class CalendarTests(unittest.TestCase):
             self.assertIn("application/json", html)
             self.assertIn("Official event page", html)
 
+    def test_verified_source_leads_appear_in_calendar_even_when_not_emailed(self):
+        issue = sample()
+        url = "https://example.org/events/hidden-gem"
+        issue["research_coverage"] = {"source_scans": [{
+            "source_id": "independent-venue",
+            "status": "reviewed_leads",
+            "candidate_urls": [url],
+        }]}
+        extra = {
+            "source_id": "independent-venue",
+            "title": "Hidden gem performance",
+            "dates": "3 December at 20:00",
+            "venue": "Independent venue",
+            "url": url,
+            "event_start": "2026-12-03T20:00:00+01:00",
+            "final_review": {
+                "checked_at": "2026-11-29T07:00:00+01:00",
+                "organizer_source_url": url,
+                "event_status": "scheduled",
+                "booking_status": "unknown",
+            },
+        }
+        issue["calendar_only_events"] = [extra]
+        data = build_data(issue)
+        self.assertEqual(data["event_count"], 4)
+        match = next(x for x in data["events"] if x["title"] == "Hidden gem performance")
+        self.assertEqual(match["date"], "2026-12-03")
+        self.assertEqual(match["section"], "calendar_only_events")
+
+        # A raw crawl result, even one with plausible date/title, never
+        # becomes a public event without a matching original-page review.
+        issue["research_coverage"]["source_scans"][0]["status"] = "NOT_REVIEWED"
+        self.assertEqual(build_data(issue)["event_count"], 3)
+        issue["research_coverage"]["source_scans"][0]["status"] = "reviewed_leads"
+        extra["final_review"]["organizer_source_url"] = "https://example.org/events/other"
+        self.assertEqual(build_data(issue)["event_count"], 3)
+        extra["final_review"]["organizer_source_url"] = url
+        extra["final_review"]["event_status"] = "cancelled"
+        self.assertEqual(build_data(issue)["event_count"], 3)
+
+    def test_calendar_extra_must_be_within_issue_window_and_fresh(self):
+        issue = sample()
+        url = "https://example.org/events/future"
+        issue["research_coverage"] = {"source_scans": [{
+            "source_id": "venue", "status": "reviewed_leads", "candidate_urls": [url],
+        }]}
+        issue["calendar_only_events"] = [{
+            "source_id": "venue", "title": "Far away", "dates": "January",
+            "venue": "Venue", "url": url,
+            "event_start": "2027-01-15T12:00:00+01:00",
+            "final_review": {
+                "checked_at": "2026-11-29T07:00:00+01:00",
+                "organizer_source_url": url, "event_status": "scheduled",
+            },
+        }]
+        self.assertEqual(build_data(issue)["event_count"], 3)
+        issue["calendar_only_events"][0]["event_start"] = "2026-12-03T12:00:00+01:00"
+        issue["calendar_only_events"][0]["final_review"]["checked_at"] = "2026-11-20T07:00:00+01:00"
+        self.assertEqual(build_data(issue)["event_count"], 3)
+
     def test_public_issue_renders_and_every_dated_card_has_source(self):
         repo = Path(__file__).resolve().parent
         current = repo / "issues" / "current.json"
