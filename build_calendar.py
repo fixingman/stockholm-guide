@@ -15,6 +15,7 @@ from zoneinfo import ZoneInfo
 
 from jinja2 import Environment, FileSystemLoader, StrictUndefined, select_autoescape
 from editorial_scanning import enhance, has_verified_last_chance
+from calendar_ical import filename as ical_filename, PUBLIC_BASE
 
 ROOT = Path(__file__).resolve().parent
 TZ = ZoneInfo("Europe/Stockholm")
@@ -72,7 +73,7 @@ def calendar_extra_approved(entry, issue):
     )
 
 
-def build_data(issue):
+def build_data(issue, *, feed_file="calendar.ics", events_dir="calendar-events"):
     if not issue.get("issue_number") or not issue.get("published_at"):
         raise ValueError("A published issue with a dated publication time is required")
     publication = timestamp(issue["published_at"])
@@ -106,7 +107,7 @@ def build_data(issue):
             # session is specified; don't imply it is a one-day performance.
             date = beginning.date().isoformat() if beginning else closing.date().isoformat() if verified_closing else None
             kind = "event" if beginning else "closing" if verified_closing else "flexible"
-            items.append({
+            event = {
                 "id": f"{section}-{index}",
                 "title": title,
                 "section": section,
@@ -122,7 +123,9 @@ def build_data(issue):
                 "closing_date": closing.date().isoformat() if verified_closing else None,
                 "last_chance": verified_closing,
                 "kind": kind,
-            })
+            }
+            event["ical_url"] = "./" + events_dir + "/" + ical_filename(event) if date and kind in ("event", "closing") else None
+            items.append(event)
     items.sort(key=lambda x: (x["date"] is None, x["date"] or "", x["time"] or "99:99", x["title"].casefold()))
     return {
         "issue_number": issue["issue_number"],
@@ -131,13 +134,16 @@ def build_data(issue):
         "window_start": start.isoformat(),
         "window_end": end.isoformat(),
         "timezone": "Europe/Stockholm",
+        "subscribe_url": PUBLIC_BASE + feed_file,
+        "webcal_url": "webcal://" + PUBLIC_BASE.removeprefix("https://") + feed_file,
+        "download_feed_url": "./" + feed_file,
         "event_count": len(items),
         "events": items,
     }
 
 
-def render(source, output):
-    data = build_data(json.loads(Path(source).read_text(encoding="utf-8")))
+def render(source, output, *, feed_file="calendar.ics", events_dir="calendar-events"):
+    data = build_data(json.loads(Path(source).read_text(encoding="utf-8")), feed_file=feed_file, events_dir=events_dir)
     # Protect inline JSON from breaking out of <script type=application/json>.
     # Safe text is created by calendar.js using textContent, never innerHTML.
     blob = json.dumps(data, ensure_ascii=True, separators=(",", ":"))
@@ -158,8 +164,10 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--data", default="issues/current.json")
     parser.add_argument("--output", default="calendar.html")
+    parser.add_argument("--feed-file", default="calendar.ics")
+    parser.add_argument("--events-dir", default="calendar-events")
     args = parser.parse_args()
-    result = render(args.data, args.output)
+    result = render(args.data, args.output, feed_file=args.feed_file, events_dir=args.events_dir)
     pinned = sum(x["date"] is not None for x in result["events"])
     print(f"Calendar #{result['issue_number']}: {pinned} dated, "
           f"{result['event_count']-pinned} flexible; no sending")
