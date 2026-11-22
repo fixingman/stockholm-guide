@@ -18,9 +18,11 @@ class MinimalTests(unittest.TestCase):
             subprocess.run([sys.executable,str(ROOT/"render_minimal.py"),"--output",str(path)],check=True,capture_output=True)
             html=path.read_text(encoding="utf-8");a=Audit();a.feed(html)
             expected=sum(len(g[k]) for k in ("top3","new_discoveries","worth_reconsidering","unavailable"))
-            self.assertEqual(len(a.links),expected+6)  # Event row links, 3 thumbnail links, and 3 feedback links
+            self.assertEqual(len(a.links),expected+7)  # Event rows, 3 thumbnail, 3 feedback, 1 calendar
             self.assertEqual(len(a.images),1+sum(bool(item.get("image_verified") and item.get("image_url")) for item in g["top3"]))
             self.assertEqual(sum("milestone_skyline.png" in x for x in a.images),1)
+            self.assertEqual(html.count('class="calendar-link"'), 1)
+            self.assertIn('href="https://fixingman.github.io/stockholm-guide/calendar.html"', html)
             self.assertNotIn("event-placeholder-thumb.jpg",html)
             self.assertEqual(html.count('aria-label="No verified event photo available"'),sum(not (item.get("image_verified") and item.get("image_url")) for item in g["top3"]))
             self.assertEqual(html.count('class="top-thumb-link"'),3)
