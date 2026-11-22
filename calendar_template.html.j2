@@ -6,14 +6,16 @@
   <meta name="color-scheme" content="light">
   <meta name="description" content="Explore this fortnight's curated Stockholm arts, music, and cultural events by date.">
   <title>Event Calendar · The Stockholm Guide · {{ data.date_range }}</title>
+  <link rel="icon" type="image/svg+xml" href="./assets/stockholm-guide-favicon.svg">
+  <meta name="theme-color" content="#f2f0eb">
   <link rel="stylesheet" href="./calendar.css">
 </head>
 <body>
   <div class="page">
     <header class="masthead">
       <div class="masthead-top">
-        <a class="brand" href="./calendar.html" aria-label="Stockholm Guide calendar home">The Stockholm<br>Guide<span class="brand-period">.</span></a>
-        <div class="descriptor">AN INDEPENDENT GUIDE TO<br>ART, CULTURE &amp; IDEAS<br>IN STOCKHOLM</div>
+        <a class="brand" href="./calendar.html" aria-label="Stockholm Guide calendar home">The<br>Stockholm<br>Guide</a>
+        <div class="descriptor">A CURATED GUIDE TO<br>CULTURE, ART AND<br>IDEAS IN STOCKHOLM</div>
       </div>
       <div class="edition"><span>THE EVENT CALENDAR</span><span>{{ data.date_range }}</span><span>ISSUE #{{ data.issue_number }}</span></div>
     </header>
@@ -51,6 +53,7 @@
           <div id="fullcalendar" aria-label="Interactive month and list calendar"></div>
           <div id="calendar-unavailable" class="unavailable-calendar" hidden>Calendar display is temporarily unavailable. The individual event listings below remain accessible.</div>
           <div class="day-details" aria-live="polite">
+            <div class="section-band"><span class="section-dot" aria-hidden="true"></span><span>EVENTS ON THIS DATE</span></div>
             <div class="day-title"><h3 id="day-heading">Select a date</h3><span id="day-count"></span></div>
             <div id="day-events" class="event-list"></div>
           </div>
@@ -58,7 +61,7 @@
 
         <section class="flexible-section" aria-labelledby="flexible-title">
           <div class="flexible-head">
-            <p class="eyebrow">VISIT WHEN IT SUITS</p>
+            <div class="section-band"><span class="section-dot" aria-hidden="true"></span><span>VISIT WHEN IT SUITS</span></div>
             <h2 id="flexible-title">Ongoing &amp; flexible dates</h2>
             <p>Exhibitions and experiences without a confirmed single session time. A final-day pin is a closing reminder, not an invitation to arrive at that hour.</p>
           </div>

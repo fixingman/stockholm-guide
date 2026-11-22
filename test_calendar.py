@@ -112,6 +112,27 @@ class CalendarTests(unittest.TestCase):
             self.assertIn("application/json", html)
             self.assertIn("Official event page", html)
 
+    def test_calendar_uses_newsletter_brand_and_svg_favicon(self):
+        root = Path(__file__).resolve().parent
+        favicon = root / "assets" / "stockholm-guide-favicon.svg"
+        self.assertTrue(favicon.exists(), "Calendar favicon asset missing")
+        icon = favicon.read_text(encoding="utf-8")
+        self.assertIn("<svg", icon)
+        self.assertIn('viewBox="0 0 64 64"', icon)
+        with tempfile.TemporaryDirectory() as temp:
+            source = Path(temp) / "sample.json"
+            output = Path(temp) / "calendar.html"
+            source.write_text(json.dumps(sample()))
+            render(source, output)
+            html = output.read_text()
+        self.assertIn('rel="icon" type="image/svg+xml"', html)
+        self.assertIn("./assets/stockholm-guide-favicon.svg", html)
+        self.assertIn('class="section-band"', html)
+        self.assertIn('class="brand"', html)
+        self.assertIn('id="fullcalendar"', html)
+        self.assertIn('id="filters"', html)
+        self.assertIn('id="search"', html)
+
     def test_verified_source_leads_appear_in_calendar_even_when_not_emailed(self):
         issue = sample()
         url = "https://example.org/events/hidden-gem"

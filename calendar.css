@@ -82,3 +82,79 @@ footer span:last-child{text-align:right}
 @media(max-width:750px){.page{padding:12px 12px 20px}.masthead-top{padding-top:22px}.brand{font-size:37px}.descriptor{font-size:9px}.introduction{padding:37px 4px 34px}.introduction h1{letter-spacing:-1.9px}.count{display:none}.toolbar{padding:17px 14px 12px}.filter-bar{padding:0 14px 15px}.calendar-panel{padding:0 13px 22px}.fc .fc-daygrid-day-frame{min-height:72px}.fc .fc-daygrid-event{display:inline-block;width:10px;height:9px;min-height:9px;margin:1px 2px;padding:0;border-radius:7px;overflow:hidden;vertical-align:middle}.fc .fc-daygrid-event .fc-event-main{visibility:hidden}.fc .fc-daygrid-day-bottom{font-size:11px}.fc .fc-toolbar-title{font-size:26px}.event-list{grid-template-columns:1fr}.flexible-section{padding:23px 14px}footer{flex-direction:column;gap:7px}footer span:last-child{text-align:left}}
 @media(max-width:450px){.descriptor{font-size:8px;line-height:1.45}.brand{font-size:33px}.edition{font-size:9px;gap:5px}.edition span:nth-child(2){text-align:center}.toolbar{flex-direction:column;align-items:stretch}.search-label{max-width:none}.view-switch{align-self:start}.filter{padding:7px 10px}.fc .fc-toolbar-title{font-size:24px}.fc .fc-daygrid-day-frame{min-height:55px}.fc .fc-daygrid-day-number{font-size:10px;padding:5px}.fc .fc-col-header-cell-cushion{font-size:9px;padding:9px 1px}.day-title h3{font-size:24px}}
 @media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important}}
+
+
+/* Newsletter-aligned editorial layer. The FullCalendar engine, filtering,
+   event links, date selection and responsive behavior remain unchanged. */
+:root{
+  --ink:#161616;
+  --paper:#f2f0eb;
+  --panel:#fcfaf6;
+  --line:#d7d2cb;
+  --muted:#655f58;
+  --accent:#161616;
+}
+.page{max-width:1080px;padding-top:24px}
+.masthead{border-top:0}
+.masthead-top{padding:17px 0 22px}
+.brand{font:bold 48px/0.96 Georgia,'Times New Roman',serif;letter-spacing:-2.2px;color:#101010}
+.descriptor{font:bold 10px/1.7 'Courier New',Courier,monospace;letter-spacing:.7px;text-align:right;margin-top:9px}
+.edition{border-color:#777;padding:14px 0;font:700 12px/1.5 'Courier New',Courier,monospace}
+.introduction{padding:42px 0 34px}
+.introduction h1{font:normal clamp(43px,6vw,70px)/1.03 Georgia,'Times New Roman',serif;letter-spacing:-2.8px}
+.introduction h1 em{color:inherit}
+.dek{max-width:630px;color:#444;font-size:14px}
+.calendar-shell{background:var(--panel);border:1px solid #e4dfd7;border-radius:15px;box-shadow:0 4px 16px #0000000b}
+.toolbar{padding-top:26px}
+.view-switch{background:#eee9df;border-radius:4px;border:1px solid #bdb5a8}
+.switch{border-radius:2px;font:700 12px/1.4 'Courier New',Courier,monospace;letter-spacing:.3px}
+.switch.active{background:#161616;color:#fcfaf6}
+.search-label input{background:#fcfaf6;border:1px solid #bdb5a8;border-radius:4px;min-height:42px}
+.filter{border:1px solid #b4a99e;border-radius:3px;padding:7px 11px;background:#fcfaf6;color:#4b4741;font:700 11px/1.4 'Courier New',Courier,monospace;letter-spacing:.2px}
+.filter.active{background:#161616;color:#fcfaf6;border-color:#161616}
+.filter:hover:not(.active),.switch:hover:not(.active){background:#e8e3db}
+#fullcalendar{border-top:1px solid #b9b5ae}
+.fc{--fc-border-color:#d7d2cb;--fc-page-bg-color:#fcfaf6;--fc-neutral-bg-color:#f2f0eb;--fc-today-bg-color:#eee9df;--fc-list-event-hover-bg-color:#f1ece5}
+.fc .fc-toolbar-title{font:normal 30px/1.2 Georgia,'Times New Roman',serif}
+.fc .fc-button-primary{border-radius:3px;background:#161616;border-color:#161616;font:700 12px/1.4 'Courier New',Courier,monospace}
+.fc .fc-col-header-cell{background:#f2f0eb}
+.fc .fc-event{background:#eae5de;color:#161616;border-radius:2px;font-weight:600}
+.fc .fc-top-pick{background:#ddd8cf;color:#161616;border-left:3px solid #161616}
+.fc .fc-last-chance{background:#e9ddd4;color:#6d382a}
+.day-details{margin-top:25px;padding-top:0;border:0}
+.section-band{display:flex;align-items:center;gap:13px;background:#161616;color:#fcfaf6;padding:12px 15px;font:700 15px/1.5 'Courier New',Courier,monospace;letter-spacing:.8px;text-transform:uppercase}
+.section-dot{width:8px;height:8px;border-radius:50%;background:#fcfaf6;flex:none}
+.day-title{padding:22px 0 17px}
+.day-title h3{font:normal 29px/1.2 Georgia,'Times New Roman',serif}
+.event-list{gap:0 28px}
+.event-card{background:transparent;border:0;border-bottom:1px solid #d7d2cb;border-radius:0;padding:19px 0 22px}
+.event-card .tags{margin-bottom:9px}
+.tag{border-radius:2px;padding:2px 6px;letter-spacing:.5px}
+.tag.featured{background:#eee9df;border-color:#a79e91;color:#171717}
+.event-card h4{font:bold 19px/1.32 Arial,Helvetica,sans-serif;letter-spacing:-.45px}
+.event-card .when{font:12px/1.6 'Courier New',Courier,monospace;color:#444}
+.event-card .where{font:12px/1.5 'Courier New',Courier,monospace;color:#655f58}
+.event-card .description{font:14px/1.5 Arial,Helvetica,sans-serif;color:#262626}
+.event-card .booking{font:12px/1.5 Arial,Helvetica,sans-serif;color:#655f58}
+.event-card a{font:700 12px/1.5 'Courier New',Courier,monospace;text-underline-offset:4px}
+.flexible-section{background:var(--panel);padding-top:0;border-top:0}
+.flexible-head{border-bottom:0;padding-bottom:5px}
+.flexible-head .section-band{margin:0 -23px 22px}
+.flexible-head h2{font:normal 32px/1.15 Georgia,'Times New Roman',serif}
+footer{border-top:1px solid #777}
+@media(max-width:750px){
+  .page{padding-top:12px}
+  .brand{font-size:36px;letter-spacing:-1.6px}
+  .descriptor{font-size:8px;line-height:1.65}
+  .introduction{padding:32px 4px}
+  .introduction h1{letter-spacing:-1.6px}
+  .event-list{grid-template-columns:1fr}
+  .section-band{font-size:13px}
+  .flexible-head .section-band{margin-left:-14px;margin-right:-14px}
+  .event-card{padding:18px 0}
+}
+@media(max-width:450px){
+  .brand{font-size:30px;line-height:1;letter-spacing:-1.3px}
+  .descriptor{font-size:7px;line-height:1.55}
+  .edition{font-size:10px}
+}
