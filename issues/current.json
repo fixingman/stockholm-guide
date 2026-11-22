@@ -1,216 +1,67 @@
 {
   "issue_number": "005",
   "date_range": "22 November–5 December 2026",
-  "published_at": "2026-11-22T16:20:06+01:00",
-  "intro": "A broader fortnight of unexpected Stockholm experiences: a phone-free listening room, experimental cinema, spontaneous sound and movement, participatory design, world rhythms, and exhibitions approaching their final days.",
+  "published_at": "2026-11-22T16:46:51+01:00",
+  "intro": "Fresh Top 3 this fortnight: an experimental late club collaboration, psychedelic live improvisation, and dance interacting with ink and projected images. Plus other distinctive Stockholm experiences and last-chance exhibitions.",
   "disclaimer": "Organizer programme and event pages reviewed on Sunday 22 November 2026. A listed ticket link is not proof of remaining stock; where admission or booking is not confirmed it is explicitly marked unknown. Closing dates are verified; visit hours may vary.",
   "top3": [
     {
-      "title": "En ljuvlighet från ingenstans — film and conversation",
-      "dates": "Wed 25 Nov · 18:30 · 86-minute film + conversation",
-      "url": "https://acceleratorsu.art/evenemang/filmvisning-en-ljuvlighet-fran-ingenstans/",
-      "venue": "Accelerator café, Frescativägen 26A",
-      "price": "Free",
-      "booking": "No preregistration required",
-      "description": "Ester M. Bergsmark’s experimental 2026 film is followed by a Swedish-language conversation with Lina Selander. A free, one-off encounter between cinema, art and bodily experience.",
-      "image_verified": true,
-      "verification": {
-        "checked_at": "2026-11-22T16:20:06+01:00",
-        "date": {
-          "status": "confirmed",
-          "source_url": "https://acceleratorsu.art/evenemang/filmvisning-en-ljuvlighet-fran-ingenstans/"
-        },
-        "venue": {
-          "status": "confirmed",
-          "source_url": "https://acceleratorsu.art/evenemang/filmvisning-en-ljuvlighet-fran-ingenstans/"
-        },
-        "price": {
-          "status": "confirmed",
-          "source_url": "https://acceleratorsu.art/evenemang/filmvisning-en-ljuvlighet-fran-ingenstans/"
-        },
-        "booking": {
-          "status": "confirmed",
-          "source_url": "https://acceleratorsu.art/evenemang/filmvisning-en-ljuvlighet-fran-ingenstans/"
-        }
-      },
-      "final_review": {
-        "checked_at": "2026-11-22T16:20:06+01:00",
-        "organizer_source_url": "https://acceleratorsu.art/evenemang/filmvisning-en-ljuvlighet-fran-ingenstans/",
-        "event_status": "scheduled",
-        "booking_status": "not_required",
-        "notes": "Fresh official organizer event page checked Sunday 22 Nov 2026; original 16 Nov image identity review retained, live image download and visual validation required."
-      },
-      "event_start": "2026-11-25T18:30:00+01:00",
-      "image_url": "https://acceleratorsu.art/wp-content/uploads/2024/03/Ester_Bergsmark-face-1.jpg",
-      "image_source_url": "https://acceleratorsu.art/evenemang/filmvisning-en-ljuvlighet-fran-ingenstans/",
-      "image_alt": "Portrait of filmmaker Ester M. Bergsmark, photo Erica Moon-Nam Lindberg; supplied on the screening page.",
-      "image_identity_review": {
-        "event_match": true,
-        "reviewer": "Editorial assistant; organizer-page association and local visual inspection",
-        "source_page": "https://acceleratorsu.art/evenemang/filmvisning-en-ljuvlighet-fran-ingenstans/",
-        "checked_at": "2026-11-16T01:28:25+01:00",
-        "notes": "Authentic participant photograph published on the exact 2026 event page; not represented as a photograph of a future performance. Portrait of filmmaker Ester M. Bergsmark, photo Erica Moon-Nam Lindberg; supplied on the screening page."
-      },
-      "first_seen_issue": "TEST-006",
-      "new_discovery_verified": false,
-      "populated_from_historical_visual_test": "Photo identity metadata from visual TEST-006; event facts independently rechecked for issue 005."
-    },
-    {
-      "title": "Aliquī — deep listening and visual improvisation",
-      "dates": "Thu 26 Nov · 19:00",
-      "url": "https://www.fylkingen.se/en/events/aliqui",
-      "venue": "Fylkingen, Saltmätargatan 2",
-      "price": "200 SEK; 120 SEK members/friends (individual organizer page)",
-      "booking": "Ticket information on Fylkingen event page; remaining stock unverified",
-      "description": "Helene Berg, Paul Pignon, Ida Lundén, Thomas Bjelkeborn and guests explore the meeting of sound, image and space. A good fit for an unpredictable, absorbing evening.",
-      "image_verified": true,
-      "verification": {
-        "checked_at": "2026-11-22T16:20:06+01:00",
-        "date": {
-          "status": "confirmed",
-          "source_url": "https://www.fylkingen.se/en/events/aliqui"
-        },
-        "venue": {
-          "status": "confirmed",
-          "source_url": "https://www.fylkingen.se/en/events/aliqui"
-        },
-        "price": {
-          "status": "confirmed",
-          "source_url": "https://www.fylkingen.se/en/events/aliqui"
-        },
-        "booking": {
-          "status": "unknown",
-          "source_url": "https://www.fylkingen.se/en/events/aliqui",
-          "note": "Live ticket stock not verified; calendar list displays a lower price, individual event page used."
-        }
-      },
-      "final_review": {
-        "checked_at": "2026-11-22T16:20:06+01:00",
-        "organizer_source_url": "https://www.fylkingen.se/en/events/aliqui",
-        "event_status": "scheduled",
-        "booking_status": "required_unverified",
-        "notes": "Fresh official organizer event page checked Sunday 22 Nov 2026; original 16 Nov image identity review retained, live image download and visual validation required."
-      },
-      "event_start": "2026-11-26T19:00:00+01:00",
-      "first_seen_issue": "TEST-006",
-      "image_url": "https://www.fylkingen.se/_next/image?url=%2Fmedia%2Fsites%252Fclvuuu5cs0001xwfc7ne538fo%252Fmedia%252Fdb20cec9-e78d-4e58-a2f7-274f9e06d656-HeleneBergportratt.jpg&w=1080&q=70",
-      "image_source_url": "https://www.fylkingen.se/en/events/aliqui",
-      "image_alt": "Artist Helene Berg with an owl sculpture; participant portrait supplied on the Aliquī event page.",
-      "image_identity_review": {
-        "event_match": true,
-        "reviewer": "Editorial assistant; organizer-page association and local visual inspection",
-        "source_page": "https://www.fylkingen.se/en/events/aliqui",
-        "checked_at": "2026-11-16T01:28:25+01:00",
-        "notes": "Authentic participant photograph published on the exact 2026 event page; not represented as a photograph of a future performance. Artist Helene Berg with an owl sculpture; participant portrait supplied on the Aliquī event page."
-      },
-      "new_discovery_verified": false,
-      "image_original_url": "https://www.fylkingen.se/_next/image?url=%2Fmedia%2Fsites%252Fclvuuu5cs0001xwfc7ne538fo%252Fmedia%252Fdb20cec9-e78d-4e58-a2f7-274f9e06d656-HeleneBergportratt.jpg&w=3840&q=75",
-      "image_optimization": {
-        "source_bytes": 244511,
-        "optimized_bytes": 152456,
-        "original_dimensions": [
-          1426,
-          1772
-        ],
-        "optimized_dimensions": [
-          1080,
-          1342
-        ],
-        "max_pixel_rms": 1.2,
-        "method": "same-host-cms-variant"
-      },
-      "populated_from_historical_visual_test": "Photo identity metadata from visual TEST-006; event facts independently rechecked for issue 005."
-    },
-    {
-      "title": "Salla Salazar — a phone-free listening session",
-      "dates": "Fri 27 Nov · 18:00–21:00",
-      "url": "https://stockholm.fotografiska.com/en/events/listening-session-salla-salazar-the-soundtrack-to-a-life",
-      "venue": "Fotografiska Studio, floor 2, Stadsgårdshamnen 22",
-      "price": "Included with regular museum admission; free for members",
-      "booking": "Limited seats; advance booking recommended, not guaranteed",
-      "description": "Salla Salazar shares complete songs and the memories behind them. A seated, phone-free format that puts shared listening ahead of spectacle.",
-      "image_verified": true,
-      "verification": {
-        "checked_at": "2026-11-22T16:20:06+01:00",
-        "date": {
-          "status": "confirmed",
-          "source_url": "https://stockholm.fotografiska.com/en/events/listening-session-salla-salazar-the-soundtrack-to-a-life"
-        },
-        "venue": {
-          "status": "confirmed",
-          "source_url": "https://stockholm.fotografiska.com/en/events/listening-session-salla-salazar-the-soundtrack-to-a-life"
-        },
-        "price": {
-          "status": "confirmed",
-          "source_url": "https://stockholm.fotografiska.com/en/events/listening-session-salla-salazar-the-soundtrack-to-a-life"
-        },
-        "booking": {
-          "status": "confirmed",
-          "source_url": "https://stockholm.fotografiska.com/en/events/listening-session-salla-salazar-the-soundtrack-to-a-life"
-        }
-      },
-      "final_review": {
-        "checked_at": "2026-11-22T16:20:06+01:00",
-        "organizer_source_url": "https://stockholm.fotografiska.com/en/events/listening-session-salla-salazar-the-soundtrack-to-a-life",
-        "event_status": "scheduled",
-        "booking_status": "required_unverified",
-        "notes": "Fresh official organizer event page checked Sunday 22 Nov 2026; original 16 Nov image identity review retained, live image download and visual validation required."
-      },
-      "event_start": "2026-11-27T18:00:00+01:00",
-      "first_seen_issue": "TEST-006",
-      "image_url": "https://cdn.sanity.io/images/2xi539qp/production/f90f2827b3bc91616ae3b05ce97210dfce71d2eb-3264x2448.jpg?rect=408,0,2448,2448&w=750&h=750&q=75&auto=format",
-      "image_source_url": "https://stockholm.fotografiska.com/en/events/listening-session-salla-salazar-the-soundtrack-to-a-life",
-      "image_alt": "Salla Salazar event photograph supplied on Fotografiska’s listening-session page.",
-      "image_identity_review": {
-        "event_match": true,
-        "reviewer": "Editorial assistant; organizer-page association and local visual inspection",
-        "source_page": "https://stockholm.fotografiska.com/en/events/listening-session-salla-salazar-the-soundtrack-to-a-life",
-        "checked_at": "2026-11-16T01:28:25+01:00",
-        "notes": "Authentic participant photograph published on the exact 2026 event page; not represented as a photograph of a future performance. Salla Salazar event photograph supplied on Fotografiska’s listening-session page."
-      },
-      "new_discovery_verified": false,
-      "populated_from_historical_visual_test": "Photo identity metadata from visual TEST-006; event facts independently rechecked for issue 005."
-    }
-  ],
-  "new_discoveries": [
-    {
       "title": "CHIMERA / EVOLVER: Emma DJ + Keiska + DJ Haydn",
       "dates": "Fri 27 Nov · 21:00",
-      "url": "https://www.fylkingen.se/en/events",
+      "url": "https://fylkingen.se/en/events/chimera-evolver",
       "venue": "Fylkingen, Saltmätargatan 21",
       "price": "250 SEK; 180 SEK members/friends",
       "booking": "Official Tickster ticket link; live stock unverified",
       "description": "Live electronic sets and adventurous late club programming by CHIMERA and EVOLVER.",
       "verification": {
-        "checked_at": "2026-11-22T16:20:06+01:00",
+        "checked_at": "2026-11-22T16:46:51+01:00",
         "date": {
           "status": "confirmed",
-          "source_url": "https://www.fylkingen.se/en/events"
+          "source_url": "https://fylkingen.se/en/events/chimera-evolver"
         },
         "venue": {
           "status": "confirmed",
-          "source_url": "https://www.fylkingen.se/en/events"
+          "source_url": "https://fylkingen.se/en/events/chimera-evolver"
         },
         "booking": {
           "status": "confirmed",
-          "source_url": "https://www.fylkingen.se/en/events"
+          "source_url": "https://fylkingen.se/en/events/chimera-evolver"
         },
         "price": {
           "status": "confirmed",
-          "source_url": "https://www.fylkingen.se/en/events"
+          "source_url": "https://fylkingen.se/en/events/chimera-evolver"
         }
       },
       "final_review": {
-        "checked_at": "2026-11-22T16:20:06+01:00",
-        "organizer_source_url": "https://www.fylkingen.se/en/events",
+        "checked_at": "2026-11-22T16:46:51+01:00",
+        "organizer_source_url": "https://fylkingen.se/en/events/chimera-evolver",
         "event_status": "scheduled",
         "booking_status": "required_unverified",
-        "notes": "Sunday organizer listing reviewed 22 November; event is listed, live stock not guaranteed."
+        "notes": "Original official event page checked 22 Nov; gallery/organizer-hosted artwork reviewed separately; remaining ticket stock not guaranteed."
       },
-      "image_verified": false,
+      "image_verified": true,
       "event_start": "2026-11-27T21:00:00+01:00",
       "first_seen_issue": "005",
-      "new_discovery_verified": true
+      "new_discovery_verified": true,
+      "organizer_url": "https://fylkingen.se/en/events/chimera-evolver",
+      "image_url": "https://fylkingen.se/media/sites%2Fclvuuu5cs0001xwfc7ne538fo%2Fmedia%2Fd6632067-61c4-4f91-97d2-7549d3e9343f-a1077103124_10.jpg",
+      "image_source_url": "https://fylkingen.se/en/events/chimera-evolver",
+      "image_alt": "Abstract distorted-face artwork published on the CHIMERA / EVOLVER 27 Nov 2026 event page",
+      "image_identity_review": {
+        "event_match": true,
+        "reviewer": "Editorial assistant — inspected exact organizer-page photo thumbnails using no-send GitHub Actions on 22 November 2026",
+        "source_page": "https://fylkingen.se/en/events/chimera-evolver",
+        "checked_at": "2026-11-22T16:46:51+01:00",
+        "notes": "Verified by inspecting organizer's exact CHIMERA event-page OG image and a separately rendered thumbnail on 22 Nov; surreal distorted face is event artwork, not a performance documentary photo."
+      },
+      "image_review_evidence": {
+        "review_run_url": "https://github.com/fixingman/stockholm-guide/actions/runs/45040097163",
+        "organizer_image_dimensions": [
+          1200,
+          1200
+        ],
+        "method": "same-official-event-page plus visually inspected tiny preview"
+      }
     },
     {
       "title": "Träden + Homegrown — psychedelic improvisation",
@@ -221,7 +72,7 @@
       "booking": "Official Nortic ticket link; check stock",
       "description": "Psychedelic improvisation with Swedish veterans Träden and the unpredictable, shape-shifting Homegrown.",
       "verification": {
-        "checked_at": "2026-11-22T16:20:06+01:00",
+        "checked_at": "2026-11-22T16:46:51+01:00",
         "date": {
           "status": "confirmed",
           "source_url": "https://stadsgardsterminalen.com/event/traden-homegrown/"
@@ -240,56 +91,96 @@
         }
       },
       "final_review": {
-        "checked_at": "2026-11-22T16:20:06+01:00",
+        "checked_at": "2026-11-22T16:46:51+01:00",
         "organizer_source_url": "https://stadsgardsterminalen.com/event/traden-homegrown/",
         "event_status": "scheduled",
         "booking_status": "required_unverified",
-        "notes": "Sunday organizer listing reviewed 22 November; event is listed, live stock not guaranteed."
+        "notes": "Original official event page checked 22 Nov; gallery/organizer-hosted artwork reviewed separately; remaining ticket stock not guaranteed."
       },
-      "image_verified": false,
+      "image_verified": true,
       "event_start": "2026-11-29T19:00:00+01:00",
       "first_seen_issue": "005",
-      "new_discovery_verified": true
+      "new_discovery_verified": true,
+      "organizer_url": "https://stadsgardsterminalen.com/event/traden-homegrown/",
+      "image_url": "https://stadsgardsterminalen.com/wp-content/uploads/2026/10/nortic-traden-homegrown-1200x675.jpg",
+      "image_source_url": "https://stadsgardsterminalen.com/event/traden-homegrown/",
+      "image_alt": "Illustrated Träden + Homegrown concert flyer with ornate forest lettering and decorative art",
+      "image_identity_review": {
+        "event_match": true,
+        "reviewer": "Editorial assistant — inspected exact organizer-page photo thumbnails using no-send GitHub Actions on 22 November 2026",
+        "source_page": "https://stadsgardsterminalen.com/event/traden-homegrown/",
+        "checked_at": "2026-11-22T16:46:51+01:00",
+        "notes": "Verified organizer's original Träden + Homegrown event flyer via exact page meta and visual inspection; readable act names Träden and Homegrown in illustration."
+      },
+      "image_review_evidence": {
+        "review_run_url": "https://github.com/fixingman/stockholm-guide/actions/runs/45040097163",
+        "organizer_image_dimensions": [
+          1200,
+          675
+        ],
+        "method": "same-official-event-page plus visually inspected tiny preview"
+      }
     },
     {
       "title": "Changing Landscape, Evolving Experiences — dance, ink and sound",
       "dates": "Sun 29 Nov · 16:00",
-      "url": "https://www.fylkingen.se/en/events/changing-landscape-evolving-experiences",
+      "url": "https://fylkingen.se/en/events/changing-landscape-evolving-experiences",
       "venue": "Fylkingen, Saltmätargatan 21",
       "price": "150 SEK; 80 SEK members/friends",
       "booking": "Ticket link on official event page; stock unverified",
       "description": "Japanese and Spanish dance, brush and ink, projections and improvisation with Christer Bothén.",
       "verification": {
-        "checked_at": "2026-11-22T16:20:06+01:00",
+        "checked_at": "2026-11-22T16:46:51+01:00",
         "date": {
           "status": "confirmed",
-          "source_url": "https://www.fylkingen.se/en/events/changing-landscape-evolving-experiences"
+          "source_url": "https://fylkingen.se/en/events/changing-landscape-evolving-experiences"
         },
         "venue": {
           "status": "confirmed",
-          "source_url": "https://www.fylkingen.se/en/events/changing-landscape-evolving-experiences"
+          "source_url": "https://fylkingen.se/en/events/changing-landscape-evolving-experiences"
         },
         "booking": {
           "status": "confirmed",
-          "source_url": "https://www.fylkingen.se/en/events/changing-landscape-evolving-experiences"
+          "source_url": "https://fylkingen.se/en/events/changing-landscape-evolving-experiences"
         },
         "price": {
           "status": "confirmed",
-          "source_url": "https://www.fylkingen.se/en/events/changing-landscape-evolving-experiences"
+          "source_url": "https://fylkingen.se/en/events/changing-landscape-evolving-experiences"
         }
       },
       "final_review": {
-        "checked_at": "2026-11-22T16:20:06+01:00",
-        "organizer_source_url": "https://www.fylkingen.se/en/events/changing-landscape-evolving-experiences",
+        "checked_at": "2026-11-22T16:46:51+01:00",
+        "organizer_source_url": "https://fylkingen.se/en/events/changing-landscape-evolving-experiences",
         "event_status": "scheduled",
         "booking_status": "required_unverified",
-        "notes": "Sunday organizer listing reviewed 22 November; event is listed, live stock not guaranteed."
+        "notes": "Original official event page checked 22 Nov; gallery/organizer-hosted artwork reviewed separately; remaining ticket stock not guaranteed."
       },
-      "image_verified": false,
+      "image_verified": true,
       "event_start": "2026-11-29T16:00:00+01:00",
       "first_seen_issue": "005",
-      "new_discovery_verified": true
-    },
+      "new_discovery_verified": true,
+      "organizer_url": "https://fylkingen.se/en/events/changing-landscape-evolving-experiences",
+      "image_url": "https://fylkingen.se/_next/image?url=%2Fmedia%2Fsites%252Fclvuuu5cs0001xwfc7ne538fo%252Fmedia%252F959c2f91-59fd-4fb3-8134-f6720717bb28-EVENT-BILD-CHANGING-LANDSCAPE.jpeg&w=3840&q=75",
+      "image_source_url": "https://fylkingen.se/en/events/changing-landscape-evolving-experiences",
+      "image_alt": "Black-and-white dancer silhouette beside expressive ink brushstrokes, official Changing Landscape event artwork",
+      "image_identity_review": {
+        "event_match": true,
+        "reviewer": "Editorial assistant — inspected exact organizer-page photo thumbnails using no-send GitHub Actions on 22 November 2026",
+        "source_page": "https://fylkingen.se/en/events/changing-landscape-evolving-experiences",
+        "checked_at": "2026-11-22T16:46:51+01:00",
+        "notes": "Verified image linked by the exact Changing Landscape organizer event page; visually inspected black-and-white dance and ink graphic; filename explicitly identifies event."
+      },
+      "image_review_evidence": {
+        "review_run_url": "https://github.com/fixingman/stockholm-guide/actions/runs/45040097163",
+        "organizer_image_dimensions": [
+          3840,
+          2880
+        ],
+        "method": "same-official-event-page plus visually inspected tiny preview"
+      }
+    }
+  ],
+  "new_discoveries": [
     {
       "title": "CNDNSD — experimental electronic performance",
       "dates": "Fri 4 Dec · 19:00",
@@ -1023,6 +914,172 @@
       "previous_issue_number": "004",
       "first_seen_issue": "004",
       "new_discovery_verified": false
+    },
+    {
+      "title": "En ljuvlighet från ingenstans — film and conversation",
+      "dates": "Wed 25 Nov · 18:30 · 86-minute film + conversation",
+      "url": "https://acceleratorsu.art/evenemang/filmvisning-en-ljuvlighet-fran-ingenstans/",
+      "venue": "Accelerator café, Frescativägen 26A",
+      "price": "Free",
+      "booking": "No preregistration required",
+      "description": "Ester M. Bergsmark’s experimental 2026 film is followed by a Swedish-language conversation with Lina Selander. A free, one-off encounter between cinema, art and bodily experience.",
+      "image_verified": true,
+      "verification": {
+        "checked_at": "2026-11-22T16:20:06+01:00",
+        "date": {
+          "status": "confirmed",
+          "source_url": "https://acceleratorsu.art/evenemang/filmvisning-en-ljuvlighet-fran-ingenstans/"
+        },
+        "venue": {
+          "status": "confirmed",
+          "source_url": "https://acceleratorsu.art/evenemang/filmvisning-en-ljuvlighet-fran-ingenstans/"
+        },
+        "price": {
+          "status": "confirmed",
+          "source_url": "https://acceleratorsu.art/evenemang/filmvisning-en-ljuvlighet-fran-ingenstans/"
+        },
+        "booking": {
+          "status": "confirmed",
+          "source_url": "https://acceleratorsu.art/evenemang/filmvisning-en-ljuvlighet-fran-ingenstans/"
+        }
+      },
+      "final_review": {
+        "checked_at": "2026-11-22T16:20:06+01:00",
+        "organizer_source_url": "https://acceleratorsu.art/evenemang/filmvisning-en-ljuvlighet-fran-ingenstans/",
+        "event_status": "scheduled",
+        "booking_status": "not_required",
+        "notes": "Fresh official organizer event page checked Sunday 22 Nov 2026; original 16 Nov image identity review retained, live image download and visual validation required. Moved out of Top 3 due to repetition across TEST-006/007/008; retained as optional reconsideration."
+      },
+      "event_start": "2026-11-25T18:30:00+01:00",
+      "image_url": "https://acceleratorsu.art/wp-content/uploads/2024/03/Ester_Bergsmark-face-1.jpg",
+      "image_source_url": "https://acceleratorsu.art/evenemang/filmvisning-en-ljuvlighet-fran-ingenstans/",
+      "image_alt": "Portrait of filmmaker Ester M. Bergsmark, photo Erica Moon-Nam Lindberg; supplied on the screening page.",
+      "image_identity_review": {
+        "event_match": true,
+        "reviewer": "Editorial assistant; organizer-page association and local visual inspection",
+        "source_page": "https://acceleratorsu.art/evenemang/filmvisning-en-ljuvlighet-fran-ingenstans/",
+        "checked_at": "2026-11-16T01:28:25+01:00",
+        "notes": "Authentic participant photograph published on the exact 2026 event page; not represented as a photograph of a future performance. Portrait of filmmaker Ester M. Bergsmark, photo Erica Moon-Nam Lindberg; supplied on the screening page."
+      },
+      "first_seen_issue": "TEST-006",
+      "new_discovery_verified": false,
+      "populated_from_historical_visual_test": "Photo identity metadata from visual TEST-006; event facts independently rechecked for issue 005."
+    },
+    {
+      "title": "Aliquī — deep listening and visual improvisation",
+      "dates": "Thu 26 Nov · 19:00",
+      "url": "https://www.fylkingen.se/en/events/aliqui",
+      "venue": "Fylkingen, Saltmätargatan 2",
+      "price": "200 SEK; 120 SEK members/friends (individual organizer page)",
+      "booking": "Ticket information on Fylkingen event page; remaining stock unverified",
+      "description": "Helene Berg, Paul Pignon, Ida Lundén, Thomas Bjelkeborn and guests explore the meeting of sound, image and space. A good fit for an unpredictable, absorbing evening.",
+      "image_verified": true,
+      "verification": {
+        "checked_at": "2026-11-22T16:20:06+01:00",
+        "date": {
+          "status": "confirmed",
+          "source_url": "https://www.fylkingen.se/en/events/aliqui"
+        },
+        "venue": {
+          "status": "confirmed",
+          "source_url": "https://www.fylkingen.se/en/events/aliqui"
+        },
+        "price": {
+          "status": "confirmed",
+          "source_url": "https://www.fylkingen.se/en/events/aliqui"
+        },
+        "booking": {
+          "status": "unknown",
+          "source_url": "https://www.fylkingen.se/en/events/aliqui",
+          "note": "Live ticket stock not verified; calendar list displays a lower price, individual event page used."
+        }
+      },
+      "final_review": {
+        "checked_at": "2026-11-22T16:20:06+01:00",
+        "organizer_source_url": "https://www.fylkingen.se/en/events/aliqui",
+        "event_status": "scheduled",
+        "booking_status": "required_unverified",
+        "notes": "Fresh official organizer event page checked Sunday 22 Nov 2026; original 16 Nov image identity review retained, live image download and visual validation required. Moved out of Top 3 due to repetition across TEST-006/007/008; retained as optional reconsideration."
+      },
+      "event_start": "2026-11-26T19:00:00+01:00",
+      "first_seen_issue": "TEST-006",
+      "image_url": "https://www.fylkingen.se/_next/image?url=%2Fmedia%2Fsites%252Fclvuuu5cs0001xwfc7ne538fo%252Fmedia%252Fdb20cec9-e78d-4e58-a2f7-274f9e06d656-HeleneBergportratt.jpg&w=1080&q=70",
+      "image_source_url": "https://www.fylkingen.se/en/events/aliqui",
+      "image_alt": "Artist Helene Berg with an owl sculpture; participant portrait supplied on the Aliquī event page.",
+      "image_identity_review": {
+        "event_match": true,
+        "reviewer": "Editorial assistant; organizer-page association and local visual inspection",
+        "source_page": "https://www.fylkingen.se/en/events/aliqui",
+        "checked_at": "2026-11-16T01:28:25+01:00",
+        "notes": "Authentic participant photograph published on the exact 2026 event page; not represented as a photograph of a future performance. Artist Helene Berg with an owl sculpture; participant portrait supplied on the Aliquī event page."
+      },
+      "new_discovery_verified": false,
+      "image_original_url": "https://www.fylkingen.se/_next/image?url=%2Fmedia%2Fsites%252Fclvuuu5cs0001xwfc7ne538fo%252Fmedia%252Fdb20cec9-e78d-4e58-a2f7-274f9e06d656-HeleneBergportratt.jpg&w=3840&q=75",
+      "image_optimization": {
+        "source_bytes": 244511,
+        "optimized_bytes": 152456,
+        "original_dimensions": [
+          1426,
+          1772
+        ],
+        "optimized_dimensions": [
+          1080,
+          1342
+        ],
+        "max_pixel_rms": 1.2,
+        "method": "same-host-cms-variant"
+      },
+      "populated_from_historical_visual_test": "Photo identity metadata from visual TEST-006; event facts independently rechecked for issue 005."
+    },
+    {
+      "title": "Salla Salazar — a phone-free listening session",
+      "dates": "Fri 27 Nov · 18:00–21:00",
+      "url": "https://stockholm.fotografiska.com/en/events/listening-session-salla-salazar-the-soundtrack-to-a-life",
+      "venue": "Fotografiska Studio, floor 2, Stadsgårdshamnen 22",
+      "price": "Included with regular museum admission; free for members",
+      "booking": "Limited seats; advance booking recommended, not guaranteed",
+      "description": "Salla Salazar shares complete songs and the memories behind them. A seated, phone-free format that puts shared listening ahead of spectacle.",
+      "image_verified": true,
+      "verification": {
+        "checked_at": "2026-11-22T16:20:06+01:00",
+        "date": {
+          "status": "confirmed",
+          "source_url": "https://stockholm.fotografiska.com/en/events/listening-session-salla-salazar-the-soundtrack-to-a-life"
+        },
+        "venue": {
+          "status": "confirmed",
+          "source_url": "https://stockholm.fotografiska.com/en/events/listening-session-salla-salazar-the-soundtrack-to-a-life"
+        },
+        "price": {
+          "status": "confirmed",
+          "source_url": "https://stockholm.fotografiska.com/en/events/listening-session-salla-salazar-the-soundtrack-to-a-life"
+        },
+        "booking": {
+          "status": "confirmed",
+          "source_url": "https://stockholm.fotografiska.com/en/events/listening-session-salla-salazar-the-soundtrack-to-a-life"
+        }
+      },
+      "final_review": {
+        "checked_at": "2026-11-22T16:20:06+01:00",
+        "organizer_source_url": "https://stockholm.fotografiska.com/en/events/listening-session-salla-salazar-the-soundtrack-to-a-life",
+        "event_status": "scheduled",
+        "booking_status": "required_unverified",
+        "notes": "Fresh official organizer event page checked Sunday 22 Nov 2026; original 16 Nov image identity review retained, live image download and visual validation required. Moved out of Top 3 due to repetition across TEST-006/007/008; retained as optional reconsideration."
+      },
+      "event_start": "2026-11-27T18:00:00+01:00",
+      "first_seen_issue": "TEST-006",
+      "image_url": "https://cdn.sanity.io/images/2xi539qp/production/f90f2827b3bc91616ae3b05ce97210dfce71d2eb-3264x2448.jpg?rect=408,0,2448,2448&w=750&h=750&q=75&auto=format",
+      "image_source_url": "https://stockholm.fotografiska.com/en/events/listening-session-salla-salazar-the-soundtrack-to-a-life",
+      "image_alt": "Salla Salazar event photograph supplied on Fotografiska’s listening-session page.",
+      "image_identity_review": {
+        "event_match": true,
+        "reviewer": "Editorial assistant; organizer-page association and local visual inspection",
+        "source_page": "https://stockholm.fotografiska.com/en/events/listening-session-salla-salazar-the-soundtrack-to-a-life",
+        "checked_at": "2026-11-16T01:28:25+01:00",
+        "notes": "Authentic participant photograph published on the exact 2026 event page; not represented as a photograph of a future performance. Salla Salazar event photograph supplied on Fotografiska’s listening-session page."
+      },
+      "new_discovery_verified": false,
+      "populated_from_historical_visual_test": "Photo identity metadata from visual TEST-006; event facts independently rechecked for issue 005."
     }
   ],
   "unavailable": [
@@ -1095,6 +1152,9 @@
       "Venue ticket links were checked for existence as shown on official pages, but real-time ticket inventory is not guaranteed.",
       "The three featured photos retain independent identity review dated 16 November; no current visual inspection is claimed, while GitHub must now verify anonymous downloads and browser loads."
     ],
-    "duplicate_check": "Compared prior Issue #004 and prior TEST-008 issue. Previously recommended Masangue and The Machine's Eye are placed in Worth reconsidering; current fresh items are not counted as new simply because of new timing."
+    "duplicate_check": "Compared prior Issue #004 and prior TEST-008 issue. Previously recommended Masangue and The Machine's Eye are placed in Worth reconsidering; current fresh items are not counted as new simply because of new timing.",
+    "photo_research_run": "https://github.com/fixingman/stockholm-guide/actions/runs/45040097163",
+    "photo_identity_inspection": "Official 2026 event art from three exact organizer pages reviewed visually on 22 November. They are event artwork, not photographs of upcoming performances.",
+    "prior_featured_top3_replaced": true
   }
 }
