@@ -63,7 +63,7 @@ class DiscoverySourceTests(unittest.TestCase):
         policy = self.registry["source_diversity_policy"]
         self.assertIn("Luma", policy["luma_explicit_check"])
         self.assertIn("log", policy["luma_explicit_check"].lower())
-        self.assertIn("not checked", policy["scanning_accountability"])
+        self.assertIn("no silent unscanned sources", policy["scanning_accountability"])
         self.assertIn("ALL registry sources".lower(), policy["new_source_rotation"].lower())
         self.assertIn("editorial review", policy["automated_public_probe"])
         self.assertIn("From Issue 006", policy["mandatory_source_review"])
