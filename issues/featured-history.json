@@ -6,92 +6,110 @@
     {
       "title": "Masangue Maracatu & guests — Brazilian rhythm celebration",
       "issue": "004",
-      "kind": "production"
+      "kind": "production",
+      "url": "https://reimersholmehotel.se/event/masangue-maracatu-gaster/"
     },
     {
       "title": "Sound of Stockholm — Saturday: voice, movement and experimental music",
       "issue": "004",
-      "kind": "production"
+      "kind": "production",
+      "url": "https://www.fylkingen.se/en/events/sound-of-stockholm-lordag"
     },
     {
       "title": "Aliquī — deep listening, sound and live visual improvisation",
       "issue": "004",
-      "kind": "production"
+      "kind": "production",
+      "url": "https://www.fylkingen.se/en/events/aliqui"
     },
     {
       "title": "En ljuvlighet från ingenstans — film and conversation",
       "issue": "TEST-008",
-      "kind": "owner-only-test"
+      "kind": "owner-only-test",
+      "url": "https://acceleratorsu.art/evenemang/filmvisning-en-ljuvlighet-fran-ingenstans/"
     },
     {
       "title": "Aliquī — deep listening and visual improvisation",
       "issue": "TEST-008",
-      "kind": "owner-only-test"
+      "kind": "owner-only-test",
+      "url": "https://www.fylkingen.se/en/events/aliqui"
     },
     {
       "title": "Salla Salazar — a phone-free listening session",
       "issue": "TEST-008",
-      "kind": "owner-only-test"
+      "kind": "owner-only-test",
+      "url": "https://stockholm.fotografiska.com/en/events/listening-session-salla-salazar-the-soundtrack-to-a-life"
     },
     {
       "title": "En ljuvlighet från ingenstans — film and conversation",
       "issue": "005",
-      "kind": "production-validated"
+      "kind": "production-validated",
+      "url": "https://acceleratorsu.art/evenemang/filmvisning-en-ljuvlighet-fran-ingenstans/"
     },
     {
       "title": "Aliquī — deep listening and visual improvisation",
       "issue": "005",
-      "kind": "production-validated"
+      "kind": "production-validated",
+      "url": "https://www.fylkingen.se/en/events/aliqui"
     },
     {
       "title": "Salla Salazar — a phone-free listening session",
       "issue": "005",
-      "kind": "production-validated"
+      "kind": "production-validated",
+      "url": "https://stockholm.fotografiska.com/en/events/listening-session-salla-salazar-the-soundtrack-to-a-life"
     }
   ],
   "top3": [
     {
       "title": "Masangue Maracatu & guests — Brazilian rhythm celebration",
+      "url": "https://reimersholmehotel.se/event/masangue-maracatu-gaster/",
       "issue": "004",
       "kind": "production"
     },
     {
       "title": "Sound of Stockholm — Saturday: voice, movement and experimental music",
+      "url": "https://www.fylkingen.se/en/events/sound-of-stockholm-lordag",
       "issue": "004",
       "kind": "production"
     },
     {
       "title": "Aliquī — deep listening, sound and live visual improvisation",
+      "url": "https://www.fylkingen.se/en/events/aliqui",
       "issue": "004",
       "kind": "production"
     },
     {
       "title": "En ljuvlighet från ingenstans — film and conversation",
+      "url": "https://acceleratorsu.art/evenemang/filmvisning-en-ljuvlighet-fran-ingenstans/",
       "issue": "TEST-008",
       "kind": "owner-only-test"
     },
     {
       "title": "Aliquī — deep listening and visual improvisation",
+      "url": "https://www.fylkingen.se/en/events/aliqui",
       "issue": "TEST-008",
       "kind": "owner-only-test"
     },
     {
       "title": "Salla Salazar — a phone-free listening session",
+      "url": "https://stockholm.fotografiska.com/en/events/listening-session-salla-salazar-the-soundtrack-to-a-life",
       "issue": "TEST-008",
       "kind": "owner-only-test"
     },
     {
       "title": "En ljuvlighet från ingenstans — film and conversation",
+      "url": "https://acceleratorsu.art/evenemang/filmvisning-en-ljuvlighet-fran-ingenstans/",
       "issue": "005",
       "kind": "production-validated"
     },
     {
       "title": "Aliquī — deep listening and visual improvisation",
+      "url": "https://www.fylkingen.se/en/events/aliqui",
       "issue": "005",
       "kind": "production-validated"
     },
     {
       "title": "Salla Salazar — a phone-free listening session",
+      "url": "https://stockholm.fotografiska.com/en/events/listening-session-salla-salazar-the-soundtrack-to-a-life",
       "issue": "005",
       "kind": "production-validated"
     }
