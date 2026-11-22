@@ -2,6 +2,16 @@
 
 The current `guide_data.json` is **a legacy sample**, not a live or approved Sunday issue. The strict checks are intended for **new** editions. CI on sample data uses baseline mode to surface missing evidence without fabricating confirmations.
 
+## Source coverage is 100% of the live registry for every new issue
+
+Beginning with **Issue 006**, use all IDs from the live `discovery_sources.json` (49 as of 22 November 2026, but always derive it dynamically). Neither a 12-site sample nor simply registering a source is an acceptable full discovery pass. The scheduled `source_sweep.py` GitHub Action checks every public index before the Saturday/Sunday editor, captures candidate links, and publishes `source-audit:research/source-probe.json`. This probe is **not** proof of an editorial review: pages can be JavaScript-rendered, contain stale dates, or be a generic homepage.
+
+The Saturday editor personally interprets public content for **every ID**, investigates promising current dated organizer events, and records source-specific findings in `issues/next-draft.json.research_coverage.source_scans`. Sunday finishes/refreshes all records and commits them to `issues/current.json`. Luma requires the city index and ALL configured public category pages. A review need not yield a newsletter event. For blocked sources document HTTP/access errors, at least two retries and an alternative public search; never claim a blocked site was reviewed. No account sign-in, private-event circumvention or fictitious attendance.
+
+Each `source_scans` record for Issue 006+ uses: `source_id`, `checked_at` (ISO with offset, within 72h of `published_at`), `status` = `reviewed_leads` / `reviewed_no_fit` / `blocked_after_retry`, `checked_urls` (registered official calendar and required Luma category URLs), `finding` (substantive source-specific observation), `reviewer` and `review_method` (for successful reviews; `public_original_pages`, `public_browser` or `public_organizer_calendar`), plus `candidate_urls` for discovered leads or `attempts` and `alternate_search` for blocked cases. No private data belongs here.
+
+The GitHub no-email production gate executes `source_coverage.py --strict` and requires one current, credible record for **every live source ID**. It refuses partial/duplicated/fake-probe-only records, limits genuinely inaccessible sources to 20% and saves a source-coverage report. This makes full coverage an enforceable release check rather than editorial advice. Previously sent Issue 005 is exempt. Sunday Recovery picks up incomplete source IDs instead of restarting research; source coverage never overrides any subscriber or image safety checks.
+
 ## 1. Verified editorial facts
 
 For every event in the new 14-day guide, collect fresh organizer evidence separately for:
@@ -38,7 +48,7 @@ Strict mode blocks missing evidence or invalid photo identity review; source con
 
 ## 2. Diversity and novel discovery
 
-Discover from at least several distinct organizer classes: small venues and independent promoters; participatory studios and workshops; experimental theatres; exhibition and sound-art spaces; and official institution/event calendars. Treat aggregators as leads, then navigate to official organizer event pages. Research a sufficiently broad pool before filtering; do not invent event dates or availability.
+Discover by checking ALL registered sources first, then select from several distinct organizer classes: small venues and independent promoters; participatory studios and workshops; experimental theatres; exhibition and sound-art spaces; and official institution/event calendars. Treat aggregators as leads, then navigate to official organizer event pages. Research a sufficiently broad pool before filtering; do not invent event dates or availability.
 
 ```bash
 python discovery_ranker.py --candidates researched-candidates.json --history LAST_ISSUE.json --output shortlist.json --limit 24 --organizer-cap 4
