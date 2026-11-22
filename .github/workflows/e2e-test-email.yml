@@ -33,6 +33,36 @@ jobs:
           assert "CHIMERA" in html
           print("PASS: Current issue calendar renders with FullCalendar and no subscriber data")
           PY
+      - name: Browser smoke test — real FullCalendar month, list, filters and mobile
+        run: |
+          python - <<'PY'
+          import subprocess,sys,time
+          from playwright.sync_api import sync_playwright
+          server=subprocess.Popen([sys.executable,"-m","http.server","8765","--bind","127.0.0.1"],
+              stdout=subprocess.DEVNULL,stderr=subprocess.DEVNULL)
+          try:
+              time.sleep(1)
+              with sync_playwright() as playwright:
+                  browser=playwright.chromium.launch(headless=True)
+                  page=browser.new_page(viewport={"width":1100,"height":850})
+                  page.goto("http://127.0.0.1:8765/calendar.html",wait_until="load",timeout=60000)
+                  page.locator(".fc-daygrid").wait_for(timeout=30000)
+                  assert page.locator(".fc-daygrid-event").count() >= 3, "No real issue events in FullCalendar"
+                  page.get_by_role("button",name="All events").click()
+                  page.locator(".fc-list").wait_for(timeout=20000)
+                  page.get_by_role("button",name="Top picks").click()
+                  assert page.locator(".fc-list-event").count()==3, "Top Picks filter did not show exactly three"
+                  page.get_by_role("button",name="Calendar",exact=True).click()
+                  page.locator(".fc-daygrid").wait_for(timeout=10000)
+                  page.set_viewport_size({"width":390,"height":844})
+                  page.screenshot(path="calendar-mobile.png",full_page=True)
+                  assert page.evaluate("document.documentElement.scrollWidth <= window.innerWidth + 3"), "Mobile horizontal overflow"
+                  browser.close()
+          finally:
+              server.terminate()
+              server.wait(timeout=15)
+          print("PASS: FullCalendar real browser month, agenda, 3 top picks, responsive layout")
+          PY
       - name: Real-world photo performance probe (official source, no sending)
         run: |
           python - <<'PY'
@@ -151,6 +181,7 @@ jobs:
             e2e-test-email.html
             e2e-image-audit.json
             photo-optimization-probe.json
+            calendar-mobile.png
             e2e-delivery-manifest.json
             e2e-rejected-visual.json
             visual-rejection-screenshots/
