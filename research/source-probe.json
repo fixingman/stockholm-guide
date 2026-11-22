@@ -1,0 +1,3699 @@
+{
+  "schema_version": 1,
+  "created_at": "2026-11-22T20:30:49.018304+00:00",
+  "registry_sha256": "f448661e549da315bfb3e652f27d9671798eca875247dde178992a939318af79",
+  "registered_count": 49,
+  "attempted_count": 49,
+  "index_reachable_count": 44,
+  "index_unavailable_count": 5,
+  "editorially_reviewed_count": 0,
+  "total_discovered_links": 444,
+  "sources": [
+    {
+      "source_id": "reimersholme-hotel",
+      "source_name": "Reimersholme Hotel",
+      "source_type": "organizer",
+      "discovery_priority": "recurring",
+      "attempted_urls": [
+        "https://reimersholmehotel.se/evenemang/"
+      ],
+      "attempts": [
+        {
+          "url": "https://reimersholmehotel.se/evenemang/",
+          "final_url": "https://reimersholmehotel.se/evenemang/",
+          "http_code": 200,
+          "status": "reachable",
+          "page_title": "Evenemang - Reimersholme Hotel Evenemang - Reimersholme Hotel",
+          "html_bytes_seen": 133947,
+          "seconds": 2.62,
+          "attempt": 1
+        }
+      ],
+      "probe_status": "index_reachable",
+      "page_titles": [
+        "Evenemang - Reimersholme Hotel Evenemang - Reimersholme Hotel"
+      ],
+      "candidate_links": [
+        {
+          "url": "https://reimersholmehotel.se/en/upcoming-events/",
+          "label": "English",
+          "unverified": true
+        },
+        {
+          "url": "https://reimersholmehotel.se/event/julbord/",
+          "label": "",
+          "unverified": true
+        },
+        {
+          "url": "https://reimersholmehotel.se/event/valter-kinbom-trollslandan-klippan-och-havet/",
+          "label": "",
+          "unverified": true
+        },
+        {
+          "url": "https://reimersholmehotel.se/event/dias-the-afro-express/",
+          "label": "",
+          "unverified": true
+        },
+        {
+          "url": "https://reimersholmehotel.se/event/masangue-maracatu-gaster/",
+          "label": "",
+          "unverified": true
+        },
+        {
+          "url": "https://reimersholmehotel.se/event/aural-onsdag-roberto-n-peyre/",
+          "label": "",
+          "unverified": true
+        },
+        {
+          "url": "https://reimersholmehotel.se/event/the-kokomo-kings-2/",
+          "label": "",
+          "unverified": true
+        },
+        {
+          "url": "https://reimersholmehotel.se/event/voidgarden/",
+          "label": "",
+          "unverified": true
+        },
+        {
+          "url": "https://reimersholmehotel.se/event/beat-poet-society-2/",
+          "label": "",
+          "unverified": true
+        },
+        {
+          "url": "https://reimersholmehotel.se/event/ital-jul-pa-reimersholme-hotel-2/",
+          "label": "",
+          "unverified": true
+        },
+        {
+          "url": "https://reimersholmehotel.se/event/julmarknad-4/",
+          "label": "",
+          "unverified": true
+        },
+        {
+          "url": "https://reimersholmehotel.se/event/swedish-moose-mob-brass-band/",
+          "label": "",
+          "unverified": true
+        },
+        {
+          "url": "https://reimersholmehotel.se/event/julkonsert-pa-reimers/",
+          "label": "",
+          "unverified": true
+        },
+        {
+          "url": "https://reimersholmehotel.se/event/stand-up-yours-8/",
+          "label": "",
+          "unverified": true
+        },
+        {
+          "url": "https://reimersholmehotel.se/event/den-stora-vinterfesten-med-cover-conspiracy/",
+          "label": "",
+          "unverified": true
+        }
+      ],
+      "editorial_review_status": "NOT_REVIEWED",
+      "note": "Index reachability and links are NOT a reviewed event search; editor must inspect actual dated original event pages."
+    },
+    {
+      "source_id": "fylkingen",
+      "source_name": "Fylkingen",
+      "source_type": "organizer",
+      "discovery_priority": "recurring",
+      "attempted_urls": [
+        "https://www.fylkingen.se/en/events"
+      ],
+      "attempts": [
+        {
+          "url": "https://www.fylkingen.se/en/events",
+          "final_url": "https://www.fylkingen.se/en/events",
+          "http_code": 200,
+          "status": "reachable",
+          "page_title": "Fylkingen Events Fylkingen Events",
+          "html_bytes_seen": 276336,
+          "seconds": 1.57,
+          "attempt": 1
+        }
+      ],
+      "probe_status": "index_reachable",
+      "page_titles": [
+        "Fylkingen Events Fylkingen Events"
+      ],
+      "candidate_links": [
+        {
+          "url": "https://www.tickster.com/se/sv/events/1187a6uvlly7kr5",
+          "label": "200 SEK",
+          "unverified": true
+        }
+      ],
+      "editorial_review_status": "NOT_REVIEWED",
+      "note": "Index reachability and links are NOT a reviewed event search; editor must inspect actual dated original event pages."
+    },
+    {
+      "source_id": "fotografiska",
+      "source_name": "Fotografiska Stockholm",
+      "source_type": "organizer",
+      "discovery_priority": "recurring",
+      "attempted_urls": [
+        "https://stockholm.fotografiska.com/en/events"
+      ],
+      "attempts": [
+        {
+          "url": "https://stockholm.fotografiska.com/en/events",
+          "final_url": "https://stockholm.fotografiska.com/en/events",
+          "http_code": 200,
+          "status": "reachable",
+          "page_title": "Events | Fotografiska Stockholm Events | Fotografiska Stockholm",
+          "html_bytes_seen": 236830,
+          "seconds": 0.37,
+          "attempt": 1
+        }
+      ],
+      "probe_status": "index_reachable",
+      "page_titles": [
+        "Events | Fotografiska Stockholm Events | Fotografiska Stockholm"
+      ],
+      "candidate_links": [
+        {
+          "url": "https://stockholm.fotografiska.com/en/exhibition",
+          "label": "Exhibitions",
+          "unverified": true
+        },
+        {
+          "url": "https://stockholm.fotografiska.com/en/events",
+          "label": "Events",
+          "unverified": true
+        },
+        {
+          "url": "https://tickets-stockholm.fotografiska.com/?lang=en",
+          "label": "Tickets",
+          "unverified": true
+        },
+        {
+          "url": "https://stockholm.fotografiska.com/en/meeting-and-events",
+          "label": "Private Events",
+          "unverified": true
+        },
+        {
+          "url": "https://stockholm.fotografiska.com/en/events/strage-sessions",
+          "label": "20 Nov 2026 – 19:00–22:00 Strage Sessions: The aesthetics of punk Punk, photography and a closing celebration! Learn more",
+          "unverified": true
+        },
+        {
+          "url": "https://stockholm.fotografiska.com/en/events/artist-talk-donald-bostrom",
+          "label": "22 Nov 2026 – 14:00–17:00 Artist Talk: Donald Boström Join Donald Boström in a conversation with Marika Lagercrantz about his book & exhibit",
+          "unverified": true
+        },
+        {
+          "url": "https://stockholm.fotografiska.com/en/events/listening-session-salla-salazar-the-soundtrack-to-a-life",
+          "label": "27 Nov 2026 – 18:00–21:00 Listening Session: Salla Salazar – The soundtrack to a life A new way to experience music together, in an intimate",
+          "unverified": true
+        },
+        {
+          "url": "https://stockholm.fotografiska.com/en/events/art-of-drag-admira-christmas-edition",
+          "label": "11 Dec 2026 – 19:00–22:30 Art of: Drag x Admira – Christmas Edition Admira takes over the stage one last time at Fotografiska! Join us for a",
+          "unverified": true
+        },
+        {
+          "url": "https://stockholm.fotografiska.com/en/live",
+          "label": "Live Concerts, stand-up and other live events.",
+          "unverified": true
+        },
+        {
+          "url": "https://stockholm.fotografiska.com/en/in-focus",
+          "label": "In Focus Artist Talks, Book Talks and in-depth events.",
+          "unverified": true
+        },
+        {
+          "url": "https://stockholm.fotografiska.com/en/academy",
+          "label": "Academy Photography courses and workshops.",
+          "unverified": true
+        },
+        {
+          "url": "https://tickets-stockholm.fotografiska.com/events/?lang=en",
+          "label": "Tickets",
+          "unverified": true
+        },
+        {
+          "url": "https://stockholm.fotografiska.com/en/events/guided-tours",
+          "label": "Tuesday-Sunday Guided tours",
+          "unverified": true
+        },
+        {
+          "url": "https://stockholm.fotografiska.com/en/events/stroller-tour",
+          "label": "Every other Thursday Stroller Tour",
+          "unverified": true
+        },
+        {
+          "url": "https://stockholm.fotografiska.com/en/events/my-fotografiska-life",
+          "label": "Twelve sessions during 2026-2027 My Fotografiska Life",
+          "unverified": true
+        },
+        {
+          "url": "https://stockholm.fotografiska.com/en/events/fotografiska-x-stockholms-branneri-smakbordet",
+          "label": "21 Nov & 5 Dec Fotografiska x Stockholms Bränneri: Smakbordet",
+          "unverified": true
+        },
+        {
+          "url": "https://stockholm.fotografiska.com/en/events/youth-guided-tour-are-men-ok",
+          "label": "I Am In Training, Don't Fight Me, 2022 © Wang Ziyu 26 Nov & 6 Dec Youth Guided Tour: Are Men OK?",
+          "unverified": true
+        },
+        {
+          "url": "https://stockholm.fotografiska.com/en/events/standup-oslipat-kirsty-armstrong-hanna-lublin-niklasson",
+          "label": "4 Dec 2026 – 19:30–21:30 Standup x Oslipat: Kirsty Armstrong & Hanna Lublin Niklasson (SOLD OUT)",
+          "unverified": true
+        }
+      ],
+      "editorial_review_status": "NOT_REVIEWED",
+      "note": "Index reachability and links are NOT a reviewed event search; editor must inspect actual dated original event pages."
+    },
+    {
+      "source_id": "mdt",
+      "source_name": "MDT Moderna Dansteatern",
+      "source_type": "organizer",
+      "discovery_priority": "recurring",
+      "attempted_urls": [
+        "https://mdtsthlm.se/kalender"
+      ],
+      "attempts": [
+        {
+          "url": "https://mdtsthlm.se/kalender",
+          "final_url": "https://mdtsthlm.se/kalender",
+          "http_code": 200,
+          "status": "reachable",
+          "page_title": "Kalender | MDT MDT | Calendar",
+          "html_bytes_seen": 600000,
+          "seconds": 0.93,
+          "attempt": 1
+        }
+      ],
+      "probe_status": "index_reachable",
+      "page_titles": [
+        "Kalender | MDT MDT | Calendar"
+      ],
+      "candidate_links": [],
+      "editorial_review_status": "NOT_REVIEWED",
+      "note": "Index reachability and links are NOT a reviewed event search; editor must inspect actual dated original event pages."
+    },
+    {
+      "source_id": "kontrar",
+      "source_name": "Konträr",
+      "source_type": "organizer",
+      "discovery_priority": "recurring",
+      "attempted_urls": [
+        "https://kontrar.se/"
+      ],
+      "attempts": [
+        {
+          "url": "https://kontrar.se/",
+          "final_url": "https://kontrar.se/",
+          "http_code": 200,
+          "status": "reachable",
+          "page_title": "Konträr – Contemporary theatre in Stockholm",
+          "html_bytes_seen": 85413,
+          "seconds": 2.3,
+          "attempt": 1
+        }
+      ],
+      "probe_status": "index_reachable",
+      "page_titles": [
+        "Konträr – Contemporary theatre in Stockholm"
+      ],
+      "candidate_links": [
+        {
+          "url": "https://kontrar.se/program/",
+          "label": "Program",
+          "unverified": true
+        },
+        {
+          "url": "https://kontrar.se/forestallning/kontrar-julshow-3/",
+          "label": "Boka plats",
+          "unverified": true
+        },
+        {
+          "url": "https://kontrar.se/forestallning/sound-of-stockholm-18-november/",
+          "label": "SOUND OF STOCKHOLM",
+          "unverified": true
+        },
+        {
+          "url": "https://kontrar.se/forestallning/kontrar-julshow/",
+          "label": "KONTRÄR JULSHOW 2024",
+          "unverified": true
+        },
+        {
+          "url": "https://kontrar.se/forestallning/finsk-festival-finsk-karaoke/",
+          "label": "FESTIVAALI VASTAKARVA: FINSK KARAOKE",
+          "unverified": true
+        },
+        {
+          "url": "https://kontrar.se/forestallning/finsk-festival-vau-vau/",
+          "label": "FESTIVAALI VASTAKARVA: VAU VAU",
+          "unverified": true
+        },
+        {
+          "url": "https://kontrar.se/forestallning/samtal-dokumentar-scenkonst/",
+          "label": "SAMTAL: DOKUMENTÄR SCENKONST",
+          "unverified": true
+        },
+        {
+          "url": "https://kontrar.se/forestallning/kontrar-showcase-iii-beachparty-pa-kontrar/",
+          "label": "KONTRÄR SHOWCASE III: BEACHPARTY PÅ KONTRÄR",
+          "unverified": true
+        },
+        {
+          "url": "https://kontrar.se/forestallning/kontrar-showcase-iii-international-practices-shared-presentations-conversations/",
+          "label": "KONTRÄR SHOWCASE III: INTERNATIONAL PRACTISES – SHARED PRESENTATIONS & CONVERSATIONS",
+          "unverified": true
+        },
+        {
+          "url": "https://kontrar.se/forestallning/sound-of-stockholm-1718-november/",
+          "label": "SOUND OF STOCKHOLM",
+          "unverified": true
+        },
+        {
+          "url": "https://kontrar.se/forestallning/presentation-av-hostens-program-och-mingel/",
+          "label": "PRESENTATION AV HÖSTENS PROGRAM OCH MINGEL",
+          "unverified": true
+        },
+        {
+          "url": "https://kontrar.se/forestallning/finsk-festival-neon-beige/",
+          "label": "FESTIVAALI VASTAKARVA: NEON BEIGE",
+          "unverified": true
+        },
+        {
+          "url": "https://kontrar.se/forestallning/fragments-samtal/",
+          "label": "FRAGMENTS SAMTAL",
+          "unverified": true
+        },
+        {
+          "url": "https://kontrar.se/forestallning/nakenkorens-julkonsert/",
+          "label": "NAKENKÖRENS JULKONSERT",
+          "unverified": true
+        },
+        {
+          "url": "https://kontrar.se/forestallning/programslapp-hosten-2026/",
+          "label": "PROGRAMSLÄPP HÖSTEN 2026",
+          "unverified": true
+        },
+        {
+          "url": "https://kontrar.se/forestallning/kontrar-julshow-2/",
+          "label": "KONTRÄR JULSHOW",
+          "unverified": true
+        },
+        {
+          "url": "https://kontrar.se/forestallning/fragments-utstallning/",
+          "label": "FRAGMENTS",
+          "unverified": true
+        },
+        {
+          "url": "https://kontrar.se/forestallning/sound-of-stockholm-17-november/",
+          "label": "SOUND OF STOCKHOLM",
+          "unverified": true
+        }
+      ],
+      "editorial_review_status": "NOT_REVIEWED",
+      "note": "Index reachability and links are NOT a reviewed event search; editor must inspect actual dated original event pages."
+    },
+    {
+      "source_id": "weld",
+      "source_name": "Weld",
+      "source_type": "organizer",
+      "discovery_priority": "recurring",
+      "attempted_urls": [
+        "https://www.weld.se/"
+      ],
+      "attempts": [
+        {
+          "url": "https://www.weld.se/",
+          "final_url": "https://www.weld.se/",
+          "http_code": 200,
+          "status": "reachable",
+          "page_title": "Weld – Independent platform for experimental processes and knowledge production",
+          "html_bytes_seen": 13418,
+          "seconds": 0.66,
+          "attempt": 1
+        }
+      ],
+      "probe_status": "index_reachable",
+      "page_titles": [
+        "Weld – Independent platform for experimental processes and knowledge production"
+      ],
+      "candidate_links": [
+        {
+          "url": "https://www.weld.se/program/past/sv",
+          "label": "Arkiv",
+          "unverified": true
+        },
+        {
+          "url": "https://www.weld.se/weld-autumn-2026/sv/",
+          "label": "Weld hösten 2026",
+          "unverified": true
+        },
+        {
+          "url": "https://www.weld.se/program/weld-autumn-2026/sv/",
+          "label": "här!",
+          "unverified": true
+        },
+        {
+          "url": "https://www.weld.se/program/nov-29-workshop-listening-together-alice-chauchat-valentina-desideri/sv/",
+          "label": "29 nov. Workshop: Listening Together / Alice Chauchat & Valentina Desideri",
+          "unverified": true
+        },
+        {
+          "url": "https://www.weld.se/program/dec-4-6-installation-nemeton-anna-heymowska/sv/",
+          "label": "4–6 dec. Installation. Nemeton / Anna Heymowska",
+          "unverified": true
+        }
+      ],
+      "editorial_review_status": "NOT_REVIEWED",
+      "note": "Index reachability and links are NOT a reviewed event search; editor must inspect actual dated original event pages."
+    },
+    {
+      "source_id": "dansens-hus",
+      "source_name": "Dansens Hus",
+      "source_type": "organizer",
+      "discovery_priority": "recurring",
+      "attempted_urls": [
+        "https://dansenshus.se/"
+      ],
+      "attempts": [
+        {
+          "url": "https://dansenshus.se/",
+          "final_url": "https://dansenshus.se/",
+          "http_code": 200,
+          "status": "reachable",
+          "page_title": "Dansens Hus | I ständig rörelse sedan 1991 Dansens Hus | I ständig rörelse sedan 1991",
+          "html_bytes_seen": 222259,
+          "seconds": 0.88,
+          "attempt": 1
+        }
+      ],
+      "probe_status": "index_reachable",
+      "page_titles": [
+        "Dansens Hus | I ständig rörelse sedan 1991 Dansens Hus | I ständig rörelse sedan 1991"
+      ],
+      "candidate_links": [
+        {
+          "url": "https://dansenshus.se/program/",
+          "label": "Kalender",
+          "unverified": true
+        },
+        {
+          "url": "https://dansenshus.se/biljettinformation/",
+          "label": "Biljettinformation",
+          "unverified": true
+        },
+        {
+          "url": "https://dansenshus.se/program/israel-galvan-esp-la-edad-de-oro/",
+          "label": "Israel Galván (ESP) La Edad de Oro 19-20 november 2026",
+          "unverified": true
+        },
+        {
+          "url": "https://dansenshus.se/program/andersson-dance-swe-ore/",
+          "label": "Andersson Dance (SWE) ORE Blackbox 26 november – 3 december 2026",
+          "unverified": true
+        },
+        {
+          "url": "https://dansenshus.se/program/fredrik-benke-rydman-swe-romeo-julia/",
+          "label": "Fredrik Benke Rydman (SWE) Romeo & Julia – Death of love Stora scen 5 december 2026 – 31 januari 2027",
+          "unverified": true
+        },
+        {
+          "url": "https://dansenshus.se/program/flamencofredag-3/",
+          "label": "FlamencoFredag Studioscen 20 november 2026",
+          "unverified": true
+        },
+        {
+          "url": "https://dansenshus.se/biljettinformation/klubb-dh/",
+          "label": "Klubb DH Klubb DH ger dig 30% rabatt och full flexibilitet - du kan köpa biljetter ända fram… Läs mer",
+          "unverified": true
+        },
+        {
+          "url": "https://dansenshus.se/nyheter/within-practice-podd/",
+          "label": "Within Practice podd Panelsamtal, reportage och fördjupande intervju Läs mer",
+          "unverified": true
+        },
+        {
+          "url": "https://dansenshus.se/program/dansmassan-2026/",
+          "label": "Dansmässan 2026 En heldag med scenkonst, möten och nätverkande – med fokus dans för barn och unga! Läs mer",
+          "unverified": true
+        },
+        {
+          "url": "https://dansenshus.se/biljettinformation/biljetter/",
+          "label": "Biljetter",
+          "unverified": true
+        }
+      ],
+      "editorial_review_status": "NOT_REVIEWED",
+      "note": "Index reachability and links are NOT a reviewed event search; editor must inspect actual dated original event pages."
+    },
+    {
+      "source_id": "kulturhuset",
+      "source_name": "Kulturhuset Stadsteatern",
+      "source_type": "organizer",
+      "discovery_priority": "recurring",
+      "attempted_urls": [
+        "https://kulturhusetstadsteatern.se/"
+      ],
+      "attempts": [
+        {
+          "url": "https://kulturhusetstadsteatern.se/",
+          "final_url": "https://kulturhusetstadsteatern.se/",
+          "http_code": 200,
+          "status": "reachable",
+          "page_title": "Kulturhuset Stadsteatern | Kulturhuset Stadsteatern",
+          "html_bytes_seen": 132959,
+          "seconds": 1.13,
+          "attempt": 1
+        }
+      ],
+      "probe_status": "index_reachable",
+      "page_titles": [
+        "Kulturhuset Stadsteatern | Kulturhuset Stadsteatern"
+      ],
+      "candidate_links": [
+        {
+          "url": "https://kulturhusetstadsteatern.se/utstallningar",
+          "label": "Utställningar",
+          "unverified": true
+        },
+        {
+          "url": "https://kulturhusetstadsteatern.se/konserter",
+          "label": "Konserter",
+          "unverified": true
+        },
+        {
+          "url": "https://kulturhusetstadsteatern.se/samtal-debatt",
+          "label": "Samtal & debatt",
+          "unverified": true
+        },
+        {
+          "url": "https://kulturhusetstadsteatern.se/sergels-torg/biljettinformation",
+          "label": "Biljettinformation",
+          "unverified": true
+        },
+        {
+          "url": "https://kulturhusetstadsteatern.se/skolbesok/skolbiljetter",
+          "label": "Skolbiljetter",
+          "unverified": true
+        },
+        {
+          "url": "https://kulturhusetstadsteatern.se/kalender",
+          "label": "Kalender & Biljetter",
+          "unverified": true
+        },
+        {
+          "url": "https://kulturhusetstadsteatern.se/mina-favourite-events",
+          "label": "Mina favoriter",
+          "unverified": true
+        },
+        {
+          "url": "https://kulturhusetstadsteatern.se/utstallningar/omfamnad",
+          "label": "Läs mer",
+          "unverified": true
+        },
+        {
+          "url": "https://kulturhusetstadsteatern.se/utstallningar/performance-i-omfamnad",
+          "label": "Utställningar Image Performance i Omfamnad",
+          "unverified": true
+        },
+        {
+          "url": "https://kulturhusetstadsteatern.se/utstallningar/saul-leiter-assemblages",
+          "label": "Utställningar Image Saul Leiter – Assemblages",
+          "unverified": true
+        },
+        {
+          "url": "https://kulturhusetstadsteatern.se/utstallningar/mot-konstnarerna-i-omfamnad",
+          "label": "Utställningar Image Möt konstnärerna i Omfamnad",
+          "unverified": true
+        },
+        {
+          "url": "https://kulturhusetstadsteatern.se/utstallningar/dimitra-konstantinidi-stockholmskartan",
+          "label": "Utställningar Image Dimitra Konstantinidi – Stockh...",
+          "unverified": true
+        },
+        {
+          "url": "https://kulturhusetstadsteatern.se/skapa/skapa-din-egen-karta-over-stockholm-workshop-i-textil",
+          "label": "Skapa Image Skapa din egen karta över Stoc...",
+          "unverified": true
+        },
+        {
+          "url": "https://kulturhusetstadsteatern.se/utstallningar/mot-celsing-arkitektur-och-konstvandring-i-kulturhuset",
+          "label": "Utställningar Image Möt Celsing! Arkitektur- och k...",
+          "unverified": true
+        },
+        {
+          "url": "https://kulturhusetstadsteatern.se/konserter/heinali-andriana-yaroslava-saienko-presenterar-hildegard",
+          "label": "Konserter Image Heinali & Andriana-Yaroslava S...",
+          "unverified": true
+        },
+        {
+          "url": "https://kulturhusetstadsteatern.se/konserter/lunchkonserter-med-kungliga-operan",
+          "label": "Konserter Image Lunchkonserter med Kungliga Op...",
+          "unverified": true
+        },
+        {
+          "url": "https://kulturhusetstadsteatern.se/konserter/sulaf",
+          "label": "Konserter Image Sulaf",
+          "unverified": true
+        },
+        {
+          "url": "https://kulturhusetstadsteatern.se/konserter/vieux-farka-toure",
+          "label": "Konserter Image Vieux Farka Touré",
+          "unverified": true
+        }
+      ],
+      "editorial_review_status": "NOT_REVIEWED",
+      "note": "Index reachability and links are NOT a reviewed event search; editor must inspect actual dated original event pages."
+    },
+    {
+      "source_id": "accelerator",
+      "source_name": "Accelerator",
+      "source_type": "organizer",
+      "discovery_priority": "recurring",
+      "attempted_urls": [
+        "https://acceleratorsu.art/"
+      ],
+      "attempts": [
+        {
+          "url": "https://acceleratorsu.art/",
+          "final_url": "https://acceleratorsu.art/",
+          "http_code": 200,
+          "status": "reachable",
+          "page_title": "Accelerator",
+          "html_bytes_seen": 35621,
+          "seconds": 0.59,
+          "attempt": 1
+        }
+      ],
+      "probe_status": "index_reachable",
+      "page_titles": [
+        "Accelerator"
+      ],
+      "candidate_links": [
+        {
+          "url": "https://acceleratorsu.art/utstallning/",
+          "label": "Utställningar",
+          "unverified": true
+        },
+        {
+          "url": "https://acceleratorsu.art/evenemang/",
+          "label": "Kalender",
+          "unverified": true
+        },
+        {
+          "url": "https://acceleratorsu.art/utstallning/aerpiemaahtoe/",
+          "label": "Aktuell utställning Aerpiemaahtoe 12 sep – 14 feb 2027",
+          "unverified": true
+        },
+        {
+          "url": "https://acceleratorsu.art/utstallning/the-owl-of-minerva/",
+          "label": "Aktuell utställning 12 sep – 14 feb 2027 The Owl of Minerva →",
+          "unverified": true
+        },
+        {
+          "url": "https://acceleratorsu.art/utstallning",
+          "label": "Utställningar → Läs mer om tidigare och kommande utställningar här.",
+          "unverified": true
+        },
+        {
+          "url": "https://acceleratorsu.art/evenemang/filmvisning-en-ljuvlighet-fran-ingenstans/",
+          "label": "25 nov 18:30 Filmvisning: En ljuvlighet från ingenstans →",
+          "unverified": true
+        },
+        {
+          "url": "https://acceleratorsu.art/evenemang/15-min-intro/",
+          "label": "28 nov – 29 nov 14:00 15 min intro varje lördag och söndag →",
+          "unverified": true
+        },
+        {
+          "url": "https://acceleratorsu.art/evenemang/performance-oberg-arvefjord-12/",
+          "label": "Performance: Öberg/Arvefjord →",
+          "unverified": true
+        },
+        {
+          "url": "https://acceleratorsu.art/",
+          "label": "Accelerator 2026",
+          "unverified": true
+        }
+      ],
+      "editorial_review_status": "NOT_REVIEWED",
+      "note": "Index reachability and links are NOT a reviewed event search; editor must inspect actual dated original event pages."
+    },
+    {
+      "source_id": "bonniers-konsthall",
+      "source_name": "Bonniers Konsthall",
+      "source_type": "organizer",
+      "discovery_priority": "recurring",
+      "attempted_urls": [
+        "https://bonnierskonsthall.se/"
+      ],
+      "attempts": [
+        {
+          "url": "https://bonnierskonsthall.se/",
+          "final_url": "https://bonnierskonsthall.se/",
+          "http_code": 200,
+          "status": "reachable",
+          "page_title": "Bonniers Konsthall Bonniers Konsthall",
+          "html_bytes_seen": 208477,
+          "seconds": 0.39,
+          "attempt": 1
+        }
+      ],
+      "probe_status": "index_reachable",
+      "page_titles": [
+        "Bonniers Konsthall Bonniers Konsthall"
+      ],
+      "candidate_links": [
+        {
+          "url": "https://bonnierskonsthall.se/utstallningar/",
+          "label": "Utställningar",
+          "unverified": true
+        },
+        {
+          "url": "https://bonnierskonsthall.se/utstallningar/tidigare/",
+          "label": "Tidigare",
+          "unverified": true
+        },
+        {
+          "url": "https://bonnierskonsthall.se/kalender/",
+          "label": "Kalender",
+          "unverified": true
+        },
+        {
+          "url": "https://bonnierskonsthall.se/kalender/barn-familj/",
+          "label": "Barn och familj",
+          "unverified": true
+        },
+        {
+          "url": "https://bonnierskonsthall.se/kalender/medlemmar/",
+          "label": "Medlemmar",
+          "unverified": true
+        },
+        {
+          "url": "https://bonnierskonsthall.se/kalender/program/",
+          "label": "Program",
+          "unverified": true
+        },
+        {
+          "url": "https://bonnierskonsthall.se/kalender/visningar/",
+          "label": "Visningar",
+          "unverified": true
+        },
+        {
+          "url": "https://bonnierskonsthall.se/utstallning/maria-bonnier-dahlins-stiftelses-stipendiater-2026-01/",
+          "label": "Maria Bonnier Dahlins Stiftelses stipendiater 2026",
+          "unverified": true
+        },
+        {
+          "url": "https://bonnierskonsthall.se/utstallning/keith-haring-for-maria/",
+          "label": "",
+          "unverified": true
+        },
+        {
+          "url": "https://bonnierskonsthall.se/utstallning/maria-bonnier-dahlins-stiftelses-stipendiater-2026/",
+          "label": "Maria Bonnier Dahlins Stiftelses stipendiater 2026",
+          "unverified": true
+        }
+      ],
+      "editorial_review_status": "NOT_REVIEWED",
+      "note": "Index reachability and links are NOT a reviewed event search; editor must inspect actual dated original event pages."
+    },
+    {
+      "source_id": "fargfabriken",
+      "source_name": "Färgfabriken",
+      "source_type": "organizer",
+      "discovery_priority": "recurring",
+      "attempted_urls": [
+        "https://fargfabriken.se/"
+      ],
+      "attempts": [
+        {
+          "url": "https://fargfabriken.se/",
+          "final_url": "https://fargfabriken.se/sv/",
+          "http_code": 200,
+          "status": "reachable",
+          "page_title": "Färgfabriken konsthall Färgfabriken konsthall",
+          "html_bytes_seen": 210830,
+          "seconds": 1.62,
+          "attempt": 1
+        }
+      ],
+      "probe_status": "index_reachable",
+      "page_titles": [
+        "Färgfabriken konsthall Färgfabriken konsthall"
+      ],
+      "candidate_links": [
+        {
+          "url": "https://fargfabriken.se/sv/lokal/",
+          "label": "Lokal och event",
+          "unverified": true
+        }
+      ],
+      "editorial_review_status": "NOT_REVIEWED",
+      "note": "Index reachability and links are NOT a reviewed event search; editor must inspect actual dated original event pages."
+    },
+    {
+      "source_id": "stockholm-filmfestival",
+      "source_name": "Stockholm International Film Festival",
+      "source_type": "organizer",
+      "discovery_priority": "recurring",
+      "attempted_urls": [
+        "https://www.stockholmfilmfestival.se/en/festival"
+      ],
+      "attempts": [
+        {
+          "url": "https://www.stockholmfilmfestival.se/en/festival",
+          "final_url": "https://www.stockholmfilmfestival.se/en/festival",
+          "http_code": 200,
+          "status": "reachable",
+          "page_title": "Stockholm International Film Festival Stockholm International Film Festival",
+          "html_bytes_seen": 11798,
+          "seconds": 0.62,
+          "attempt": 1
+        }
+      ],
+      "probe_status": "index_reachable",
+      "page_titles": [
+        "Stockholm International Film Festival Stockholm International Film Festival"
+      ],
+      "candidate_links": [],
+      "editorial_review_status": "NOT_REVIEWED",
+      "note": "Index reachability and links are NOT a reviewed event search; editor must inspect actual dated original event pages."
+    },
+    {
+      "source_id": "sound-of-stockholm",
+      "source_name": "Sound of Stockholm",
+      "source_type": "organizer",
+      "discovery_priority": "recurring",
+      "attempted_urls": [
+        "https://soundofstockholm.se/"
+      ],
+      "attempts": [
+        {
+          "url": "https://soundofstockholm.se/",
+          "final_url": "https://soundofstockholm.se/",
+          "http_code": 200,
+          "status": "reachable",
+          "page_title": "Sound of Stockholm 2026 Sound of Stockholm 2026",
+          "html_bytes_seen": 260379,
+          "seconds": 0.11,
+          "attempt": 1
+        }
+      ],
+      "probe_status": "index_reachable",
+      "page_titles": [
+        "Sound of Stockholm 2026 Sound of Stockholm 2026"
+      ],
+      "candidate_links": [
+        {
+          "url": "https://secure.tickster.com/6e7myjw42zhlza1",
+          "label": "Tickets",
+          "unverified": true
+        },
+        {
+          "url": "https://secure.tickster.com/sv/pmkb420wgpwukxd/products",
+          "label": "Tickets",
+          "unverified": true
+        },
+        {
+          "url": "https://secure.tickster.com/sv/f17mmdjb8gudjrb/products",
+          "label": "Tickets",
+          "unverified": true
+        },
+        {
+          "url": "https://secure.tickster.com/sv/zct6h1ve3ffaatg/products",
+          "label": "Tickets",
+          "unverified": true
+        },
+        {
+          "url": "https://secure.tickster.com/en/ll0g9p87yh0t57d/products",
+          "label": "Tickets",
+          "unverified": true
+        },
+        {
+          "url": "https://secure.tickster.com/sv/u0457bk67t0b9be/products",
+          "label": "Festival Pass",
+          "unverified": true
+        }
+      ],
+      "editorial_review_status": "NOT_REVIEWED",
+      "note": "Index reachability and links are NOT a reviewed event search; editor must inspect actual dated original event pages."
+    },
+    {
+      "source_id": "andētāg",
+      "source_name": "ANDETAG",
+      "source_type": "organizer",
+      "discovery_priority": "recurring",
+      "attempted_urls": [
+        "https://andetag.se/"
+      ],
+      "attempts": [
+        {
+          "url": "https://andetag.se/",
+          "status": "connection_error",
+          "error": "<urlopen error [Errno -5] No address associated with hostname>",
+          "seconds": 0.22,
+          "attempt": 1
+        },
+        {
+          "url": "https://andetag.se/",
+          "status": "connection_error",
+          "error": "<urlopen error [Errno -5] No address associated with hostname>",
+          "seconds": 0.21,
+          "attempt": 2
+        }
+      ],
+      "probe_status": "index_unavailable",
+      "page_titles": [],
+      "candidate_links": [],
+      "editorial_review_status": "NOT_REVIEWED",
+      "note": "Index reachability and links are NOT a reviewed event search; editor must inspect actual dated original event pages."
+    },
+    {
+      "source_id": "visit-stockholm",
+      "source_name": "Visit Stockholm events index",
+      "source_type": "aggregator",
+      "discovery_priority": "aggregator-discovery",
+      "attempted_urls": [
+        "https://www.visitstockholm.com/events/"
+      ],
+      "attempts": [
+        {
+          "url": "https://www.visitstockholm.com/events/",
+          "final_url": "https://www.visitstockholm.com/events/",
+          "http_code": 200,
+          "status": "reachable",
+          "page_title": "",
+          "html_bytes_seen": 48309,
+          "seconds": 0.71,
+          "attempt": 1
+        }
+      ],
+      "probe_status": "index_reachable",
+      "page_titles": [
+        ""
+      ],
+      "candidate_links": [],
+      "editorial_review_status": "NOT_REVIEWED",
+      "note": "Index reachability and links are NOT a reviewed event search; editor must inspect actual dated original event pages."
+    },
+    {
+      "source_id": "konstrhall-c",
+      "source_name": "Konsthall C",
+      "source_type": "organizer",
+      "discovery_priority": "recurring",
+      "attempted_urls": [
+        "https://konsthallc.se/"
+      ],
+      "attempts": [
+        {
+          "url": "https://konsthallc.se/",
+          "final_url": "https://www.konsthallc.se/",
+          "http_code": 200,
+          "status": "reachable",
+          "page_title": "Konsthall C",
+          "html_bytes_seen": 2586,
+          "seconds": 0.67,
+          "attempt": 1
+        }
+      ],
+      "probe_status": "index_reachable",
+      "page_titles": [
+        "Konsthall C"
+      ],
+      "candidate_links": [],
+      "editorial_review_status": "NOT_REVIEWED",
+      "note": "Index reachability and links are NOT a reviewed event search; editor must inspect actual dated original event pages."
+    },
+    {
+      "source_id": "index",
+      "source_name": "Index — The Swedish Contemporary Art Foundation",
+      "source_type": "organizer",
+      "discovery_priority": "recurring",
+      "attempted_urls": [
+        "https://indexfoundation.se/"
+      ],
+      "attempts": [
+        {
+          "url": "https://indexfoundation.se/",
+          "final_url": "https://indexfoundation.se/",
+          "http_code": 200,
+          "status": "reachable",
+          "page_title": "Index – The Swedish Contemporary Art Foundation Index – The Swedish Contemporary Art Foundation",
+          "html_bytes_seen": 12323,
+          "seconds": 0.68,
+          "attempt": 1
+        }
+      ],
+      "probe_status": "index_reachable",
+      "page_titles": [
+        "Index – The Swedish Contemporary Art Foundation Index – The Swedish Contemporary Art Foundation"
+      ],
+      "candidate_links": [
+        {
+          "url": "https://indexfoundation.se/exhibitions",
+          "label": "Exhibitions",
+          "unverified": true
+        },
+        {
+          "url": "https://indexfoundation.se/talks-and-events",
+          "label": "Talks and Events",
+          "unverified": true
+        },
+        {
+          "url": "https://indexfoundation.se/exhibitions/jjjjjerome-ellis-an-unfinished-calendar-that-commemorates-slaves-escaping-their-enslavers-1673-1886",
+          "label": "JJJJJerome Ellis: An unfinished calendar that commemorates slaves escaping their enslavers, 1673-1886",
+          "unverified": true
+        },
+        {
+          "url": "https://indexfoundation.se/exhibitions/pontus-pettersson-air",
+          "label": "",
+          "unverified": true
+        },
+        {
+          "url": "https://indexfoundation.se/talks-and-events/bookshop-situation-series-myriam-diatta-doing-creative-work-from-your-political-body",
+          "label": "",
+          "unverified": true
+        },
+        {
+          "url": "https://indexfoundation.se/etc/index-teen-advisory-board-awarded-the-lava-prize-for-literature-2026",
+          "label": "Index Teen Advisory Board awarded the Lava Prize for Literature 2026",
+          "unverified": true
+        },
+        {
+          "url": "https://indexfoundation.se/etc/jjjjjerome-ellis-in-frieze-forthcoming-exhibition-at-index",
+          "label": "JJJJJerome Ellis in Frieze, forthcoming exhibition at Index",
+          "unverified": true
+        },
+        {
+          "url": "https://indexfoundation.se/etc/isabella-tjaeder-at-sapieha-palace-symposium-2026",
+          "label": "Isabella Tjäder at Sapieha Palace Symposium 2026",
+          "unverified": true
+        }
+      ],
+      "editorial_review_status": "NOT_REVIEWED",
+      "note": "Index reachability and links are NOT a reviewed event search; editor must inspect actual dated original event pages."
+    },
+    {
+      "source_id": "mint",
+      "source_name": "Mint Stockholm",
+      "source_type": "organizer",
+      "discovery_priority": "recurring",
+      "attempted_urls": [
+        "https://mintstockholm.se/"
+      ],
+      "attempts": [
+        {
+          "url": "https://mintstockholm.se/",
+          "status": "connection_error",
+          "error": "<urlopen error [Errno -2] Name or service not known>",
+          "seconds": 0.04,
+          "attempt": 1
+        },
+        {
+          "url": "https://mintstockholm.se/",
+          "status": "connection_error",
+          "error": "<urlopen error [Errno -2] Name or service not known>",
+          "seconds": 0.04,
+          "attempt": 2
+        }
+      ],
+      "probe_status": "index_unavailable",
+      "page_titles": [],
+      "candidate_links": [],
+      "editorial_review_status": "NOT_REVIEWED",
+      "note": "Index reachability and links are NOT a reviewed event search; editor must inspect actual dated original event pages."
+    },
+    {
+      "source_id": "lumen-project",
+      "source_name": "Lumen Project",
+      "source_type": "organizer",
+      "discovery_priority": "personal-favorite-highest",
+      "attempted_urls": [
+        "https://lumenproject.se/events/"
+      ],
+      "attempts": [
+        {
+          "url": "https://lumenproject.se/events/",
+          "final_url": "https://lumenproject.se/events/",
+          "http_code": 200,
+          "status": "reachable",
+          "page_title": "Events · Lumen Project Events · Lumen Project",
+          "html_bytes_seen": 23908,
+          "seconds": 0.18,
+          "attempt": 1
+        }
+      ],
+      "probe_status": "index_reachable",
+      "page_titles": [
+        "Events · Lumen Project Events · Lumen Project"
+      ],
+      "candidate_links": [
+        {
+          "url": "https://lumenproject.se/events/",
+          "label": "Skip to content",
+          "unverified": true
+        },
+        {
+          "url": "https://lumenproject.se/events/lumen-project-spring-282/",
+          "label": "Lumen Project / Spring 28.2 Upcoming Sunday, February 28, 2027 · 15:00-21:00 · Eric Ericsonhallen · Stockholm",
+          "unverified": true
+        },
+        {
+          "url": "https://lumenproject.se/events/lumen-project-autumn-1511/",
+          "label": "Lumen Project x Nordiska Museet 19:00-21:00 · Nordiska museet · Stockholm",
+          "unverified": true
+        },
+        {
+          "url": "https://lumenproject.se/events/lumen-autumn/",
+          "label": "Lumen Project / Autumn 18.9 18:30-21:00 · Markuskyrkan · Stockholm",
+          "unverified": true
+        },
+        {
+          "url": "https://lumenproject.se/events/lumen-project-spring-222/",
+          "label": "Lumen Project / Spring 22.2 15:00-21:00 · Eric Ericsonhallen · Stockholm",
+          "unverified": true
+        },
+        {
+          "url": "https://lumenproject.se/events/lumen-project-winter-2112/",
+          "label": "Lumen Project / Winter 21.12 18:00-20:30 · Eric Ericsonhallen · Stockholm",
+          "unverified": true
+        },
+        {
+          "url": "https://lumenproject.se/events/lumen-project-hosoi/",
+          "label": "Lumen Project × Hosoi 17:00-20:00 · Hosoi · Stockholm",
+          "unverified": true
+        },
+        {
+          "url": "https://lumenproject.se/events/lumen-project-spring-64/",
+          "label": "Lumen Project / Spring 6.4 15:00-21:30 · Eric Ericsonhallen · Stockholm",
+          "unverified": true
+        },
+        {
+          "url": "https://lumenproject.se/events/lumen-project-winter-1512/",
+          "label": "Lumen Project / Winter 15.12 18:00-19:30 · Eric Ericsonhallen · Stockholm",
+          "unverified": true
+        },
+        {
+          "url": "https://lumenproject.se/events/fujita-lisa-stenberg/",
+          "label": "Lumen Project x Fylkingen 19:30-20:30 · Hägerstensåsens Medborgarhus · Stockholm",
+          "unverified": true
+        },
+        {
+          "url": "https://lumenproject.se/events/lumen-project-spring-332024-6h-festival/",
+          "label": "Lumen Project / Spring 3.3 15:00-21:00 · Eric Ericsonhallen · Stockholm",
+          "unverified": true
+        },
+        {
+          "url": "https://lumenproject.se/events/lumen-sunday-shida-shahabi-ryan-packard/",
+          "label": "Lumen Sunday / Shida Shahabi / Ryan Packard 18:00-20:00 · Eric Ericsonhallen · Stockholm",
+          "unverified": true
+        },
+        {
+          "url": "https://lumenproject.se/events/lumen-project-spring-123-6h-festival/",
+          "label": "Lumen Project / Spring 12.3 15:00-21:00 · Eric Ericsonhallen · Stockholm",
+          "unverified": true
+        },
+        {
+          "url": "https://lumenproject.se/events/isak-sundstrom-victoria-verseau/",
+          "label": "Lumen Sunday / Isak Sundström / Victoria Verseau 18:30-20:00 · Eric Ericsonhallen · Stockholm",
+          "unverified": true
+        },
+        {
+          "url": "https://lumenproject.se/events/alma-lov/",
+          "label": "Lumen Project x Alma Löv 20:00-22:00 · Alma Löv",
+          "unverified": true
+        },
+        {
+          "url": "https://lumenproject.se/events/lumen-project-spring-244-6h-festival/",
+          "label": "Lumen Project / Spring 24.4 15:00-21:00 · Eric Ericsonhallen · Stockholm",
+          "unverified": true
+        },
+        {
+          "url": "https://lumenproject.se/events/foerster-kramer-josefin-runsteen-andreaz-heden/",
+          "label": "Lumen / Winter 6.12 18:30-19:45 · Eric Ericsonhallen · Stockholm",
+          "unverified": true
+        },
+        {
+          "url": "https://lumenproject.se/events/sofie-birch-cara-tolmie/",
+          "label": "Lumen Monday / Sofie Birch / Cara Tolmie 18:30-19:45 · Eric Ericsonhallen · Stockholm",
+          "unverified": true
+        }
+      ],
+      "editorial_review_status": "NOT_REVIEWED",
+      "note": "Index reachability and links are NOT a reviewed event search; editor must inspect actual dated original event pages."
+    },
+    {
+      "source_id": "fallan",
+      "source_name": "Fållan",
+      "source_type": "organizer",
+      "discovery_priority": "recurring",
+      "attempted_urls": [
+        "https://www.fallan.nu/whats-on"
+      ],
+      "attempts": [
+        {
+          "url": "https://www.fallan.nu/whats-on",
+          "final_url": "https://www.fallan.nu/whats-on",
+          "http_code": 200,
+          "status": "reachable",
+          "page_title": "What's on – our upcoming events What's on – our upcoming events",
+          "html_bytes_seen": 154533,
+          "seconds": 0.53,
+          "attempt": 1
+        }
+      ],
+      "probe_status": "index_reachable",
+      "page_titles": [
+        "What's on – our upcoming events What's on – our upcoming events"
+      ],
+      "candidate_links": [
+        {
+          "url": "https://www.fallan.nu/whats-on",
+          "label": "What's on",
+          "unverified": true
+        },
+        {
+          "url": "https://www.fallan.nu/whats-on/omah-lay",
+          "label": "Concert Nov 24, 2026 Omah Lay Fållan Age: 18 DOORS: 19:00 TIME: BUY TICKETS Concert",
+          "unverified": true
+        },
+        {
+          "url": "https://www.fallan.nu/whats-on/thrown",
+          "label": "Concert Nov 27, 2026 thrown Fållan Age: 18 DOORS: 19:00 TIME: BUY TICKETS Concert",
+          "unverified": true
+        },
+        {
+          "url": "https://www.fallan.nu/whats-on/155kubik",
+          "label": "Club Nov 27, 2026 155KUBIK Lilla Fållan Age: 23 DOORS: TIME: 23-03 BUY TICKETS Club",
+          "unverified": true
+        },
+        {
+          "url": "https://www.fallan.nu/whats-on/graveyard",
+          "label": "Concert Nov 28, 2026 Graveyard & Blues Pills Fållan Age: 18 DOORS: 19:00 TIME: BUY TICKETS Concert",
+          "unverified": true
+        },
+        {
+          "url": "https://www.fallan.nu/whats-on/piassa-2",
+          "label": "Club Nov 28, 2026 Piassa Fållan Age: 23+ (21+) DOORS: TIME: 22-03 BUY TICKETS Club",
+          "unverified": true
+        },
+        {
+          "url": "https://www.fallan.nu/whats-on/artemas",
+          "label": "Concert Nov 29, 2026 Artemas Fållan Age: 18 (13+) DOORS: 19:00 TIME: BUY TICKETS Concert",
+          "unverified": true
+        },
+        {
+          "url": "https://www.fallan.nu/whats-on/valter-nilsson-2",
+          "label": "Concert Dec 3, 2026 Valter Nilsson Fållan Age: 18 DOORS: 19:00 TIME: BUY TICKETS Concert",
+          "unverified": true
+        },
+        {
+          "url": "https://www.fallan.nu/whats-on/valter-nilsson",
+          "label": "Concert Dec 4, 2026 Valter Nilsson Fållan Age: 18 DOORS: 19:00 TIME: SOLD OUT Concert",
+          "unverified": true
+        },
+        {
+          "url": "https://www.fallan.nu/whats-on/mind-enterprises",
+          "label": "Concert Dec 5, 2026 Mind Enterprises Fållan Age: 18 DOORS: 19:00 TIME: BUY TICKETS Concert",
+          "unverified": true
+        },
+        {
+          "url": "https://www.fallan.nu/whats-on/eken-marknad---julmarknad",
+          "label": "Market Dec 5, 2026 Eken Marknad - Christmas Market Förbindelsehallen Age: All ages DOORS: TIME: 12-17 BUY TICKETS Other",
+          "unverified": true
+        },
+        {
+          "url": "https://www.fallan.nu/whats-on/a-night-with-kelly",
+          "label": "Club Dec 5, 2026 A Night with Kelly BAR15 Age: 18 DOORS: TIME: 22-03 BUY TICKETS Club",
+          "unverified": true
+        },
+        {
+          "url": "https://www.fallan.nu/whats-on/eken-marknad---christmas-market",
+          "label": "Market Dec 6, 2026 Eken Marknad - Christmas Market Förbindelsehallen Age: All ages DOORS: TIME: 11-16 BUY TICKETS Other",
+          "unverified": true
+        },
+        {
+          "url": "https://www.fallan.nu/whats-on/untitled-presents-major-league-djz-jamiie-lews",
+          "label": "Club Dec 11, 2026 UNTITLED Presents: Major League DJz, Jamiie, Lews Fållan Age: 18 DOORS: TIME: 21-03 BUY TICKETS Club",
+          "unverified": true
+        },
+        {
+          "url": "https://www.fallan.nu/whats-on/jonas-lundqvist",
+          "label": "Concert Dec 12, 2026 Jonas Lundqvist Fållan Age: 18 DOORS: 19:00 TIME: BUY TICKETS Concert",
+          "unverified": true
+        },
+        {
+          "url": "https://www.fallan.nu/whats-on/eken-marknad---christmas-market-2",
+          "label": "Market Dec 12, 2026 Eken Marknad - Christmas Market Förbindelsehallen Age: All ages DOORS: TIME: 11-17 BUY TICKETS Other",
+          "unverified": true
+        },
+        {
+          "url": "https://www.fallan.nu/whats-on/eken-marknad---christmas-market-3",
+          "label": "Market Dec 13, 2026 Eken Marknad - Christmas Market Förbindelsehallen Age: All ages DOORS: TIME: 11-17 BUY TICKETS Other",
+          "unverified": true
+        },
+        {
+          "url": "https://www.fallan.nu/whats-on/cory-wong",
+          "label": "Concert Dec 17, 2026 Cory Wong Fållan Age: 18 DOORS: 19:00 TIME: BUY TICKETS Concert",
+          "unverified": true
+        }
+      ],
+      "editorial_review_status": "NOT_REVIEWED",
+      "note": "Index reachability and links are NOT a reviewed event search; editor must inspect actual dated original event pages."
+    },
+    {
+      "source_id": "nattljud",
+      "source_name": "Nattljud Stockholm",
+      "source_type": "aggregator",
+      "discovery_priority": "aggregator-discovery",
+      "attempted_urls": [
+        "https://nattljud.se/en/"
+      ],
+      "attempts": [
+        {
+          "url": "https://nattljud.se/en/",
+          "http_code": 404,
+          "status": "http_error",
+          "error": "HTTP 404",
+          "seconds": 0.54,
+          "attempt": 1
+        },
+        {
+          "url": "https://nattljud.se/en/",
+          "http_code": 404,
+          "status": "http_error",
+          "error": "HTTP 404",
+          "seconds": 0.31,
+          "attempt": 2
+        }
+      ],
+      "probe_status": "index_unavailable",
+      "page_titles": [],
+      "candidate_links": [],
+      "editorial_review_status": "NOT_REVIEWED",
+      "note": "Index reachability and links are NOT a reviewed event search; editor must inspect actual dated original event pages."
+    },
+    {
+      "source_id": "resident-advisor",
+      "source_name": "Resident Advisor — Stockholm",
+      "source_type": "aggregator",
+      "discovery_priority": "aggregator-discovery",
+      "attempted_urls": [
+        "https://ra.co/events/se/Stockholm"
+      ],
+      "attempts": [
+        {
+          "url": "https://ra.co/events/se/Stockholm",
+          "http_code": 403,
+          "status": "blocked",
+          "error": "HTTP 403",
+          "seconds": 0.04,
+          "attempt": 1
+        },
+        {
+          "url": "https://ra.co/events/se/Stockholm",
+          "http_code": 403,
+          "status": "blocked",
+          "error": "HTTP 403",
+          "seconds": 0.08,
+          "attempt": 2
+        }
+      ],
+      "probe_status": "index_unavailable",
+      "page_titles": [],
+      "candidate_links": [],
+      "editorial_review_status": "NOT_REVIEWED",
+      "note": "Index reachability and links are NOT a reviewed event search; editor must inspect actual dated original event pages."
+    },
+    {
+      "source_id": "evenemangstockholm",
+      "source_name": "Evenemang Stockholm",
+      "source_type": "aggregator",
+      "discovery_priority": "aggregator-discovery",
+      "attempted_urls": [
+        "https://www.evenemangstockholm.se/karta"
+      ],
+      "attempts": [
+        {
+          "url": "https://www.evenemangstockholm.se/karta",
+          "final_url": "https://www.evenemangstockholm.se/karta",
+          "http_code": 200,
+          "status": "reachable",
+          "page_title": "Karta över evenemang i Stockholm Karta över evenemang i Stockholm",
+          "html_bytes_seen": 188164,
+          "seconds": 0.24,
+          "attempt": 1
+        }
+      ],
+      "probe_status": "index_reachable",
+      "page_titles": [
+        "Karta över evenemang i Stockholm Karta över evenemang i Stockholm"
+      ],
+      "candidate_links": [
+        {
+          "url": "https://www.evenemangstockholm.se/november",
+          "label": "November",
+          "unverified": true
+        },
+        {
+          "url": "https://www.evenemangstockholm.se/december",
+          "label": "December",
+          "unverified": true
+        },
+        {
+          "url": "https://www.evenemangstockholm.se/januari",
+          "label": "Januari 2027",
+          "unverified": true
+        },
+        {
+          "url": "https://www.evenemangstockholm.se/kalender",
+          "label": "Kalendern, dag för dag →",
+          "unverified": true
+        },
+        {
+          "url": "https://www.evenemangstockholm.se/konserter",
+          "label": "Konserter",
+          "unverified": true
+        },
+        {
+          "url": "https://www.evenemangstockholm.se/utstallningar",
+          "label": "Utställningar",
+          "unverified": true
+        },
+        {
+          "url": "https://www.evenemangstockholm.se/guider/julkonserter-lucia-stockholm",
+          "label": "Lucia och julkonserter",
+          "unverified": true
+        },
+        {
+          "url": "https://www.evenemangstockholm.se/event/candlelight-tribute-to-queen-and-the-bea-berns-salonger-2026-11-22-fever-651666-20261122",
+          "label": "22 nov Candlelight: Tribute to Queen and The Beatles Berns sön 22 nov · 19.30",
+          "unverified": true
+        },
+        {
+          "url": "https://www.evenemangstockholm.se/event/22-11-sofia-hk-debaser-nova-debaser-nova-2026-11-22-ts_5jh4y7la7luppzx",
+          "label": "2 22 nov 22/11 SOFIA HK | DEBASER NOVA Debaser Nova sön 22 nov · 19.00",
+          "unverified": true
+        },
+        {
+          "url": "https://www.evenemangstockholm.se/event/mariam-the-believer-nalen-stora-salen-stockholm-2026-11-22-ts_trezjlvjx8bk7f7",
+          "label": "M 22 nov Mariam The Believer Nalen sön 22 nov · 20.00",
+          "unverified": true
+        },
+        {
+          "url": "https://www.visitstockholm.com/events/ndidi-dike-rare-earth-rare-justice/next/",
+          "label": "N Pågår Ndidi Dike – Rare Earth Rare Justice Lövholmsbrinken 1 Pågår",
+          "unverified": true
+        },
+        {
+          "url": "https://www.visitstockholm.com/events/on-screen-the-node-skanish-by-akram-mahmod/next/",
+          "label": "O Pågår On Screen@ The Node: SKÅNISH by Akram Mahmod On Screen@ The Node: SKÅNISH by Akram Mahmod Pågår",
+          "unverified": true
+        },
+        {
+          "url": "https://www.visitstockholm.com/events/peter-hageras-album-covers-watercolors-flying-sauc/next/",
+          "label": "P Pågår Peter Hägerås – “Album Covers, Watercolors & Flying Saucers” Östgötagatan 39 Pågår",
+          "unverified": true
+        },
+        {
+          "url": "https://www.visitstockholm.com/events/stockholms-internationella-filmfestival/next/",
+          "label": "S Pågår Stockholm International Film Festival 2026 Stockholm International Film Festival 2026 Pågår",
+          "unverified": true
+        },
+        {
+          "url": "https://www.visitstockholm.com/events/after-hours/next/",
+          "label": "A Pågår After Hours – Art Evenings at Artipelag Artipelagstigen 1 Pågår",
+          "unverified": true
+        },
+        {
+          "url": "https://www.visitstockholm.com/events/an-oyster-affair-at-americain/next/",
+          "label": "A Pågår An Oyster Affair at Americain Hötorget 13-15 Pågår · Gratis",
+          "unverified": true
+        },
+        {
+          "url": "https://www.visitstockholm.com/events/jazz-session-at-haymarket/next/",
+          "label": "J Pågår Jazz Session at Haymarket Hötorget 13-15 Pågår · Gratis",
+          "unverified": true
+        },
+        {
+          "url": "https://www.visitstockholm.com/events/campfire-bar-quiz-2/next/",
+          "label": "C Pågår Campfire Bar Quiz Brunkebergstorg 9 Pågår · Gratis",
+          "unverified": true
+        }
+      ],
+      "editorial_review_status": "NOT_REVIEWED",
+      "note": "Index reachability and links are NOT a reviewed event search; editor must inspect actual dated original event pages."
+    },
+    {
+      "source_id": "slakthusguiden",
+      "source_name": "Slakthusguiden",
+      "source_type": "aggregator",
+      "discovery_priority": "aggregator-discovery",
+      "attempted_urls": [
+        "https://slakthusguiden.se/en/evenemang"
+      ],
+      "attempts": [
+        {
+          "url": "https://slakthusguiden.se/en/evenemang",
+          "final_url": "https://slakthusguiden.se/en/evenemang",
+          "http_code": 200,
+          "status": "reachable",
+          "page_title": "Events in Slakthusområdet – concerts, clubs and matches Events in Slakthusområdet – concerts, clubs and matches",
+          "html_bytes_seen": 600000,
+          "seconds": 1.1,
+          "attempt": 1
+        }
+      ],
+      "probe_status": "index_reachable",
+      "page_titles": [
+        "Events in Slakthusområdet – concerts, clubs and matches Events in Slakthusområdet – concerts, clubs and matches"
+      ],
+      "candidate_links": [
+        {
+          "url": "https://slakthusguiden.se/en/guide/fore-och-efter-konserten",
+          "label": "Where to eat before and after the concert in Slakthusområdet?",
+          "unverified": true
+        },
+        {
+          "url": "https://slakthusguiden.se/en/evenemang",
+          "label": "November",
+          "unverified": true
+        },
+        {
+          "url": "https://globenshopping.se/nyheter/bakluckeloppis-21-22-nov/",
+          "label": "Bakluckeloppis Globen Shopping",
+          "unverified": true
+        },
+        {
+          "url": "https://aviciiarena.se/evenemang/",
+          "label": "Konserter i Avicii Arena",
+          "unverified": true
+        },
+        {
+          "url": "https://www.fallan.nu/whats-on",
+          "label": "Konserter och klubb på Fållan",
+          "unverified": true
+        },
+        {
+          "url": "https://slakthusen.se/",
+          "label": "Konserter på Hus 7",
+          "unverified": true
+        },
+        {
+          "url": "https://slakthusetclub.se/events/",
+          "label": "Klubbkvällar på Slakthuset",
+          "unverified": true
+        },
+        {
+          "url": "https://3arena.se/evenemang/",
+          "label": "Konserter och evenemang på 3Arena",
+          "unverified": true
+        },
+        {
+          "url": "https://annexet.se/evenemang/",
+          "label": "Konserter i Annexet",
+          "unverified": true
+        },
+        {
+          "url": "https://hovetarena.se/evenemang/sport/djurgarden-hockey/",
+          "label": "Djurgården Hockey, hemmamatcher på Hovet våren 2027",
+          "unverified": true
+        },
+        {
+          "url": "https://hovetarena.se/evenemang/sport/aik-hockey/",
+          "label": "AIK Hockey, hemmamatcher på Hovet våren 2027",
+          "unverified": true
+        },
+        {
+          "url": "https://aviciiarena.se/evenemang/sport/djurgarden-hockey/",
+          "label": "Djurgården Hockey, hemmamatcher i Avicii Arena våren 2027",
+          "unverified": true
+        },
+        {
+          "url": "https://slakthusetclub.se/event/modem-teaser-party-stockholm-by-dissident-and-ahoora",
+          "label": "MoDem Teaser Party Stockholm",
+          "unverified": true
+        }
+      ],
+      "editorial_review_status": "NOT_REVIEWED",
+      "note": "Index reachability and links are NOT a reviewed event search; editor must inspect actual dated original event pages."
+    },
+    {
+      "source_id": "luma-stockholm",
+      "source_name": "Luma — Stockholm public events",
+      "source_type": "aggregator",
+      "discovery_priority": "aggregator-discovery-high",
+      "attempted_urls": [
+        "https://luma.com/stockholm",
+        "https://luma.com/discover/stockholm/arts",
+        "https://luma.com/discover/stockholm/tech",
+        "https://luma.com/stockholmdesign"
+      ],
+      "attempts": [
+        {
+          "url": "https://luma.com/stockholm",
+          "final_url": "https://luma.com/stockholm",
+          "http_code": 200,
+          "status": "reachable",
+          "page_title": "Popular events in Stockholm · Events Calendar Popular events in Stockholm · Events Calendar",
+          "html_bytes_seen": 410328,
+          "seconds": 0.47,
+          "attempt": 1
+        },
+        {
+          "url": "https://luma.com/discover/stockholm/arts",
+          "final_url": "https://luma.com/discover/stockholm/arts",
+          "http_code": 200,
+          "status": "reachable",
+          "page_title": "Arts & Culture Events in Stockholm · Luma Arts & Culture Events in Stockholm · Luma",
+          "html_bytes_seen": 497280,
+          "seconds": 0.74,
+          "attempt": 1
+        },
+        {
+          "url": "https://luma.com/discover/stockholm/tech",
+          "final_url": "https://luma.com/discover/stockholm/tech",
+          "http_code": 200,
+          "status": "reachable",
+          "page_title": "Tech Events in Stockholm · Luma Tech Events in Stockholm · Luma",
+          "html_bytes_seen": 424510,
+          "seconds": 0.46,
+          "attempt": 1
+        },
+        {
+          "url": "https://luma.com/stockholmdesign",
+          "final_url": "https://luma.com/stockholmdesign",
+          "http_code": 200,
+          "status": "reachable",
+          "page_title": "Stockholm Design & UX Events · Events Calendar Stockholm Design & UX Events · Events Calendar",
+          "html_bytes_seen": 289641,
+          "seconds": 0.49,
+          "attempt": 1
+        }
+      ],
+      "probe_status": "index_reachable",
+      "page_titles": [
+        "Popular events in Stockholm · Events Calendar Popular events in Stockholm · Events Calendar",
+        "Arts & Culture Events in Stockholm · Luma Arts & Culture Events in Stockholm · Luma",
+        "Tech Events in Stockholm · Luma Tech Events in Stockholm · Luma",
+        "Stockholm Design & UX Events · Events Calendar Stockholm Design & UX Events · Events Calendar"
+      ],
+      "candidate_links": [
+        {
+          "url": "https://luma.com/discover",
+          "label": "Discover Events",
+          "unverified": true
+        },
+        {
+          "url": "https://luma.com/founderslive-stockholm-2026-12",
+          "label": "",
+          "unverified": true
+        },
+        {
+          "url": "https://luma.com/stockholmdesign?k=c",
+          "label": "Stockholm Design & UX Events",
+          "unverified": true
+        }
+      ],
+      "editorial_review_status": "NOT_REVIEWED",
+      "note": "Index reachability and links are NOT a reviewed event search; editor must inspect actual dated original event pages."
+    },
+    {
+      "source_id": "meetup-stockholm",
+      "source_name": "Meetup — Stockholm",
+      "source_type": "aggregator",
+      "discovery_priority": "aggregator-discovery",
+      "attempted_urls": [
+        "https://www.meetup.com/find/se--stockholm/"
+      ],
+      "attempts": [
+        {
+          "url": "https://www.meetup.com/find/se--stockholm/",
+          "final_url": "https://www.meetup.com/find/se--stockholm/",
+          "http_code": 200,
+          "status": "reachable",
+          "page_title": "Events in Stockholm | Meetup Events in Stockholm | Meetup Bending Spoons",
+          "html_bytes_seen": 519728,
+          "seconds": 4.04,
+          "attempt": 1
+        }
+      ],
+      "probe_status": "index_reachable",
+      "page_titles": [
+        "Events in Stockholm | Meetup Events in Stockholm | Meetup Bending Spoons"
+      ],
+      "candidate_links": [
+        {
+          "url": "https://www.meetup.com/stockholm-rust/events/317161063/?eventOrigin=city_most_popular_event",
+          "label": "Rust Meetup @Lovable Thu, Nov 26 · 5:30 PM CET by Stockholm Rust",
+          "unverified": true
+        },
+        {
+          "url": "https://www.meetup.com/stockholm-mlops-community/events/317298343/?eventOrigin=city_most_popular_event",
+          "label": "#42 - Vultr Agent Runtime Hackathon Fri, Nov 27 · 9:00 AM CET by Stockholm MLOps Community",
+          "unverified": true
+        },
+        {
+          "url": "https://www.meetup.com/psychology-discussion-fika/events/317487897/?eventOrigin=city_most_popular_event",
+          "label": "Identity Wed, Nov 25 · 6:00 PM CET by Psychology Discussion Fika",
+          "unverified": true
+        },
+        {
+          "url": "https://www.meetup.com/stockholm-mlops-community/events/317353203/?eventOrigin=city_most_popular_event",
+          "label": "#44 - Stockholm MLOps Winterbash!!! Thu, Dec 10 · 5:00 PM CET by Stockholm MLOps Community",
+          "unverified": true
+        },
+        {
+          "url": "https://www.meetup.com/aws-stockholm/events/317470819/?eventOrigin=city_most_popular_event",
+          "label": "Developer Keynote AW Tue, Dec 1 · 6:00 PM CET by AWS User Group Stockholm",
+          "unverified": true
+        },
+        {
+          "url": "https://www.meetup.com/stockholm-storytelling-meetup-group/events/317173867/?eventOrigin=city_most_popular_event",
+          "label": "Storytelling after work @ Källarbyn - Evening tales Wed, Nov 25 · 5:30 PM CET by Stockholm Storytelling Meetup Group - English",
+          "unverified": true
+        },
+        {
+          "url": "https://www.meetup.com/stockholm-mlops-community/events/317314473/?eventOrigin=city_most_popular_event",
+          "label": "#43 - AI & Gaming Industry Thu, Dec 3 · 5:00 PM CET by Stockholm MLOps Community",
+          "unverified": true
+        },
+        {
+          "url": "https://www.meetup.com/stockholm-creative-people-meetup/events/317147744/?eventOrigin=city_most_popular_event",
+          "label": "Sketching Session: What's Behind the Magic Door Sun, Dec 6 · 11:00 AM CET by Stockholm Creative People Meetups",
+          "unverified": true
+        },
+        {
+          "url": "https://www.meetup.com/stockholm-speakers-club/events/317157355/?eventOrigin=city_events_today",
+          "label": "Public Speaking Training - Stockholm Speakers Club Mon, Nov 23 · 6:25 PM CET by Stockholm Speakers Club",
+          "unverified": true
+        },
+        {
+          "url": "https://www.meetup.com/intercambio/events/316539115/?eventOrigin=city_events_today",
+          "label": "Café português-sueco | Portugisisk-svenskt språkkafé Mon, Nov 23 · 5:30 PM CET by Language Exchange - STOCKHOLM",
+          "unverified": true
+        },
+        {
+          "url": "https://www.meetup.com/prata-svenska/events/316746979/?eventOrigin=city_events_today",
+          "label": "Prata svenska på Timmermansgården KLOCKAN 17.00 - 19.00 Mon, Nov 23 · 5:00 PM CET by Prata svenska med svenskar (Internationella Bekantskape",
+          "unverified": true
+        },
+        {
+          "url": "https://www.meetup.com/the-writers-collective/events/317519464/?eventOrigin=city_events_today",
+          "label": "Putting Words On Paper Mon, Nov 23 · 6:00 PM CET by The Writers' Collective",
+          "unverified": true
+        },
+        {
+          "url": "https://www.meetup.com/outinsthlm/events/317457776/?eventOrigin=city_events_today",
+          "label": "Monday Watchparty: Dinner and TV-series Mon, Nov 23 · 6:00 PM CET by 🏳️‍🌈 Out In: STHLM - The Queer Social Club of Stockholm",
+          "unverified": true
+        },
+        {
+          "url": "https://www.meetup.com/stockholm-science-and-spirituality-meetup-group/events/317470387/?eventOrigin=city_events_today",
+          "label": "Joyful Mondays Mon, Nov 23 · 5:00 PM CET by Stockholm Mindfulness and Compassion",
+          "unverified": true
+        },
+        {
+          "url": "https://www.meetup.com/stockholm-science-and-spirituality-meetup-group/events/317271854/?eventOrigin=city_events_today",
+          "label": "Monday Free Drop-in Meditation Mon, Nov 23 · 6:00 PM CET by Stockholm Mindfulness and Compassion",
+          "unverified": true
+        },
+        {
+          "url": "https://www.meetup.com/japanese-chess-in-stockholm/events/317150559/?eventOrigin=city_events_today",
+          "label": "@@Back in a cafe@@ Shogi in Stockholm Mon, Nov 23 · 5:30 PM CET by Japanese Chess in Stockholm",
+          "unverified": true
+        },
+        {
+          "url": "https://www.meetup.com/stockholm-expats-events/events/316992257/?eventOrigin=city_events_this_weekend",
+          "label": "Grow After Work – November Fri, Nov 27 · 6:00 PM CET by Stockholm Expat Events",
+          "unverified": true
+        },
+        {
+          "url": "https://www.meetup.com/stockholm-sprakfika-meetup-group/events/317482758/?eventOrigin=city_events_this_weekend",
+          "label": "Workshop Nationalmuseum! Vi målar! Tema: Kärlek i konsten. Sat, Nov 28 · 1:45 PM CET by IM Individuell Människohjälp",
+          "unverified": true
+        }
+      ],
+      "editorial_review_status": "NOT_REVIEWED",
+      "note": "Index reachability and links are NOT a reviewed event search; editor must inspect actual dated original event pages."
+    },
+    {
+      "source_id": "tickster-stockholm",
+      "source_name": "Tickster — Stockholm calendar",
+      "source_type": "aggregator",
+      "discovery_priority": "aggregator-discovery",
+      "attempted_urls": [
+        "https://www.tickster.com/se/sv/events/in/stockholm"
+      ],
+      "attempts": [
+        {
+          "url": "https://www.tickster.com/se/sv/events/in/stockholm",
+          "final_url": "https://www.tickster.com/se/sv/events/in/stockholm",
+          "http_code": 200,
+          "status": "reachable",
+          "page_title": "Evenemang - Tickster",
+          "html_bytes_seen": 37614,
+          "seconds": 2.76,
+          "attempt": 1
+        }
+      ],
+      "probe_status": "index_reachable",
+      "page_titles": [
+        "Evenemang - Tickster"
+      ],
+      "candidate_links": [
+        {
+          "url": "https://www.tickster.com/se/sv/events/in/stockholm",
+          "label": "Hoppa till innehåll",
+          "unverified": true
+        },
+        {
+          "url": "https://www.tickster.com/se/sv/events/upcoming",
+          "label": "Kommande evenemang",
+          "unverified": true
+        },
+        {
+          "url": "https://www.tickster.com/se/en/events/in/stockholm",
+          "label": "English",
+          "unverified": true
+        },
+        {
+          "url": "https://www.tickster.com/se/nb/events/in/stockholm",
+          "label": "Norsk",
+          "unverified": true
+        },
+        {
+          "url": "https://www.tickster.com/se/da/events/in/stockholm",
+          "label": "Dansk",
+          "unverified": true
+        },
+        {
+          "url": "https://www.tickster.com/se/sv/events/near/stockholm",
+          "label": "Evenemang nära Stockholm",
+          "unverified": true
+        },
+        {
+          "url": "https://www.tickster.com/se/sv/events/in/stockholm?sort=eventstart",
+          "label": "Datum",
+          "unverified": true
+        },
+        {
+          "url": "https://www.tickster.com/se/sv/events/in/stockholm?sort=relevance",
+          "label": "Relevans",
+          "unverified": true
+        },
+        {
+          "url": "https://www.tickster.com/se/sv/events/xdfayl7kdl45v84/2026-11-21/jul-i-palatset",
+          "label": "Jul i palatset",
+          "unverified": true
+        },
+        {
+          "url": "https://www.tickster.com/se/sv/events/5jh4y7la7luppzx/2026-11-22/22-11-sofia-hk-debaser-nova",
+          "label": "22/11 SOFIA HK | DEBASER NOVA",
+          "unverified": true
+        },
+        {
+          "url": "https://www.tickster.com/se/sv/events/trezjlvjx8bk7f7/2026-11-22/mariam-the-believer",
+          "label": "Mariam The Believer",
+          "unverified": true
+        },
+        {
+          "url": "https://www.tickster.com/se/sv/events/vhg2xu8elk5utrl/2026-11-23/entrebiljetter-tickets",
+          "label": "Entrébiljetter/Tickets",
+          "unverified": true
+        },
+        {
+          "url": "https://www.tickster.com/se/sv/events/9ln6j6yw5587nmk/2026-11-23/fotboll-pa-tradgarden-hammarby-ifk-goteborg",
+          "label": "FOTBOLL PÅ TRÄDGÅRDEN: HAMMARBY - IFK GÖTEBORG",
+          "unverified": true
+        },
+        {
+          "url": "https://www.tickster.com/se/sv/events/jpyk175p3elbycw/2026-11-23/15-baneff-2026-pass",
+          "label": "15. BANEFF 2026 PASS",
+          "unverified": true
+        },
+        {
+          "url": "https://www.tickster.com/se/sv/events/zzgpxpvwkmzhtjh/2026-11-23/cuvar-ikone-svetog-djordja-15-baneff-2026",
+          "label": "Cuvar ikone Svetog Djordja/15. BANEFF 2026",
+          "unverified": true
+        },
+        {
+          "url": "https://www.tickster.com/se/sv/events/dm0jb3g55t0ybgv/2026-11-23/ukraina-pa-vag-mot-fred",
+          "label": "Ukraina - på väg mot fred?",
+          "unverified": true
+        },
+        {
+          "url": "https://www.tickster.com/se/sv/events/x64cxk62mpwzwz5/2026-11-23/you-can-see-everything",
+          "label": "You Can See Everything",
+          "unverified": true
+        },
+        {
+          "url": "https://www.tickster.com/se/sv/events/ehldmjh2bwy40ge/2026-11-23/svarta-katten",
+          "label": "Svarta Katten",
+          "unverified": true
+        }
+      ],
+      "editorial_review_status": "NOT_REVIEWED",
+      "note": "Index reachability and links are NOT a reviewed event search; editor must inspect actual dated original event pages."
+    },
+    {
+      "source_id": "stockholm-events-cross-index",
+      "source_name": "Stockholm Events — cross-platform index",
+      "source_type": "aggregator",
+      "discovery_priority": "aggregator-secondary",
+      "attempted_urls": [
+        "https://stockholm-events.com/"
+      ],
+      "attempts": [
+        {
+          "url": "https://stockholm-events.com/",
+          "final_url": "https://stockholm-events.com/",
+          "http_code": 200,
+          "status": "reachable",
+          "page_title": "Stockholm Events - Discover Upcoming Events in Stockholm Stockholm Events - Discover Upcoming Events in Stockholm",
+          "html_bytes_seen": 4272,
+          "seconds": 0.16,
+          "attempt": 1
+        }
+      ],
+      "probe_status": "index_reachable",
+      "page_titles": [
+        "Stockholm Events - Discover Upcoming Events in Stockholm Stockholm Events - Discover Upcoming Events in Stockholm"
+      ],
+      "candidate_links": [],
+      "editorial_review_status": "NOT_REVIEWED",
+      "note": "Index reachability and links are NOT a reviewed event search; editor must inspect actual dated original event pages."
+    },
+    {
+      "source_id": "kollektivet-livet",
+      "source_name": "Kollektivet Livet",
+      "source_type": "organizer",
+      "discovery_priority": "recurring",
+      "attempted_urls": [
+        "https://kollektivetlivet.se/evenemang-biljetter/"
+      ],
+      "attempts": [
+        {
+          "url": "https://kollektivetlivet.se/evenemang-biljetter/",
+          "final_url": "https://kollektivetlivet.se/evenemang-biljetter/",
+          "http_code": 200,
+          "status": "reachable",
+          "page_title": "Evenemang & Biljetter – Kollektivet Livet",
+          "html_bytes_seen": 156726,
+          "seconds": 1.31,
+          "attempt": 1
+        }
+      ],
+      "probe_status": "index_reachable",
+      "page_titles": [
+        "Evenemang & Biljetter – Kollektivet Livet"
+      ],
+      "candidate_links": [
+        {
+          "url": "https://kollektivetlivet.se/evenemang-biljetter/",
+          "label": "Hoppa till innehåll",
+          "unverified": true
+        },
+        {
+          "url": "https://kollektivetlivet.se/event/employed-to-serve-cabal-employed-to-serve-cabalmall-stora-scen/",
+          "label": "Kommande event SÖN 22 NOV Employed to Serve + Cabal ›",
+          "unverified": true
+        },
+        {
+          "url": "https://kollektivetlivet.se/evenemang-biljetter/aldreevenemang/",
+          "label": "Äldre evenemang",
+          "unverified": true
+        },
+        {
+          "url": "https://kollektivetlivet.se/workshop/",
+          "label": "ANIÔ",
+          "unverified": true
+        },
+        {
+          "url": "https://kollektivetlivet.se/event/klubb-i-slottet-9/",
+          "label": "",
+          "unverified": true
+        },
+        {
+          "url": "https://tickets.nortic.se/ticket/show/354578",
+          "label": "Köp biljett",
+          "unverified": true
+        },
+        {
+          "url": "https://kollektivetlivet.se/event/dekis-records-pop-up/",
+          "label": "",
+          "unverified": true
+        },
+        {
+          "url": "https://kollektivetlivet.se/event/honeymilk/",
+          "label": "",
+          "unverified": true
+        },
+        {
+          "url": "https://tickets.nortic.se/ticket/show/359056",
+          "label": "Köp biljett",
+          "unverified": true
+        },
+        {
+          "url": "https://kollektivetlivet.se/event/master-boot-record-fulci-arottenbit/",
+          "label": "",
+          "unverified": true
+        },
+        {
+          "url": "https://secure.tickster.com/n41vj7kkd71mykm",
+          "label": "Köp biljett",
+          "unverified": true
+        },
+        {
+          "url": "https://kollektivetlivet.se/event/evanora-unlimited/",
+          "label": "",
+          "unverified": true
+        },
+        {
+          "url": "https://tickets.nortic.se/ticket/show/362059",
+          "label": "Köp biljett",
+          "unverified": true
+        },
+        {
+          "url": "https://kollektivetlivet.se/event/per-persson-nya-packet/",
+          "label": "",
+          "unverified": true
+        },
+        {
+          "url": "https://tickets.nortic.se/ticket/show/357710",
+          "label": "Köp biljett",
+          "unverified": true
+        },
+        {
+          "url": "https://kollektivetlivet.se/event/aurell-gullberg-killarna-mot-tjejerna/",
+          "label": "",
+          "unverified": true
+        },
+        {
+          "url": "https://kollektivetlivet.se/event/klubb-i-slottet-10/",
+          "label": "",
+          "unverified": true
+        },
+        {
+          "url": "https://kollektivetlivet.se/event/fatboy/",
+          "label": "",
+          "unverified": true
+        }
+      ],
+      "editorial_review_status": "NOT_REVIEWED",
+      "note": "Index reachability and links are NOT a reviewed event search; editor must inspect actual dated original event pages."
+    },
+    {
+      "source_id": "richter-holtermann",
+      "source_name": "Richter Holtermann",
+      "source_type": "organizer",
+      "discovery_priority": "recurring",
+      "attempted_urls": [
+        "https://www.richterholtermann.com/"
+      ],
+      "attempts": [
+        {
+          "url": "https://www.richterholtermann.com/",
+          "final_url": "https://www.richterholtermann.com/",
+          "http_code": 200,
+          "status": "reachable",
+          "page_title": "RICHTER HOLTERMANN RICHTER HOLTERMANN",
+          "html_bytes_seen": 600000,
+          "seconds": 0.44,
+          "attempt": 1
+        }
+      ],
+      "probe_status": "index_reachable",
+      "page_titles": [
+        "RICHTER HOLTERMANN RICHTER HOLTERMANN"
+      ],
+      "candidate_links": [
+        {
+          "url": "https://www.richterholtermann.com/gallery",
+          "label": "Past Exhibitions",
+          "unverified": true
+        }
+      ],
+      "editorial_review_status": "NOT_REVIEWED",
+      "note": "Index reachability and links are NOT a reviewed event search; editor must inspect actual dated original event pages."
+    },
+    {
+      "source_id": "stadsgardsterminalen",
+      "source_name": "Stadsgårdsterminalen",
+      "source_type": "organizer",
+      "discovery_priority": "recurring",
+      "attempted_urls": [
+        "https://stadsgardsterminalen.com/program/"
+      ],
+      "attempts": [
+        {
+          "url": "https://stadsgardsterminalen.com/program/",
+          "final_url": "https://stadsgardsterminalen.com/program/",
+          "http_code": 200,
+          "status": "reachable",
+          "page_title": "Kommande evenemang - Stadsgårdsterminalen Kommande evenemang - Stadsgårdsterminalen",
+          "html_bytes_seen": 109022,
+          "seconds": 1.06,
+          "attempt": 1
+        }
+      ],
+      "probe_status": "index_reachable",
+      "page_titles": [
+        "Kommande evenemang - Stadsgårdsterminalen Kommande evenemang - Stadsgårdsterminalen"
+      ],
+      "candidate_links": [
+        {
+          "url": "https://stadsgardsterminalen.com/program/",
+          "label": "Hoppa till innehåll",
+          "unverified": true
+        },
+        {
+          "url": "https://stadsgardsterminalen.com/program/arkiv/",
+          "label": "Äldre evenemang",
+          "unverified": true
+        },
+        {
+          "url": "https://stadsgardsterminalen.com/event/employed-to-serve-cabal/",
+          "label": "",
+          "unverified": true
+        },
+        {
+          "url": "https://tickets.nortic.se/ticket/show/354578",
+          "label": "Köp biljett",
+          "unverified": true
+        },
+        {
+          "url": "https://stadsgardsterminalen.com/event/honeymilk/",
+          "label": "",
+          "unverified": true
+        },
+        {
+          "url": "https://tickets.nortic.se/ticket/show/359056",
+          "label": "Köp biljett",
+          "unverified": true
+        },
+        {
+          "url": "https://stadsgardsterminalen.com/event/master-boot-record-fulci-arottenbit/",
+          "label": "",
+          "unverified": true
+        },
+        {
+          "url": "https://secure.tickster.com/n41vj7kkd71mykm",
+          "label": "Köp biljett",
+          "unverified": true
+        },
+        {
+          "url": "https://stadsgardsterminalen.com/event/evanora-unlimited/",
+          "label": "",
+          "unverified": true
+        },
+        {
+          "url": "https://tickets.nortic.se/ticket/show/362059",
+          "label": "Köp biljett",
+          "unverified": true
+        },
+        {
+          "url": "https://stadsgardsterminalen.com/event/per-persson-nya-packet/",
+          "label": "",
+          "unverified": true
+        },
+        {
+          "url": "https://tickets.nortic.se/ticket/show/357710",
+          "label": "Köp biljett",
+          "unverified": true
+        },
+        {
+          "url": "https://stadsgardsterminalen.com/event/any-given-day-kollektivet-livet/",
+          "label": "",
+          "unverified": true
+        },
+        {
+          "url": "https://secure.tickster.com/21yheebajpvkt3p",
+          "label": "Köp biljett",
+          "unverified": true
+        },
+        {
+          "url": "https://stadsgardsterminalen.com/event/fatboy/",
+          "label": "",
+          "unverified": true
+        },
+        {
+          "url": "https://tickets.nortic.se/ticket/show/360136",
+          "label": "Köp biljett",
+          "unverified": true
+        },
+        {
+          "url": "https://stadsgardsterminalen.com/event/polymoon-gorma/",
+          "label": "",
+          "unverified": true
+        },
+        {
+          "url": "https://tickets.nortic.se/ticket/show/366169",
+          "label": "Köp biljett",
+          "unverified": true
+        }
+      ],
+      "editorial_review_status": "NOT_REVIEWED",
+      "note": "Index reachability and links are NOT a reviewed event search; editor must inspect actual dated original event pages."
+    },
+    {
+      "source_id": "bio-fagel-bla",
+      "source_name": "Bio Fågel Blå",
+      "source_type": "organizer",
+      "discovery_priority": "recurring",
+      "attempted_urls": [
+        "https://biofagelbla.se/program/"
+      ],
+      "attempts": [
+        {
+          "url": "https://biofagelbla.se/program/",
+          "final_url": "https://biofagelbla.se/program/",
+          "http_code": 200,
+          "status": "reachable",
+          "page_title": "Program - Bio Fågel Blå Program - Bio Fågel Blå",
+          "html_bytes_seen": 335365,
+          "seconds": 0.93,
+          "attempt": 1
+        }
+      ],
+      "probe_status": "index_reachable",
+      "page_titles": [
+        "Program - Bio Fågel Blå Program - Bio Fågel Blå"
+      ],
+      "candidate_links": [
+        {
+          "url": "https://biofagelbla.se/program/",
+          "label": "Hoppa till innehållet",
+          "unverified": true
+        },
+        {
+          "url": "https://biofagelbla.se/movie/bloody-men/?showtime=61127",
+          "label": "Biljetter",
+          "unverified": true
+        },
+        {
+          "url": "https://biofagelbla.se/movie/wild-horse-nine/?showtime=61117",
+          "label": "Biljetter",
+          "unverified": true
+        },
+        {
+          "url": "https://biofagelbla.se/movie/you-can-see-everything/?showtime=60828",
+          "label": "Biljetter",
+          "unverified": true
+        },
+        {
+          "url": "https://biofagelbla.se/movie/de-gaulle-frihetens-rost-2/?showtime=61126",
+          "label": "Biljetter",
+          "unverified": true
+        },
+        {
+          "url": "https://biofagelbla.se/movie/wicker/?showtime=60866",
+          "label": "Biljetter",
+          "unverified": true
+        },
+        {
+          "url": "https://biofagelbla.se/movie/you-can-see-everything/?showtime=60829",
+          "label": "Biljetter",
+          "unverified": true
+        },
+        {
+          "url": "https://biofagelbla.se/movie/wild-horse-nine/?showtime=61129",
+          "label": "Biljetter",
+          "unverified": true
+        },
+        {
+          "url": "https://biofagelbla.se/movie/you-can-see-everything/?showtime=60842",
+          "label": "Biljetter",
+          "unverified": true
+        },
+        {
+          "url": "https://biofagelbla.se/movie/dogville/?showtime=61039",
+          "label": "Biljetter",
+          "unverified": true
+        },
+        {
+          "url": "https://biofagelbla.se/movie/primetime/?showtime=61128",
+          "label": "Biljetter",
+          "unverified": true
+        },
+        {
+          "url": "https://biofagelbla.se/movie/wild-horse-nine/?showtime=61178",
+          "label": "Biljetter",
+          "unverified": true
+        },
+        {
+          "url": "https://biofagelbla.se/movie/a-talent-for-murder/?showtime=61327",
+          "label": "Biljetter",
+          "unverified": true
+        },
+        {
+          "url": "https://biofagelbla.se/movie/ebenezer-a-christmas-carol/?showtime=61130",
+          "label": "Biljetter",
+          "unverified": true
+        },
+        {
+          "url": "https://biofagelbla.se/movie/you-can-see-everything/?showtime=60850",
+          "label": "Biljetter",
+          "unverified": true
+        },
+        {
+          "url": "https://biofagelbla.se/movie/you-can-see-everything/?showtime=60851",
+          "label": "Biljetter",
+          "unverified": true
+        },
+        {
+          "url": "https://biofagelbla.se/movie/de-gaulle-frihetens-rost-2/?showtime=61328",
+          "label": "Biljetter",
+          "unverified": true
+        },
+        {
+          "url": "https://biofagelbla.se/movie/wild-horse-nine/?showtime=61182",
+          "label": "Biljetter",
+          "unverified": true
+        }
+      ],
+      "editorial_review_status": "NOT_REVIEWED",
+      "note": "Index reachability and links are NOT a reviewed event search; editor must inspect actual dated original event pages."
+    },
+    {
+      "source_id": "opi-lab",
+      "source_name": "Of Public Interest (OPI) Lab",
+      "source_type": "organizer",
+      "discovery_priority": "recurring",
+      "attempted_urls": [
+        "https://www.of-public-interest.com/calendar"
+      ],
+      "attempts": [
+        {
+          "url": "https://www.of-public-interest.com/calendar",
+          "final_url": "https://www.of-public-interest.com/calendar",
+          "http_code": 200,
+          "status": "reachable",
+          "page_title": "Of Public Interest calendar Of Public Interest calendar",
+          "html_bytes_seen": 8199,
+          "seconds": 0.18,
+          "attempt": 1
+        }
+      ],
+      "probe_status": "index_reachable",
+      "page_titles": [
+        "Of Public Interest calendar Of Public Interest calendar"
+      ],
+      "candidate_links": [
+        {
+          "url": "https://www.of-public-interest.com/calendar",
+          "label": "Calendar",
+          "unverified": true
+        }
+      ],
+      "editorial_review_status": "NOT_REVIEWED",
+      "note": "Index reachability and links are NOT a reviewed event search; editor must inspect actual dated original event pages."
+    },
+    {
+      "source_id": "nattoga",
+      "source_name": "NATTÖGA",
+      "source_type": "organizer",
+      "discovery_priority": "recurring-selective",
+      "attempted_urls": [
+        "https://ra.co/promoters/131068"
+      ],
+      "attempts": [
+        {
+          "url": "https://ra.co/promoters/131068",
+          "http_code": 403,
+          "status": "blocked",
+          "error": "HTTP 403",
+          "seconds": 0.04,
+          "attempt": 1
+        },
+        {
+          "url": "https://ra.co/promoters/131068",
+          "http_code": 403,
+          "status": "blocked",
+          "error": "HTTP 403",
+          "seconds": 0.04,
+          "attempt": 2
+        }
+      ],
+      "probe_status": "index_unavailable",
+      "page_titles": [],
+      "candidate_links": [],
+      "editorial_review_status": "NOT_REVIEWED",
+      "note": "Index reachability and links are NOT a reviewed event search; editor must inspect actual dated original event pages."
+    },
+    {
+      "source_id": "the-well-zone",
+      "source_name": "The Well Zone",
+      "source_type": "organizer",
+      "discovery_priority": "recurring",
+      "attempted_urls": [
+        "https://www.thewellzone.se/events"
+      ],
+      "attempts": [
+        {
+          "url": "https://www.thewellzone.se/events",
+          "final_url": "https://www.thewellzone.se/events",
+          "http_code": 200,
+          "status": "reachable",
+          "page_title": "Events | The Well Zone Events | The Well Zone",
+          "html_bytes_seen": 600000,
+          "seconds": 0.09,
+          "attempt": 1
+        }
+      ],
+      "probe_status": "index_reachable",
+      "page_titles": [
+        "Events | The Well Zone Events | The Well Zone"
+      ],
+      "candidate_links": [],
+      "editorial_review_status": "NOT_REVIEWED",
+      "note": "Index reachability and links are NOT a reviewed event search; editor must inspect actual dated original event pages."
+    },
+    {
+      "source_id": "eken-marknad",
+      "source_name": "Eken Marknad",
+      "source_type": "organizer",
+      "discovery_priority": "recurring",
+      "attempted_urls": [
+        "https://www.ekenmarknad.se/"
+      ],
+      "attempts": [
+        {
+          "url": "https://www.ekenmarknad.se/",
+          "final_url": "https://www.ekenmarknad.se/",
+          "http_code": 200,
+          "status": "reachable",
+          "page_title": "Eken Marknad — Stockholms vintage- & second hand-marknad Eken Marknad — Stockholms vintage- & second hand-marknad",
+          "html_bytes_seen": 5364,
+          "seconds": 0.46,
+          "attempt": 1
+        }
+      ],
+      "probe_status": "index_reachable",
+      "page_titles": [
+        "Eken Marknad — Stockholms vintage- & second hand-marknad Eken Marknad — Stockholms vintage- & second hand-marknad"
+      ],
+      "candidate_links": [],
+      "editorial_review_status": "NOT_REVIEWED",
+      "note": "Index reachability and links are NOT a reviewed event search; editor must inspect actual dated original event pages."
+    },
+    {
+      "source_id": "sthlm-baile",
+      "source_name": "STHLM Baile",
+      "source_type": "organizer",
+      "discovery_priority": "recurring-selective",
+      "attempted_urls": [
+        "https://debaser.se/kalender"
+      ],
+      "attempts": [
+        {
+          "url": "https://debaser.se/kalender",
+          "final_url": "https://debaser.se/kalender",
+          "http_code": 200,
+          "status": "reachable",
+          "page_title": "Kalender Kalender",
+          "html_bytes_seen": 372397,
+          "seconds": 0.98,
+          "attempt": 1
+        }
+      ],
+      "probe_status": "index_reachable",
+      "page_titles": [
+        "Kalender Kalender"
+      ],
+      "candidate_links": [
+        {
+          "url": "https://debaser.se/kalender",
+          "label": "Kalender",
+          "unverified": true
+        },
+        {
+          "url": "https://debaser.se/konserter",
+          "label": "Konserter",
+          "unverified": true
+        },
+        {
+          "url": "https://debaser.se/events",
+          "label": "Events",
+          "unverified": true
+        },
+        {
+          "url": "https://debaser.se/presentkort",
+          "label": "Presentkort Ge bort en konsert Läs mer",
+          "unverified": true
+        },
+        {
+          "url": "https://debaser.se/events/sofia-hk",
+          "label": "",
+          "unverified": true
+        },
+        {
+          "url": "https://debaser.se/events/pop-culture-quiz-with-joseph-cb58e",
+          "label": "",
+          "unverified": true
+        },
+        {
+          "url": "https://debaser.se/events/c-o-f-f-i-n",
+          "label": "",
+          "unverified": true
+        },
+        {
+          "url": "https://debaser.se/events/gurriers",
+          "label": "",
+          "unverified": true
+        },
+        {
+          "url": "https://debaser.se/events/florence-valentin",
+          "label": "",
+          "unverified": true
+        },
+        {
+          "url": "https://debaser.se/events/klubb-common-people---10-ar-och-den-sista-festen",
+          "label": "",
+          "unverified": true
+        },
+        {
+          "url": "https://debaser.se/events/club-heat-30528",
+          "label": "",
+          "unverified": true
+        },
+        {
+          "url": "https://debaser.se/events/moon-walker",
+          "label": "",
+          "unverified": true
+        },
+        {
+          "url": "https://debaser.se/events/old-school-vibes-back-a-yard-beats-29710",
+          "label": "",
+          "unverified": true
+        },
+        {
+          "url": "https://debaser.se/events/swaet-carnival-takeover",
+          "label": "",
+          "unverified": true
+        },
+        {
+          "url": "https://debaser.se/events/klubb-dod-presenterar-tyske-ludder",
+          "label": "",
+          "unverified": true
+        },
+        {
+          "url": "https://debaser.se/events/alice-in-videoland",
+          "label": "",
+          "unverified": true
+        },
+        {
+          "url": "https://debaser.se/events/house-of-music",
+          "label": "",
+          "unverified": true
+        },
+        {
+          "url": "https://debaser.se/events/the-hardkiss",
+          "label": "",
+          "unverified": true
+        }
+      ],
+      "editorial_review_status": "NOT_REVIEWED",
+      "note": "Index reachability and links are NOT a reviewed event search; editor must inspect actual dated original event pages."
+    },
+    {
+      "source_id": "varmeverket",
+      "source_name": "Värmeverket",
+      "source_type": "organizer",
+      "discovery_priority": "recurring-selective",
+      "attempted_urls": [
+        "https://www.varmeverket.com/"
+      ],
+      "attempts": [
+        {
+          "url": "https://www.varmeverket.com/",
+          "final_url": "https://www.varmeverket.com/",
+          "http_code": 200,
+          "status": "reachable",
+          "page_title": "Värmeverket",
+          "html_bytes_seen": 171001,
+          "seconds": 1.63,
+          "attempt": 1
+        }
+      ],
+      "probe_status": "index_reachable",
+      "page_titles": [
+        "Värmeverket"
+      ],
+      "candidate_links": [
+        {
+          "url": "https://www.varmeverket.com/evenemang/ammouris-festival-2026-08-28",
+          "label": "28 aug Ammouris Festival Linje 13 presenterar Ammouris Festival – två dagar fyllda med konst, musik, kreatörer och gemenskap.",
+          "unverified": true
+        },
+        {
+          "url": "https://www.varmeverket.com/evenemang/paneldebatt-unga-fragar-politiker-svarar-2026-08-28",
+          "label": "28 aug Paneldebatt: Unga frågar. Politiker svarar. Ett samtal där unga får ställa frågorna och politikerna får svara.",
+          "unverified": true
+        },
+        {
+          "url": "https://www.varmeverket.com/evenemang/the-bawdy-yawdy-ball-vol-3-2026-08-29",
+          "label": "29 aug The Bawdy Yawdy Ball Vol. 3 Silva Miyake Mugler presents the third edition of The Bawdy Yawdy Ball at Värmeverket.",
+          "unverified": true
+        },
+        {
+          "url": "https://www.varmeverket.com/evenemang/intension-2026-10-08",
+          "label": "8 okt InTension I InTension möter vi Rebecca Livaniou i ett danssolo som rör sig i flera riktningar samtidigt, utan att avslöja sin logik i ",
+          "unverified": true
+        },
+        {
+          "url": "https://www.varmeverket.com/evenemang/tove-2026-11-20",
+          "label": "20 nov Tove Styrke",
+          "unverified": true
+        },
+        {
+          "url": "https://www.cirkusmania.se/forestallningar/amphi/?utm_source=ig&utm_medium=social&utm_content=link_in_bio",
+          "label": "13 feb 2026 AMPHI – (on both sides: of both kinds) Sinnlig installation och immersiv performance om hopp, omsorg och bräckligt motstånd. En ",
+          "unverified": true
+        },
+        {
+          "url": "https://www.varmeverket.com/artikel/sonatina-sanctuary-vol-1",
+          "label": "24 feb 2026 Sonatina Sanctuary Vol 1 En nykter klubb och jam, med bra musik.",
+          "unverified": true
+        },
+        {
+          "url": "https://www.varmeverket.com/artikel/immersive-dome-lab",
+          "label": "15 mars 2026 Immersive Dome Lab Step inside the dome and explore how image, sound, and architecture can become one shared experience.",
+          "unverified": true
+        },
+        {
+          "url": "https://www.varmeverket.com/artikel/rework-camp-vt26",
+          "label": "31 mars 2026 Re:work Camp VT26 Re:work Camp är en kreativ kvällskurs för nybörjare som vill utforska mode genom återanvändning, remake och h",
+          "unverified": true
+        },
+        {
+          "url": "https://www.varmeverket.com/evenemang/rhythm-moves-festival",
+          "label": "27 apr Rhythm & Moves Festival",
+          "unverified": true
+        },
+        {
+          "url": "https://www.varmeverket.com/evenemang/konsertperformance-360",
+          "label": "12 maj Konsertperformance 360° 360° är en konsertperformance som låter publiken ingå i ett sömlöst flöde av en klingande, visuell och ibland",
+          "unverified": true
+        },
+        {
+          "url": "https://www.varmeverket.com/evenemang/vvaw-2026-05-14",
+          "label": "14 maj VV AW Food, drinks & like-minded creatives. Come hang out with the Värmeverket community and invited guests for an easygoing evening ",
+          "unverified": true
+        },
+        {
+          "url": "https://www.varmeverket.com/evenemang/vibes-verse-poesi-event",
+          "label": "23 maj VIBES & VERSE Vibes & Verse is hosting our largest event yet",
+          "unverified": true
+        },
+        {
+          "url": "https://www.varmeverket.com/evenemang/history-of-resilience",
+          "label": "31 maj History of Resilience Om Libanon - Genom historia, konst, musik, film & panelsamtal",
+          "unverified": true
+        }
+      ],
+      "editorial_review_status": "NOT_REVIEWED",
+      "note": "Index reachability and links are NOT a reviewed event search; editor must inspect actual dated original event pages."
+    },
+    {
+      "source_id": "klubb-kaprifol",
+      "source_name": "Klubb Kaprifol",
+      "source_type": "organizer",
+      "discovery_priority": "recurring-selective",
+      "attempted_urls": [
+        "https://klubb-kaprifol.se/"
+      ],
+      "attempts": [
+        {
+          "url": "https://klubb-kaprifol.se/",
+          "final_url": "https://klubb-kaprifol.se/",
+          "http_code": 200,
+          "status": "reachable",
+          "page_title": "Klubb KAPRIFOL",
+          "html_bytes_seen": 5763,
+          "seconds": 0.23,
+          "attempt": 1
+        }
+      ],
+      "probe_status": "index_reachable",
+      "page_titles": [
+        "Klubb KAPRIFOL"
+      ],
+      "candidate_links": [],
+      "editorial_review_status": "NOT_REVIEWED",
+      "note": "Index reachability and links are NOT a reviewed event search; editor must inspect actual dated original event pages."
+    },
+    {
+      "source_id": "selam-music",
+      "source_name": "Selam Music",
+      "source_type": "organizer",
+      "discovery_priority": "recurring",
+      "attempted_urls": [
+        "https://selam.se/events/"
+      ],
+      "attempts": [
+        {
+          "url": "https://selam.se/events/",
+          "final_url": "https://selam.se/events/",
+          "http_code": 200,
+          "status": "reachable",
+          "page_title": "Selam |   Event",
+          "html_bytes_seen": 20429,
+          "seconds": 2.05,
+          "attempt": 1
+        }
+      ],
+      "probe_status": "index_reachable",
+      "page_titles": [
+        "Selam |   Event"
+      ],
+      "candidate_links": [
+        {
+          "url": "https://selam.se/events/music/Waylon_Thornton_-_01_-_Bronco_Romp.mp3",
+          "label": "",
+          "unverified": true
+        },
+        {
+          "url": "https://selam.se/events/music/Waylon_Thornton_-_02_-_Favorite_Secrets.mp3",
+          "label": "",
+          "unverified": true
+        },
+        {
+          "url": "https://selam.se/eng/events",
+          "label": "In English",
+          "unverified": true
+        },
+        {
+          "url": "https://selam.se/events/selam-stockholms-oppningshelg",
+          "label": "",
+          "unverified": true
+        },
+        {
+          "url": "https://selam.se/events/ana-moura-fado-utan-granser/",
+          "label": "Ana Moura – Fado utan gränser",
+          "unverified": true
+        },
+        {
+          "url": "https://selam.se/events/ibex-band/",
+          "label": "IBEX band",
+          "unverified": true
+        },
+        {
+          "url": "https://selam.se/events/",
+          "label": "",
+          "unverified": true
+        }
+      ],
+      "editorial_review_status": "NOT_REVIEWED",
+      "note": "Index reachability and links are NOT a reviewed event search; editor must inspect actual dated original event pages."
+    },
+    {
+      "source_id": "cyklopen",
+      "source_name": "Cyklopen Stockholm",
+      "source_type": "organizer",
+      "discovery_priority": "recurring",
+      "attempted_urls": [
+        "https://cyklopen.se/kalender/"
+      ],
+      "attempts": [
+        {
+          "url": "https://cyklopen.se/kalender/",
+          "final_url": "https://cyklopen.se/kalender/",
+          "http_code": 200,
+          "status": "reachable",
+          "page_title": "Kalender «  Cyklopen",
+          "html_bytes_seen": 90207,
+          "seconds": 0.64,
+          "attempt": 1
+        }
+      ],
+      "probe_status": "index_reachable",
+      "page_titles": [
+        "Kalender «  Cyklopen"
+      ],
+      "candidate_links": [
+        {
+          "url": "https://cyklopen.se/kalender/",
+          "label": "Meny",
+          "unverified": true
+        },
+        {
+          "url": "https://cyklopen.se/events/autismgemenskap/2026-11-23/",
+          "label": "Autismgemenskap",
+          "unverified": true
+        },
+        {
+          "url": "https://cyklopen.se/events/oppen-atelje-oppet-bibliotek/2026-11-24/",
+          "label": "Öppen ateljé + Öppet bibliotek",
+          "unverified": true
+        },
+        {
+          "url": "https://cyklopen.se/events/oppen-atelje-oppet-bibliotek/2026-12-01/",
+          "label": "Öppen ateljé + Öppet bibliotek",
+          "unverified": true
+        },
+        {
+          "url": "https://cyklopen.se/events/autismgemenskap/2026-12-07/",
+          "label": "Autismgemenskap",
+          "unverified": true
+        },
+        {
+          "url": "https://cyklopen.se/events/oppen-atelje-oppet-bibliotek/2026-12-08/",
+          "label": "Öppen ateljé + Öppet bibliotek",
+          "unverified": true
+        },
+        {
+          "url": "https://cyklopen.se/events/cyklopen-13-ar/",
+          "label": "CYKLOPEN 13 ÅR FÖDELSEDAGSFEST",
+          "unverified": true
+        },
+        {
+          "url": "https://cyklopen.se/events/oppen-atelje-oppet-bibliotek/2026-12-15/",
+          "label": "Öppen ateljé + Öppet bibliotek",
+          "unverified": true
+        }
+      ],
+      "editorial_review_status": "NOT_REVIEWED",
+      "note": "Index reachability and links are NOT a reviewed event search; editor must inspect actual dated original event pages."
+    },
+    {
+      "source_id": "ronnells-antikvariat",
+      "source_name": "Rönnells Antikvariat",
+      "source_type": "organizer",
+      "discovery_priority": "recurring",
+      "attempted_urls": [
+        "https://ronnells.se/?post_type=events"
+      ],
+      "attempts": [
+        {
+          "url": "https://ronnells.se/?post_type=events",
+          "final_url": "https://ronnells.se/?post_type=events",
+          "http_code": 200,
+          "status": "reachable",
+          "page_title": "Evenemang arkiv - Rönnells antikvariatRönnells antikvariat  Evenemang arkiv - Rönnells antikvariat",
+          "html_bytes_seen": 549513,
+          "seconds": 1.16,
+          "attempt": 1
+        }
+      ],
+      "probe_status": "index_reachable",
+      "page_titles": [
+        "Evenemang arkiv - Rönnells antikvariatRönnells antikvariat  Evenemang arkiv - Rönnells antikvariat"
+      ],
+      "candidate_links": [
+        {
+          "url": "https://ronnells.se/?events=bokslapp-av-dragomanen-2026-judiska-minoriteter-i-mellanostern",
+          "label": "Boksläpp av Dragomanen 2026: Judiska minoriteter i Mellanöstern",
+          "unverified": true
+        },
+        {
+          "url": "https://ronnells.se/?events=isabella-nilsson-och-aris-fioretos-samtalar",
+          "label": "Isabella Nilsson och Aris Fioretos samtalar!",
+          "unverified": true
+        },
+        {
+          "url": "https://ronnells.se/?events=palme-mer-om-palmemordet-forfattarsamtal",
+          "label": "PALME – mer om palmemordet. Författarsamtal.",
+          "unverified": true
+        },
+        {
+          "url": "https://ronnells.se/?events=samtal-och-musik-kring-magnus-haglunds-melodiernas-spar",
+          "label": "Samtal och musik kring Magnus Haglunds Melodiernas spår!",
+          "unverified": true
+        },
+        {
+          "url": "https://ronnells.se/?events=sorgen-fick-bli-fri-daniela-serafimova-releasekonsert",
+          "label": "Sorgen fick bli fri – Daniela Serafimova (releasekonsert)",
+          "unverified": true
+        },
+        {
+          "url": "https://ronnells.se/?events=arets-kulturtidskrift-2026",
+          "label": "Årets kulturtidskrift 2026!",
+          "unverified": true
+        },
+        {
+          "url": "https://ronnells.se/?events=stockholm-jazz-festival-organ-day",
+          "label": "Stockholm Jazz Festival – Organ day!",
+          "unverified": true
+        },
+        {
+          "url": "https://ronnells.se/?events=vem-vinner-utmarkelsen-arets-tradgardsbok-2026",
+          "label": "Vem vinner utmärkelsen Årets Trädgårdsbok 2026?",
+          "unverified": true
+        },
+        {
+          "url": "https://ronnells.se/?events=stockholm-jazz-festival-isabel-berglund-joel-lyssarides",
+          "label": "Stockholm Jazz Festival – Slutsålt! Isabel Berglund & Joel Lyssarides!",
+          "unverified": true
+        },
+        {
+          "url": "https://ronnells.se/?events=stockholm-jazz-festival-emma-augustsson-kvartett",
+          "label": "Stockholm Jazz Festival – Emma Augustsson Kvartett!",
+          "unverified": true
+        },
+        {
+          "url": "https://ronnells.se/?events=releasekonsert-roland-pontinen",
+          "label": "Releasekonsert – Roland Pöntinen!",
+          "unverified": true
+        },
+        {
+          "url": "https://ronnells.se/?events=filmaffischvernissage-samtal-38-nya-agnes-varda-affischer",
+          "label": "Filmaffischvernissage & samtal – 38 nya Agnès Varda-affischer!",
+          "unverified": true
+        },
+        {
+          "url": "https://ronnells.se/?events=hoppas-du-blir-fisk-lasningar-och-samtal",
+          "label": "Hoppas du blir fisk. Läsningar och samtal!",
+          "unverified": true
+        },
+        {
+          "url": "https://ronnells.se/?events=bokslapp-bogdan-szybers-yrsel-en-litterar-performance",
+          "label": "Boksläpp: Bogdan Szybers Yrsel – en litterär performance",
+          "unverified": true
+        },
+        {
+          "url": "https://ronnells.se/?events=de-lockande-vampyrerna-inger-edelfeldt-samtalar-med-jonas-ellerstrom",
+          "label": "DE LOCKANDE VAMPYRERNA – Inger Edelfeldt samtalar med Jonas Ellerström",
+          "unverified": true
+        },
+        {
+          "url": "https://ronnells.se/?events=de-nios-litterara-kalender-2026",
+          "label": "Samfundet De Nios Litterära kalender 2026!",
+          "unverified": true
+        },
+        {
+          "url": "https://ronnells.se/?events=ronnells-vanner-medlemstraff-2026",
+          "label": "Rönnells Vänner medlemsträff 2026!",
+          "unverified": true
+        },
+        {
+          "url": "https://ronnells.se/?events=releasekonsert-shtoltse-lider-tonsatt-poesi-pa-jiddisch",
+          "label": "Releasekonsert Shtoltse lider – tonsatt poesi på jiddisch",
+          "unverified": true
+        }
+      ],
+      "editorial_review_status": "NOT_REVIEWED",
+      "note": "Index reachability and links are NOT a reviewed event search; editor must inspect actual dated original event pages."
+    },
+    {
+      "source_id": "filmform",
+      "source_name": "Filmform — The Art Film & Video Archive",
+      "source_type": "organizer",
+      "discovery_priority": "recurring",
+      "attempted_urls": [
+        "https://www.filmform.com/calendar-upcoming/"
+      ],
+      "attempts": [
+        {
+          "url": "https://www.filmform.com/calendar-upcoming/",
+          "final_url": "https://www.filmform.com/calendar-upcoming/",
+          "http_code": 200,
+          "status": "reachable",
+          "page_title": "Filmform –\n        Calendar",
+          "html_bytes_seen": 69616,
+          "seconds": 0.65,
+          "attempt": 1
+        }
+      ],
+      "probe_status": "index_reachable",
+      "page_titles": [
+        "Filmform –\n        Calendar"
+      ],
+      "candidate_links": [
+        {
+          "url": "https://www.filmform.com/calendar-upcoming/",
+          "label": "HIDE",
+          "unverified": true
+        },
+        {
+          "url": "https://www.filmform.com/calendar-current/",
+          "label": "Calendar",
+          "unverified": true
+        },
+        {
+          "url": "https://www.filmform.com/calendar",
+          "label": "Past",
+          "unverified": true
+        },
+        {
+          "url": "https://www.filmform.com/vod",
+          "label": "Programmes",
+          "unverified": true
+        },
+        {
+          "url": "https://www.filmform.com/calendar/releasefest-for-saks-arsbok-2026-p-o-ultvedt-oavsett-smaken-sa-kostar-det/",
+          "label": "Releasefest för SAK:s årsbok 2026! P.O. Ultvedt. Oavsett smaken så kostar det",
+          "unverified": true
+        },
+        {
+          "url": "https://www.filmform.com/calendar/the-cinematheque-vancouver-shows-gunvor-nelson/",
+          "label": "The Cinematheque Vancouver shows Gunvor Nelson",
+          "unverified": true
+        },
+        {
+          "url": "https://thecinematheque.ca/films/2026/gunvor-nelson-program-one",
+          "label": "Screening webpage",
+          "unverified": true
+        },
+        {
+          "url": "https://www.filmform.com/calendar/business-as-usual-screening-at-filmform-on-thursday-december-3rd/",
+          "label": "BUSINESS AS USUAL. Screening at Filmform on Thursday December 3rd",
+          "unverified": true
+        }
+      ],
+      "editorial_review_status": "NOT_REVIEWED",
+      "note": "Index reachability and links are NOT a reviewed event search; editor must inspect actual dated original event pages."
+    },
+    {
+      "source_id": "frim-stockholm",
+      "source_name": "FRIM — Association for Free Improvised Music",
+      "source_type": "organizer",
+      "discovery_priority": "recurring",
+      "attempted_urls": [
+        "https://frim-stockholm.se/en/events"
+      ],
+      "attempts": [
+        {
+          "url": "https://frim-stockholm.se/en/events",
+          "final_url": "https://frim-stockholm.se/en/events",
+          "http_code": 200,
+          "status": "reachable",
+          "page_title": "FRIM - Concert Calendar Concert Calendar",
+          "html_bytes_seen": 162753,
+          "seconds": 0.39,
+          "attempt": 1
+        }
+      ],
+      "probe_status": "index_reachable",
+      "page_titles": [
+        "FRIM - Concert Calendar Concert Calendar"
+      ],
+      "candidate_links": [
+        {
+          "url": "https://frim-stockholm.se/en/events",
+          "label": "Concert Calendar",
+          "unverified": true
+        },
+        {
+          "url": "https://frim-stockholm.se/en/p/tidigare",
+          "label": "Past Events",
+          "unverified": true
+        },
+        {
+          "url": "https://frim-stockholm.se/en/events/remnants",
+          "label": "18.9—10. 1.2027",
+          "unverified": true
+        },
+        {
+          "url": "https://frim-stockholm.se/en/events/das-kapital",
+          "label": "12—22.11",
+          "unverified": true
+        },
+        {
+          "url": "https://frim-stockholm.se/en/events/sound-of-stockholm",
+          "label": "19—22.11",
+          "unverified": true
+        },
+        {
+          "url": "https://frim-stockholm.se/en/events/marino-formenti",
+          "label": "22.11",
+          "unverified": true
+        },
+        {
+          "url": "https://frim-stockholm.se/en/events/mattias-risbergs-mining-international",
+          "label": "22.11",
+          "unverified": true
+        },
+        {
+          "url": "https://frim-stockholm.se/en/events/scener-for-utrotningshotade-ljud",
+          "label": "23.11",
+          "unverified": true
+        },
+        {
+          "url": "https://frim-stockholm.se/en/events/amit-sen-m-fl-Ouk",
+          "label": "23.11",
+          "unverified": true
+        },
+        {
+          "url": "https://frim-stockholm.se/en/events/duo-erik-carlsson-and-katt-hernandez",
+          "label": "25.11",
+          "unverified": true
+        },
+        {
+          "url": "https://frim-stockholm.se/en/events/maya-bennardo-och-leah-asher",
+          "label": "26.11",
+          "unverified": true
+        },
+        {
+          "url": "https://frim-stockholm.se/en/events/the-electrics-nils-agnas",
+          "label": "27.11",
+          "unverified": true
+        },
+        {
+          "url": "https://frim-stockholm.se/en/events/changing-landscape-evolving-experiences",
+          "label": "29.11",
+          "unverified": true
+        },
+        {
+          "url": "https://frim-stockholm.se/en/events/blomsterunge-50-ar",
+          "label": "30.11—1. 12.2026",
+          "unverified": true
+        },
+        {
+          "url": "https://frim-stockholm.se/en/events/the-jug-band",
+          "label": "3.12",
+          "unverified": true
+        },
+        {
+          "url": "https://frim-stockholm.se/en/events/melker-falk-kvartett-JP8",
+          "label": "4.12",
+          "unverified": true
+        },
+        {
+          "url": "https://frim-stockholm.se/en/events/oppet-rep-med-no-school-1Bz",
+          "label": "5.12",
+          "unverified": true
+        },
+        {
+          "url": "https://frim-stockholm.se/en/events/carl-boson",
+          "label": "6.12",
+          "unverified": true
+        }
+      ],
+      "editorial_review_status": "NOT_REVIEWED",
+      "note": "Index reachability and links are NOT a reviewed event search; editor must inspect actual dated original event pages."
+    },
+    {
+      "source_id": "moderna-museet-stockholm",
+      "source_name": "Moderna Museet Stockholm — Calendar",
+      "source_type": "organizer",
+      "discovery_priority": "recurring",
+      "attempted_urls": [
+        "https://www.modernamuseet.se/en/stockholm/calendar/"
+      ],
+      "attempts": [
+        {
+          "url": "https://www.modernamuseet.se/en/stockholm/calendar/",
+          "final_url": "https://www.modernamuseet.se/en/stockholm/calendar/",
+          "http_code": 200,
+          "status": "reachable",
+          "page_title": "Calendar | Moderna Museet Calendar | Moderna Museet",
+          "html_bytes_seen": 183137,
+          "seconds": 0.73,
+          "attempt": 1
+        }
+      ],
+      "probe_status": "index_reachable",
+      "page_titles": [
+        "Calendar | Moderna Museet Calendar | Moderna Museet"
+      ],
+      "candidate_links": [
+        {
+          "url": "https://www.modernamuseet.se/sv/stockholm/kalender/",
+          "label": "På svenska",
+          "unverified": true
+        },
+        {
+          "url": "https://www.modernamuseet.se/en/stockholm/tickets-and-memberships/",
+          "label": "Tickets",
+          "unverified": true
+        },
+        {
+          "url": "https://www.modernamuseet.se/en/stockholm/events/",
+          "label": "Current Events",
+          "unverified": true
+        },
+        {
+          "url": "https://www.modernamuseet.se/en/stockholm/tickets-and-memberships/klubb-moderna/",
+          "label": "Klubb Moderna",
+          "unverified": true
+        },
+        {
+          "url": "https://www.modernamuseet.se/en/stockholm/exhibitions/",
+          "label": "Exhibitions",
+          "unverified": true
+        },
+        {
+          "url": "https://www.modernamuseet.se/en/stockholm/exhibitions/monir-shahroudy-farmanfarmaian/",
+          "label": "Monir Shahroudy Farmanfarmaian",
+          "unverified": true
+        },
+        {
+          "url": "https://www.modernamuseet.se/en/stockholm/exhibitions/jan-hafstrom-2026/",
+          "label": "Jan Håfström",
+          "unverified": true
+        },
+        {
+          "url": "https://www.modernamuseet.se/en/stockholm/exhibitions/aage-gaup/",
+          "label": "Aage Gaup",
+          "unverified": true
+        },
+        {
+          "url": "https://www.modernamuseet.se/en/stockholm/exhibitions/swedish-post-war-period-in-the-moderna-museet-collection/",
+          "label": "Will You Be Profitable, My Friend?",
+          "unverified": true
+        },
+        {
+          "url": "https://www.modernamuseet.se/en/stockholm/exhibitions/surrealism-in-the-moderna-museet-collection/",
+          "label": "The Subterranean Sky",
+          "unverified": true
+        },
+        {
+          "url": "https://www.modernamuseet.se/en/stockholm/exhibitions/recent-acquisitions-and-the-art-of-collecting/",
+          "label": "The Art of Collecting",
+          "unverified": true
+        },
+        {
+          "url": "https://www.modernamuseet.se/en/stockholm/exhibitions/monogram-robert-rauschenberg-and-the-moderna-museet-collection/",
+          "label": "Monogram",
+          "unverified": true
+        },
+        {
+          "url": "https://www.modernamuseet.se/en/stockholm/exhibitions/the-mini-cinema/",
+          "label": "The Mini Cinema",
+          "unverified": true
+        },
+        {
+          "url": "https://www.modernamuseet.se/en/stockholm/exhibitions/the-study-gallery/",
+          "label": "The Study Gallery",
+          "unverified": true
+        },
+        {
+          "url": "https://www.modernamuseet.se/en/stockholm/calendar/",
+          "label": "Calendar",
+          "unverified": true
+        },
+        {
+          "url": "https://www.modernamuseet.se/en/stockholm/events/familjesondagar-pa-moderna-museet/guided-family-tour-age-3-6/",
+          "label": "Guided family tour: 3–6 years",
+          "unverified": true
+        },
+        {
+          "url": "https://www.modernamuseet.se/en/stockholm/events/create-in-the-workshop/",
+          "label": "Create in The Workshop",
+          "unverified": true
+        },
+        {
+          "url": "https://www.modernamuseet.se/en/stockholm/events/guided-family-tour-age-7-and-up/",
+          "label": "Guided family tour: ages 7 and up",
+          "unverified": true
+        }
+      ],
+      "editorial_review_status": "NOT_REVIEWED",
+      "note": "Index reachability and links are NOT a reviewed event search; editor must inspect actual dated original event pages."
+    },
+    {
+      "source_id": "arkdes-events",
+      "source_name": "ArkDes — Events and Public Programme",
+      "source_type": "organizer",
+      "discovery_priority": "recurring",
+      "attempted_urls": [
+        "https://arkdes.se/en/calendar/"
+      ],
+      "attempts": [
+        {
+          "url": "https://arkdes.se/en/calendar/",
+          "final_url": "https://arkdes.se/en/calendar/",
+          "http_code": 200,
+          "status": "reachable",
+          "page_title": "Events - ArkDes Events - ArkDes",
+          "html_bytes_seen": 97899,
+          "seconds": 4.04,
+          "attempt": 1
+        }
+      ],
+      "probe_status": "index_reachable",
+      "page_titles": [
+        "Events - ArkDes Events - ArkDes"
+      ],
+      "candidate_links": [
+        {
+          "url": "https://arkdes.se/en/calendar/",
+          "label": "Skip to content",
+          "unverified": true
+        },
+        {
+          "url": "https://arkdes.se/en/exhibitions/",
+          "label": "Exhibitions",
+          "unverified": true
+        },
+        {
+          "url": "https://arkdes.se/kalender/",
+          "label": "Change language to Svenska sv",
+          "unverified": true
+        },
+        {
+          "url": "https://arkdes.se/en/calendar/?week_offset=-1",
+          "label": "Previous week",
+          "unverified": true
+        },
+        {
+          "url": "https://arkdes.se/en/calendar/?week_offset=1",
+          "label": "Next week",
+          "unverified": true
+        },
+        {
+          "url": "https://arkdes.se/en/calendar?filter=1&week_offset=0&category=drop-in-en",
+          "label": "Drop-in",
+          "unverified": true
+        },
+        {
+          "url": "https://arkdes.se/en/calendar?filter=1&week_offset=0&category=program",
+          "label": "Program",
+          "unverified": true
+        },
+        {
+          "url": "https://arkdes.se/en/calendar/in-dialogue-with-gunilla-lundahl/",
+          "label": "In dialogue with Gunilla Lundahl: On Sámi architecture, collective practice and feminism",
+          "unverified": true
+        },
+        {
+          "url": "https://arkdes.se/en/calendar?filter=1&week_offset=0&category=the-collection",
+          "label": "The Collection",
+          "unverified": true
+        },
+        {
+          "url": "https://arkdes.se/en/calendar/unboxing/?recurring-date=2026-11-19",
+          "label": "Unboxing",
+          "unverified": true
+        },
+        {
+          "url": "https://arkdes.se/en/calendar/unboxing/?recurring-date=2026-11-20",
+          "label": "Unboxing",
+          "unverified": true
+        },
+        {
+          "url": "https://arkdes.se/en/calendar/unboxing/?recurring-date=2026-11-21",
+          "label": "Unboxing",
+          "unverified": true
+        },
+        {
+          "url": "https://arkdes.se/en/calendar?filter=1&week_offset=0&category=families",
+          "label": "Families",
+          "unverified": true
+        },
+        {
+          "url": "https://arkdes.se/en/calendar/workshop-look-in/?recurring-date=2026-11-21",
+          "label": "Workshop: Look in!",
+          "unverified": true
+        },
+        {
+          "url": "https://arkdes.se/en/calendar?filter=1&week_offset=0&category=english",
+          "label": "English",
+          "unverified": true
+        },
+        {
+          "url": "https://arkdes.se/en/calendar?filter=1&week_offset=0&category=guided-tour",
+          "label": "Guided tour",
+          "unverified": true
+        },
+        {
+          "url": "https://arkdes.se/en/calendar/guided-tours-of-arkdes-collection-in-swe-eng-2/?recurring-date=2026-11-22",
+          "label": "Guided tours of ArkDes Collection (in Swe & Eng)",
+          "unverified": true
+        }
+      ],
+      "editorial_review_status": "NOT_REVIEWED",
+      "note": "Index reachability and links are NOT a reviewed event search; editor must inspect actual dated original event pages."
+    },
+    {
+      "source_id": "cinemateket-stockholm",
+      "source_name": "Cinemateket Stockholm — Swedish Film Institute",
+      "source_type": "organizer",
+      "discovery_priority": "recurring-selective",
+      "attempted_urls": [
+        "https://www.filminstitutet.se/sv/se-och-samtala-om-film/cinemateket-stockholm/program/"
+      ],
+      "attempts": [
+        {
+          "url": "https://www.filminstitutet.se/sv/se-och-samtala-om-film/cinemateket-stockholm/program/",
+          "final_url": "https://www.filminstitutet.se/sv/se-och-samtala-om-film/cinemateket-stockholm/program/",
+          "http_code": 200,
+          "status": "reachable",
+          "page_title": "Program hösten 2026: Tema Stadens ljus Cinemateket Stockholm Program",
+          "html_bytes_seen": 311114,
+          "seconds": 1.17,
+          "attempt": 1
+        }
+      ],
+      "probe_status": "index_reachable",
+      "page_titles": [
+        "Program hösten 2026: Tema Stadens ljus Cinemateket Stockholm Program"
+      ],
+      "candidate_links": [
+        {
+          "url": "https://www.filminstitutet.se/sv/sok-stod/produktionsstod/ovriga-stod/publikrelaterat-stod-prs22/",
+          "label": "Stöd till filmprojekt baserat på bruttobiljettintäkter - PRS",
+          "unverified": true
+        },
+        {
+          "url": "https://www.filminstitutet.se/sv/sok-stod/distribution--visning/nya-stod-fran-1-sept---distribution-och-visning/stod-till-filmfestivaler-och-visningsarrangemang/",
+          "label": "Stöd till filmfestivaler och visningsarrangemang",
+          "unverified": true
+        },
+        {
+          "url": "https://www.filminstitutet.se/sv/sok-stod/stod-till-internationell-lansering/stod-till-internationell-promotion-och-festivalrepresentation/",
+          "label": "Stöd till internationell promotion och festivalrepresentation",
+          "unverified": true
+        },
+        {
+          "url": "https://www.filminstitutet.se/sv/sok-stod/kreativa-europa/kurser-och-seminarier/nordisk-tysk-natverkstraff-i-goteborg-2026/",
+          "label": "Nordisk-tysk nätverksträff i Göteborg 2026",
+          "unverified": true
+        },
+        {
+          "url": "https://www.filminstitutet.se/sv/sok-stod/kreativa-europa/kurser-och-seminarier/manuskurs-med-nayeem-mahbub/",
+          "label": "Manusworkshop med Nayeem Mahbub",
+          "unverified": true
+        },
+        {
+          "url": "https://www.filminstitutet.se/sv/sok-stod/kreativa-europa/festivaler-och-marknader/",
+          "label": "Festivaler och marknader",
+          "unverified": true
+        },
+        {
+          "url": "https://www.filminstitutet.se/sv/fa-kunskap-om-film/ta-del-av-filmsamlingarna/digitaliserade-filmer/svenska-stumfilmer/utstallning-om-den-svenska-guldaldern2/",
+          "label": "Utställningen \"Körkarlen och den svenska filmens guldåldern 1917-1924\"",
+          "unverified": true
+        },
+        {
+          "url": "https://www.filminstitutet.se/sv/fa-kunskap-om-film/ta-del-av-filmsamlingarna/lan-ur-samlingarna/lan-av-digitaliserad-film/",
+          "label": "Lån av digitaliserad film för festivaler och biografer",
+          "unverified": true
+        },
+        {
+          "url": "https://www.filminstitutet.se/sv/fa-kunskap-om-film/ta-del-av-filmsamlingarna/lan-ur-samlingarna/lan-ur-samlingarna--festivaler-och-biografer2/",
+          "label": "Lån av analog film för festivaler och biografer",
+          "unverified": true
+        },
+        {
+          "url": "https://www.filminstitutet.se/sv/fa-kunskap-om-film/ta-del-av-filmsamlingarna/utstallningar/",
+          "label": "Utställningar",
+          "unverified": true
+        },
+        {
+          "url": "https://www.filminstitutet.se/sv/fa-kunskap-om-film/svensk-film-i-utlandet/swedish-film-festivalguide/",
+          "label": "Swedish Film Festivalguide",
+          "unverified": true
+        },
+        {
+          "url": "https://www.filminstitutet.se/sv/fa-kunskap-om-film/filmpedagogik/filmhandledningar/quiz-show/",
+          "label": "Quiz Show",
+          "unverified": true
+        },
+        {
+          "url": "https://www.filminstitutet.se/sv/fa-kunskap-om-film/filmpedagogik/filmhandledningar/the-truman-show/",
+          "label": "The Truman Show",
+          "unverified": true
+        },
+        {
+          "url": "https://www.filminstitutet.se/sv/fa-kunskap-om-film/filmpedagogik/filmlistan/doktor-glas-2026/",
+          "label": "Doktor Glas 2026",
+          "unverified": true
+        },
+        {
+          "url": "https://www.filminstitutet.se/sv/se-och-samtala-om-film/cinemateket-stockholm/",
+          "label": "Cinemateket Stockholm",
+          "unverified": true
+        },
+        {
+          "url": "https://www.filminstitutet.se/sv/se-och-samtala-om-film/cinemateket-stockholm/biljetter-och-formanskort/",
+          "label": "Biljetter och förmånskort",
+          "unverified": true
+        },
+        {
+          "url": "https://www.filminstitutet.se/sv/se-och-samtala-om-film/cinemateket-stockholm/om-cinemateket/",
+          "label": "Om Cinemateket",
+          "unverified": true
+        },
+        {
+          "url": "https://www.filminstitutet.se/sv/se-och-samtala-om-film/cinemateket-stockholm/om-cinemateket/fragor-och-svar-stockholm/",
+          "label": "Frågor och svar om Cinemateket",
+          "unverified": true
+        }
+      ],
+      "editorial_review_status": "NOT_REVIEWED",
+      "note": "Index reachability and links are NOT a reviewed event search; editor must inspect actual dated original event pages."
+    },
+    {
+      "source_id": "thirdplace-stockholm",
+      "source_name": "ThirdPlace Stockholm — ArtCafe & SoberBar",
+      "source_type": "organizer",
+      "discovery_priority": "recurring",
+      "attempted_urls": [
+        "https://luma.com/ThirdPlaceSTHLM"
+      ],
+      "attempts": [
+        {
+          "url": "https://luma.com/ThirdPlaceSTHLM",
+          "final_url": "https://luma.com/ThirdPlaceSTHLM",
+          "http_code": 200,
+          "status": "reachable",
+          "page_title": "ThirdPlace · Events Calendar ThirdPlace · Events Calendar",
+          "html_bytes_seen": 177871,
+          "seconds": 0.47,
+          "attempt": 1
+        }
+      ],
+      "probe_status": "index_reachable",
+      "page_titles": [
+        "ThirdPlace · Events Calendar ThirdPlace · Events Calendar"
+      ],
+      "candidate_links": [
+        {
+          "url": "https://luma.com/discover",
+          "label": "Discover Events",
+          "unverified": true
+        }
+      ],
+      "editorial_review_status": "NOT_REVIEWED",
+      "note": "Index reachability and links are NOT a reviewed event search; editor must inspect actual dated original event pages."
+    },
+    {
+      "source_id": "startskott-stockholm",
+      "source_name": "Startskott — Stockholm Cross-Platform Events",
+      "source_type": "aggregator",
+      "discovery_priority": "aggregator-discovery",
+      "attempted_urls": [
+        "https://startskott.com/vad-hander-i-stockholm"
+      ],
+      "attempts": [
+        {
+          "url": "https://startskott.com/vad-hander-i-stockholm",
+          "final_url": "https://startskott.com/vad-hander-i-stockholm",
+          "http_code": 200,
+          "status": "reachable",
+          "page_title": "Vad händer i Stockholm idag, i helgen, i veckan | Startskott Vad händer i Stockholm?",
+          "html_bytes_seen": 90931,
+          "seconds": 0.28,
+          "attempt": 1
+        }
+      ],
+      "probe_status": "index_reachable",
+      "page_titles": [
+        "Vad händer i Stockholm idag, i helgen, i veckan | Startskott Vad händer i Stockholm?"
+      ],
+      "candidate_links": [
+        {
+          "url": "https://startskott.com/",
+          "label": "Alla event",
+          "unverified": true
+        },
+        {
+          "url": "https://www.instagram.com/startskottevent/",
+          "label": "Instagram",
+          "unverified": true
+        },
+        {
+          "url": "https://www.tiktok.com/@startskottevent",
+          "label": "TikTok",
+          "unverified": true
+        },
+        {
+          "url": "https://startskott.com/event-stockholm-ikvall",
+          "label": "Ikväll",
+          "unverified": true
+        },
+        {
+          "url": "https://startskott.com/event-stockholm-idag",
+          "label": "Idag",
+          "unverified": true
+        },
+        {
+          "url": "https://startskott.com/event-stockholm-imorgon",
+          "label": "Imorgon",
+          "unverified": true
+        },
+        {
+          "url": "https://startskott.com/event-stockholm-i-helgen",
+          "label": "I helgen",
+          "unverified": true
+        },
+        {
+          "url": "https://startskott.com/event-stockholm-denna-vecka",
+          "label": "Denna vecka",
+          "unverified": true
+        },
+        {
+          "url": "https://startskott.com/event-stockholm-nasta-vecka",
+          "label": "Nästa vecka",
+          "unverified": true
+        },
+        {
+          "url": "https://startskott.com/morgonevent-stockholm",
+          "label": "Morgon",
+          "unverified": true
+        },
+        {
+          "url": "https://startskott.com/lunchevent-stockholm",
+          "label": "Lunch",
+          "unverified": true
+        },
+        {
+          "url": "https://startskott.com/kvallsevent-stockholm",
+          "label": "Kvällar",
+          "unverified": true
+        },
+        {
+          "url": "https://startskott.com/event-ostermalm-stockholm",
+          "label": "Östermalm",
+          "unverified": true
+        },
+        {
+          "url": "https://startskott.com/event-sodermalm-stockholm",
+          "label": "Södermalm",
+          "unverified": true
+        },
+        {
+          "url": "https://startskott.com/event-kungsholmen-stockholm",
+          "label": "Kungsholmen",
+          "unverified": true
+        },
+        {
+          "url": "https://startskott.com/event-for-nyborjare-stockholm",
+          "label": "För nybörjare",
+          "unverified": true
+        },
+        {
+          "url": "https://startskott.com/event-for-studenter-stockholm",
+          "label": "För studenter",
+          "unverified": true
+        },
+        {
+          "url": "https://startskott.com/event-for-gymnasieelever-stockholm",
+          "label": "För gymnasieelever",
+          "unverified": true
+        }
+      ],
+      "editorial_review_status": "NOT_REVIEWED",
+      "note": "Index reachability and links are NOT a reviewed event search; editor must inspect actual dated original event pages."
+    }
+  ],
+  "limitations": [
+    "HTML fetch without accounts: JavaScript-rendered lists may need a browser.",
+    "HTTP 200 and discovered links do not count as an editorial review.",
+    "No individual candidate dates, city, prices, stock or images verified.",
+    "Blocked or unreachable URLs are explicitly recorded and need manual/alternate public review."
+  ]
+}
