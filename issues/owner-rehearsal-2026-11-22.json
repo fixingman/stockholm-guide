@@ -208,7 +208,8 @@
         },
         "booking": {
           "status": "unknown",
-          "source_url": "https://www.filmform.com/calendar/business-as-usual-screening-at-filmform-on-thursday-december-3rd/"
+          "source_url": "https://www.filmform.com/calendar/business-as-usual-screening-at-filmform-on-thursday-december-3rd/",
+          "note": "Event published, but live ticket stock/remaining seats not confirmed."
         },
         "price": {
           "status": "confirmed",
@@ -248,7 +249,8 @@
         },
         "booking": {
           "status": "unknown",
-          "source_url": "https://luma.com/86iayxvq"
+          "source_url": "https://luma.com/86iayxvq",
+          "note": "Event published, but live ticket stock/remaining seats not confirmed."
         },
         "price": {
           "status": "confirmed",
@@ -288,11 +290,13 @@
         },
         "booking": {
           "status": "unknown",
-          "source_url": "https://mdtsthlm.se/a-study-of-men"
+          "source_url": "https://mdtsthlm.se/a-study-of-men",
+          "note": "Event published, but live ticket stock/remaining seats not confirmed."
         },
         "price": {
           "status": "unknown",
-          "source_url": "https://mdtsthlm.se/a-study-of-men"
+          "source_url": "https://mdtsthlm.se/a-study-of-men",
+          "note": "Organizer pricing not confirmed; consult original event listing."
         }
       },
       "final_review": {
@@ -328,7 +332,8 @@
         },
         "booking": {
           "status": "unknown",
-          "source_url": "https://ronnells.se/?events=maya-bennardo-och-leah-asher-live"
+          "source_url": "https://ronnells.se/?events=maya-bennardo-och-leah-asher-live",
+          "note": "Event published, but live ticket stock/remaining seats not confirmed."
         },
         "price": {
           "status": "confirmed",
@@ -408,7 +413,8 @@
         },
         "booking": {
           "status": "unknown",
-          "source_url": "https://frim-stockholm.se/en/events/blomsterunge-50-ar"
+          "source_url": "https://frim-stockholm.se/en/events/blomsterunge-50-ar",
+          "note": "Event published, but live ticket stock/remaining seats not confirmed."
         },
         "price": {
           "status": "confirmed",
@@ -448,11 +454,13 @@
         },
         "booking": {
           "status": "unknown",
-          "source_url": "https://kulturhusetstadsteatern.se/teater/karleken"
+          "source_url": "https://kulturhusetstadsteatern.se/teater/karleken",
+          "note": "Event published, but live ticket stock/remaining seats not confirmed."
         },
         "price": {
           "status": "unknown",
-          "source_url": "https://kulturhusetstadsteatern.se/teater/karleken"
+          "source_url": "https://kulturhusetstadsteatern.se/teater/karleken",
+          "note": "Organizer pricing not confirmed; consult original event listing."
         }
       },
       "final_review": {
@@ -1557,11 +1565,13 @@
         },
         "booking": {
           "status": "unknown",
-          "source_url": "https://frim-stockholm.se/en/events/the-electrics-nils-agnas"
+          "source_url": "https://frim-stockholm.se/en/events/the-electrics-nils-agnas",
+          "note": "Event published, but live ticket stock/remaining seats not confirmed."
         },
         "price": {
           "status": "unknown",
-          "source_url": "https://frim-stockholm.se/en/events/the-electrics-nils-agnas"
+          "source_url": "https://frim-stockholm.se/en/events/the-electrics-nils-agnas",
+          "note": "Organizer pricing not confirmed; consult original event listing."
         }
       },
       "final_review": {
