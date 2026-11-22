@@ -11,9 +11,6 @@ on:
     types: [completed]
 permissions:
   contents: read
-concurrency:
-  group: calendar-live-acceptance
-  cancel-in-progress: true
 jobs:
   test-deployed-website:
     if: ${{ github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success' }}
