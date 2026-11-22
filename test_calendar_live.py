@@ -80,9 +80,10 @@ def run():
                              and e["date"] and e["date"].startswith(initial_month)]
             if not picks_visible:
                 page.locator(".fc-next-button").click()
-                initial_month = page.locator(".fc-toolbar-title").inner_text()
-                picks_visible = [e for e in data["events"] if e["section"] == "top3"
-                                 and e["date"] and e["date"][:7] != guide_month]
+                candidates = [e for e in data["events"] if e["section"] == "top3"
+                              and e["date"] and e["date"][:7] != guide_month]
+                initial_month = candidates[0]["date"][:7] if candidates else guide_month
+                picks_visible = [e for e in candidates if e["date"].startswith(initial_month)]
             assert_that(bool(picks_visible), "No dated Top Picks found in current or adjacent month")
             assert_that(page.locator(".fc-list-event").count() == len(picks_visible),
                         "Top Picks filter does not match dated featured events")
@@ -100,7 +101,7 @@ def run():
 
             date_buckets = {}
             for event in data["events"]:
-                if event["date"] and event["date"][:7] == guide_month:
+                if event["date"] and event["date"][:7] == initial_month:
                     date_buckets.setdefault(event["date"], []).append(event)
             assert_that(bool(date_buckets), "No source events found in issue's first month")
             target_date, corresponding = max(date_buckets.items(), key=lambda x: len(x[1]))
