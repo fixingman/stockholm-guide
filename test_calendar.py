@@ -97,6 +97,9 @@ class CalendarTests(unittest.TestCase):
             self.assertEqual(d["event_count"], 2)
             self.assertNotIn('</script><script>alert', html)
             self.assertIn("calendar.js", html)
+            self.assertIn("fullcalendar@6.1.22/index.global.min.js", html)
+            self.assertIn('id="fullcalendar"', html)
+            self.assertNotIn('id="month-grid"', html)  # No hand-maintained date grid.
             self.assertIn("application/json", html)
             self.assertIn("Official event page", html)
 
