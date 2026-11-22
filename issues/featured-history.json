@@ -40,22 +40,22 @@
       "url": "https://stockholm.fotografiska.com/en/events/listening-session-salla-salazar-the-soundtrack-to-a-life"
     },
     {
-      "title": "En ljuvlighet från ingenstans — film and conversation",
+      "title": "CHIMERA / EVOLVER: Emma DJ + Keiska + DJ Haydn",
+      "url": "https://fylkingen.se/en/events/chimera-evolver",
       "issue": "005",
-      "kind": "production-validated",
-      "url": "https://acceleratorsu.art/evenemang/filmvisning-en-ljuvlighet-fran-ingenstans/"
+      "kind": "production-validated-not-sent"
     },
     {
-      "title": "Aliquī — deep listening and visual improvisation",
+      "title": "Träden + Homegrown — psychedelic improvisation",
+      "url": "https://stadsgardsterminalen.com/event/traden-homegrown/",
       "issue": "005",
-      "kind": "production-validated",
-      "url": "https://www.fylkingen.se/en/events/aliqui"
+      "kind": "production-validated-not-sent"
     },
     {
-      "title": "Salla Salazar — a phone-free listening session",
+      "title": "Changing Landscape, Evolving Experiences — dance, ink and sound",
+      "url": "https://fylkingen.se/en/events/changing-landscape-evolving-experiences",
       "issue": "005",
-      "kind": "production-validated",
-      "url": "https://stockholm.fotografiska.com/en/events/listening-session-salla-salazar-the-soundtrack-to-a-life"
+      "kind": "production-validated-not-sent"
     }
   ],
   "top3": [
@@ -96,22 +96,22 @@
       "kind": "owner-only-test"
     },
     {
-      "title": "En ljuvlighet från ingenstans — film and conversation",
-      "url": "https://acceleratorsu.art/evenemang/filmvisning-en-ljuvlighet-fran-ingenstans/",
+      "title": "CHIMERA / EVOLVER: Emma DJ + Keiska + DJ Haydn",
+      "url": "https://fylkingen.se/en/events/chimera-evolver",
       "issue": "005",
-      "kind": "production-validated"
+      "kind": "production-validated-not-sent"
     },
     {
-      "title": "Aliquī — deep listening and visual improvisation",
-      "url": "https://www.fylkingen.se/en/events/aliqui",
+      "title": "Träden + Homegrown — psychedelic improvisation",
+      "url": "https://stadsgardsterminalen.com/event/traden-homegrown/",
       "issue": "005",
-      "kind": "production-validated"
+      "kind": "production-validated-not-sent"
     },
     {
-      "title": "Salla Salazar — a phone-free listening session",
-      "url": "https://stockholm.fotografiska.com/en/events/listening-session-salla-salazar-the-soundtrack-to-a-life",
+      "title": "Changing Landscape, Evolving Experiences — dance, ink and sound",
+      "url": "https://fylkingen.se/en/events/changing-landscape-evolving-experiences",
       "issue": "005",
-      "kind": "production-validated"
+      "kind": "production-validated-not-sent"
     }
   ]
 }
