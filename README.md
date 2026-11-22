@@ -6,6 +6,14 @@ The layout uses the black masthead and brush, a single continuous photographic h
 
 The mockup is a design reference, not event evidence: its saxophone photograph, venues, descriptions, dates and issue #142 are not copied as facts. The sample retains issue #001 and verified event information, full prices/booking qualifications and all 33 event links.
 
+## Public calendar — maintained FullCalendar integration
+
+The current issue's public [event calendar](https://fixingman.github.io/stockholm-guide/calendar.html) is an **additional view**, not another event database. The GitHub Pages workflow builds `calendar.html` from the same public `issues/current.json` on each publish via `build_calendar.py`. Its UI uses **FullCalendar Standard 6.1.22**, pinned by CDN (MIT license), with built-in month/list navigation. `calendar.js` is only an editorial adapter for section filters, source links and flexible-date details; do not reintroduce a custom month-grid implementation.
+
+Only official organizer HTTPS links and publicly reviewed event information are exported. An event gets a dated calendar pin only when `event_start` is timezone-aware, or a `last_chance` closing date has an official organizer review. Long-running exhibitions without verified individual session times appear under **Ongoing & flexible dates** rather than misleading fake daily times. Sold-out/unavailable entries are excluded from the bookable calendar. All local times use **Europe/Stockholm**. Calendar content is the latest website issue, so historical newsletter readers may see newer editions; the email CTA says **View the latest event calendar**. The calendar requires no subscription account, attendee database or extra subscriber tracking.
+
+Test locally with `python -m unittest test_calendar test_minimal && python build_calendar.py --data issues/current.json --output calendar.html && node --check calendar.js`. The no-email E2E job additionally opens the actual calendar in Chromium, checks month/list/filter navigation and checks mobile overflow. GitHub Pages publish failure does not authorize a bad subscriber email; subscriber release retains its independent gate. The calendar is browsing only, **not** a booking service or subscribed calendar feed.
+
 ## One-command build
 
 ```sh
