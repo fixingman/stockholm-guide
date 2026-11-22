@@ -48,6 +48,20 @@ jobs:
           python editorial_quality.py --data guide_data.json --report sample-editorial-quality.json
           python delivery_guard.py --data guide_data.json --html minimal-experiment/index.html --manifest minimal-delivery-manifest.json
           python email_client_qa.py --html minimal-experiment/index.html --report email-client-qa.json
+      - name: Build the live issue calendar (public dates, no subscribers)
+        run: |
+          python -m unittest test_calendar
+          python build_calendar.py --data issues/current.json --output calendar.html
+          test -s calendar.html
+          test -s calendar.js
+          test -s calendar.css
+          python - <<'PY'
+          from pathlib import Path
+          html=Path("calendar.html").read_text()
+          assert "calendar-data" in html and "calendar.js" in html
+          assert "CHIMERA" in html or "application/json" in html
+          print("Current issue calendar built without private records")
+          PY
       - name: Commit rendered minimal email for delivery
         run: |
           cp minimal-experiment/index.html latest-minimal-email.html
