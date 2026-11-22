@@ -2,7 +2,7 @@ name: E2E — historical fixture render, live images and release guards (no emai
 on:
   push:
     branches: [main]
-    paths: [e2e_test_issue_2026-11-09.json, delivery_guard.py, final_freshness.py, editorial_scanning.py, render_minimal.py, minimal_template.html.j2, test_delivery_guard.py, test_freshness_scanning.py, test_discovery_sources.py, test_release_authorization.py, release_authorization.py, email_client_qa.py, discovery_sources.json, optimize_issue_images.py, test_optimize_issue_images.py, image_pipeline.py, .github/workflows/e2e-test-email.yml]
+    paths: [e2e_test_issue_2026-11-09.json, delivery_guard.py, final_freshness.py, editorial_scanning.py, render_minimal.py, minimal_template.html.j2, test_delivery_guard.py, test_freshness_scanning.py, test_discovery_sources.py, test_release_authorization.py, release_authorization.py, editorial_quality.py, test_editorial_operations.py, issues/featured-history.json, email_client_qa.py, discovery_sources.json, optimize_issue_images.py, test_optimize_issue_images.py, image_pipeline.py, .github/workflows/e2e-test-email.yml]
   workflow_dispatch:
 permissions:
   contents: read
