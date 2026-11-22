@@ -594,6 +594,134 @@
         "new Selam Stockholm Marievik venue programme"
       ],
       "editorial_instructions": "Check Selam's official event calendar and current announcements on both Saturday preparation and Sunday discovery. Prioritize confirmed Stockholm-area dates and newly announced Selam Stockholm / Marievik performances; note significant future dates beyond the 14-day issue window as advance-booking leads when editorially useful. Selam produces events in other cities and abroad: verify the actual city and venue of each listing, and exclude non-Stockholm performances from the Stockholm edition unless explicitly relevant. Verify year, time, lineup, pricing, ticket status and actual organizer/venue listing, especially when an old event remains indexed. Cross-check partner venue calendars, deduplicate overlap with other sources and avoid treating a festival announcement without a confirmed date as a current bookable event. Select for musical and cultural distinctiveness, not routine concert volume."
+    },
+    {
+      "id": "cyklopen",
+      "name": "Cyklopen Stockholm",
+      "category": "community-run culture house / hands-on maker workshops / unusual music / open studio",
+      "official_calendar_url": "https://cyklopen.se/kalender/",
+      "source_type": "organizer",
+      "discovery_priority": "recurring",
+      "editorial_fit": [
+        "participatory open ateliers",
+        "free accessible making / repair sessions",
+        "unusual performances and local community happenings",
+        "interdisciplinary artist-led evenings"
+      ],
+      "editorial_instructions": "Check Cyklopen's public calendar for dated Stockholm events, especially open studio, upcycling and interdisciplinary performances. Distinguish routine recurring sessions from special one-offs, choose by real engagement value, check latest dates and practical accessibility, and link the original event page."
+    },
+    {
+      "id": "ronnells-antikvariat",
+      "name": "Rönnells Antikvariat",
+      "category": "literary bookshop / experimental concerts / talks / film and poetry performances",
+      "official_calendar_url": "https://ronnells.se/?post_type=events",
+      "source_type": "organizer",
+      "discovery_priority": "recurring",
+      "editorial_fit": [
+        "bookshop concerts and artist talks",
+        "experimental literary gatherings",
+        "rare performances and screenings"
+      ],
+      "editorial_instructions": "Scan Rönnells' public event listing and actual dated pages; it contains archive entries, so do not confuse old events with upcoming sessions. Look especially for intimate interdisciplinary concerts, poetry, talks and experimental film; cross-deduplicate Sound of Stockholm and FRIM."
+    },
+    {
+      "id": "filmform",
+      "name": "Filmform — The Art Film & Video Archive",
+      "category": "experimental film archive / artist film screenings / video art and interdisciplinary events",
+      "official_calendar_url": "https://www.filmform.com/calendar-upcoming/",
+      "source_type": "organizer",
+      "discovery_priority": "recurring",
+      "editorial_fit": [
+        "rare artist-film screenings",
+        "video art and archives",
+        "film conversations and one-off artist programs"
+      ],
+      "editorial_instructions": "Check future Filmform calendar and exact individual screening dates; link original event or venue when Filmform is a partner. Prioritize intimate rare screenings and discussions over generic cinema, avoid treating archive listings or undated touring appearances as current Stockholm events."
+    },
+    {
+      "id": "frim-stockholm",
+      "name": "FRIM — Association for Free Improvised Music",
+      "category": "improvised experimental music / musician-led events and intimate concerts",
+      "official_calendar_url": "https://frim-stockholm.se/en/events",
+      "source_type": "organizer",
+      "discovery_priority": "recurring",
+      "editorial_fit": [
+        "unexpected musical collaborations",
+        "intimate free-improvisation concerts",
+        "unusual spontaneous performance formats"
+      ],
+      "editorial_instructions": "Check the FRIM calendar for dated Stockholm experimental live music and collaborations; resolve venue, performance date and artist identity on original event pages. Distinguish events held abroad and expired archive entries. Deduplicate festival partners Fylkingen, Sound of Stockholm and Rönnells."
+    },
+    {
+      "id": "moderna-museet-stockholm",
+      "name": "Moderna Museet Stockholm — Calendar",
+      "category": "contemporary art / participatory drawing / performances / talks / exhibition events",
+      "official_calendar_url": "https://www.modernamuseet.se/en/stockholm/calendar/",
+      "source_type": "organizer",
+      "discovery_priority": "recurring",
+      "editorial_fit": [
+        "participatory drawing and special guided experiences",
+        "experimental performances in museums",
+        "artist talks and unusual exhibition programs"
+      ],
+      "editorial_instructions": "Scan current Stockholm (not Malmö) public calendar. Favor one-off participatory and thought-provoking formats such as Talk and Draw over routine repeat tours; inspect event-level date, price, access and exact opening status."
+    },
+    {
+      "id": "arkdes-events",
+      "name": "ArkDes — Events and Public Programme",
+      "category": "architecture / design / public-space experiments / workshops / exhibitions",
+      "official_calendar_url": "https://arkdes.se/en/calendar/",
+      "source_type": "organizer",
+      "discovery_priority": "recurring",
+      "editorial_fit": [
+        "participatory design workshops",
+        "architecture discoveries and experimental public programs",
+        "pop-up exhibitions and creative community sessions"
+      ],
+      "editorial_instructions": "Check dated ArkDes events and open-to-public programs in Stockholm, distinguishing exhibition run dates from actual one-off sessions. Cross-check any ArkDes exhibitions already in previous guides; avoid adding the same event twice under a different title."
+    },
+    {
+      "id": "cinemateket-stockholm",
+      "name": "Cinemateket Stockholm — Swedish Film Institute",
+      "category": "rare film screenings / restored classics / film history / discussion and archival experiences",
+      "official_calendar_url": "https://www.filminstitutet.se/sv/se-och-samtala-om-film/cinemateket-stockholm/program/",
+      "source_type": "organizer",
+      "discovery_priority": "recurring-selective",
+      "editorial_fit": [
+        "hard-to-see archival screenings",
+        "filmmaker introductions and special discussions",
+        "thematic cinema adventures"
+      ],
+      "editorial_instructions": "Scan the current Stockholm programme at Filmhuset. Prioritize unusual retrospectives, rare screenings and discussions instead of ordinary cinema titles. Verify exact Stockholm date and film, ticket access and screening version; avoid past season PDFs and Malmö showtimes."
+    },
+    {
+      "id": "thirdplace-stockholm",
+      "name": "ThirdPlace Stockholm — ArtCafe & SoberBar",
+      "category": "creative social art studio / themed croquis / participatory workshops / sober culture",
+      "official_calendar_url": "https://luma.com/ThirdPlaceSTHLM",
+      "source_type": "organizer",
+      "discovery_priority": "recurring",
+      "editorial_fit": [
+        "themed live model drawing",
+        "creative socials and workshops",
+        "accessible participatory art and unusual social gatherings"
+      ],
+      "editorial_instructions": "Scan organizer's own public Luma calendar and individual current events, including hands-on croquis and participatory art. The actual individual Luma page may be organizer-original; verify date, venue, costs and registration, and never infer member-only attendance. Deduplicate with city-level Luma aggregator."
+    },
+    {
+      "id": "startskott-stockholm",
+      "name": "Startskott — Stockholm Cross-Platform Events",
+      "category": "cross-platform event aggregator / community workshops / arts / unusual social / tech events",
+      "official_calendar_url": "https://startskott.com/vad-hander-i-stockholm",
+      "source_type": "aggregator",
+      "discovery_priority": "aggregator-discovery",
+      "editorial_fit": [
+        "time-sensitive workshops and one-offs",
+        "fresh Luma and Meetup discoveries",
+        "undercovered community gatherings",
+        "niche art and AI experiences"
+      ],
+      "editorial_instructions": "Discovery ONLY: use dates/categories as leads, never assume compiled listings verify details or ticket availability. Follow each entry through to the original organizer's current dated official page (including public Luma pages when they are the host's source). Deduplicate leads already found on Luma, Meetup and venue sites; do not promote generic business networking filler."
     }
   ],
   "source_diversity_policy": {
@@ -602,12 +730,14 @@
     "review_target_distinct_sources": 12,
     "review_target_categories": 5,
     "min_unique_organizers_for_release": 5,
-    "scanning_accountability": "Prepare a concise source coverage log listing domains visited, events found, gaps, and why a narrow final edition is justified. Do not falsify visited evidence or add weak filler.",
+    "scanning_accountability": "On Saturday and Sunday, record a truthful source-coverage audit with source ID, public URL, last_checked timestamp, scan_status (checked/no confirmed events/blocked/not checked), leads found, accepted for issue, and any reason for exclusion. Never imply that all registered sources were scanned if only a subset was reviewed. Public-source meta only; no subscriber data.",
     "editorial_selection": "Select events by personal relevance and freshness; reviewed sites need not be featured. No requirement to include events from any particular organizer.",
     "personal_priority": "Lumen Project is the user's favorite Stockholm music experience: monitor its rare announcements and future dates without requiring frequent events.",
     "aggregators": "Discover via Visit Stockholm, Luma Stockholm + category and curated community calendars, Meetup Stockholm, Tickster Stockholm, Nattljud, Resident Advisor, Evenemang Stockholm, Slakthusguiden, and Stockholm Events cross-platform; ALWAYS verify on the original organizer's current public event page. Luma public pages do not need login, but private/member-only/approved details are not accessible without authorization.",
     "removed_source": "Slakthusen removed as user-requested preferred venue; Fållan added instead.",
     "access_policy": "Never sign in, circumvent membership, infer hidden addresses or RSVP capacity, or claim current bookings merely from listing. Record access limitation or unknown availability instead. Prefer uniquely interesting participatory, music, art and AI events instead of generic professional networking.",
-    "overlap_policy": "Deduplicate event leads across Luma, Meetup, Tickster and indexes using original host, date and canonical event URL; do not count the same event repeatedly as additional discovery, and measure unique organizer domains separately from aggregator sources."
+    "overlap_policy": "Deduplicate event leads across Luma, Meetup, Tickster and indexes using original host, date and canonical event URL; do not count the same event repeatedly as additional discovery, and measure unique organizer domains separately from aggregator sources.",
+    "luma_explicit_check": "Each Saturday and Sunday, explicitly attempt the PUBLIC Luma Stockholm events index plus arts/design/community categories. Log a Luma source audit whether qualifying events were found or not; shortlist genuinely unusual, participatory, creative/art and social experiences and review original dated Luma host event pages. Never require an event to be included just because Luma was scanned, and never bypass RSVP approval, hidden details or private access.",
+    "new_source_rotation": "Prioritize rotating independently owned, distinctive sources rather than scanning only high-volume historical favorites. Balance small spaces, practical hands-on activities, experimental music/film, museums, and community events; no obligation to scan every registered source each week, but track what was and was not checked."
   }
 }
