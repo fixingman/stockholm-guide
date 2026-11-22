@@ -36,6 +36,7 @@
     const article = text("article", "event-card");
     const tags = text("div", "tags");
     if (e.section === "top3") tags.append(text("span", "tag featured", "TOP PICK"));
+    if (e.section === "calendar_only_events") tags.append(text("span", "tag", "ALSO DISCOVERED"));
     if (e.last_chance) tags.append(text("span", "tag closing", "LAST CHANCE"));
     if (e.kind === "closing") tags.append(text("span", "tag", "CLOSING DAY"));
     if (e.kind === "flexible") tags.append(text("span", "tag", "FLEXIBLE DATE"));

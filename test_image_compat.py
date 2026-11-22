@@ -1,4 +1,5 @@
 """Email image compatibility and preview fallback regression checks."""
+import json
 import subprocess
 import sys
 import tempfile
@@ -26,7 +27,8 @@ class ImageCompatTests(unittest.TestCase):
             self.assertIn('img.event-photo', p)
             self.assertIn("img.addEventListener('error',useNeutral", p)
             self.assertNotIn('<script>', e)
-            self.assertEqual(e.count('class="thumb event-photo"'), 7)
+            self.assertEqual(e.count('class="thumb event-photo"'),
+                             len(json.loads((BASE / "guide_data.json").read_text())["new_discoveries"]))
             self.assertEqual(e.count('class="support-photo event-photo"'), 2)
             self.assertEqual(e.count('class="hero-photo event-photo"'), 1)
 

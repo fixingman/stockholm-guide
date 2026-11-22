@@ -1,4 +1,5 @@
 """Visual variant and content invariants. Runs without a browser or email sender."""
+import json
 import subprocess
 import sys
 import tempfile
@@ -22,5 +23,6 @@ class VariantTests(unittest.TestCase):
             self.assertNotIn("mix-blend-mode:luminosity",html)
             self.assertNotIn("background-blend-mode:normal,luminosity",html)
             self.assertEqual(html.count('class="support-photo event-photo"'),2)
-            self.assertEqual(html.count('class="thumb event-photo"'),7)
+            self.assertEqual(html.count('class="thumb event-photo"'),
+                             len(json.loads((BASE / "guide_data.json").read_text())["new_discoveries"]))
 if __name__ == "__main__":unittest.main()

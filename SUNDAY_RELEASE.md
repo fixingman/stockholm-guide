@@ -1,5 +1,41 @@
 # Sunday release integration, subscriber privacy and scanning cues
 
+## Reviewed-event pool to newsletter AND calendar (Issue 006 onward)
+
+The sweep's public `source-probe.json` is discovery evidence, NOT the event database.
+The Saturday/Sunday editor examines **every** registry source and its dated original
+event pages. Keep truthful per-source `research_coverage.source_scans` and
+record the **complete eligible verified event pool**, not merely the 3 Top Picks
+and other newsletter selections. Do not force an event from a source with no fit.
+
+The canonical public issue `issues/current.json` has two outputs:
+- `top3`, `new_discoveries`, `worth_reconsidering`: editorial newsletter
+  selections that also appear on the calendar;
+- `calendar_only_events`: every other suitable, individually verified
+  event within the fortnight that did not fit in the email. No arbitrary cap.
+
+Each `calendar_only_events` row requires `source_id`, original public HTTPS
+`url`, `title`, `dates`, `venue`, and `final_review` with timezone-aware
+`checked_at`, matching `organizer_source_url`, `event_status=scheduled`,
+and a truthful booking status. When the organizer confirms exact session time,
+set timezone-aware `event_start` within the issue's 14-day window. Without an
+exact session time, leave `event_start` unset and label it flexible: **never
+invent a pin**. The corresponding registry source must have a
+`reviewed_leads` scan containing this EXACT event URL in `candidate_urls`.
+Do not add sold-out, cancelled, blocked, expired, or unverified links to public
+calendar-only entries. `build_calendar.py` rechecks this provenance and
+freshness independently before rendering. If a verified event was excluded
+for editorial relevance or duplicates, do not add it as calendar filler.
+
+Every Sunday handoff should summarize counts: source IDs accounted for,
+public candidate links, individually verified eligible events, newsletter
+events, extra calendar-only events, and rejected/unverified leads. The count
+of raw probe links is **not** the verified-event count. Saturday saves the
+full reviewed pool in `issues/next-draft.json`; Sunday carries it into
+`issues/current.json` without silently dropping non-newsletter eligible
+events. The Pages job regenerates `calendar.html` from the exact current
+issue; public CI never handles subscribers or sends email.
+
 ## Mandatory full-registry source checks (Issue 006 onward)
 
 **Every source in the live `discovery_sources.json` is part of the scan** — not just 12 organizers, nor the subset ultimately selected for the newsletter. Never hard-code the count: there are 49 as of 22 Nov 2026, and new sources must be automatically included.
