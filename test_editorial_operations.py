@@ -44,6 +44,26 @@ class EditorialTests(unittest.TestCase):
         # Saturday event's image was from official organizer festival page.
         self.assertTrue(audit(g,strict=True)["ready_for_editorial_release"])
 
+    def test_future_top3_must_not_repeat_a_test_or_production_feature(self):
+        g=make_strict_issue()
+        g["issue_number"]="006"
+        previous={"top3":[{"title":g["top3"][0]["title"],"issue":"TEST-008"}]}
+        r=audit(g,history=[previous],strict=True)
+        self.assertFalse(r["ready_for_editorial_release"])
+        self.assertTrue(any("Previously featured Top 3 recycled" in s for s in r["errors"]))
+        self.assertEqual(len(r["repeated_top3"]),1)
+        g["top3"][0]["title"]="Unseen original experience 2026"
+        r2=audit(g,history=[previous],strict=True)
+        self.assertTrue(r2["ready_for_editorial_release"])
+
+    def test_issue_005_legacy_repeat_reports_but_does_not_retroactively_block(self):
+        g=make_strict_issue()
+        g["issue_number"]="005"
+        previous={"top3":[{"title":g["top3"][0]["title"]}]}
+        r=audit(g,history=[previous],strict=True)
+        self.assertTrue(r["ready_for_editorial_release"])
+        self.assertTrue(any("Previously featured Top 3 recycled" in s for s in r["warnings"]))
+
     def test_missing_event_verification_blocks_strict(self):
         g=make_strict_issue()
         del g["top3"][0]["verification"]["date"]
