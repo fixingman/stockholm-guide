@@ -2,7 +2,8 @@
   "ready_for_delivery": true,
   "errors": [],
   "warnings": [
-    "Image load warning: https://acceleratorsu.art/wp-content/uploads/2024/03/Ester_Bergsmark-face-1.jpg: large_image"
+    "Image load warning: https://acceleratorsu.art/wp-content/uploads/2024/03/Ester_Bergsmark-face-1.jpg: large_image",
+    "EDITORIAL: Previously featured Top 3 recycled: 3; select new Top Picks and move worthwhile repeats to Worth reconsidering"
   ],
   "issue_number": "005",
   "date_range": "22 November–5 December 2026",
@@ -65,12 +66,14 @@
   "image_proxy_certified": false,
   "data_sha256": "2f1d11185ebda70dfe4d4aac4fcf259d6454c2f6ff6397bcce5518547345f0f4",
   "rendered_html_file": "outgoing.html",
-  "preflight_timestamp_utc": "2026-11-22T15:34:34.678375+00:00",
+  "preflight_timestamp_utc": "2026-11-22T15:37:15.807647+00:00",
   "editorial_quality": {
     "ready_for_editorial_release": true,
     "mode": "strict",
     "errors": [],
-    "warnings": [],
+    "warnings": [
+      "Previously featured Top 3 recycled: 3; select new Top Picks and move worthwhile repeats to Worth reconsidering"
+    ],
     "unique_events": 25,
     "total_rows": 25,
     "organizer_count": 10,
@@ -90,7 +93,11 @@
     "repeat_new_discoveries": [],
     "identity_reviewed_images": 3,
     "identity_review_target": 3,
-    "repeated_top3": [],
+    "repeated_top3": [
+      "aliqu deep listening and visual improvisation",
+      "en ljuvlighet fr n ingenstans film and conversation",
+      "salla salazar a phone free listening session"
+    ],
     "event_evidence_rows": [
       {
         "title": "En ljuvlighet från ingenstans — film and conversation",
@@ -456,5 +463,5 @@
     "note": "Timestamped evidence audit; cannot independently establish that page claims are true."
   },
   "release_channel": "production",
-  "source_commit_sha": "08fee89fdd2ccd396aef7f74c0cbe98481dd577b"
+  "source_commit_sha": "0e99c10acaded8735fa20990dc1d5ac29e1dc047"
 }
