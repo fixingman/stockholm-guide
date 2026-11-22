@@ -15,8 +15,8 @@ jobs:
   email-resilience:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
         with:
           python-version: '3.12'
       - name: Install template, image and headless browser test support
@@ -29,7 +29,7 @@ jobs:
           python email_client_qa.py --html /tmp/stockholm-email.html --browser --report email-client-qa-report.json --screenshots email-client-screenshots
       - name: Upload quality report and 6 screenshots (not an email send)
         if: always()
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v6
         with:
           name: email-accessibility-and-resilience
           path: |
