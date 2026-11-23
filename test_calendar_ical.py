@@ -51,6 +51,57 @@ class CalendarICSTests(unittest.TestCase):
         self.assertIn(r"Line one\nBEGIN:VALARM\nA\, B\; C \\ D", unfolded)
         self.assertEqual(unfolded.count("\r\nBEGIN:VALARM\r\n"), 0)
 
+    def test_explicit_range_gives_single_download_full_interval_only(self):
+        issue = sample()
+        issue["top3"][0]["dates"] = "Sun 29 Nov · 19:00–21:00"
+        data = build_data(issue)
+        event = next(e for e in data["events"] if e["kind"] == "event")
+        self.assertEqual(event["single_event_end"], "2026-11-29T21:00:00+01:00")
+        single = ical_bytes([event], data["published_at"], single_download=True).decode()
+        feed = ical_bytes([event], data["published_at"]).decode()
+        self.assertIn("DTSTART:20261129T180000Z", single)
+        self.assertIn("DTEND:20261129T200000Z", single)
+        self.assertNotIn("DTEND:20261129T200000Z", feed)
+        self.assertIn("End time is not confirmed", feed)
+
+    def test_explicit_end_cue_and_overnight_intervals(self):
+        issue = sample()
+        issue["top3"][0]["dates"] = "doors 19:00 · ends 23:00"
+        event = next(e for e in build_data(issue)["events"] if e["kind"] == "event")
+        self.assertEqual(event["single_event_end"], "2026-11-29T23:00:00+01:00")
+        issue["top3"][0]["dates"] = "19:00–01:00"
+        event = next(e for e in build_data(issue)["events"] if e["kind"] == "event")
+        self.assertEqual(event["single_event_end"], "2026-11-30T01:00:00+01:00")
+
+    def test_never_guess_end_time_or_use_exhibition_closing_as_session_end(self):
+        issue = sample()
+        issue["top3"][0]["event_end"] = "2026-12-30T23:00:00+01:00"
+        issue["top3"][0]["dates"] = "doors 19:00 · show 20:00"
+        event = next(e for e in build_data(issue)["events"] if e["kind"] == "event")
+        self.assertIsNone(event["single_event_end"])
+        single = ical_bytes([event], issue["published_at"], single_download=True).decode()
+        self.assertNotIn("DTEND:", single)
+        self.assertIn("End time is not confirmed", single)
+        issue["top3"][0]["dates"] = "18:00–20:00"  # Does not match actual 19:00 start
+        event = next(e for e in build_data(issue)["events"] if e["kind"] == "event")
+        self.assertIsNone(event["single_event_end"])
+
+    def test_structured_session_end_and_per_file_distinction(self):
+        issue = sample()
+        issue["top3"][0]["session_end"] = "2026-11-29T22:30:00+01:00"
+        data = build_data(issue)
+        event = next(e for e in data["events"] if e["kind"] == "event")
+        self.assertEqual(event["single_event_end"], "2026-11-29T22:30:00+01:00")
+        with tempfile.TemporaryDirectory() as folder:
+            root = Path(folder)
+            write_feeds(data, root / "calendar.ics", root / "events")
+            individual = (root / "events" / filename(event)).read_text()
+            subscribed = (root / "calendar.ics").read_text()
+            self.assertIn("DTEND:20261129T213000Z", individual)
+            self.assertNotIn("DTEND:20261129T213000Z", subscribed)
+            self.assertNotIn("End time is not confirmed", individual)
+            self.assertIn("End time is not confirmed", subscribed)
+
     def test_only_known_dates_have_ical_links(self):
         for event in self.data["events"]:
             if event["kind"] == "flexible":
