@@ -139,6 +139,19 @@ def run():
                 assert_that(event_response.body().count(b"BEGIN:VEVENT") == 1,
                             "Single-event download must not add the entire calendar")
             checks.append("Per-event .ics links return single verified event imports")
+            known_intervals = [e for e in data["events"] if e.get("single_event_end")]
+            if known_intervals:
+                interval = known_intervals[0]
+                ics = page.request.get(
+                    "https://fixingman.github.io/stockholm-guide/" + interval["ical_url"][2:],
+                    timeout=20000)
+                assert_that(ics.status == 200, "Known-interval event .ics unavailable")
+                assert_that(b"DTEND:" in ics.body(), "Individual event omitted confirmed end time")
+                subscription = page.request.get(feed_url, timeout=20000)
+                assert_that(subscription.status == 200, "Subscription feed unavailable")
+                assert_that(subscription.body().count(b"BEGIN:VEVENT") >= 1,
+                            "Subscription feed unexpectedly empty")
+                checks.append("Single-event imports include verified end time; subscription feed remains available")
 
             page.screenshot(path="live-calendar-desktop.png", full_page=True)
             mobile = browser.new_page(viewport={"width": 390, "height": 844}, device_scale_factor=1)
