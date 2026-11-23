@@ -73,6 +73,55 @@ def calendar_extra_approved(entry, issue):
     )
 
 
+
+def verified_session_end(entry, beginning):
+    """Infer a single-event end ONLY from an explicit end or matching time range.
+
+    The general event_end field may be an exhibition closing date; do not
+    interpret that as a particular session's duration.
+    """
+    if beginning is None:
+        return None
+    explicit = timestamp(entry.get("session_end"))
+    if explicit:
+        delta = explicit - beginning
+        return explicit if timedelta(0) < delta <= timedelta(hours=24) else None
+
+    dates = entry.get("dates") or ""
+    start_clock = beginning.strftime("%H:%M")
+    # Only trust a displayed range whose start matches the verified event_start.
+    # This also handles "doors 17:00, film 18:00–20:00" safely.
+    ranges = re.finditer(r"(?<!\\d)(\\d{1,2}:\\d{2})\\s*[–—-]\\s*(\\d{1,2}:\\d{2})(?!\\d)", dates)
+    candidate = None
+    for match in ranges:
+        try:
+            left_h, left_m = map(int, match.group(1).split(":"))
+            right_h, right_m = map(int, match.group(2).split(":"))
+            if max(left_h, right_h) > 23 or max(left_m, right_m) > 59:
+                continue
+        except ValueError:
+            continue
+        if f"{left_h:02d}:{left_m:02d}" == start_clock:
+            candidate = (right_h, right_m)
+            break
+
+    if candidate is None:
+        # An explicit end-time cue is valid even for listings with doors time.
+        match = re.search(r"\\bends?\\s+(?:at\\s+)?(\\d{1,2}):(\\d{2})\\b", dates, re.I)
+        if match:
+            hour, minute = int(match.group(1)), int(match.group(2))
+            if hour <= 23 and minute <= 59:
+                candidate = (hour, minute)
+
+    if candidate is None:
+        return None
+    end = beginning.replace(hour=candidate[0], minute=candidate[1], second=0, microsecond=0)
+    if end <= beginning:
+        end += timedelta(days=1)
+    delta = end - beginning
+    return end if timedelta(0) < delta <= timedelta(hours=24) else None
+
+
 def build_data(issue, *, feed_file="calendar.ics", events_dir="calendar-events"):
     if not issue.get("issue_number") or not issue.get("published_at"):
         raise ValueError("A published issue with a dated publication time is required")
@@ -120,6 +169,8 @@ def build_data(issue, *, feed_file="calendar.ics", events_dir="calendar-events")
                 "url": url,
                 "date": date,
                 "time": beginning.strftime("%H:%M") if beginning else None,
+                "single_event_end": (verified_session_end(entry, beginning).isoformat()
+                                     if beginning and verified_session_end(entry, beginning) else None),
                 "closing_date": closing.date().isoformat() if verified_closing else None,
                 "last_chance": verified_closing,
                 "kind": kind,
