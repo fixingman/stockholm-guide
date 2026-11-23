@@ -1,10 +1,5 @@
 name: Live calendar acceptance — public website (no email)
 on:
-  push:
-    branches: [main]
-    paths:
-      - test_calendar_live.py
-      - .github/workflows/calendar-live-acceptance.yml
   workflow_dispatch:
   workflow_run:
     workflows: ["Publish Stockholm Guide preview"]
