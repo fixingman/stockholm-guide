@@ -41,7 +41,7 @@ def folded(line):
     return "\r\n".join(chunks)
 
 
-def event_lines(event, stamp):
+def event_lines(event, stamp, *, single_download=False):
     if not event.get("date") or event.get("kind") not in ("event", "closing"):
         return []
     day = date.fromisoformat(event["date"])
@@ -54,7 +54,8 @@ def event_lines(event, stamp):
     if event["kind"] == "closing":
         notes.append("Closing-day reminder only; no opening time is implied.")
     else:
-        notes.append("End time is not confirmed; check the organizer.")
+        if not (single_download and event.get("single_event_end")):
+            notes.append("End time is not confirmed; check the organizer.")
     notes.append("Official event page: " + event["url"])
     content = [
         "BEGIN:VEVENT",
@@ -75,7 +76,12 @@ def event_lines(event, stamp):
         hour, minute = map(int, event["time"].split(":"))
         start = datetime(day.year, day.month, day.day, hour, minute, tzinfo=STOCKHOLM)
         content.append("DTSTART:" + start.astimezone(timezone.utc).strftime("%Y%m%dT%H%M%SZ"))
-        # No DTEND: no fabricated session length. RFC 5545 permits DTSTART only.
+        # Subscription feed intentionally stays start-only, as before.
+        if single_download and event.get("single_event_end"):
+            end = datetime.fromisoformat(event["single_event_end"])
+            if end.tzinfo is None or end <= start:
+                raise ValueError("Single-event end must be an offset-aware time after start")
+            content.append("DTEND:" + end.astimezone(timezone.utc).strftime("%Y%m%dT%H%M%SZ"))
     content.append("LOCATION:" + ical_text(event.get("venue", "")))
     # URLs are URI values, not iCalendar TEXT. Reject embedded control chars.
     url = event["url"]
@@ -85,7 +91,7 @@ def event_lines(event, stamp):
     return content
 
 
-def ical_bytes(events, published_at):
+def ical_bytes(events, published_at, *, single_download=False):
     publication = datetime.fromisoformat(published_at.replace("Z", "+00:00"))
     if publication.tzinfo is None:
         raise ValueError("Publication requires an offset")
@@ -100,7 +106,7 @@ def ical_bytes(events, published_at):
         "X-PUBLISHED-TTL:PT12H",
     ]
     for event in events:
-        lines.extend(event_lines(event, stamp))
+        lines.extend(event_lines(event, stamp, single_download=single_download))
     lines.append("END:VCALENDAR")
     return ("\r\n".join(folded(line) for line in lines) + "\r\n").encode("utf-8")
 
@@ -116,7 +122,7 @@ def write_feeds(data, feed_path, events_dir):
         stale.unlink()
     target.write_bytes(ical_bytes(events, data["published_at"]))
     for event in events:
-        (directory / filename(event)).write_bytes(ical_bytes([event], data["published_at"]))
+        (directory / filename(event)).write_bytes(ical_bytes([event], data["published_at"], single_download=True))
     if len({filename(e) for e in events}) != len(events):
         raise ValueError("Calendar events have colliding stable file identities")
     return len(events)
