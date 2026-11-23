@@ -91,7 +91,7 @@ def verified_session_end(entry, beginning):
     start_clock = beginning.strftime("%H:%M")
     # Only trust a displayed range whose start matches the verified event_start.
     # This also handles "doors 17:00, film 18:00–20:00" safely.
-    ranges = re.finditer(r"(?<!\\d)(\\d{1,2}:\\d{2})\\s*[–—-]\\s*(\\d{1,2}:\\d{2})(?!\\d)", dates)
+    ranges = re.finditer(r"(?<!\d)(\d{1,2}:\d{2})\s*[–—-]\s*(\d{1,2}:\d{2})(?!\d)", dates)
     candidate = None
     for match in ranges:
         try:
@@ -107,7 +107,7 @@ def verified_session_end(entry, beginning):
 
     if candidate is None:
         # An explicit end-time cue is valid even for listings with doors time.
-        match = re.search(r"\\bends?\\s+(?:at\\s+)?(\\d{1,2}):(\\d{2})\\b", dates, re.I)
+        match = re.search(r"\bends?\s+(?:at\s+)?(\d{1,2}):(\d{2})\b", dates, re.I)
         if match:
             hour, minute = int(match.group(1)), int(match.group(2))
             if hour <= 23 and minute <= 59:
@@ -156,6 +156,7 @@ def build_data(issue, *, feed_file="calendar.ics", events_dir="calendar-events")
             # session is specified; don't imply it is a one-day performance.
             date = beginning.date().isoformat() if beginning else closing.date().isoformat() if verified_closing else None
             kind = "event" if beginning else "closing" if verified_closing else "flexible"
+            session_end = verified_session_end(entry, beginning)
             event = {
                 "id": f"{section}-{index}",
                 "title": title,
@@ -169,8 +170,7 @@ def build_data(issue, *, feed_file="calendar.ics", events_dir="calendar-events")
                 "url": url,
                 "date": date,
                 "time": beginning.strftime("%H:%M") if beginning else None,
-                "single_event_end": (verified_session_end(entry, beginning).isoformat()
-                                     if beginning and verified_session_end(entry, beginning) else None),
+                "single_event_end": session_end.isoformat() if session_end else None,
                 "closing_date": closing.date().isoformat() if verified_closing else None,
                 "last_chance": verified_closing,
                 "kind": kind,
