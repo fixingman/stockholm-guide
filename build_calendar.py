@@ -215,12 +215,23 @@ def build_data(issue, *, feed_file="calendar.ics", events_dir="calendar-events")
                 continue
             closing = timestamp(entry.get("event_end"))
             verified_closing = bool(closing and has_verified_last_chance(entry, issue))
+            visit_window = verified_visit_window(entry)
+            session_end = verified_session_end(entry, beginning)
+            # A multi-day exhibition/festival is not a continuous hourly
+            # session. Only a distinct scheduled opening/session stays timed.
+            span = (closing - beginning) if closing and beginning else timedelta(0)
+            dates_text = (entry.get("dates") or "").lower()
+            explicit_timed_opening = any(cue in dates_text for cue in ("opening at", "opening 18:", "opening 19:", "doors", "show", "concert"))
+            if beginning and visit_window and not sessions and not session_end and (
+                entry.get("calendar_mode") == "multi_day"
+                or (span > timedelta(days=1) and not explicit_timed_opening
+                    and any(cue in dates_text for cue in ("through", "until", "runs", "festival", "exhibition", "multi-day")))
+            ):
+                beginning = None
             # Last chance is pinned to the CLOSING DATE only if no precise
             # session is specified; don't imply it is a one-day performance.
             date = beginning.date().isoformat() if beginning else closing.date().isoformat() if verified_closing else None
             kind = "event" if beginning else "closing" if verified_closing else "flexible"
-            session_end = verified_session_end(entry, beginning)
-            visit_window = verified_visit_window(entry)
             event = {
                 "id": f"{section}-{index}",
                 "title": title,
