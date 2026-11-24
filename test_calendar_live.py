@@ -6,6 +6,7 @@ real FullCalendar interactions, issue data, organizer links, filters and phone U
 No private subscriber or Gmail data is accessed.
 """
 import json
+import re
 import sys
 import time
 from datetime import date, timedelta
@@ -189,6 +190,55 @@ def run():
             assert_that(b"BEGIN:VEVENT" in imported and b"END:VCALENDAR" in imported,
                         "Personal visit calendar file malformed")
             checks.append("Chosen exhibition visit downloads as one free all-day reminder; subscription unchanged")
+
+            # Exercise multi-session selection with an IN-BROWSER fixture, not
+            # a fabricated event published to the actual public feed.
+            synthetic = browser.new_page(viewport={"width": 1180, "height": 880})
+            try:
+                first = next(e for e in data["events"] if e["kind"] == "event")
+                second_date = (date.fromisoformat(first["date"]) + timedelta(days=1)).isoformat()
+                first_utc = first["date"].replace("-", "") + "T180000Z"
+                second_utc = second_date.replace("-", "") + "T180000Z"
+                def fixture_page(route):
+                    response = route.fetch()
+                    html = response.text()
+                    match = re.search(
+                        r'(<script id="calendar-data" type="application/json">)(.*?)(</script>)',
+                        html, re.S)
+                    assert_that(match is not None, "Cannot inject ephemeral session fixture")
+                    payload = json.loads(match.group(2))
+                    candidate = next(e for e in payload["events"] if e["id"] == first["id"])
+                    candidate["sessions"] = [
+                        {"date": first["date"], "time": "19:00",
+                         "start_utc": first_utc, "end_utc": None, "label": "Session one"},
+                        {"date": second_date, "time": "19:00",
+                         "start_utc": second_utc,
+                         "end_utc": second_date.replace("-", "") + "T200000Z",
+                         "label": "Session two"}
+                    ]
+                    safe_blob = json.dumps(payload).replace("<", "\\u003c")
+                    replaced = html[:match.start(2)] + safe_blob + html[match.end(2):]
+                    route.fulfill(response=response, body=replaced)
+                synthetic.route(URL, fixture_page)
+                synthetic.goto(URL, wait_until="domcontentloaded", timeout=45000)
+                synthetic.locator(".fc-daygrid").wait_for(timeout=30000)
+                synthetic.locator(f'.fc-daygrid-day[data-date="{second_date}"]').click()
+                session_card = synthetic.locator("#day-events .event-card").filter(
+                    has_text=first["title"]).first
+                assert_that(session_card.count() == 1, "Second session date not discoverable")
+                session_card.locator("summary").filter(has_text="Choose a session").click()
+                session_card.locator("select.session-select").select_option("1")
+                with synthetic.expect_download(timeout=15000) as download_info:
+                    session_card.get_by_role("button", name="Add selected session (.ics)").click()
+                imported_session = Path(download_info.value.path()).read_bytes()
+                assert_that(("DTSTART:" + second_utc).encode() in imported_session,
+                            "Selected session did not retain precise start")
+                assert_that(
+                    ("DTEND:" + second_date.replace("-", "") + "T200000Z").encode() in imported_session,
+                    "Selected session did not retain verified end")
+                checks.append("Synthetic multi-session choice picks actual selected time interval")
+            finally:
+                synthetic.close()
 
             page.screenshot(path="live-calendar-desktop.png", full_page=True)
             mobile = browser.new_page(viewport={"width": 390, "height": 844}, device_scale_factor=1)
