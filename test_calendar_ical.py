@@ -102,6 +102,95 @@ class CalendarICSTests(unittest.TestCase):
             self.assertNotIn("End time is not confirmed", individual)
             self.assertIn("End time is not confirmed", subscribed)
 
+    def test_exact_exhibition_date_window_is_offered_only_as_optional_visit(self):
+        issue = sample()
+        issue["new_discoveries"][0]["schedule_note"] = (
+            "Open 27 Nov 2026–10 Jan 2027; museum hours vary."
+        )
+        data = build_data(issue)
+        exhibition = next(e for e in data["events"] if e["kind"] == "flexible")
+        self.assertEqual(exhibition["visit_window"], {
+            "start": "2026-11-27", "end": "2027-01-10"
+        })
+        self.assertIsNone(exhibition["ical_url"])
+        self.assertNotIn("Ongoing design exhibition",
+                         ical_bytes(data["events"], data["published_at"]).decode())
+
+        # No unbounded/vague dates may produce a visit picker.
+        issue["new_discoveries"][0]["schedule_note"] = "Open all winter; ask venue."
+        exhibition = next(e for e in build_data(issue)["events"] if e["kind"] == "flexible")
+        self.assertIsNone(exhibition["visit_window"])
+
+    def test_multiday_festival_not_added_as_hourly_or_blocked_all_week(self):
+        issue = sample()
+        event = issue["top3"][0]
+        event["dates"] = "Festival through 1 Dec · doors 19:00"
+        event["event_end"] = "2026-12-01T19:00:00+01:00"
+        event["visit_start"] = "2026-11-29"
+        event["visit_end"] = "2026-12-01"
+        event["calendar_mode"] = "multi_day"
+        data = build_data(issue)
+        item = next(e for e in data["events"] if e["title"] == "Evening concert")
+        self.assertEqual(item["kind"], "flexible")
+        self.assertEqual(item["visit_window"]["end"], "2026-12-01")
+        self.assertIsNone(item["ical_url"])
+        feed = ical_bytes(data["events"], data["published_at"]).decode()
+        self.assertNotIn("Evening concert", feed)
+        self.assertNotIn("DTSTART;VALUE=DATE:20261129", feed)
+        self.assertIn("DTSTART;VALUE=DATE:20261206", feed)  # existing closing reminder
+
+    def test_structured_multiple_sessions_offer_precise_choices_not_durations(self):
+        issue = sample()
+        event = issue["top3"][0]
+        event["event_start"] = None
+        event["sessions"] = [
+            {"event_start": "2026-11-30T20:00:00+01:00",
+             "session_end": "2026-11-30T22:00:00+01:00",
+             "dates": "Mon 30 Nov · 20:00–22:00"},
+            {"event_start": "2026-11-29T19:00:00+01:00",
+             "dates": "Sun 29 Nov · 19:00"},
+            {"event_start": "unverified date"},
+        ]
+        data = build_data(issue)
+        item = next(e for e in data["events"] if e["title"] == "Evening concert")
+        self.assertEqual(item["kind"], "event")
+        self.assertEqual(item["date"], "2026-11-29")
+        self.assertEqual([x["date"] for x in item["sessions"]],
+                         ["2026-11-29", "2026-11-30"])
+        self.assertEqual(item["sessions"][0]["start_utc"], "20261129T180000Z")
+        self.assertIsNone(item["sessions"][0]["end_utc"])
+        self.assertEqual(item["sessions"][1]["end_utc"], "20261130T210000Z")
+        self.assertEqual(item["sessions"][1]["time"], "20:00")
+
+    def test_exhibition_range_metadata_is_not_overridden_by_session_end(self):
+        issue = sample()
+        event = issue["top3"][0]
+        event["schedule_note"] = "Exhibition 27 Nov 2026–10 Jan 2027"
+        event["event_end"] = "2027-01-10T17:00:00+01:00"
+        event["dates"] = "Fri 29 Nov · opening at 19:00"
+        data = build_data(issue)
+        item = next(e for e in data["events"] if e["title"] == "Evening concert")
+        self.assertEqual(item["kind"], "event",
+                         "A distinct timed opening should remain a timed session")
+        self.assertEqual(item["visit_window"]["end"], "2027-01-10")
+        self.assertIsNone(item["single_event_end"])
+
+    def test_current_real_exhibitions_have_selection_windows(self):
+        import json
+        repo = Path(__file__).resolve().parent
+        issue = json.loads((repo / "issues" / "current.json").read_text())
+        data = build_data(issue)
+        windows = {e["title"]: e["visit_window"]
+                   for e in data["events"] if e.get("visit_window")}
+        self.assertEqual(
+            windows["Pepparkakshus 2026 — Gingerbread architecture of the future"],
+            {"start": "2026-11-27", "end": "2027-01-10"}
+        )
+        self.assertEqual(
+            windows["Women Behind the Camera, 1848–1968 — exhibition opening"],
+            {"start": "2026-12-05", "end": "2027-04-11"}
+        )
+
     def test_only_known_dates_have_ical_links(self):
         for event in self.data["events"]:
             if event["kind"] == "flexible":
