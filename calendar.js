@@ -76,7 +76,7 @@
       "PRODID:-//The Stockholm Guide//Personal event import//EN",
       "CALSCALE:GREGORIAN", "METHOD:PUBLISH",
       "BEGIN:VEVENT",
-      "UID:" + asICalDay(chosenDay) + "-" + e.id.replace(/[^a-zA-Z0-9-]/g, "") + "@fixingman.github.io",
+      "UID:" + asICalDay(chosenDay) + (choice.startUtc ? "-" + choice.startUtc : "") + "-" + e.id.replace(/[^a-zA-Z0-9-]/g, "") + "@fixingman.github.io",
       "DTSTAMP:" + stamp,
       "SUMMARY:" + icalEscape(e.title),
       "DESCRIPTION:" + icalEscape(notes),
