@@ -8,7 +8,7 @@ become calendar pins. Other items remain discoverable as flexible listings.
 import argparse
 import json
 import re
-from datetime import date as calendar_date, datetime, timedelta
+from datetime import date as calendar_date, datetime, timedelta, timezone
 from pathlib import Path
 from urllib.parse import urlparse
 from zoneinfo import ZoneInfo
@@ -122,6 +122,66 @@ def verified_session_end(entry, beginning):
     return end if timedelta(0) < delta <= timedelta(hours=24) else None
 
 
+# Date ranges are used for optional PERSONAL visit reminders, never as
+# all-day subscriptions. Only exact dated curator notes/fields are accepted.
+_MONTHS = {name: n for n, names in enumerate((
+    ("jan", "january"), ("feb", "february"), ("mar", "march"),
+    ("apr", "april"), ("may",), ("jun", "june"),
+    ("jul", "july"), ("aug", "august"), ("sep", "sept", "september"),
+    ("oct", "october"), ("nov", "november"), ("dec", "december"),
+), 1) for name in names}
+_EXACT_WINDOW = re.compile(
+    r"(?<!\d)(\d{1,2})\s+([A-Za-z]+)\s+(\d{4})\s*[–—-]\s*"
+    r"(\d{1,2})\s+([A-Za-z]+)\s+(\d{4})(?!\d)"
+)
+
+
+def verified_visit_window(entry):
+    """Return explicit date bounds (no inferred opening hours or sessions)."""
+    try:
+        if entry.get("visit_start") and entry.get("visit_end"):
+            first = calendar_date.fromisoformat(entry["visit_start"])
+            last = calendar_date.fromisoformat(entry["visit_end"])
+        else:
+            note = entry.get("schedule_note") or ""
+            match = _EXACT_WINDOW.search(note)
+            if not match:
+                return None
+            a, am, ay, b, bm, by = match.groups()
+            first = calendar_date(int(ay), _MONTHS[am.lower()], int(a))
+            last = calendar_date(int(by), _MONTHS[bm.lower()], int(b))
+        if not (first < last and (last - first).days <= 730):
+            return None
+        return {"start": first.isoformat(), "end": last.isoformat()}
+    except (ValueError, KeyError, TypeError):
+        return None
+
+
+def verified_sessions(entry):
+    """Only explicitly timestamped, independently curated session choices."""
+    rows = entry.get("sessions")
+    if not isinstance(rows, list):
+        return []
+    choices, seen = [], set()
+    for row in rows[:40]:
+        if not isinstance(row, dict):
+            continue
+        start = timestamp(row.get("event_start"))
+        if start is None or start.isoformat() in seen:
+            continue
+        seen.add(start.isoformat())
+        end = verified_session_end(row, start)
+        label = row.get("dates") or start.strftime("%a %d %b · %H:%M")
+        choices.append({
+            "label": str(label)[:140],
+            "date": start.date().isoformat(),
+            "time": start.strftime("%H:%M"),
+            "start_utc": start.astimezone(timezone.utc).strftime("%Y%m%dT%H%M%SZ"),
+            "end_utc": end.astimezone(timezone.utc).strftime("%Y%m%dT%H%M%SZ") if end else None,
+        })
+    return sorted(choices, key=lambda row: row["start_utc"])[:20]
+
+
 def build_data(issue, *, feed_file="calendar.ics", events_dir="calendar-events"):
     if not issue.get("issue_number") or not issue.get("published_at"):
         raise ValueError("A published issue with a dated publication time is required")
@@ -147,7 +207,10 @@ def build_data(issue, *, feed_file="calendar.ics", events_dir="calendar-events")
             if key in seen:
                 continue
             seen.add(key)
+            sessions = verified_sessions(entry)
             beginning = timestamp(entry.get("event_start"))
+            if beginning is None and sessions:
+                beginning = datetime.strptime(sessions[0]["start_utc"], "%Y%m%dT%H%M%SZ").replace(tzinfo=timezone.utc).astimezone(TZ)
             if section == "calendar_only_events" and beginning and not (start <= beginning.date() <= end):
                 continue
             closing = timestamp(entry.get("event_end"))
@@ -157,6 +220,7 @@ def build_data(issue, *, feed_file="calendar.ics", events_dir="calendar-events")
             date = beginning.date().isoformat() if beginning else closing.date().isoformat() if verified_closing else None
             kind = "event" if beginning else "closing" if verified_closing else "flexible"
             session_end = verified_session_end(entry, beginning)
+            visit_window = verified_visit_window(entry)
             event = {
                 "id": f"{section}-{index}",
                 "title": title,
@@ -171,6 +235,8 @@ def build_data(issue, *, feed_file="calendar.ics", events_dir="calendar-events")
                 "date": date,
                 "time": beginning.strftime("%H:%M") if beginning else None,
                 "single_event_end": session_end.isoformat() if session_end else None,
+                "visit_window": visit_window,
+                "sessions": sessions if len(sessions) > 1 else [],
                 "closing_date": closing.date().isoformat() if verified_closing else None,
                 "last_chance": verified_closing,
                 "kind": kind,
